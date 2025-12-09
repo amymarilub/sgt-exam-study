@@ -1,268 +1,198 @@
-// ===== STUDY DOCUMENTS =====
-// Add all study materials here
+// ========================================
+// STUDY DOCUMENTS
+// ========================================
+// Add your full procedure documents here
 
-const documents = {
-    procedure303: {
-        title: "Procedure 303 - Disciplinary Procedures",
-        sections: [
-            {
-                id: "intro",
-                title: ".01 INTRODUCTION",
-                content: `This procedure establishes a process to provide for the non-criminal investigation and discipline, when necessary, of sworn members for alleged or suspected violations of department rules, regulations, policies, or procedures, which may regulate the conduct of sworn members.
+const STUDY_DOCUMENTS = [
+    {
+        title: "Procedure 303 - General Manual",
+        content: `
+            <h2>COMPLAINTS AGAINST DEPARTMENT MEMBERS</h2>
+            
+            <h3>Policy</h3>
+            <p>The San Antonio Police Department accepts and investigates all complaints against Department members. The Department encourages the reporting of officer misconduct as well as commendable behavior. All complaints will be courteously received and properly investigated in a fair and impartial manner with due regard for the individual rights of all involved. The Department will continually strive to improve services to the community and employees through its accountability systems.</p>
 
-When a complaint focuses on a civilian member, the non-criminal investigation and discipline, when necessary, is determined by the civilian member's Division Commander or in accordance with any applicable administrative directives of the City.
+            <h3>Purpose</h3>
+            <p>The purpose of this procedure is to establish guidelines for the reporting, investigation, and disposition of complaints against Department members. This procedure also outlines the responsibilities of the Office of the Chief of Police, the Office of Management Services (OMS), Internal Affairs, and supervisory personnel in the complaint process.</p>
 
-This procedure does not supersede any criminal investigation for alleged violations of criminal laws or statutes by members of this Department.`
-            },
-            {
-                id: "policy",
-                title: ".02 POLICY",
-                content: `The Department is accountable for all official acts of its employees. Therefore, the Department holds its members to a high standard of conduct and discipline in order to preserve an essential relationship of trust and confidence with the community they serve.
+            <h3>Definitions</h3>
+            
+            <p><strong>Line Complaint:</strong> A complaint is a Line Complaint when it involves minor policy violations of the General Manual or other related directives. Line Complaints also include complaints concerning performance, usually related to discourteous or unprofessional behavior. Line Complaints do not involve violations that could result in suspension or dismissal.</p>
 
-Furthermore, the Department adheres to and practices progressive discipline. This allows for a range of sanctions that take into account the circumstances of individual matters while ensuring that discipline and other behavior modification schemes are commensurate with continued misconduct.
+            <p><strong>Formal Complaint:</strong> A Formal Complaint involves allegations of misconduct that could result in suspension or dismissal. Examples include use of excessive force, criminal conduct, on-duty intoxication, domestic violence, or misuse of authority.</p>
 
-To achieve the desired degree of effectiveness, disciplinary procedures address considerations and expectations from the following three perspectives:
+            <p><strong>Anonymous Complaint:</strong> A complaint where the source refuses to identify themselves or provide contact information for follow-up.</p>
 
-Community or external concerns: An open and positive relationship with the citizens of this community must be preserved. Consequently, the Department accepts all complaints, regardless of form, source, or substance, and initiates investigative action appropriate to the seriousness of the complaint.
+            <p><strong>Chain of Command:</strong> The supervisory hierarchy through which complaints are processed and investigated.</p>
 
-Departmental or internal concerns: A consistent and fair disciplinary system supports an effective operational environment. The Department provides corrective action for a member who demonstrates a need for behavioral correction and commends proper conduct and judgment.
+            <h3>Procedures</h3>
 
-Employee concerns: Members should have a reasonable expectation they may exercise prudent judgment in a fair, lawful, and impartial manner while in the proper discharge of their duties and an expeditious and equitable process of disciplinary review will evaluate their actions.
+            <h4>Accepting Complaints</h4>
+            <p>All Department members shall accept complaints courteously and professionally, regardless of the time, place, or manner in which the complaint is received. Complaints may be received in person, by telephone, by mail, or electronically through the Department's website.</p>
 
-The Internal Affairs Unit shall coordinate all investigations of alleged non-criminal misconduct by sworn members of the Department in accordance with this procedure.
+            <p>Department members shall not discourage any person from filing a complaint. Members shall not require complainants to provide identification or be present at a particular location as a prerequisite to accepting a complaint.</p>
 
-The Chief of Police shall determine which unit or Department member shall investigate allegations of criminal misconduct made against a member of the Department.`
-            },
-            {
-                id: "incidents",
-                title: ".03 INCIDENTS INVOLVING OFFICERS",
-                content: `Officers will immediately self-report to their immediate supervisor, verbally and in writing on SAPD Form 200-OR, any disturbances that they are involved in that require a law enforcement response or have knowledge or become aware that their involvement in a disturbance has the potential to result in a law enforcement response or a complaint. If the officer's immediate supervisor is not available, the officer shall report his involvement in the disturbance, verbally and in writing to any on-duty supervisor. Any supervisor who received a self-report from an officer shall, submit a report and route his report along with the officer's report utilizing Blue Team, through their chain of command to Internal Affairs for an administrative review, by the end of tour of duty upon receiving the report.
+            <h4>Line Complaint Investigation Process</h4>
+            <p>Line Complaints shall be investigated by the member's immediate supervisor or chain of command. The investigation must be completed within 21 calendar days from the date the complaint was received, unless an extension is granted by the Deputy Chief.</p>
 
-On-duty officers handling any disturbance involving another officer (including from other departments) shall immediately notify their supervisor (handling officer's supervisor) prior to departing the location. A supervisor being notified of a disturbance involving an officer from this department shall make the scene. Upon completing their report, the handling officer shall forward a copy of their report to that same supervisor, who will then route the report in accordance with Section .03(A).
+            <p>The supervisor conducting the investigation shall interview the complainant, the accused member(s), and any witnesses. All interviews shall be documented in writing. The supervisor shall gather all relevant evidence including video footage, photographs, and documents.</p>
 
-When handling a call for service or interacting with a member of the public and a member of that public, including but not limited to a complainant, witness, suspect, reporting person, etc., requests to speak to a supervisor, officers shall immediately contact and inform an on-duty supervisor of such request through the dispatcher. The supervisor may initially communicate with the requesting person over the telephone to determine whether the supervisor's presence is needed. The supervisor will record his/her actions in a written report. Incidents resulting in a complaint (line or formal) will be handled in accordance with this procedure.`
-            },
-            {
-                id: "line",
-                title: ".04 LINE COMPLAINTS",
-                content: `Line complaints generally constitute disciplinary matters limited to and involving a minor variance from the routine activities and responsibilities of the sworn member in question.
+            <p>Upon completion of the investigation, the supervisor shall prepare a written report containing findings and recommendations. The report shall be forwarded through the chain of command to the Division Commander for review and approval.</p>
 
-The sworn member's immediate supervisor initially addresses line complaints, generally resulting in complainant satisfaction from the supervisor's initial contact. The complainant should always be reminded that they may also contact the Internal Affairs Unit if they are not satisfied with the immediate supervisor's response. When appropriate, the Section Commander, with concurrence from the Division Commander, addresses the sworn member's behavior with counseling, a written reprimand, or a suspension of up to five calendar days. (Anything less than a one (1) day suspension is not considered discipline.)
+            <h4>Formal Complaint Investigation Process</h4>
+            <p>Formal Complaints shall be investigated by Internal Affairs. The Deputy Chief of Management Services shall be notified immediately upon receipt of any Formal Complaint.</p>
 
-All line complaints shall be investigated by the officer's chain of command within twenty-one (21) calendar days from the date of the written complaint.
+            <p>Internal Affairs shall conduct a thorough and complete investigation. The investigation shall include interviews of the complainant, accused member(s), and all relevant witnesses. Internal Affairs shall gather all available evidence including video recordings, audio recordings, photographs, documents, and physical evidence.</p>
 
-The investigation shall be confined strictly to the complaints detailed in the complaint investigation packet.
+            <p>Accused members shall be afforded their rights under Chapter 143 of the Texas Local Government Code (Civil Service) and applicable labor agreements. Members have the right to representation during investigative interviews.</p>
 
-If the member does not agree with the contemplated disciplinary action within five (5) calendar days, the case will be forwarded to the Internal Affairs Unit for investigation.
+            <h4>Investigation Time Frames</h4>
+            <p>Line Complaints must be completed within 21 calendar days. Formal Complaints investigated by Internal Affairs must be completed within 180 calendar days from the date the complaint was filed, as required by Chapter 143 of the Texas Local Government Code.</p>
 
-Complaints investigated through the chain of command do not entitle the officer to have an attorney present during interviews with their commanding officer.
+            <p>Extensions may be granted by the Chief of Police or designee for good cause. Any extension must be documented in writing with justification for the delay.</p>
 
-During the five (5) calendar days' time period nothing prohibits an officer from seeking advice from an attorney or an Association representative.
+            <h4>Findings and Dispositions</h4>
+            <p>All complaints shall receive one of the following dispositions:</p>
+            
+            <p><strong>Sustained:</strong> The investigation disclosed sufficient evidence to prove the allegation.</p>
+            
+            <p><strong>Not Sustained:</strong> The investigation failed to disclose sufficient evidence to prove or disprove the allegation.</p>
+            
+            <p><strong>Exonerated:</strong> The alleged act occurred, but the investigation revealed it was justified, lawful, and proper.</p>
+            
+            <p><strong>Unfounded:</strong> The investigation conclusively proved the allegation was false or the incident did not occur.</p>
+            
+            <p><strong>Policy Failure:</strong> The member's actions were consistent with Department policy, but the policy itself may be inadequate or inappropriate.</p>
 
-If the sworn member is the rank of Captain or above, or has no Captain in their chain of command, the officer's Division Commander, Bureau Commander or the Chief of Police or his designee as appropriate, will investigate the complaint.
+            <h4>Notification of Complainant</h4>
+            <p>Upon conclusion of the investigation, the complainant shall be notified in writing of the disposition. The notification shall include the finding (sustained, not sustained, exonerated, or unfounded) but shall not include specific disciplinary action taken against any member.</p>
 
-All line complaint disposition reports shall be entered into Blue Team and forwarded up the chain of command for review and disposition, in accordance with Section .19(C).`
-            },
-            {
-                id: "formal",
-                title: ".05 FORMAL COMPLAINTS",
-                content: `Formal complaints generally constitute matters involving conduct that exhibits a significant variance from behavioral expectations or practices established through formal training, departmental rules, regulations, policies, or procedures which regulate a sworn member's conduct.
+            <p>Complainants have the right to appeal the disposition to the Chief of Police within 30 days of receiving written notification of the findings.</p>
 
-Formal complaints include, but are not limited to, the following:
+            <h4>Anonymous Complaints</h4>
+            <p>Anonymous complaints shall be accepted and investigated to the extent possible. However, without a complainant available for interview and follow-up, it may be difficult to fully investigate the allegations. Anonymous complaints shall be documented and investigated at the discretion of the chain of command or Internal Affairs, depending on the severity of the allegations.</p>
 
-1. Activities that deal with significant behavioral infractions;
-2. Any conduct that if proven would constitute a crime;
-3. Any conduct that exhibits the potential to require stringent disciplinary action in the form of a suspension that exceeds five (5) calendar days;
-4. Any allegation of harassment/discrimination;
-5. Any allegation of racial profiling;
-6. Any allegation of unnecessary or excessive force; or
-7. Any other incident that may require formal disciplinary proceedings in order to be properly resolved.
+            <h4>Supervisor Responsibilities</h4>
+            <p>Supervisors are responsible for ensuring complaints are properly received, documented, and investigated in accordance with this procedure. Supervisors shall monitor the conduct and performance of subordinates to identify potential issues before they result in formal complaints.</p>
 
-Sworn members who receive written complaint notification of a formal complaint from the Internal Affairs Unit may request the complaint be submitted to the expedited disciplinary track method.
+            <p>Supervisors shall ensure that Line Complaint investigations are completed within the required time frame and that all investigative reports are thorough, complete, and accurate.</p>
 
-The request must be made in writing to the Office of Chief with a copy of the formal complaint notification attached.
-
-Both the sworn member and the Chief must agree to submit the matter to the expedited disciplinary track for an expedited disciplinary finding.
-
-Any disciplinary action must be agreed upon by the sworn member and the Chief, and must be enacted within thirty (30) calendar days of the agreement.
-
-A suspension agreed to by a member may not be appealed or altered by the Civil Service Commission, an arbitrator, or any court.
-
-In no event can the expedited disciplinary track be requested within sixty (60) calendar days of the expiration of the complaint's one-hundred and eighty (180) calendar day timeline in Chapter 143 of the Local Government Code.
-
-The San Antonio Police Department's Complaint Matrix shall be used as a guide when addressing disciplinary action.
-
-All formal preliminary investigations shall be entered into Blue Team and forwarded through the officer's chain of command to Internal Affairs for review and disposition as soon as possible but no later than 15 days after complaint is received.`
-            },
-            {
-                id: "ccarb",
-                title: ".14 COMPLAINT AND ADMINISTRATIVE REVIEW BOARD",
-                content: `The Chief's Complaint and Administrative Review Board, hereafter referred to as the CCARB, means the combined Citizen portion and Police portion of the CCARB.
-
-Citizen portion of CCARB:
-- Consists of members selected in accordance with the current Collective Bargaining Agreement
-- A quorum consists of three members (provided there are at least six (6) active/participating appointed members)
-- Each member has one (1) vote
-- Citizen members must be present to hear cases involving the use of force, bodily injury, and unlawful search and seizure, and any case in which the officer who is the subject of a complaint or a complainant requests citizen member participation
-
-Police portion of CCARB:
-- Consists of sworn members as specified in the current Collective Bargaining Agreement
-- Membership is open to any officer who has completed his initial probationary period and has not incurred a suspension during the previous twelve months
-- A quorum consists of five (5) members
-- Each sworn member has one vote
-- All sworn members vote regardless of the rank of the respondent
-
-The Chief's Complaint and Administrative Review Board is designed to evaluate complaints against officers as equitably as possible in pursuit of the following objectives:
-1. Correct the behavior of an individual sworn member who is not in conformance with departmental rules, regulations, policies, practices, standards or objectives
-2. Instill a preventive affect for any other sworn member who may be engaged in or contemplating similar misconduct
-3. Demonstrate that compliance with departmental mandates is uniformly required of each sworn member
-4. Promote making the disciplinary process transparent and stress the importance of community involvement
-5. Promote trust and legitimacy by requiring officers to act in procedurally just ways`
-            },
-            {
-                id: "cerb",
-                title: ".17 CRASH EVALUATION AND REVIEW BOARD",
-                content: `The Crash Evaluation and Review Board (CERB) is designed to review all cases involving city (police) motor vehicle crashes involving sworn members.
-
-The Crash Evaluation and Review Board shall consist of sworn members, as specified in the current Collective Bargaining Agreement.
-
-Membership is open to any officer that has completed their initial probationary period and has not incurred a suspension during the previous twelve months.
-
-A quorum consists of three (3) members.
-
-Each member has one (1) vote.
-
-All sworn members vote regardless of the rank of the respondent.
-
-Point assessment for sworn members involved in police vehicle crashes is based on the following criteria:
-- Non-chargeable (0 points)
-- Chargeable (2 points)
-
-Additional points are added to all "Chargeable" crashes based on the severity of the crash as follows:
-1. Damage to the city vehicle that is above $15,000 or renders the vehicle a total loss. (2 points)
-2. Damage to the city vehicle that exceeds $5,000 but not $15,000 in repair costs. (1 point)
-3. The crash resulted in serious bodily injury, excluding death, to any person(s). (minimum 2 points)
-4. The crash resulted in bodily injury to any person(s). (1 point)
-5. If unsafe speed and/or operation is determined to be a contributing factors. (minimum 1 point)
-6. If a Chargeable crash results in a death, no point value is assessed. The Chief of Police administers discipline he deems appropriate.
-
-Based on the sworn member's cumulative point assessment total, CERB recommends disciplinary action to the Chief of Police as follows:
-- 1 to 2 points: Written Counseling
-- 3 points: Written Reprimand
-- 4 points: One (1) day suspension
-- 5 points: Three (3) day suspension
-- 6 points: Five (5) day suspension
-- 7 points: Ten (10) day suspension
-- 8 points or more: A minimum fifteen (15) day suspension with the possibility of an indefinite suspension or job reassignment`
-            }
-        ]
+            <h3>References</h3>
+            <p>Texas Local Government Code, Chapter 143 (Civil Service for Municipalities)<br>
+            Police Officers' Bill of Rights<br>
+            City of San Antonio Personnel Policies<br>
+            SAPD General Manual, Various Procedures</p>
+        `
     },
-    
-    penalcode: {
-        title: "Texas Penal Code (Coming Soon)",
-        sections: [
-            {
-                id: "placeholder",
-                title: "Content Coming Soon",
-                content: "Penal code sections will be added when study materials are available in April/May 2026."
-            }
-        ]
+    {
+        title: "Procedure 501 - Use of Force (Coming Soon)",
+        content: `
+            <p style="text-align: center; color: #999; margin-top: 50px;">
+                This document will be added when study materials become available.
+            </p>
+        `
     },
-    
-    contract: {
-        title: "Collective Bargaining Agreement (Coming Soon)",
-        sections: [
-            {
-                id: "placeholder",
-                title: "Content Coming Soon",
-                content: "Contract provisions will be added when study materials are available in April/May 2026."
-            }
-        ]
+    {
+        title: "Procedure 204 - Patrol Procedures (Coming Soon)",
+        content: `
+            <p style="text-align: center; color: #999; margin-top: 50px;">
+                This document will be added when study materials become available.
+            </p>
+        `
     },
-    
-    textbook: {
-        title: "Supervision Textbook (Coming Soon)",
-        sections: [
-            {
-                id: "placeholder",
-                title: "Content Coming Soon",
-                content: "Textbook chapters will be added when study materials are available in April/May 2026."
-            }
-        ]
+    {
+        title: "Criminal Investigations Manual (Coming Soon)",
+        content: `
+            <p style="text-align: center; color: #999; margin-top: 50px;">
+                This document will be added when study materials become available.
+            </p>
+        `
     }
-};
+];
 
-// ===== QUIZ QUESTIONS =====
-const questions = [
+
+// ========================================
+// QUIZ QUESTIONS
+// ========================================
+// Add your practice questions here
+
+const QUIZ_QUESTIONS = [
     {
         type: 'multiple-choice',
-        category: 'manual',
-        question: 'Within what timeframe must line complaints be investigated?',
+        category: 'complaints',
+        question: 'Within how many calendar days must a Line Complaint investigation be completed?',
         options: [
-            '15 calendar days',
+            '14 calendar days',
             '21 calendar days',
-            '24 hours',
-            '30 calendar days'
+            '30 calendar days',
+            '180 calendar days'
         ],
-        correct: 1,
-        explanation: 'All line complaints shall be investigated by the officer\'s chain of command within twenty-one (21) calendar days from the date of the written complaint.',
-        reference: 'Procedure 303, Section .04'
+        correct: 1, // Index starts at 0, so 1 = "21 calendar days"
+        explanation: 'Line Complaints must be investigated by the immediate supervisor or chain of command and completed within 21 calendar days from the date the complaint was received. Extensions may be granted by the Deputy Chief for good cause.',
+        reference: 'Procedure 303, Section .04 - Line Complaint Investigation Process'
+    },
+    {
+        type: 'multiple-choice',
+        category: 'complaints',
+        question: 'Which type of complaint involves allegations that could result in suspension or dismissal?',
+        options: [
+            'Line Complaint',
+            'Anonymous Complaint',
+            'Formal Complaint',
+            'Administrative Complaint'
+        ],
+        correct: 2,
+        explanation: 'Formal Complaints involve allegations of serious misconduct that could result in suspension or dismissal, such as use of excessive force, criminal conduct, on-duty intoxication, domestic violence, or misuse of authority. These are investigated by Internal Affairs.',
+        reference: 'Procedure 303, Section .03 - Definitions'
+    },
+    {
+        type: 'multiple-choice',
+        category: 'complaints',
+        question: 'Who investigates Formal Complaints?',
+        options: [
+            'The accused member\'s immediate supervisor',
+            'The Division Commander',
+            'Internal Affairs',
+            'The Deputy Chief of Field Operations'
+        ],
+        correct: 2,
+        explanation: 'Formal Complaints must be investigated by Internal Affairs. The Deputy Chief of Management Services must be notified immediately upon receipt of any Formal Complaint.',
+        reference: 'Procedure 303, Section .04 - Formal Complaint Investigation Process'
     },
     {
         type: 'scenario',
-        category: 'manual',
-        scenario: 'You respond to a domestic disturbance at 0200 hours. Upon arrival, you observe a male subject with visible injuries and a female subject who appears agitated. The male states he was struck multiple times but refuses to press charges.',
-        question: 'What is your PRIMARY legal obligation?',
+        category: 'complaints',
+        question: 'You are a patrol supervisor. A citizen approaches you and states that an officer was rude to them during a traffic stop earlier today. The citizen wants to file a complaint but doesn\'t want to provide their name. What should you do?',
         options: [
-            'File a report and leave since the victim refuses to press charges',
-            'Arrest the female immediately for assault',
-            'Investigate, document injuries, and follow mandatory arrest provisions regardless of victim cooperation',
-            'Request the victim to call back if he changes his mind'
-        ],
-        correct: 2,
-        explanation: 'In domestic violence cases with visible injuries, officers must investigate and document, following mandatory arrest provisions regardless of victim cooperation.',
-        reference: 'Procedure 604.10'
-    },
-    {
-        type: 'multiple-choice',
-        category: 'manual',
-        question: 'How many members are needed for a quorum in the Police portion of CCARB?',
-        options: [
-            'Three (3) members',
-            'Five (5) members',
-            'Seven (7) members',
-            'Nine (9) members'
+            'Tell the citizen you cannot accept anonymous complaints',
+            'Accept the complaint and document it, but explain it may be difficult to fully investigate without their contact information',
+            'Refer the citizen to Internal Affairs since it\'s an anonymous complaint',
+            'Tell the citizen they must provide identification to file a complaint'
         ],
         correct: 1,
-        explanation: 'The Police portion of CCARB requires a quorum of five (5) members.',
-        reference: 'Procedure 303, Section .14'
+        explanation: 'Anonymous complaints must be accepted and documented. While it may be difficult to fully investigate without a complainant available for interview, supervisors must accept all complaints courteously and professionally. Members shall not require complainants to provide identification as a prerequisite to accepting a complaint.',
+        reference: 'Procedure 303, Section .04 - Anonymous Complaints and Accepting Complaints'
     },
     {
         type: 'multiple-choice',
-        category: 'manual',
-        question: 'How many members are needed for a quorum in CERB?',
+        category: 'complaints',
+        question: 'What finding indicates that the alleged act occurred but was justified, lawful, and proper?',
         options: [
-            'Two (2) members',
-            'Three (3) members',
-            'Five (5) members',
-            'Seven (7) members'
-        ],
-        correct: 1,
-        explanation: 'The Crash Evaluation and Review Board requires a quorum of three (3) members.',
-        reference: 'Procedure 303, Section .17'
-    },
-    {
-        type: 'multiple-choice',
-        category: 'manual',
-        question: 'What is the base point value for a Chargeable crash?',
-        options: [
-            '0 points',
-            '1 point',
-            '2 points',
-            '3 points'
+            'Sustained',
+            'Not Sustained',
+            'Exonerated',
+            'Unfounded'
         ],
         correct: 2,
-        explanation: 'A Chargeable crash carries a base point value of 2 points, with additional points added based on severity factors.',
-        reference: 'Procedure 303, Section .18'
+        explanation: 'Exonerated means the alleged act occurred, but the investigation revealed it was justified, lawful, and proper. This is different from Unfounded (the incident did not occur) or Not Sustained (insufficient evidence to prove or disprove).',
+        reference: 'Procedure 303, Section .04 - Findings and Dispositions'
     }
+
+    // ===== ADD MORE QUESTIONS HERE =====
+    // Copy the format above to add new questions
+    // Remember:
+    // - correct: uses index starting at 0 (so 0=first option, 1=second option, etc.)
+    // - category: 'complaints', 'use-of-force', 'patrol', 'investigations', etc.
+    // - type: 'multiple-choice' or 'scenario'
+    
 ];

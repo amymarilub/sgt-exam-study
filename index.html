@@ -695,6 +695,7 @@
                 <button class="mode-tab" data-mode="quiz">❓ Quiz Mode</button>
                 <button class="mode-tab" data-mode="review">⭐ Review Highlights</button>
                 <button class="mode-tab" data-mode="settings">⚙️ Settings</button>
+                <button class="mode-tab" data-mode="help">💡 How to Use</button>
             </div>
         </div>
 
@@ -848,6 +849,138 @@
                     <h3>🗑️ Reset Data</h3>
                     <p style="color: #b0b0b0; margin-bottom: 15px;">Clear all your progress, highlights, and settings.</p>
                     <button class="doc-btn secondary" onclick="resetAllData()">Reset Everything</button>
+                </div>
+            </div>
+
+            <!-- HELP MODE -->
+            <div class="mode-content" data-mode="help">
+                <div class="settings-panel">
+                    <h3>🎯 Welcome to SGT Exam Study Pro!</h3>
+                    <p style="color: #e0e0e0; line-height: 1.8; margin-bottom: 20px;">
+                        This app was custom-built to help you ace your sergeant promotional exam. Here's everything you need to know:
+                    </p>
+                </div>
+
+                <div class="settings-panel">
+                    <h3>📊 Dashboard</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 10px;">Your study command center:</p>
+                    <ul style="color: #e0e0e0; line-height: 1.8; margin-left: 20px;">
+                        <li><strong>Questions Studied:</strong> Total questions you've answered</li>
+                        <li><strong>Overall Accuracy:</strong> Your percentage of correct answers</li>
+                        <li><strong>Highlights Created:</strong> Sections you've marked important</li>
+                        <li><strong>Struggling Topics:</strong> Red highlights that need more review</li>
+                    </ul>
+                </div>
+
+                <div class="settings-panel">
+                    <h3>📖 Read & Study Mode</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 10px;">Load and study your materials:</p>
+                    <ul style="color: #e0e0e0; line-height: 1.8; margin-left: 20px;">
+                        <li><strong>Upload PDF:</strong> Click "Choose File" to upload Procedure 303, contracts, or textbooks</li>
+                        <li><strong>Or Paste Text:</strong> Copy/paste any study material</li>
+                        <li><strong>Read Aloud:</strong> Listen while driving, working out, or multitasking</li>
+                        <li><strong>Highlight:</strong> Select text, choose a color:
+                            <ul style="margin-left: 20px; margin-top: 5px;">
+                                <li>📌 <strong>Yellow</strong> = Important to remember</li>
+                                <li>⚠️ <strong>Red</strong> = Struggling, need more review</li>
+                                <li>✅ <strong>Green</strong> = Mastered this section</li>
+                                <li>❓ <strong>Blue</strong> = Question or need clarification</li>
+                            </ul>
+                        </li>
+                        <li><strong>Add Notes:</strong> Write reminders on any highlight</li>
+                    </ul>
+                </div>
+
+                <div class="settings-panel">
+                    <h3>❓ Quiz Mode</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 10px;">Test your knowledge:</p>
+                    <ul style="color: #e0e0e0; line-height: 1.8; margin-left: 20px;">
+                        <li><strong>Multiple Choice:</strong> 4-option questions from your study materials</li>
+                        <li><strong>Scenarios:</strong> Real-world situations testing your judgment</li>
+                        <li><strong>Immediate Feedback:</strong> See if you're right or wrong instantly</li>
+                        <li><strong>Explanations:</strong> Learn WHY the answer is correct</li>
+                        <li><strong>References:</strong> See exactly where info comes from</li>
+                        <li><strong>Read Aloud:</strong> Have questions spoken to you</li>
+                        <li><strong>Review Source:</strong> Jump back to highlighted material</li>
+                    </ul>
+                    <p style="color: #ffc107; margin-top: 15px; padding: 15px; background: #3d3d3d; border-radius: 8px; border-left: 4px solid #ffc107;">
+                        <strong>Note:</strong> App currently includes 5 sample questions. More questions will be added as study materials become available in April/May.
+                    </p>
+                </div>
+
+                <div class="settings-panel">
+                    <h3>⭐ Review Highlights</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 10px;">See all your marked sections:</p>
+                    <ul style="color: #e0e0e0; line-height: 1.8; margin-left: 20px;">
+                        <li><strong>Organized by Color:</strong> Red, Yellow, Green, Blue sections</li>
+                        <li><strong>Quick Access:</strong> Tap any highlight to jump to it</li>
+                        <li><strong>See Your Notes:</strong> All your comments in one place</li>
+                        <li><strong>Track Progress:</strong> Watch red turn to yellow turn to green</li>
+                    </ul>
+                </div>
+
+                <div class="settings-panel">
+                    <h3>⚙️ Settings</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 10px;">Customize your experience:</p>
+                    <ul style="color: #e0e0e0; line-height: 1.8; margin-left: 20px;">
+                        <li><strong>Voice:</strong> Choose male/female voice for text-to-speech</li>
+                        <li><strong>Speed:</strong> 0.75x - 1.5x playback speed</li>
+                        <li><strong>Test Voice:</strong> Hear how it sounds before studying</li>
+                        <li><strong>Category Filter:</strong> Focus on specific topics</li>
+                        <li><strong>Reset Data:</strong> Start fresh if needed</li>
+                    </ul>
+                </div>
+
+                <div class="settings-panel">
+                    <h3>📱 Pro Tips</h3>
+                    <ul style="color: #e0e0e0; line-height: 1.8; margin-left: 20px;">
+                        <li><strong>Add to Home Screen:</strong> Use your browser's "Add to Home Screen" feature for quick access</li>
+                        <li><strong>Works Offline:</strong> Once loaded, use anywhere without internet</li>
+                        <li><strong>Study in Chunks:</strong> Use audio while doing other tasks, quiz when focused</li>
+                        <li><strong>Focus on Red:</strong> Your red highlights show what needs the most attention</li>
+                        <li><strong>Daily Practice:</strong> Even 10 minutes a day builds long-term retention</li>
+                        <li><strong>All Data Private:</strong> Everything stays on your device, nothing uploaded</li>
+                    </ul>
+                </div>
+
+                <div class="settings-panel">
+                    <h3>🚀 Recommended Study Workflow</h3>
+                    <div style="color: #e0e0e0; line-height: 1.8;">
+                        <p style="margin-bottom: 15px;"><strong>Week 1-2: Load & Highlight</strong></p>
+                        <ol style="margin-left: 20px; margin-bottom: 20px;">
+                            <li>Upload all study PDFs</li>
+                            <li>Listen to each section with text-to-speech</li>
+                            <li>Highlight important parts in yellow</li>
+                            <li>Mark confusing sections in red</li>
+                        </ol>
+
+                        <p style="margin-bottom: 15px;"><strong>Week 3-4: Quiz & Review</strong></p>
+                        <ol style="margin-left: 20px; margin-bottom: 20px;">
+                            <li>Take practice quizzes daily</li>
+                            <li>Review red highlights from Dashboard</li>
+                            <li>Re-read sections you got wrong</li>
+                            <li>Change red to yellow when you understand it</li>
+                        </ol>
+
+                        <p style="margin-bottom: 15px;"><strong>Final Week: Master & Polish</strong></p>
+                        <ol style="margin-left: 20px;">
+                            <li>Focus only on remaining red highlights</li>
+                            <li>Take full quiz multiple times</li>
+                            <li>Aim for 90%+ accuracy</li>
+                            <li>Change yellows to green as you master them</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="settings-panel" style="background: #667eea; border: none;">
+                    <h3 style="color: white;">💪 You've Got This!</h3>
+                    <p style="color: white; line-height: 1.8;">
+                        This tool gives you everything you need to dominate the SGT exam. Study smart, stay consistent, and trust the process. 
+                        You're going to crush it! 🎯
+                    </p>
+                    <p style="color: white; margin-top: 15px; font-style: italic;">
+                        Built with ❤️ by Amy for Phillip's promotional exam - April 2026
+                    </p>
                 </div>
             </div>
         </div>

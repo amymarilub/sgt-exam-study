@@ -25,7 +25,6 @@
             margin: 0 auto;
         }
 
-        /* Header */
         .header {
             background: #2d2d2d;
             padding: 20px;
@@ -45,6 +44,7 @@
             display: flex;
             gap: 10px;
             overflow-x: auto;
+            padding-bottom: 5px;
         }
 
         .mode-tab {
@@ -70,7 +70,6 @@
             color: white;
         }
 
-        /* Main Content Area */
         .content {
             padding: 20px;
         }
@@ -83,7 +82,6 @@
             display: block;
         }
 
-        /* Stats Dashboard */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -110,22 +108,35 @@
             color: #b0b0b0;
         }
 
-        .progress-bar {
-            width: 100%;
-            height: 8px;
+        .document-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .doc-tab {
+            padding: 12px 24px;
             background: #3d3d3d;
-            border-radius: 4px;
-            margin-top: 10px;
-            overflow: hidden;
+            border: 2px solid #3d3d3d;
+            border-radius: 8px;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            transition: all 0.2s;
         }
 
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            transition: width 0.3s;
+        .doc-tab:hover {
+            background: #4d4d4d;
         }
 
-        /* Document Reader */
+        .doc-tab.active {
+            background: #667eea;
+            border-color: #667eea;
+            color: white;
+        }
+
         .document-area {
             background: #2d2d2d;
             border-radius: 12px;
@@ -138,10 +149,68 @@
             gap: 10px;
             margin-bottom: 20px;
             flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 40px 12px 15px;
+            background: #3d3d3d;
+            border: 2px solid #4d4d4d;
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .search-clear {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #b0b0b0;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        .search-results {
+            font-size: 12px;
+            color: #667eea;
+            margin-left: 10px;
+        }
+
+        .section-nav {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .section-nav select {
+            width: 100%;
+            padding: 12px;
+            background: #3d3d3d;
+            border: 2px solid #4d4d4d;
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
         }
 
         .doc-btn {
-            padding: 10px 20px;
+            padding: 12px 20px;
             background: #667eea;
             color: white;
             border: none;
@@ -150,6 +219,7 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
             transition: all 0.2s;
+            font-size: 14px;
         }
 
         .doc-btn:hover {
@@ -165,34 +235,35 @@
             background: #4d4d4d;
         }
 
-        #documentText {
-            width: 100%;
-            min-height: 400px;
-            background: #252525;
-            border: 2px solid #3d3d3d;
-            border-radius: 8px;
-            padding: 20px;
-            color: #e0e0e0;
-            font-size: 16px;
-            line-height: 1.8;
-            resize: vertical;
-            font-family: 'Poppins', sans-serif;
-        }
-
         .document-display {
             background: #252525;
             border: 2px solid #3d3d3d;
             border-radius: 8px;
             padding: 30px;
             line-height: 1.8;
-            font-size: 16px;
+            font-size: 15px;
             max-height: 600px;
             overflow-y: auto;
             user-select: text;
         }
 
+        .document-display h4 {
+            color: #667eea;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
         .document-display p {
             margin-bottom: 15px;
+        }
+
+        .document-display ul {
+            margin: 10px 0 15px 25px;
+        }
+
+        .document-display li {
+            margin-bottom: 8px;
         }
 
         .highlight {
@@ -222,24 +293,51 @@
             border-bottom: 2px solid #2196f3;
         }
 
-        .highlight-note {
-            display: none;
-            position: absolute;
+        .search-highlight {
+            background: rgba(255, 235, 59, 0.5);
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .highlight-menu {
+            position: fixed;
             background: #1a1a1a;
-            border: 2px solid #667eea;
-            border-radius: 8px;
+            border: 3px solid #667eea;
+            border-radius: 12px;
             padding: 10px;
-            font-size: 12px;
-            z-index: 10;
-            max-width: 250px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 10000;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+            gap: 8px;
         }
 
-        .highlight:hover .highlight-note {
-            display: block;
+        .highlight-menu.active {
+            display: flex;
         }
 
-        /* Quiz Mode */
+        .highlight-color-btn {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #2d2d2d;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .highlight-color-btn:hover {
+            border-color: white;
+            transform: scale(1.15);
+        }
+
+        .highlight-color-btn.yellow { background: #ffc107; }
+        .highlight-color-btn.red { background: #f44336; }
+        .highlight-color-btn.green { background: #4caf50; }
+        .highlight-color-btn.blue { background: #2196f3; }
+
         .quiz-container {
             background: #2d2d2d;
             border-radius: 12px;
@@ -257,28 +355,6 @@
             border-bottom: 2px solid #3d3d3d;
         }
 
-        .question-number {
-            font-size: 14px;
-            color: #b0b0b0;
-        }
-
-        .question-category {
-            background: #667eea;
-            padding: 5px 12px;
-            border-radius: 6px;
-            font-size: 12px;
-            color: white;
-        }
-
-        .scenario-badge {
-            background: #ff6b6b;
-            padding: 5px 12px;
-            border-radius: 6px;
-            font-size: 12px;
-            color: white;
-            margin-left: 10px;
-        }
-
         .question-text {
             font-size: 20px;
             line-height: 1.6;
@@ -293,7 +369,6 @@
             border-left: 4px solid #667eea;
             margin-bottom: 20px;
             font-style: italic;
-            color: #e0e0e0;
         }
 
         .options {
@@ -335,12 +410,6 @@
             background: rgba(244, 67, 54, 0.2);
         }
 
-        .option-letter {
-            font-weight: bold;
-            color: #667eea;
-            min-width: 24px;
-        }
-
         .feedback {
             background: #3d3d3d;
             padding: 20px;
@@ -349,31 +418,8 @@
             border-left: 4px solid #667eea;
         }
 
-        .feedback.correct {
-            border-left-color: #4caf50;
-        }
-
-        .feedback.incorrect {
-            border-left-color: #f44336;
-        }
-
-        .feedback-title {
-            font-weight: bold;
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-
-        .feedback-text {
-            color: #b0b0b0;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-
-        .feedback-reference {
-            font-size: 12px;
-            color: #667eea;
-            font-style: italic;
-        }
+        .feedback.correct { border-left-color: #4caf50; }
+        .feedback.incorrect { border-left-color: #f44336; }
 
         .quiz-actions {
             display: flex;
@@ -399,17 +445,9 @@
             color: white;
         }
 
-        .quiz-btn.primary:hover {
-            background: #5568d3;
-        }
-
         .quiz-btn.secondary {
             background: #3d3d3d;
             color: #e0e0e0;
-        }
-
-        .quiz-btn.secondary:hover {
-            background: #4d4d4d;
         }
 
         .quiz-btn:disabled {
@@ -417,7 +455,6 @@
             cursor: not-allowed;
         }
 
-        /* Settings Panel */
         .settings-panel {
             background: #2d2d2d;
             border-radius: 12px;
@@ -428,72 +465,13 @@
         .settings-panel h3 {
             color: #667eea;
             margin-bottom: 15px;
-            font-size: 18px;
         }
 
-        .setting-group {
-            margin-bottom: 20px;
-        }
-
-        .setting-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            color: #b0b0b0;
-        }
-
-        .setting-group select,
-        .setting-group input {
-            width: 100%;
-            padding: 12px;
-            background: #3d3d3d;
-            border: 2px solid #4d4d4d;
-            border-radius: 8px;
-            color: #e0e0e0;
-            font-size: 16px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .audio-controls {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .audio-btn {
-            flex: 1;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .audio-btn.speak {
-            background: #4CAF50;
-            color: white;
-        }
-
-        .audio-btn.stop {
-            background: #f44336;
-            color: white;
-        }
-
-        /* Review Panel */
         .review-section {
             background: #2d2d2d;
             border-radius: 12px;
             padding: 20px;
             margin-bottom: 20px;
-        }
-
-        .review-section h3 {
-            color: #667eea;
-            margin-bottom: 15px;
         }
 
         .highlight-list {
@@ -511,587 +489,195 @@
             transition: all 0.2s;
         }
 
-        .highlight-item:hover {
-            background: #4d4d4d;
-        }
+        .highlight-item.red { border-left-color: #f44336; }
+        .highlight-item.yellow { border-left-color: #ffc107; }
+        .highlight-item.green { border-left-color: #4caf50; }
+        .highlight-item.blue { border-left-color: #2196f3; }
 
-        .highlight-item.red {
-            border-left-color: #f44336;
-        }
-
-        .highlight-item.yellow {
-            border-left-color: #ffc107;
-        }
-
-        .highlight-item.green {
-            border-left-color: #4caf50;
-        }
-
-        .highlight-item.blue {
-            border-left-color: #2196f3;
-        }
-
-        .highlight-preview {
-            font-size: 14px;
-            color: #e0e0e0;
-            margin-bottom: 5px;
-        }
-
-        .highlight-meta {
-            font-size: 12px;
-            color: #b0b0b0;
-        }
-
-        /* Empty State */
         .empty-state {
             text-align: center;
             padding: 60px 20px;
             color: #b0b0b0;
         }
 
-        .empty-state-icon {
-            font-size: 64px;
-            margin-bottom: 20px;
-        }
-
-        .empty-state h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #e0e0e0;
-        }
-
-        .empty-state p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            .header {
-                padding: 15px;
-            }
-
-            .header h1 {
-                font-size: 20px;
-            }
-
-            .content {
-                padding: 15px;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .quiz-container {
-                padding: 20px;
-            }
-
-            .question-text {
-                font-size: 18px;
-            }
-
             .document-display {
                 padding: 20px;
+                font-size: 14px;
             }
-        }
-
-        /* Complete Message */
-        .complete-message {
-            background: #2d2d2d;
-            padding: 40px;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        .complete-message h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-        }
-
-        .complete-message p {
-            color: #b0b0b0;
-            line-height: 1.6;
-        }
-
-        /* Highlight Menu */
-        .highlight-menu {
-            position: fixed;
-            background: #1a1a1a;
-            border: 3px solid #667eea;
-            border-radius: 12px;
-            padding: 10px;
-            display: none;
-            z-index: 10000;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
-            gap: 8px;
-        }
-
-        .highlight-menu.active {
-            display: flex;
-        }
-
-        .highlight-color-btn {
-            width: 40px;
-            height: 40px;
-            border: 3px solid #2d2d2d;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.2s;
-            position: relative;
-        }
-
-        .highlight-color-btn:hover {
-            border-color: white;
-            transform: scale(1.15);
-        }
-
-        .highlight-color-btn:active {
-            transform: scale(0.95);
-        }
-
-        .highlight-color-btn::after {
-            content: attr(title);
-            position: absolute;
-            bottom: -25px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 10px;
-            color: #b0b0b0;
-            white-space: nowrap;
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-
-        .highlight-color-btn:hover::after {
-            opacity: 1;
-        }
-
-        .highlight-color-btn.yellow {
-            background: #ffc107;
-        }
-
-        .highlight-color-btn.red {
-            background: #f44336;
-        }
-
-        .highlight-color-btn.green {
-            background: #4caf50;
-        }
-
-        .highlight-color-btn.blue {
-            background: #2196f3;
         }
     </style>
 </head>
 <body>
     <div class="app-container">
-        <!-- Header -->
         <div class="header">
             <h1>🎯 SGT Exam Study Pro</h1>
             <div class="mode-tabs">
                 <button class="mode-tab active" data-mode="dashboard">📊 Dashboard</button>
                 <button class="mode-tab" data-mode="reader">📖 Read & Study</button>
-                <button class="mode-tab" data-mode="quiz">❓ Quiz Mode</button>
-                <button class="mode-tab" data-mode="review">⭐ Review Highlights</button>
+                <button class="mode-tab" data-mode="quiz">❓ Quiz</button>
+                <button class="mode-tab" data-mode="review">⭐ Review</button>
                 <button class="mode-tab" data-mode="settings">⚙️ Settings</button>
-                <button class="mode-tab" data-mode="help">💡 How to Use</button>
+                <button class="mode-tab" data-mode="help">💡 Help</button>
             </div>
         </div>
 
         <div class="content">
-            <!-- DASHBOARD MODE -->
+            <!-- DASHBOARD -->
             <div class="mode-content active" data-mode="dashboard">
                 <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-number" id="totalStudied">0</div>
                         <div class="stat-label">Questions Studied</div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 0%"></div>
-                        </div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number" id="accuracy">0%</div>
-                        <div class="stat-label">Overall Accuracy</div>
+                        <div class="stat-label">Accuracy</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number" id="highlightCount">0</div>
-                        <div class="stat-label">Highlights Created</div>
+                        <div class="stat-label">Highlights</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number" id="strugglingCount">0</div>
-                        <div class="stat-label">Struggling Topics</div>
+                        <div class="stat-label">Struggling</div>
                     </div>
                 </div>
 
                 <div class="review-section">
-                    <h3>⚠️ Needs Review (Red Highlights)</h3>
+                    <h3>⚠️ Needs Review</h3>
                     <div id="strugglingHighlights" class="highlight-list">
                         <div class="empty-state">
-                            <div class="empty-state-icon">📚</div>
-                            <h3>Start Studying!</h3>
-                            <p>Highlight sections you're struggling with in red, and they'll appear here for quick review.</p>
+                            <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
+                            <h3 style="color: #e0e0e0; margin-bottom: 10px;">Start Studying!</h3>
+                            <p>Red highlights will appear here.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- READER MODE -->
+            <!-- READ & STUDY -->
             <div class="mode-content" data-mode="reader">
-                <div class="settings-panel">
-                    <h3>📖 Document Reader</h3>
-                    
-                    <div class="setting-group">
-                        <label>Option 1: Upload PDF File</label>
-                        <input type="file" id="pdfUpload" accept=".pdf" onchange="handlePDFUpload(event)" style="margin-bottom: 10px;">
-                        <p style="font-size: 12px; color: #b0b0b0; margin-bottom: 15px;">Upload Procedure 303, contract, or textbook PDF</p>
-                    </div>
-
-                    <div style="text-align: center; margin: 15px 0; color: #666;">— OR —</div>
-
-                    <div class="setting-group">
-                        <label>Option 2: Paste Text Below</label>
-                        <textarea id="documentText" placeholder="Paste text from any study material. Then click 'Load Document' to start studying..."></textarea>
-                    </div>
-                    <div class="document-controls">
-                        <button class="doc-btn" onclick="loadDocument()">📄 Load Text</button>
-                        <button class="doc-btn secondary" onclick="clearDocument()">🗑️ Clear</button>
-                        <button class="doc-btn secondary" onclick="speakDocument()">🔊 Read Aloud</button>
-                        <button class="doc-btn secondary" onclick="stopSpeaking()">⏹️ Stop</button>
-                        <button class="doc-btn" onclick="generateQuestions()">🎯 Generate Quiz</button>
-                    </div>
+                <div class="document-tabs">
+                    <button class="doc-tab active" data-doc="procedure303" onclick="switchDocument('procedure303')">📘 General Manual</button>
+                    <button class="doc-tab" data-doc="penalcode" onclick="switchDocument('penalcode')">⚖️ Penal Code</button>
+                    <button class="doc-tab" data-doc="contract" onclick="switchDocument('contract')">📄 Contract</button>
+                    <button class="doc-tab" data-doc="textbook" onclick="switchDocument('textbook')">📚 Textbook</button>
                 </div>
 
-                <div class="document-area" id="documentDisplay" style="display: none;">
-                    <div style="background: #667eea; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
-                        <h3 style="color: white; margin-bottom: 8px;">💡 How to Highlight</h3>
-                        <p style="color: white; font-size: 14px; margin: 0;">
-                            <strong>Desktop:</strong> Select text with your mouse, then click a color<br>
-                            <strong>Mobile:</strong> Long-press and select text, then tap a color
-                        </p>
+                <div class="document-area">
+                    <div class="document-controls">
+                        <div class="search-box">
+                            <input type="text" class="search-input" id="searchInput" placeholder="🔍 Search..." oninput="searchDocument()">
+                            <button class="search-clear" id="searchClear" onclick="clearSearch()">×</button>
+                        </div>
+                        <span class="search-results" id="searchResults"></span>
+                        <div class="section-nav">
+                            <select id="sectionNav" onchange="jumpToSection()">
+                                <option value="">Jump to Section...</option>
+                            </select>
+                        </div>
+                        <button class="doc-btn secondary" onclick="speakDocument()">🔊</button>
+                        <button class="doc-btn secondary" onclick="stopSpeaking()">⏹️</button>
                     </div>
+
                     <div class="document-display" id="documentContent"></div>
                 </div>
 
                 <div class="highlight-menu" id="highlightMenu">
-                    <button class="highlight-color-btn yellow" onclick="highlightSelection('yellow')" title="Important">📌</button>
-                    <button class="highlight-color-btn red" onclick="highlightSelection('red')" title="Struggling">⚠️</button>
-                    <button class="highlight-color-btn green" onclick="highlightSelection('green')" title="Mastered">✅</button>
-                    <button class="highlight-color-btn blue" onclick="highlightSelection('blue')" title="Question">❓</button>
+                    <button class="highlight-color-btn yellow" onclick="highlightSelection('yellow')">📌</button>
+                    <button class="highlight-color-btn red" onclick="highlightSelection('red')">⚠️</button>
+                    <button class="highlight-color-btn green" onclick="highlightSelection('green')">✅</button>
+                    <button class="highlight-color-btn blue" onclick="highlightSelection('blue')">❓</button>
                 </div>
             </div>
 
-            <!-- QUIZ MODE -->
+            <!-- QUIZ -->
             <div class="mode-content" data-mode="quiz">
                 <div id="quizContainer"></div>
             </div>
 
-            <!-- REVIEW MODE -->
+            <!-- REVIEW -->
             <div class="mode-content" data-mode="review">
                 <div class="review-section">
-                    <h3>🔴 Struggling (Review More)</h3>
+                    <h3>🔴 Struggling</h3>
                     <div id="redHighlights" class="highlight-list"></div>
                 </div>
                 <div class="review-section">
-                    <h3>🟡 Important (Learning)</h3>
+                    <h3>🟡 Important</h3>
                     <div id="yellowHighlights" class="highlight-list"></div>
                 </div>
                 <div class="review-section">
-                    <h3>🟢 Mastered (Got It!)</h3>
+                    <h3>🟢 Mastered</h3>
                     <div id="greenHighlights" class="highlight-list"></div>
                 </div>
-                <div class="review-section">
-                    <h3>🔵 Questions/Notes</h3>
-                    <div id="blueHighlights" class="highlight-list"></div>
-                </div>
             </div>
 
-            <!-- SETTINGS MODE -->
+            <!-- SETTINGS -->
             <div class="mode-content" data-mode="settings">
                 <div class="settings-panel">
-                    <h3>🔊 Audio Settings</h3>
-                    <div class="setting-group">
-                        <label for="voiceSelect">Voice:</label>
-                        <select id="voiceSelect">
-                            <option value="">Loading voices...</option>
-                        </select>
-                    </div>
-                    <div class="setting-group">
-                        <label for="speedSelect">Speed:</label>
-                        <select id="speedSelect">
-                            <option value="0.75">0.75x (Slow)</option>
-                            <option value="1" selected>1.0x (Normal)</option>
-                            <option value="1.25">1.25x (Fast)</option>
-                            <option value="1.5">1.5x (Faster)</option>
-                        </select>
-                    </div>
-                    <div class="audio-controls">
-                        <button class="audio-btn speak" onclick="testVoice()">🔊 Test Voice</button>
-                        <button class="audio-btn stop" onclick="stopSpeaking()">⏹️ Stop</button>
-                    </div>
+                    <h3>🔊 Audio</h3>
+                    <select id="voiceSelect" style="width: 100%; padding: 12px; background: #3d3d3d; border: 2px solid #4d4d4d; border-radius: 8px; color: #e0e0e0; margin-bottom: 15px;">
+                        <option value="">Loading...</option>
+                    </select>
+                    <select id="speedSelect" style="width: 100%; padding: 12px; background: #3d3d3d; border: 2px solid #4d4d4d; border-radius: 8px; color: #e0e0e0; margin-bottom: 15px;">
+                        <option value="0.75">0.75x</option>
+                        <option value="1" selected>1.0x</option>
+                        <option value="1.25">1.25x</option>
+                        <option value="1.5">1.5x</option>
+                    </select>
+                    <button class="doc-btn" onclick="testVoice()">Test Voice</button>
                 </div>
-
                 <div class="settings-panel">
-                    <h3>📚 Study Settings</h3>
-                    <div class="setting-group">
-                        <label for="categoryFilter">Filter by Category:</label>
-                        <select id="categoryFilter">
-                            <option value="all">All Categories</option>
-                            <option value="manual">General Manual</option>
-                            <option value="penal">Penal Code</option>
-                            <option value="contract">Contract</option>
-                            <option value="textbook">Textbook</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="settings-panel">
-                    <h3>🗑️ Reset Data</h3>
-                    <p style="color: #b0b0b0; margin-bottom: 15px;">Clear all your progress, highlights, and settings.</p>
-                    <button class="doc-btn secondary" onclick="resetAllData()">Reset Everything</button>
+                    <h3>🗑️ Reset</h3>
+                    <button class="doc-btn secondary" onclick="resetAllData()">Reset All Data</button>
                 </div>
             </div>
 
-            <!-- HELP MODE -->
+            <!-- HELP -->
             <div class="mode-content" data-mode="help">
                 <div class="settings-panel">
-                    <h3>🎯 Welcome to SGT Exam Study Pro!</h3>
-                    <p style="color: #e0e0e0; line-height: 1.8; margin-bottom: 20px;">
-                        This app was custom-built to help you ace your sergeant promotional exam. Here's everything you need to know:
+                    <h3>🎯 Quick Guide</h3>
+                    <p style="line-height: 1.8; color: #e0e0e0;">
+                        <strong>📖 Read & Study:</strong> Click document tabs, search keywords, highlight text (yellow=important, red=struggling, green=mastered, blue=question).<br><br>
+                        <strong>❓ Quiz:</strong> Test yourself with practice questions.<br><br>
+                        <strong>⭐ Review:</strong> See all your highlights organized by color.<br><br>
+                        <strong>🔊 Audio:</strong> Listen to any document with text-to-speech.
                     </p>
                 </div>
-
-                <div class="settings-panel">
-                    <h3>📊 Dashboard</h3>
-                    <p style="color: #b0b0b0; margin-bottom: 10px;">Your study command center:</p>
-                    <ul style="color: #e0e0e0; line-height: 1.8; margin-left: 20px;">
-                        <li><strong>Questions Studied:</strong> Total questions you've answered</li>
-                        <li><strong>Overall Accuracy:</strong> Your percentage of correct answers</li>
-                        <li><strong>Highlights Created:</strong> Sections you've marked important</li>
-                        <li><strong>Struggling Topics:</strong> Red highlights that need more review</li>
-                    </ul>
-                </div>
-
-                <div class="settings-panel">
-                    <h3>📖 Read & Study Mode</h3>
-                    <p style="color: #b0b0b0; margin-bottom: 10px;">Load and study your materials:</p>
-                    <ul style="color: #e0e0e0; line-height: 1.8; margin-left: 20px;">
-                        <li><strong>Upload PDF:</strong> Click "Choose File" to upload Procedure 303, contracts, or textbooks</li>
-                        <li><strong>Or Paste Text:</strong> Copy/paste any study material</li>
-                        <li><strong>Read Aloud:</strong> Listen while driving, working out, or multitasking</li>
-                        <li><strong>Highlight:</strong> Select text, choose a color:
-                            <ul style="margin-left: 20px; margin-top: 5px;">
-                                <li>📌 <strong>Yellow</strong> = Important to remember</li>
-                                <li>⚠️ <strong>Red</strong> = Struggling, need more review</li>
-                                <li>✅ <strong>Green</strong> = Mastered this section</li>
-                                <li>❓ <strong>Blue</strong> = Question or need clarification</li>
-                            </ul>
-                        </li>
-                        <li><strong>Add Notes:</strong> Write reminders on any highlight</li>
-                    </ul>
-                </div>
-
-                <div class="settings-panel">
-                    <h3>❓ Quiz Mode</h3>
-                    <p style="color: #b0b0b0; margin-bottom: 10px;">Test your knowledge:</p>
-                    <ul style="color: #e0e0e0; line-height: 1.8; margin-left: 20px;">
-                        <li><strong>Multiple Choice:</strong> 4-option questions from your study materials</li>
-                        <li><strong>Scenarios:</strong> Real-world situations testing your judgment</li>
-                        <li><strong>Immediate Feedback:</strong> See if you're right or wrong instantly</li>
-                        <li><strong>Explanations:</strong> Learn WHY the answer is correct</li>
-                        <li><strong>References:</strong> See exactly where info comes from</li>
-                        <li><strong>Read Aloud:</strong> Have questions spoken to you</li>
-                        <li><strong>Review Source:</strong> Jump back to highlighted material</li>
-                    </ul>
-                    <p style="color: #ffc107; margin-top: 15px; padding: 15px; background: #3d3d3d; border-radius: 8px; border-left: 4px solid #ffc107;">
-                        <strong>Note:</strong> App currently includes 5 sample questions. More questions will be added as study materials become available in April/May.
-                    </p>
-                </div>
-
-                <div class="settings-panel">
-                    <h3>⭐ Review Highlights</h3>
-                    <p style="color: #b0b0b0; margin-bottom: 10px;">See all your marked sections:</p>
-                    <ul style="color: #e0e0e0; line-height: 1.8; margin-left: 20px;">
-                        <li><strong>Organized by Color:</strong> Red, Yellow, Green, Blue sections</li>
-                        <li><strong>Quick Access:</strong> Tap any highlight to jump to it</li>
-                        <li><strong>See Your Notes:</strong> All your comments in one place</li>
-                        <li><strong>Track Progress:</strong> Watch red turn to yellow turn to green</li>
-                    </ul>
-                </div>
-
-                <div class="settings-panel">
-                    <h3>⚙️ Settings</h3>
-                    <p style="color: #b0b0b0; margin-bottom: 10px;">Customize your experience:</p>
-                    <ul style="color: #e0e0e0; line-height: 1.8; margin-left: 20px;">
-                        <li><strong>Voice:</strong> Choose male/female voice for text-to-speech</li>
-                        <li><strong>Speed:</strong> 0.75x - 1.5x playback speed</li>
-                        <li><strong>Test Voice:</strong> Hear how it sounds before studying</li>
-                        <li><strong>Category Filter:</strong> Focus on specific topics</li>
-                        <li><strong>Reset Data:</strong> Start fresh if needed</li>
-                    </ul>
-                </div>
-
-                <div class="settings-panel">
-                    <h3>📱 Pro Tips</h3>
-                    <ul style="color: #e0e0e0; line-height: 1.8; margin-left: 20px;">
-                        <li><strong>Add to Home Screen:</strong> Use your browser's "Add to Home Screen" feature for quick access</li>
-                        <li><strong>Works Offline:</strong> Once loaded, use anywhere without internet</li>
-                        <li><strong>Study in Chunks:</strong> Use audio while doing other tasks, quiz when focused</li>
-                        <li><strong>Focus on Red:</strong> Your red highlights show what needs the most attention</li>
-                        <li><strong>Daily Practice:</strong> Even 10 minutes a day builds long-term retention</li>
-                        <li><strong>All Data Private:</strong> Everything stays on your device, nothing uploaded</li>
-                    </ul>
-                </div>
-
-                <div class="settings-panel">
-                    <h3>🚀 Recommended Study Workflow</h3>
-                    <div style="color: #e0e0e0; line-height: 1.8;">
-                        <p style="margin-bottom: 15px;"><strong>Week 1-2: Load & Highlight</strong></p>
-                        <ol style="margin-left: 20px; margin-bottom: 20px;">
-                            <li>Upload all study PDFs</li>
-                            <li>Listen to each section with text-to-speech</li>
-                            <li>Highlight important parts in yellow</li>
-                            <li>Mark confusing sections in red</li>
-                        </ol>
-
-                        <p style="margin-bottom: 15px;"><strong>Week 3-4: Quiz & Review</strong></p>
-                        <ol style="margin-left: 20px; margin-bottom: 20px;">
-                            <li>Take practice quizzes daily</li>
-                            <li>Review red highlights from Dashboard</li>
-                            <li>Re-read sections you got wrong</li>
-                            <li>Change red to yellow when you understand it</li>
-                        </ol>
-
-                        <p style="margin-bottom: 15px;"><strong>Final Week: Master & Polish</strong></p>
-                        <ol style="margin-left: 20px;">
-                            <li>Focus only on remaining red highlights</li>
-                            <li>Take full quiz multiple times</li>
-                            <li>Aim for 90%+ accuracy</li>
-                            <li>Change yellows to green as you master them</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="settings-panel" style="background: #667eea; border: none;">
+                <div class="settings-panel" style="background: #667eea;">
                     <h3 style="color: white;">💪 You've Got This!</h3>
                     <p style="color: white; line-height: 1.8;">
-                        This tool gives you everything you need to dominate the SGT exam. Study smart, stay consistent, and trust the process. 
-                        You're going to crush it! 🎯
-                    </p>
-                    <p style="color: white; margin-top: 15px; font-style: italic;">
-                        Built with ❤️ by Amy for Phillip's promotional exam - April 2026
+                        Built with ❤️ by Amy for Phillip - April 2026
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        // ===== SAMPLE QUESTIONS - ADD YOUR OWN HERE =====
-        const questions = [
-            {
-                type: 'multiple-choice',
-                category: 'manual',
-                question: 'Within what timeframe must line complaints be investigated?',
-                options: [
-                    '15 calendar days',
-                    '21 calendar days',
-                    '24 hours',
-                    '30 calendar days'
-                ],
-                correct: 1,
-                explanation: 'Procedure 303 states that all line complaints shall be investigated by the officer\'s chain of command within twenty-one (21) calendar days from the date of the written complaint.',
-                reference: 'Procedure 303, Section .04(B)(1)'
-            },
-            {
-                type: 'scenario',
-                category: 'manual',
-                scenario: 'You respond to a domestic disturbance at 0200 hours. Upon arrival, you observe a male subject with visible injuries and a female subject who appears agitated. The male states he was struck multiple times but refuses to press charges.',
-                question: 'What is your PRIMARY legal obligation?',
-                options: [
-                    'File a report and leave since the victim refuses to press charges',
-                    'Arrest the female immediately for assault',
-                    'Investigate, document injuries, and follow mandatory arrest provisions regardless of victim cooperation',
-                    'Request the victim to call back if he changes his mind'
-                ],
-                correct: 2,
-                explanation: 'In domestic violence cases with visible injuries, many jurisdictions require mandatory arrest regardless of victim cooperation. Officers must: 1) Separate and interview parties individually, 2) Document all injuries with photos, 3) Collect witness statements, 4) Follow department policy on mandatory arrest, 5) Provide victim with resources.',
-                reference: 'Procedure 604.10'
-            },
-            {
-                type: 'multiple-choice',
-                category: 'manual',
-                question: 'How much advance notice must officers receive before being interrogated in an investigation?',
-                options: [
-                    '12 hours',
-                    '24 hours',
-                    '48 hours',
-                    '72 hours'
-                ],
-                correct: 1,
-                explanation: 'Officers under investigation shall be informed twenty-four (24) hours prior to being interrogated or asked to respond to an investigation and shall be provided with sufficient information to be reasonably apprised of the allegations.',
-                reference: 'Procedure 303, Section .09(E)(3)'
-            },
-            {
-                type: 'scenario',
-                category: 'manual',
-                scenario: 'During your shift, you are involved in a minor traffic dispute with your neighbor in your personal vehicle near your home. No law enforcement response is needed, but the situation is tense and your neighbor threatens to file a complaint.',
-                question: 'What is your reporting obligation?',
-                options: [
-                    'No reporting required since it occurred off-duty',
-                    'Report only if a formal complaint is actually filed',
-                    'Immediately self-report verbally and in writing to your supervisor on SAPD Form 200-OR',
-                    'Wait until your next shift to mention it casually'
-                ],
-                correct: 2,
-                explanation: 'Officers must immediately self-report to their immediate supervisor, verbally and in writing on SAPD Form 200-OR, any disturbances they are involved in that have the POTENTIAL to result in a law enforcement response or a complaint.',
-                reference: 'Procedure 303, Section .03(A)'
-            },
-            {
-                type: 'multiple-choice',
-                category: 'manual',
-                question: 'How many members are needed for a quorum in the Police portion of CCARB?',
-                options: [
-                    'Three (3) members',
-                    'Five (5) members',
-                    'Seven (7) members',
-                    'Nine (9) members'
-                ],
-                correct: 1,
-                explanation: 'The Police portion of the Chief\'s Complaint and Administrative Review Board requires a quorum of five (5) members.',
-                reference: 'Procedure 303, Section .14(A)(2)(c)'
-            }
-        ];
-        // ===== END SAMPLE QUESTIONS =====
+    <!-- Load external documents and questions -->
+    <script src="documents.js"></script>
 
-        // State management
+    <script>
         let currentMode = 'dashboard';
+        let currentDocument = 'procedure303';
         let currentQuestionIndex = 0;
         let selectedAnswer = null;
         let showingFeedback = false;
-        let stats = {
-            studied: 0,
-            correct: 0,
-            total: 0
-        };
+        let stats = { studied: 0, correct: 0, total: 0 };
         let highlights = [];
-        let documentLoaded = false;
-
-        // Text-to-Speech
         let speechSynth = window.speechSynthesis;
         let voices = [];
-        let currentUtterance = null;
 
-        // Initialize
         function init() {
             loadVoices();
             loadProgress();
             updateStats();
+            switchDocument('procedure303');
             setupModeListeners();
             setupTextSelection();
         }
 
-        // Mode switching
         function setupModeListeners() {
             document.querySelectorAll('.mode-tab').forEach(tab => {
                 tab.addEventListener('click', () => {
@@ -1103,210 +689,71 @@
 
         function switchMode(mode) {
             currentMode = mode;
-            
-            document.querySelectorAll('.mode-tab').forEach(tab => {
-                tab.classList.remove('active');
-                if (tab.dataset.mode === mode) {
-                    tab.classList.add('active');
-                }
-            });
-            
-            document.querySelectorAll('.mode-content').forEach(content => {
-                content.classList.remove('active');
-                if (content.dataset.mode === mode) {
-                    content.classList.add('active');
-                }
-            });
+            document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`[data-mode="${mode}"]`).classList.add('active');
+            document.querySelectorAll('.mode-content').forEach(c => c.classList.remove('active'));
+            document.querySelector(`.mode-content[data-mode="${mode}"]`).classList.add('active');
 
-            if (mode === 'quiz') {
-                startQuiz();
-            } else if (mode === 'review') {
-                loadReviewHighlights();
-            } else if (mode === 'dashboard') {
-                updateDashboard();
-            }
+            if (mode === 'quiz') startQuiz();
+            else if (mode === 'review') loadReviewHighlights();
+            else if (mode === 'dashboard') updateDashboard();
         }
 
-        // Voice loading
-        function loadVoices() {
-            voices = speechSynth.getVoices();
-            const voiceSelect = document.getElementById('voiceSelect');
-            voiceSelect.innerHTML = '';
-            
-            const englishVoices = voices.filter(v => v.lang.startsWith('en'));
-            
-            if (englishVoices.length === 0) {
-                voiceSelect.innerHTML = '<option value="">Default Voice</option>';
+        function switchDocument(docId) {
+            currentDocument = docId;
+            document.querySelectorAll('.doc-tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`[data-doc="${docId}"]`).classList.add('active');
+
+            const doc = documents[docId];
+            if (!doc) {
+                document.getElementById('documentContent').innerHTML = '<p style="color: #b0b0b0;">Document coming soon...</p>';
                 return;
             }
 
-            englishVoices.forEach((voice, index) => {
-                const option = document.createElement('option');
-                option.value = index;
-                option.textContent = `${voice.name} (${voice.lang})`;
-                voiceSelect.appendChild(option);
+            let html = `<h3 style="color: #667eea; margin-bottom: 20px;">${doc.title}</h3>`;
+            doc.sections.forEach(section => {
+                html += `<h4 id="${section.id}">${section.title}</h4>`;
+                html += `<p>${section.content.replace(/\n\n/g, '</p><p>')}</p>`;
+            });
+
+            document.getElementById('documentContent').innerHTML = html;
+
+            const select = document.getElementById('sectionNav');
+            select.innerHTML = '<option value="">Jump to Section...</option>';
+            doc.sections.forEach(section => {
+                select.innerHTML += `<option value="${section.id}">${section.title}</option>`;
             });
         }
 
-        if (speechSynth.onvoiceschanged !== undefined) {
-            speechSynth.onvoiceschanged = loadVoices;
-        }
-
-        function speak(text) {
-            stopSpeaking();
-            
-            const utterance = new SpeechSynthesisUtterance(text);
-            const speed = parseFloat(document.getElementById('speedSelect').value);
-            utterance.rate = speed;
-            
-            const voiceSelect = document.getElementById('voiceSelect');
-            const selectedVoice = voiceSelect.value;
-            if (selectedVoice && voices[selectedVoice]) {
-                utterance.voice = voices[selectedVoice];
-            }
-            
-            currentUtterance = utterance;
-            speechSynth.speak(utterance);
-        }
-
-        function stopSpeaking() {
-            speechSynth.cancel();
-            currentUtterance = null;
-        }
-
-        function testVoice() {
-            speak('This is a test of the text to speech voice. You can adjust the speed and voice in the settings.');
-        }
-
-        // Document functions
-        async function handlePDFUpload(event) {
-            const file = event.target.files[0];
-            if (!file) return;
-
-            if (file.type !== 'application/pdf') {
-                alert('Please upload a PDF file.');
-                return;
-            }
-
-            // Show loading message
-            const loadingMsg = document.createElement('div');
-            loadingMsg.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #2d2d2d; padding: 30px; border-radius: 12px; z-index: 1000; text-align: center;';
-            loadingMsg.innerHTML = '<h3 style="color: #667eea; margin-bottom: 10px;">📄 Loading PDF...</h3><p style="color: #b0b0b0;">This may take a moment for large files.</p>';
-            document.body.appendChild(loadingMsg);
-
-            try {
-                // Read PDF using browser's built-in capabilities
-                const arrayBuffer = await file.arrayBuffer();
-                const uint8Array = new Uint8Array(arrayBuffer);
-                
-                // Use PDF.js from CDN
-                if (!window.pdfjsLib) {
-                    // Load PDF.js library
-                    const script = document.createElement('script');
-                    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
-                    document.head.appendChild(script);
-                    
-                    await new Promise((resolve) => {
-                        script.onload = resolve;
-                    });
-                    
-                    // Set worker
-                    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-                }
-
-                const pdf = await pdfjsLib.getDocument(uint8Array).promise;
-                let fullText = '';
-
-                // Extract text from all pages
-                for (let i = 1; i <= pdf.numPages; i++) {
-                    const page = await pdf.getPage(i);
-                    const textContent = await page.getTextContent();
-                    const pageText = textContent.items.map(item => item.str).join(' ');
-                    fullText += pageText + '\n\n';
-                }
-
-                document.body.removeChild(loadingMsg);
-
-                if (!fullText.trim()) {
-                    alert('Could not extract text from PDF. The PDF might be scanned images. Try copy/pasting the text instead.');
-                    return;
-                }
-
-                // Load the extracted text
-                document.getElementById('documentText').value = fullText;
-                loadDocument();
-                
-                alert(`✅ PDF loaded successfully! Extracted ${pdf.numPages} pages. You can now highlight and study.`);
-
-            } catch (error) {
-                document.body.removeChild(loadingMsg);
-                console.error('PDF Error:', error);
-                alert('Error reading PDF. Try copy/pasting the text instead, or make sure the PDF is not password-protected.');
+        function jumpToSection() {
+            const sectionId = document.getElementById('sectionNav').value;
+            if (sectionId) {
+                document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
             }
         }
 
-        function loadDocument() {
-            const text = document.getElementById('documentText').value.trim();
-            if (!text) {
-                alert('Please paste some text first!');
-                return;
-            }
-
+        function searchDocument() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
             const content = document.getElementById('documentContent');
-            const paragraphs = text.split('\n\n').filter(p => p.trim());
             
-            content.innerHTML = paragraphs.map((p, i) => 
-                `<p data-paragraph="${i}">${p}</p>`
-            ).join('');
-
-            document.getElementById('documentDisplay').style.display = 'block';
-            documentLoaded = true;
-            
-            alert('Document loaded! Select any text and choose a highlight color.');
-        }
-
-        function clearDocument() {
-            if (confirm('Clear document and all highlights?')) {
-                document.getElementById('documentText').value = '';
-                document.getElementById('documentContent').innerHTML = '';
-                document.getElementById('documentDisplay').style.display = 'none';
-                documentLoaded = false;
-                highlights = [];
-                saveProgress();
-            }
-        }
-
-        function speakDocument() {
-            if (!documentLoaded) {
-                alert('Load a document first!');
+            if (!query) {
+                clearSearch();
                 return;
             }
-            
-            const text = document.getElementById('documentContent').innerText;
-            speak(text);
+
+            const text = content.innerText;
+            const matches = (text.match(new RegExp(query, 'gi')) || []).length;
+            document.getElementById('searchResults').textContent = matches ? `${matches} match${matches > 1 ? 'es' : ''}` : 'No matches';
         }
 
-        // Text selection and highlighting
-        function setupTextSelection() {
-            const docContent = document.getElementById('documentContent');
-            
-            // For desktop
-            document.addEventListener('mouseup', (e) => {
-                // Small delay to ensure selection is complete
-                setTimeout(() => handleTextSelection(e), 10);
-            });
-            
-            // For mobile
-            document.addEventListener('touchend', (e) => {
-                setTimeout(() => handleTextSelection(e), 10);
-            });
+        function clearSearch() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('searchResults').textContent = '';
+        }
 
-            // Hide menu when clicking elsewhere
-            document.addEventListener('mousedown', (e) => {
-                const menu = document.getElementById('highlightMenu');
-                if (!menu.contains(e.target) && !e.target.closest('.document-display')) {
-                    menu.classList.remove('active');
-                }
+        function setupTextSelection() {
+            document.addEventListener('mouseup', (e) => {
+                setTimeout(() => handleTextSelection(e), 10);
             });
         }
 
@@ -1315,21 +762,12 @@
             const selectedText = selection.toString().trim();
             const menu = document.getElementById('highlightMenu');
             
-            // Only show menu if:
-            // 1. Text is selected
-            // 2. Document is loaded
-            // 3. Selection is inside the document area
-            if (selectedText.length > 0 && documentLoaded) {
+            if (selectedText.length > 0) {
                 const range = selection.getRangeAt(0);
                 const rect = range.getBoundingClientRect();
-                
-                // Position menu above the selection
                 menu.style.left = `${rect.left + window.scrollX + (rect.width / 2) - 75}px`;
-                menu.style.top = `${rect.top + window.scrollY - 50}px`;
+                menu.style.top = `${rect.top + window.scrollY - 60}px`;
                 menu.classList.add('active');
-                
-                // Store the range for later use
-                menu.dataset.savedRange = true;
             } else {
                 menu.classList.remove('active');
             }
@@ -1341,21 +779,11 @@
             
             const range = selection.getRangeAt(0);
             const selectedText = selection.toString().trim();
-            
             if (!selectedText) return;
-            
-            const note = prompt(`Add a note for this ${color} highlight (optional):`);
             
             const span = document.createElement('span');
             span.className = `highlight ${color}`;
             span.textContent = selectedText;
-            
-            if (note) {
-                const noteDiv = document.createElement('div');
-                noteDiv.className = 'highlight-note';
-                noteDiv.textContent = note;
-                span.appendChild(noteDiv);
-            }
             
             range.deleteContents();
             range.insertNode(span);
@@ -1363,7 +791,7 @@
             highlights.push({
                 text: selectedText,
                 color: color,
-                note: note,
+                document: currentDocument,
                 timestamp: Date.now()
             });
             
@@ -1374,19 +802,55 @@
             selection.removeAllRanges();
         }
 
-        // Quiz functions
+        function loadVoices() {
+            voices = speechSynth.getVoices();
+            const select = document.getElementById('voiceSelect');
+            select.innerHTML = '';
+            const englishVoices = voices.filter(v => v.lang.startsWith('en'));
+            englishVoices.forEach((voice, i) => {
+                select.innerHTML += `<option value="${i}">${voice.name}</option>`;
+            });
+        }
+
+        if (speechSynth.onvoiceschanged !== undefined) {
+            speechSynth.onvoiceschanged = loadVoices;
+        }
+
+        function speak(text) {
+            stopSpeaking();
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.rate = parseFloat(document.getElementById('speedSelect').value);
+            const voiceIndex = document.getElementById('voiceSelect').value;
+            if (voiceIndex && voices[voiceIndex]) {
+                utterance.voice = voices[voiceIndex];
+            }
+            speechSynth.speak(utterance);
+        }
+
+        function stopSpeaking() {
+            speechSynth.cancel();
+        }
+
+        function speakDocument() {
+            const text = document.getElementById('documentContent').innerText;
+            speak(text);
+        }
+
+        function testVoice() {
+            speak('This is a test of the voice system.');
+        }
+
         function startQuiz() {
-            if (questions.length === 0) {
+            if (!questions || questions.length === 0) {
                 document.getElementById('quizContainer').innerHTML = `
                     <div class="empty-state">
-                        <div class="empty-state-icon">❓</div>
-                        <h3>No Questions Yet</h3>
-                        <p>Generate questions from your study materials or add sample questions to get started.</p>
+                        <div style="font-size: 64px; margin-bottom: 20px;">❓</div>
+                        <h3 style="color: #e0e0e0;">No questions yet</h3>
+                        <p>Questions coming soon!</p>
                     </div>
                 `;
                 return;
             }
-            
             currentQuestionIndex = 0;
             selectedAnswer = null;
             showingFeedback = false;
@@ -1395,248 +859,14 @@
 
         function showQuestion() {
             const q = questions[currentQuestionIndex];
-            const container = document.getElementById('quizContainer');
-            
-            let html = `
-                <div class="quiz-container">
-                    <div class="question-header">
-                        <span class="question-number">Question ${currentQuestionIndex + 1} of ${questions.length}</span>
-                        <div>
-                            <span class="question-category">${q.category.toUpperCase()}</span>
-                            ${q.type === 'scenario' ? '<span class="scenario-badge">SCENARIO</span>' : ''}
-                        </div>
-                    </div>
-            `;
+            let html = `<div class="quiz-container">
+                <div class="question-header">
+                    <span>Question ${currentQuestionIndex + 1} of ${questions.length}</span>
+                    <span class="question-category">${q.category.toUpperCase()}</span>
+                </div>`;
             
             if (q.scenario) {
                 html += `<div class="scenario-text">${q.scenario}</div>`;
             }
             
-            html += `
-                    <div class="question-text">${q.question}</div>
-                    <div class="options">
-            `;
-            
-            q.options.forEach((option, i) => {
-                const letter = String.fromCharCode(65 + i);
-                let optionClass = 'option';
-                
-                if (showingFeedback) {
-                    if (i === q.correct) {
-                        optionClass += ' correct';
-                    } else if (i === selectedAnswer && i !== q.correct) {
-                        optionClass += ' incorrect';
-                    }
-                } else if (i === selectedAnswer) {
-                    optionClass += ' selected';
-                }
-                
-                html += `
-                    <div class="${optionClass}" onclick="selectAnswer(${i})">
-                        <span class="option-letter">${letter}.</span>
-                        <span>${option}</span>
-                    </div>
-                `;
-            });
-            
-            html += '</div>';
-            
-            if (showingFeedback) {
-                const isCorrect = selectedAnswer === q.correct;
-                html += `
-                    <div class="feedback ${isCorrect ? 'correct' : 'incorrect'}">
-                        <div class="feedback-title">${isCorrect ? '✅ Correct!' : '❌ Incorrect'}</div>
-                        <div class="feedback-text">${q.explanation}</div>
-                        <div class="feedback-reference">Reference: ${q.reference}</div>
-                    </div>
-                `;
-            }
-            
-            html += `
-                    <div class="quiz-actions">
-                        ${!showingFeedback ? 
-                            `<button class="quiz-btn primary" onclick="submitAnswer()" ${selectedAnswer === null ? 'disabled' : ''}>Submit Answer</button>` :
-                            `<button class="quiz-btn primary" onclick="nextQuestion()">
-                                ${currentQuestionIndex < questions.length - 1 ? 'Next Question →' : 'Finish Quiz'}
-                            </button>
-                            <button class="quiz-btn secondary" onclick="jumpToSource()">📖 Review Source</button>`
-                        }
-                        <button class="quiz-btn secondary" onclick="speakQuestion()">🔊 Read Question</button>
-                    </div>
-                </div>
-            `;
-            
-            container.innerHTML = html;
-        }
-
-        function selectAnswer(index) {
-            if (showingFeedback) return;
-            selectedAnswer = index;
-            showQuestion();
-        }
-
-        function submitAnswer() {
-            if (selectedAnswer === null) return;
-            
-            showingFeedback = true;
-            stats.total++;
-            
-            if (selectedAnswer === questions[currentQuestionIndex].correct) {
-                stats.correct++;
-            }
-            
-            stats.studied++;
-            saveProgress();
-            updateStats();
-            showQuestion();
-        }
-
-        function nextQuestion() {
-            currentQuestionIndex++;
-            selectedAnswer = null;
-            showingFeedback = false;
-            
-            if (currentQuestionIndex >= questions.length) {
-                showQuizComplete();
-            } else {
-                showQuestion();
-            }
-        }
-
-        function showQuizComplete() {
-            const accuracy = Math.round((stats.correct / stats.total) * 100);
-            document.getElementById('quizContainer').innerHTML = `
-                <div class="complete-message">
-                    <h2>🎉 Quiz Complete!</h2>
-                    <p>You've completed all ${questions.length} questions.</p>
-                    <p style="margin-top: 20px; font-size: 24px; color: #667eea;">
-                        Final Score: ${accuracy}%
-                    </p>
-                    <button class="quiz-btn primary" style="margin-top: 30px; max-width: 300px;" onclick="startQuiz()">
-                        Take Quiz Again
-                    </button>
-                </div>
-            `;
-        }
-
-        function speakQuestion() {
-            const q = questions[currentQuestionIndex];
-            let text = '';
-            
-            if (q.scenario) {
-                text = `Scenario: ${q.scenario}. `;
-            }
-            
-            text += `Question: ${q.question}. `;
-            text += 'Options: ';
-            
-            q.options.forEach((option, i) => {
-                const letter = String.fromCharCode(65 + i);
-                text += `${letter}. ${option}. `;
-            });
-            
-            speak(text);
-        }
-
-        function jumpToSource() {
-            switchMode('reader');
-            alert('Feature coming soon! This will jump to the highlighted section in your study materials.');
-        }
-
-        function generateQuestions() {
-            alert('🔥 AI Question Generator coming soon!\n\nThis feature will automatically create quiz questions from your highlighted text.');
-        }
-
-        // Review functions
-        function loadReviewHighlights() {
-            const colors = ['red', 'yellow', 'green', 'blue'];
-            
-            colors.forEach(color => {
-                const container = document.getElementById(`${color}Highlights`);
-                const colorHighlights = highlights.filter(h => h.color === color);
-                
-                if (colorHighlights.length === 0) {
-                    container.innerHTML = `
-                        <div class="empty-state">
-                            <p>No ${color} highlights yet.</p>
-                        </div>
-                    `;
-                } else {
-                    container.innerHTML = colorHighlights.map((h, i) => `
-                        <div class="highlight-item ${color}">
-                            <div class="highlight-preview">${h.text.substring(0, 100)}${h.text.length > 100 ? '...' : ''}</div>
-                            ${h.note ? `<div class="highlight-meta">📝 ${h.note}</div>` : ''}
-                        </div>
-                    `).join('');
-                }
-            });
-        }
-
-        // Stats and progress
-        function updateStats() {
-            document.getElementById('totalStudied').textContent = stats.studied;
-            document.getElementById('accuracy').textContent = 
-                stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) + '%' : '0%';
-            document.getElementById('highlightCount').textContent = highlights.length;
-            document.getElementById('strugglingCount').textContent = 
-                highlights.filter(h => h.color === 'red').length;
-        }
-
-        function updateDashboard() {
-            updateStats();
-            
-            const strugglingContainer = document.getElementById('strugglingHighlights');
-            const redHighlights = highlights.filter(h => h.color === 'red');
-            
-            if (redHighlights.length === 0) {
-                strugglingContainer.innerHTML = `
-                    <div class="empty-state">
-                        <div class="empty-state-icon">📚</div>
-                        <h3>Start Studying!</h3>
-                        <p>Highlight sections you're struggling with in red, and they'll appear here for quick review.</p>
-                    </div>
-                `;
-            } else {
-                strugglingContainer.innerHTML = redHighlights.map((h, i) => `
-                    <div class="highlight-item red" onclick="switchMode('reader')">
-                        <div class="highlight-preview">${h.text.substring(0, 100)}${h.text.length > 100 ? '...' : ''}</div>
-                        ${h.note ? `<div class="highlight-meta">📝 ${h.note}</div>` : ''}
-                    </div>
-                `).join('');
-            }
-        }
-
-        function saveProgress() {
-            localStorage.setItem('sgtExamPro', JSON.stringify({
-                stats: stats,
-                highlights: highlights
-            }));
-        }
-
-        function loadProgress() {
-            const saved = localStorage.getItem('sgtExamPro');
-            if (saved) {
-                const data = JSON.parse(saved);
-                stats = data.stats || stats;
-                highlights = data.highlights || [];
-            }
-        }
-
-        function resetAllData() {
-            if (confirm('Are you sure? This will delete ALL your progress, highlights, and settings. This cannot be undone.')) {
-                if (confirm('Really sure? There\'s no going back!')) {
-                    localStorage.removeItem('sgtExamPro');
-                    stats = { studied: 0, correct: 0, total: 0 };
-                    highlights = [];
-                    clearDocument();
-                    updateStats();
-                    alert('All data has been reset.');
-                }
-            }
-        }
-
-        // Initialize on load
-        init();
-    </script>
-</body>
-</html>
+            html += `<div class="question-text">${q.question

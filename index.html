@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background: #1a1a1a;
+            background: #0a1628;
             color: #e0e0e0;
             min-height: 100vh;
             padding: 0;
@@ -26,7 +26,7 @@
         }
 
         .header {
-            background: #2d2d2d;
+            background: #1a2332;
             padding: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
             position: sticky;
@@ -49,7 +49,7 @@
 
         .mode-tab {
             padding: 10px 20px;
-            background: #3d3d3d;
+            background: #243447;
             border: none;
             border-radius: 8px;
             color: #e0e0e0;
@@ -62,11 +62,11 @@
         }
 
         .mode-tab:hover {
-            background: #4d4d4d;
+            background: #2d4159;
         }
 
         .mode-tab.active {
-            background: #667eea;
+            background: #1e5a8e;
             color: white;
         }
 
@@ -91,22 +91,86 @@
         }
 
         .stat-card {
-            background: #2d2d2d;
+            background: #1a2332;
             padding: 20px;
             border-radius: 12px;
             text-align: center;
+            border: 1px solid #243447;
         }
 
         .stat-number {
             font-size: 36px;
             font-weight: 700;
-            color: #667eea;
+            color: #ff8c42;
             margin-bottom: 5px;
         }
 
         .stat-label {
             font-size: 14px;
             color: #999;
+        }
+
+        /* How to Use Section */
+        .how-to-section {
+            background: #1a2332;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ff8c42;
+        }
+
+        .how-to-section h3 {
+            color: #ff8c42;
+            margin-bottom: 15px;
+        }
+
+        .how-to-section h4 {
+            color: #1e5a8e;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        .how-to-section p, .how-to-section li {
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .how-to-section ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .color-legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .color-item {
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .color-item.yellow {
+            background: rgba(255, 140, 66, 0.2);
+            border-left: 3px solid #ff8c42;
+        }
+
+        .color-item.red {
+            background: rgba(239, 68, 68, 0.2);
+            border-left: 3px solid #ef4444;
+        }
+
+        .color-item.green {
+            background: rgba(34, 197, 94, 0.2);
+            border-left: 3px solid #22c55e;
+        }
+
+        .color-item.blue {
+            background: rgba(59, 130, 246, 0.2);
+            border-left: 3px solid #3b82f6;
         }
 
         /* Read & Study Styles */
@@ -117,45 +181,134 @@
         .document-selector select {
             width: 100%;
             padding: 15px;
-            background: #2d2d2d;
+            background: #1a2332;
             color: #e0e0e0;
-            border: 2px solid #3d3d3d;
+            border: 2px solid #243447;
             border-radius: 8px;
             font-size: 16px;
             cursor: pointer;
         }
 
+        .highlight-controls {
+            background: #1a2332;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #243447;
+        }
+
+        .highlight-controls-title {
+            color: #ff8c42;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .highlight-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            transition: transform 0.1s;
+        }
+
+        .highlight-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .highlight-btn.yellow {
+            background: #ff8c42;
+            color: #000;
+        }
+
+        .highlight-btn.red {
+            background: #ef4444;
+            color: white;
+        }
+
+        .highlight-btn.green {
+            background: #22c55e;
+            color: white;
+        }
+
+        .highlight-btn.blue {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .highlight-btn.clear {
+            background: #6b7280;
+            color: white;
+        }
+
         .document-content {
-            background: #2d2d2d;
+            background: #1a2332;
             padding: 30px;
             border-radius: 12px;
             line-height: 1.8;
             font-size: 16px;
             min-height: 400px;
+            user-select: text;
+            cursor: text;
+            border: 1px solid #243447;
         }
 
         .document-content h2 {
-            color: #667eea;
+            color: #ff8c42;
             margin-top: 30px;
             margin-bottom: 15px;
         }
 
         .document-content h3 {
-            color: #999;
+            color: #1e5a8e;
             margin-top: 20px;
             margin-bottom: 10px;
         }
 
+        /* Highlighting Styles */
+        .highlight-yellow {
+            background-color: rgba(255, 140, 66, 0.3);
+            padding: 2px 0;
+            cursor: pointer;
+            border-bottom: 2px solid #ff8c42;
+        }
+
+        .highlight-red {
+            background-color: rgba(239, 68, 68, 0.3);
+            padding: 2px 0;
+            cursor: pointer;
+            border-bottom: 2px solid #ef4444;
+        }
+
+        .highlight-green {
+            background-color: rgba(34, 197, 94, 0.3);
+            padding: 2px 0;
+            cursor: pointer;
+            border-bottom: 2px solid #22c55e;
+        }
+
+        .highlight-blue {
+            background-color: rgba(59, 130, 246, 0.3);
+            padding: 2px 0;
+            cursor: pointer;
+            border-bottom: 2px solid #3b82f6;
+        }
+
         .audio-controls {
-            background: #2d2d2d;
+            background: #1a2332;
             padding: 20px;
             border-radius: 12px;
             margin-bottom: 20px;
+            border: 1px solid #243447;
         }
 
         .audio-controls button {
             padding: 12px 24px;
-            background: #667eea;
+            background: #1e5a8e;
             color: white;
             border: none;
             border-radius: 8px;
@@ -163,31 +316,48 @@
             font-size: 16px;
             font-weight: 600;
             margin-right: 10px;
+            margin-bottom: 10px;
+            transition: background 0.2s;
         }
 
         .audio-controls button:hover {
-            background: #5568d3;
+            background: #2668a8;
         }
 
         .audio-controls select {
             padding: 12px;
-            background: #3d3d3d;
+            background: #243447;
             color: #e0e0e0;
-            border: none;
+            border: 1px solid #2d4159;
             border-radius: 8px;
             margin-left: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .audio-controls label {
+            color: #ff8c42;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+
+        .control-group {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 10px;
         }
 
         /* Quiz Mode Styles */
         .quiz-card {
-            background: #2d2d2d;
+            background: #1a2332;
             padding: 30px;
             border-radius: 12px;
             margin-bottom: 20px;
+            border: 1px solid #243447;
         }
 
         .question-number {
-            color: #667eea;
+            color: #ff8c42;
             font-size: 14px;
             font-weight: 600;
             margin-bottom: 15px;
@@ -208,27 +378,27 @@
 
         .option {
             padding: 15px;
-            background: #3d3d3d;
-            border: 2px solid #3d3d3d;
+            background: #243447;
+            border: 2px solid #243447;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.2s;
         }
 
         .option:hover {
-            background: #4d4d4d;
-            border-color: #667eea;
+            background: #2d4159;
+            border-color: #1e5a8e;
         }
 
         .option.selected {
-            background: #667eea;
-            border-color: #667eea;
+            background: #1e5a8e;
+            border-color: #1e5a8e;
             color: white;
         }
 
         .option.correct {
-            background: #10b981;
-            border-color: #10b981;
+            background: #22c55e;
+            border-color: #22c55e;
             color: white;
         }
 
@@ -240,7 +410,7 @@
 
         .submit-btn {
             padding: 15px 30px;
-            background: #667eea;
+            background: #1e5a8e;
             color: white;
             border: none;
             border-radius: 8px;
@@ -248,27 +418,28 @@
             font-size: 16px;
             font-weight: 600;
             width: 100%;
+            transition: background 0.2s;
         }
 
         .submit-btn:hover {
-            background: #5568d3;
+            background: #2668a8;
         }
 
         .submit-btn:disabled {
-            background: #4d4d4d;
+            background: #243447;
             cursor: not-allowed;
         }
 
         .explanation-box {
-            background: #3d3d3d;
+            background: #243447;
             padding: 20px;
             border-radius: 8px;
             margin-top: 20px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #ff8c42;
         }
 
         .explanation-box h4 {
-            color: #667eea;
+            color: #ff8c42;
             margin-bottom: 10px;
         }
 
@@ -285,16 +456,16 @@
         }
 
         .highlights-section h3 {
-            color: #667eea;
+            color: #ff8c42;
             margin-bottom: 15px;
         }
 
         .highlight-item {
-            background: #2d2d2d;
+            background: #1a2332;
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 10px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #ff8c42;
         }
 
         .highlight-text {
@@ -309,14 +480,15 @@
 
         /* Settings Styles */
         .setting-item {
-            background: #2d2d2d;
+            background: #1a2332;
             padding: 20px;
             border-radius: 12px;
             margin-bottom: 15px;
+            border: 1px solid #243447;
         }
 
         .setting-item h3 {
-            color: #667eea;
+            color: #ff8c42;
             margin-bottom: 10px;
         }
 
@@ -324,15 +496,15 @@
         .setting-item select {
             width: 100%;
             padding: 12px;
-            background: #3d3d3d;
+            background: #243447;
             color: #e0e0e0;
-            border: 2px solid #3d3d3d;
+            border: 2px solid #243447;
             border-radius: 8px;
             margin-top: 10px;
         }
 
         .danger-zone {
-            background: #2d2d2d;
+            background: #1a2332;
             padding: 20px;
             border-radius: 12px;
             border: 2px solid #ef4444;
@@ -351,6 +523,7 @@
             border-radius: 8px;
             cursor: pointer;
             font-weight: 600;
+            transition: background 0.2s;
         }
 
         .danger-btn:hover {
@@ -383,6 +556,17 @@
             .document-content {
                 padding: 20px;
             }
+
+            .control-group {
+                display: block;
+                margin-right: 0;
+            }
+
+            .audio-controls select {
+                margin-left: 0;
+                width: 100%;
+                margin-top: 5px;
+            }
         }
     </style>
 </head>
@@ -392,6 +576,7 @@
             <h1>🎯 SGT Exam Study Pro</h1>
             <div class="mode-tabs">
                 <button class="mode-tab active" data-mode="dashboard">Dashboard</button>
+                <button class="mode-tab" data-mode="howto">How to Use</button>
                 <button class="mode-tab" data-mode="study">Read & Study</button>
                 <button class="mode-tab" data-mode="quiz">Quiz Mode</button>
                 <button class="mode-tab" data-mode="review">Review</button>
@@ -422,6 +607,66 @@
                 </div>
             </div>
 
+            <!-- How to Use -->
+            <div class="mode-content" id="howto">
+                <div class="how-to-section">
+                    <h3>📚 How to Use This Study App</h3>
+                    
+                    <h4>🎯 Dashboard</h4>
+                    <p>Track your overall progress including questions studied, quiz accuracy, total highlights, and study streak.</p>
+                    
+                    <h4>📖 Read & Study Mode</h4>
+                    <p>This is where the magic happens! Here you can:</p>
+                    <ul>
+                        <li><strong>Select a Document:</strong> Choose from available procedures and study materials</li>
+                        <li><strong>Listen with Text-to-Speech:</strong> Use the play controls to listen while driving, working out, or doing other activities</li>
+                        <li><strong>Adjust Speed & Voice:</strong> Change the reading speed (0.75x to 2x) and select different voices for better comprehension</li>
+                        <li><strong>Highlight Text:</strong> Select any text and click a color button to highlight it for later review</li>
+                    </ul>
+                    
+                    <h4>🎨 Highlighting System</h4>
+                    <p>Use different colors to organize your study materials:</p>
+                    <div class="color-legend">
+                        <div class="color-item yellow">
+                            <strong>Orange:</strong> Important concepts
+                        </div>
+                        <div class="color-item red">
+                            <strong>Red:</strong> Struggling topics
+                        </div>
+                        <div class="color-item green">
+                            <strong>Green:</strong> Mastered material
+                        </div>
+                        <div class="color-item blue">
+                            <strong>Blue:</strong> Questions/clarifications
+                        </div>
+                    </div>
+                    
+                    <h4>❓ Quiz Mode</h4>
+                    <p>Test your knowledge with practice questions:</p>
+                    <ul>
+                        <li>Multiple choice and scenario-based questions</li>
+                        <li>Immediate feedback with explanations</li>
+                        <li>Reference citations to review source material</li>
+                        <li>Track your accuracy over time</li>
+                    </ul>
+                    
+                    <h4>📌 Review Highlights</h4>
+                    <p>See all your highlighted text organized by color. Focus on red highlights (struggling topics) for targeted studying.</p>
+                    
+                    <h4>⚙️ Settings</h4>
+                    <p>Customize your experience and manage your study data.</p>
+                    
+                    <h4>💡 Pro Tips</h4>
+                    <ul>
+                        <li>Add this app to your phone's home screen for quick access</li>
+                        <li>Use text-to-speech while commuting or working out</li>
+                        <li>Review red highlights daily for topics you're struggling with</li>
+                        <li>Take quizzes multiple times to reinforce learning</li>
+                        <li>All your data is saved automatically in your browser</li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- Read & Study -->
             <div class="mode-content" id="study">
                 <div class="document-selector">
@@ -431,17 +676,36 @@
                 </div>
 
                 <div class="audio-controls">
-                    <button id="playBtn">▶️ Play</button>
-                    <button id="pauseBtn">⏸️ Pause</button>
-                    <button id="stopBtn">⏹️ Stop</button>
-                    <label>Speed:</label>
-                    <select id="speedSelect">
-                        <option value="0.75">0.75x</option>
-                        <option value="1" selected>1x</option>
-                        <option value="1.25">1.25x</option>
-                        <option value="1.5">1.5x</option>
-                        <option value="2">2x</option>
-                    </select>
+                    <div style="margin-bottom: 15px;">
+                        <button id="playBtn">▶️ Play</button>
+                        <button id="pauseBtn">⏸️ Pause</button>
+                        <button id="stopBtn">⏹️ Stop</button>
+                    </div>
+                    <div class="control-group">
+                        <label>Speed:</label>
+                        <select id="speedSelect">
+                            <option value="0.75">0.75x</option>
+                            <option value="1" selected>1x</option>
+                            <option value="1.25">1.25x</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="2">2x</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label>Voice:</label>
+                        <select id="voiceSelect">
+                            <option value="">Default Voice</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="highlight-controls">
+                    <div class="highlight-controls-title">🎨 Highlight Selected Text:</div>
+                    <button class="highlight-btn yellow" onclick="highlightSelection('yellow')">Orange - Important</button>
+                    <button class="highlight-btn red" onclick="highlightSelection('red')">Red - Struggling</button>
+                    <button class="highlight-btn green" onclick="highlightSelection('green')">Green - Mastered</button>
+                    <button class="highlight-btn blue" onclick="highlightSelection('blue')">Blue - Questions</button>
+                    <button class="highlight-btn clear" onclick="clearSelection()">Clear Highlight</button>
                 </div>
 
                 <div class="document-content" id="documentContent">
@@ -493,6 +757,7 @@
         let currentMode = 'dashboard';
         let currentQuestionIndex = 0;
         let quizAnswers = [];
+        let selectedVoice = null;
         let studyData = {
             questionsStudied: 0,
             correctAnswers: 0,
@@ -549,12 +814,14 @@
         // Populate document selector
         function populateDocuments() {
             const select = document.getElementById('documentSelect');
-            STUDY_DOCUMENTS.forEach((doc, index) => {
-                const option = document.createElement('option');
-                option.value = index;
-                option.textContent = doc.title;
-                select.appendChild(option);
-            });
+            if (typeof STUDY_DOCUMENTS !== 'undefined') {
+                STUDY_DOCUMENTS.forEach((doc, index) => {
+                    const option = document.createElement('option');
+                    option.value = index;
+                    option.textContent = doc.title;
+                    select.appendChild(option);
+                });
+            }
         }
 
         // Load document
@@ -566,6 +833,27 @@
             const content = document.getElementById('documentContent');
             content.innerHTML = `<h2>${doc.title}</h2>${doc.content}`;
         });
+
+        // Populate voices
+        function populateVoices() {
+            const voices = speechSynthesis.getVoices();
+            const select = document.getElementById('voiceSelect');
+            
+            select.innerHTML = '<option value="">Default Voice</option>';
+            
+            voices.forEach((voice, index) => {
+                const option = document.createElement('option');
+                option.value = index;
+                option.textContent = `${voice.name} (${voice.lang})`;
+                select.appendChild(option);
+            });
+        }
+
+        // Load voices when available
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+            speechSynthesis.onvoiceschanged = populateVoices;
+        }
+        populateVoices();
 
         // Text-to-speech controls
         let utterance = null;
@@ -581,6 +869,13 @@
             } else {
                 utterance = new SpeechSynthesisUtterance(content);
                 utterance.rate = parseFloat(document.getElementById('speedSelect').value);
+                
+                const voiceIndex = document.getElementById('voiceSelect').value;
+                if (voiceIndex) {
+                    const voices = speechSynthesis.getVoices();
+                    utterance.voice = voices[voiceIndex];
+                }
+                
                 speechSynthesis.speak(utterance);
             }
         });
@@ -603,9 +898,76 @@
             }
         });
 
+        document.getElementById('voiceSelect').addEventListener('change', (e) => {
+            const voiceIndex = e.target.value;
+            if (voiceIndex) {
+                const voices = speechSynthesis.getVoices();
+                selectedVoice = voices[voiceIndex];
+            } else {
+                selectedVoice = null;
+            }
+        });
+
+        // Highlighting functionality
+        function highlightSelection(color) {
+            const selection = window.getSelection();
+            if (!selection.rangeCount || selection.isCollapsed) {
+                alert('Please select text to highlight first!');
+                return;
+            }
+
+            const range = selection.getRangeAt(0);
+            const span = document.createElement('span');
+            span.className = `highlight-${color}`;
+            
+            try {
+                range.surroundContents(span);
+                
+                // Save highlight
+                studyData.highlights.push({
+                    text: selection.toString(),
+                    color: color,
+                    timestamp: new Date().toISOString()
+                });
+                saveData();
+                
+                selection.removeAllRanges();
+            } catch (e) {
+                alert('Cannot highlight across different sections. Please select text within a single paragraph.');
+            }
+        }
+
+        function clearSelection() {
+            const selection = window.getSelection();
+            if (!selection.rangeCount || selection.isCollapsed) {
+                alert('Please select highlighted text to clear!');
+                return;
+            }
+            
+            // Remove highlighting from selected element
+            const range = selection.getRangeAt(0);
+            const container = range.commonAncestorContainer.parentElement;
+            
+            if (container.classList && 
+                (container.classList.contains('highlight-yellow') ||
+                 container.classList.contains('highlight-red') ||
+                 container.classList.contains('highlight-green') ||
+                 container.classList.contains('highlight-blue'))) {
+                
+                const text = container.textContent;
+                container.replaceWith(text);
+                
+                // Remove from saved highlights
+                studyData.highlights = studyData.highlights.filter(h => h.text !== text);
+                saveData();
+            }
+            
+            selection.removeAllRanges();
+        }
+
         // Quiz functionality
         function loadQuiz() {
-            if (!QUIZ_QUESTIONS || QUIZ_QUESTIONS.length === 0) {
+            if (typeof QUIZ_QUESTIONS === 'undefined' || QUIZ_QUESTIONS.length === 0) {
                 document.getElementById('quizContainer').innerHTML = `
                     <div class="quiz-card">
                         <p style="text-align: center; color: #999;">
@@ -705,7 +1067,7 @@
 
             document.getElementById('quizContainer').innerHTML = `
                 <div class="quiz-card" style="text-align: center;">
-                    <h2 style="color: #667eea; margin-bottom: 20px;">Quiz Complete!</h2>
+                    <h2 style="color: #ff8c42; margin-bottom: 20px;">Quiz Complete!</h2>
                     <div class="stat-number" style="font-size: 72px; margin: 30px 0;">${percentage}%</div>
                     <p style="font-size: 24px; margin-bottom: 30px;">
                         You got ${correct} out of ${total} questions correct
@@ -726,7 +1088,7 @@
             container.innerHTML = studyData.highlights.map((h, i) => `
                 <div class="highlight-item">
                     <div class="highlight-text">${h.text}</div>
-                    ${h.note ? `<div class="highlight-note">Note: ${h.note}</div>` : ''}
+                    <div class="highlight-note">Color: ${h.color.toUpperCase()} | ${new Date(h.timestamp).toLocaleDateString()}</div>
                 </div>
             `).join('');
         }

@@ -618,31 +618,53 @@
         .highlight-menu {
             position: fixed;
             background: #1a1a1a;
-            border: 2px solid #667eea;
-            border-radius: 8px;
-            padding: 8px;
+            border: 3px solid #667eea;
+            border-radius: 12px;
+            padding: 10px;
             display: none;
-            z-index: 1000;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            z-index: 10000;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+            gap: 8px;
         }
 
         .highlight-menu.active {
             display: flex;
-            gap: 5px;
         }
 
         .highlight-color-btn {
-            width: 30px;
-            height: 30px;
-            border: 2px solid transparent;
-            border-radius: 6px;
+            width: 40px;
+            height: 40px;
+            border: 3px solid #2d2d2d;
+            border-radius: 8px;
             cursor: pointer;
             transition: all 0.2s;
+            position: relative;
         }
 
         .highlight-color-btn:hover {
             border-color: white;
-            transform: scale(1.1);
+            transform: scale(1.15);
+        }
+
+        .highlight-color-btn:active {
+            transform: scale(0.95);
+        }
+
+        .highlight-color-btn::after {
+            content: attr(title);
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            color: #b0b0b0;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .highlight-color-btn:hover::after {
+            opacity: 1;
         }
 
         .highlight-color-btn.yellow {
@@ -740,17 +762,21 @@
                 </div>
 
                 <div class="document-area" id="documentDisplay" style="display: none;">
-                    <h3 style="color: #667eea; margin-bottom: 15px;">
-                        💡 Select text and choose a color to highlight
-                    </h3>
+                    <div style="background: #667eea; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+                        <h3 style="color: white; margin-bottom: 8px;">💡 How to Highlight</h3>
+                        <p style="color: white; font-size: 14px; margin: 0;">
+                            <strong>Desktop:</strong> Select text with your mouse, then click a color<br>
+                            <strong>Mobile:</strong> Long-press and select text, then tap a color
+                        </p>
+                    </div>
                     <div class="document-display" id="documentContent"></div>
                 </div>
 
                 <div class="highlight-menu" id="highlightMenu">
-                    <button class="highlight-color-btn yellow" onclick="highlightSelection('yellow')" title="Important"></button>
-                    <button class="highlight-color-btn red" onclick="highlightSelection('red')" title="Struggling"></button>
-                    <button class="highlight-color-btn green" onclick="highlightSelection('green')" title="Mastered"></button>
-                    <button class="highlight-color-btn blue" onclick="highlightSelection('blue')" title="Question"></button>
+                    <button class="highlight-color-btn yellow" onclick="highlightSelection('yellow')" title="Important">📌</button>
+                    <button class="highlight-color-btn red" onclick="highlightSelection('red')" title="Struggling">⚠️</button>
+                    <button class="highlight-color-btn green" onclick="highlightSelection('green')" title="Mastered">✅</button>
+                    <button class="highlight-color-btn blue" onclick="highlightSelection('blue')" title="Question">❓</button>
                 </div>
             </div>
 
@@ -1129,24 +1155,50 @@
 
         // Text selection and highlighting
         function setupTextSelection() {
-            document.addEventListener('mouseup', handleTextSelection);
-            document.addEventListener('touchend', handleTextSelection);
+            const docContent = document.getElementById('documentContent');
+            
+            // For desktop
+            document.addEventListener('mouseup', (e) => {
+                // Small delay to ensure selection is complete
+                setTimeout(() => handleTextSelection(e), 10);
+            });
+            
+            // For mobile
+            document.addEventListener('touchend', (e) => {
+                setTimeout(() => handleTextSelection(e), 10);
+            });
+
+            // Hide menu when clicking elsewhere
+            document.addEventListener('mousedown', (e) => {
+                const menu = document.getElementById('highlightMenu');
+                if (!menu.contains(e.target) && !e.target.closest('.document-display')) {
+                    menu.classList.remove('active');
+                }
+            });
         }
 
         function handleTextSelection(e) {
             const selection = window.getSelection();
             const selectedText = selection.toString().trim();
+            const menu = document.getElementById('highlightMenu');
             
+            // Only show menu if:
+            // 1. Text is selected
+            // 2. Document is loaded
+            // 3. Selection is inside the document area
             if (selectedText.length > 0 && documentLoaded) {
                 const range = selection.getRangeAt(0);
                 const rect = range.getBoundingClientRect();
                 
-                const menu = document.getElementById('highlightMenu');
-                menu.style.left = `${rect.left + window.scrollX}px`;
+                // Position menu above the selection
+                menu.style.left = `${rect.left + window.scrollX + (rect.width / 2) - 75}px`;
                 menu.style.top = `${rect.top + window.scrollY - 50}px`;
                 menu.classList.add('active');
+                
+                // Store the range for later use
+                menu.dataset.savedRange = true;
             } else {
-                document.getElementById('highlightMenu').classList.remove('active');
+                menu.classList.remove('active');
             }
         }
 

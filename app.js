@@ -93,13 +93,97 @@ document.getElementById('documentSelect').addEventListener('change', (e) => {
 
     const doc = STUDY_DOCUMENTS[docIndex];
     const content = document.getElementById('documentContent');
-    content.innerHTML = `<h2>${doc.title}</h2>${doc.content}`;
+    
+    // Build summary HTML if summary exists
+    let summaryHTML = '';
+    if (doc.summary && doc.summary.keyTimeframes && doc.summary.keyTimeframes[0] !== 'Content will be added when materials are available') {
+        summaryHTML = `
+            <div class="document-summary">
+                <div class="summary-header" onclick="toggleSummary()">
+                    <h3>📌 QUICK SUMMARY - Study This First!</h3>
+                    <button class="summary-toggle" id="summaryToggle">Hide Summary</button>
+                </div>
+                <div class="summary-content" id="summaryContent">
+                    ${doc.summary.keyTimeframes.length > 0 ? `
+                    <div class="summary-section must-know">
+                        <h4>⏱️ KEY TIMEFRAMES (MEMORIZE THESE!)</h4>
+                        <ul>
+                            ${doc.summary.keyTimeframes.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
+                    
+                    ${doc.summary.whoInvestigates.length > 0 ? `
+                    <div class="summary-section">
+                        <h4>👮 WHO INVESTIGATES</h4>
+                        <ul>
+                            ${doc.summary.whoInvestigates.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
+                    
+                    ${doc.summary.complaintTypes.length > 0 ? `
+                    <div class="summary-section">
+                        <h4>📋 TYPES OF COMPLAINTS</h4>
+                        <ul>
+                            ${doc.summary.complaintTypes.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
+                    
+                    ${doc.summary.testableDefinitions.length > 0 ? `
+                    <div class="summary-section">
+                        <h4>📖 TESTABLE DEFINITIONS</h4>
+                        <ul>
+                            ${doc.summary.testableDefinitions.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
+                    
+                    ${doc.summary.mostTestedTopics.length > 0 ? `
+                    <div class="summary-section must-know">
+                        <h4>🎯 MOST TESTED ON EXAMS</h4>
+                        <ul>
+                            ${doc.summary.mostTestedTopics.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
+                    
+                    ${doc.summary.commonExamTraps.length > 0 ? `
+                    <div class="summary-section exam-traps">
+                        <h4>⚠️ COMMON EXAM TRAPS - DON'T GET CAUGHT!</h4>
+                        <ul>
+                            ${doc.summary.commonExamTraps.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
+                </div>
+                <div class="summary-divider"></div>
+            </div>
+        `;
+    }
+    
+    content.innerHTML = `<h2>${doc.title}</h2>${summaryHTML}${doc.content}`;
     
     // Clear search results when loading new document
     const searchResults = document.getElementById('searchResults');
     searchResults.classList.remove('active');
     searchResults.innerHTML = '';
 });
+
+// Toggle summary visibility
+function toggleSummary() {
+    const content = document.getElementById('summaryContent');
+    const button = document.getElementById('summaryToggle');
+    
+    if (content.classList.contains('collapsed')) {
+        content.classList.remove('collapsed');
+        button.textContent = 'Hide Summary';
+    } else {
+        content.classList.add('collapsed');
+        button.textContent = 'Show Summary';
+    }
+}
 
 // ========================================
 // KEYWORD SEARCH

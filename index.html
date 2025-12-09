@@ -717,12 +717,21 @@
             <div class="mode-content" data-mode="reader">
                 <div class="settings-panel">
                     <h3>📖 Document Reader</h3>
+                    
                     <div class="setting-group">
-                        <label>Paste your study material below:</label>
-                        <textarea id="documentText" placeholder="Paste text from Procedure 303, contract, textbook, etc. Then click 'Load Document' to start studying..."></textarea>
+                        <label>Option 1: Upload PDF File</label>
+                        <input type="file" id="pdfUpload" accept=".pdf" onchange="handlePDFUpload(event)" style="margin-bottom: 10px;">
+                        <p style="font-size: 12px; color: #b0b0b0; margin-bottom: 15px;">Upload Procedure 303, contract, or textbook PDF</p>
+                    </div>
+
+                    <div style="text-align: center; margin: 15px 0; color: #666;">— OR —</div>
+
+                    <div class="setting-group">
+                        <label>Option 2: Paste Text Below</label>
+                        <textarea id="documentText" placeholder="Paste text from any study material. Then click 'Load Document' to start studying..."></textarea>
                     </div>
                     <div class="document-controls">
-                        <button class="doc-btn" onclick="loadDocument()">📄 Load Document</button>
+                        <button class="doc-btn" onclick="loadDocument()">📄 Load Text</button>
                         <button class="doc-btn secondary" onclick="clearDocument()">🗑️ Clear</button>
                         <button class="doc-btn secondary" onclick="speakDocument()">🔊 Read Aloud</button>
                         <button class="doc-btn secondary" onclick="stopSpeaking()">⏹️ Stop</button>
@@ -1011,6 +1020,72 @@
         }
 
         // Document functions
+        async function handlePDFUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            if (file.type !== 'application/pdf') {
+                alert('Please upload a PDF file.');
+                return;
+            }
+
+            // Show loading message
+            const loadingMsg = document.createElement('div');
+            loadingMsg.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #2d2d2d; padding: 30px; border-radius: 12px; z-index: 1000; text-align: center;';
+            loadingMsg.innerHTML = '<h3 style="color: #667eea; margin-bottom: 10px;">📄 Loading PDF...</h3><p style="color: #b0b0b0;">This may take a moment for large files.</p>';
+            document.body.appendChild(loadingMsg);
+
+            try {
+                // Read PDF using browser's built-in capabilities
+                const arrayBuffer = await file.arrayBuffer();
+                const uint8Array = new Uint8Array(arrayBuffer);
+                
+                // Use PDF.js from CDN
+                if (!window.pdfjsLib) {
+                    // Load PDF.js library
+                    const script = document.createElement('script');
+                    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+                    document.head.appendChild(script);
+                    
+                    await new Promise((resolve) => {
+                        script.onload = resolve;
+                    });
+                    
+                    // Set worker
+                    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+                }
+
+                const pdf = await pdfjsLib.getDocument(uint8Array).promise;
+                let fullText = '';
+
+                // Extract text from all pages
+                for (let i = 1; i <= pdf.numPages; i++) {
+                    const page = await pdf.getPage(i);
+                    const textContent = await page.getTextContent();
+                    const pageText = textContent.items.map(item => item.str).join(' ');
+                    fullText += pageText + '\n\n';
+                }
+
+                document.body.removeChild(loadingMsg);
+
+                if (!fullText.trim()) {
+                    alert('Could not extract text from PDF. The PDF might be scanned images. Try copy/pasting the text instead.');
+                    return;
+                }
+
+                // Load the extracted text
+                document.getElementById('documentText').value = fullText;
+                loadDocument();
+                
+                alert(`✅ PDF loaded successfully! Extracted ${pdf.numPages} pages. You can now highlight and study.`);
+
+            } catch (error) {
+                document.body.removeChild(loadingMsg);
+                console.error('PDF Error:', error);
+                alert('Error reading PDF. Try copy/pasting the text instead, or make sure the PDF is not password-protected.');
+            }
+        }
+
         function loadDocument() {
             const text = document.getElementById('documentText').value.trim();
             if (!text) {

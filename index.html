@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGT Exam Study Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        .app-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            background: #2d2d2d;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .mode-tabs {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+
+        .mode-tab {
+            padding: 10px 20px;
+            background: #3d3d3d;
+            border: none;
+            border-radius: 8px;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .mode-tab:hover {
+            background: #4d4d4d;
+        }
+
+        .mode-tab.active {
+            background: #667eea;
+            color: white;
+        }
+
+        /* Main Content Area */
+        .content {
+            padding: 20px;
+        }
+
+        .mode-content {
+            display: none;
+        }
+
+        .mode-content.active {
+            display: block;
+        }
+
+        /* Stats Dashboard */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: #2d2d2d;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #3d3d3d;
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #b0b0b0;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #3d3d3d;
+            border-radius: 4px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.3s;
+        }
+
+        /* Document Reader */
+        .document-area {
+            background: #2d2d2d;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .document-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .doc-btn {
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .doc-btn:hover {
+            background: #5568d3;
+            transform: translateY(-1px);
+        }
+
+        .doc-btn.secondary {
+            background: #3d3d3d;
+        }
+
+        .doc-btn.secondary:hover {
+            background: #4d4d4d;
+        }
+
+        #documentText {
+            width: 100%;
+            min-height: 400px;
+            background: #252525;
+            border: 2px solid #3d3d3d;
+            border-radius: 8px;
+            padding: 20px;
+            color: #e0e0e0;
+            font-size: 16px;
+            line-height: 1.8;
+            resize: vertical;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .document-display {
+            background: #252525;
+            border: 2px solid #3d3d3d;
+            border-radius: 8px;
+            padding: 30px;
+            line-height: 1.8;
+            font-size: 16px;
+            max-height: 600px;
+            overflow-y: auto;
+            user-select: text;
+        }
+
+        .document-display p {
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            padding: 2px 0;
+            cursor: pointer;
+            border-radius: 3px;
+            position: relative;
+        }
+
+        .highlight.yellow {
+            background: rgba(255, 235, 59, 0.3);
+            border-bottom: 2px solid #ffc107;
+        }
+
+        .highlight.red {
+            background: rgba(244, 67, 54, 0.3);
+            border-bottom: 2px solid #f44336;
+        }
+
+        .highlight.green {
+            background: rgba(76, 175, 80, 0.3);
+            border-bottom: 2px solid #4caf50;
+        }
+
+        .highlight.blue {
+            background: rgba(33, 150, 243, 0.3);
+            border-bottom: 2px solid #2196f3;
+        }
+
+        .highlight-note {
+            display: none;
+            position: absolute;
+            background: #1a1a1a;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 12px;
+            z-index: 10;
+            max-width: 250px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .highlight:hover .highlight-note {
+            display: block;
+        }
+
+        /* Quiz Mode */
+        .quiz-container {
+            background: #2d2d2d;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3d3d3d;
+        }
+
+        .question-number {
+            font-size: 14px;
+            color: #b0b0b0;
+        }
+
+        .question-category {
+            background: #667eea;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            color: white;
+        }
+
+        .scenario-badge {
+            background: #ff6b6b;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .question-text {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .scenario-text {
+            background: #3d3d3d;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #e0e0e0;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .option {
+            background: #3d3d3d;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border: 2px solid #3d3d3d;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .option:hover {
+            border-color: #667eea;
+            background: #4d4d4d;
+        }
+
+        .option.selected {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.2);
+        }
+
+        .option.correct {
+            border-color: #4caf50;
+            background: rgba(76, 175, 80, 0.2);
+        }
+
+        .option.incorrect {
+            border-color: #f44336;
+            background: rgba(244, 67, 54, 0.2);
+        }
+
+        .option-letter {
+            font-weight: bold;
+            color: #667eea;
+            min-width: 24px;
+        }
+
+        .feedback {
+            background: #3d3d3d;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feedback.correct {
+            border-left-color: #4caf50;
+        }
+
+        .feedback.incorrect {
+            border-left-color: #f44336;
+        }
+
+        .feedback-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .feedback-text {
+            color: #b0b0b0;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .feedback-reference {
+            font-size: 12px;
+            color: #667eea;
+            font-style: italic;
+        }
+
+        .quiz-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .quiz-btn {
+            flex: 1;
+            min-width: 150px;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.2s;
+        }
+
+        .quiz-btn.primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .quiz-btn.primary:hover {
+            background: #5568d3;
+        }
+
+        .quiz-btn.secondary {
+            background: #3d3d3d;
+            color: #e0e0e0;
+        }
+
+        .quiz-btn.secondary:hover {
+            background: #4d4d4d;
+        }
+
+        .quiz-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Settings Panel */
+        .settings-panel {
+            background: #2d2d2d;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .settings-panel h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .setting-group {
+            margin-bottom: 20px;
+        }
+
+        .setting-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #b0b0b0;
+        }
+
+        .setting-group select,
+        .setting-group input {
+            width: 100%;
+            padding: 12px;
+            background: #3d3d3d;
+            border: 2px solid #4d4d4d;
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .audio-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .audio-btn {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .audio-btn.speak {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .audio-btn.stop {
+            background: #f44336;
+            color: white;
+        }
+
+        /* Review Panel */
+        .review-section {
+            background: #2d2d2d;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .review-section h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .highlight-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .highlight-item {
+            background: #3d3d3d;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .highlight-item:hover {
+            background: #4d4d4d;
+        }
+
+        .highlight-item.red {
+            border-left-color: #f44336;
+        }
+
+        .highlight-item.yellow {
+            border-left-color: #ffc107;
+        }
+
+        .highlight-item.green {
+            border-left-color: #4caf50;
+        }
+
+        .highlight-item.blue {
+            border-left-color: #2196f3;
+        }
+
+        .highlight-preview {
+            font-size: 14px;
+            color: #e0e0e0;
+            margin-bottom: 5px;
+        }
+
+        .highlight-meta {
+            font-size: 12px;
+            color: #b0b0b0;
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #b0b0b0;
+        }
+
+        .empty-state-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .empty-state h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #e0e0e0;
+        }
+
+        .empty-state p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .quiz-container {
+                padding: 20px;
+            }
+
+            .question-text {
+                font-size: 18px;
+            }
+
+            .document-display {
+                padding: 20px;
+            }
+        }
+
+        /* Complete Message */
+        .complete-message {
+            background: #2d2d2d;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .complete-message h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .complete-message p {
+            color: #b0b0b0;
+            line-height: 1.6;
+        }
+
+        /* Highlight Menu */
+        .highlight-menu {
+            position: fixed;
+            background: #1a1a1a;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            padding: 8px;
+            display: none;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .highlight-menu.active {
+            display: flex;
+            gap: 5px;
+        }
+
+        .highlight-color-btn {
+            width: 30px;
+            height: 30px;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .highlight-color-btn:hover {
+            border-color: white;
+            transform: scale(1.1);
+        }
+
+        .highlight-color-btn.yellow {
+            background: #ffc107;
+        }
+
+        .highlight-color-btn.red {
+            background: #f44336;
+        }
+
+        .highlight-color-btn.green {
+            background: #4caf50;
+        }
+
+        .highlight-color-btn.blue {
+            background: #2196f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🎯 SGT Exam Study Pro</h1>
+            <div class="mode-tabs">
+                <button class="mode-tab active" data-mode="dashboard">📊 Dashboard</button>
+                <button class="mode-tab" data-mode="reader">📖 Read & Study</button>
+                <button class="mode-tab" data-mode="quiz">❓ Quiz Mode</button>
+                <button class="mode-tab" data-mode="review">⭐ Review Highlights</button>
+                <button class="mode-tab" data-mode="settings">⚙️ Settings</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- DASHBOARD MODE -->
+            <div class="mode-content active" data-mode="dashboard">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalStudied">0</div>
+                        <div class="stat-label">Questions Studied</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="accuracy">0%</div>
+                        <div class="stat-label">Overall Accuracy</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="highlightCount">0</div>
+                        <div class="stat-label">Highlights Created</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="strugglingCount">0</div>
+                        <div class="stat-label">Struggling Topics</div>
+                    </div>
+                </div>
+
+                <div class="review-section">
+                    <h3>⚠️ Needs Review (Red Highlights)</h3>
+                    <div id="strugglingHighlights" class="highlight-list">
+                        <div class="empty-state">
+                            <div class="empty-state-icon">📚</div>
+                            <h3>Start Studying!</h3>
+                            <p>Highlight sections you're struggling with in red, and they'll appear here for quick review.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- READER MODE -->
+            <div class="mode-content" data-mode="reader">
+                <div class="settings-panel">
+                    <h3>📖 Document Reader</h3>
+                    <div class="setting-group">
+                        <label>Paste your study material below:</label>
+                        <textarea id="documentText" placeholder="Paste text from Procedure 303, contract, textbook, etc. Then click 'Load Document' to start studying..."></textarea>
+                    </div>
+                    <div class="document-controls">
+                        <button class="doc-btn" onclick="loadDocument()">📄 Load Document</button>
+                        <button class="doc-btn secondary" onclick="clearDocument()">🗑️ Clear</button>
+                        <button class="doc-btn secondary" onclick="speakDocument()">🔊 Read Aloud</button>
+                        <button class="doc-btn secondary" onclick="stopSpeaking()">⏹️ Stop</button>
+                        <button class="doc-btn" onclick="generateQuestions()">🎯 Generate Quiz</button>
+                    </div>
+                </div>
+
+                <div class="document-area" id="documentDisplay" style="display: none;">
+                    <h3 style="color: #667eea; margin-bottom: 15px;">
+                        💡 Select text and choose a color to highlight
+                    </h3>
+                    <div class="document-display" id="documentContent"></div>
+                </div>
+
+                <div class="highlight-menu" id="highlightMenu">
+                    <button class="highlight-color-btn yellow" onclick="highlightSelection('yellow')" title="Important"></button>
+                    <button class="highlight-color-btn red" onclick="highlightSelection('red')" title="Struggling"></button>
+                    <button class="highlight-color-btn green" onclick="highlightSelection('green')" title="Mastered"></button>
+                    <button class="highlight-color-btn blue" onclick="highlightSelection('blue')" title="Question"></button>
+                </div>
+            </div>
+
+            <!-- QUIZ MODE -->
+            <div class="mode-content" data-mode="quiz">
+                <div id="quizContainer"></div>
+            </div>
+
+            <!-- REVIEW MODE -->
+            <div class="mode-content" data-mode="review">
+                <div class="review-section">
+                    <h3>🔴 Struggling (Review More)</h3>
+                    <div id="redHighlights" class="highlight-list"></div>
+                </div>
+                <div class="review-section">
+                    <h3>🟡 Important (Learning)</h3>
+                    <div id="yellowHighlights" class="highlight-list"></div>
+                </div>
+                <div class="review-section">
+                    <h3>🟢 Mastered (Got It!)</h3>
+                    <div id="greenHighlights" class="highlight-list"></div>
+                </div>
+                <div class="review-section">
+                    <h3>🔵 Questions/Notes</h3>
+                    <div id="blueHighlights" class="highlight-list"></div>
+                </div>
+            </div>
+
+            <!-- SETTINGS MODE -->
+            <div class="mode-content" data-mode="settings">
+                <div class="settings-panel">
+                    <h3>🔊 Audio Settings</h3>
+                    <div class="setting-group">
+                        <label for="voiceSelect">Voice:</label>
+                        <select id="voiceSelect">
+                            <option value="">Loading voices...</option>
+                        </select>
+                    </div>
+                    <div class="setting-group">
+                        <label for="speedSelect">Speed:</label>
+                        <select id="speedSelect">
+                            <option value="0.75">0.75x (Slow)</option>
+                            <option value="1" selected>1.0x (Normal)</option>
+                            <option value="1.25">1.25x (Fast)</option>
+                            <option value="1.5">1.5x (Faster)</option>
+                        </select>
+                    </div>
+                    <div class="audio-controls">
+                        <button class="audio-btn speak" onclick="testVoice()">🔊 Test Voice</button>
+                        <button class="audio-btn stop" onclick="stopSpeaking()">⏹️ Stop</button>
+                    </div>
+                </div>
+
+                <div class="settings-panel">
+                    <h3>📚 Study Settings</h3>
+                    <div class="setting-group">
+                        <label for="categoryFilter">Filter by Category:</label>
+                        <select id="categoryFilter">
+                            <option value="all">All Categories</option>
+                            <option value="manual">General Manual</option>
+                            <option value="penal">Penal Code</option>
+                            <option value="contract">Contract</option>
+                            <option value="textbook">Textbook</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="settings-panel">
+                    <h3>🗑️ Reset Data</h3>
+                    <p style="color: #b0b0b0; margin-bottom: 15px;">Clear all your progress, highlights, and settings.</p>
+                    <button class="doc-btn secondary" onclick="resetAllData()">Reset Everything</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ===== SAMPLE QUESTIONS - ADD YOUR OWN HERE =====
+        const questions = [
+            {
+                type: 'multiple-choice',
+                category: 'manual',
+                question: 'Within what timeframe must line complaints be investigated?',
+                options: [
+                    '15 calendar days',
+                    '21 calendar days',
+                    '24 hours',
+                    '30 calendar days'
+                ],
+                correct: 1,
+                explanation: 'Procedure 303 states that all line complaints shall be investigated by the officer\'s chain of command within twenty-one (21) calendar days from the date of the written complaint.',
+                reference: 'Procedure 303, Section .04(B)(1)'
+            },
+            {
+                type: 'scenario',
+                category: 'manual',
+                scenario: 'You respond to a domestic disturbance at 0200 hours. Upon arrival, you observe a male subject with visible injuries and a female subject who appears agitated. The male states he was struck multiple times but refuses to press charges.',
+                question: 'What is your PRIMARY legal obligation?',
+                options: [
+                    'File a report and leave since the victim refuses to press charges',
+                    'Arrest the female immediately for assault',
+                    'Investigate, document injuries, and follow mandatory arrest provisions regardless of victim cooperation',
+                    'Request the victim to call back if he changes his mind'
+                ],
+                correct: 2,
+                explanation: 'In domestic violence cases with visible injuries, many jurisdictions require mandatory arrest regardless of victim cooperation. Officers must: 1) Separate and interview parties individually, 2) Document all injuries with photos, 3) Collect witness statements, 4) Follow department policy on mandatory arrest, 5) Provide victim with resources.',
+                reference: 'Procedure 604.10'
+            },
+            {
+                type: 'multiple-choice',
+                category: 'manual',
+                question: 'How much advance notice must officers receive before being interrogated in an investigation?',
+                options: [
+                    '12 hours',
+                    '24 hours',
+                    '48 hours',
+                    '72 hours'
+                ],
+                correct: 1,
+                explanation: 'Officers under investigation shall be informed twenty-four (24) hours prior to being interrogated or asked to respond to an investigation and shall be provided with sufficient information to be reasonably apprised of the allegations.',
+                reference: 'Procedure 303, Section .09(E)(3)'
+            },
+            {
+                type: 'scenario',
+                category: 'manual',
+                scenario: 'During your shift, you are involved in a minor traffic dispute with your neighbor in your personal vehicle near your home. No law enforcement response is needed, but the situation is tense and your neighbor threatens to file a complaint.',
+                question: 'What is your reporting obligation?',
+                options: [
+                    'No reporting required since it occurred off-duty',
+                    'Report only if a formal complaint is actually filed',
+                    'Immediately self-report verbally and in writing to your supervisor on SAPD Form 200-OR',
+                    'Wait until your next shift to mention it casually'
+                ],
+                correct: 2,
+                explanation: 'Officers must immediately self-report to their immediate supervisor, verbally and in writing on SAPD Form 200-OR, any disturbances they are involved in that have the POTENTIAL to result in a law enforcement response or a complaint.',
+                reference: 'Procedure 303, Section .03(A)'
+            },
+            {
+                type: 'multiple-choice',
+                category: 'manual',
+                question: 'How many members are needed for a quorum in the Police portion of CCARB?',
+                options: [
+                    'Three (3) members',
+                    'Five (5) members',
+                    'Seven (7) members',
+                    'Nine (9) members'
+                ],
+                correct: 1,
+                explanation: 'The Police portion of the Chief\'s Complaint and Administrative Review Board requires a quorum of five (5) members.',
+                reference: 'Procedure 303, Section .14(A)(2)(c)'
+            }
+        ];
+        // ===== END SAMPLE QUESTIONS =====
+
+        // State management
+        let currentMode = 'dashboard';
+        let currentQuestionIndex = 0;
+        let selectedAnswer = null;
+        let showingFeedback = false;
+        let stats = {
+            studied: 0,
+            correct: 0,
+            total: 0
+        };
+        let highlights = [];
+        let documentLoaded = false;
+
+        // Text-to-Speech
+        let speechSynth = window.speechSynthesis;
+        let voices = [];
+        let currentUtterance = null;
+
+        // Initialize
+        function init() {
+            loadVoices();
+            loadProgress();
+            updateStats();
+            setupModeListeners();
+            setupTextSelection();
+        }
+
+        // Mode switching
+        function setupModeListeners() {
+            document.querySelectorAll('.mode-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const mode = tab.dataset.mode;
+                    switchMode(mode);
+                });
+            });
+        }
+
+        function switchMode(mode) {
+            currentMode = mode;
+            
+            document.querySelectorAll('.mode-tab').forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.dataset.mode === mode) {
+                    tab.classList.add('active');
+                }
+            });
+            
+            document.querySelectorAll('.mode-content').forEach(content => {
+                content.classList.remove('active');
+                if (content.dataset.mode === mode) {
+                    content.classList.add('active');
+                }
+            });
+
+            if (mode === 'quiz') {
+                startQuiz();
+            } else if (mode === 'review') {
+                loadReviewHighlights();
+            } else if (mode === 'dashboard') {
+                updateDashboard();
+            }
+        }
+
+        // Voice loading
+        function loadVoices() {
+            voices = speechSynth.getVoices();
+            const voiceSelect = document.getElementById('voiceSelect');
+            voiceSelect.innerHTML = '';
+            
+            const englishVoices = voices.filter(v => v.lang.startsWith('en'));
+            
+            if (englishVoices.length === 0) {
+                voiceSelect.innerHTML = '<option value="">Default Voice</option>';
+                return;
+            }
+
+            englishVoices.forEach((voice, index) => {
+                const option = document.createElement('option');
+                option.value = index;
+                option.textContent = `${voice.name} (${voice.lang})`;
+                voiceSelect.appendChild(option);
+            });
+        }
+
+        if (speechSynth.onvoiceschanged !== undefined) {
+            speechSynth.onvoiceschanged = loadVoices;
+        }
+
+        function speak(text) {
+            stopSpeaking();
+            
+            const utterance = new SpeechSynthesisUtterance(text);
+            const speed = parseFloat(document.getElementById('speedSelect').value);
+            utterance.rate = speed;
+            
+            const voiceSelect = document.getElementById('voiceSelect');
+            const selectedVoice = voiceSelect.value;
+            if (selectedVoice && voices[selectedVoice]) {
+                utterance.voice = voices[selectedVoice];
+            }
+            
+            currentUtterance = utterance;
+            speechSynth.speak(utterance);
+        }
+
+        function stopSpeaking() {
+            speechSynth.cancel();
+            currentUtterance = null;
+        }
+
+        function testVoice() {
+            speak('This is a test of the text to speech voice. You can adjust the speed and voice in the settings.');
+        }
+
+        // Document functions
+        function loadDocument() {
+            const text = document.getElementById('documentText').value.trim();
+            if (!text) {
+                alert('Please paste some text first!');
+                return;
+            }
+
+            const content = document.getElementById('documentContent');
+            const paragraphs = text.split('\n\n').filter(p => p.trim());
+            
+            content.innerHTML = paragraphs.map((p, i) => 
+                `<p data-paragraph="${i}">${p}</p>`
+            ).join('');
+
+            document.getElementById('documentDisplay').style.display = 'block';
+            documentLoaded = true;
+            
+            alert('Document loaded! Select any text and choose a highlight color.');
+        }
+
+        function clearDocument() {
+            if (confirm('Clear document and all highlights?')) {
+                document.getElementById('documentText').value = '';
+                document.getElementById('documentContent').innerHTML = '';
+                document.getElementById('documentDisplay').style.display = 'none';
+                documentLoaded = false;
+                highlights = [];
+                saveProgress();
+            }
+        }
+
+        function speakDocument() {
+            if (!documentLoaded) {
+                alert('Load a document first!');
+                return;
+            }
+            
+            const text = document.getElementById('documentContent').innerText;
+            speak(text);
+        }
+
+        // Text selection and highlighting
+        function setupTextSelection() {
+            document.addEventListener('mouseup', handleTextSelection);
+            document.addEventListener('touchend', handleTextSelection);
+        }
+
+        function handleTextSelection(e) {
+            const selection = window.getSelection();
+            const selectedText = selection.toString().trim();
+            
+            if (selectedText.length > 0 && documentLoaded) {
+                const range = selection.getRangeAt(0);
+                const rect = range.getBoundingClientRect();
+                
+                const menu = document.getElementById('highlightMenu');
+                menu.style.left = `${rect.left + window.scrollX}px`;
+                menu.style.top = `${rect.top + window.scrollY - 50}px`;
+                menu.classList.add('active');
+            } else {
+                document.getElementById('highlightMenu').classList.remove('active');
+            }
+        }
+
+        function highlightSelection(color) {
+            const selection = window.getSelection();
+            if (selection.rangeCount === 0) return;
+            
+            const range = selection.getRangeAt(0);
+            const selectedText = selection.toString().trim();
+            
+            if (!selectedText) return;
+            
+            const note = prompt(`Add a note for this ${color} highlight (optional):`);
+            
+            const span = document.createElement('span');
+            span.className = `highlight ${color}`;
+            span.textContent = selectedText;
+            
+            if (note) {
+                const noteDiv = document.createElement('div');
+                noteDiv.className = 'highlight-note';
+                noteDiv.textContent = note;
+                span.appendChild(noteDiv);
+            }
+            
+            range.deleteContents();
+            range.insertNode(span);
+            
+            highlights.push({
+                text: selectedText,
+                color: color,
+                note: note,
+                timestamp: Date.now()
+            });
+            
+            saveProgress();
+            updateStats();
+            
+            document.getElementById('highlightMenu').classList.remove('active');
+            selection.removeAllRanges();
+        }
+
+        // Quiz functions
+        function startQuiz() {
+            if (questions.length === 0) {
+                document.getElementById('quizContainer').innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">❓</div>
+                        <h3>No Questions Yet</h3>
+                        <p>Generate questions from your study materials or add sample questions to get started.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            currentQuestionIndex = 0;
+            selectedAnswer = null;
+            showingFeedback = false;
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const q = questions[currentQuestionIndex];
+            const container = document.getElementById('quizContainer');
+            
+            let html = `
+                <div class="quiz-container">
+                    <div class="question-header">
+                        <span class="question-number">Question ${currentQuestionIndex + 1} of ${questions.length}</span>
+                        <div>
+                            <span class="question-category">${q.category.toUpperCase()}</span>
+                            ${q.type === 'scenario' ? '<span class="scenario-badge">SCENARIO</span>' : ''}
+                        </div>
+                    </div>
+            `;
+            
+            if (q.scenario) {
+                html += `<div class="scenario-text">${q.scenario}</div>`;
+            }
+            
+            html += `
+                    <div class="question-text">${q.question}</div>
+                    <div class="options">
+            `;
+            
+            q.options.forEach((option, i) => {
+                const letter = String.fromCharCode(65 + i);
+                let optionClass = 'option';
+                
+                if (showingFeedback) {
+                    if (i === q.correct) {
+                        optionClass += ' correct';
+                    } else if (i === selectedAnswer && i !== q.correct) {
+                        optionClass += ' incorrect';
+                    }
+                } else if (i === selectedAnswer) {
+                    optionClass += ' selected';
+                }
+                
+                html += `
+                    <div class="${optionClass}" onclick="selectAnswer(${i})">
+                        <span class="option-letter">${letter}.</span>
+                        <span>${option}</span>
+                    </div>
+                `;
+            });
+            
+            html += '</div>';
+            
+            if (showingFeedback) {
+                const isCorrect = selectedAnswer === q.correct;
+                html += `
+                    <div class="feedback ${isCorrect ? 'correct' : 'incorrect'}">
+                        <div class="feedback-title">${isCorrect ? '✅ Correct!' : '❌ Incorrect'}</div>
+                        <div class="feedback-text">${q.explanation}</div>
+                        <div class="feedback-reference">Reference: ${q.reference}</div>
+                    </div>
+                `;
+            }
+            
+            html += `
+                    <div class="quiz-actions">
+                        ${!showingFeedback ? 
+                            `<button class="quiz-btn primary" onclick="submitAnswer()" ${selectedAnswer === null ? 'disabled' : ''}>Submit Answer</button>` :
+                            `<button class="quiz-btn primary" onclick="nextQuestion()">
+                                ${currentQuestionIndex < questions.length - 1 ? 'Next Question →' : 'Finish Quiz'}
+                            </button>
+                            <button class="quiz-btn secondary" onclick="jumpToSource()">📖 Review Source</button>`
+                        }
+                        <button class="quiz-btn secondary" onclick="speakQuestion()">🔊 Read Question</button>
+                    </div>
+                </div>
+            `;
+            
+            container.innerHTML = html;
+        }
+
+        function selectAnswer(index) {
+            if (showingFeedback) return;
+            selectedAnswer = index;
+            showQuestion();
+        }
+
+        function submitAnswer() {
+            if (selectedAnswer === null) return;
+            
+            showingFeedback = true;
+            stats.total++;
+            
+            if (selectedAnswer === questions[currentQuestionIndex].correct) {
+                stats.correct++;
+            }
+            
+            stats.studied++;
+            saveProgress();
+            updateStats();
+            showQuestion();
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            selectedAnswer = null;
+            showingFeedback = false;
+            
+            if (currentQuestionIndex >= questions.length) {
+                showQuizComplete();
+            } else {
+                showQuestion();
+            }
+        }
+
+        function showQuizComplete() {
+            const accuracy = Math.round((stats.correct / stats.total) * 100);
+            document.getElementById('quizContainer').innerHTML = `
+                <div class="complete-message">
+                    <h2>🎉 Quiz Complete!</h2>
+                    <p>You've completed all ${questions.length} questions.</p>
+                    <p style="margin-top: 20px; font-size: 24px; color: #667eea;">
+                        Final Score: ${accuracy}%
+                    </p>
+                    <button class="quiz-btn primary" style="margin-top: 30px; max-width: 300px;" onclick="startQuiz()">
+                        Take Quiz Again
+                    </button>
+                </div>
+            `;
+        }
+
+        function speakQuestion() {
+            const q = questions[currentQuestionIndex];
+            let text = '';
+            
+            if (q.scenario) {
+                text = `Scenario: ${q.scenario}. `;
+            }
+            
+            text += `Question: ${q.question}. `;
+            text += 'Options: ';
+            
+            q.options.forEach((option, i) => {
+                const letter = String.fromCharCode(65 + i);
+                text += `${letter}. ${option}. `;
+            });
+            
+            speak(text);
+        }
+
+        function jumpToSource() {
+            switchMode('reader');
+            alert('Feature coming soon! This will jump to the highlighted section in your study materials.');
+        }
+
+        function generateQuestions() {
+            alert('🔥 AI Question Generator coming soon!\n\nThis feature will automatically create quiz questions from your highlighted text.');
+        }
+
+        // Review functions
+        function loadReviewHighlights() {
+            const colors = ['red', 'yellow', 'green', 'blue'];
+            
+            colors.forEach(color => {
+                const container = document.getElementById(`${color}Highlights`);
+                const colorHighlights = highlights.filter(h => h.color === color);
+                
+                if (colorHighlights.length === 0) {
+                    container.innerHTML = `
+                        <div class="empty-state">
+                            <p>No ${color} highlights yet.</p>
+                        </div>
+                    `;
+                } else {
+                    container.innerHTML = colorHighlights.map((h, i) => `
+                        <div class="highlight-item ${color}">
+                            <div class="highlight-preview">${h.text.substring(0, 100)}${h.text.length > 100 ? '...' : ''}</div>
+                            ${h.note ? `<div class="highlight-meta">📝 ${h.note}</div>` : ''}
+                        </div>
+                    `).join('');
+                }
+            });
+        }
+
+        // Stats and progress
+        function updateStats() {
+            document.getElementById('totalStudied').textContent = stats.studied;
+            document.getElementById('accuracy').textContent = 
+                stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) + '%' : '0%';
+            document.getElementById('highlightCount').textContent = highlights.length;
+            document.getElementById('strugglingCount').textContent = 
+                highlights.filter(h => h.color === 'red').length;
+        }
+
+        function updateDashboard() {
+            updateStats();
+            
+            const strugglingContainer = document.getElementById('strugglingHighlights');
+            const redHighlights = highlights.filter(h => h.color === 'red');
+            
+            if (redHighlights.length === 0) {
+                strugglingContainer.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">📚</div>
+                        <h3>Start Studying!</h3>
+                        <p>Highlight sections you're struggling with in red, and they'll appear here for quick review.</p>
+                    </div>
+                `;
+            } else {
+                strugglingContainer.innerHTML = redHighlights.map((h, i) => `
+                    <div class="highlight-item red" onclick="switchMode('reader')">
+                        <div class="highlight-preview">${h.text.substring(0, 100)}${h.text.length > 100 ? '...' : ''}</div>
+                        ${h.note ? `<div class="highlight-meta">📝 ${h.note}</div>` : ''}
+                    </div>
+                `).join('');
+            }
+        }
+
+        function saveProgress() {
+            localStorage.setItem('sgtExamPro', JSON.stringify({
+                stats: stats,
+                highlights: highlights
+            }));
+        }
+
+        function loadProgress() {
+            const saved = localStorage.getItem('sgtExamPro');
+            if (saved) {
+                const data = JSON.parse(saved);
+                stats = data.stats || stats;
+                highlights = data.highlights || [];
+            }
+        }
+
+        function resetAllData() {
+            if (confirm('Are you sure? This will delete ALL your progress, highlights, and settings. This cannot be undone.')) {
+                if (confirm('Really sure? There\'s no going back!')) {
+                    localStorage.removeItem('sgtExamPro');
+                    stats = { studied: 0, correct: 0, total: 0 };
+                    highlights = [];
+                    clearDocument();
+                    updateStats();
+                    alert('All data has been reset.');
+                }
+            }
+        }
+
+        // Initialize on load
+        init();
+    </script>
+</body>
+</html>

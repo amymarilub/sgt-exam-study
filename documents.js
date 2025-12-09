@@ -6,6 +6,46 @@
 const STUDY_DOCUMENTS = [
     {
         title: "Procedure 303 - General Manual",
+        summary: {
+            keyTimeframes: [
+                "Line Complaints: 21 calendar days",
+                "Formal Complaints: 180 calendar days (per Chapter 143 Texas Local Government Code)",
+                "Complainant Appeal Window: 30 days from notification"
+            ],
+            whoInvestigates: [
+                "Line Complaints → Immediate Supervisor or Chain of Command",
+                "Formal Complaints → Internal Affairs",
+                "Deputy Chief of Management Services must be notified immediately for Formal Complaints"
+            ],
+            complaintTypes: [
+                "Line Complaint: Minor policy violations, discourteous behavior, performance issues",
+                "Formal Complaint: Could result in suspension/dismissal - excessive force, criminal conduct, on-duty intoxication, domestic violence, misuse of authority",
+                "Anonymous Complaint: Source refuses to identify themselves"
+            ],
+            testableDefinitions: [
+                "Chapter 143: Texas Local Government Code (Civil Service)",
+                "Sustained: Sufficient evidence to prove the allegation",
+                "Not Sustained: Insufficient evidence to prove or disprove",
+                "Exonerated: Act occurred but was justified, lawful, and proper",
+                "Unfounded: Allegation was false or incident didn't occur",
+                "Policy Failure: Member followed policy but policy may be inadequate"
+            ],
+            commonExamTraps: [
+                "Don't confuse: 21 days (Line) vs 180 days (Formal)",
+                "Extensions require Deputy Chief approval (not just supervisor)",
+                "Members have Chapter 143 rights AND labor agreement rights",
+                "Complainant gets notified of disposition but NOT specific discipline",
+                "Never discourage complaints - accept all complaints courteously"
+            ],
+            mostTestedTopics: [
+                "Time deadlines (21 vs 180 days) - MEMORIZE THESE",
+                "Who investigates which type of complaint",
+                "Notification requirements (when to notify Deputy Chief)",
+                "Complaint dispositions (Sustained, Not Sustained, Exonerated, Unfounded)",
+                "Complainant rights and appeal process",
+                "Member rights under Chapter 143"
+            ]
+        },
         content: `
             <h2>COMPLAINTS AGAINST DEPARTMENT MEMBERS</h2>
             
@@ -86,6 +126,16 @@ const STUDY_DOCUMENTS = [
     },
     {
         title: "Procedure 501 - Use of Force (Coming Soon)",
+        summary: {
+            keyTimeframes: [
+                "Content will be added when materials are available"
+            ],
+            whoInvestigates: [],
+            complaintTypes: [],
+            testableDefinitions: [],
+            commonExamTraps: [],
+            mostTestedTopics: []
+        },
         content: `
             <p style="text-align: center; color: #999; margin-top: 50px;">
                 This document will be added when study materials become available.
@@ -94,6 +144,16 @@ const STUDY_DOCUMENTS = [
     },
     {
         title: "Procedure 204 - Patrol Procedures (Coming Soon)",
+        summary: {
+            keyTimeframes: [
+                "Content will be added when materials are available"
+            ],
+            whoInvestigates: [],
+            complaintTypes: [],
+            testableDefinitions: [],
+            commonExamTraps: [],
+            mostTestedTopics: []
+        },
         content: `
             <p style="text-align: center; color: #999; margin-top: 50px;">
                 This document will be added when study materials become available.
@@ -102,6 +162,16 @@ const STUDY_DOCUMENTS = [
     },
     {
         title: "Criminal Investigations Manual (Coming Soon)",
+        summary: {
+            keyTimeframes: [
+                "Content will be added when materials are available"
+            ],
+            whoInvestigates: [],
+            complaintTypes: [],
+            testableDefinitions: [],
+            commonExamTraps: [],
+            mostTestedTopics: []
+        },
         content: `
             <p style="text-align: center; color: #999; margin-top: 50px;">
                 This document will be added when study materials become available.
@@ -196,4 +266,3 @@ const QUIZ_QUESTIONS = [
     // - type: 'multiple-choice' or 'scenario'
     
 ];
-

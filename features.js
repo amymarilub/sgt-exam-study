@@ -1,702 +1,266 @@
 // ========================================
-// GLOBAL STATE
+// NOTES FUNCTIONALITY
 // ========================================
-let currentMode = 'dashboard';
-let currentQuestionIndex = 0;
-let quizAnswers = [];
-let selectedVoice = null;
-let studyData = {
-    questionsStudied: 0,
-    correctAnswers: 0,
-    totalAttempts: 0,
-    highlights: [],
-    studyStreak: 0,
-    examDate: '2026-04-23',
-    documentsRead: [], // Array of document indices that have been opened
-    quizzesCompleted: {}, // Object: {docIndex: {completed: true, score: 85}}
-    studyPlan: [], // Array of study plan items with completion status
-    notes: {}, // Object: {documentIndex: [{text: "note", timestamp: "..."}]}
-    flashcardProgress: {} // Object: {cardId: {correct: 0, incorrect: 0, lastSeen: "..."}}
-};
+let currentDocumentIndex = null;
 
-// ========================================
-// DATA PERSISTENCE
-// ========================================
-function loadData() {
-    const saved = localStorage.getItem('sgtStudyData');
-    if (saved) {
-        studyData = JSON.parse(saved);
-        updateDashboard();
-    }
+// This will be called when document loads
+function updateCurrentDocument(index) {
+    currentDocumentIndex = index;
+    displayNotes();
 }
 
-function saveData() {
-    localStorage.setItem('sgtStudyData', JSON.stringify(studyData));
-    updateDashboard();
-}
-
-// ========================================
-// DASHBOARD
-// ========================================
-function updateDashboard() {
-    document.getElementById('totalStudied').textContent = studyData.questionsStudied;
-    const accuracy = studyData.totalAttempts > 0 
-        ? Math.round((studyData.correctAnswers / studyData.totalAttempts) * 100) 
-        : 0;
-    document.getElementById('accuracy').textContent = accuracy + '%';
-    document.getElementById('totalHighlights').textContent = studyData.highlights.length;
-    document.getElementById('studyStreak').textContent = studyData.studyStreak;
+function toggleAddNote() {
+    const box = document.getElementById('addNoteBox');
+    const input = document.getElementById('noteInput');
     
-    // Update exam countdown
-    updateExamCountdown();
-    
-    // Update study plan
-    updateStudyPlan();
-    
-    // Update recommended next steps
-    updateRecommendedSteps();
-}
-
-// Calculate days until exam
-function updateExamCountdown() {
-    const examDate = new Date('2026-04-23T00:00:00'); // Explicit format
-    const today = new Date();
-    today.setHours(0, 0, 0, 0); // Reset time to midnight for accurate day counting
-    
-    const diffTime = examDate.getTime() - today.getTime();
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    
-    const daysElement = document.getElementById('daysUntilExam');
-    const countdownElement = document.getElementById('examCountdown');
-    
-    if (!daysElement || !countdownElement) return; // Safety check
-    
-    daysElement.textContent = diffDays > 0 ? diffDays : 0;
-    
-    // Add urgent styling if less than 30 days
-    if (diffDays <= 30 && diffDays > 0) {
-        countdownElement.classList.add('urgent');
+    if (box.style.display === 'none') {
+        box.style.display = 'block';
+        input.focus();
     } else {
-        countdownElement.classList.remove('urgent');
+        box.style.display = 'none';
+        input.value = '';
     }
 }
 
-// Update study plan progress
-function updateStudyPlan() {
-    const container = document.getElementById('studyPlanProgress');
+function saveNote() {
+    const input = document.getElementById('noteInput');
+    const text = input.value.trim();
     
-    if (typeof STUDY_DOCUMENTS === 'undefined' || STUDY_DOCUMENTS.length === 0) {
-        container.innerHTML = '<p style="color: #999;">Loading study materials...</p>';
+    if (!text) {
+        alert('Please enter a note');
         return;
     }
     
-    let html = '';
-    
-    STUDY_DOCUMENTS.forEach((doc, index) => {
-        // Skip "coming soon" documents
-        if (doc.title.includes('Coming Soon')) return;
-        
-        // Calculate progress for this document
-        const isRead = studyData.documentsRead.includes(index);
-        const quizData = studyData.quizzesCompleted[index];
-        const hasQuiz = quizData && quizData.completed;
-        const quizScore = hasQuiz ? quizData.score : 0;
-        
-        // Calculate percentage (50% for reading, 50% for quiz)
-        let percentage = 0;
-        if (isRead) percentage += 50;
-        if (hasQuiz) percentage += 50;
-        
-        const isComplete = percentage === 100;
-        
-        html += `
-            <div class="document-progress">
-                <div class="document-progress-header">
-                    <span class="document-title">${doc.title}</span>
-                    <span class="progress-percentage">${percentage}%</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill ${isComplete ? 'complete' : ''}" style="width: ${percentage}%"></div>
-                </div>
-                <div class="section-items">
-                    <div class="section-item ${isRead ? 'completed' : ''}">
-                        <span class="status-icon">${isRead ? '✅' : '⏳'}</span>
-                        <span class="item-text">Read Document</span>
-                    </div>
-                    <div class="section-item ${hasQuiz ? 'completed' : ''}">
-                        <span class="status-icon">${hasQuiz ? '✅' : '🔒'}</span>
-                        <span class="item-text">Complete Quiz</span>
-                        ${hasQuiz ? `<span class="score">${quizScore}%</span>` : ''}
-                    </div>
-                </div>
-            </div>
-        `;
-    });
-    
-    if (html === '') {
-        html = '<p style="color: #999;">Study materials will be added in January 2026</p>';
-    }
-    
-    container.innerHTML = html;
-}
-
-// Update recommended next steps
-function updateRecommendedSteps() {
-    const container = document.getElementById('nextStepsList');
-    const steps = [];
-    
-    if (typeof STUDY_DOCUMENTS === 'undefined' || STUDY_DOCUMENTS.length === 0) {
-        container.innerHTML = '<p style="color: #999;">Recommendations will appear when materials are loaded</p>';
-        return;
-    }
-    
-    // Find first unread document
-    let firstUnread = null;
-    STUDY_DOCUMENTS.forEach((doc, index) => {
-        if (!doc.title.includes('Coming Soon') && !studyData.documentsRead.includes(index)) {
-            if (firstUnread === null) firstUnread = index;
-        }
-    });
-    
-    // Find documents that are read but quiz not completed
-    let firstUnquizzed = null;
-    STUDY_DOCUMENTS.forEach((doc, index) => {
-        if (!doc.title.includes('Coming Soon') && 
-            studyData.documentsRead.includes(index) && 
-            (!studyData.quizzesCompleted[index] || !studyData.quizzesCompleted[index].completed)) {
-            if (firstUnquizzed === null) firstUnquizzed = index;
-        }
-    });
-    
-    // Check for red highlights to review
-    const redHighlights = studyData.highlights.filter(h => h.color === 'red');
-    
-    // Build recommendations
-    if (firstUnread !== null) {
-        steps.push({
-            icon: '📖',
-            text: `Start reading: ${STUDY_DOCUMENTS[firstUnread].title}`,
-            action: () => loadDocument(firstUnread)
-        });
-    }
-    
-    if (firstUnquizzed !== null) {
-        steps.push({
-            icon: '❓',
-            text: `Take quiz: ${STUDY_DOCUMENTS[firstUnquizzed].title}`,
-            action: () => {
-                document.querySelector('[data-mode="quiz"]').click();
-            }
-        });
-    }
-    
-    if (redHighlights.length > 0) {
-        steps.push({
-            icon: '🔴',
-            text: `Review ${redHighlights.length} struggling topic${redHighlights.length > 1 ? 's' : ''} (red highlights)`,
-            action: () => {
-                document.querySelector('[data-mode="review"]').click();
-            }
-        });
-    }
-    
-    // If low quiz accuracy, suggest retaking
-    if (studyData.totalAttempts > 0) {
-        const accuracy = Math.round((studyData.correctAnswers / studyData.totalAttempts) * 100);
-        if (accuracy < 80) {
-            steps.push({
-                icon: '🎯',
-                text: `Improve quiz accuracy (currently ${accuracy}%) - retake quizzes`,
-                action: () => {
-                    document.querySelector('[data-mode="quiz"]').click();
-                }
-            });
-        }
-    }
-    
-    // If everything is done
-    if (steps.length === 0) {
-        steps.push({
-            icon: '🎉',
-            text: 'Great job! Review your red highlights or retake quizzes to maintain knowledge',
-            action: () => {
-                document.querySelector('[data-mode="review"]').click();
-            }
-        });
-    }
-    
-    // Render steps
-    container.innerHTML = steps.map((step, i) => `
-        <div class="next-step" onclick="executeNextStep(${i})">
-            <span class="next-step-icon">${step.icon}</span>
-            <span class="next-step-text">${step.text}</span>
-        </div>
-    `).join('');
-    
-    // Store steps for onclick handlers
-    window.nextSteps = steps;
-}
-
-// Execute next step action
-function executeNextStep(index) {
-    if (window.nextSteps && window.nextSteps[index]) {
-        window.nextSteps[index].action();
-    }
-}
-
-// Load specific document
-function loadDocument(index) {
-    document.querySelector('[data-mode="study"]').click();
-    document.getElementById('documentSelect').value = index;
-    document.getElementById('documentSelect').dispatchEvent(new Event('change'));
-}
-
-// ========================================
-// MODE SWITCHING
-// ========================================
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.mode-tab').forEach(tab => {
-        tab.addEventListener('click', () => {
-            document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
-            document.querySelectorAll('.mode-content').forEach(c => c.classList.remove('active'));
-            
-            tab.classList.add('active');
-            const mode = tab.dataset.mode;
-            document.getElementById(mode).classList.add('active');
-            currentMode = mode;
-
-            if (mode === 'quiz') {
-                loadQuiz();
-            } else if (mode === 'review') {
-                loadReview();
-            }
-        });
-    });
-
-    // Initialize
-    loadData();
-    populateDocuments();
-    populateVoices();
-    setupFloatingToolbar();
-    setupSearch();
-});
-
-// ========================================
-// DOCUMENT LOADING
-// ========================================
-function populateDocuments() {
-    const select = document.getElementById('documentSelect');
-    if (typeof STUDY_DOCUMENTS !== 'undefined') {
-        STUDY_DOCUMENTS.forEach((doc, index) => {
-            const option = document.createElement('option');
-            option.value = index;
-            option.textContent = doc.title;
-            select.appendChild(option);
-        });
-    }
-}
-
-document.getElementById('documentSelect').addEventListener('change', (e) => {
-    const docIndex = e.target.value;
-    if (docIndex === '') return;
-
-    const doc = STUDY_DOCUMENTS[docIndex];
-    const content = document.getElementById('documentContent');
-    
-    // Mark document as read
-    const index = parseInt(docIndex);
-    if (!studyData.documentsRead.includes(index)) {
-        studyData.documentsRead.push(index);
-        saveData();
-    }
-    
-    // Build summary HTML if summary exists
-    let summaryHTML = '';
-    if (doc.summary && doc.summary.keyTimeframes && doc.summary.keyTimeframes[0] !== 'Content will be added when materials are available') {
-        summaryHTML = `
-            <div class="document-summary">
-                <div class="summary-header" onclick="toggleSummary()">
-                    <h3>📌 QUICK SUMMARY - Study This First!</h3>
-                    <button class="summary-toggle" id="summaryToggle">Hide Summary</button>
-                </div>
-                <div class="summary-content" id="summaryContent">
-                    ${doc.summary.keyTimeframes.length > 0 ? `
-                    <div class="summary-section must-know">
-                        <h4>⏱️ KEY TIMEFRAMES (MEMORIZE THESE!)</h4>
-                        <ul>
-                            ${doc.summary.keyTimeframes.map(item => `<li>${item}</li>`).join('')}
-                        </ul>
-                    </div>
-                    ` : ''}
-                    
-                    ${doc.summary.whoInvestigates.length > 0 ? `
-                    <div class="summary-section">
-                        <h4>👮 WHO INVESTIGATES</h4>
-                        <ul>
-                            ${doc.summary.whoInvestigates.map(item => `<li>${item}</li>`).join('')}
-                        </ul>
-                    </div>
-                    ` : ''}
-                    
-                    ${doc.summary.complaintTypes.length > 0 ? `
-                    <div class="summary-section">
-                        <h4>📋 TYPES OF COMPLAINTS</h4>
-                        <ul>
-                            ${doc.summary.complaintTypes.map(item => `<li>${item}</li>`).join('')}
-                        </ul>
-                    </div>
-                    ` : ''}
-                    
-                    ${doc.summary.testableDefinitions.length > 0 ? `
-                    <div class="summary-section">
-                        <h4>📖 TESTABLE DEFINITIONS</h4>
-                        <ul>
-                            ${doc.summary.testableDefinitions.map(item => `<li>${item}</li>`).join('')}
-                        </ul>
-                    </div>
-                    ` : ''}
-                    
-                    ${doc.summary.mostTestedTopics.length > 0 ? `
-                    <div class="summary-section must-know">
-                        <h4>🎯 MOST TESTED ON EXAMS</h4>
-                        <ul>
-                            ${doc.summary.mostTestedTopics.map(item => `<li>${item}</li>`).join('')}
-                        </ul>
-                    </div>
-                    ` : ''}
-                    
-                    ${doc.summary.commonExamTraps.length > 0 ? `
-                    <div class="summary-section exam-traps">
-                        <h4>⚠️ COMMON EXAM TRAPS - DON'T GET CAUGHT!</h4>
-                        <ul>
-                            ${doc.summary.commonExamTraps.map(item => `<li>${item}</li>`).join('')}
-                        </ul>
-                    </div>
-                    ` : ''}
-                </div>
-                <div class="summary-divider"></div>
-            </div>
-        `;
-    }
-    
-    content.innerHTML = `<h2>${doc.title}</h2>${summaryHTML}${doc.content}`;
-    
-    // Clear search results when loading new document
-    const searchResults = document.getElementById('searchResults');
-    searchResults.classList.remove('active');
-    searchResults.innerHTML = '';
-});
-
-// Toggle summary visibility
-function toggleSummary() {
-    const content = document.getElementById('summaryContent');
-    const button = document.getElementById('summaryToggle');
-    
-    if (content.classList.contains('collapsed')) {
-        content.classList.remove('collapsed');
-        button.textContent = 'Hide Summary';
-    } else {
-        content.classList.add('collapsed');
-        button.textContent = 'Show Summary';
-    }
-}
-
-// ========================================
-// KEYWORD SEARCH
-// ========================================
-function setupSearch() {
-    const searchBtn = document.getElementById('searchBtn');
-    const searchInput = document.getElementById('searchInput');
-    
-    searchBtn.addEventListener('click', performSearch);
-    searchInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            performSearch();
-        }
-    });
-}
-
-function performSearch() {
-    const keyword = document.getElementById('searchInput').value.trim();
-    const content = document.getElementById('documentContent');
-    const resultsContainer = document.getElementById('searchResults');
-    
-    if (!keyword) {
-        alert('Please enter a search term');
-        return;
-    }
-    
-    if (!content.textContent || content.textContent === 'Select a document to begin studying...') {
+    if (currentDocumentIndex === null) {
         alert('Please select a document first');
         return;
     }
     
-    // Get all text nodes and search for keyword
-    const results = [];
-    const walker = document.createTreeWalker(
-        content,
-        NodeFilter.SHOW_TEXT,
-        null,
-        false
-    );
+    // Initialize notes array for this document if needed
+    if (!studyData.notes[currentDocumentIndex]) {
+        studyData.notes[currentDocumentIndex] = [];
+    }
     
-    let node;
-    while (node = walker.nextNode()) {
-        const text = node.textContent;
-        const lowerText = text.toLowerCase();
-        const lowerKeyword = keyword.toLowerCase();
-        let index = lowerText.indexOf(lowerKeyword);
-        
-        while (index !== -1) {
-            // Get context around the keyword (50 chars before and after)
-            const start = Math.max(0, index - 50);
-            const end = Math.min(text.length, index + keyword.length + 50);
-            const snippet = text.substring(start, end);
-            
-            results.push({
-                snippet: snippet,
-                fullText: text,
-                node: node,
-                index: index
+    // Add note
+    studyData.notes[currentDocumentIndex].push({
+        text: text,
+        timestamp: new Date().toISOString()
+    });
+    
+    saveData();
+    input.value = '';
+    toggleAddNote();
+    displayNotes();
+}
+
+function displayNotes() {
+    const container = document.getElementById('notesList');
+    
+    if (currentDocumentIndex === null || !studyData.notes[currentDocumentIndex] || studyData.notes[currentDocumentIndex].length === 0) {
+        container.innerHTML = '<p style="color: #999; text-align: center;">No notes yet. Add your first note above!</p>';
+        return;
+    }
+    
+    const notes = studyData.notes[currentDocumentIndex];
+    
+    container.innerHTML = notes.map((note, index) => `
+        <div class="note-item">
+            <div class="note-text">${note.text}</div>
+            <div class="note-meta">
+                <span>${new Date(note.timestamp).toLocaleDateString()} ${new Date(note.timestamp).toLocaleTimeString()}</span>
+                <button class="delete-note-btn" onclick="deleteNote(${index})">Delete</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+function deleteNote(index) {
+    if (confirm('Delete this note?')) {
+        studyData.notes[currentDocumentIndex].splice(index, 1);
+        saveData();
+        displayNotes();
+    }
+}
+
+// ========================================
+// FLASHCARD FUNCTIONALITY
+// ========================================
+let flashcards = [];
+let currentFlashcardIndex = 0;
+let isFlipped = false;
+
+function generateFlashcards() {
+    flashcards = [];
+    
+    if (typeof STUDY_DOCUMENTS === 'undefined') return;
+    
+    STUDY_DOCUMENTS.forEach((doc, docIndex) => {
+        if (doc.summary && doc.summary.keyTimeframes) {
+            // Create flashcards from key timeframes
+            doc.summary.keyTimeframes.forEach(item => {
+                if (item !== 'Content will be added when materials are available') {
+                    const parts = item.split(':');
+                    if (parts.length === 2) {
+                        flashcards.push({
+                            id: `timeframe-${docIndex}-${flashcards.length}`,
+                            question: parts[0].trim() + '?',
+                            answer: parts[1].trim(),
+                            category: 'Timeframes',
+                            docIndex: docIndex
+                        });
+                    }
+                }
             });
             
-            index = lowerText.indexOf(lowerKeyword, index + 1);
+            // Create flashcards from testable definitions
+            if (doc.summary.testableDefinitions) {
+                doc.summary.testableDefinitions.forEach(item => {
+                    const parts = item.split(':');
+                    if (parts.length === 2) {
+                        flashcards.push({
+                            id: `definition-${docIndex}-${flashcards.length}`,
+                            question: `What is ${parts[0].trim()}?`,
+                            answer: parts[1].trim(),
+                            category: 'Definitions',
+                            docIndex: docIndex
+                        });
+                    }
+                });
+            }
         }
-    }
+    });
     
-    // Display results
-    displaySearchResults(results, keyword);
+    // Shuffle flashcards
+    flashcards.sort(() => Math.random() - 0.5);
 }
 
-function displaySearchResults(results, keyword) {
-    const resultsContainer = document.getElementById('searchResults');
+function startFlashcards() {
+    generateFlashcards();
     
-    if (results.length === 0) {
-        resultsContainer.innerHTML = '<p style="color: #999;">No results found for "' + keyword + '"</p>';
-        resultsContainer.classList.add('active');
+    if (flashcards.length === 0) {
+        alert('No flashcards available yet. Add study materials in January!');
         return;
     }
     
-    resultsContainer.innerHTML = `
-        <p style="color: #ff8c42; font-weight: 600; margin-bottom: 10px;">
-            Found ${results.length} result${results.length > 1 ? 's' : ''} for "${keyword}"
-        </p>
-        ${results.map((result, i) => {
-            const highlightedSnippet = result.snippet.replace(
-                new RegExp(keyword, 'gi'),
-                match => `<span class="search-highlight">${match}</span>`
-            );
-            return `
-                <div class="search-result-item" onclick="scrollToResult(${i})">
-                    <div class="search-result-text">...${highlightedSnippet}...</div>
-                </div>
-            `;
-        }).join('')}
+    currentFlashcardIndex = 0;
+    isFlipped = false;
+    
+    const controls = document.querySelector('.flashcard-controls');
+    controls.style.display = 'none';
+    
+    const container = document.getElementById('flashcardContainer');
+    container.innerHTML = '';
+    container.style.display = 'block';
+    
+    displayFlashcard();
+}
+
+function displayFlashcard() {
+    if (currentFlashcardIndex >= flashcards.length) {
+        showFlashcardComplete();
+        return;
+    }
+    
+    const card = flashcards[currentFlashcardIndex];
+    const container = document.getElementById('flashcardContainer');
+    
+    container.innerHTML = `
+        <div class="flashcard-progress">
+            Card ${currentFlashcardIndex + 1} of ${flashcards.length}
+        </div>
+        <div class="flashcard" onclick="flipFlashcard()" id="currentFlashcard">
+            <div class="flashcard-front">
+                <div class="flashcard-question">${card.question}</div>
+            </div>
+            <div class="flip-indicator">Click to flip</div>
+        </div>
+        <div class="flashcard-actions" id="flashcardActions" style="display: none;">
+            <button class="flashcard-btn know-it-btn" onclick="markFlashcard(true)">✅ Know It</button>
+            <button class="flashcard-btn review-btn" onclick="markFlashcard(false)">🔴 Need Review</button>
+        </div>
     `;
-    resultsContainer.classList.add('active');
     
-    // Store results for scrolling
-    window.searchResults = results;
+    isFlipped = false;
 }
 
-function scrollToResult(index) {
-    const result = window.searchResults[index];
-    const content = document.getElementById('documentContent');
+function flipFlashcard() {
+    const card = flashcards[currentFlashcardIndex];
+    const cardElement = document.getElementById('currentFlashcard');
+    const actions = document.getElementById('flashcardActions');
     
-    // Find the parent element to scroll to
-    let element = result.node.parentElement;
-    while (element && element !== content) {
-        if (element.offsetTop) {
-            content.scrollTop = element.offsetTop - 100;
-            
-            // Temporarily highlight the found text
-            element.style.backgroundColor = 'rgba(255, 140, 66, 0.3)';
-            setTimeout(() => {
-                element.style.backgroundColor = '';
-            }, 2000);
-            break;
-        }
-        element = element.parentElement;
-    }
-}
-
-// ========================================
-// FLOATING HIGHLIGHT TOOLBAR
-// ========================================
-function setupFloatingToolbar() {
-    const toolbar = document.getElementById('floatingToolbar');
-    const content = document.getElementById('documentContent');
-    
-    // Show toolbar when text is selected
-    document.addEventListener('mouseup', (e) => {
-        const selection = window.getSelection();
-        
-        // Only show toolbar if in study mode and text is selected within document content
-        if (currentMode !== 'study' || 
-            !selection.rangeCount || 
-            selection.isCollapsed || 
-            !content.contains(selection.anchorNode)) {
-            toolbar.classList.remove('active');
-            return;
-        }
-        
-        const range = selection.getRangeAt(0);
-        const rect = range.getBoundingClientRect();
-        
-        // Position toolbar above selection
-        toolbar.style.left = rect.left + window.scrollX + (rect.width / 2) - (toolbar.offsetWidth / 2) + 'px';
-        toolbar.style.top = rect.top + window.scrollY - toolbar.offsetHeight - 10 + 'px';
-        
-        toolbar.classList.add('active');
-    });
-    
-    // Hide toolbar when clicking outside
-    document.addEventListener('mousedown', (e) => {
-        if (!toolbar.contains(e.target) && e.target !== toolbar) {
-            // Small delay to allow button clicks to register
-            setTimeout(() => {
-                const selection = window.getSelection();
-                if (selection.isCollapsed) {
-                    toolbar.classList.remove('active');
-                }
-            }, 100);
-        }
-    });
-}
-
-function highlightSelection(color) {
-    const selection = window.getSelection();
-    if (!selection.rangeCount || selection.isCollapsed) {
-        return;
-    }
-
-    const range = selection.getRangeAt(0);
-    const span = document.createElement('span');
-    span.className = `highlight-${color}`;
-    
-    try {
-        range.surroundContents(span);
-        
-        // Save highlight
-        studyData.highlights.push({
-            text: selection.toString(),
-            color: color,
-            timestamp: new Date().toISOString()
-        });
-        saveData();
-        
-        // Hide toolbar and clear selection
-        document.getElementById('floatingToolbar').classList.remove('active');
-        selection.removeAllRanges();
-    } catch (e) {
-        alert('Cannot highlight across different sections. Please select text within a single paragraph.');
-    }
-}
-
-function clearHighlight() {
-    const selection = window.getSelection();
-    if (!selection.rangeCount || selection.isCollapsed) {
-        alert('Please select highlighted text to clear!');
-        return;
-    }
-    
-    const range = selection.getRangeAt(0);
-    const container = range.commonAncestorContainer.parentElement;
-    
-    if (container.classList && 
-        (container.classList.contains('highlight-yellow') ||
-         container.classList.contains('highlight-red') ||
-         container.classList.contains('highlight-green') ||
-         container.classList.contains('highlight-blue'))) {
-        
-        const text = container.textContent;
-        container.replaceWith(text);
-        
-        // Remove from saved highlights
-        studyData.highlights = studyData.highlights.filter(h => h.text !== text);
-        saveData();
-        
-        // Hide toolbar
-        document.getElementById('floatingToolbar').classList.remove('active');
-    }
-    
-    selection.removeAllRanges();
-}
-
-// ========================================
-// TEXT-TO-SPEECH
-// ========================================
-function populateVoices() {
-    const voices = speechSynthesis.getVoices();
-    const select = document.getElementById('voiceSelect');
-    
-    select.innerHTML = '<option value="">Default Voice</option>';
-    
-    // Filter for quality English voices only
-    const goodVoices = voices.filter(voice => 
-        voice.lang.startsWith('en-') && 
-        !voice.name.includes('Google') // Often robotic
-    ).slice(0, 5); // Limit to 5 best
-    
-    goodVoices.forEach((voice, index) => {
-        const option = document.createElement('option');
-        option.value = voices.indexOf(voice); // Store original index
-        option.textContent = `${voice.name}`;
-        select.appendChild(option);
-    });
-}
-
-// Load voices when available
-if (speechSynthesis.onvoiceschanged !== undefined) {
-    speechSynthesis.onvoiceschanged = populateVoices;
-}
-
-let utterance = null;
-let isPaused = false;
-
-document.getElementById('playBtn').addEventListener('click', () => {
-    const content = document.getElementById('documentContent').textContent;
-    if (!content) return;
-
-    if (isPaused && utterance) {
-        speechSynthesis.resume();
-        isPaused = false;
+    if (!isFlipped) {
+        cardElement.classList.add('flipped');
+        cardElement.innerHTML = `
+            <div class="flashcard-back">
+                <div class="flashcard-answer">${card.answer}</div>
+            </div>
+            <div class="flip-indicator">Click for next card</div>
+        `;
+        actions.style.display = 'flex';
+        isFlipped = true;
     } else {
-        utterance = new SpeechSynthesisUtterance(content);
-        utterance.rate = parseFloat(document.getElementById('speedSelect').value);
-        
-        const voiceIndex = document.getElementById('voiceSelect').value;
-        if (voiceIndex) {
-            const voices = speechSynthesis.getVoices();
-            utterance.voice = voices[voiceIndex];
+        currentFlashcardIndex++;
+        displayFlashcard();
+    }
+}
+
+function markFlashcard(knowIt) {
+    const card = flashcards[currentFlashcardIndex];
+    
+    // Track progress
+    if (!studyData.flashcardProgress[card.id]) {
+        studyData.flashcardProgress[card.id] = {correct: 0, incorrect: 0};
+    }
+    
+    if (knowIt) {
+        studyData.flashcardProgress[card.id].correct++;
+    } else {
+        studyData.flashcardProgress[card.id].incorrect++;
+        // Add to highlights as something to review
+        if (!studyData.highlights.find(h => h.text === card.question)) {
+            studyData.highlights.push({
+                text: `${card.question} → ${card.answer}`,
+                color: 'red',
+                timestamp: new Date().toISOString()
+            });
         }
-        
-        speechSynthesis.speak(utterance);
     }
-});
+    
+    studyData.flashcardProgress[card.id].lastSeen = new Date().toISOString();
+    saveData();
+    
+    currentFlashcardIndex++;
+    displayFlashcard();
+}
 
-document.getElementById('pauseBtn').addEventListener('click', () => {
-    if (speechSynthesis.speaking && !isPaused) {
-        speechSynthesis.pause();
-        isPaused = true;
-    }
-});
-
-document.getElementById('stopBtn').addEventListener('click', () => {
-    speechSynthesis.cancel();
-    isPaused = false;
-});
-
-document.getElementById('speedSelect').addEventListener('change', (e) => {
-    if (utterance) {
-        utterance.rate = parseFloat(e.target.value);
-    }
-});
+function showFlashcardComplete() {
+    const container = document.getElementById('flashcardContainer');
+    const knownCount = flashcards.filter(c => 
+        studyData.flashcardProgress[c.id] && 
+        studyData.flashcardProgress[c.id].correct > studyData.flashcardProgress[c.id].incorrect
+    ).length;
+    
+    container.innerHTML = `
+        <div class="quiz-card" style="text-align: center;">
+            <h2 style="color: #ff8c42; margin-bottom: 20px;">Flashcards Complete!</h2>
+            <div class="stat-number" style="font-size: 72px; margin: 30px 0;">${Math.round((knownCount / flashcards.length) * 100)}%</div>
+            <p style="font-size: 24px; margin-bottom: 30px;">
+                You marked ${knownCount} out of ${flashcards.length} as "Know It"
+            </p>
+            <button class="submit-btn" onclick="startFlashcards()">Study Again</button>
+        </div>
+    `;
+}
 
 // ========================================
-// QUIZ MODE
+// QUIZ MODES (Sequential, Random, Weakness)
 // ========================================
-function loadQuiz() {
+let quizMode = 'sequential';
+let quizQuestions = [];
+
+function loadQuiz(mode = 'sequential') {
+    quizMode = mode;
+    
     if (typeof QUIZ_QUESTIONS === 'undefined' || QUIZ_QUESTIONS.length === 0) {
         document.getElementById('quizContainer').innerHTML = `
             <div class="quiz-card">
@@ -708,31 +272,134 @@ function loadQuiz() {
         return;
     }
 
+    // Prepare questions based on mode
+    if (mode === 'sequential') {
+        quizQuestions = [...QUIZ_QUESTIONS];
+    } else if (mode === 'random') {
+        quizQuestions = [...QUIZ_QUESTIONS].sort(() => Math.random() - 0.5);
+    } else if (mode === 'weakness') {
+        // Get questions that were answered incorrectly
+        quizQuestions = QUIZ_QUESTIONS.filter((q, i) => {
+            return quizAnswers.some(a => a.questionIndex === i && !a.correct);
+        });
+        
+        if (quizQuestions.length === 0) {
+            document.getElementById('quizContainer').innerHTML = `
+                <div class="quiz-card">
+                    <p style="text-align: center; color: #999;">
+                        No wrong answers yet! Take a quiz first to identify weak areas.
+                    </p>
+                    <button class="submit-btn" onclick="loadQuiz('random')" style="margin-top: 20px;">Take Random Quiz</button>
+                </div>
+            `;
+            return;
+        }
+    }
+
     currentQuestionIndex = 0;
     quizAnswers = [];
     displayQuestion();
 }
 
-function displayQuestion() {
-    if (currentQuestionIndex >= QUIZ_QUESTIONS.length) {
-        showQuizResults();
+// ========================================
+// PRACTICE TEST (Timed)
+// ========================================
+let practiceTestTimer = null;
+let practiceTestTimeRemaining = 0;
+let practiceTestQuestions = [];
+let practiceTestAnswers = [];
+let practiceTestStartTime = null;
+
+function startPracticeTest() {
+    const questionCount = parseInt(document.getElementById('testQuestionCount').value);
+    
+    if (typeof QUIZ_QUESTIONS === 'undefined' || QUIZ_QUESTIONS.length === 0) {
+        alert('Quiz questions not available yet. Add study materials first!');
+        return;
+    }
+    
+    if (QUIZ_QUESTIONS.length < questionCount) {
+        alert(`Only ${QUIZ_QUESTIONS.length} questions available. Adjust question count.`);
+        return;
+    }
+    
+    // Prepare random questions
+    practiceTestQuestions = [...QUIZ_QUESTIONS]
+        .sort(() => Math.random() - 0.5)
+        .slice(0, questionCount);
+    
+    practiceTestAnswers = [];
+    practiceTestTimeRemaining = questionCount * 60; // 1 minute per question
+    practiceTestStartTime = Date.now();
+    currentQuestionIndex = 0;
+    
+    // Hide setup
+    document.querySelector('.practice-test-setup').style.display = 'none';
+    
+    // Show test
+    const container = document.getElementById('practiceTestContainer');
+    container.style.display = 'block';
+    
+    // Start timer
+    startPracticeTestTimer();
+    displayPracticeTestQuestion();
+}
+
+function startPracticeTestTimer() {
+    practiceTestTimer = setInterval(() => {
+        practiceTestTimeRemaining--;
+        
+        if (practiceTestTimeRemaining <= 0) {
+            clearInterval(practiceTestTimer);
+            finishPracticeTest();
+            return;
+        }
+        
+        updateTimerDisplay();
+    }, 1000);
+}
+
+function updateTimerDisplay() {
+    const minutes = Math.floor(practiceTestTimeRemaining / 60);
+    const seconds = practiceTestTimeRemaining % 60;
+    const display = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+    
+    const timerElement = document.querySelector('.timer-display');
+    if (timerElement) {
+        timerElement.textContent = display;
+        
+        // Add urgency styling if < 5 minutes
+        if (practiceTestTimeRemaining < 300) {
+            timerElement.style.color = '#ef4444';
+        }
+    }
+}
+
+function displayPracticeTestQuestion() {
+    if (currentQuestionIndex >= practiceTestQuestions.length) {
+        finishPracticeTest();
         return;
     }
 
-    const question = QUIZ_QUESTIONS[currentQuestionIndex];
-    const container = document.getElementById('quizContainer');
+    const question = practiceTestQuestions[currentQuestionIndex];
+    const container = document.getElementById('practiceTestContainer');
 
     container.innerHTML = `
+        <div class="test-timer">
+            <div class="timer-display">${Math.floor(practiceTestTimeRemaining / 60)}:${(practiceTestTimeRemaining % 60).toString().padStart(2, '0')}</div>
+            <div class="timer-label">Time Remaining</div>
+        </div>
+        <div class="test-progress">
+            Question ${currentQuestionIndex + 1} of ${practiceTestQuestions.length}
+        </div>
         <div class="quiz-card">
-            <div class="question-number">Question ${currentQuestionIndex + 1} of ${QUIZ_QUESTIONS.length}</div>
             <div class="question-text">${question.question}</div>
             <div class="options-container" id="optionsContainer">
                 ${question.options.map((opt, i) => `
                     <div class="option" data-index="${i}">${opt}</div>
                 `).join('')}
             </div>
-            <button class="submit-btn" id="submitAnswer" disabled>Submit Answer</button>
-            <div id="explanationContainer"></div>
+            <button class="submit-btn" id="submitTestAnswer" disabled>Next Question</button>
         </div>
     `;
 
@@ -743,163 +410,65 @@ function displayQuestion() {
             document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
             opt.classList.add('selected');
             selectedIndex = parseInt(opt.dataset.index);
-            document.getElementById('submitAnswer').disabled = false;
+            document.getElementById('submitTestAnswer').disabled = false;
         });
     });
 
     // Handle answer submission
-    document.getElementById('submitAnswer').addEventListener('click', () => {
+    document.getElementById('submitTestAnswer').addEventListener('click', () => {
         if (selectedIndex === null) return;
 
         const correct = selectedIndex === question.correct;
-        quizAnswers.push({ questionIndex: currentQuestionIndex, correct });
-
-        // Update study data
-        studyData.totalAttempts++;
-        if (correct) studyData.correctAnswers++;
-        studyData.questionsStudied = Math.max(studyData.questionsStudied, currentQuestionIndex + 1);
-        saveData();
-
-        // Show feedback
-        document.querySelectorAll('.option').forEach((opt, i) => {
-            opt.style.pointerEvents = 'none';
-            if (i === question.correct) {
-                opt.classList.add('correct');
-            } else if (i === selectedIndex) {
-                opt.classList.add('incorrect');
-            }
+        practiceTestAnswers.push({
+            questionIndex: currentQuestionIndex,
+            selectedIndex: selectedIndex,
+            correct: correct,
+            timeSpent: Date.now() - practiceTestStartTime
         });
 
-        // Show explanation
-        document.getElementById('explanationContainer').innerHTML = `
-            <div class="explanation-box">
-                <h4>${correct ? '✅ Correct!' : '❌ Incorrect'}</h4>
-                <p>${question.explanation}</p>
-                <p class="reference">Reference: ${question.reference}</p>
-            </div>
-        `;
-
-        // Change button to next question
-        const btn = document.getElementById('submitAnswer');
-        btn.textContent = currentQuestionIndex < QUIZ_QUESTIONS.length - 1 ? 'Next Question' : 'See Results';
-        btn.disabled = false;
-        btn.onclick = () => {
-            currentQuestionIndex++;
-            displayQuestion();
-        };
+        currentQuestionIndex++;
+        displayPracticeTestQuestion();
     });
 }
 
-function showQuizResults() {
-    const correct = quizAnswers.filter(a => a.correct).length;
-    const total = quizAnswers.length;
+function finishPracticeTest() {
+    clearInterval(practiceTestTimer);
+    
+    const correct = practiceTestAnswers.filter(a => a.correct).length;
+    const total = practiceTestQuestions.length;
     const percentage = Math.round((correct / total) * 100);
-
-    // Find which document this quiz is for (based on current questions)
-    // For now, we'll track overall quiz completion
-    // In future, you could add quiz tracking per document
-    studyData.quizzesCompleted['overall'] = {
-        completed: true,
-        score: percentage,
-        date: new Date().toISOString()
-    };
+    const timeSpent = Math.floor((Date.now() - practiceTestStartTime) / 1000);
+    const minutes = Math.floor(timeSpent / 60);
+    const seconds = timeSpent % 60;
+    
+    // Update study data
+    studyData.totalAttempts += total;
+    studyData.correctAnswers += correct;
+    studyData.questionsStudied = Math.max(studyData.questionsStudied, total);
     saveData();
-
-    document.getElementById('quizContainer').innerHTML = `
+    
+    const container = document.getElementById('practiceTestContainer');
+    container.innerHTML = `
         <div class="quiz-card" style="text-align: center;">
-            <h2 style="color: #ff8c42; margin-bottom: 20px;">Quiz Complete!</h2>
+            <h2 style="color: #ff8c42; margin-bottom: 20px;">Practice Test Complete!</h2>
             <div class="stat-number" style="font-size: 72px; margin: 30px 0;">${percentage}%</div>
-            <p style="font-size: 24px; margin-bottom: 30px;">
-                You got ${correct} out of ${total} questions correct
+            <p style="font-size: 24px; margin-bottom: 15px;">
+                ${correct} out of ${total} correct
             </p>
-            <button class="submit-btn" onclick="loadQuiz()">Take Quiz Again</button>
+            <p style="font-size: 18px; color: #999; margin-bottom: 30px;">
+                Time: ${minutes}:${seconds.toString().padStart(2, '0')}
+            </p>
+            ${percentage >= 80 
+                ? '<p style="color: #22c55e; font-size: 20px; margin-bottom: 30px;">✅ Great job! You\'re ready!</p>'
+                : '<p style="color: #ef4444; font-size: 20px; margin-bottom: 30px;">⚠️ Keep studying - aim for 80%+</p>'
+            }
+            <button class="submit-btn" onclick="resetPracticeTest()">Take Another Test</button>
         </div>
     `;
 }
 
-// ========================================
-// REVIEW HIGHLIGHTS
-// ========================================
-function loadReview() {
-    const container = document.getElementById('highlightsList');
-    if (studyData.highlights.length === 0) {
-        container.innerHTML = '<p style="color: #999;">No highlights yet. Start reading and highlighting in Study mode!</p>';
-        return;
-    }
-
-    // Group by color
-    const grouped = {
-        yellow: [],
-        red: [],
-        green: [],
-        blue: []
-    };
-    
-    studyData.highlights.forEach(h => {
-        if (grouped[h.color]) {
-            grouped[h.color].push(h);
-        }
-    });
-
-    let html = '';
-    
-    if (grouped.red.length > 0) {
-        html += '<h4 style="color: #ef4444; margin-top: 20px;">🔴 Struggling Topics</h4>';
-        html += grouped.red.map(h => `
-            <div class="highlight-item">
-                <div class="highlight-text">${h.text}</div>
-                <div class="highlight-note">${new Date(h.timestamp).toLocaleDateString()}</div>
-            </div>
-        `).join('');
-    }
-    
-    if (grouped.yellow.length > 0) {
-        html += '<h4 style="color: #ff8c42; margin-top: 20px;">🟠 Important Concepts</h4>';
-        html += grouped.yellow.map(h => `
-            <div class="highlight-item">
-                <div class="highlight-text">${h.text}</div>
-                <div class="highlight-note">${new Date(h.timestamp).toLocaleDateString()}</div>
-            </div>
-        `).join('');
-    }
-    
-    if (grouped.blue.length > 0) {
-        html += '<h4 style="color: #3b82f6; margin-top: 20px;">🔵 Questions/Clarifications</h4>';
-        html += grouped.blue.map(h => `
-            <div class="highlight-item">
-                <div class="highlight-text">${h.text}</div>
-                <div class="highlight-note">${new Date(h.timestamp).toLocaleDateString()}</div>
-            </div>
-        `).join('');
-    }
-    
-    if (grouped.green.length > 0) {
-        html += '<h4 style="color: #22c55e; margin-top: 20px;">🟢 Mastered Material</h4>';
-        html += grouped.green.map(h => `
-            <div class="highlight-item">
-                <div class="highlight-text">${h.text}</div>
-                <div class="highlight-note">${new Date(h.timestamp).toLocaleDateString()}</div>
-            </div>
-        `).join('');
-    }
-
-    container.innerHTML = html;
+function resetPracticeTest() {
+    document.querySelector('.practice-test-setup').style.display = 'block';
+    document.getElementById('practiceTestContainer').style.display = 'none';
+    document.getElementById('practiceTestContainer').innerHTML = '';
 }
-
-// ========================================
-// SETTINGS
-// ========================================
-document.getElementById('resetBtn').addEventListener('click', () => {
-    if (confirm('Are you sure? This will delete ALL your progress and cannot be undone.')) {
-        localStorage.clear();
-        studyData = {
-            questionsStudied: 0,
-            correctAnswers: 0,
-            totalAttempts: 0,
-            highlights: [],
-            studyStreak: 0
-        };
-        updateDashboard();
-        alert('All data has been reset.');
-    }
-});

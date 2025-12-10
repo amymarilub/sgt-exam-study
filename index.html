@@ -15,7 +15,9 @@
                 <button class="mode-tab active" data-mode="dashboard">Dashboard</button>
                 <button class="mode-tab" data-mode="howto">How to Use</button>
                 <button class="mode-tab" data-mode="study">Read & Study</button>
+                <button class="mode-tab" data-mode="flashcards">Flashcards</button>
                 <button class="mode-tab" data-mode="quiz">Quiz Mode</button>
+                <button class="mode-tab" data-mode="practice">Practice Test</button>
                 <button class="mode-tab" data-mode="review">Review</button>
                 <button class="mode-tab" data-mode="settings">Settings</button>
             </div>
@@ -185,6 +187,22 @@
                     <button class="toolbar-btn clear" onclick="clearHighlight()">✖️</button>
                 </div>
 
+                <!-- Notes Section -->
+                <div class="notes-section">
+                    <div class="notes-header">
+                        <h4>📝 Your Notes</h4>
+                        <button class="add-note-btn" onclick="toggleAddNote()">+ Add Note</button>
+                    </div>
+                    <div id="addNoteBox" class="add-note-box" style="display: none;">
+                        <textarea id="noteInput" placeholder="Type your note here..."></textarea>
+                        <div class="note-actions">
+                            <button class="save-note-btn" onclick="saveNote()">Save Note</button>
+                            <button class="cancel-note-btn" onclick="toggleAddNote()">Cancel</button>
+                        </div>
+                    </div>
+                    <div id="notesList" class="notes-list"></div>
+                </div>
+
                 <div class="document-content" id="documentContent">
                     <p style="text-align: center; color: #999;">Select a document to begin studying...</p>
                 </div>
@@ -192,7 +210,41 @@
 
             <!-- Quiz Mode -->
             <div class="mode-content" id="quiz">
+                <div class="quiz-options">
+                    <button class="quiz-option-btn" onclick="loadQuiz('sequential')">📖 Sequential Quiz</button>
+                    <button class="quiz-option-btn" onclick="loadQuiz('random')">🎲 Random Quiz (All Topics)</button>
+                    <button class="quiz-option-btn" onclick="loadQuiz('weakness')">🎯 Weakness Drill (Wrong Answers Only)</button>
+                </div>
                 <div id="quizContainer"></div>
+            </div>
+
+            <!-- Flashcards Mode -->
+            <div class="mode-content" id="flashcards">
+                <div class="flashcard-controls">
+                    <h3>🎴 Flashcard Study Mode</h3>
+                    <p>Swipe or use arrow keys to flip cards. Click "Know It" or "Review" to track progress.</p>
+                    <button class="start-flashcards-btn" onclick="startFlashcards()">Start Flashcards</button>
+                </div>
+                <div id="flashcardContainer"></div>
+            </div>
+
+            <!-- Practice Test Mode -->
+            <div class="mode-content" id="practice">
+                <div class="practice-test-setup">
+                    <h3>⏱️ Timed Practice Test</h3>
+                    <p>Simulate real exam conditions with a countdown timer.</p>
+                    <div class="test-options">
+                        <label>Number of Questions:</label>
+                        <select id="testQuestionCount">
+                            <option value="10">10 Questions (10 minutes)</option>
+                            <option value="25">25 Questions (25 minutes)</option>
+                            <option value="50" selected>50 Questions (50 minutes)</option>
+                            <option value="100">100 Questions (100 minutes)</option>
+                        </select>
+                    </div>
+                    <button class="start-test-btn" onclick="startPracticeTest()">Start Practice Test</button>
+                </div>
+                <div id="practiceTestContainer"></div>
             </div>
 
             <!-- Review Highlights -->
@@ -231,5 +283,6 @@
     <!-- Load Scripts -->
     <script src="documents.js"></script>
     <script src="app.js"></script>
+    <script src="features.js"></script>
 </body>
 </html>

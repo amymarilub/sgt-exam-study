@@ -57,18 +57,22 @@ function updateDashboard() {
 
 // Calculate days until exam
 function updateExamCountdown() {
-    const examDate = new Date(studyData.examDate);
+    const examDate = new Date('2026-04-23T00:00:00'); // Explicit format
     const today = new Date();
-    const diffTime = examDate - today;
+    today.setHours(0, 0, 0, 0); // Reset time to midnight for accurate day counting
+    
+    const diffTime = examDate.getTime() - today.getTime();
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     
     const daysElement = document.getElementById('daysUntilExam');
     const countdownElement = document.getElementById('examCountdown');
     
-    daysElement.textContent = diffDays;
+    if (!daysElement || !countdownElement) return; // Safety check
+    
+    daysElement.textContent = diffDays > 0 ? diffDays : 0;
     
     // Add urgent styling if less than 30 days
-    if (diffDays <= 30) {
+    if (diffDays <= 30 && diffDays > 0) {
         countdownElement.classList.add('urgent');
     } else {
         countdownElement.classList.remove('urgent');

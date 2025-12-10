@@ -923,3 +923,352 @@ body {
         max-width: 90vw;
     }
 }
+
+/* Notes Section Styles */
+.notes-section {
+    background: #1a2332;
+    border: 1px solid #243447;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.notes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.notes-header h4 {
+    color: #ff8c42;
+    margin: 0;
+}
+
+.add-note-btn {
+    padding: 8px 16px;
+    background: #1e5a8e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.add-note-btn:hover {
+    background: #2668a8;
+}
+
+.add-note-box {
+    margin-bottom: 15px;
+}
+
+.add-note-box textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    background: #243447;
+    color: #e0e0e0;
+    border: 2px solid #243447;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+.add-note-box textarea:focus {
+    outline: none;
+    border-color: #1e5a8e;
+}
+
+.note-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.save-note-btn {
+    padding: 10px 20px;
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cancel-note-btn {
+    padding: 10px 20px;
+    background: #6b7280;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.note-item {
+    background: #243447;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 3px solid #ff8c42;
+}
+
+.note-text {
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.note-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.delete-note-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+/* Flashcard Styles */
+.flashcard-controls {
+    text-align: center;
+    padding: 30px;
+}
+
+.flashcard-controls h3 {
+    color: #ff8c42;
+    margin-bottom: 15px;
+}
+
+.flashcard-controls p {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.start-flashcards-btn {
+    padding: 15px 30px;
+    background: #1e5a8e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.flashcard-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.flashcard {
+    background: #1a2332;
+    border: 2px solid #243447;
+    border-radius: 16px;
+    padding: 40px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.flashcard:hover {
+    transform: scale(1.02);
+}
+
+.flashcard.flipped {
+    background: #243447;
+}
+
+.flashcard-front, .flashcard-back {
+    text-align: center;
+}
+
+.flashcard-question {
+    font-size: 20px;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.flashcard-answer {
+    font-size: 24px;
+    color: #ff8c42;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.flip-indicator {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #999;
+    font-size: 12px;
+}
+
+.flashcard-progress {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.flashcard-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.flashcard-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.know-it-btn {
+    background: #22c55e;
+    color: white;
+}
+
+.review-btn {
+    background: #ef4444;
+    color: white;
+}
+
+.next-card-btn {
+    background: #1e5a8e;
+    color: white;
+}
+
+/* Quiz Options */
+.quiz-options {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.quiz-option-btn {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background: #1a2332;
+    border: 2px solid #243447;
+    border-radius: 12px;
+    color: #e0e0e0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.quiz-option-btn:hover {
+    background: #243447;
+    border-color: #1e5a8e;
+}
+
+/* Practice Test Styles */
+.practice-test-setup {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.practice-test-setup h3 {
+    color: #ff8c42;
+    margin-bottom: 15px;
+}
+
+.practice-test-setup p {
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.test-options {
+    margin-bottom: 30px;
+}
+
+.test-options label {
+    display: block;
+    color: #ff8c42;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.test-options select {
+    width: 100%;
+    padding: 15px;
+    background: #1a2332;
+    color: #e0e0e0;
+    border: 2px solid #243447;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.start-test-btn {
+    padding: 15px 40px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.start-test-btn:hover {
+    background: #dc2626;
+}
+
+.test-timer {
+    background: #1a2332;
+    border: 2px solid #ef4444;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.timer-display {
+    font-size: 48px;
+    color: #ef4444;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.timer-label {
+    color: #999;
+    font-size: 14px;
+}
+
+.test-progress {
+    text-align: center;
+    color: #999;
+    margin-bottom: 20px;
+}

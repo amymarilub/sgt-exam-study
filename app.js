@@ -310,6 +310,11 @@ document.getElementById('documentSelect').addEventListener('change', (e) => {
         saveData();
     }
     
+    // Update notes for this document (from features.js)
+    if (typeof updateCurrentDocument === 'function') {
+        updateCurrentDocument(index);
+    }
+    
     // Build summary HTML if summary exists
     let summaryHTML = '';
     if (doc.summary && doc.summary.keyTimeframes && doc.summary.keyTimeframes[0] !== 'Content will be added when materials are available') {

@@ -10,7 +10,11 @@ let studyData = {
     correctAnswers: 0,
     totalAttempts: 0,
     highlights: [],
-    studyStreak: 0
+    studyStreak: 0,
+    examDate: '2026-04-23',
+    documentsRead: [], // Array of document indices that have been opened
+    quizzesCompleted: {}, // Object: {docIndex: {completed: true, score: 85}}
+    studyPlan: [] // Array of study plan items with completion status
 };
 
 // ========================================
@@ -40,6 +44,205 @@ function updateDashboard() {
     document.getElementById('accuracy').textContent = accuracy + '%';
     document.getElementById('totalHighlights').textContent = studyData.highlights.length;
     document.getElementById('studyStreak').textContent = studyData.studyStreak;
+    
+    // Update exam countdown
+    updateExamCountdown();
+    
+    // Update study plan
+    updateStudyPlan();
+    
+    // Update recommended next steps
+    updateRecommendedSteps();
+}
+
+// Calculate days until exam
+function updateExamCountdown() {
+    const examDate = new Date(studyData.examDate);
+    const today = new Date();
+    const diffTime = examDate - today;
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    
+    const daysElement = document.getElementById('daysUntilExam');
+    const countdownElement = document.getElementById('examCountdown');
+    
+    daysElement.textContent = diffDays;
+    
+    // Add urgent styling if less than 30 days
+    if (diffDays <= 30) {
+        countdownElement.classList.add('urgent');
+    } else {
+        countdownElement.classList.remove('urgent');
+    }
+}
+
+// Update study plan progress
+function updateStudyPlan() {
+    const container = document.getElementById('studyPlanProgress');
+    
+    if (typeof STUDY_DOCUMENTS === 'undefined' || STUDY_DOCUMENTS.length === 0) {
+        container.innerHTML = '<p style="color: #999;">Loading study materials...</p>';
+        return;
+    }
+    
+    let html = '';
+    
+    STUDY_DOCUMENTS.forEach((doc, index) => {
+        // Skip "coming soon" documents
+        if (doc.title.includes('Coming Soon')) return;
+        
+        // Calculate progress for this document
+        const isRead = studyData.documentsRead.includes(index);
+        const quizData = studyData.quizzesCompleted[index];
+        const hasQuiz = quizData && quizData.completed;
+        const quizScore = hasQuiz ? quizData.score : 0;
+        
+        // Calculate percentage (50% for reading, 50% for quiz)
+        let percentage = 0;
+        if (isRead) percentage += 50;
+        if (hasQuiz) percentage += 50;
+        
+        const isComplete = percentage === 100;
+        
+        html += `
+            <div class="document-progress">
+                <div class="document-progress-header">
+                    <span class="document-title">${doc.title}</span>
+                    <span class="progress-percentage">${percentage}%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill ${isComplete ? 'complete' : ''}" style="width: ${percentage}%"></div>
+                </div>
+                <div class="section-items">
+                    <div class="section-item ${isRead ? 'completed' : ''}">
+                        <span class="status-icon">${isRead ? '✅' : '⏳'}</span>
+                        <span class="item-text">Read Document</span>
+                    </div>
+                    <div class="section-item ${hasQuiz ? 'completed' : ''}">
+                        <span class="status-icon">${hasQuiz ? '✅' : '🔒'}</span>
+                        <span class="item-text">Complete Quiz</span>
+                        ${hasQuiz ? `<span class="score">${quizScore}%</span>` : ''}
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+    
+    if (html === '') {
+        html = '<p style="color: #999;">Study materials will be added in January 2026</p>';
+    }
+    
+    container.innerHTML = html;
+}
+
+// Update recommended next steps
+function updateRecommendedSteps() {
+    const container = document.getElementById('nextStepsList');
+    const steps = [];
+    
+    if (typeof STUDY_DOCUMENTS === 'undefined' || STUDY_DOCUMENTS.length === 0) {
+        container.innerHTML = '<p style="color: #999;">Recommendations will appear when materials are loaded</p>';
+        return;
+    }
+    
+    // Find first unread document
+    let firstUnread = null;
+    STUDY_DOCUMENTS.forEach((doc, index) => {
+        if (!doc.title.includes('Coming Soon') && !studyData.documentsRead.includes(index)) {
+            if (firstUnread === null) firstUnread = index;
+        }
+    });
+    
+    // Find documents that are read but quiz not completed
+    let firstUnquizzed = null;
+    STUDY_DOCUMENTS.forEach((doc, index) => {
+        if (!doc.title.includes('Coming Soon') && 
+            studyData.documentsRead.includes(index) && 
+            (!studyData.quizzesCompleted[index] || !studyData.quizzesCompleted[index].completed)) {
+            if (firstUnquizzed === null) firstUnquizzed = index;
+        }
+    });
+    
+    // Check for red highlights to review
+    const redHighlights = studyData.highlights.filter(h => h.color === 'red');
+    
+    // Build recommendations
+    if (firstUnread !== null) {
+        steps.push({
+            icon: '📖',
+            text: `Start reading: ${STUDY_DOCUMENTS[firstUnread].title}`,
+            action: () => loadDocument(firstUnread)
+        });
+    }
+    
+    if (firstUnquizzed !== null) {
+        steps.push({
+            icon: '❓',
+            text: `Take quiz: ${STUDY_DOCUMENTS[firstUnquizzed].title}`,
+            action: () => {
+                document.querySelector('[data-mode="quiz"]').click();
+            }
+        });
+    }
+    
+    if (redHighlights.length > 0) {
+        steps.push({
+            icon: '🔴',
+            text: `Review ${redHighlights.length} struggling topic${redHighlights.length > 1 ? 's' : ''} (red highlights)`,
+            action: () => {
+                document.querySelector('[data-mode="review"]').click();
+            }
+        });
+    }
+    
+    // If low quiz accuracy, suggest retaking
+    if (studyData.totalAttempts > 0) {
+        const accuracy = Math.round((studyData.correctAnswers / studyData.totalAttempts) * 100);
+        if (accuracy < 80) {
+            steps.push({
+                icon: '🎯',
+                text: `Improve quiz accuracy (currently ${accuracy}%) - retake quizzes`,
+                action: () => {
+                    document.querySelector('[data-mode="quiz"]').click();
+                }
+            });
+        }
+    }
+    
+    // If everything is done
+    if (steps.length === 0) {
+        steps.push({
+            icon: '🎉',
+            text: 'Great job! Review your red highlights or retake quizzes to maintain knowledge',
+            action: () => {
+                document.querySelector('[data-mode="review"]').click();
+            }
+        });
+    }
+    
+    // Render steps
+    container.innerHTML = steps.map((step, i) => `
+        <div class="next-step" onclick="executeNextStep(${i})">
+            <span class="next-step-icon">${step.icon}</span>
+            <span class="next-step-text">${step.text}</span>
+        </div>
+    `).join('');
+    
+    // Store steps for onclick handlers
+    window.nextSteps = steps;
+}
+
+// Execute next step action
+function executeNextStep(index) {
+    if (window.nextSteps && window.nextSteps[index]) {
+        window.nextSteps[index].action();
+    }
+}
+
+// Load specific document
+function loadDocument(index) {
+    document.querySelector('[data-mode="study"]').click();
+    document.getElementById('documentSelect').value = index;
+    document.getElementById('documentSelect').dispatchEvent(new Event('change'));
 }
 
 // ========================================
@@ -93,6 +296,13 @@ document.getElementById('documentSelect').addEventListener('change', (e) => {
 
     const doc = STUDY_DOCUMENTS[docIndex];
     const content = document.getElementById('documentContent');
+    
+    // Mark document as read
+    const index = parseInt(docIndex);
+    if (!studyData.documentsRead.includes(index)) {
+        studyData.documentsRead.push(index);
+        saveData();
+    }
     
     // Build summary HTML if summary exists
     let summaryHTML = '';
@@ -578,6 +788,16 @@ function showQuizResults() {
     const correct = quizAnswers.filter(a => a.correct).length;
     const total = quizAnswers.length;
     const percentage = Math.round((correct / total) * 100);
+
+    // Find which document this quiz is for (based on current questions)
+    // For now, we'll track overall quiz completion
+    // In future, you could add quiz tracking per document
+    studyData.quizzesCompleted['overall'] = {
+        completed: true,
+        score: percentage,
+        date: new Date().toISOString()
+    };
+    saveData();
 
     document.getElementById('quizContainer').innerHTML = `
         <div class="quiz-card" style="text-align: center;">

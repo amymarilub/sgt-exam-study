@@ -14,7 +14,9 @@ let studyData = {
     examDate: '2026-04-23',
     documentsRead: [], // Array of document indices that have been opened
     quizzesCompleted: {}, // Object: {docIndex: {completed: true, score: 85}}
-    studyPlan: [] // Array of study plan items with completion status
+    studyPlan: [], // Array of study plan items with completion status
+    notes: {}, // Object: {documentIndex: [{text: "note", timestamp: "..."}]}
+    flashcardProgress: {} // Object: {cardId: {correct: 0, incorrect: 0, lastSeen: "..."}}
 };
 
 // ========================================

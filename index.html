@@ -5,7 +5,469 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGT Exam Study Pro</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        .app-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: #2d2d30;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #e8e8e8;
+            margin-bottom: 10px;
+        }
+
+        .mode-tabs {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+
+        .mode-tab {
+            padding: 10px 20px;
+            background: #3e3e42;
+            border: none;
+            border-radius: 8px;
+            color: #cccccc;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .mode-tab:hover {
+            background: #4e4e52;
+        }
+
+        .mode-tab.active {
+            background: #007acc;
+            color: white;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .mode-content {
+            display: none;
+        }
+
+        .mode-content.active {
+            display: block;
+        }
+
+        /* Dashboard Styles */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: #2d2d30;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #4ec9b0;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #9d9d9d;
+        }
+
+        /* Read & Study Styles */
+        .document-selector {
+            margin-bottom: 20px;
+        }
+
+        .document-selector select {
+            width: 100%;
+            padding: 15px;
+            background: #3c3c3c;
+            color: #d4d4d4;
+            border: 2px solid #4e4e4e;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .document-selector select:focus {
+            outline: none;
+            border-color: #007acc;
+        }
+
+        .document-content {
+            background: #2d2d30;
+            padding: 30px;
+            border-radius: 12px;
+            line-height: 1.8;
+            font-size: 16px;
+            min-height: 400px;
+            user-select: text;
+        }
+
+        .document-content h2 {
+            color: #4fc3f7;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .document-content h3 {
+            color: #b0b0b0;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Highlighting Styles */
+        .highlight-yellow {
+            background-color: rgba(251, 191, 36, 0.3);
+            padding: 2px 0;
+            cursor: pointer;
+            border-bottom: 2px solid #fbbf24;
+        }
+
+        .highlight-red {
+            background-color: rgba(239, 68, 68, 0.3);
+            padding: 2px 0;
+            cursor: pointer;
+            border-bottom: 2px solid #ef4444;
+        }
+
+        .highlight-green {
+            background-color: rgba(34, 197, 94, 0.3);
+            padding: 2px 0;
+            cursor: pointer;
+            border-bottom: 2px solid #22c55e;
+        }
+
+        .highlight-blue {
+            background-color: rgba(59, 130, 246, 0.3);
+            padding: 2px 0;
+            cursor: pointer;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        .highlight-controls {
+            background: #2d2d30;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .highlight-controls.active {
+            display: block;
+        }
+
+        .highlight-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .highlight-btn.yellow {
+            background: #d4a82f;
+            color: #1e1e1e;
+        }
+
+        .highlight-btn.red {
+            background: #d16969;
+            color: #f0f0f0;
+        }
+
+        .highlight-btn.green {
+            background: #4ec9b0;
+            color: #1e1e1e;
+        }
+
+        .highlight-btn.blue {
+            background: #569cd6;
+            color: #f0f0f0;
+        }
+
+        .highlight-btn.clear {
+            background: #858585;
+            color: #f0f0f0;
+        }
+
+        .audio-controls {
+            background: #2d2d30;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .audio-controls button {
+            padding: 12px 24px;
+            background: #0e639c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        .audio-controls button:hover {
+            background: #1177bb;
+        }
+
+        .audio-controls select {
+            padding: 12px;
+            background: #3c3c3c;
+            color: #d4d4d4;
+            border: none;
+            border-radius: 8px;
+            margin-left: 10px;
+        }
+
+        /* Quiz Mode Styles */
+        .quiz-card {
+            background: #2d2d30;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .question-number {
+            color: #4fc3f7;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .question-text {
+            font-size: 18px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .option {
+            padding: 15px;
+            background: #3c3c3c;
+            border: 2px solid #4e4e4e;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .option:hover {
+            background: #4a4a4a;
+            border-color: #007acc;
+        }
+
+        .option.selected {
+            background: #1e3a5f;
+            border-color: #007acc;
+            color: #e8e8e8;
+        }
+
+        .option.correct {
+            background: #1e4d3b;
+            border-color: #4ec9b0;
+            color: #e8e8e8;
+        }
+
+        .option.incorrect {
+            background: #5a1f1f;
+            border-color: #f48771;
+            color: #e8e8e8;
+        }
+
+        .submit-btn {
+            padding: 15px 30px;
+            background: #0e639c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background: #1177bb;
+        }
+
+        .submit-btn:disabled {
+            background: #4a4a4a;
+            cursor: not-allowed;
+        }
+
+        .explanation-box {
+            background: #3c3c3c;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #4fc3f7;
+        }
+
+        .explanation-box h4 {
+            color: #4fc3f7;
+            margin-bottom: 10px;
+        }
+
+        .reference {
+            color: #9d9d9d;
+            font-size: 14px;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        /* Review Highlights Styles */
+        .highlights-section {
+            margin-bottom: 30px;
+        }
+
+        .highlights-section h3 {
+            color: #4fc3f7;
+            margin-bottom: 15px;
+        }
+
+        .highlight-item {
+            background: #2d2d30;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 4px solid #4fc3f7;
+        }
+
+        .highlight-text {
+            margin-bottom: 10px;
+        }
+
+        .highlight-note {
+            color: #9d9d9d;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        /* Settings Styles */
+        .setting-item {
+            background: #2d2d30;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .setting-item h3 {
+            color: #4fc3f7;
+            margin-bottom: 10px;
+        }
+
+        .setting-item input,
+        .setting-item select {
+            width: 100%;
+            padding: 12px;
+            background: #3c3c3c;
+            color: #d4d4d4;
+            border: 2px solid #4e4e4e;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .danger-zone {
+            background: #2d2d30;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #d16969;
+        }
+
+        .danger-zone h3 {
+            color: #f48771;
+            margin-bottom: 15px;
+        }
+
+        .danger-btn {
+            padding: 12px 24px;
+            background: #a93226;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .danger-btn:hover {
+            background: #922b21;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .mode-tabs {
+                gap: 5px;
+            }
+
+            .mode-tab {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .document-content {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="app-container">
@@ -15,9 +477,7 @@
                 <button class="mode-tab active" data-mode="dashboard">Dashboard</button>
                 <button class="mode-tab" data-mode="howto">How to Use</button>
                 <button class="mode-tab" data-mode="study">Read & Study</button>
-                <button class="mode-tab" data-mode="flashcards">Flashcards</button>
                 <button class="mode-tab" data-mode="quiz">Quiz Mode</button>
-                <button class="mode-tab" data-mode="practice">Practice Test</button>
                 <button class="mode-tab" data-mode="review">Review</button>
                 <button class="mode-tab" data-mode="settings">Settings</button>
             </div>
@@ -44,163 +504,51 @@
                         <div class="stat-label">Day Streak</div>
                     </div>
                 </div>
-
-                <!-- Study Plan -->
-                <div class="study-plan-section">
-                    <div class="study-plan-header">
-                        <h3>📚 YOUR STUDY PLAN</h3>
-                        <div class="exam-countdown" id="examCountdown">
-                            <span class="days-number" id="daysUntilExam">134</span> days until exam
-                        </div>
-                    </div>
-                    <div id="studyPlanProgress"></div>
-                    <div class="recommended-next">
-                        <h4>🎯 RECOMMENDED NEXT STEPS</h4>
-                        <div class="next-steps-list" id="nextStepsList"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- How to Use -->
-            <div class="mode-content" id="howto">
-                <div class="how-to-section">
-                    <h3>📚 How to Use This Study App</h3>
-                    
-                    <h4>🎯 Dashboard</h4>
-                    <p>Track your overall progress including questions studied, quiz accuracy, total highlights, and study streak.</p>
-                    
-                    <h4>📖 Read & Study Mode</h4>
-                    <p>This is where the magic happens! Here you can:</p>
-                    <ul>
-                        <li><strong>Select a Document:</strong> Choose from available procedures and study materials</li>
-                        <li><strong>Quick Summary First:</strong> Each document starts with a "Spark Notes" summary showing key testable facts, common exam traps, and must-know timeframes</li>
-                        <li><strong>Search Keywords:</strong> Find specific terms quickly in long documents</li>
-                        <li><strong>Listen with Text-to-Speech:</strong> Use the play controls to listen while driving, working out, or doing other activities</li>
-                        <li><strong>Adjust Speed & Voice:</strong> Change the reading speed (0.75x to 2x) and select different voices</li>
-                        <li><strong>Highlight Text:</strong> Select any text and a toolbar appears - click a color to highlight!</li>
-                    </ul>
-                    
-                    <h4>📌 Quick Summary Feature</h4>
-                    <p>Every document starts with a collapsible summary box that includes:</p>
-                    <ul>
-                        <li><strong>Key Timeframes:</strong> Numbers and deadlines you MUST memorize (highlighted in green)</li>
-                        <li><strong>Who Investigates:</strong> Chain of command and authority info</li>
-                        <li><strong>Most Tested Topics:</strong> What exam writers love to ask about</li>
-                        <li><strong>Common Exam Traps:</strong> Where students usually get tricked (highlighted in red)</li>
-                        <li><strong>Testable Definitions:</strong> Exact terms that appear on exams</li>
-                    </ul>
-                    <p>Click "Hide Summary" to collapse it and focus on the full document, or keep it visible to reference while reading.</p>
-                    
-                    <h4>🎨 Highlighting System (Floating Toolbar)</h4>
-                    <p>Simply select text and a toolbar will appear right above your selection with color options:</p>
-                    <div class="color-legend">
-                        <div class="color-item yellow">
-                            <strong>Orange:</strong> Important concepts
-                        </div>
-                        <div class="color-item red">
-                            <strong>Red:</strong> Struggling topics
-                        </div>
-                        <div class="color-item green">
-                            <strong>Green:</strong> Mastered material
-                        </div>
-                        <div class="color-item blue">
-                            <strong>Blue:</strong> Questions/clarifications
-                        </div>
-                    </div>
-                    
-                    <h4>🔍 Keyword Search</h4>
-                    <p>Use the search box to find specific terms in long documents. Results show context around each match, and you can click to jump to that location.</p>
-                    
-                    <h4>❓ Quiz Mode</h4>
-                    <p>Test your knowledge with practice questions:</p>
-                    <ul>
-                        <li>Multiple choice and scenario-based questions</li>
-                        <li>Immediate feedback with explanations</li>
-                        <li>Reference citations to review source material</li>
-                        <li>Track your accuracy over time</li>
-                    </ul>
-                    
-                    <h4>📌 Review Highlights</h4>
-                    <p>See all your highlighted text organized by color. Red highlights (struggling topics) appear first for targeted studying.</p>
-                    
-                    <h4>⚙️ Settings</h4>
-                    <p>Customize your experience and manage your study data.</p>
-                    
-                    <h4>💡 Pro Tips</h4>
-                    <ul>
-                        <li>Add this app to your phone's home screen for quick access</li>
-                        <li>Use keyword search to quickly find specific regulations or terms</li>
-                        <li>The floating toolbar makes highlighting super fast - no scrolling needed!</li>
-                        <li>Use text-to-speech while commuting or working out</li>
-                        <li>Review red highlights daily for topics you're struggling with</li>
-                        <li>All your data is saved automatically in your browser</li>
-                    </ul>
-                </div>
             </div>
 
             <!-- Read & Study -->
             <div class="mode-content" id="study">
                 <div class="document-selector">
-                    <select id="documentSelect">
-                        <option value="">Select a document to study...</option>
+                    <select id="categorySelect">
+                        <option value="">📚 Select Document Category...</option>
+                        <option value="CBA">Collective Bargaining Agreement (CBA)</option>
+                        <option value="General Manual">General Manual (SAPD Procedures)</option>
+                        <option value="Penal Code">Texas Penal Code</option>
+                        <option value="Textbook">Study Textbook</option>
+                    </select>
+                    
+                    <select id="documentSelect" style="display: none;">
+                        <option value="">📄 Select Document...</option>
                     </select>
                 </div>
 
-                <div class="search-box">
-                    <div class="search-input-group">
-                        <input type="text" id="searchInput" placeholder="Search for keywords in document...">
-                        <button class="search-btn" id="searchBtn">🔍 Search</button>
-                    </div>
-                    <div id="searchResults" class="search-results"></div>
-                </div>
-
                 <div class="audio-controls">
-                    <div style="margin-bottom: 15px;">
-                        <button id="playBtn">▶️ Play</button>
-                        <button id="pauseBtn">⏸️ Pause</button>
-                        <button id="stopBtn">⏹️ Stop</button>
-                    </div>
-                    <div class="control-group">
-                        <label>Speed:</label>
-                        <select id="speedSelect">
-                            <option value="0.75">0.75x</option>
-                            <option value="1" selected>1x</option>
-                            <option value="1.25">1.25x</option>
-                            <option value="1.5">1.5x</option>
-                            <option value="2">2x</option>
-                        </select>
-                    </div>
-                    <div class="control-group">
-                        <label>Voice:</label>
-                        <select id="voiceSelect">
-                            <option value="">Default Voice</option>
-                        </select>
-                    </div>
+                    <button id="playBtn">▶️ Play</button>
+                    <button id="pauseBtn">⏸️ Pause</button>
+                    <button id="stopBtn">⏹️ Stop</button>
+                    <label>Speed:</label>
+                    <select id="speedSelect">
+                        <option value="0.75">0.75x</option>
+                        <option value="1" selected>1x</option>
+                        <option value="1.25">1.25x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2">2x</option>
+                    </select>
+                    <label>Voice:</label>
+                    <select id="voiceSelect">
+                        <option value="">Default</option>
+                    </select>
                 </div>
 
-                <!-- Floating Toolbar (appears on text selection) -->
-                <div id="floatingToolbar" class="floating-toolbar">
-                    <button class="toolbar-btn yellow" onclick="highlightSelection('yellow')">🟠</button>
-                    <button class="toolbar-btn red" onclick="highlightSelection('red')">🔴</button>
-                    <button class="toolbar-btn green" onclick="highlightSelection('green')">🟢</button>
-                    <button class="toolbar-btn blue" onclick="highlightSelection('blue')">🔵</button>
-                    <button class="toolbar-btn clear" onclick="clearHighlight()">✖️</button>
-                </div>
-
-                <!-- Notes Section -->
-                <div class="notes-section">
-                    <div class="notes-header">
-                        <h4>📝 Your Notes</h4>
-                        <button class="add-note-btn" onclick="toggleAddNote()">+ Add Note</button>
-                    </div>
-                    <div id="addNoteBox" class="add-note-box" style="display: none;">
-                        <textarea id="noteInput" placeholder="Type your note here..."></textarea>
-                        <div class="note-actions">
-                            <button class="save-note-btn" onclick="saveNote()">Save Note</button>
-                            <button class="cancel-note-btn" onclick="toggleAddNote()">Cancel</button>
-                        </div>
-                    </div>
-                    <div id="notesList" class="notes-list"></div>
+                <div class="highlight-controls" id="highlightControls">
+                    <p style="margin-bottom: 10px; color: #999; font-size: 14px;">
+                        Select text, then choose a highlight color:
+                    </p>
+                    <button class="highlight-btn yellow" data-color="yellow">📒 Important</button>
+                    <button class="highlight-btn red" data-color="red">🔴 Struggling</button>
+                    <button class="highlight-btn green" data-color="green">✅ Mastered</button>
+                    <button class="highlight-btn blue" data-color="blue">💡 Question</button>
+                    <button class="highlight-btn clear" id="clearHighlight">❌ Clear</button>
                 </div>
 
                 <div class="document-content" id="documentContent">
@@ -210,41 +558,7 @@
 
             <!-- Quiz Mode -->
             <div class="mode-content" id="quiz">
-                <div class="quiz-options">
-                    <button class="quiz-option-btn" onclick="loadQuiz('sequential')">📖 Sequential Quiz</button>
-                    <button class="quiz-option-btn" onclick="loadQuiz('random')">🎲 Random Quiz (All Topics)</button>
-                    <button class="quiz-option-btn" onclick="loadQuiz('weakness')">🎯 Weakness Drill (Wrong Answers Only)</button>
-                </div>
                 <div id="quizContainer"></div>
-            </div>
-
-            <!-- Flashcards Mode -->
-            <div class="mode-content" id="flashcards">
-                <div class="flashcard-controls">
-                    <h3>🎴 Flashcard Study Mode</h3>
-                    <p>Swipe or use arrow keys to flip cards. Click "Know It" or "Review" to track progress.</p>
-                    <button class="start-flashcards-btn" onclick="startFlashcards()">Start Flashcards</button>
-                </div>
-                <div id="flashcardContainer"></div>
-            </div>
-
-            <!-- Practice Test Mode -->
-            <div class="mode-content" id="practice">
-                <div class="practice-test-setup">
-                    <h3>⏱️ Timed Practice Test</h3>
-                    <p>Simulate real exam conditions with a countdown timer.</p>
-                    <div class="test-options">
-                        <label>Number of Questions:</label>
-                        <select id="testQuestionCount">
-                            <option value="10">10 Questions (10 minutes)</option>
-                            <option value="25">25 Questions (25 minutes)</option>
-                            <option value="50" selected>50 Questions (50 minutes)</option>
-                            <option value="100">100 Questions (100 minutes)</option>
-                        </select>
-                    </div>
-                    <button class="start-test-btn" onclick="startPracticeTest()">Start Practice Test</button>
-                </div>
-                <div id="practiceTestContainer"></div>
             </div>
 
             <!-- Review Highlights -->
@@ -280,9 +594,289 @@
         </div>
     </div>
 
-    <!-- Load Scripts -->
     <script src="documents.js"></script>
-    <script src="app.js"></script>
-    <script src="features.js"></script>
+    <script>
+        // Initialize the app
+        let currentMode = 'dashboard';
+        let currentQuestionIndex = 0;
+        let quizAnswers = [];
+        let studyData = {
+            questionsStudied: 0,
+            correctAnswers: 0,
+            totalAttempts: 0,
+            highlights: [],
+            studyStreak: 0
+        };
+
+        // Load saved data
+        function loadData() {
+            const saved = localStorage.getItem('sgtStudyData');
+            if (saved) {
+                studyData = JSON.parse(saved);
+                updateDashboard();
+            }
+        }
+
+        // Save data
+        function saveData() {
+            localStorage.setItem('sgtStudyData', JSON.stringify(studyData));
+            updateDashboard();
+        }
+
+        // Update dashboard stats
+        function updateDashboard() {
+            document.getElementById('totalStudied').textContent = studyData.questionsStudied;
+            const accuracy = studyData.totalAttempts > 0 
+                ? Math.round((studyData.correctAnswers / studyData.totalAttempts) * 100) 
+                : 0;
+            document.getElementById('accuracy').textContent = accuracy + '%';
+            document.getElementById('totalHighlights').textContent = studyData.highlights.length;
+            document.getElementById('studyStreak').textContent = studyData.studyStreak;
+        }
+
+        // Mode switching
+        document.querySelectorAll('.mode-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.mode-content').forEach(c => c.classList.remove('active'));
+                
+                tab.classList.add('active');
+                const mode = tab.dataset.mode;
+                document.getElementById(mode).classList.add('active');
+                currentMode = mode;
+
+                if (mode === 'quiz') {
+                    loadQuiz();
+                } else if (mode === 'review') {
+                    loadReview();
+                }
+            });
+        });
+
+        // Two-level document navigation
+        let currentCategory = '';
+        let filteredDocuments = [];
+
+        // Category selector - Level 1
+        document.getElementById('categorySelect').addEventListener('change', (e) => {
+            currentCategory = e.target.value;
+            const documentSelect = document.getElementById('documentSelect');
+            
+            if (!currentCategory) {
+                documentSelect.style.display = 'none';
+                documentSelect.innerHTML = '<option value="">📄 Select Document...</option>';
+                document.getElementById('documentContent').innerHTML = '<p style="text-align: center; color: #888; margin-top: 50px;">Select a category to begin studying</p>';
+                return;
+            }
+            
+            // Filter documents by category
+            filteredDocuments = STUDY_DOCUMENTS.filter(doc => doc.category === currentCategory);
+            
+            // Populate document dropdown
+            documentSelect.innerHTML = '<option value="">📄 Select Document...</option>';
+            filteredDocuments.forEach((doc, index) => {
+                const option = document.createElement('option');
+                option.value = index;
+                option.textContent = doc.title;
+                documentSelect.appendChild(option);
+            });
+            
+            documentSelect.style.display = 'block';
+            document.getElementById('documentContent').innerHTML = '<p style="text-align: center; color: #888; margin-top: 50px;">Select a document from the dropdown above</p>';
+        });
+
+        // Document selector - Level 2
+        document.getElementById('documentSelect').addEventListener('change', (e) => {
+            const docIndex = e.target.value;
+            if (docIndex === '') return;
+
+            const doc = filteredDocuments[docIndex];
+            const content = document.getElementById('documentContent');
+            content.innerHTML = `<h2>${doc.title}</h2>${doc.content}`;
+        });
+
+        // Text-to-speech controls
+        let utterance = null;
+        let isPaused = false;
+
+        document.getElementById('playBtn').addEventListener('click', () => {
+            const content = document.getElementById('documentContent').textContent;
+            if (!content) return;
+
+            if (isPaused && utterance) {
+                speechSynthesis.resume();
+                isPaused = false;
+            } else {
+                utterance = new SpeechSynthesisUtterance(content);
+                utterance.rate = parseFloat(document.getElementById('speedSelect').value);
+                speechSynthesis.speak(utterance);
+            }
+        });
+
+        document.getElementById('pauseBtn').addEventListener('click', () => {
+            if (speechSynthesis.speaking && !isPaused) {
+                speechSynthesis.pause();
+                isPaused = true;
+            }
+        });
+
+        document.getElementById('stopBtn').addEventListener('click', () => {
+            speechSynthesis.cancel();
+            isPaused = false;
+        });
+
+        document.getElementById('speedSelect').addEventListener('change', (e) => {
+            if (utterance) {
+                utterance.rate = parseFloat(e.target.value);
+            }
+        });
+
+        // Quiz functionality
+        function loadQuiz() {
+            if (!QUIZ_QUESTIONS || QUIZ_QUESTIONS.length === 0) {
+                document.getElementById('quizContainer').innerHTML = `
+                    <div class="quiz-card">
+                        <p style="text-align: center; color: #999;">
+                            Quiz questions will be added when study materials are available.
+                        </p>
+                    </div>
+                `;
+                return;
+            }
+
+            currentQuestionIndex = 0;
+            quizAnswers = [];
+            displayQuestion();
+        }
+
+        function displayQuestion() {
+            if (currentQuestionIndex >= QUIZ_QUESTIONS.length) {
+                showQuizResults();
+                return;
+            }
+
+            const question = QUIZ_QUESTIONS[currentQuestionIndex];
+            const container = document.getElementById('quizContainer');
+
+            container.innerHTML = `
+                <div class="quiz-card">
+                    <div class="question-number">Question ${currentQuestionIndex + 1} of ${QUIZ_QUESTIONS.length}</div>
+                    <div class="question-text">${question.question}</div>
+                    <div class="options-container" id="optionsContainer">
+                        ${question.options.map((opt, i) => `
+                            <div class="option" data-index="${i}">${opt}</div>
+                        `).join('')}
+                    </div>
+                    <button class="submit-btn" id="submitAnswer" disabled>Submit Answer</button>
+                    <div id="explanationContainer"></div>
+                </div>
+            `;
+
+            // Handle option selection
+            let selectedIndex = null;
+            document.querySelectorAll('.option').forEach(opt => {
+                opt.addEventListener('click', () => {
+                    document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+                    opt.classList.add('selected');
+                    selectedIndex = parseInt(opt.dataset.index);
+                    document.getElementById('submitAnswer').disabled = false;
+                });
+            });
+
+            // Handle answer submission
+            document.getElementById('submitAnswer').addEventListener('click', () => {
+                if (selectedIndex === null) return;
+
+                const correct = selectedIndex === question.correct;
+                quizAnswers.push({ questionIndex: currentQuestionIndex, correct });
+
+                // Update study data
+                studyData.totalAttempts++;
+                if (correct) studyData.correctAnswers++;
+                studyData.questionsStudied = Math.max(studyData.questionsStudied, currentQuestionIndex + 1);
+                saveData();
+
+                // Show feedback
+                document.querySelectorAll('.option').forEach((opt, i) => {
+                    opt.style.pointerEvents = 'none';
+                    if (i === question.correct) {
+                        opt.classList.add('correct');
+                    } else if (i === selectedIndex) {
+                        opt.classList.add('incorrect');
+                    }
+                });
+
+                // Show explanation
+                document.getElementById('explanationContainer').innerHTML = `
+                    <div class="explanation-box">
+                        <h4>${correct ? '✅ Correct!' : '❌ Incorrect'}</h4>
+                        <p>${question.explanation}</p>
+                        <p class="reference">Reference: ${question.reference}</p>
+                    </div>
+                `;
+
+                // Change button to next question
+                const btn = document.getElementById('submitAnswer');
+                btn.textContent = currentQuestionIndex < QUIZ_QUESTIONS.length - 1 ? 'Next Question' : 'See Results';
+                btn.disabled = false;
+                btn.onclick = () => {
+                    currentQuestionIndex++;
+                    displayQuestion();
+                };
+            });
+        }
+
+        function showQuizResults() {
+            const correct = quizAnswers.filter(a => a.correct).length;
+            const total = quizAnswers.length;
+            const percentage = Math.round((correct / total) * 100);
+
+            document.getElementById('quizContainer').innerHTML = `
+                <div class="quiz-card" style="text-align: center;">
+                    <h2 style="color: #667eea; margin-bottom: 20px;">Quiz Complete!</h2>
+                    <div class="stat-number" style="font-size: 72px; margin: 30px 0;">${percentage}%</div>
+                    <p style="font-size: 24px; margin-bottom: 30px;">
+                        You got ${correct} out of ${total} questions correct
+                    </p>
+                    <button class="submit-btn" onclick="loadQuiz()">Take Quiz Again</button>
+                </div>
+            `;
+        }
+
+        // Review functionality
+        function loadReview() {
+            const container = document.getElementById('highlightsList');
+            if (studyData.highlights.length === 0) {
+                container.innerHTML = '<p style="color: #999;">No highlights yet. Start reading and highlighting in Study mode!</p>';
+                return;
+            }
+
+            container.innerHTML = studyData.highlights.map((h, i) => `
+                <div class="highlight-item">
+                    <div class="highlight-text">${h.text}</div>
+                    ${h.note ? `<div class="highlight-note">Note: ${h.note}</div>` : ''}
+                </div>
+            `).join('');
+        }
+
+        // Reset data
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            if (confirm('Are you sure? This will delete ALL your progress and cannot be undone.')) {
+                localStorage.clear();
+                studyData = {
+                    questionsStudied: 0,
+                    correctAnswers: 0,
+                    totalAttempts: 0,
+                    highlights: [],
+                    studyStreak: 0
+                };
+                updateDashboard();
+                alert('All data has been reset.');
+            }
+        });
+
+        // Initialize on load
+        loadData();
+    </script>
 </body>
 </html>

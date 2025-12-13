@@ -16,15 +16,15 @@ const STUDY_DOCUMENTS = [
             
             <h3>Key Definitions</h3>
             
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>"Days" (Article 28 & 29):</strong><br>
                 Defined as an <strong>8-hour day</strong> for disciplinary actions<br>
-                <span style="color: #d32f2f;">⚠️ TRAP: Not calendar days, not work schedule days - specifically 8 hours</span>
+                <span style="color: #f48771;">⚠️ TRAP: Not calendar days, not work schedule days - specifically 8 hours</span>
             </div>
 
             <p><strong>"Department":</strong> The Police Department of the City of San Antonio</p>
 
-            <div style="background: #e3f2fd; padding: 15px; margin: 10px 0; border-left: 4px solid #2196f3;">
+            <div style="background: rgba(79, 195, 247, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4fc3f7;">
                 <strong>"Executive Board":</strong> Six (6) elected/appointed members:
                 <ol>
                     <li>President</li>
@@ -36,11 +36,11 @@ const STUDY_DOCUMENTS = [
                 </ol>
             </div>
 
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>"Longevity":</strong><br>
                 Time in service in the Department<br>
                 <strong>Starts from:</strong> Date employee became a probationary Police Officer<br>
-                <span style="color: #d32f2f;">⚠️ TRAP: Not from hire date - from probationary officer date</span>
+                <span style="color: #f48771;">⚠️ TRAP: Not from hire date - from probationary officer date</span>
             </div>
 
             <p><strong>"Officer":</strong> Any sworn Police Officer in the Department<br>
@@ -67,7 +67,7 @@ const STUDY_DOCUMENTS = [
                 <li>POLPAC dues</li>
             </ul>
 
-            <div style="background: #e8f5e9; padding: 15px; margin: 10px 0; border-left: 4px solid #4caf50;">
+            <div style="background: rgba(78, 201, 176, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4ec9b0;">
                 <strong>Withdrawal Process:</strong>
                 <ul>
                     <li>Must personally visit Police Department Accounting Office at Headquarters</li>
@@ -77,24 +77,24 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>Annual Vacation Deduction:</strong><br>
                 <strong>Date:</strong> October 1st each year<br>
                 <strong>Amount:</strong> 6 hours from credited vacation time<br>
                 Goes to Association pool<br>
                 <strong>Opt-out window:</strong> September (for following year)<br>
-                <span style="color: #d32f2f;">⚠️ TRAP: Deduction is October 1st, NOT September (opt-out is September)</span>
+                <span style="color: #f48771;">⚠️ TRAP: Deduction is October 1st, NOT September (opt-out is September)</span>
             </div>
 
             <h3>Death Benefit Deduction</h3>
             <p><strong>Amount:</strong> Double dues deducted from each member<br>
             <strong>When:</strong> Month immediately following member's death<br>
             <strong>Reimbursement:</strong> 14 calendar days if requested in writing<br>
-            <span style="color: #d32f2f;">⚠️ WARNING: Officers who request reimbursement are NOT eligible for death benefits</span></p>
+            <span style="color: #f48771;">⚠️ WARNING: Officers who request reimbursement are NOT eligible for death benefits</span></p>
 
             <h3>Time Off for Association Business</h3>
             
-            <div style="background: #e3f2fd; padding: 15px; margin: 10px 0; border-left: 4px solid #2196f3;">
+            <div style="background: rgba(79, 195, 247, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4fc3f7;">
                 <strong>President's Special Assignment:</strong>
                 <ul>
                     <li>Full-time release for Association duties</li>
@@ -142,7 +142,7 @@ const STUDY_DOCUMENTS = [
             
             <h3>Seniority Points</h3>
             
-            <div style="background: #e8f5e9; padding: 15px; margin: 10px 0; border-left: 4px solid #4caf50;">
+            <div style="background: rgba(78, 201, 176, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4ec9b0;">
                 <strong>Standard Seniority:</strong>
                 <ul>
                     <li><strong>1 point per year</strong> as classified Police Officer</li>
@@ -150,7 +150,7 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #e3f2fd; padding: 15px; margin: 10px 0; border-left: 4px solid #2196f3;">
+            <div style="background: rgba(79, 195, 247, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4fc3f7;">
                 <strong>Additional Points (Detective/Sergeant Candidates):</strong>
                 <ul>
                     <li>+1 point: Master Peace Officer Certification</li>
@@ -167,7 +167,7 @@ const STUDY_DOCUMENTS = [
             <strong>Detective exam:</strong> Must be <strong>Class C or higher</strong> Patrol Officer</p>
 
             <h3>Study Materials</h3>
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>200-page limit</strong> from textbooks (averaging 750 words/page)<br>
                 <strong>NOT counted toward limit:</strong> Texas Penal Code, Code of Criminal Procedures, General Manual, CBA<br>
                 <strong>Announced:</strong> 90+ calendar days before exam<br>
@@ -189,7 +189,7 @@ const STUDY_DOCUMENTS = [
 
             <h3>Exam Weights by Rank</h3>
             
-            <div style="background: #e8f5e9; padding: 15px; margin: 10px 0; border-left: 4px solid #4caf50;">
+            <div style="background: rgba(78, 201, 176, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4ec9b0;">
                 <strong>SERGEANT (with assessment):</strong>
                 <ul>
                     <li>Written: 80%</li>
@@ -200,7 +200,7 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #e3f2fd; padding: 15px; margin: 10px 0; border-left: 4px solid #2196f3;">
+            <div style="background: rgba(79, 195, 247, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4fc3f7;">
                 <strong>LIEUTENANT & CAPTAIN:</strong>
                 <ul>
                     <li>Written: 30%</li>
@@ -216,7 +216,7 @@ const STUDY_DOCUMENTS = [
 
             <h3>Post-Promotion Requirements</h3>
             
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>ALL RANKS:</strong>
                 <ul>
                     <li>40+ hour mandatory training</li>
@@ -230,7 +230,7 @@ const STUDY_DOCUMENTS = [
             <strong>DEPUTY CHIEF (within 48 months):</strong> Master's degree (9 hours/year until obtained)<br>
             <strong>ASSISTANT CHIEF:</strong> Master's degree (36 months from Deputy Chief, 48 months from Captain/Lieutenant)</p>
 
-            <div style="background: #ffebee; padding: 15px; margin: 10px 0; border-left: 4px solid #f44336;">
+            <div style="background: rgba(209, 105, 105, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d16969;">
                 <strong>⚠️ EXAM TRAPS:</strong>
                 <ul>
                     <li>Detective/Sergeant list = 12 months (NOT 18)</li>
@@ -255,14 +255,14 @@ const STUDY_DOCUMENTS = [
 
             <h3>Six-Month Rule</h3>
             
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>Officers transferring to new section/unit/detail:</strong>
                 <ul>
                     <li><strong>NO bumping</strong> of less senior officers</li>
                     <li><strong>After 6 months:</strong> Can bid on premium relief days using seniority</li>
                     <li>Vacation: Handled same way - no bumping existing schedules</li>
                 </ul>
-                <span style="color: #d32f2f;">⚠️ EXCEPTION: Patrol-to-Patrol transfers can use seniority immediately (no 6-month wait)</span>
+                <span style="color: #f48771;">⚠️ EXCEPTION: Patrol-to-Patrol transfers can use seniority immediately (no 6-month wait)</span>
             </div>
 
             <h3>"All Other Things Being Equal"</h3>
@@ -277,7 +277,7 @@ const STUDY_DOCUMENTS = [
             </ul>
 
             <h3>Tie-Breaker</h3>
-            <div style="background: #e3f2fd; padding: 15px; margin: 10px 0; border-left: 4px solid #2196f3;">
+            <div style="background: rgba(79, 195, 247, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4fc3f7;">
                 <strong>Tied seniority?</strong> Officer <strong>highest on hiring/promotional list</strong> is senior
             </div>
 
@@ -291,7 +291,7 @@ const STUDY_DOCUMENTS = [
             <p>Must be done on <strong>reverse seniority</strong> basis (least senior first)<br>
             <strong>Probationary officers:</strong> No protection</p>
 
-            <div style="background: #ffebee; padding: 15px; margin: 10px 0; border-left: 4px solid #f44336;">
+            <div style="background: rgba(209, 105, 105, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d16969;">
                 <strong>⚠️ EXAM TRAPS:</strong>
                 <ul>
                     <li>Must wait 6 months before bidding (NOT immediate)</li>
@@ -310,7 +310,7 @@ const STUDY_DOCUMENTS = [
             <p><em>⭐⭐⭐ CRITICAL FOR SERGEANTS</em></p>
             
             <h3>Scope</h3>
-            <div style="background: #e8f5e9; padding: 15px; margin: 10px 0; border-left: 4px solid #4caf50;">
+            <div style="background: rgba(78, 201, 176, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4ec9b0;">
                 <strong>Only for:</strong> Interpretation, application, or violation of CBA provisions<br>
                 <strong>NOT for:</strong>
                 <ul>
@@ -321,7 +321,7 @@ const STUDY_DOCUMENTS = [
 
             <h3>Time Limits (MEMORIZE!)</h3>
             
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>Step 1 - Association Grievance Committee:</strong>
                 <ul>
                     <li>Officer submits: <strong>Within 21 calendar days</strong> of knowledge</li>
@@ -330,7 +330,7 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #e3f2fd; padding: 15px; margin: 10px 0; border-left: 4px solid #2196f3;">
+            <div style="background: rgba(79, 195, 247, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4fc3f7;">
                 <strong>Step 2 - Chief:</strong>
                 <ul>
                     <li>Presented in writing to Chief</li>
@@ -338,7 +338,7 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #e8f5e9; padding: 15px; margin: 10px 0; border-left: 4px solid #4caf50;">
+            <div style="background: rgba(78, 201, 176, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4ec9b0;">
                 <strong>Step 3 - City Manager:</strong>
                 <ul>
                     <li>Submitted to HR Director: <strong>Within 7 calendar days</strong> from Step 2</li>
@@ -348,7 +348,7 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>Step 4 - Arbitration:</strong>
                 <ul>
                     <li>Appeal to arbitration: <strong>Within 7 calendar days</strong> from Step 3 notification</li>
@@ -363,7 +363,7 @@ const STUDY_DOCUMENTS = [
             <strong>City fails:</strong> Auto-advances to next step</p>
 
             <h3>Arbitrator Powers</h3>
-            <div style="background: #ffebee; padding: 15px; margin: 10px 0; border-left: 4px solid #f44336;">
+            <div style="background: rgba(209, 105, 105, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d16969;">
                 <strong>CANNOT:</strong> Add to, amend, modify, or subtract from CBA<br>
                 <strong>CAN ONLY:</strong> Interpret CBA<br>
                 <strong>Decision:</strong> Final and binding
@@ -379,7 +379,7 @@ const STUDY_DOCUMENTS = [
             <strong>Class action:</strong> President can file for similarly situated members<br>
             <strong>365-day expiration:</strong> If not resolved within 365 days from arbitration appeal</p>
 
-            <div style="background: #ffebee; padding: 15px; margin: 10px 0; border-left: 4px solid #f44336;">
+            <div style="background: rgba(209, 105, 105, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d16969;">
                 <strong>⚠️ EXAM TRAPS:</strong>
                 <ul>
                     <li>File within 21 days (NOT 30)</li>
@@ -435,7 +435,7 @@ const STUDY_DOCUMENTS = [
 
             <h3>Special Pay</h3>
             
-            <div style="background: #e8f5e9; padding: 15px; margin: 10px 0; border-left: 4px solid #4caf50;">
+            <div style="background: rgba(78, 201, 176, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4ec9b0;">
                 <strong>Shift Differential: $350/month</strong>
                 <ul>
                     <li>For shifts beginning after 12:00 PM</li>
@@ -444,7 +444,7 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #e3f2fd; padding: 15px; margin: 10px 0; border-left: 4px solid #2196f3;">
+            <div style="background: rgba(79, 195, 247, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4fc3f7;">
                 <strong>Longevity:</strong>
                 <ul>
                     <li><strong>3% per 5 years</strong> of service (max 30 years = 18%)</li>
@@ -453,7 +453,7 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>Standby Pay - $157/month:</strong>
                 <ul>
                     <li>S.W.A.T.</li>
@@ -482,7 +482,7 @@ const STUDY_DOCUMENTS = [
 
             <h3>LINE COMPLAINTS (Minor Misconduct)</h3>
             
-            <div style="background: #e8f5e9; padding: 15px; margin: 10px 0; border-left: 4px solid #4caf50;">
+            <div style="background: rgba(78, 201, 176, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4ec9b0;">
                 <strong>What qualifies:</strong>
                 <ul>
                     <li>Minor allegations per <strong>Complaint Matrix</strong> in General Manual</li>
@@ -490,7 +490,7 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>Investigation Timeline:</strong>
                 <ul>
                     <li><strong>21 calendar days</strong> from receipt of written complaint</li>
@@ -499,7 +499,7 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #e3f2fd; padding: 15px; margin: 10px 0; border-left: 4px solid #2196f3;">
+            <div style="background: rgba(79, 195, 247, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4fc3f7;">
                 <strong>Suspension Limits:</strong>
                 <ul>
                     <li>Maximum: <strong>5 working days</strong> (40 working hours)</li>
@@ -509,7 +509,7 @@ const STUDY_DOCUMENTS = [
             </div>
 
             <h3>Officer Rights During Line Investigations</h3>
-            <div style="background: #ffebee; padding: 15px; margin: 10px 0; border-left: 4px solid #f44336;">
+            <div style="background: rgba(209, 105, 105, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d16969;">
                 <strong>NO attorney during interviews</strong> with commanding officer (but can seek advice)<br>
                 Must be advised <strong>in writing</strong> of procedures before providing response<br>
                 <strong>Reasonable opportunity</strong> to consult counsel before writing response<br>
@@ -521,12 +521,12 @@ const STUDY_DOCUMENTS = [
             <strong>If disagrees:</strong> Case forwarded to <strong>Internal Affairs</strong></p>
 
             <h3>Investigation Scope</h3>
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 Investigation <strong>confined to written complaint only</strong><br>
                 Cannot expand beyond original complaint
             </div>
 
-            <div style="background: #ffebee; padding: 15px; margin: 10px 0; border-left: 4px solid #f44336;">
+            <div style="background: rgba(209, 105, 105, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d16969;">
                 <strong>⚠️ CRITICAL TRAPS:</strong>
                 <ul>
                     <li>Timeline = 21 calendar days (NOT 30)</li>
@@ -549,7 +549,7 @@ const STUDY_DOCUMENTS = [
             
             <h3>Line Complaint Investigations (Chain of Command)</h3>
             
-            <div style="background: #e8f5e9; padding: 15px; margin: 10px 0; border-left: 4px solid #4caf50;">
+            <div style="background: rgba(78, 201, 176, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4ec9b0;">
                 <strong>Timeline:</strong> <strong>21 calendar days</strong> from receipt of written complaint<br>
                 <strong>Who Investigates:</strong>
                 <ul>
@@ -558,7 +558,7 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>Scope:</strong>
                 <ul>
                     <li>Investigation <strong>confined to written complaint only</strong></li>
@@ -566,7 +566,7 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #e3f2fd; padding: 15px; margin: 10px 0; border-left: 4px solid #2196f3;">
+            <div style="background: rgba(79, 195, 247, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4fc3f7;">
                 <strong>Suspension Authority:</strong>
                 <ul>
                     <li>Up to <strong>5 working days</strong> (40 hours maximum)</li>
@@ -575,7 +575,7 @@ const STUDY_DOCUMENTS = [
             </div>
 
             <h3>Officer Rights During Line Investigation</h3>
-            <div style="background: #ffebee; padding: 15px; margin: 10px 0; border-left: 4px solid #f44336;">
+            <div style="background: rgba(209, 105, 105, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d16969;">
                 <strong>NO attorney present</strong> during commanding officer interviews<br>
                 CAN seek advice from attorney/Association rep (within 5-day limit)<br>
                 Must be <strong>advised in writing</strong> of procedures before providing report/response<br>
@@ -583,7 +583,7 @@ const STUDY_DOCUMENTS = [
             </div>
 
             <h3>The 5-Day Decision Window</h3>
-            <div style="background: #e8f5e9; padding: 15px; margin: 10px 0; border-left: 4px solid #4caf50;">
+            <div style="background: rgba(78, 201, 176, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4ec9b0;">
                 Officer has <strong>5 calendar days</strong> to agree/disagree with proposed discipline<br>
                 <strong>If agrees:</strong> Discipline implemented, <strong>CANNOT appeal</strong><br>
                 <strong>If disagrees:</strong> Case forwarded to <strong>Internal Affairs</strong>
@@ -593,7 +593,7 @@ const STUDY_DOCUMENTS = [
 
             <h3>Internal Affairs Investigations</h3>
             
-            <div style="background: #e3f2fd; padding: 15px; margin: 10px 0; border-left: 4px solid #2196f3;">
+            <div style="background: rgba(79, 195, 247, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4fc3f7;">
                 <strong>When IA Investigates:</strong>
                 <ul>
                     <li>Serious misconduct allegations</li>
@@ -603,7 +603,7 @@ const STUDY_DOCUMENTS = [
             </div>
 
             <h3>Officer Rights (Garrity/Chapter 143)</h3>
-            <div style="background: #e8f5e9; padding: 15px; margin: 10px 0; border-left: 4px solid #4caf50;">
+            <div style="background: rgba(78, 201, 176, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4ec9b0;">
                 <strong>During IA Investigations:</strong>
                 <ul>
                     <li><strong>Attorney present</strong> during IA interviews</li>
@@ -614,7 +614,7 @@ const STUDY_DOCUMENTS = [
                 </ul>
             </div>
 
-            <div style="background: #ffebee; padding: 15px; margin: 10px 0; border-left: 4px solid #f44336;">
+            <div style="background: rgba(209, 105, 105, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d16969;">
                 <strong>⚠️ KEY DIFFERENCES:</strong>
                 <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
                     <tr style="background: #f5f5f5;">
@@ -650,15 +650,15 @@ const STUDY_DOCUMENTS = [
             
             <h3>Key Definitions</h3>
             
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>"Days" (Article 28 & 29):</strong><br>
                 Defined as an <strong>8-hour day</strong> for disciplinary actions<br>
-                <span style="color: #d32f2f;">⚠️ TRAP: Not calendar days, not work schedule days - specifically 8 hours</span>
+                <span style="color: #f48771;">⚠️ TRAP: Not calendar days, not work schedule days - specifically 8 hours</span>
             </div>
 
             <p><strong>"Department":</strong> The Police Department of the City of San Antonio</p>
 
-            <div style="background: #e3f2fd; padding: 15px; margin: 10px 0; border-left: 4px solid #2196f3;">
+            <div style="background: rgba(79, 195, 247, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #4fc3f7;">
                 <strong>"Executive Board":</strong> Six (6) elected/appointed members:
                 <ol>
                     <li>President</li>
@@ -670,11 +670,11 @@ const STUDY_DOCUMENTS = [
                 </ol>
             </div>
 
-            <div style="background: #fff3cd; padding: 15px; margin: 10px 0; border-left: 4px solid #ffc107;">
+            <div style="background: rgba(212, 168, 47, 0.15); padding: 15px; margin: 10px 0; border-left: 4px solid #d4a82f;">
                 <strong>"Longevity":</strong><br>
                 Time in service in the Department<br>
                 <strong>Starts from:</strong> Date employee became a probationary Police Officer<br>
-                <span style="color: #d32f2f;">⚠️ TRAP: Not from hire date - from probationary officer date</span>
+                <span style="color: #f48771;">⚠️ TRAP: Not from hire date - from probationary officer date</span>
             </div>
 
             <p><strong>"Officer":</strong> Any sworn Police Officer in the Department<br>

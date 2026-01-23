@@ -901,6 +901,187 @@ TITLE 5.</p>
 
 <h2 style="color: #4fc3f7; font-size: 24px; margin-bottom: 25px;">📋 Detailed Sections</h2>
 
+
+<div style="background: rgba(50, 50, 55, 0.7); padding: 20px; margin: 15px 0; 
+            border-left: 4px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4ec9b0; font-size: 17px; margin: 0 0 15px 0;">Sec. 20A.01. DEFINITIONS.</h4>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">In this chapter:
+(1) "Child" means a person younger than 18 years of age.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(1-a) "Coercion" as defined by Section 1.07 includes:
+(A) destroying, concealing, confiscating, or withholding
+from a trafficked person, or threatening to destroy, conceal, confiscate,
+or withhold from a trafficked person, the person's actual or purported:
+(i) government records; or
+(ii) identifying information or documents;
+(B) causing a trafficked person, without the person's
+consent, to become intoxicated, as defined by Section 49.01, to a degree
+that impairs the person's ability to appraise the nature of or resist
+engaging in any conduct, including performing or providing labor or
+services; or
+(C) withholding alcohol or a controlled substance to a
+degree that impairs the ability of a trafficked person with a chemical
+dependency, as defined by Section 462.001, Health and Safety Code, to
+appraise the nature of or resist engaging in any conduct, including
+performing or providing labor or services.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(1-b) "Disabled individual" has the meaning assigned by
+Section 22.021(b).</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(2) "Forced labor or services" means labor or services, other
+than labor or services that constitute sexual conduct, that are performed
+or provided by another person and obtained through an actor's use of
+force, fraud, or coercion.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(2-a) "Premises" has the meaning assigned by Section 481.134,
+Health and Safety Code. (2-b) "School" means a public or private primary or secondary
+school. (3) "Sexual conduct" has the meaning assigned by Section
+43.25.</p>
+</div>
+
+<div style="background: rgba(50, 50, 55, 0.7); padding: 20px; margin: 15px 0; 
+            border-left: 4px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4ec9b0; font-size: 17px; margin: 0 0 15px 0;">Sec. 20A.02. TRAFFICKING OF PERSONS.</h4>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(a) A person commits an
+offense if the person <strong style="color: #ffc107;">knowingly</strong>:
+(1) traffics another person with the intent that the
+trafficked person engage in forced labor or services;
+(2) receives a benefit from participating in a venture that
+involves an activity described by Subdivision (1), including by receiving
+labor or services the person knows are forced labor or services;
+(3) traffics another person and, through force, fraud, or
+coercion, causes the trafficked person to engage in conduct prohibited
+by:
+(A) Section 43.02 (Prostitution);
+(B) Section 43.03 (Promotion of Prostitution);
+(B-1) Section 43.031 (Online Promotion of Prostitution);
+(C) Section 43.04 (Aggravated Promotion of Prostitution);
+(C-1) Section 43.041 (Aggravated Online Promotion of
+Page - 1 -
+
+Prostitution); or
+(D) Section 43.05 (Compelling Prostitution);
+(4) receives a benefit from participating in a venture that
+involves an activity described by Subdivision (3) or engages in sexual
+conduct with a person trafficked in the manner described in Subdivision
+(3);
+(5) traffics a child or disabled individual with the intent
+that the trafficked child or disabled individual engage in forced labor
+or services;
+(6) receives a benefit from participating in a venture that
+involves an activity described by Subdivision (5), including by receiving
+labor or services the person knows are forced labor or services;
+(7) traffics a child or disabled individual and by any means
+causes the trafficked child or disabled individual to engage in, or
+become the victim of, conduct prohibited by:
+(A) Section 21.02 (Continuous Sexual Abuse of Young Child
+or Disabled Individual);
+(B) Section 21.11 (Indecency with a Child);
+(C) Section 22.011 (Sexual Assault);
+(D) Section 22.021 (Aggravated Sexual Assault);
+(E) Section 43.02 (Prostitution);
+(E-1) Section 43.021 (Solicitation of Prostitution);
+(F) Section 43.03 (Promotion of Prostitution);
+(F-1) Section 43.031 (Online Promotion of Prostitution);
+(G) Section 43.04 (Aggravated Promotion of Prostitution);
+(G-1) Section 43.041 (Aggravated Online Promotion of
+Prostitution);
+(H) Section 43.05 (Compelling Prostitution);
+(I) Section 43.25 (Sexual Performance by a Child);
+(J) Section 43.251 (Employment Harmful to Children); or
+(K) Section 43.26 (Possession or Promotion of Child
+Pornography); or
+(8) receives a benefit from participating in a venture that
+involves an activity described by Subdivision (7) or engages in sexual
+conduct with a child or disabled individual trafficked in the manner
+described in Subdivision (7).</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(a-1) Repealed by Acts 2021, 87th Leg., R.S., Ch. 807 (H.B. 1540),
+Sec. 62(5) and Ch. 905 (H.B. 3521), Sec. 2, eff. September 1, 2021. Text of subsection as amended by Acts 2023, 88th Leg., R.S., Ch. 93
+(S.B. 1527), Sec.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">2.02
+(b) Except as otherwise provided by this subsection and Subsection
+(b-1), an offense under this section is a felony of the second
+degree.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">An offense under this section is a felony of the first degree
+if:
+(1) the applicable conduct constitutes an offense under
+Subsection (a)(5), (6), (7), or (8), regardless of whether the actor
+knows the age of the child or whether the actor knows the victim is
+disabled at the time of the offense;
+(2) the commission of the offense results in serious bodily
+Page -2 -
+
+injury to or the death of the person who is trafficked;
+(3) the commission of the offense results in the death of an
+unborn child of the person who is trafficked; or
+(4) the actor:
+(A) used or exhibited a deadly weapon during the
+commission of the offense;
+(B) <strong style="color: #ffc107;">intentionally</strong>, <strong style="color: #ffc107;">knowingly</strong>, or <strong style="color: #ffc107;">recklessly</strong> impeded the
+normal breathing or circulation of the blood of the trafficked person by
+applying pressure to the person's throat or neck or by blocking the
+person's nose or mouth; or
+(C) recruited, enticed, or obtained the trafficked person
+from a shelter or facility operating as a residential treatment center
+that serves runaway youth, foster children, the homeless, or persons
+subjected to human trafficking, domestic violence, or sexual assault.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">Text of subsection as amended by Acts 2023, 88th Leg., R.S., Ch. 452
+(H.B. 3554), Sec. 1
+(b) Except as otherwise provided by this subsection and Subsection
+(b-1), an offense under this section is a felony of the second
+degree.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">An offense under this section is a felony of the first degree
+if:
+(1) the applicable conduct constitutes an offense under
+Subsection (a)(5), (6), (7), or (8), regardless of whether the actor
+knows the age of the child at the time of the offense;
+(2) the commission of the offense results in the death of the
+person who is trafficked; or
+(3) the commission of the offense results in the death of an
+unborn child of the person who is trafficked.</p>
+</div>
+
+<div style="background: rgba(50, 50, 55, 0.7); padding: 20px; margin: 15px 0; 
+            border-left: 4px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4ec9b0; font-size: 17px; margin: 0 0 15px 0;">Sec. 20A.03. CONTINUOUS TRAFFICKING OF PERSONS.</h4>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(a) A person
+commits an offense if, during a period that is 30 or more days in
+duration, the person engages two or more times in conduct that
+constitutes an offense under Section 20A.02 against one or more victims.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(b) If a jury is the trier of fact, members of the jury are not
+required to agree unanimously on which specific conduct engaged in by the
+defendant constituted an offense under Section 20A.02 or on which exact
+date the defendant engaged in that conduct.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">The jury must agree
+unanimously that the defendant, during a period that is 30 or more days
+in duration, engaged in conduct that constituted an offense under Section
+20A.02.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(c) If the victim of an offense under Subsection (a) is the same
+victim as a victim of an offense under Section 20A.02, a defendant may
+not be convicted of the offense under Section 20A.02 in the same criminal
+Page -4 -
+
+action as the offense under Subsection (a), unless the offense under
+Section 20A.02:
+(1) is charged in the alternative;
+(2) occurred outside the period in which the offense alleged
+under Subsection (a) was committed; or
+(3) is considered by the trier of fact to be a lesser included
+offense of the offense alleged under Subsection (a).</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(d) A defendant may not be charged with more than one count under
+Subsection (a) if all of the conduct that constitutes an offense under
+Section 20A.02 is alleged to have been committed against the same victim.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(e) An offense under this section is a felony of the first degree,
+punishable by imprisonment in the Texas Department of Criminal Justice
+for life or for any term of not more than 99 years or less than 25 years. Sec. 20A.04. ACCOMPLICE WITNESS; TESTIMONY AND IMMUNITY.</p>
+</div>
+
+<div style="background: rgba(50, 50, 55, 0.7); padding: 20px; margin: 15px 0; 
+            border-left: 4px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4ec9b0; font-size: 17px; margin: 0 0 15px 0;">Sec. 20A.05. PROSECUTION BY ATTORNEY GENERAL.</h4>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">The attorney general has jurisdiction to prosecute and shall
+represent the state in the prosecution of an offense under this
+chapter as provided by Section 402.103, Government Code. Page -5 -
+
+PENAL CODE
+TITLE 5.</p>
+</div>
 `
     },
     
@@ -1385,13 +1566,114 @@ consent of the other person if the aggravated sexual assault occurs under
 the same circumstances listed in Section 22.011(b). (d) The defense provided by Section 22.011(d) applies to this
 section.</p>
     <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(e) An offense under this section is a felony of the first degree.</p>
-    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(f) The minimum term of imprisonment for an offense under this
-section is increased to 25 years if:
-(1) the victim of the offense is younger than six years of age
-at the time the offense is committed; or
-(2) the victim of the offense is younger than 14 years of age
-at the time the offense is committed and the actor commits the offense in
-a manner described by Subsection (a)(2)(A).</p>
+</div>
+
+<div style="background: rgba(50, 50, 55, 0.7); padding: 20px; margin: 15px 0; 
+            border-left: 4px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4ec9b0; font-size: 17px; margin: 0 0 15px 0;">Sec. 22.04. INJURY TO A CHILD, ELDERLY INDIVIDUAL, OR DISABLED INDIVIDUAL.</h4>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(a)
+A <strong style="color: #ffc107;">person commits an offense</strong> if he <strong style="color: #ffc107;">intentionally</strong>,
+<strong style="color: #ffc107;">knowingly</strong>, <strong style="color: #ffc107;">recklessly</strong>, or with criminal negligence, by act or
+<strong style="color: #ffc107;">intentionally</strong>, <strong style="color: #ffc107;">knowingly</strong>, or <strong style="color: #ffc107;">recklessly</strong> by omission, causes to a child,
+elderly individual, or disabled individual:
+(1) <strong style="color: #ffc107;">serious bodily injury</strong>;
+(2) serious mental deficiency, impairment, or injury; or
+(3) bodily injury.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(a-1) A <strong style="color: #ffc107;">person commits an offense</strong> if the person is an owner,
+operator, or employee of a group home, nursing facility, assisted living
+facility, boarding home facility, intermediate care facility for persons
+with an intellectual or developmental disability, or other institutional
+care facility and the person <strong style="color: #ffc107;">intentionally</strong>, <strong style="color: #ffc107;">knowingly</strong>, <strong style="color: #ffc107;">recklessly</strong>, or
+with criminal negligence by omission causes to a child, elderly
+individual, or disabled individual who is a resident of that group home
+or facility:
+(1) <strong style="color: #ffc107;">serious bodily injury</strong>;
+(2) serious mental deficiency, impairment, or injury; or
+(3) bodily injury.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(b) An omission that causes a condition described by Subsection
+(a)(1), (2), or (3) or (a-1)(1), (2), or (3) is conduct constituting an
+offense under this section if:
+(1) the actor has a legal or statutory duty to act; or
+(2) the actor has assumed care, custody, or control of a
+child, elderly individual, or disabled individual.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(c) In this section:
+(1) "Child" means a person 14 years of age or younger. (2) "Elderly individual" means a person 65 years of age or
+older.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(3) "Disabled individual" means a person:
+(A) with one or more of the following:
+(i) autism spectrum disorder, as defined by Section
+Page -10 -
+
+1355.001, Insurance Code;
+(ii) developmental disability, as defined by Section
+112.042, Human Resources Code;
+(iii) intellectual disability, as defined by Section
+591.003, Health and Safety Code;
+(iv) severe emotional disturbance, as defined by
+Section 261.001, Family Code;
+(v) traumatic brain injury, as defined by Section
+92.001, Health and Safety Code; or
+(vi) mental illness, as defined by Section 571.003,
+Health and Safety Code; or
+(B) who otherwise by reason of age or physical or mental
+disease, defect, or injury is substantially unable to protect the
+person's self from harm or to provide food, shelter, or medical care for
+the person's self.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(4) Repealed by Acts 2011, 82nd Leg., R.S., Ch. 620, Sec. 11,
+eff. September 1, 2011.</p>
+</div>
+
+<div style="background: rgba(50, 50, 55, 0.7); padding: 20px; margin: 15px 0; 
+            border-left: 4px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4ec9b0; font-size: 17px; margin: 0 0 15px 0;">Sec. 22.041. ABANDONING OR ENDANGERING A CHILD, ELDERLY INDIVIDUAL, OR DISABLED INDIVIDUAL.</h4>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(a) In this section:
+(1) "Abandon" means to leave in any place without providing
+reasonable and necessary care a child, elderly individual, or disabled
+individual under circumstances under which no reasonable, similarly
+situated person would leave a child or individual of that age and
+ability.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(2) "Child," "elderly individual," and "disabled individual"
+have the meanings assigned by Section 22.04.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(b) A <strong style="color: #ffc107;">person commits an offense</strong> if the person, having custody,
+care, or control of a child, elderly individual, or disabled individual,
+<strong style="color: #ffc107;">intentionally</strong> abandons the child or individual in any place under
+circumstances that expose the child or individual to an unreasonable risk
+of harm.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(c) A <strong style="color: #ffc107;">person commits an offense</strong> if the person <strong style="color: #ffc107;">intentionally</strong>,
+<strong style="color: #ffc107;">knowingly</strong>, <strong style="color: #ffc107;">recklessly</strong>, or with criminal negligence, by act or omission,
+engages in conduct that places a child, elderly individual, or disabled
+individual in imminent danger of death, bodily injury, or physical or
+mental impairment.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(c-1) For purposes of Subsection (c), it is presumed that a person
+engaged in conduct that places a child, elderly individual, or disabled
+individual in imminent danger of death, bodily injury, or physical or
+mental impairment if:
+(1) the person manufactured, possessed, or in any way
+introduced into the body of any person the controlled substance
+methamphetamine in the presence of the child, elderly individual, or
+disabled individual;
+(2) the person's conduct related to the proximity or
+accessibility of the controlled substance methamphetamine to the child,
+elderly individual, or disabled individual and an analysis of a specimen
+of the child's or individual's blood, urine, or other bodily substance
+indicates the presence of methamphetamine in the body of the child or
+individual; or
+(3) the person injected, ingested, inhaled, or otherwise
+introduced a controlled substance listed in Penalty Group 1, Section
+481.102, Health and Safety Code, or Penalty Group 1-B, Section 481.1022,
+Health and Safety Code, into the human body when the person was not in
+lawful possession of the substance as defined by Section 481.002(24) of
+that code.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(d) Except as provided by Subsection (e), an offense under
+Subsection (b) is:
+(1) a state jail felony if the actor abandoned the child,
+Page -13 -
+
+elderly individual, or disabled individual with intent to return for the
+child or individual; or
+(2) a felony of the third degree if the actor abandoned the
+child, elderly individual, or disabled individual without intent to
+return for the child or individual.</p>
 </div>
 
 <div style="background: rgba(50, 50, 55, 0.7); padding: 20px; margin: 15px 0; 
@@ -1823,6 +2105,45 @@ record of the child into the National Crime Information Center.</p>
     <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">Sec. 25.07. VIOLATION OF CERTAIN COURT ORDERS OR CONDITIONS OF BOND
 IN A FAMILY VIOLENCE, CHILD ABUSE OR NEGLECT, SEXUAL ASSAULT OR ABUSE,
 INDECENT ASSAULT, STALKING, OR TRAFFICKING CASE.</p>
+</div>
+
+<div style="background: rgba(50, 50, 55, 0.7); padding: 20px; margin: 15px 0; 
+            border-left: 4px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4ec9b0; font-size: 17px; margin: 0 0 15px 0;">Sec. 25.071. VIOLATION OF PROTECTIVE ORDER PREVENTING OFFENSE CAUSED BY BIAS OR PREJUDICE.</h4>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(a) A <strong style="color: #ffc107;">person commits an offense</strong> if, in
+violation of an order issued under Subchapter C, Chapter 7B, Code of
+Criminal Procedure, the person <strong style="color: #ffc107;">knowingly</strong> or <strong style="color: #ffc107;">intentionally</strong>:
+(1) commits an offense under Title 5 or Section 28.02, 28.03,
+or 28.08 and commits the offense because of bias or prejudice as
+described by Article 42.014, Code of Criminal Procedure;
+(2) communicates:
+(A) directly with a protected individual in a threatening
+or harassing manner;
+(B) a threat through any person to a protected
+individual; or
+(C) in any manner with the protected individual, if the
+order prohibits any communication with a protected individual; or
+(3) goes to or near the residence or place of employment or
+business of a protected individual.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(b) If conduct constituting an offense under this section also
+Page -6 -
+
+constitutes an offense under another section of this code, the actor may
+be prosecuted under either section or under both sections.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(c) A peace officer investigating conduct that may constitute an
+offense under this section for a violation of an order may not arrest a
+person protected by that order for a violation of that order.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(d) An offense under this section is a Class A misdemeanor unless
+it is shown on the trial of the offense that the defendant has previously
+been convicted under this section two or more times or has violated the
+protective order by committing an assault, in which event the offense is
+a third degree felony.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">Sec. 25.072. REPEATED VIOLATION OF CERTAIN COURT ORDERS OR
+CONDITIONS OF BOND IN FAMILY VIOLENCE, CHILD ABUSE OR NEGLECT, SEXUAL
+ASSAULT OR ABUSE, INDECENT ASSAULT, STALKING, OR TRAFFICKING CASE.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(a) A <strong style="color: #ffc107;">person commits an offense</strong> if, during a period that is 12 months or
+less in duration, the person two or more times engages in conduct that
+constitutes an offense under Section 25.07.</p>
 </div>
 
 <div style="background: rgba(50, 50, 55, 0.7); padding: 20px; margin: 15px 0; 
@@ -2358,6 +2679,20 @@ except that the offense is a felony of the first degree if:
 infrastructure facility is $100,000 or more; or
 (2) the actor uses a firearm, drone, cyber attack, or
 explosive weapon in the commission of the offense.</p>
+</div>
+
+<div style="background: rgba(50, 50, 55, 0.7); padding: 20px; margin: 15px 0; 
+            border-left: 4px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4ec9b0; font-size: 17px; margin: 0 0 15px 0;">Sec. 28.10. ENHANCED PENALTY FOR CERTAIN MISDEMEANORS OR STATE JAIL FELONIES.</h4>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">The punishment for an offense under this chapter that is
+punishable as a misdemeanor or a state jail felony is increased to the
+punishment for a felony of the third degree if it is shown on the trial
+of the offense that the actor committed the offense in the course of
+committing an offense under Section 20.05(a)(2).</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">Page -9 -
+
+PENAL CODE
+TITLE 7.</p>
 </div>
 `
     },
@@ -3344,6 +3679,20 @@ offense, the offense is:
 Subsection (a); or
 (2) a Class A misdemeanor if the offense is committed under
 Subsection (b).</p>
+</div>
+
+<div style="background: rgba(50, 50, 55, 0.7); padding: 20px; margin: 15px 0; 
+            border-left: 4px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4ec9b0; font-size: 17px; margin: 0 0 15px 0;">Sec. 38.03. RESISTING ARREST, SEARCH, OR TRANSPORTATION.</h4>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(a) A
+<strong style="color: #ffc107;">person commits an offense</strong> if he <strong style="color: #ffc107;">intentionally</strong> prevents or obstructs a
+person he knows is a peace officer or a person acting in a peace
+officer's presence and at his direction from effecting an arrest, search,
+or transportation of the actor or another by using force against the
+peace officer or another.</p>
+    <p style="line-height: 1.7; margin: 10px 0; color: #d0d0d0;">(b) It is no defense to prosecution under this section that the
+arrest or search was unlawful. (c) Except as provided in Subsection (d), an offense under this
+section is a Class A misdemeanor.</p>
 </div>
 
 <div style="background: rgba(50, 50, 55, 0.7); padding: 20px; margin: 15px 0; 

@@ -25,18 +25,32 @@ const DOCUMENTS_CBA = [
                 <li><strong>Review:</strong> Access your highlights and notes</li>
             </ol>
             
-            <h3>Study Features</h3>
+            <h3>✨ Study Features</h3>
             <ul>
-                <li>Text-to-speech: Click Play to hear content read aloud</li>
-                <li>Highlighting: Select text to automatically save highlights</li>
-                <li>Notes: Add your own notes to any document</li>
-                <li>Progress tracking: All data saved in your browser</li>
+                <li><strong>Highlighting:</strong> Select text to automatically save highlights in different colors</li>
+                <li><strong>Notes:</strong> Add your own notes to any document</li>
+                <li><strong>Search:</strong> Find specific topics or keywords across all documents</li>
+                <li><strong>Progress tracking:</strong> All data saved locally in your browser</li>
             </ul>
             
             <h3>💡 Study Tips</h3>
-            <p>Recommended: 1 hour daily - 30 min reading, 15 min quizzes, 15 min review</p>
+            <p><strong>Recommended schedule:</strong> 1 hour daily</p>
+            <ul>
+                <li>30 min reading and highlighting key sections</li>
+                <li>15 min quiz practice</li>
+                <li>15 min reviewing highlights and notes</li>
+            </ul>
             <p>Take weekly practice tests to identify weak areas</p>
-            <p>Review highlights during final week before exam</p>
+            <p>Review all highlights during final week before exam</p>
+            
+            <h3>📊 Test Breakdown</h3>
+            <p><strong>Total: 100 questions</strong></p>
+            <ul>
+                <li>Penal Code: 10 questions</li>
+                <li>CBA: 20 questions</li>
+                <li>General Manual: 50 questions</li>
+                <li>Textbook: 20 questions</li>
+            </ul>
         `
     },
 

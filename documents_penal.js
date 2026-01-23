@@ -2,457 +2,231 @@ const DOCUMENTS_PENAL = [
     {
         category: 'Penal Code',
         title: "Chapter 9 - Justification",
-        content: `Sec. 9.01. DEFINITIONS. In this chapter:
-(1) "Custody" has the meaning assigned by Section
-(2) "Escape" has the meaning assigned by Section
-(3) "Deadly force" means force that is intended or known by
-the actor to cause, or in the manner of its use or intended use is
-capable of causing, death or serious bodily injury.
-(4) "Habitation" has the meaning assigned by Section
-(5) "Vehicle" has the meaning assigned by Section
+        content: `<h2>Chapter 9 - Chapter 9 - Justification</h2>
 
-Sec. 9.02. JUSTIFICATION AS A DEFENSE. It is a defense to
-prosecution that the conduct in question is justified under this
-chapter.
+<div style="background: rgba(79, 195, 247, 0.15); padding: 20px; margin: 20px 0; border-left: 4px solid #4fc3f7;">
+    <h3 style="margin-top: 0;">📋 Chapter Summary</h3>
+    <p style="font-size: 16px;"><strong>Justification for use of force including self-defense, defense of others, defense of property, and law enforcement actions.</strong></p>
+    
+    <h4>Key Points to Study:</h4>
+    <ul>
+        <li>Defines "deadly force" and when it can be used</li>
+        <li>Self-defense requirements and presumptions</li>
+        <li>Defense of third persons</li>
+        <li>Protection of property</li>
+        <li>Law enforcement use of force</li>
+    </ul>
+</div>
 
-Sec. 9.03. CONFINEMENT AS JUSTIFIABLE FORCE. Confinement is
-justified when force is justified by this chapter if the actor takes
-reasonable measures to terminate the confinement as soon as he knows
-he safely can unless the person confined has been arrested for an
-offense.
+<hr style="border: 1px solid #4fc3f7; margin: 30px 0;">
 
-Sec. 9.04. THREATS AS JUSTIFIABLE FORCE. The threat of force is
-justified when the use of force is justified by this chapter. For
-purposes of this section, a threat to cause death or serious bodily
-injury by the production of a weapon or otherwise, as long as the
-actor's purpose is limited to creating an apprehension that he will
-use deadly force if necessary, does not constitute the use of deadly
-force.
+<h3>Sections</h3>
 
-Sec. 9.05. RECKLESS INJURY OF INNOCENT THIRD PERSON. Even
-though an actor is justified under this chapter in threatening or
-using force or deadly force against another, if in doing so he also
-recklessly injures or kills an innocent third person, the
-justification afforded by this chapter is unavailable in a prosecution
-for the reckless injury or killing of the innocent third person.
-Sec. 9.06. CIVIL REMEDIES UNAFFECTED. The fact that conduct is
-justified under this chapter does not abolish or impair any remedy for
-the conduct that is available in a civil suit.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.01. DEFINITIONS.</h4>
+    <div style="line-height: 1.8;">
+        <p>In this chapter: (1) "Custody" has the meaning assigned by Section (2) "Escape" has the meaning assigned by Section (3) "Deadly force" means force that is intended or known by the actor to cause, or in the manner of its use or intended use is capable of causing, death or serious bodily injury. (4) "Habitation" has the meaning assigned by Section (5) "Vehicle" has the meaning assigned by Section</p>
+        
+    </div>
+</div>
 
-Sec. 9.21. PUBLIC DUTY. (a) Except as qualified by Subsections
-(b) and (c), conduct is justified if the actor reasonably believes the
-conduct is required or authorized by law, by the judgment or order of
-a competent court or other governmental tribunal, or in the execution
-of legal process.
-Page - 1 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.02. JUSTIFICATION AS A DEFENSE.</h4>
+    <div style="line-height: 1.8;">
+        <p>It is a defense to prosecution that the conduct in question is justified under this chapter.</p>
+        
+    </div>
+</div>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.03. CONFINEMENT AS JUSTIFIABLE FORCE.</h4>
+    <div style="line-height: 1.8;">
+        <p>Confinement is justified when force is justified by this chapter if the actor takes reasonable measures to terminate the confinement as soon as he knows he safely can unless the person confined has been arrested for an offense.</p>
+        
+    </div>
+</div>
 
-(b) The other sections of this chapter control when force is
-used against a person to protect persons (Subchapter C), to protect
-property (Subchapter D), for law enforcement (Subchapter E), or by
-virtue of a special relationship (Subchapter F).
-(c) The use of deadly force is not justified under this section
-unless the actor reasonably believes the deadly force is specifically
-required by statute or unless it occurs in the lawful conduct of war.
-If deadly force is so justified, there is no duty to retreat before
-using it.
-(d) The justification afforded by this section is available if
-the actor reasonably believes:
-(1) the court or governmental tribunal has jurisdiction or
-the process is lawful, even though the court or governmental tribunal
-lacks jurisdiction or the process is unlawful; or
-(2) his conduct is required or authorized to assist a
-public servant in the performance of his official duty, even though
-the servant exceeds his lawful authority.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.04. THREATS AS JUSTIFIABLE FORCE.</h4>
+    <div style="line-height: 1.8;">
+        <p>The threat of force is justified when the use of force is justified by this chapter. For purposes of this section, a threat to cause death or serious bodily injury by the production of a weapon or otherwise, as long as the actor's purpose is limited to creating an apprehension that he will use deadly force if necessary, does not constitute the use of deadly force.</p>
+        
+    </div>
+</div>
 
-Sec. 9.22. NECESSITY. Conduct is justified if:
-(1) the actor reasonably believes the conduct is
-immediately necessary to avoid imminent harm;
-(2) the desirability and urgency of avoiding the harm
-clearly outweigh, according to ordinary standards of reasonableness,
-the harm sought to be prevented by the law proscribing the conduct;
-and
-(3) a legislative purpose to exclude the justification
-claimed for the conduct does not otherwise plainly appear.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.05. RECKLESS INJURY OF INNOCENT THIRD PERSON.</h4>
+    <div style="line-height: 1.8;">
+        <p>Even though an actor is justified under this chapter in threatening or using force or deadly force against another, if in doing so he also recklessly injures or kills an innocent third person, the justification afforded by this chapter is unavailable in a prosecution for the reckless injury or killing of the innocent third person.</p>
+        
+    </div>
+</div>
 
-Sec. 9.31. SELF-DEFENSE. (a) Except as provided in Subsection
-(b), a person is justified in using force against another when and to
-the degree the actor reasonably believes the force is immediately
-necessary to protect the actor against the other's use or attempted
-use of unlawful force. The actor's belief that the force was
-immediately necessary as described by this subsection is presumed to
-be reasonable if the actor:
-(1) knew or had reason to believe that the person against
-whom the force was used:
-(A) unlawfully and with force entered, or was
-attempting to enter unlawfully and with force, the actor's occupied
-habitation, vehicle, or place of business or employment;
-(B) unlawfully and with force removed, or was
-attempting to remove unlawfully and with force, the actor from the
-actor's habitation, vehicle, or place of business or employment; or
-(C) was committing or attempting to commit aggravated
-kidnapping, murder, sexual assault, aggravated sexual assault,
-robbery, or aggravated robbery;
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.06. CIVIL REMEDIES UNAFFECTED.</h4>
+    <div style="line-height: 1.8;">
+        <p>The fact that conduct is justified under this chapter does not abolish or impair any remedy for the conduct that is available in a civil suit.</p>
+        
+    </div>
+</div>
 
-Page -2 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.21. PUBLIC DUTY.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) Except as qualified by Subsections (b) and (c), conduct is justified if the actor reasonably believes the conduct is required or authorized by law, by the judgment or order of a competent court or other governmental tribunal, or in the execution of legal process. Page - 1 -</p>
+        <p>(b) The other sections of this chapter control when force is used against a person to protect persons (Subchapter C), to protect property (Subchapter D), for law enforcement (Subchapter E), or by virtue of a special relationship (Subchapter F). (c) The use of deadly force is not justified under this section unless the actor reasonably believes the deadly force is specifically required by statute or unless it occurs in the lawful conduct of war. If deadly force is so justified, there is no duty to retreat before using it. (d) The justification afforded by this section is available if the actor reasonably believes: (1) the court or governmental tribunal has jurisdiction or the process is lawful, even though the court or governmental tribunal lacks jurisdiction or the process is unlawful; or (2) his conduct is required or authorized to assist a public servant in the performance of his official duty, even though the servant exceeds his lawful authority.</p>
+        
+    </div>
+</div>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.22. NECESSITY.</h4>
+    <div style="line-height: 1.8;">
+        <p>Conduct is justified if: (1) the actor reasonably believes the conduct is immediately necessary to avoid imminent harm; (2) the desirability and urgency of avoiding the harm clearly outweigh, according to ordinary standards of reasonableness, the harm sought to be prevented by the law proscribing the conduct; and (3) a legislative purpose to exclude the justification claimed for the conduct does not otherwise plainly appear.</p>
+        
+    </div>
+</div>
 
-(2)
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.31. SELF-DEFENSE.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) Except as provided in Subsection (b), a person is justified in using force against another when and to the degree the actor reasonably believes the force is immediately necessary to protect the actor against the other's use or attempted use of unlawful force. The actor's belief that the force was immediately necessary as described by this subsection is presumed to be reasonable if the actor: (1) knew or had reason to believe that the person against whom the force was used: (A) unlawfully and with force entered, or was attempting to enter unlawfully and with force, the actor's occupied habitation, vehicle, or place of business or employment; (B) unlawfully and with force removed, or was attempting to remove unlawfully and with force, the actor from the actor's habitation, vehicle, or place of business or employment; or (C) was committing or attempting to commit aggravated kidnapping, murder, sexual assault, aggravated sexual assault, robbery, or aggravated robbery;</p>
+        <p>did not provoke the person against whom the force was</p>
+        <p>used; and (3) was not otherwise engaged in criminal activity, other than a Class C misdemeanor that is a violation of a law or ordinance regulating traffic at the time the force was used. (b) The use of force against another is not justified: (1) in response to verbal provocation alone; (2) to resist an arrest or search that the actor knows is being made by a peace officer, or by a person acting in a peace officer's presence and at his direction, even though the arrest or search is unlawful, unless the resistance is justified under Subsection (c); (3) if the actor consented to the exact force used or attempted by the other; (4) if the actor provoked the other's use or attempted use of unlawful force, unless: (A) the actor abandons the encounter, or clearly communicates to the other his intent to do so reasonably believing he cannot safely abandon the encounter; and (B) the other nevertheless continues or attempts to use unlawful force against the actor; or (5) if the actor sought an explanation from or discussion with the other person concerning the actor's differences with the other person while the actor was: (A) carrying a weapon in violation of Section 46.02; or (B) possessing or transporting a weapon in violation of Section 46.05. (c) The use of force to resist an arrest or search is justified: (1) if, before the actor offers any resistance, the peace officer (or person acting at his direction) uses or attempts to use greater force than necessary to make the arrest or search; and (2) when and to the degree the actor reasonably believes the force is immediately necessary to protect himself against the peace officer's (or other person's) use or attempted use of greater force than necessary. (d) The use of deadly force is not justified under this subchapter except as provided in Sections 9.32, 9.33, and 9.34. (e) A person who has a right to be present at the location where the force is used, who has not provoked the person against whom the force is used, and who is not engaged in criminal activity at the time the force is used is not required to retreat before using force as described by this section. (f) For purposes of Subsection (a), in determining whether an actor described by Subsection (e) reasonably believed that the use of force was necessary, a finder of fact may not consider whether the actor failed to retreat.</p>
+        
+    </div>
+</div>
 
-did not provoke the person against whom the force was
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.32. DEADLY FORCE IN DEFENSE OF PERSON.</h4>
+    <div style="line-height: 1.8;">
+        <p>justified in using deadly force against another:</p>
+        <p>A person is</p>
+        <p>(1) if the actor would be justified in using force against the other under Section 9.31; and (2) when and to the degree the actor reasonably believes the deadly force is immediately necessary: (A) to protect the actor against the other's use or attempted use of unlawful deadly force; or (B) to prevent the other's imminent commission of aggravated kidnapping, murder, sexual assault, aggravated sexual assault, robbery, or aggravated robbery. (b) The actor's belief under Subsection (a)(2) that the deadly force was immediately necessary as described by that subdivision is presumed to be reasonable if the actor: (1) knew or had reason to believe that the person against whom the deadly force was used: (A) unlawfully and with force entered, or was attempting to enter unlawfully and with force, the actor's occupied habitation, vehicle, or place of business or employment; (B) unlawfully and with force removed, or was attempting to remove unlawfully and with force, the actor from the actor's habitation, vehicle, or place of business or employment; or (C) was committing or attempting to commit an offense described by Subsection (a)(2)(B); (2) did not provoke the person against whom the force was used; and (3) was not otherwise engaged in criminal activity, other than a Class C misdemeanor that is a violation of a law or ordinance regulating traffic at the time the force was used. (c) A person who has a right to be present at the location where the deadly force is used, who has not provoked the person against whom the deadly force is used, and who is not engaged in criminal activity at the time the deadly force is used is not required to retreat before using deadly force as described by this section. (d) For purposes of Subsection (a)(2), in determining whether an actor described by Subsection (c) reasonably believed that the use of deadly force was necessary, a finder of fact may not consider whether the actor failed to retreat.</p>
+        
+    </div>
+</div>
 
-used; and
-(3) was not otherwise engaged in criminal activity, other
-than a Class C misdemeanor that is a violation of a law or ordinance
-regulating traffic at the time the force was used.
-(b) The use of force against another is not justified:
-(1) in response to verbal provocation alone;
-(2) to resist an arrest or search that the actor knows is
-being made by a peace officer, or by a person acting in a peace
-officer's presence and at his direction, even though the arrest or
-search is unlawful, unless the resistance is justified under
-Subsection (c);
-(3) if the actor consented to the exact force used or
-attempted by the other;
-(4) if the actor provoked the other's use or attempted use
-of unlawful force, unless:
-(A) the actor abandons the encounter, or clearly
-communicates to the other his intent to do so reasonably believing he
-cannot safely abandon the encounter; and
-(B) the other nevertheless continues or attempts to
-use unlawful force against the actor; or
-(5) if the actor sought an explanation from or discussion
-with the other person concerning the actor's differences with the
-other person while the actor was:
-(A) carrying a weapon in violation of Section 46.02;
-or
-(B) possessing or transporting a weapon in violation
-of Section 46.05.
-(c) The use of force to resist an arrest or search is justified:
-(1) if, before the actor offers any resistance, the peace
-officer (or person acting at his direction) uses or attempts to use
-greater force than necessary to make the arrest or search; and
-(2) when and to the degree the actor reasonably believes
-the force is immediately necessary to protect himself against the
-peace officer's (or other person's) use or attempted use of greater
-force than necessary.
-(d) The use of deadly force is not justified under this
-subchapter except as provided in Sections 9.32, 9.33, and 9.34.
-(e) A person who has a right to be present at the location where
-the force is used, who has not provoked the person against whom the
-force is used, and who is not engaged in criminal activity at the time
-the force is used is not required to retreat before using force as
-described by this section.
-(f) For purposes of Subsection (a), in determining whether an
-actor described by Subsection (e) reasonably believed that the use of
-force was necessary, a finder of fact may not consider whether the
-actor failed to retreat.
-Sec. 9.32. DEADLY FORCE IN DEFENSE OF PERSON.
-justified in using deadly force against another:
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.33. DEFENSE OF THIRD PERSON.</h4>
+    <div style="line-height: 1.8;">
+        <p>A person is justified in using force or deadly force against another to protect a third person if: (1) under the circumstances as the actor reasonably believes them to be, the actor would be justified under Section 9.31 or 9.32 in using force or deadly force to protect himself against the unlawful force or unlawful deadly force he reasonably believes to be threatening the third person he seeks to protect; and (2) the actor reasonably believes that his intervention is immediately necessary to protect the third person.</p>
+        
+    </div>
+</div>
 
-Page -3 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.34. PROTECTION OF LIFE OR HEALTH.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person is justified in using force, but not deadly force, against another when</p>
+        <p>and to the degree he reasonably believes the force is immediately necessary to prevent the other from committing suicide or inflicting serious bodily injury to himself. (b) A person is justified in using both force and deadly force against another when and to the degree he reasonably believes the force or deadly force is immediately necessary to preserve the other's life in an emergency.</p>
+        
+    </div>
+</div>
 
-(a)
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.41. PROTECTION OF ONE'S OWN PROPERTY.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person in lawful possession of land or tangible, movable property is justified in using force against another when and to the degree the actor reasonably believes the force is immediately necessary to prevent or terminate the other's trespass on the land or unlawful interference with the property. (b) A person unlawfully dispossessed of land or tangible, movable property by another is justified in using force against the other when and to the degree the actor reasonably believes the force is immediately necessary to reenter the land or recover the property if the actor uses the force immediately or in fresh pursuit after the dispossession and: (1) the actor reasonably believes the other had no claim of right when he dispossessed the actor; or (2) the other accomplished the dispossession by using force, threat, or fraud against the actor.</p>
+        
+    </div>
+</div>
 
-A person is
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.42. DEADLY FORCE TO PROTECT PROPERTY.</h4>
+    <div style="line-height: 1.8;">
+        <p>A person is justified in using deadly force against another to protect land or tangible, movable property: (1) if he would be justified in using force against the other under Section 9.41; and (2) when and to the degree he reasonably believes the deadly force is immediately necessary: (A) to prevent the other's imminent commission of arson, burglary, robbery, aggravated robbery, theft during the nighttime, or criminal mischief during the nighttime; or (B) to prevent the other who is fleeing immediately after committing burglary, robbery, aggravated robbery, or theft during the nighttime from escaping with the property; and (3) he reasonably believes that: (A) the land or property cannot be protected or recovered by any other means; or (B) the use of force other than deadly force to protect or recover the land or property would expose the actor or another to a substantial risk of death or serious bodily injury.</p>
+        
+    </div>
+</div>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.43. PROTECTION OF THIRD PERSON'S PROPERTY.</h4>
+    <div style="line-height: 1.8;">
+        <p>A person is justified in using force or deadly force against another to protect</p>
+        <p>land or tangible, movable property of a third person if, under the circumstances as he reasonably believes them to be, the actor would be justified under Section 9.41 or 9.42 in using force or deadly force to protect his own land or property and: (1) the actor reasonably believes the unlawful interference constitutes attempted or consummated theft of or criminal mischief to the tangible, movable property; or (2) the actor reasonably believes that: (A) the third person has requested his protection of the land or property; (B) he has a legal duty to protect the third person's land or property; or (C) the third person whose land or property he uses force or deadly force to protect is the actor's spouse, parent, or child, resides with the actor, or is under the actor's care.</p>
+        
+    </div>
+</div>
 
-(1) if the actor would be justified in using force against
-the other under Section 9.31; and
-(2)
-when and to the degree the actor reasonably believes
-the deadly force is immediately necessary:
-(A) to protect the actor against the other's use or
-attempted use of unlawful deadly force; or
-(B) to prevent the other's imminent commission of
-aggravated kidnapping, murder, sexual assault, aggravated sexual
-assault, robbery, or aggravated robbery.
-(b) The actor's belief under Subsection (a)(2) that the deadly
-force was immediately necessary as described by that subdivision is
-presumed to be reasonable if the actor:
-(1) knew or had reason to believe that the person against
-whom the deadly force was used:
-(A) unlawfully and with force entered, or was
-attempting to enter unlawfully and with force, the actor's occupied
-habitation, vehicle, or place of business or employment;
-(B) unlawfully and with force removed, or was
-attempting to remove unlawfully and with force, the actor from the
-actor's habitation, vehicle, or place of business or employment; or
-(C) was committing or attempting to commit an offense
-described by Subsection (a)(2)(B);
-(2) did not provoke the person against whom the force was
-used; and
-(3) was not otherwise engaged in criminal activity, other
-than a Class C misdemeanor that is a violation of a law or ordinance
-regulating traffic at the time the force was used.
-(c) A person who has a right to be present at the location where
-the deadly force is used, who has not provoked the person against whom
-the deadly force is used, and who is not engaged in criminal activity
-at the time the deadly force is used is not required to retreat before
-using deadly force as described by this section.
-(d) For purposes of Subsection (a)(2), in determining whether an
-actor described by Subsection (c) reasonably believed that the use of
-deadly force was necessary, a finder of fact may not consider whether
-the actor failed to retreat.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.44. USE OF DEVICE TO PROTECT PROPERTY.</h4>
+    <div style="line-height: 1.8;">
+        <p>The justification afforded by Sections 9.41 and 9.43 applies to the use of a device to protect land or tangible, movable property if: (1) the device is not designed to cause, or known by the actor to create a substantial risk of causing, death or serious bodily injury; and (2) use of the device is reasonable under all the circumstances as the actor reasonably believes them to be when he installs the device.</p>
+        
+    </div>
+</div>
 
-Sec. 9.33. DEFENSE OF THIRD PERSON. A person is justified in
-using force or deadly force against another to protect a third person
-if:
-(1) under the circumstances as the actor reasonably
-believes them to be, the actor would be justified under Section 9.31 or
-9.32 in using force or deadly force to protect himself against the
-unlawful force or unlawful deadly force he reasonably believes to be
-threatening the third person he seeks to protect; and
-(2) the actor reasonably believes that his intervention is
-immediately necessary to protect the third person.
-Sec. 9.34. PROTECTION OF LIFE OR HEALTH. (a) A person is
-justified in using force, but not deadly force, against another when
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.51. ARREST AND SEARCH.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A peace officer, or a person acting in a peace officer's presence and at his direction, is justified in using force against another when and to the degree the actor reasonably believes the force is immediately necessary to make or assist in making an arrest or search, or to prevent or assist in preventing escape after arrest, if: (1) the actor reasonably believes the arrest or search is lawful or, if the arrest or search is made under a warrant, he reasonably believes the warrant is valid; and (2) before using force, the actor manifests his purpose to arrest or search and identifies himself as a peace officer or as one acting at a peace officer's direction, unless he reasonably believes his purpose and identity are already known by or cannot reasonably be made known to the person to be arrested. (b) A person other than a peace officer (or one acting at his direction) is justified in using force against another when and to the degree the actor reasonably believes the force is immediately necessary to make or assist in making a lawful arrest, or to prevent or assist in preventing escape after lawful arrest if, before using force, the actor manifests his purpose to and the reason for the arrest or reasonably believes his purpose and the reason are already</p>
+        <p>known by or cannot reasonably be made known to the person to be arrested. (c) A peace officer is justified in using deadly force against another when and to the degree the peace officer reasonably believes the deadly force is immediately necessary to make an arrest, or to prevent escape after arrest, if the use of force would have been justified under Subsection (a) and: (1) the actor reasonably believes the conduct for which arrest is authorized included the use or attempted use of deadly force; or (2) the actor reasonably believes there is a substantial risk that the person to be arrested will cause death or serious bodily injury to the actor or another if the arrest is delayed. (d) A person other than a peace officer acting in a peace officer's presence and at his direction is justified in using deadly force against another when and to the degree the person reasonably believes the deadly force is immediately necessary to make a lawful arrest, or to prevent escape after a lawful arrest, if the use of force would have been justified under Subsection (b) and: (1) the actor reasonably believes the felony or offense against the public peace for which arrest is authorized included the use or attempted use of deadly force; or (2) the actor reasonably believes there is a substantial risk that the person to be arrested will cause death or serious bodily injury to another if the arrest is delayed. (e) There is no duty to retreat before using deadly force justified by Subsection (c) or (d). (f) Nothing in this section relating to the actor's manifestation of purpose or identity shall be construed as conflicting with any other law relating to the issuance, service, and execution of an arrest or search warrant either under the laws of this state or the United States. (g) Deadly force may only be used under the circumstances enumerated in Subsections (c) and (d).</p>
+        
+    </div>
+</div>
 
-Page -4 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.52. PREVENTION OF ESCAPE FROM CUSTODY.</h4>
+    <div style="line-height: 1.8;">
+        <p>The use of force to prevent the escape of an arrested person from custody is justifiable when the force could have been employed to effect the arrest under which the person is in custody, except that a guard employed by a correctional facility or a peace officer is justified in using any force, including deadly force, that he reasonably believes to be immediately necessary to prevent the escape of a person from the correctional facility.</p>
+        
+    </div>
+</div>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.53. MAINTAINING SECURITY IN CORRECTIONAL FACILITY.</h4>
+    <div style="line-height: 1.8;">
+        <p>An officer or employee of a correctional facility is justified in using force against a person in custody when and to the degree the officer or employee reasonably believes the force is necessary to maintain the</p>
+        <p>security of the correctional facility, the safety or security of other persons in custody or employed by the correctional facility, or his own safety or security.</p>
+        
+    </div>
+</div>
 
-and to the degree he reasonably believes the force is immediately
-necessary to prevent the other from committing suicide or inflicting
-serious bodily injury to himself.
-(b) A person is justified in using both force and deadly force
-against another when and to the degree he reasonably believes the
-force or deadly force is immediately necessary to preserve the other's
-life in an emergency.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.54. LIMITATION ON USE OF FORCE BY DRONE.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) In this section: (1) "Autonomous drone" means a drone that operates autonomously through computer software or other programming. (2) "Drone" and "law enforcement agency" have the meanings assigned by Article 2B.0253, Code of Criminal Procedure. (b) Notwithstanding any other law, the use of force, including deadly force, involving a drone is justified under this subchapter only if: (1) at the time the use of force occurred, the actor was employed by a law enforcement agency; (2) the use of force: (A) would have been justified under another provision of this subchapter; and (B) did not involve the use of deadly force by means of an autonomous drone; and (3) before the use of force occurred, the law enforcement agency employing the actor adopted and submitted to the Texas Commission on Law Enforcement a policy on the agency's use of force by means of a drone, as required by Article 2B.0253, Code of Criminal Procedure, and the use of force conformed to the requirements of that policy.</p>
+        
+    </div>
+</div>
 
-Sec. 9.41. PROTECTION OF ONE'S OWN PROPERTY. (a) A person in
-lawful possession of land or tangible, movable property is justified
-in using force against another when and to the degree the actor
-reasonably believes the force is immediately necessary to prevent or
-terminate the other's trespass on the land or unlawful interference
-with the property.
-(b) A person unlawfully dispossessed of land or tangible,
-movable property by another is justified in using force against the
-other when and to the degree the actor reasonably believes the force
-is immediately necessary to reenter the land or recover the property
-if the actor uses the force immediately or in fresh pursuit after the
-dispossession and:
-(1) the actor reasonably believes the other had no claim of
-right when he dispossessed the actor; or
-(2) the other accomplished the dispossession by using
-force, threat, or fraud against the actor.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.55. USE OF LESS-LETHAL FORCE WEAPON.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) In this section, "less-lethal force weapon" means: (1) any weapon, device, or munition that is designed, made, or adapted to expel a projectile or multiple projectiles against a target to temporarily incapacitate the target while minimizing the risk of serious bodily injury or death; (2) a chemical dispensing device; (3) a device used to strike a person; or (4) a stun gun, as defined by Section 38.14. (b) This section applies only to a guard employed by a correctional facility or a peace officer who is engaged in the discharge of the guard's or officer's official duties. (c) A person to whom this section applies is justified in using force with a less-lethal force weapon against another when and to the degree the person reasonably believes the force was necessary to accomplish the person's official duties as a guard or officer and if the person's use of the weapon is in substantial compliance with the person's training.</p>
+        
+    </div>
+</div>
 
-Sec. 9.42. DEADLY FORCE TO PROTECT PROPERTY. A person is
-justified in using deadly force against another to protect land or
-tangible, movable property:
-(1) if he would be justified in using force against the
-other under Section 9.41; and
-(2) when and to the degree he reasonably believes the
-deadly force is immediately necessary:
-(A) to prevent the other's imminent commission of
-arson, burglary, robbery, aggravated robbery, theft during the
-nighttime, or criminal mischief during the nighttime; or
-(B) to prevent the other who is fleeing immediately
-after committing burglary, robbery, aggravated robbery, or theft
-during the nighttime from escaping with the property; and
-(3) he reasonably believes that:
-(A) the land or property cannot be protected or
-recovered by any other means; or
-(B) the use of force other than deadly force to
-protect or recover the land or property would expose the actor or
-another to a substantial risk of death or serious bodily injury.
-Sec. 9.43. PROTECTION OF THIRD PERSON'S PROPERTY. A person is
-justified in using force or deadly force against another to protect
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.61. PARENT-CHILD.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) The use of force, but not deadly force, against a child younger than 18 years is justified: (1) if the actor is the child's parent or stepparent or is acting in loco parentis to the child; and (2) when and to the degree the actor reasonably believes the force is necessary to discipline the child or to safeguard or promote his welfare. (b) For purposes of this section, "in loco parentis" includes grandparent and guardian, any person acting by, through, or under the direction of a court with jurisdiction over the child, and anyone who has express or implied consent of the parent or parents.</p>
+        
+    </div>
+</div>
 
-Page -5 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.62. EDUCATOR-STUDENT.</h4>
+    <div style="line-height: 1.8;">
+        <p>The use of force, but not deadly force, against a person is justified: (1) if the actor is entrusted with the care, supervision, or administration of the person for a special purpose; and (2) when and to the degree the actor reasonably believes the force is necessary to further the special purpose or to maintain discipline in a group.</p>
+        
+    </div>
+</div>
 
-
-land or tangible, movable property of a third person if, under the
-circumstances as he reasonably believes them to be, the actor would be
-justified under Section 9.41 or 9.42 in using force or deadly force to
-protect his own land or property and:
-(1) the actor reasonably believes the unlawful interference
-constitutes attempted or consummated theft of or criminal mischief to
-the tangible, movable property; or
-(2) the actor reasonably believes that:
-(A) the third person has requested his protection of
-the land or property;
-(B) he has a legal duty to protect the third person's
-land or property; or
-(C) the third person whose land or property he uses
-force or deadly force to protect is the actor's spouse, parent, or
-child, resides with the actor, or is under the actor's care.
-
-Sec. 9.44. USE OF DEVICE TO PROTECT PROPERTY. The justification
-afforded by Sections 9.41 and 9.43 applies to the use of a device to
-protect land or tangible, movable property if:
-(1) the device is not designed to cause, or known by the
-actor to create a substantial risk of causing, death or serious bodily
-injury; and
-(2) use of the device is reasonable under all the
-circumstances as the actor reasonably believes them to be when he
-installs the device.
-
-Sec. 9.51. ARREST AND SEARCH. (a) A peace officer, or a person
-acting in a peace officer's presence and at his direction, is
-justified in using force against another when and to the degree the
-actor reasonably believes the force is immediately necessary to make
-or assist in making an arrest or search, or to prevent or assist in
-preventing escape after arrest, if:
-(1) the actor reasonably believes the arrest or search is
-lawful or, if the arrest or search is made under a warrant, he
-reasonably believes the warrant is valid; and
-(2) before using force, the actor manifests his purpose to
-arrest or search and identifies himself as a peace officer or as one
-acting at a peace officer's direction, unless he reasonably believes
-his purpose and identity are already known by or cannot reasonably be
-made known to the person to be arrested.
-(b) A person other than a peace officer (or one acting at his
-direction) is justified in using force against another when and to the
-degree the actor reasonably believes the force is immediately
-necessary to make or assist in making a lawful arrest, or to prevent
-or assist in preventing escape after lawful arrest if, before using
-force, the actor manifests his purpose to and the reason for the
-arrest or reasonably believes his purpose and the reason are already
-
-Page -6 -
-
-
-known by or cannot reasonably be made known to the person to be
-arrested.
-(c) A peace officer is justified in using deadly force against
-another when and to the degree the peace officer reasonably believes
-the deadly force is immediately necessary to make an arrest, or to
-prevent escape after arrest, if the use of force would have been
-justified under Subsection (a) and:
-(1) the actor reasonably believes the conduct for which
-arrest is authorized included the use or attempted use of deadly
-force; or
-(2) the actor reasonably believes there is a substantial
-risk that the person to be arrested will cause death or serious bodily
-injury to the actor or another if the arrest is delayed.
-(d) A person other than a peace officer acting in a peace
-officer's presence and at his direction is justified in using deadly
-force against another when and to the degree the person reasonably
-believes the deadly force is immediately necessary to make a lawful
-arrest, or to prevent escape after a lawful arrest, if the use of
-force would have been justified under Subsection (b) and:
-(1) the actor reasonably believes the felony or offense
-against the public peace for which arrest is authorized included the
-use or attempted use of deadly force; or
-(2) the actor reasonably believes there is a substantial
-risk that the person to be arrested will cause death or serious bodily
-injury to another if the arrest is delayed.
-(e) There is no duty to retreat before using deadly force
-justified by Subsection (c) or (d).
-(f) Nothing in this section relating to the actor's
-manifestation of purpose or identity shall be construed as conflicting
-with any other law relating to the issuance, service, and execution of
-an arrest or search warrant either under the laws of this state or the
-United States.
-(g) Deadly force may only be used under the circumstances
-enumerated in Subsections (c) and (d).
-
-Sec. 9.52. PREVENTION OF ESCAPE FROM CUSTODY. The use of force
-to prevent the escape of an arrested person from custody is
-justifiable when the force could have been employed to effect the
-arrest under which the person is in custody, except that a guard
-employed by a correctional facility or a peace officer is justified in
-using any force, including deadly force, that he reasonably believes
-to be immediately necessary to prevent the escape of a person from the
-correctional facility.
-
-Sec. 9.53. MAINTAINING SECURITY IN CORRECTIONAL FACILITY. An
-officer or employee of a correctional facility is justified in using
-force against a person in custody when and to the degree the officer
-or employee reasonably believes the force is necessary to maintain the
-
-Page -7 -
-
-
-security of the correctional facility, the safety or security of other
-persons in custody or employed by the correctional facility, or his
-own safety or security.
-
-Sec. 9.54. LIMITATION ON USE OF FORCE BY DRONE. (a) In this
-section:
-(1) "Autonomous drone" means a drone that operates
-autonomously through computer software or other programming.
-(2) "Drone" and "law enforcement agency" have the meanings
-assigned by Article 2B.0253, Code of Criminal Procedure.
-(b) Notwithstanding any other law, the use of force, including
-deadly force, involving a drone is justified under this subchapter
-only if:
-(1) at the time the use of force occurred, the actor was
-employed by a law enforcement agency;
-(2) the use of force:
-(A) would have been justified under another provision
-of this subchapter; and
-(B) did not involve the use of deadly force by means
-of an autonomous drone; and
-(3) before the use of force occurred, the law enforcement
-agency employing the actor adopted and submitted to the Texas
-Commission on Law Enforcement a policy on the agency's use of force by
-means of a drone, as required by Article 2B.0253, Code of Criminal
-Procedure, and the use of force conformed to the requirements of that
-policy.
-
-Sec. 9.55. USE OF LESS-LETHAL FORCE WEAPON. (a) In this
-section, "less-lethal force weapon" means:
-(1) any weapon, device, or munition that is designed, made,
-or adapted to expel a projectile or multiple projectiles against a
-target to temporarily incapacitate the target while minimizing the
-risk of serious bodily injury or death;
-(2) a chemical dispensing device;
-(3) a device used to strike a person; or
-(4) a stun gun, as defined by Section 38.14.
-(b) This section applies only to a guard employed by a
-correctional facility or a peace officer who is engaged in the
-discharge of the guard's or officer's official duties.
-(c) A person to whom this section applies is justified in using
-force with a less-lethal force weapon against another when and to the
-degree the person reasonably believes the force was necessary to
-accomplish the person's official duties as a guard or officer and if
-the person's use of the weapon is in substantial compliance with the
-person's training.
-
-Page -8 -
-
-
-Sec. 9.61. PARENT-CHILD. (a) The use of force, but not deadly
-force, against a child younger than 18 years is justified:
-(1) if the actor is the child's parent or stepparent or is
-acting in loco parentis to the child; and
-(2) when and to the degree the actor reasonably believes
-the force is necessary to discipline the child or to safeguard or
-promote his welfare.
-(b) For purposes of this section, "in loco parentis" includes
-grandparent and guardian, any person acting by, through, or under the
-direction of a court with jurisdiction over the child, and anyone who
-has express or implied consent of the parent or parents.
-
-Sec. 9.62. EDUCATOR-STUDENT. The use of force, but not deadly
-force, against a person is justified:
-(1) if the actor is entrusted with the care, supervision,
-or administration of the person for a special purpose; and
-(2) when and to the degree the actor reasonably believes
-the force is necessary to further the special purpose or to maintain
-discipline in a group.
-
-Sec. 9.63. GUARDIAN-INCOMPETENT. The use of force, but not
-deadly force, against a mental incompetent is justified:
-(1) if the actor is the incompetent's guardian or someone
-similarly responsible for the general care and supervision of the
-incompetent; and
-(2) when and to the degree the actor reasonably believes
-the force is necessary:
-(A) to safeguard and promote the incompetent's
-welfare; or
-(B) if the incompetent is in an institution for his
-care and custody, to maintain discipline in the institution.
-
-Page -9 -
-
-
-PENAL CODE
-TITLE 5. OFFENSES AGAINST THE PERSON`
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 9.63. GUARDIAN-INCOMPETENT.</h4>
+    <div style="line-height: 1.8;">
+        <p>The use of force, but not deadly force, against a mental incompetent is justified: (1) if the actor is the incompetent's guardian or someone similarly responsible for the general care and supervision of the incompetent; and (2) when and to the degree the actor reasonably believes the force is necessary: (A) to safeguard and promote the incompetent's welfare; or (B) if the incompetent is in an institution for his care and custody, to maintain discipline in the institution.</p>
+        <p>PENAL CODE TITLE 5. OFFENSES AGAINST THE PERSON</p>
+        
+    </div>
+</div>
+`
     },
 
-    {
+{
     id: 'penal_code_21',
     title: `Penal Code 21: SEXUAL OFFENSES`,
     category: 'Penal Code',
@@ -1120,7 +894,7 @@ PENAL CODE
 TITLE 5. OFFENSES AGAINST THE PERSON`
   },
 
-    {
+{
     id: 'penal_code_22',
     title: `Penal Code 22: ASSAULTIVE OFFENSES`,
     category: 'Penal Code',
@@ -2047,7 +1821,7 @@ PENAL CODE
 TITLE 6. OFFENSES AGAINST THE FAMILY`
   },
 
-    {
+{
     id: 'pc_20a_001',
     question: 'According to Chapter 20A, trafficking of persons is what degree of felony?',
     choices: [
@@ -2063,7 +1837,7 @@ TITLE 6. OFFENSES AGAINST THE FAMILY`
     source: 'Chapter 20A - Trafficking of Persons'
   },
 
-    {
+{
     id: 'pc_22_001',
     question: 'Under Chapter 22, what distinguishes assault from aggravated assault?',
     choices: [
@@ -2079,7 +1853,7 @@ TITLE 6. OFFENSES AGAINST THE FAMILY`
     source: 'Chapter 22 - Assaultive Offenses'
   },
 
-    {
+{
     id: 'penal_code_22',
     title: `Penal Code 22: ASSAULTIVE OFFENSES`,
     category: 'Penal Code',
@@ -3006,7 +2780,7 @@ PENAL CODE
 TITLE 6. OFFENSES AGAINST THE FAMILY`
   },
 
-    {
+{
     id: 'pc_28_001',
     question: 'According to Chapter 28, what is the minimum damage amount that elevates criminal mischief to a state jail felony?',
     choices: [
@@ -3022,7 +2796,7 @@ TITLE 6. OFFENSES AGAINST THE FAMILY`
     source: 'Chapter 28 - Criminal Mischief'
   },
 
-    {
+{
     id: 'penal_code_22',
     title: `Penal Code 22: ASSAULTIVE OFFENSES`,
     category: 'Penal Code',
@@ -3952,2043 +3726,540 @@ TITLE 6. OFFENSES AGAINST THE FAMILY`
     {
         category: 'Penal Code',
         title: "Chapter 31 - Theft (Selected Sections)",
-        content: `Sec. 31.01. DEFINITIONS. In this chapter:
-(1) "Deception" means:
-(A) creating or confirming by words or conduct a false
-impression of law or fact that is likely to affect the judgment of
-another in the transaction, and that the actor does not believe to be
-true;
-(B) failing to correct a false impression of law or fact
-that is likely to affect the judgment of another in the transaction, that
-the actor previously created or confirmed by words or conduct, and that
-the actor does not now believe to be true;
-(C) preventing another from acquiring information likely
-to affect his judgment in the transaction;
-(D) selling or otherwise transferring or encumbering
-property without disclosing a lien, security interest, adverse claim, or
-other legal impediment to the enjoyment of the property, whether the
-lien, security interest, claim, or impediment is or is not valid, or is
-or is not a matter of official record; or
-(E) promising performance that is likely to affect the
-judgment of another in the transaction and that the actor does not intend
-to perform or knows will not be performed, except that failure to perform
-the promise in issue without other evidence of intent or knowledge is not
-sufficient proof that the actor did not intend to perform or knew the
-promise would not be performed.
-(2) "Deprive" means:
-(A) to withhold property from the owner permanently or
-for so extended a period of time that a major portion of the value or
-enjoyment of the property is lost to the owner;
-(B) to restore property only upon payment of reward or
-other compensation; or
-(C) to dispose of property in a manner that makes
-recovery of the property by the owner unlikely.
-(3) "Effective consent" includes consent by a person legally
-authorized to act for the owner. Consent is not effective if:
-(A) induced by deception or coercion;
-(B) given by a person the actor knows is not legally
-authorized to act for the owner;
-(C) given by a person who by reason of youth, mental
-disease or defect, or intoxication is known by the actor to be unable to
-make reasonable property dispositions;
-(D) given solely to detect the commission of an offense;
-or
-(E) given by a person who by reason of advanced age is
-known by the actor to have a diminished capacity to make informed and
-rational decisions about the reasonable disposition of property.
-(4) "Appropriate" means:
-(A) to bring about a transfer or purported transfer of
-title to or other nonpossessory interest in property, whether to the
-actor or another; or
-Page - 1 -
+        content: `<h2>Chapter 31 - Chapter 31 - Theft (Selected Sections)</h2>
 
+<div style="background: rgba(79, 195, 247, 0.15); padding: 20px; margin: 20px 0; border-left: 4px solid #4fc3f7;">
+    <h3 style="margin-top: 0;">📋 Chapter Summary</h3>
+    <p style="font-size: 16px;"><strong>Theft offenses - Selected sections covering specific theft crimes and value ranges.</strong></p>
+    
+    <h4>Key Points to Study:</h4>
+    <ul>
+        <li>Theft defined: Appropriation without consent</li>
+        <li>Value ranges determine punishment level</li>
+        <li>Aggregation of amounts for charging</li>
+        <li>Specific theft offenses included on exam</li>
+    </ul>
+</div>
 
-(B) to acquire or otherwise exercise control over
-property other than real property.
-(5) "Property" means:
-(A) real property;
-(B) tangible or intangible personal property including
-anything severed from land; or
-(C) a document, including money, that represents or
-embodies anything of value.
-(6) "Service" includes:
-(A) labor and professional service;
-(B) telecommunication, public utility, or transportation
-service;
-(C) lodging, restaurant service, and entertainment; and
-(D) the supply of a motor vehicle or other property for
-use.
-(7) "Steal" means to acquire property or service by theft.
-(8) "Certificate of title" has the meaning assigned by Section
-501.002, Transportation Code.
-(9) "Used or secondhand motor vehicle" means a used motor
-vehicle, as that term is defined by Section 501.002, Transportation Code.
-(10) "Elderly individual" has the meaning assigned by Section
-22.04(c).
-(11) "Retail merchandise" means one or more items of tangible
-personal property displayed, held, stored, or offered for sale in a
-retail establishment.
-(12) "Retail theft detector" means an electrical, mechanical,
-electronic, or magnetic device used to prevent or detect shoplifting and
-includes any article or component part essential to the proper operation
-of the device.
-(13) "Shielding or deactivation instrument" means any item or
-tool designed, made, or adapted for the purpose of preventing the
-detection of stolen merchandise by a retail theft detector. The term
-includes a metal-lined or foil-lined shopping bag and any item used to
-remove a security tag affixed to retail merchandise.
-(14) "Fire exit alarm" has the meaning assigned by Section
-793.001, Health and Safety Code.
+<hr style="border: 1px solid #4fc3f7; margin: 30px 0;">
 
-Sec. 31.02. CONSOLIDATION OF THEFT OFFENSES. Theft as defined in
-Section 31.03 constitutes a single offense superseding the separate
-offenses previously known as theft, theft by false pretext, conversion by
-a bailee, theft from the person, shoplifting, acquisition of property by
-threat, swindling, swindling by worthless check, embezzlement, extortion,
-receiving or concealing embezzled property, and receiving or concealing
-stolen property.
+<h3>Sections</h3>
 
-Sec. 31.03. THEFT.
-(a)
-A person commits an offense if he
-unlawfully appropriates property with intent to deprive the owner of
-property.
-(b) Appropriation of property is unlawful if:
-(1) it is without the owner's effective consent;
-(2) the property is stolen and the actor appropriates the
-Page -2 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 31.01. DEFINITIONS.</h4>
+    <div style="line-height: 1.8;">
+        <p>In this chapter: (1) "Deception" means: (A) creating or confirming by words or conduct a false impression of law or fact that is likely to affect the judgment of another in the transaction, and that the actor does not believe to be true; (B) failing to correct a false impression of law or fact that is likely to affect the judgment of another in the transaction, that the actor previously created or confirmed by words or conduct, and that the actor does not now believe to be true; (C) preventing another from acquiring information likely to affect his judgment in the transaction; (D) selling or otherwise transferring or encumbering property without disclosing a lien, security interest, adverse claim, or other legal impediment to the enjoyment of the property, whether the lien, security interest, claim, or impediment is or is not valid, or is or is not a matter of official record; or (E) promising performance that is likely to affect the judgment of another in the transaction and that the actor does not intend to perform or knows will not be performed, except that failure to perform the promise in issue without other evidence of intent or knowledge is not sufficient proof that the actor did not intend to perform or knew the promise would not be performed. (2) "Deprive" means: (A) to withhold property from the owner permanently or for so extended a period of time that a major portion of the value or enjoyment of the property is lost to the owner; (B) to restore property only upon payment of reward or other compensation; or (C) to dispose of property in a manner that makes recovery of the property by the owner unlikely. (3) "Effective consent" includes consent by a person legally authorized to act for the owner. Consent is not effective if: (A) induced by deception or coercion; (B) given by a person the actor knows is not legally authorized to act for the owner; (C) given by a person who by reason of youth, mental disease or defect, or intoxication is known by the actor to be unable to make reasonable property dispositions; (D) given solely to detect the commission of an offense; or (E) given by a person who by reason of advanced age is known by the actor to have a diminished capacity to make informed and rational decisions about the reasonable disposition of property. (4) "Appropriate" means: (A) to bring about a transfer or purported transfer of title to or other nonpossessory interest in property, whether to the actor or another; or Page - 1 -</p>
+        <p>(B) to acquire or otherwise exercise control over property other than real property. (5) "Property" means: (A) real property; (B) tangible or intangible personal property including anything severed from land; or (C) a document, including money, that represents or embodies anything of value. (6) "Service" includes: (A) labor and professional service; (B) telecommunication, public utility, or transportation service; (C) lodging, restaurant service, and entertainment; and (D) the supply of a motor vehicle or other property for use. (7) "Steal" means to acquire property or service by theft. (8) "Certificate of title" has the meaning assigned by Section 501.002, Transportation Code. (9) "Used or secondhand motor vehicle" means a used motor vehicle, as that term is defined by Section 501.002, Transportation Code. (10) "Elderly individual" has the meaning assigned by Section 22.04(c). (11) "Retail merchandise" means one or more items of tangible personal property displayed, held, stored, or offered for sale in a retail establishment. (12) "Retail theft detector" means an electrical, mechanical, electronic, or magnetic device used to prevent or detect shoplifting and includes any article or component part essential to the proper operation of the device. (13) "Shielding or deactivation instrument" means any item or tool designed, made, or adapted for the purpose of preventing the detection of stolen merchandise by a retail theft detector. The term includes a metal-lined or foil-lined shopping bag and any item used to remove a security tag affixed to retail merchandise. (14) "Fire exit alarm" has the meaning assigned by Section 793.001, Health and Safety Code.</p>
+        
+    </div>
+</div>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 31.02. CONSOLIDATION OF THEFT OFFENSES.</h4>
+    <div style="line-height: 1.8;">
+        <p>Theft as defined in Section 31.03 constitutes a single offense superseding the separate offenses previously known as theft, theft by false pretext, conversion by a bailee, theft from the person, shoplifting, acquisition of property by threat, swindling, swindling by worthless check, embezzlement, extortion, receiving or concealing embezzled property, and receiving or concealing stolen property.</p>
+        
+    </div>
+</div>
 
-property knowing it was stolen by another; or
-(3) property in the custody of any law enforcement agency was
-explicitly represented by any law enforcement agent to the actor as being
-stolen and the actor appropriates the property believing it was stolen by
-another.
-(c) For purposes of Subsection (b):
-(1) evidence that the actor has previously participated in
-recent transactions other than, but similar to, the transaction for which
-the prosecution is based is admissible for the purpose of showing
-knowledge or intent and the issues of knowledge or intent are raised by
-the actor's plea of not guilty;
-(2) the testimony of an accomplice shall be corroborated by
-proof that tends to connect the actor to the crime, but the actor's
-knowledge or intent may be established by the uncorroborated testimony of
-the accomplice;
-(3) an actor engaged in the business of buying and selling
-used or secondhand personal property, or lending money on the security of
-personal property deposited with the actor, is presumed to know upon
-receipt by the actor of stolen property (other than a motor vehicle
-subject to Chapter 501, Transportation Code) that the property has been
-previously stolen from another if the actor pays for or loans against the
-property $25 or more (or consideration of equivalent value) and the actor
-knowingly or recklessly:
-(A) fails to record the name, address, and physical
-description or identification number of the seller or pledgor;
-(B) fails to record a complete description of the
-property, including the serial number, if reasonably available, or other
-identifying characteristics; or
-(C) fails to obtain a signed warranty from the seller or
-pledgor that the seller or pledgor has the right to possess the
-property. It is the express intent of this provision that the
-presumption arises unless the actor complies with each of the numbered
-requirements;
-(4) for the purposes of Subdivision (3)(A), "identification
-number" means driver's license number, military identification number,
-identification certificate, or other official number capable of
-identifying an individual;
-(5) stolen property does not lose its character as stolen when
-recovered by any law enforcement agency;
-(6) an actor engaged in the business of obtaining abandoned or
-wrecked motor vehicles or parts of an abandoned or wrecked motor vehicle
-for resale, disposal, scrap, repair, rebuilding, demolition, or other
-form of salvage is presumed to know on receipt by the actor of stolen
-property that the property has been previously stolen from another if the
-actor knowingly or recklessly:
-(A) fails to maintain an accurate and legible inventory
-of each motor vehicle component part purchased by or delivered to the
-actor, including the date of purchase or delivery, the name, age,
-address, sex, and driver's license number of the seller or person making
-the delivery, the license plate number of the motor vehicle in which the
-part was delivered, a complete description of the part, and the vehicle
-Page -3 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 31.03. THEFT.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if he unlawfully appropriates property with intent to deprive the owner of property. (b) Appropriation of property is unlawful if: (1) it is without the owner's effective consent; (2) the property is stolen and the actor appropriates the Page -2 -</p>
+        <p>property knowing it was stolen by another; or (3) property in the custody of any law enforcement agency was explicitly represented by any law enforcement agent to the actor as being stolen and the actor appropriates the property believing it was stolen by another. (c) For purposes of Subsection (b): (1) evidence that the actor has previously participated in recent transactions other than, but similar to, the transaction for which the prosecution is based is admissible for the purpose of showing knowledge or intent and the issues of knowledge or intent are raised by the actor's plea of not guilty; (2) the testimony of an accomplice shall be corroborated by proof that tends to connect the actor to the crime, but the actor's knowledge or intent may be established by the uncorroborated testimony of the accomplice; (3) an actor engaged in the business of buying and selling used or secondhand personal property, or lending money on the security of personal property deposited with the actor, is presumed to know upon receipt by the actor of stolen property (other than a motor vehicle subject to Chapter 501, Transportation Code) that the property has been previously stolen from another if the actor pays for or loans against the property $25 or more (or consideration of equivalent value) and the actor knowingly or recklessly: (A) fails to record the name, address, and physical description or identification number of the seller or pledgor; (B) fails to record a complete description of the property, including the serial number, if reasonably available, or other identifying characteristics; or (C) fails to obtain a signed warranty from the seller or pledgor that the seller or pledgor has the right to possess the property. It is the express intent of this provision that the presumption arises unless the actor complies with each of the numbered requirements; (4) for the purposes of Subdivision (3)(A), "identification number" means driver's license number, military identification number, identification certificate, or other official number capable of identifying an individual; (5) stolen property does not lose its character as stolen when recovered by any law enforcement agency; (6) an actor engaged in the business of obtaining abandoned or wrecked motor vehicles or parts of an abandoned or wrecked motor vehicle for resale, disposal, scrap, repair, rebuilding, demolition, or other form of salvage is presumed to know on receipt by the actor of stolen property that the property has been previously stolen from another if the actor knowingly or recklessly: (A) fails to maintain an accurate and legible inventory of each motor vehicle component part purchased by or delivered to the actor, including the date of purchase or delivery, the name, age, address, sex, and driver's license number of the seller or person making the delivery, the license plate number of the motor vehicle in which the part was delivered, a complete description of the part, and the vehicle Page -3 -</p>
+        <p>identification number of the motor vehicle from which the part was removed, or in lieu of maintaining an inventory, fails to record the name and certificate of inventory number of the person who dismantled the motor vehicle from which the part was obtained; (B) fails on receipt of a motor vehicle to obtain a certificate of authority, sales receipt, or transfer document as required by Chapter 683, Transportation Code, or a certificate of title showing that the motor vehicle is not subject to a lien or that all recorded liens on the motor vehicle have been released; or (C) fails on receipt of a motor vehicle to immediately remove an unexpired license plate from the motor vehicle, to keep the plate in a secure and locked place, or to maintain an inventory, on forms provided by the Texas Department of Motor Vehicles, of license plates kept under this paragraph, including for each plate or set of plates the license plate number and the make, motor number, and vehicle identification number of the motor vehicle from which the plate was removed; (7) an actor who purchases or receives a used or secondhand motor vehicle is presumed to know on receipt by the actor of the motor vehicle that the motor vehicle has been previously stolen from another if the actor knowingly or recklessly: (A) fails to report to the Texas Department of Motor Vehicles the failure of the person who sold or delivered the motor vehicle to the actor to deliver to the actor a properly executed certificate of title to the motor vehicle at the time the motor vehicle was delivered; or (B) fails to file with the county tax assessor-collector of the county in which the actor received the motor vehicle, not later than the 20th day after the date the actor received the motor vehicle, the registration license receipt and certificate of title or evidence of title delivered to the actor in accordance with Subchapter D, Chapter 520, Transportation Code, at the time the motor vehicle was delivered; (8) an actor who purchases or receives from any source other than a licensed retailer or distributor of pesticides a restricted-use pesticide or a state-limited-use pesticide or a compound, mixture, or preparation containing a restricted-use or state-limited-use pesticide is presumed to know on receipt by the actor of the pesticide or compound, mixture, or preparation that the pesticide or compound, mixture, or preparation has been previously stolen from another if the actor: (A) fails to record the name, address, and physical description of the seller or pledgor; (B) fails to record a complete description of the amount and type of pesticide or compound, mixture, or preparation purchased or received; and (C) fails to obtain a signed warranty from the seller or pledgor that the seller or pledgor has the right to possess the property; (9) an actor who is subject to Section 409, Packers and Stockyards Act (7 U.S.C. Section 228b), that obtains livestock from a commission merchant by representing that the actor will make prompt payment is presumed to have induced the commission merchant's consent by deception if the actor fails to make full payment in accordance with Page -4 -</p>
+        <p>Section 409, Packers and Stockyards Act (7 U.S.C. Section 228b); and (10) an actor in possession of property consisting of one or more catalytic converters that have been removed from a motor vehicle is presumed to have unlawfully appropriated the property unless the actor: (A) is the owner, as defined by Section 601.002, Transportation Code, of each vehicle from which the catalytic converters were removed; or (B) possesses the catalytic converters in the ordinary course of the actor's business, including in the ordinary course of business of an entity described by Section 1956.123(1), Occupations Code. (d) It is not a defense to prosecution under this section that: (1) the offense occurred as a result of a deception or strategy on the part of a law enforcement agency, including the use of an undercover operative or peace officer; (2) the actor was provided by a law enforcement agency with a facility in which to commit the offense or an opportunity to engage in conduct constituting the offense; or (3) the actor was solicited to commit the offense by a peace officer, and the solicitation was of a type that would encourage a person predisposed to commit the offense to actually commit the offense, but would not encourage a person not predisposed to commit the offense to actually commit the offense. (e) Except as provided by Subsections (f) and (f-1), an offense under this section is: (1) a Class C misdemeanor if the value of the property stolen is less than $100; (2) a Class B misdemeanor if: (A) the value of the property stolen is $100 or more but less than $750; (B) the value of the property stolen is less than $100 and the defendant has previously been convicted of any grade of theft; or (C) the property stolen is a driver's license, commercial driver's license, or personal identification certificate issued by this state or another state; (3) a Class A misdemeanor if the value of the property stolen is $750 or more but less than $2,500; (4) a state jail felony if: (A) the value of the property stolen is $2,500 or more but less than $30,000, or the property is less than 10 head of sheep, swine, or goats or any part thereof under the value of $30,000; (B) regardless of value, the property is stolen from the person of another or from a human corpse or grave, including property that is a military grave marker; (C) the property stolen is a firearm; (D) the value of the property stolen is less than $2,500 and the defendant has been previously convicted two or more times of any grade of theft; (E) the property stolen is an official ballot or official carrier envelope for an election; (F) the value of the property stolen is less than $20,000 and the property stolen is: Page -5 -</p>
+        <p>(i) aluminum; (ii) bronze; (iii) copper; or (iv) brass; or (G) the cost of replacing the property stolen is less than $30,000 and the property stolen is a catalytic converter; (5) a felony of the third degree if the value of the property stolen is $30,000 or more but less than $150,000, or the property is: (A) cattle, horses, or exotic livestock or exotic fowl as defined by Section 142.001, Agriculture Code, stolen during a single transaction and having an aggregate value of less than $150,000; (B) 10 or more head of sheep, swine, or goats stolen during a single transaction and having an aggregate value of less than $150,000; or (C) a controlled substance, having a value of less than $150,000, if stolen from: (i) a commercial building in which a controlled substance is generally stored, including a pharmacy, clinic, hospital, nursing facility, or warehouse; or (ii) a vehicle owned or operated by a wholesale distributor of prescription drugs; (6) a felony of the second degree if: (A) the value of the property stolen is $150,000 or more but less than $300,000; or (B) the value of the property stolen is less than $300,000 and the property stolen is an automated teller machine or the contents or components of an automated teller machine; or (7) a felony of the first degree if the value of the property stolen is $300,000 or more. (f) An offense described for purposes of punishment by Subsections (e)(1)-(6) is increased to the next higher category of offense if it is shown on the trial of the offense that: (1) the actor was a public servant at the time of the offense and the property appropriated came into the actor's custody, possession, or control by virtue of his status as a public servant; (2) the actor was in a contractual relationship with government at the time of the offense and the property appropriated came into the actor's custody, possession, or control by virtue of the contractual relationship; (3) the owner of the property appropriated was at the time of the offense: (A) an elderly individual; or (B) a nonprofit organization; (4) the actor was a Medicare provider in a contractual relationship with the federal government at the time of the offense and the property appropriated came into the actor's custody, possession, or control by virtue of the contractual relationship; or (5) during the commission of the offense, the actor intentionally, knowingly, or recklessly: (A) caused a fire exit alarm to sound or otherwise become activated; Page -6 -</p>
+        <p>(B) deactivated or otherwise prevented a fire exit alarm or retail theft detector from sounding; or (C) used a shielding or deactivation instrument to prevent or attempt to prevent detection of the offense by a retail theft detector. (f-1) An offense described for purposes of punishment by Subsections (e)(4)-(6) is increased to the next higher category of offense if it is shown on the trial of the offense that: (1) the property stolen is a catalytic converter; and (2) the actor possessed a firearm during the commission of the offense. (g) For the purposes of Subsection (a), a person is the owner of exotic livestock or exotic fowl as defined by Section 142.001, Agriculture Code, only if the person qualifies to claim the animal under Section 142.0021, Agriculture Code, if the animal is an estray. (h) In this section: (1) "Restricted-use pesticide" means a pesticide classified as a restricted-use pesticide by the administrator of the Environmental Protection Agency under 7 U.S.C. Section 136a, as that law existed on January 1, 1995, and containing an active ingredient listed in the federal regulations adopted under that law (40 C.F.R. Section 152.175) and in effect on that date. (2) "State-limited-use pesticide" means a pesticide classified as a state-limited-use pesticide by the Department of Agriculture under Section 76.003, Agriculture Code, as that section existed on January 1, 1995, and containing an active ingredient listed in the rules adopted under that section (4 TAC Section 7.24) as that section existed on that date. (3) "Nonprofit organization" means an organization that is exempt from federal income taxation under Section 501(a), Internal Revenue Code of 1986, by being described as an exempt organization by Section 501(c)(3) of that code. (4) "Automated teller machine" means an unstaffed electronic information processing device that, at the request of a user, performs a financial transaction through the direct transmission of electronic impulses to a financial institution or through the recording of electronic impulses or other indicia of a transaction for delayed transmission to a financial institution. The term includes an automated banking machine. (5) "Controlled substance" has the meaning assigned by Section 481.002, Health and Safety Code. (6) "Wholesale distributor of prescription drugs" means a wholesale distributor, as defined by Section 431.401, Health and Safety Code. (7) "Catalytic converter" means a catalytic converter and any material removed from the catalytic converter. (8) "Firearm" has the meaning assigned by Section 46.01. (i) For purposes of Subsection (c)(9), "livestock" and "commission merchant" have the meanings assigned by Section 147.001, Agriculture Code. (j) With the consent of the appropriate local county or district Page -7 -</p>
+        <p>attorney, the attorney general has concurrent jurisdiction with that consenting local prosecutor to prosecute an offense under this section that involves the state Medicaid program.</p>
+        
+    </div>
+</div>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 31.04. THEFT OF SERVICE.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits theft of service if, with intent to avoid payment for service that the actor knows is provided only for compensation: (1) the actor intentionally or knowingly secures performance of the service by deception, threat, or false token; (2) having control over the disposition of services of another to which the actor is not entitled, the actor intentionally or knowingly diverts the other's services to the actor's own benefit or to the benefit of another not entitled to the services; (3) having control of personal property under a written rental agreement, the actor holds the property beyond the expiration of the rental period without the effective consent of the owner of the property, thereby depriving the owner of the property of its use in further rentals; or (4) the actor intentionally or knowingly secures the performance of the service by agreeing to provide compensation and, after the service is rendered, fails to make full payment after receiving notice demanding payment. (b) For purposes of this section, intent to avoid payment is presumed if any of the following occurs: (1) the actor absconded without paying for the service or expressly refused to pay for the service in circumstances where payment is ordinarily made immediately upon rendering of the service, as in hotels, campgrounds, recreational vehicle parks, restaurants, and comparable establishments; (2) the actor failed to make payment under a service agreement within 10 days after receiving notice demanding payment; (3) the actor returns property held under a rental agreement after the expiration of the rental agreement and fails to pay the applicable rental charge for the property within 10 days after the date on which the actor received notice demanding payment; (4) the actor failed to return the property held under a rental agreement: (A) within five days after receiving notice demanding return, if the property is valued at less than $2,500; (B) within three days after receiving notice demanding return, if the property is valued at $2,500 or more but less than $10,000; or (C) within two days after receiving notice demanding return, if the property is valued at $10,000 or more; or (5) the actor: (A) failed to return the property held under an agreement described by Subsections (d-2)(1)-(3) within five business days after receiving notice demanding return; and (B) has made fewer than three complete payments under the agreement. (c) For purposes of Subsections (a)(4), (b)(2), (b)(4), and (b)(5), Page -8 -</p>
+        <p>notice must be: (1) in writing; (2) sent by: (A) registered or certified mail with return receipt requested; or (B) commercial delivery service; and (3) sent to the actor using the actor's mailing address shown on: (A) the rental agreement or service agreement; (B) records of the person whose service was secured; or (C) if the actor secured performance of service by issuing or passing a check or similar sight order for the payment of money, using the actor's address shown on: (i) the check or order; or (ii) the records of the bank or other drawee on which the check or order is drawn. (d) Except as otherwise provided by this subsection, if written notice is given in accordance with Subsection (c), it is presumed that the notice was received not later than two days after the notice was sent. For purposes of Subsections (b)(4)(A) and (B) and (b)(5), if written notice is given in accordance with Subsection (c), it is presumed that the notice was received not later than five days after the notice was sent. (d-1) For purposes of Subsection (a)(2), the diversion of services to the benefit of a person who is not entitled to those services includes the disposition of personal property by an actor having control of the property under an agreement described by Subsections (d-2)(1)-(3), if the actor disposes of the property in violation of the terms of the agreement and to the benefit of any person who is not entitled to the property. (d-2) For purposes of Subsection (a)(3), the term "written rental agreement" does not include an agreement that: (1) permits an individual to use personal property for personal, family, or household purposes for an initial rental period; (2) is automatically renewable with each payment after the initial rental period; and (3) permits the individual to become the owner of the property. (d-3) For purposes of Subsection (a)(4): (1) if the compensation is or was to be paid on a periodic basis, the intent to avoid payment for a service may be formed at any time during or before a pay period; (2) the partial payment of wages alone is not sufficient evidence to negate the actor's intent to avoid payment for a service; and (3) the term "service" does not include leasing personal property under an agreement described by Subsections (d-2)(1)-(3). (d-4) A presumption established under Subsection (b) involving a defendant's failure to return property held under an agreement described by Subsections (d-2)(1)-(3) may be refuted if the defendant shows that the defendant: (1) intended to return the property; and (2) was unable to return the property. Page -9 -</p>
+        <p>(d-5) For purposes of Subsection (b)(5), "business day" means a day other than Sunday or a state or federal holiday. (e) An offense under this section is: (1) a Class C misdemeanor if the value of the service stolen is less than $100; (2) a Class B misdemeanor if the value of the service stolen is $100 or more but less than $750; (3) a Class A misdemeanor if the value of the service stolen is $750 or more but less than $2,500; (4) a state jail felony if the value of the service stolen is $2,500 or more but less than $30,000; (5) a felony of the third degree if the value of the service stolen is $30,000 or more but less than $150,000; (6) a felony of the second degree if the value of the service stolen is $150,000 or more but less than $300,000; or (7) a felony of the first degree if the value of the service stolen is $300,000 or more. (f) Notwithstanding any other provision of this code, any police or other report of stolen vehicles by a political subdivision of this state shall include on the report any rental vehicles whose renters have been shown to such reporting agency to be in violation of Subsection (b)(2) and shall indicate that the renting agency has complied with the notice requirements demanding return as provided in this section. (g) It is a defense to prosecution under this section that: (1) the defendant secured the performance of the service by giving a post-dated check or similar sight order to the person performing the service; and (2) the person performing the service or any other person presented the check or sight order for payment before the date on the check or sight order.</p>
+        
+    </div>
+</div>
 
-identification number of the motor vehicle from which the part was
-removed, or in lieu of maintaining an inventory, fails to record the name
-and certificate of inventory number of the person who dismantled the
-motor vehicle from which the part was obtained;
-(B) fails on receipt of a motor vehicle to obtain a
-certificate of authority, sales receipt, or transfer document as required
-by Chapter 683, Transportation Code, or a certificate of title showing
-that the motor vehicle is not subject to a lien or that all recorded
-liens on the motor vehicle have been released; or
-(C) fails on receipt of a motor vehicle to immediately
-remove an unexpired license plate from the motor vehicle, to keep the
-plate in a secure and locked place, or to maintain an inventory, on forms
-provided by the Texas Department of Motor Vehicles, of license plates
-kept under this paragraph, including for each plate or set of plates the
-license plate number and the make, motor number, and vehicle
-identification number of the motor vehicle from which the plate was
-removed;
-(7) an actor who purchases or receives a used or secondhand
-motor vehicle is presumed to know on receipt by the actor of the motor
-vehicle that the motor vehicle has been previously stolen from another if
-the actor knowingly or recklessly:
-(A) fails to report to the Texas Department of Motor
-Vehicles the failure of the person who sold or delivered the motor
-vehicle to the actor to deliver to the actor a properly executed
-certificate of title to the motor vehicle at the time the motor vehicle
-was delivered; or
-(B) fails to file with the county tax assessor-collector
-of the county in which the actor received the motor vehicle, not later
-than the 20th day after the date the actor received the motor vehicle,
-the registration license receipt and certificate of title or evidence of
-title delivered to the actor in accordance with Subchapter D, Chapter
-520, Transportation Code, at the time the motor vehicle was delivered;
-(8) an actor who purchases or receives from any source other
-than a licensed retailer or distributor of pesticides a restricted-use
-pesticide or a state-limited-use pesticide or a compound, mixture, or
-preparation containing a restricted-use or state-limited-use pesticide is
-presumed to know on receipt by the actor of the pesticide or compound,
-mixture, or preparation that the pesticide or compound, mixture, or
-preparation has been previously stolen from another if the actor:
-(A) fails to record the name, address, and physical
-description of the seller or pledgor;
-(B) fails to record a complete description of the amount
-and type of pesticide or compound, mixture, or preparation purchased or
-received; and
-(C) fails to obtain a signed warranty from the seller or
-pledgor that the seller or pledgor has the right to possess the property;
-(9) an actor who is subject to Section 409, Packers and
-Stockyards Act (7 U.S.C. Section 228b), that obtains livestock from a
-commission merchant by representing that the actor will make prompt
-payment is presumed to have induced the commission merchant's consent by
-deception if the actor fails to make full payment in accordance with
-Page -4 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 31.06. PRESUMPTION FOR THEFT BY CHECK OR SIMILAR SIGHT ORDER.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) If the actor obtained property or secured performance of service by issuing or passing a check or similar sight order for the payment of money, when the issuer did not have sufficient funds in or on deposit with the bank or other drawee for the payment in full of the check or order as well as all other checks or orders then outstanding, it is prima facie evidence of the issuer's intent to deprive the owner of property under Section 31.03 (Theft) including a drawee or third-party holder in due course who negotiated the check or order or to avoid payment for service under Section 31.04 (Theft of Service) (except in the case of a postdated check or order) if: (1) the issuer had no account with the bank or other drawee at the time the issuer issued the check or sight order; or (2) payment was refused by the bank or other drawee for lack of funds or insufficient funds, on presentation within 30 days after issue, and the issuer failed to pay the holder in full within 10 days after receiving notice of that refusal. (b) For purposes of Subsection (a)(2) or (f)(3), notice may be actual notice or notice in writing that: (1) is sent by: (A) first class mail, evidenced by an affidavit of service; or (B) registered or certified mail with return receipt requested; (2) is addressed to the issuer at the issuer's address shown on: (A) the check or order; (B) the records of the bank or other drawee; or (C) the records of the person to whom the check or order has been issued or passed; and (3) contains the following statement: "This is a demand for payment in full for a check or order not paid because of a lack of funds or insufficient funds. If you fail to make payment in full within 10 days after the date of receipt of this notice, the failure to pay creates a presumption for committing an offense, and this matter may be referred for criminal prosecution." (c) If written notice is given in accordance with Subsection (b), it is presumed that the notice was received no later than five days after it was sent. (d) Nothing in this section prevents the prosecution from establishing the requisite intent by direct evidence. (e) Partial restitution does not preclude the presumption of the requisite intent under this section. (f) If the actor obtained property by issuing or passing a check or similar sight order for the payment of money, the actor's intent to deprive the owner of the property under Section 31.03 (Theft) is presumed, except in the case of a postdated check or order, if: (1) the actor ordered the bank or other drawee to stop payment Page -11 -</p>
+        <p>on the check or order; (2) the bank or drawee refused payment to the holder on presentation of the check or order within 30 days after issue; (3) the owner gave the actor notice of the refusal of payment and made a demand to the actor for payment or return of the property; and (4) the actor failed to: (A) pay the holder within 10 days after receiving the demand for payment; or (B) return the property to the owner within 10 days after receiving the demand for return of the property.</p>
+        
+    </div>
+</div>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 31.07. UNAUTHORIZED USE OF A VEHICLE.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if he intentionally or knowingly operates another's boat, airplane, or motor-propelled vehicle without the effective consent of the owner. (b) An offense under this section is a state jail felony.</p>
+        
+    </div>
+</div>
 
-Section 409, Packers and Stockyards Act (7 U.S.C. Section 228b); and
-(10) an actor in possession of property consisting of one or
-more catalytic converters that have been removed from a motor vehicle is
-presumed to have unlawfully appropriated the property unless the actor:
-(A) is the owner, as defined by Section 601.002,
-Transportation Code, of each vehicle from which the catalytic converters
-were removed; or
-(B) possesses the catalytic converters in the ordinary
-course of the actor's business, including in the ordinary course of
-business of an entity described by Section 1956.123(1), Occupations Code.
-(d) It is not a defense to prosecution under this section that:
-(1) the offense occurred as a result of a deception or
-strategy on the part of a law enforcement agency, including the use of an
-undercover operative or peace officer;
-(2) the actor was provided by a law enforcement agency with a
-facility in which to commit the offense or an opportunity to engage in
-conduct constituting the offense; or
-(3) the actor was solicited to commit the offense by a peace
-officer, and the solicitation was of a type that would encourage a person
-predisposed to commit the offense to actually commit the offense, but
-would not encourage a person not predisposed to commit the offense to
-actually commit the offense.
-(e) Except as provided by Subsections (f) and (f-1), an offense
-under this section is:
-(1) a Class C misdemeanor if the value of the property stolen
-is less than $100;
-(2) a Class B misdemeanor if:
-(A) the value of the property stolen is $100 or more but
-less than $750;
-(B) the value of the property stolen is less than $100
-and the defendant has previously been convicted of any grade of theft; or
-(C) the property stolen is a driver's license, commercial
-driver's license, or personal identification certificate issued by this
-state or another state;
-(3) a Class A misdemeanor if the value of the property stolen
-is $750 or more but less than $2,500;
-(4) a state jail felony if:
-(A) the value of the property stolen is $2,500 or more
-but less than $30,000, or the property is less than 10 head of sheep,
-swine, or goats or any part thereof under the value of $30,000;
-(B) regardless of value, the property is stolen from the
-person of another or from a human corpse or grave, including property
-that is a military grave marker;
-(C) the property stolen is a firearm;
-(D) the value of the property stolen is less than $2,500
-and the defendant has been previously convicted two or more times of any
-grade of theft;
-(E) the property stolen is an official ballot or official
-carrier envelope for an election;
-(F) the value of the property stolen is less than $20,000
-and the property stolen is:
-Page -5 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 31.08. VALUE.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) Subject to the additional criteria of Subsections (b) and (c), value under this chapter is: (1) the fair market value of the property or service at the time and place of the offense; or (2) if the fair market value of the property cannot be ascertained, the cost of replacing the property within a reasonable time after the theft. (b) The value of documents, other than those having a readily ascertainable market value, is: (1) the amount due and collectible at maturity less that part which has been satisfied, if the document constitutes evidence of a debt; or (2) the greatest amount of economic loss that the owner might reasonably suffer by virtue of loss of the document, if the document is other than evidence of a debt. (c) If property or service has value that cannot be reasonably ascertained by the criteria set forth in Subsections (a) and (b), the property or service is deemed to have a value of $750 or more but less than $2,500. (d) If the actor proves by a preponderance of the evidence that he gave consideration for or had a legal interest in the property or service stolen, the amount of the consideration or the value of the interest so proven shall be deducted from the value of the property or service ascertained under Subsection (a), (b), or (c) to determine value for purposes of this chapter.</p>
+        
+    </div>
+</div>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 31.09. AGGREGATION OF AMOUNTS INVOLVED IN THEFT.</h4>
+    <div style="line-height: 1.8;">
+        <p>When amounts are obtained in violation of this chapter pursuant to one scheme or continuing course of conduct, whether from the same or several sources, the conduct may be considered as one offense and the amounts aggregated in determining the grade of the offense.</p>
+        
+    </div>
+</div>
 
-(i) aluminum;
-(ii) bronze;
-(iii) copper; or
-(iv) brass; or
-(G) the cost of replacing the property stolen is less
-than $30,000 and the property stolen is a catalytic converter;
-(5) a felony of the third degree if the value of the property
-stolen is $30,000 or more but less than $150,000, or the property is:
-(A) cattle, horses, or exotic livestock or exotic fowl as
-defined by Section 142.001, Agriculture Code, stolen during a single
-transaction and having an aggregate value of less than $150,000;
-(B) 10 or more head of sheep, swine, or goats stolen
-during a single transaction and having an aggregate value of less than
-$150,000; or
-(C) a controlled substance, having a value of less than
-$150,000, if stolen from:
-(i) a commercial building in which a controlled
-substance is generally stored, including a pharmacy, clinic, hospital,
-nursing facility, or warehouse; or
-(ii) a vehicle owned or operated by a wholesale
-distributor of prescription drugs;
-(6) a felony of the second degree if:
-(A) the value of the property stolen is $150,000 or more
-but less than $300,000; or
-(B) the value of the property stolen is less than
-$300,000 and the property stolen is an automated teller machine or the
-contents or components of an automated teller machine; or
-(7) a felony of the first degree if the value of the property
-stolen is $300,000 or more.
-(f) An offense described for purposes of punishment by Subsections
-(e)(1)-(6) is increased to the next higher category of offense if it is
-shown on the trial of the offense that:
-(1) the actor was a public servant at the time of the offense
-and the property appropriated came into the actor's custody, possession,
-or control by virtue of his status as a public servant;
-(2) the actor was in a contractual relationship with
-government at the time of the offense and the property appropriated came
-into the actor's custody, possession, or control by virtue of the
-contractual relationship;
-(3) the owner of the property appropriated was at the time of
-the offense:
-(A) an elderly individual; or
-(B) a nonprofit organization;
-(4) the actor was a Medicare provider in a contractual
-relationship with the federal government at the time of the offense and
-the property appropriated came into the actor's custody, possession, or
-control by virtue of the contractual relationship; or
-(5) during the commission of the offense, the actor
-intentionally, knowingly, or recklessly:
-(A) caused a fire exit alarm to sound or otherwise become
-activated;
-Page -6 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 31.10.
 
+ACTOR'S INTEREST IN PROPERTY.</h4>
+    <div style="line-height: 1.8;">
+        <p>It is no defense to</p>
+        <p>prosecution under this chapter that the actor has an interest in the property or service stolen if another person has the right of exclusive possession of the property.</p>
+        
+    </div>
+</div>
 
-(B) deactivated or otherwise prevented a fire exit alarm
-or retail theft detector from sounding; or
-(C) used a shielding or deactivation instrument to
-prevent or attempt to prevent detection of the offense by a retail theft
-detector.
-(f-1) An offense described for purposes of punishment by
-Subsections (e)(4)-(6) is increased to the next higher category of
-offense if it is shown on the trial of the offense that:
-(1) the property stolen is a catalytic converter; and
-(2) the actor possessed a firearm during the commission of the
-offense.
-(g) For the purposes of Subsection (a), a person is the owner of
-exotic livestock or exotic fowl as defined by Section 142.001,
-Agriculture Code, only if the person qualifies to claim the animal under
-Section 142.0021, Agriculture Code, if the animal is an estray.
-(h) In this section:
-(1) "Restricted-use pesticide" means a pesticide classified as
-a restricted-use pesticide by the administrator of the Environmental
-Protection Agency under 7 U.S.C. Section 136a, as that law existed on
-January 1, 1995, and containing an active ingredient listed in the
-federal regulations adopted under that law (40 C.F.R. Section 152.175)
-and in effect on that date.
-(2) "State-limited-use pesticide" means a pesticide classified
-as a state-limited-use pesticide by the Department of Agriculture under
-Section 76.003, Agriculture Code, as that section existed on January 1,
-1995, and containing an active ingredient listed in the rules adopted
-under that section (4 TAC Section 7.24) as that section existed on that
-date.
-(3) "Nonprofit organization" means an organization that is
-exempt from federal income taxation under Section 501(a), Internal
-Revenue Code of 1986, by being described as an exempt organization by
-Section 501(c)(3) of that code.
-(4) "Automated teller machine" means an unstaffed electronic
-information processing device that, at the request of a user, performs a
-financial transaction through the direct transmission of electronic
-impulses to a financial institution or through the recording of
-electronic impulses or other indicia of a transaction for delayed
-transmission to a financial institution. The term includes an automated
-banking machine.
-(5) "Controlled substance" has the meaning assigned by Section
-481.002, Health and Safety Code.
-(6) "Wholesale distributor of prescription drugs" means a
-wholesale distributor, as defined by Section 431.401, Health and Safety
-Code.
-(7) "Catalytic converter" means a catalytic converter and any
-material removed from the catalytic converter.
-(8) "Firearm" has the meaning assigned by Section 46.01.
-(i) For purposes of Subsection (c)(9), "livestock" and "commission
-merchant" have the meanings assigned by Section 147.001, Agriculture
-Code.
-(j) With the consent of the appropriate local county or district
-Page -7 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 31.11. TAMPERING WITH IDENTIFICATION NUMBERS.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if the person: (1) knowingly or intentionally removes, alters, or obliterates the serial number or other permanent identification marking on tangible personal property; or (2) possesses, sells, or offers for sale tangible personal property and: (A) the actor knows that the serial number or other permanent identification marking has been removed, altered, or obliterated; or (B) a reasonable person in the position of the actor would have known that the serial number or other permanent identification marking has been removed, altered, or obliterated. (b) It is an affirmative defense to prosecution under this section that the person was: (1) the owner or acting with the effective consent of the owner of the property involved; (2) a peace officer acting in the actual discharge of official duties; or (3) acting with respect to a number assigned to a vehicle by the Texas Department of Transportation or the Texas Department of Motor Vehicles, as applicable, and the person was: (A) in the actual discharge of official duties as an employee or agent of the department; or (B) in full compliance with the rules of the department as an applicant for an assigned number approved by the department. (c) Property involved in a violation of this section may be treated as stolen for purposes of custody and disposition of the property. (d) An offense under this section is a Class A misdemeanor. (e) In this section, "vehicle" has the meaning given by Section 541.201, Transportation Code.</p>
+        
+    </div>
+</div>
 
-
-attorney, the attorney general has concurrent jurisdiction with that
-consenting local prosecutor to prosecute an offense under this section
-that involves the state Medicaid program.
-
-Sec. 31.04. THEFT OF SERVICE.
-(a) A person commits theft of
-service if, with intent to avoid payment for service that the actor knows
-is provided only for compensation:
-(1) the actor intentionally or knowingly secures performance
-of the service by deception, threat, or false token;
-(2) having control over the disposition of services of another
-to which the actor is not entitled, the actor intentionally or knowingly
-diverts the other's services to the actor's own benefit or to the benefit
-of another not entitled to the services;
-(3) having control of personal property under a written rental
-agreement, the actor holds the property beyond the expiration of the
-rental period without the effective consent of the owner of the property,
-thereby depriving the owner of the property of its use in further
-rentals; or
-(4) the actor intentionally or knowingly secures the
-performance of the service by agreeing to provide compensation and, after
-the service is rendered, fails to make full payment after receiving
-notice demanding payment.
-(b) For purposes of this section, intent to avoid payment is
-presumed if any of the following occurs:
-(1) the actor absconded without paying for the service or
-expressly refused to pay for the service in circumstances where payment
-is ordinarily made immediately upon rendering of the service, as in
-hotels, campgrounds, recreational vehicle parks, restaurants, and
-comparable establishments;
-(2) the actor failed to make payment under a service agreement
-within 10 days after receiving notice demanding payment;
-(3) the actor returns property held under a rental agreement
-after the expiration of the rental agreement and fails to pay the
-applicable rental charge for the property within 10 days after the date
-on which the actor received notice demanding payment;
-(4) the actor failed to return the property held under a
-rental agreement:
-(A) within five days after receiving notice demanding
-return, if the property is valued at less than $2,500;
-(B) within three days after receiving notice demanding
-return, if the property is valued at $2,500 or more but less than
-$10,000; or
-(C) within two days after receiving notice demanding
-return, if the property is valued at $10,000 or more; or
-(5) the actor:
-(A) failed to return the property held under an agreement
-described by Subsections (d-2)(1)-(3) within five business days after
-receiving notice demanding return; and
-(B) has made fewer than three complete payments under the
-agreement.
-(c) For purposes of Subsections (a)(4), (b)(2), (b)(4), and (b)(5),
-Page -8 -
-
-
-notice must be:
-(1) in writing;
-(2) sent by:
-(A) registered or certified mail with return receipt
-requested; or
-(B) commercial delivery service; and
-(3) sent to the actor using the actor's mailing address shown
-on:
-(A) the rental agreement or service agreement;
-(B) records of the person whose service was secured; or
-(C) if the actor secured performance of service by
-issuing or passing a check or similar sight order for the payment of
-money, using the actor's address shown on:
-(i) the check or order; or
-(ii) the records of the bank or other drawee on
-which the check or order is drawn.
-(d) Except as otherwise provided by this subsection, if written
-notice is given in accordance with Subsection (c), it is presumed that
-the notice was received not later than two days after the notice was
-sent. For purposes of Subsections (b)(4)(A) and (B) and (b)(5), if
-written notice is given in accordance with Subsection (c), it is presumed
-that the notice was received not later than five days after the notice
-was sent.
-(d-1) For purposes of Subsection (a)(2), the diversion of services
-to the benefit of a person who is not entitled to those services includes
-the disposition of personal property by an actor having control of the
-property under an agreement described by Subsections (d-2)(1)-(3), if the
-actor disposes of the property in violation of the terms of the agreement
-and to the benefit of any person who is not entitled to the property.
-(d-2) For purposes of Subsection (a)(3), the term "written rental
-agreement" does not include an agreement that:
-(1) permits an individual to use personal property for
-personal, family, or household purposes for an initial rental period;
-(2) is automatically renewable with each payment after the
-initial rental period; and
-(3) permits the individual to become the owner of the
-property.
-(d-3) For purposes of Subsection (a)(4):
-(1) if the compensation is or was to be paid on a periodic
-basis, the intent to avoid payment for a service may be formed at any
-time during or before a pay period;
-(2) the partial payment of wages alone is not sufficient
-evidence to negate the actor's intent to avoid payment for a service; and
-(3) the term "service" does not include leasing personal
-property under an agreement described by Subsections (d-2)(1)-(3).
-(d-4) A presumption established under Subsection (b) involving a
-defendant's failure to return property held under an agreement described
-by Subsections (d-2)(1)-(3) may be refuted if the defendant shows that
-the defendant:
-(1) intended to return the property; and
-(2) was unable to return the property.
-Page -9 -
-
-
-(d-5) For purposes of Subsection (b)(5), "business day" means a day
-other than Sunday or a state or federal holiday.
-(e) An offense under this section is:
-(1) a Class C misdemeanor if the value of the service stolen
-is less than $100;
-(2) a Class B misdemeanor if the value of the service stolen
-is $100 or more but less than $750;
-(3) a Class A misdemeanor if the value of the service stolen
-is $750 or more but less than $2,500;
-(4) a state jail felony if the value of the service stolen is
-$2,500 or more but less than $30,000;
-(5) a felony of the third degree if the value of the service
-stolen is $30,000 or more but less than $150,000;
-(6) a felony of the second degree if the value of the service
-stolen is $150,000 or more but less than $300,000; or
-(7) a felony of the first degree if the value of the service
-stolen is $300,000 or more.
-(f) Notwithstanding any other provision of this code, any police or
-other report of stolen vehicles by a political subdivision of this state
-shall include on the report any rental vehicles whose renters have been
-shown to such reporting agency to be in violation of Subsection (b)(2)
-and shall indicate that the renting agency has complied with the notice
-requirements demanding return as provided in this section.
-(g) It is a defense to prosecution under this section that:
-(1) the defendant secured the performance of the service by
-giving a post-dated check or similar sight order to the person performing
-the service; and
-(2) the person performing the service or any other person
-presented the check or sight order for payment before the date on the
-check or sight order.
-
-Sec. 31.06. PRESUMPTION FOR THEFT BY CHECK OR SIMILAR SIGHT ORDER.
-(a) If the actor obtained property or secured performance of service by
-issuing or passing a check or similar sight order for the payment of
-money, when the issuer did not have sufficient funds in or on deposit
-with the bank or other drawee for the payment in full of the check or
-order as well as all other checks or orders then outstanding, it is prima
-facie evidence of the issuer's intent to deprive the owner of property
-under Section 31.03 (Theft) including a drawee or third-party holder in
-due course who negotiated the check or order or to avoid payment for
-service under Section 31.04 (Theft of Service) (except in the case of a
-postdated check or order) if:
-(1) the issuer had no account with the bank or other drawee at
-the time the issuer issued the check or sight order; or
-(2) payment was refused by the bank or other drawee for lack
-of funds or insufficient funds, on presentation within 30 days after
-issue, and the issuer failed to pay the holder in full within 10 days
-after receiving notice of that refusal.
-(b) For purposes of Subsection (a)(2) or (f)(3), notice may be
-actual notice or notice in writing that:
-(1) is sent by:
-(A) first class mail, evidenced by an affidavit of
-service; or
-(B) registered or certified mail with return receipt
-requested;
-(2) is addressed to the issuer at the issuer's address shown
-on:
-(A) the check or order;
-(B) the records of the bank or other drawee; or
-(C) the records of the person to whom the check or order
-has been issued or passed; and
-(3) contains the following statement:
-"This is a demand for payment in full for a check or order not paid
-because of a lack of funds or insufficient funds. If you fail to make
-payment in full within 10 days after the date of receipt of this notice,
-the failure to pay creates a presumption for committing an offense, and
-this matter may be referred for criminal prosecution."
-(c) If written notice is given in accordance with Subsection (b),
-it is presumed that the notice was received no later than five days after
-it was sent.
-(d) Nothing in this section prevents the prosecution from
-establishing the requisite intent by direct evidence.
-(e) Partial restitution does not preclude the presumption of the
-requisite intent under this section.
-(f) If the actor obtained property by issuing or passing a check or
-similar sight order for the payment of money, the actor's intent to
-deprive the owner of the property under Section 31.03 (Theft) is
-presumed, except in the case of a postdated check or order, if:
-(1) the actor ordered the bank or other drawee to stop payment
-Page -11 -
-
-
-on the check or order;
-(2) the bank or drawee refused payment to the holder on
-presentation of the check or order within 30 days after issue;
-(3) the owner gave the actor notice of the refusal of payment
-and made a demand to the actor for payment or return of the property;
-and
-(4) the actor failed to:
-(A) pay the holder within 10 days after receiving the
-demand for payment; or
-(B) return the property to the owner within 10 days after
-receiving the demand for return of the property.
-
-Sec. 31.07. UNAUTHORIZED USE OF A VEHICLE. (a) A person commits
-an offense if he intentionally or knowingly operates another's boat,
-airplane, or motor-propelled vehicle without the effective consent of the
-owner.
-(b) An offense under this section is a state jail felony.
-
-Sec. 31.08. VALUE.
-(a)
-Subject to the additional criteria of
-Subsections (b) and (c), value under this chapter is:
-(1) the fair market value of the property or service at the
-time and place of the offense; or
-(2) if the fair market value of the property cannot be
-ascertained, the cost of replacing the property within a reasonable time
-after the theft.
-(b) The value of documents, other than those having a readily
-ascertainable market value, is:
-(1) the amount due and collectible at maturity less that part
-which has been satisfied, if the document constitutes evidence of a debt;
-or
-(2) the greatest amount of economic loss that the owner might
-reasonably suffer by virtue of loss of the document, if the document is
-other than evidence of a debt.
-(c) If property or service has value that cannot be reasonably
-ascertained by the criteria set forth in Subsections (a) and (b), the
-property or service is deemed to have a value of $750 or more but less
-than $2,500.
-(d) If the actor proves by a preponderance of the evidence that he
-gave consideration for or had a legal interest in the property or service
-stolen, the amount of the consideration or the value of the interest so
-proven shall be deducted from the value of the property or service
-ascertained under Subsection (a), (b), or (c) to determine value for
-purposes of this chapter.
-
-Sec. 31.09. AGGREGATION OF AMOUNTS INVOLVED IN THEFT. When amounts
-are obtained in violation of this chapter pursuant to one scheme or
-continuing course of conduct, whether from the same or several sources,
-the conduct may be considered as one offense and the amounts aggregated
-in determining the grade of the offense.
-
-Sec. 31.10.
-
-ACTOR'S INTEREST IN PROPERTY.
-Page -12 -
-
-It is no defense to
-
-
-prosecution under this chapter that the actor has an interest in the
-property or service stolen if another person has the right of exclusive
-possession of the property.
-
-Sec. 31.11. TAMPERING WITH IDENTIFICATION NUMBERS. (a) A person
-commits an offense if the person:
-(1) knowingly or intentionally removes, alters, or obliterates
-the serial number or other permanent identification marking on tangible
-personal property; or
-(2) possesses, sells, or offers for sale tangible personal
-property and:
-(A) the actor knows that the serial number or other
-permanent identification marking has been removed, altered, or
-obliterated; or
-(B) a reasonable person in the position of the actor
-would have known that the serial number or other permanent identification
-marking has been removed, altered, or obliterated.
-(b) It is an affirmative defense to prosecution under this section
-that the person was:
-(1) the owner or acting with the effective consent of the
-owner of the property involved;
-(2) a peace officer acting in the actual discharge of official
-duties; or
-(3) acting with respect to a number assigned to a vehicle by
-the Texas Department of Transportation or the Texas Department of Motor
-Vehicles, as applicable, and the person was:
-(A) in the actual discharge of official duties as an
-employee or agent of the department; or
-(B) in full compliance with the rules of the department
-as an applicant for an assigned number approved by the department.
-(c) Property involved in a violation of this section may be treated
-as stolen for purposes of custody and disposition of the property.
-(d) An offense under this section is a Class A misdemeanor.
-(e) In this section, "vehicle" has the meaning given by Section
-541.201, Transportation Code.
-
-Sec. 31.16. ORGANIZED RETAIL THEFT. (a) Repealed by Acts 2011,
-82nd Leg., R.S., Ch. 323, Sec. 4, eff. September 1, 2011.
-(b) A person commits an offense if the person intentionally
-conducts, promotes, or facilitates an activity in which the person
-receives, possesses, conceals, stores, barters, sells, or disposes of:
-(1) stolen retail merchandise; or
-(2) merchandise explicitly represented to the person as being
-stolen retail merchandise.
-(c) An offense under this section is:
-(1) a Class C misdemeanor if the total value of the
-merchandise involved in the activity is less than $100;
-(2) a Class B misdemeanor if the total value of the
-merchandise involved in the activity is $100 or more but less than $750;
-(3) a Class A misdemeanor if the total value of the
-merchandise involved in the activity is $750 or more but less than
-$2,500;
-Page -15 -
-
-
-(4) a state jail felony if the total value of the merchandise
-involved in the activity is $2,500 or more but less than $30,000;
-(5) a felony of the third degree if the total value of the
-merchandise involved in the activity is $30,000 or more but less than
-$150,000;
-(6) a felony of the second degree if the total value of the
-merchandise involved in the activity is $150,000 or more but less than
-$300,000; or
-(7) a felony of the first degree if the total value of the
-merchandise involved in the activity is $300,000 or more.
-(d) An offense described for purposes of punishment by Subsections
-(c)(1)-(6) is increased to the next higher category of offense if it is
-shown on the trial of the offense that:
-(1) the person organized, supervised, financed, or managed one
-or more other persons engaged in an activity described by Subsection (b);
-or
-(2) during the commission of the offense, a person engaged in
-an activity described by Subsection (b) intentionally, knowingly, or
-recklessly:
-(A) caused a fire exit alarm to sound or otherwise become
-activated;
-(B) deactivated or otherwise prevented a fire exit alarm
-or retail theft detector from sounding; or
-(C) used a shielding or deactivation instrument to
-prevent or attempt to prevent detection of the offense by a retail theft
-detector.
-
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 31.16. ORGANIZED RETAIL THEFT.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) Repealed by Acts 2011, 82nd Leg., R.S., Ch. 323, Sec. 4, eff. September 1, 2011. (b) A person commits an offense if the person intentionally conducts, promotes, or facilitates an activity in which the person receives, possesses, conceals, stores, barters, sells, or disposes of: (1) stolen retail merchandise; or (2) merchandise explicitly represented to the person as being stolen retail merchandise. (c) An offense under this section is: (1) a Class C misdemeanor if the total value of the merchandise involved in the activity is less than $100; (2) a Class B misdemeanor if the total value of the merchandise involved in the activity is $100 or more but less than $750; (3) a Class A misdemeanor if the total value of the merchandise involved in the activity is $750 or more but less than $2,500; Page -15 -</p>
+        <p>(4) a state jail felony if the total value of the merchandise involved in the activity is $2,500 or more but less than $30,000; (5) a felony of the third degree if the total value of the merchandise involved in the activity is $30,000 or more but less than $150,000; (6) a felony of the second degree if the total value of the merchandise involved in the activity is $150,000 or more but less than $300,000; or (7) a felony of the first degree if the total value of the merchandise involved in the activity is $300,000 or more. (d) An offense described for purposes of punishment by Subsections (c)(1)-(6) is increased to the next higher category of offense if it is shown on the trial of the offense that: (1) the person organized, supervised, financed, or managed one or more other persons engaged in an activity described by Subsection (b); or (2) during the commission of the offense, a person engaged in an activity described by Subsection (b) intentionally, knowingly, or recklessly: (A) caused a fire exit alarm to sound or otherwise become activated; (B) deactivated or otherwise prevented a fire exit alarm or retail theft detector from sounding; or (C) used a shielding or deactivation instrument to prevent or attempt to prevent detection of the offense by a retail theft detector.</p>
+        
+    </div>
+</div>
 `
     },
 
     {
         category: 'Penal Code',
         title: "Chapter 38 - Obstructing Government Operation (Selected Sections)",
-        content: `Sec. 38.01. DEFINITIONS. In this chapter:
-(1) "Custody" means:
-(A) under arrest by a peace officer or under restraint by
-a public servant pursuant to an order of a court of this state or another
-state of the United States; or
-(B) under restraint by an agent or employee of a facility
-that is operated by or under contract with the United States and that
-confines persons arrested for, charged with, or convicted of criminal
-offenses.
-(2) "Escape" means unauthorized departure from custody or
-failure to return to custody following temporary leave for a specific
-purpose or limited period or leave that is part of an intermittent
-sentence, but does not include a violation of conditions of community
-supervision or parole other than conditions that impose a period of
-confinement in a secure correctional facility.
-(3) "Economic benefit" means anything reasonably regarded as
-an economic gain or advantage, including accepting or offering to accept
-employment for a fee, accepting or offering to accept a fee, entering
-into a fee contract, or accepting or agreeing to accept money or anything
-of value.
-(4) "Finance" means to provide funds or capital or to furnish
-with necessary funds.
-(5) "Fugitive from justice" means a person for whom a valid
-arrest warrant has been issued.
-(6) "Governmental function" includes any activity that a
-public servant is lawfully authorized to undertake on behalf of
-government.
-(7) "Invest funds" means to commit money to earn a financial
-return.
-(8) "Member of the family" means anyone related within the
-third degree of consanguinity or affinity, as determined under Chapter
-573, Government Code.
-(9) "Qualified nonprofit organization" means a nonprofit
-organization that meets the following conditions:
-(A) the primary purposes of the organization do not
-include the rendition of legal services or education regarding legal
-services;
-(B) the recommending, furnishing, paying for, or
-educating persons regarding legal services is incidental and reasonably
-related to the primary purposes of the organization;
-(C) the organization does not derive a financial benefit
-from the rendition of legal services by a lawyer; and
-(D) the person for whom the legal services are rendered,
-and not the organization, is recognized as the client of a lawyer.
-(10) "Public media" means a telephone directory or legal
-directory, newspaper or other periodical, billboard or other sign, radio
-or television broadcast, recorded message the public may access by
-dialing a telephone number, or a written communication not prohibited by
-Page - 1 -
+        content: `<h2>Chapter 38 - Chapter 38 - Obstructing Government Operation (Selected Sections)</h2>
 
+<div style="background: rgba(79, 195, 247, 0.15); padding: 20px; margin: 20px 0; border-left: 4px solid #4fc3f7;">
+    <h3 style="margin-top: 0;">📋 Chapter Summary</h3>
+    <p style="font-size: 16px;"><strong>Obstructing government operations - Selected sections covering interference with public duties.</strong></p>
+    
+    <h4>Key Points to Study:</h4>
+    <ul>
+        <li>Resisting arrest or search</li>
+        <li>Evading arrest or detention</li>
+        <li>Escape from custody</li>
+        <li>Hindering apprehension or prosecution</li>
+        <li>Failure to identify</li>
+    </ul>
+</div>
 
-Section 38.12(d).
-(11) "Solicit employment" means to communicate in person or by
-telephone with a prospective client or a member of the prospective
-client's family concerning professional employment within the scope of a
-professional's license, registration, or certification arising out of a
-particular occurrence or event, or series of occurrences or events, or
-concerning an existing problem of the prospective client within the scope
-of the professional's license, registration, or certification, for the
-purpose of providing professional services to the prospective client,
-when neither the person receiving the communication nor anyone acting on
-that person's behalf has requested the communication. The term does not
-include a communication initiated by a family member of the person
-receiving a communication, a communication by a professional who has a
-prior or existing professional-client relationship with the person
-receiving the communication, or communication by an attorney for a
-qualified nonprofit organization with the organization's members for the
-purpose of educating the organization's members to understand the law, to
-recognize legal problems, to make intelligent selection of legal counsel,
-or to use available legal services.
-The term does not include an
-advertisement by a professional through public media.
-(12) "Professional"
-means
-an
-attorney,
-chiropractor,
-physician, surgeon, private investigator, or any other person licensed,
-certified, or registered by a state agency that regulates a health care
-profession.
+<hr style="border: 1px solid #4fc3f7; margin: 30px 0;">
 
-Sec. 38.02. FAILURE TO IDENTIFY. (a) A person commits an offense
-if he intentionally refuses to give his name, residence address, or date
-of birth to a peace officer who has lawfully arrested the person and
-requested the information.
-(b) A person commits an offense if he intentionally gives a false
-or fictitious name, residence address, or date of birth to a peace
-officer who has:
-(1) lawfully arrested the person;
-(2) lawfully detained the person; or
-(3) requested the information from a person that the peace
-officer has good cause to believe is a witness to a criminal offense.
-(b-1) A person commits an offense if the person:
-(1) is an operator of a motor vehicle, as defined by Section
-32.34, who is lawfully detained by a peace officer for an alleged
-violation of a law;
-(2) fails to provide or display the person's driver's license
-on the officer's request for the license; and
-(3) intentionally refuses to give the person's name, driver's
-license number, residence address, or date of birth to the peace officer
-on the officer's request for that information.
-(b-2) For purposes of Subsection (b-1)(3), giving a peace officer a
-residence address that is different from the address associated with the
-person's driver's license does not constitute a refusal to give the
-person's residence address in violation of that provision if the address
-given to the officer is the person's actual residence address.
-(c) Except as provided by Subsections (d) and (d-1), an offense
-Page -2 -
+<h3>Sections</h3>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 38.01. DEFINITIONS.</h4>
+    <div style="line-height: 1.8;">
+        <p>In this chapter: (1) "Custody" means: (A) under arrest by a peace officer or under restraint by a public servant pursuant to an order of a court of this state or another state of the United States; or (B) under restraint by an agent or employee of a facility that is operated by or under contract with the United States and that confines persons arrested for, charged with, or convicted of criminal offenses. (2) "Escape" means unauthorized departure from custody or failure to return to custody following temporary leave for a specific purpose or limited period or leave that is part of an intermittent sentence, but does not include a violation of conditions of community supervision or parole other than conditions that impose a period of confinement in a secure correctional facility. (3) "Economic benefit" means anything reasonably regarded as an economic gain or advantage, including accepting or offering to accept employment for a fee, accepting or offering to accept a fee, entering into a fee contract, or accepting or agreeing to accept money or anything of value. (4) "Finance" means to provide funds or capital or to furnish with necessary funds. (5) "Fugitive from justice" means a person for whom a valid arrest warrant has been issued. (6) "Governmental function" includes any activity that a public servant is lawfully authorized to undertake on behalf of government. (7) "Invest funds" means to commit money to earn a financial return. (8) "Member of the family" means anyone related within the third degree of consanguinity or affinity, as determined under Chapter 573, Government Code. (9) "Qualified nonprofit organization" means a nonprofit organization that meets the following conditions: (A) the primary purposes of the organization do not include the rendition of legal services or education regarding legal services; (B) the recommending, furnishing, paying for, or educating persons regarding legal services is incidental and reasonably related to the primary purposes of the organization; (C) the organization does not derive a financial benefit from the rendition of legal services by a lawyer; and (D) the person for whom the legal services are rendered, and not the organization, is recognized as the client of a lawyer. (10) "Public media" means a telephone directory or legal directory, newspaper or other periodical, billboard or other sign, radio or television broadcast, recorded message the public may access by dialing a telephone number, or a written communication not prohibited by Page - 1 -</p>
+        <p>Section 38.12(d). (11) "Solicit employment" means to communicate in person or by telephone with a prospective client or a member of the prospective client's family concerning professional employment within the scope of a professional's license, registration, or certification arising out of a particular occurrence or event, or series of occurrences or events, or concerning an existing problem of the prospective client within the scope of the professional's license, registration, or certification, for the purpose of providing professional services to the prospective client, when neither the person receiving the communication nor anyone acting on that person's behalf has requested the communication. The term does not include a communication initiated by a family member of the person receiving a communication, a communication by a professional who has a prior or existing professional-client relationship with the person receiving the communication, or communication by an attorney for a qualified nonprofit organization with the organization's members for the purpose of educating the organization's members to understand the law, to recognize legal problems, to make intelligent selection of legal counsel, or to use available legal services. The term does not include an advertisement by a professional through public media. (12) "Professional" means an attorney, chiropractor, physician, surgeon, private investigator, or any other person licensed, certified, or registered by a state agency that regulates a health care profession.</p>
+        
+    </div>
+</div>
 
-under this section is:
-(1) a Class C misdemeanor if the offense is committed under
-Subsection (a) or (b-1); or
-(2) a Class B misdemeanor if the offense is committed under
-Subsection (b).
-(d) If it is shown on the trial of an offense under this section
-that the defendant was a fugitive from justice at the time of the
-offense, the offense is:
-(1) a Class B misdemeanor if the offense is committed under
-Subsection (a); or
-(2) a Class A misdemeanor if the offense is committed under
-Subsection (b).
-(d-1) An offense under Subsection (b-1) is a Class B misdemeanor if
-it is shown on the trial of the offense that the actor gave a false or
-fictitious name to the peace officer during the commission of the
-offense.
-(e) If conduct that constitutes an offense under this section also
-constitutes an offense under Section 106.07, Alcoholic Beverage Code, the
-actor may be prosecuted only under Section 106.07.
-(f) Subject to Subsection (e), if conduct that constitutes an
-offense under Subsection (b-1) also constitutes an offense under any
-other law, the actor may be prosecuted under that subsection, the other
-law, or both.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 38.02. FAILURE TO IDENTIFY.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if he intentionally refuses to give his name, residence address, or date of birth to a peace officer who has lawfully arrested the person and requested the information. (b) A person commits an offense if he intentionally gives a false or fictitious name, residence address, or date of birth to a peace officer who has: (1) lawfully arrested the person; (2) lawfully detained the person; or (3) requested the information from a person that the peace officer has good cause to believe is a witness to a criminal offense. (b-1) A person commits an offense if the person: (1) is an operator of a motor vehicle, as defined by Section 32.34, who is lawfully detained by a peace officer for an alleged violation of a law; (2) fails to provide or display the person's driver's license on the officer's request for the license; and (3) intentionally refuses to give the person's name, driver's license number, residence address, or date of birth to the peace officer on the officer's request for that information. (b-2) For purposes of Subsection (b-1)(3), giving a peace officer a residence address that is different from the address associated with the person's driver's license does not constitute a refusal to give the person's residence address in violation of that provision if the address given to the officer is the person's actual residence address. (c) Except as provided by Subsections (d) and (d-1), an offense Page -2 -</p>
+        <p>under this section is: (1) a Class C misdemeanor if the offense is committed under Subsection (a) or (b-1); or (2) a Class B misdemeanor if the offense is committed under Subsection (b). (d) If it is shown on the trial of an offense under this section that the defendant was a fugitive from justice at the time of the offense, the offense is: (1) a Class B misdemeanor if the offense is committed under Subsection (a); or (2) a Class A misdemeanor if the offense is committed under Subsection (b). (d-1) An offense under Subsection (b-1) is a Class B misdemeanor if it is shown on the trial of the offense that the actor gave a false or fictitious name to the peace officer during the commission of the offense. (e) If conduct that constitutes an offense under this section also constitutes an offense under Section 106.07, Alcoholic Beverage Code, the actor may be prosecuted only under Section 106.07. (f) Subject to Subsection (e), if conduct that constitutes an offense under Subsection (b-1) also constitutes an offense under any other law, the actor may be prosecuted under that subsection, the other law, or both.</p>
+        
+    </div>
+</div>
 
-Sec. 38.03. RESISTING ARREST, SEARCH, OR TRANSPORTATION. (a) A
-person commits an offense if he intentionally prevents or obstructs a
-person he knows is a peace officer or a person acting in a peace
-officer's presence and at his direction from effecting an arrest, search,
-or transportation of the actor or another by using force against the
-peace officer or another.
-(b) It is no defense to prosecution under this section that the
-arrest or search was unlawful.
-(c) Except as provided in Subsection (d), an offense under this
-section is a Class A misdemeanor.
-(d) An offense under this section is a felony of the third degree
-if the actor uses a deadly weapon to resist the arrest or search.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 38.03. RESISTING ARREST, SEARCH, OR TRANSPORTATION.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if he intentionally prevents or obstructs a person he knows is a peace officer or a person acting in a peace officer's presence and at his direction from effecting an arrest, search, or transportation of the actor or another by using force against the peace officer or another. (b) It is no defense to prosecution under this section that the arrest or search was unlawful. (c) Except as provided in Subsection (d), an offense under this section is a Class A misdemeanor. (d) An offense under this section is a felony of the third degree if the actor uses a deadly weapon to resist the arrest or search.</p>
+        
+    </div>
+</div>
 
-Sec. 38.04. EVADING ARREST OR DETENTION. (a) A person commits an
-offense if he intentionally flees from a person he knows is a peace
-officer or federal special investigator attempting lawfully to arrest or
-detain him.
-Text of subsection as amended by Acts 2011, 82nd Leg., R.S., Ch. 839
-(H.B. 3423), Sec. 4, and Ch. 391, Sec. 1
-(b) An offense under this section is a Class A misdemeanor, except
-that the offense is:
-(1) a state jail felony if:
-(A) the actor has been previously convicted under this
-section; or
-(B) the actor uses a vehicle or watercraft while the
-Page -3 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 38.04. EVADING ARREST OR DETENTION.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if he intentionally flees from a person he knows is a peace officer or federal special investigator attempting lawfully to arrest or detain him. Text of subsection as amended by Acts 2011, 82nd Leg., R.S., Ch. 839 (H.B. 3423), Sec. 4, and Ch. 391, Sec. 1 (b) An offense under this section is a Class A misdemeanor, except that the offense is: (1) a state jail felony if: (A) the actor has been previously convicted under this section; or (B) the actor uses a vehicle or watercraft while the Page -3 -</p>
+        <p>actor is in flight and the actor has not been previously convicted under this section; (2) a felony of the third degree if: (A) the actor uses a vehicle or watercraft while the actor is in flight and the actor has been previously convicted under this section; or (B) another suffers serious bodily injury as a direct result of an attempt by the officer or investigator from whom the actor is fleeing to apprehend the actor while the actor is in flight; or (3) a felony of the second degree if another suffers death as a direct result of an attempt by the officer or investigator from whom the actor is fleeing to apprehend the actor while the actor is in flight. Text of subsection as amended by Acts 2011, 82nd Leg., R.S., Ch. 920 (S.B. 1416), Sec. 3 (b) An offense under this section is a Class A misdemeanor, except that the offense is: (1) a state jail felony if the actor has been previously convicted under this section; (2) a felony of the third degree if: (A) the actor uses a vehicle while the actor is in flight; (B) another suffers serious bodily injury as a direct result of an attempt by the officer from whom the actor is fleeing to apprehend the actor while the actor is in flight; or (C) the actor uses a tire deflation device against the officer while the actor is in flight; or (3) a felony of the second degree if: (A) another suffers death as a direct result of an attempt by the officer from whom the actor is fleeing to apprehend the actor while the actor is in flight; or (B) another suffers serious bodily injury as a direct result of the actor's use of a tire deflation device while the actor is in flight. (b-1) Notwithstanding Subsection (b), an offense under this section is a felony of the third degree if it is shown on the trial of the offense that the actor committed the offense in the course of committing an offense under Section 20.05(a)(2). (c) In this section: (1) "Vehicle" has the meaning assigned by Section 541.201, Transportation Code. (2) "Tire deflation device" has the meaning assigned by Section 46.01. (3) "Watercraft" has the meaning assigned by Section 49.01. (d) A person who is subject to prosecution under both this section and another law may be prosecuted under either or both this section and the other law.</p>
+        
+    </div>
+</div>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 38.05. HINDERING APPREHENSION OR PROSECUTION.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if, with intent to hinder the arrest, prosecution, Page -4 -</p>
+        <p>conviction, or punishment of another for an offense or, with intent to hinder the arrest, detention, adjudication, or disposition of a child for engaging in delinquent conduct that violates a penal law of the state, or with intent to hinder the arrest of another under the authority of a warrant or capias, he: (1) harbors or conceals the other; (2) provides or aids in providing the other with any means of avoiding arrest or effecting escape; or (3) warns the other of impending discovery or apprehension. (b) It is a defense to prosecution under Subsection (a)(3) that the warning was given in connection with an effort to bring another into compliance with the law. (c) Except as provided by Subsection (d), an offense under this section is a Class A misdemeanor. (d) An offense under this section is a felony of the third degree if the person who is harbored, concealed, provided with a means of avoiding arrest or effecting escape, or warned of discovery or apprehension is under arrest for, charged with, or convicted of a felony, including an offense under Section 62.102, Code of Criminal Procedure, or is in custody or detention for, is alleged in a petition to have engaged in, or has been adjudicated as having engaged in delinquent conduct that violates a penal law of the grade of felony, including an offense under Section 62.102, Code of Criminal Procedure, and the person charged under this section knew that the person they harbored, concealed, provided with a means of avoiding arrest or effecting escape, or warned of discovery or apprehension is under arrest for, charged with, or convicted of a felony, or is in custody or detention for, is alleged in a petition to have engaged in, or has been adjudicated as having engaged in delinquent conduct that violates a penal law of the grade of felony.</p>
+        
+    </div>
+</div>
 
-actor is in flight and the actor has not been previously convicted under
-this section;
-(2) a felony of the third degree if:
-(A) the actor uses a vehicle or watercraft while the
-actor is in flight and the actor has been previously convicted under this
-section; or
-(B) another suffers serious bodily injury as a direct
-result of an attempt by the officer or investigator from whom the actor
-is fleeing to apprehend the actor while the actor is in flight; or
-(3) a felony of the second degree if another suffers death as
-a direct result of an attempt by the officer or investigator from whom
-the actor is fleeing to apprehend the actor while the actor is in flight.
-Text of subsection as amended by Acts 2011, 82nd Leg., R.S., Ch. 920
-(S.B. 1416), Sec. 3
-(b) An offense under this section is a Class A misdemeanor, except
-that the offense is:
-(1) a state jail felony if the actor has been previously
-convicted under this section;
-(2) a felony of the third degree if:
-(A) the actor uses a vehicle while the actor is in
-flight;
-(B) another suffers serious bodily injury as a direct
-result of an attempt by the officer from whom the actor is fleeing to
-apprehend the actor while the actor is in flight; or
-(C) the actor uses a tire deflation device against the
-officer while the actor is in flight; or
-(3) a felony of the second degree if:
-(A) another suffers death as a direct result of an
-attempt by the officer from whom the actor is fleeing to apprehend the
-actor while the actor is in flight; or
-(B) another suffers serious bodily injury as a direct
-result of the actor's use of a tire deflation device while the actor is
-in flight.
-(b-1) Notwithstanding Subsection (b), an offense under this section
-is a felony of the third degree if it is shown on the trial of the
-offense that the actor committed the offense in the course of committing
-an offense under Section 20.05(a)(2).
-(c) In this section:
-(1) "Vehicle" has the meaning assigned by Section 541.201,
-Transportation Code.
-(2) "Tire deflation device" has the meaning assigned by
-Section 46.01.
-(3) "Watercraft" has the meaning assigned by Section 49.01.
-(d) A person who is subject to prosecution under both this section
-and another law may be prosecuted under either or both this section and
-the other law.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 38.06. ESCAPE.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if the person escapes from custody when the person is: (1) under arrest for, lawfully detained for, charged with, or convicted of an offense; (2) in custody pursuant to a lawful order of a court; (3) detained in a secure detention facility, as that term is defined by Section 51.02, Family Code; or (4) in the custody of a juvenile probation officer for violating an order imposed by the juvenile court under Section 52.01, Family Code. (b) Except as provided in Subsections (c), (d), and (e), an offense under this section is a Class A misdemeanor. (c) An offense under this section is a felony of the third degree if the actor: (1) is under arrest for, charged with, or convicted of a felony; (2) is confined or lawfully detained in a secure correctional facility or law enforcement facility; or (3) is committed to or lawfully detained in a secure correctional facility, as defined by Section 51.02, Family Code, other than a halfway house, operated by or under contract with the Texas Page -5 -</p>
+        <p>Juvenile Justice Department. (d) An offense under this section is a felony of the second degree if the actor to effect his escape causes bodily injury. (e) An offense under this section is a felony of the first degree if to effect his escape the actor: (1) causes serious bodily injury; or (2) uses or threatens to use a deadly weapon.</p>
+        
+    </div>
+</div>
 
-Sec. 38.05. HINDERING APPREHENSION OR PROSECUTION. (a) A person
-commits an offense if, with intent to hinder the arrest, prosecution,
-Page -4 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 38.13. HINDERING PROCEEDINGS BY DISORDERLY CONDUCT.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if he intentionally hinders an official proceeding by noise or violent or tumultuous behavior or disturbance. (b) A person commits an offense if he recklessly hinders an official proceeding by noise or violent or tumultuous behavior or disturbance and continues after explicit official request to desist. (c) An offense under this section is a Class A misdemeanor. Page -14 -</p>
+        
+    </div>
+</div>
 
-
-conviction, or punishment of another for an offense or, with intent to
-hinder the arrest, detention, adjudication, or disposition of a child for
-engaging in delinquent conduct that violates a penal law of the state, or
-with intent to hinder the arrest of another under the authority of a
-warrant or capias, he:
-(1) harbors or conceals the other;
-(2) provides or aids in providing the other with any means of
-avoiding arrest or effecting escape; or
-(3) warns the other of impending discovery or apprehension.
-(b) It is a defense to prosecution under Subsection (a)(3) that the
-warning was given in connection with an effort to bring another into
-compliance with the law.
-(c) Except as provided by Subsection (d), an offense under this
-section is a Class A misdemeanor.
-(d) An offense under this section is a felony of the third degree
-if the person who is harbored, concealed, provided with a means of
-avoiding arrest or effecting escape, or warned of discovery or
-apprehension is under arrest for, charged with, or convicted of a felony,
-including an offense under Section 62.102, Code of Criminal Procedure, or
-is in custody or detention for, is alleged in a petition to have engaged
-in, or has been adjudicated as having engaged in delinquent conduct that
-violates a penal law of the grade of felony, including an offense under
-Section 62.102, Code of Criminal Procedure, and the person charged under
-this section knew that the person they harbored, concealed, provided with
-a means of avoiding arrest or effecting escape, or warned of discovery or
-apprehension is under arrest for, charged with, or convicted of a felony,
-or is in custody or detention for, is alleged in a petition to have
-engaged in, or has been adjudicated as having engaged in delinquent
-conduct that violates a penal law of the grade of felony.
-
-Sec. 38.06. ESCAPE. (a) A person commits an offense if the person
-escapes from custody when the person is:
-(1) under arrest for, lawfully detained for, charged with, or
-convicted of an offense;
-(2) in custody pursuant to a lawful order of a court;
-(3) detained in a secure detention facility, as that term is
-defined by Section 51.02, Family Code; or
-(4) in the custody of a juvenile probation officer for
-violating an order imposed by the juvenile court under Section 52.01,
-Family Code.
-(b) Except as provided in Subsections (c), (d), and (e), an offense
-under this section is a Class A misdemeanor.
-(c) An offense under this section is a felony of the third degree
-if the actor:
-(1) is under arrest for, charged with, or convicted of a
-felony;
-(2) is confined or lawfully detained in a secure correctional
-facility or law enforcement facility; or
-(3) is committed to or lawfully detained in a secure
-correctional facility, as defined by Section 51.02, Family Code, other
-than a halfway house, operated by or under contract with the Texas
-Page -5 -
-
-
-Juvenile Justice Department.
-(d) An offense under this section is a felony of the second degree
-if the actor to effect his escape causes bodily injury.
-(e) An offense under this section is a felony of the first degree
-if to effect his escape the actor:
-(1) causes serious bodily injury; or
-(2) uses or threatens to use a deadly weapon.
-
-Sec. 38.13. HINDERING PROCEEDINGS BY DISORDERLY CONDUCT. (a) A
-person commits an offense if he intentionally hinders an official
-proceeding by noise or violent or tumultuous behavior or disturbance.
-(b) A person commits an offense if he recklessly hinders an
-official proceeding by noise or violent or tumultuous behavior or
-disturbance and continues after explicit official request to desist.
-(c) An offense under this section is a Class A misdemeanor.
-Page -14 -
-
-
-Sec. 38.14. TAKING OR ATTEMPTING TO TAKE WEAPON FROM PEACE OFFICER,
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 38.14. TAKING OR ATTEMPTING TO TAKE WEAPON FROM PEACE OFFICER,
 FEDERAL SPECIAL INVESTIGATOR, EMPLOYEE OR OFFICIAL OF CORRECTIONAL
 FACILITY, PAROLE OFFICER, COMMUNITY SUPERVISION AND CORRECTIONS
-DEPARTMENT OFFICER, OR COMMISSIONED SECURITY OFFICER.
-(a)
-In this
-section:
-(1) "Firearm" has the meanings assigned by Section 46.01.
-(2) "Stun gun" means a device designed to propel darts or
-other projectiles attached to wires that, on contact, will deliver an
-electrical pulse capable of incapacitating a person.
-(3) "Commissioned security officer" has the meaning assigned
-by Section 1702.002(5), Occupations Code.
-(b) A person commits an offense if the person intentionally or
-knowingly and with force takes or attempts to take from a peace officer,
-federal special investigator, employee or official of a correctional
-facility, parole officer, community supervision and corrections
-department officer, or commissioned security officer the officer's,
-investigator's, employee's, or official's firearm, nightstick, stun gun,
-or personal protection chemical dispensing device.
-(c) The actor is presumed to have known that the peace officer,
-federal special investigator, employee or official of a correctional
-facility, parole officer, community supervision and corrections
-department officer, or commissioned security officer was a peace officer,
-federal special investigator, employee or official of a correctional
-facility, parole officer, community supervision and corrections
-department officer, or commissioned security officer if:
-(1) the officer, investigator, employee, or official was
-wearing a distinctive uniform or badge indicating his employment; or
-(2) the
-officer,
-investigator,
-employee,
-or
-official
-identified himself as a peace officer, federal special investigator,
-employee or official of a correctional facility, parole officer,
-community supervision and corrections department officer, or commissioned
-security officer.
-(d) It is a defense to prosecution under this section that the
-defendant took or attempted to take the weapon from a peace officer,
-federal special investigator, employee or official of a correctional
-facility, parole officer, community supervision and corrections
-department officer, or commissioned security officer who was using force
-against the defendant or another in excess of the amount of force
-permitted by law.
-(e) An offense under this section is:
-(1) a felony of the third degree, if the defendant took a
-weapon described by Subsection (b) from an officer, investigator,
-employee, or official described by that subsection; and
-(2) a state jail felony, if the defendant attempted to take a
-weapon described by Subsection (b) from an officer, investigator,
-employee, or official described by that subsection.
+DEPARTMENT OFFICER, OR COMMISSIONED SECURITY OFFICER.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) In this section: (1) "Firearm" has the meanings assigned by Section 46.01. (2) "Stun gun" means a device designed to propel darts or other projectiles attached to wires that, on contact, will deliver an electrical pulse capable of incapacitating a person. (3) "Commissioned security officer" has the meaning assigned by Section 1702.002(5), Occupations Code. (b) A person commits an offense if the person intentionally or knowingly and with force takes or attempts to take from a peace officer, federal special investigator, employee or official of a correctional facility, parole officer, community supervision and corrections department officer, or commissioned security officer the officer's, investigator's, employee's, or official's firearm, nightstick, stun gun, or personal protection chemical dispensing device. (c) The actor is presumed to have known that the peace officer, federal special investigator, employee or official of a correctional facility, parole officer, community supervision and corrections department officer, or commissioned security officer was a peace officer, federal special investigator, employee or official of a correctional facility, parole officer, community supervision and corrections department officer, or commissioned security officer if: (1) the officer, investigator, employee, or official was wearing a distinctive uniform or badge indicating his employment; or (2) the officer, investigator, employee, or official identified himself as a peace officer, federal special investigator, employee or official of a correctional facility, parole officer, community supervision and corrections department officer, or commissioned security officer. (d) It is a defense to prosecution under this section that the defendant took or attempted to take the weapon from a peace officer, federal special investigator, employee or official of a correctional facility, parole officer, community supervision and corrections department officer, or commissioned security officer who was using force against the defendant or another in excess of the amount of force permitted by law. (e) An offense under this section is: (1) a felony of the third degree, if the defendant took a weapon described by Subsection (b) from an officer, investigator, employee, or official described by that subsection; and (2) a state jail felony, if the defendant attempted to take a weapon described by Subsection (b) from an officer, investigator, employee, or official described by that subsection.</p>
+        
+    </div>
+</div>
 
-Sec. 38.15. INTERFERENCE WITH PUBLIC DUTIES. (a) A person commits
-an offense if the person with criminal negligence interrupts, disrupts,
-impedes, or otherwise interferes with:
-Page -15 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 38.15. INTERFERENCE WITH PUBLIC DUTIES.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if the person with criminal negligence interrupts, disrupts, impedes, or otherwise interferes with: Page -15 -</p>
+        <p>(1) a peace officer while the peace officer is performing a duty or exercising authority imposed or granted by law; (2) a person who is employed to provide emergency medical services including the transportation of ill or injured persons while the person is performing that duty; (3) a fire fighter, while the fire fighter is fighting a fire or investigating the cause of a fire; (4) an animal under the supervision of a peace officer, corrections officer, or jailer, if the person knows the animal is being used for law enforcement, corrections, prison or jail security, or investigative purposes; (5) the transmission of a communication over a citizen's band radio channel, the purpose of which communication is to inform or inquire about an emergency; (6) an officer with responsibility for animal control in a county or municipality, while the officer is performing a duty or exercising authority imposed or granted under Chapter 821 or 822, Health and Safety Code; or (7) a person who: (A) has responsibility for assessing, enacting, or enforcing public health, environmental, radiation, or safety measures for the state or a county or municipality; (B) is investigating a particular site as part of the person's responsibilities under Paragraph (A); (C) is acting in accordance with policies and procedures related to the safety and security of the site described by Paragraph (B); and (D) is performing a duty or exercising authority imposed or granted under the Agriculture Code, Health and Safety Code, Occupations Code, or Water Code. (b) An offense under this section is a Class B misdemeanor. (c) It is a defense to prosecution under Subsection (a)(1) that the conduct engaged in by the defendant was intended to warn a person operating a motor vehicle of the presence of a peace officer who was enforcing Subtitle C, Title 7, Transportation Code. (d) It is a defense to prosecution under this section that the interruption, disruption, impediment, or interference alleged consisted of speech only. (d-1) Except as provided by Subsection (d-2), in a prosecution for an offense under Subsection (a)(1), there is a rebuttable presumption that the actor interferes with a peace officer if it is shown on the trial of the offense that the actor intentionally disseminated the home address, home telephone number, emergency contact information, or social security number of the officer or a family member of the officer or any other information that is specifically described by Section 552.117(a), Government Code. (d-2) The presumption in Subsection (d-1) does not apply to information disseminated by: (1) a radio or television station that holds a license issued by the Federal Communications Commission; or (2) a newspaper that is: Page -16 -</p>
+        <p>(A) a free newspaper of general circulation or qualified to publish legal notices; (B) published at least once a week; and (C) available and of interest to the general public. (e) In this section, "emergency" means a condition or circumstance in which an individual is or is reasonably believed by the person transmitting the communication to be in imminent danger of serious bodily injury or in which property is or is reasonably believed by the person transmitting the communication to be in imminent danger of damage or destruction.</p>
+        
+    </div>
+</div>
 
-
-(1) a peace officer while the peace officer is performing a
-duty or exercising authority imposed or granted by law;
-(2) a person who is employed to provide emergency medical
-services including the transportation of ill or injured persons while the
-person is performing that duty;
-(3) a fire fighter, while the fire fighter is fighting a fire
-or investigating the cause of a fire;
-(4) an animal under the supervision of a peace officer,
-corrections officer, or jailer, if the person knows the animal is being
-used for law enforcement, corrections, prison or jail security, or
-investigative purposes;
-(5) the transmission of a communication over a citizen's band
-radio channel, the purpose of which communication is to inform or inquire
-about an emergency;
-(6) an officer with responsibility for animal control in a
-county or municipality, while the officer is performing a duty or
-exercising authority imposed or granted under Chapter 821 or 822, Health
-and Safety Code; or
-(7) a person who:
-(A) has responsibility for assessing, enacting, or
-enforcing public health, environmental, radiation, or safety measures for
-the state or a county or municipality;
-(B) is investigating a particular site as part of the
-person's responsibilities under Paragraph (A);
-(C) is acting in accordance with policies and procedures
-related to the safety and security of the site described by Paragraph
-(B); and
-(D) is performing a duty or exercising authority imposed
-or granted under the Agriculture Code, Health and Safety Code,
-Occupations Code, or Water Code.
-(b) An offense under this section is a Class B misdemeanor.
-(c) It is a defense to prosecution under Subsection (a)(1) that the
-conduct engaged in by the defendant was intended to warn a person
-operating a motor vehicle of the presence of a peace officer who was
-enforcing Subtitle C, Title 7, Transportation Code.
-(d) It is a defense to prosecution under this section that the
-interruption, disruption, impediment, or interference alleged consisted
-of speech only.
-(d-1) Except as provided by Subsection (d-2), in a prosecution for
-an offense under Subsection (a)(1), there is a rebuttable presumption
-that the actor interferes with a peace officer if it is shown on the
-trial of the offense that the actor intentionally disseminated the home
-address, home telephone number, emergency contact information, or social
-security number of the officer or a family member of the officer or any
-other information that is specifically described by Section 552.117(a),
-Government Code.
-(d-2) The presumption in Subsection (d-1) does not apply to
-information disseminated by:
-(1) a radio or television station that holds a license issued
-by the Federal Communications Commission; or
-(2) a newspaper that is:
-Page -16 -
-
-
-(A) a free newspaper of general circulation or qualified
-to publish legal notices;
-(B) published at least once a week; and
-(C) available and of interest to the general public.
-(e) In this section, "emergency" means a condition or circumstance
-in which an individual is or is reasonably believed by the person
-transmitting the communication to be in imminent danger of serious bodily
-injury or in which property is or is reasonably believed by the person
-transmitting the communication to be in imminent danger of damage or
-destruction.
-
-Sec. 38.151. INTERFERENCE WITH POLICE SERVICE ANIMALS.
-(a)
-In
-this section:
-(1) "Area of control" includes a vehicle, trailer, kennel,
-pen, or yard.
-(2) "Handler or rider" means a peace officer, corrections
-officer, or jailer who is specially trained to use a police service
-animal for law enforcement, corrections, prison or jail security, or
-investigative purposes.
-(3) "Police service animal" means a dog, horse, or other
-domesticated animal that is specially trained for use by a handler or
-rider.
-(b) A person commits an offense if the person recklessly:
-(1) taunts, torments, or strikes a police service animal;
-(2) throws an object or substance at a police service animal;
-(3) interferes with or obstructs a police service animal or
-interferes with or obstructs the handler or rider of a police service
-animal in a manner that:
-(A) inhibits or restricts the handler's or rider's
-control of the animal; or
-(B) deprives the handler or rider of control of the
-animal;
-(4) releases a police service animal from its area of control;
-(5) enters the area of control of a police service animal
-without the effective consent of the handler or rider, including placing
-food or any other object or substance into that area;
-(6) injures or kills a police service animal; or
-(7) engages in conduct likely to injure or kill a police
-service animal, including administering or setting a poison, trap, or any
-other object or substance.
-(c) An offense under this section is:
-(1) a Class C misdemeanor if the person commits an offense
-under Subsection (b)(1);
-(2) a Class B misdemeanor if the person commits an offense
-under Subsection (b)(2);
-(3) a Class A misdemeanor if the person commits an offense
-under Subsection (b)(3), (4), or (5);
-(4) except as provided by Subdivision (5), a state jail felony
-if the person commits an offense under Subsection (b)(6) or (7) by
-injuring a police service animal or by engaging in conduct likely to
-injure the animal; or
-Page -17 -
-
-
-(5) a felony of the second degree if the person commits an
-offense under Subsection (b)(6) or (7) by:
-(A) killing a police service animal or engaging in
-conduct likely to kill the animal;
-(B) injuring a police service animal in a manner that
-materially and permanently affects the ability of the animal to perform
-as a police service animal; or
-(C) engaging in conduct likely to injure a police service
-animal in a manner that would materially and permanently affect the
-ability of the animal to perform as a police service animal.
-
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 38.151. INTERFERENCE WITH POLICE SERVICE ANIMALS.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) In this section: (1) "Area of control" includes a vehicle, trailer, kennel, pen, or yard. (2) "Handler or rider" means a peace officer, corrections officer, or jailer who is specially trained to use a police service animal for law enforcement, corrections, prison or jail security, or investigative purposes. (3) "Police service animal" means a dog, horse, or other domesticated animal that is specially trained for use by a handler or rider. (b) A person commits an offense if the person recklessly: (1) taunts, torments, or strikes a police service animal; (2) throws an object or substance at a police service animal; (3) interferes with or obstructs a police service animal or interferes with or obstructs the handler or rider of a police service animal in a manner that: (A) inhibits or restricts the handler's or rider's control of the animal; or (B) deprives the handler or rider of control of the animal; (4) releases a police service animal from its area of control; (5) enters the area of control of a police service animal without the effective consent of the handler or rider, including placing food or any other object or substance into that area; (6) injures or kills a police service animal; or (7) engages in conduct likely to injure or kill a police service animal, including administering or setting a poison, trap, or any other object or substance. (c) An offense under this section is: (1) a Class C misdemeanor if the person commits an offense under Subsection (b)(1); (2) a Class B misdemeanor if the person commits an offense under Subsection (b)(2); (3) a Class A misdemeanor if the person commits an offense under Subsection (b)(3), (4), or (5); (4) except as provided by Subdivision (5), a state jail felony if the person commits an offense under Subsection (b)(6) or (7) by injuring a police service animal or by engaging in conduct likely to injure the animal; or Page -17 -</p>
+        <p>(5) a felony of the second degree if the person commits an offense under Subsection (b)(6) or (7) by: (A) killing a police service animal or engaging in conduct likely to kill the animal; (B) injuring a police service animal in a manner that materially and permanently affects the ability of the animal to perform as a police service animal; or (C) engaging in conduct likely to injure a police service animal in a manner that would materially and permanently affect the ability of the animal to perform as a police service animal.</p>
+        
+    </div>
+</div>
 `
     },
 
     {
         category: 'Penal Code',
         title: "Chapter 39 - Abuse of Office (Selected Sections)",
-        content: `Sec. 39.01. DEFINITIONS. In this chapter:
-(1) "Law relating to a public servant's office or employment"
-means a law that specifically applies to a person acting in the capacity
-of a public servant and that directly or indirectly:
-(A) imposes a duty on the public servant; or
-(B) governs the conduct of the public servant.
-(2) "Misuse" means to deal with property contrary to:
-(A) an agreement under which the public servant holds the
-property;
-(B) a contract of employment or oath of office of a
-public servant;
-(C) a
-law,
-including
-provisions
-of
-the
-General
-Appropriations Act specifically relating to government property, that
-prescribes the manner of custody or disposition of the property; or
-(D) a limited purpose for which the property is delivered
-or received.
+        content: `<h2>Chapter 39 - Chapter 39 - Abuse of Office (Selected Sections)</h2>
 
-Sec. 39.02. ABUSE OF OFFICIAL CAPACITY.
-(a)
-A public servant
-commits an offense if, with intent to obtain a benefit or with intent to
-harm or defraud another, he intentionally or knowingly:
-(1) violates a law relating to the public servant's office or
-employment; or
-(2) misuses government property, services, personnel, or any
-other thing of value belonging to the government that has come into the
-public servant's custody or possession by virtue of the public servant's
-office or employment.
-(b) An offense under Subsection (a)(1) is a Class A misdemeanor.
-(c) An offense under Subsection (a)(2) is:
-(1) a Class C misdemeanor if the value of the use of the thing
-misused is less than $100;
-(2) a Class B misdemeanor if the value of the use of the thing
-misused is $100 or more but less than $750;
-(3) a Class A misdemeanor if the value of the use of the thing
-misused is $750 or more but less than $2,500;
-(4) a state jail felony if the value of the use of the thing
-misused is $2,500 or more but less than $30,000;
-(5) a felony of the third degree if the value of the use of
-the thing misused is $30,000 or more but less than $150,000;
-(6) a felony of the second degree if the value of the use of
-the thing misused is $150,000 or more but less than $300,000; or
-(7) a felony of the first degree if the value of the use of
-Page - 1 -
+<div style="background: rgba(79, 195, 247, 0.15); padding: 20px; margin: 20px 0; border-left: 4px solid #4fc3f7;">
+    <h3 style="margin-top: 0;">📋 Chapter Summary</h3>
+    <p style="font-size: 16px;"><strong>Abuse of office - Selected sections covering official misconduct.</strong></p>
+    
+    <h4>Key Points to Study:</h4>
+    <ul>
+        <li>Abuse of official capacity</li>
+        <li>Misuse of official information</li>
+        <li>Official oppression</li>
+        <li>Bribery and improper influence</li>
+    </ul>
+</div>
 
+<hr style="border: 1px solid #4fc3f7; margin: 30px 0;">
 
-the thing misused is $300,000 or more.
-(d) A discount or award given for travel, such as frequent flyer
-miles, rental car or hotel discounts, or food coupons, are not things of
-value belonging to the government for purposes of this section due to the
-administrative difficulty and cost involved in recapturing the discount
-or award for a governmental entity.
-(e) If separate transactions that violate Subsection (a)(2) are
-conducted pursuant to one scheme or continuing course of conduct, the
-conduct may be considered as one offense and the value of the use of the
-things misused in the transactions may be aggregated in determining the
-classification of the offense.
-(f) The value of the use of a thing of value misused under
-Subsection (a)(2) may not exceed:
-(1) the fair market value of the thing at the time of the
-offense; or
-(2) if the fair market value of the thing cannot be
-ascertained, the cost of replacing the thing within a reasonable time
-after the offense.
+<h3>Sections</h3>
 
-Sec. 39.03. OFFICIAL OPPRESSION.
-(a)
-A public servant acting
-under color of his office or employment commits an offense if he:
-(1) intentionally subjects another to mistreatment or to
-arrest, detention, search, seizure, dispossession, assessment, or lien
-that he knows is unlawful;
-(2) intentionally denies or impedes another in the exercise or
-enjoyment of any right, privilege, power, or immunity, knowing his
-conduct is unlawful; or
-(3) intentionally subjects another to sexual harassment.
-(b) For purposes of this section, a public servant acts under color
-of his office or employment if he acts or purports to act in an official
-capacity or takes advantage of such actual or purported capacity.
-(c) In this section, "sexual harassment" means unwelcome sexual
-advances, requests for sexual favors, or other verbal or physical conduct
-of a sexual nature, submission to which is made a term or condition of a
-person's exercise or enjoyment of any right, privilege, power, or
-immunity, either explicitly or implicitly.
-(d) An offense under this section is a Class A misdemeanor, except
-that an offense is a felony of the third degree if the public servant
-acted with the intent to impair the accuracy of data reported to the
-Texas Education Agency through the Public Education Information
-Management System (PEIMS) described by Sections 48.008 and 48.009,
-Education Code, under a law requiring that reporting.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 39.01. DEFINITIONS.</h4>
+    <div style="line-height: 1.8;">
+        <p>In this chapter: (1) "Law relating to a public servant's office or employment" means a law that specifically applies to a person acting in the capacity of a public servant and that directly or indirectly: (A) imposes a duty on the public servant; or (B) governs the conduct of the public servant. (2) "Misuse" means to deal with property contrary to: (A) an agreement under which the public servant holds the property; (B) a contract of employment or oath of office of a public servant; (C) a law, including provisions of the General Appropriations Act specifically relating to government property, that prescribes the manner of custody or disposition of the property; or (D) a limited purpose for which the property is delivered or received.</p>
+        
+    </div>
+</div>
 
-Sec. 39.04. VIOLATIONS OF THE CIVIL RIGHTS OF PERSON IN CUSTODY;
-IMPROPER SEXUAL ACTIVITY WITH PERSON IN CUSTODY OR UNDER SUPERVISION.
-(a) An official of a correctional facility or juvenile facility, an
-employee of a correctional facility or juvenile facility, a person other
-than an employee who works for compensation at a correctional facility or
-juvenile facility, a volunteer at a correctional facility or juvenile
-facility, or a peace officer commits an offense if the person
-intentionally:
-Page -2 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 39.02. ABUSE OF OFFICIAL CAPACITY.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A public servant commits an offense if, with intent to obtain a benefit or with intent to harm or defraud another, he intentionally or knowingly: (1) violates a law relating to the public servant's office or employment; or (2) misuses government property, services, personnel, or any other thing of value belonging to the government that has come into the public servant's custody or possession by virtue of the public servant's office or employment. (b) An offense under Subsection (a)(1) is a Class A misdemeanor. (c) An offense under Subsection (a)(2) is: (1) a Class C misdemeanor if the value of the use of the thing misused is less than $100; (2) a Class B misdemeanor if the value of the use of the thing misused is $100 or more but less than $750; (3) a Class A misdemeanor if the value of the use of the thing misused is $750 or more but less than $2,500; (4) a state jail felony if the value of the use of the thing misused is $2,500 or more but less than $30,000; (5) a felony of the third degree if the value of the use of the thing misused is $30,000 or more but less than $150,000; (6) a felony of the second degree if the value of the use of the thing misused is $150,000 or more but less than $300,000; or (7) a felony of the first degree if the value of the use of Page - 1 -</p>
+        <p>the thing misused is $300,000 or more. (d) A discount or award given for travel, such as frequent flyer miles, rental car or hotel discounts, or food coupons, are not things of value belonging to the government for purposes of this section due to the administrative difficulty and cost involved in recapturing the discount or award for a governmental entity. (e) If separate transactions that violate Subsection (a)(2) are conducted pursuant to one scheme or continuing course of conduct, the conduct may be considered as one offense and the value of the use of the things misused in the transactions may be aggregated in determining the classification of the offense. (f) The value of the use of a thing of value misused under Subsection (a)(2) may not exceed: (1) the fair market value of the thing at the time of the offense; or (2) if the fair market value of the thing cannot be ascertained, the cost of replacing the thing within a reasonable time after the offense.</p>
+        
+    </div>
+</div>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 39.03. OFFICIAL OPPRESSION.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A public servant acting under color of his office or employment commits an offense if he: (1) intentionally subjects another to mistreatment or to arrest, detention, search, seizure, dispossession, assessment, or lien that he knows is unlawful; (2) intentionally denies or impedes another in the exercise or enjoyment of any right, privilege, power, or immunity, knowing his conduct is unlawful; or (3) intentionally subjects another to sexual harassment. (b) For purposes of this section, a public servant acts under color of his office or employment if he acts or purports to act in an official capacity or takes advantage of such actual or purported capacity. (c) In this section, "sexual harassment" means unwelcome sexual advances, requests for sexual favors, or other verbal or physical conduct of a sexual nature, submission to which is made a term or condition of a person's exercise or enjoyment of any right, privilege, power, or immunity, either explicitly or implicitly. (d) An offense under this section is a Class A misdemeanor, except that an offense is a felony of the third degree if the public servant acted with the intent to impair the accuracy of data reported to the Texas Education Agency through the Public Education Information Management System (PEIMS) described by Sections 48.008 and 48.009, Education Code, under a law requiring that reporting.</p>
+        
+    </div>
+</div>
 
-(1) denies or impedes a person in custody in the exercise or
-enjoyment of any right, privilege, or immunity knowing his conduct is
-unlawful; or
-(2) engages in sexual contact, sexual intercourse, or deviate
-sexual intercourse with an individual in custody or, in the case of an
-individual in the custody of the Texas Juvenile Justice Department or
-placed in a juvenile facility, employs, authorizes, or induces the
-individual to engage in sexual conduct or a sexual performance.
-Text of subsection as amended by Acts 2021, 87th Leg., R.S., Ch. 895
-(H.B. 3157), Sec. 1
-(b) An offense under Subsection (a)(1) is a felony of the third
-degree. An offense under Subsection (a)(2) is a felony of the second
-degree, except that an offense under Subsection (a)(2) is a felony of the
-first degree if the offense is committed against:
-(1) an individual in the custody of the Texas Juvenile Justice
-Department or placed in a juvenile facility; or
-(2) a juvenile offender detained in or committed to a
-correctional facility.
-Text of subsection as amended by Acts 2021, 87th Leg., R.S., Ch. 939
-(S.B. 312), Sec. 1
-(b) An
-offense
-under
-Subsection
-(a)(1)
-is
-a
-Class
-A
-misdemeanor. An offense under Subsection (a)(2) is a felony of the
-second degree.
-(c) This section shall not preclude prosecution for any other
-offense set out in this code.
-(d) The Attorney General of Texas shall have concurrent
-jurisdiction with law enforcement agencies to investigate violations of
-this statute involving serious bodily injury or death.
-(e) In this section:
-Text of subdivision as amended by Acts 2015, 84th Leg., R.S., Ch. 216
-(H.B. 511), Sec. 1
-(1)
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 39.04. VIOLATIONS OF THE CIVIL RIGHTS OF PERSON IN CUSTODY;
+IMPROPER SEXUAL ACTIVITY WITH PERSON IN CUSTODY OR UNDER SUPERVISION.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) An official of a correctional facility or juvenile facility, an employee of a correctional facility or juvenile facility, a person other than an employee who works for compensation at a correctional facility or juvenile facility, a volunteer at a correctional facility or juvenile facility, or a peace officer commits an offense if the person intentionally: Page -2 -</p>
+        <p>(1) denies or impedes a person in custody in the exercise or enjoyment of any right, privilege, or immunity knowing his conduct is unlawful; or (2) engages in sexual contact, sexual intercourse, or deviate sexual intercourse with an individual in custody or, in the case of an individual in the custody of the Texas Juvenile Justice Department or placed in a juvenile facility, employs, authorizes, or induces the individual to engage in sexual conduct or a sexual performance. Text of subsection as amended by Acts 2021, 87th Leg., R.S., Ch. 895 (H.B. 3157), Sec. 1 (b) An offense under Subsection (a)(1) is a felony of the third degree. An offense under Subsection (a)(2) is a felony of the second degree, except that an offense under Subsection (a)(2) is a felony of the first degree if the offense is committed against: (1) an individual in the custody of the Texas Juvenile Justice Department or placed in a juvenile facility; or (2) a juvenile offender detained in or committed to a correctional facility. Text of subsection as amended by Acts 2021, 87th Leg., R.S., Ch. 939 (S.B. 312), Sec. 1 (b) An offense under Subsection (a)(1) is a Class A misdemeanor. An offense under Subsection (a)(2) is a felony of the second degree. (c) This section shall not preclude prosecution for any other offense set out in this code. (d) The Attorney General of Texas shall have concurrent jurisdiction with law enforcement agencies to investigate violations of this statute involving serious bodily injury or death. (e) In this section: Text of subdivision as amended by Acts 2015, 84th Leg., R.S., Ch. 216 (H.B. 511), Sec. 1 (1)</p>
+        <p>"Correctional facility" means: (A) any place described by Section 1.07(a)(14); (B) any place or facility designated for the detention of a person suspected of violating a provision of the Immigration and Nationality Act (8 U.S.C. Section 1101 et seq.); or (C) a "secure correctional facility" or "secure detention facility" as defined by Section 51.02, Family Code. Text of subdivision as amended by Acts 2015, 84th Leg., R.S., Ch. 1136 (S.B. 183), Sec. 2 (1) "Correctional facility" means any place described by Section 1.07(a)(14). (2) "Custody" means the detention, arrest, or confinement of Page -3 -</p>
+        <p>an adult offender, the detention of a juvenile offender, or the commitment of a juvenile offender to a correctional facility or juvenile facility. (2-a) "Juvenile facility" means: (A) a facility operated by the Texas Juvenile Justice Department or a private vendor under a contract with the Texas Juvenile Justice Department; or (B) a facility for the detention or placement of juveniles under juvenile court jurisdiction and that is operated wholly or partly by a juvenile board or another governmental unit or by a private vendor under a contract with the juvenile board or governmental unit. (3) "Sexual contact," "sexual intercourse," and "deviate sexual intercourse" have the meanings assigned by Section 21.01. (4) "Sexual conduct" and "performance" have the meanings assigned by Section 43.25. (5) "Sexual performance" means any performance or part thereof that includes sexual conduct by an individual. (f) An employee of the Texas Department of Criminal Justice, the Texas Juvenile Justice Department, a juvenile facility, a local juvenile probation department, or a community supervision and corrections department established under Chapter 76, Government Code, a person other than an employee who works for compensation at a juvenile facility or local juvenile probation department, or a volunteer at a juvenile facility or local juvenile probation department commits an offense if the actor engages in sexual contact, sexual intercourse, or deviate sexual intercourse with an individual who the actor knows is under the supervision of the Texas Department of Criminal Justice, Texas Juvenile Justice Department, probation department, or community supervision and corrections department but not in the custody of the Texas Department of Criminal Justice, Texas Juvenile Justice Department, probation department, or community supervision and corrections department. (g) An offense under Subsection (f) is a state jail felony. (h) It is an affirmative defense to prosecution under Subsection (f) that the actor was the spouse of the individual at the time of the offense.</p>
+        
+    </div>
+</div>
 
-"Correctional facility" means:
-(A) any place described by Section 1.07(a)(14);
-(B) any place or facility designated for the detention of
-a person suspected of violating a provision of the Immigration and
-Nationality Act (8 U.S.C. Section 1101 et seq.); or
-(C) a "secure correctional facility" or "secure detention
-facility" as defined by Section 51.02, Family Code.
-Text of subdivision as amended by Acts 2015, 84th Leg., R.S., Ch. 1136
-(S.B. 183), Sec. 2
-(1) "Correctional facility" means any place described by
-Section 1.07(a)(14).
-(2) "Custody" means the detention, arrest, or confinement of
-Page -3 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 39.06. MISUSE OF OFFICIAL INFORMATION.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A public servant commits an offense if, in reliance on information to which the public servant has access by virtue of the person's office or employment and that has not been made public, the person: (1) acquires or aids another to acquire a pecuniary interest in any property, transaction, or enterprise that may be affected by the information; (2) speculates or aids another to speculate on the basis of the information; or (3) as a public servant, including as a school administrator, coerces another into suppressing or failing to report that information to a law enforcement agency. (b) A public servant commits an offense if with intent to obtain a benefit or with intent to harm or defraud another, he discloses or uses information for a nongovernmental purpose that: (1) he has access to by means of his office or employment; and (2) has not been made public. (c) A person commits an offense if, with intent to obtain a benefit or with intent to harm or defraud another, he solicits or receives from a public servant information that: (1) the public servant has access to by means of his office or employment; and (2) has not been made public. (d) In this section, "information that has not been made public" means any information to which the public does not generally have access, and that is prohibited from disclosure under Chapter 552, Government Code. (e) Except as provided by Subsection (f), an offense under this section is a felony of the third degree. (f) An offense under Subsection (a)(3) is a Class C misdemeanor. Page -5 -</p>
+        
+    </div>
+</div>
 
-
-an adult offender, the detention of a juvenile offender, or the
-commitment of a juvenile offender to a correctional facility or juvenile
-facility.
-(2-a) "Juvenile facility" means:
-(A) a facility operated by the Texas Juvenile Justice
-Department or a private vendor under a contract with the Texas Juvenile
-Justice Department; or
-(B) a facility for the detention or placement of
-juveniles under juvenile court jurisdiction and that is operated wholly
-or partly by a juvenile board or another governmental unit or by a
-private vendor under a contract with the juvenile board or governmental
-unit.
-(3) "Sexual contact," "sexual intercourse," and "deviate
-sexual intercourse" have the meanings assigned by Section 21.01.
-(4) "Sexual conduct" and "performance" have the meanings
-assigned by Section 43.25.
-(5) "Sexual performance" means any performance or part thereof
-that includes sexual conduct by an individual.
-(f) An employee of the Texas Department of Criminal Justice, the
-Texas Juvenile Justice Department, a juvenile facility, a local juvenile
-probation department, or a community supervision and corrections
-department established under Chapter 76, Government Code, a person other
-than an employee who works for compensation at a juvenile facility or
-local juvenile probation department, or a volunteer at a juvenile
-facility or local juvenile probation department commits an offense if the
-actor engages in sexual contact, sexual intercourse, or deviate sexual
-intercourse with an individual who the actor knows is under the
-supervision of the Texas Department of Criminal Justice, Texas Juvenile
-Justice Department, probation department, or community supervision and
-corrections department but not in the custody of the Texas Department of
-Criminal
-Justice,
-Texas
-Juvenile
-Justice
-Department,
-probation
-department, or community supervision and corrections department.
-(g) An offense under Subsection (f) is a state jail felony.
-(h) It is an affirmative defense to prosecution under Subsection
-(f) that the actor was the spouse of the individual at the time of the
-offense.
-
-Sec. 39.06. MISUSE OF OFFICIAL INFORMATION. (a) A public servant
-commits an offense if, in reliance on information to which the public
-servant has access by virtue of the person's office or employment and
-that has not been made public, the person:
-(1) acquires or aids another to acquire a pecuniary interest
-in any property, transaction, or enterprise that may be affected by the
-information;
-(2) speculates or aids another to speculate on the basis of
-the information; or
-(3) as a public servant, including as a school administrator,
-coerces another into suppressing or failing to report that information to
-a law enforcement agency.
-(b) A public servant commits an offense if with intent to obtain a
-benefit or with intent to harm or defraud another, he discloses or uses
-information for a nongovernmental purpose that:
-(1) he has access to by means of his office or employment;
-and
-(2) has not been made public.
-(c) A person commits an offense if, with intent to obtain a benefit
-or with intent to harm or defraud another, he solicits or receives from a
-public servant information that:
-(1) the public servant has access to by means of his office or
-employment; and
-(2) has not been made public.
-(d) In this section, "information that has not been made public"
-means any information to which the public does not generally have access,
-and that is prohibited from disclosure under Chapter 552, Government
-Code.
-(e) Except as provided by Subsection (f), an offense under this
-section is a felony of the third degree.
-(f) An offense under Subsection (a)(3) is a Class C misdemeanor.
-Page -5 -
-
-
-Sec. 39.07. FAILURE TO COMPLY WITH IMMIGRATION DETAINER REQUEST.
-(a) A person who is a sheriff, chief of police, or constable or a person
-who otherwise has primary authority for administering a jail commits an
-offense if the person:
-(1) has custody of a person subject to an immigration detainer
-request issued by United States Immigration and Customs Enforcement; and
-(2) knowingly fails to comply with the detainer request.
-(b) An offense under this section is a Class A misdemeanor.
-(c) It is an exception to the application of this section that the
-person who was subject to an immigration detainer request described by
-Subsection (a)(1) had provided proof that the person is a citizen of the
-United States or that the person has lawful immigration status in the
-United States, such as a Texas driver's license or similar governmentissued identification.
-
-Page -6 -
-
-
-PENAL CODE
-TITLE 9. OFFENSES AGAINST PUBLIC ORDER AND DECENCY
-
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 39.07. FAILURE TO COMPLY WITH IMMIGRATION DETAINER REQUEST.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person who is a sheriff, chief of police, or constable or a person who otherwise has primary authority for administering a jail commits an offense if the person: (1) has custody of a person subject to an immigration detainer request issued by United States Immigration and Customs Enforcement; and (2) knowingly fails to comply with the detainer request. (b) An offense under this section is a Class A misdemeanor. (c) It is an exception to the application of this section that the person who was subject to an immigration detainer request described by Subsection (a)(1) had provided proof that the person is a citizen of the United States or that the person has lawful immigration status in the United States, such as a Texas driver's license or similar governmentissued identification.</p>
+        <p>PENAL CODE TITLE 9. OFFENSES AGAINST PUBLIC ORDER AND DECENCY</p>
+        
+    </div>
+</div>
 `
     },
 
     {
         category: 'Penal Code',
         title: "Chapter 42 - Disorderly Conduct (Selected Sections)",
-        content: `Sec. 42.01. DISORDERLY CONDUCT. (a) A person commits an offense
-if he intentionally or knowingly:
-(1) uses abusive, indecent, profane, or vulgar language in a
-public place, and the language by its very utterance tends to incite an
-immediate breach of the peace;
-(2) makes an offensive gesture or display in a public place,
-and the gesture or display tends to incite an immediate breach of the
-peace;
-(3) creates, by chemical means, a noxious and unreasonable
-odor in a public place;
-(4) abuses or threatens a person in a public place in an
-obviously offensive manner;
-(5) makes unreasonable noise in a public place other than a
-sport shooting range, as defined by Section 250.001, Local Government
-Code, or in or near a private residence that he has no right to occupy;
-(6) fights with another in a public place;
-(7) discharges a firearm in a public place other than a public
-road or a sport shooting range, as defined by Section 250.001, Local
-Government Code;
-(8) displays a firearm or other deadly weapon in a public
-place in a manner calculated to alarm;
-(9) discharges a firearm on or across a public road;
-(10) exposes his anus or genitals in a public place and is
-reckless about whether another may be present who will be offended or
-alarmed by his act; or
-(11) for a lewd or unlawful purpose:
-(A) enters on the property of another and looks into a
-dwelling on the property through any window or other opening in the
-dwelling;
-(B) while on the premises of a hotel or comparable
-establishment, looks into a guest room not the person's own through a
-window or other opening in the room; or
-(C) while on the premises of a public place, looks into
-an area such as a restroom or shower stall or changing or dressing room
-that is designed to provide privacy to a person using the area.
-(a-1) For purposes of Subsection (a), the term "public place"
-includes a public school campus or the school grounds on which a public
-school is located.
-(b) It is a defense to prosecution under Subsection (a)(4) that the
-actor had significant provocation for his abusive or threatening conduct.
-(c) For purposes of this section:
-(1) an act is deemed to occur in a public place or near a
-private residence if it produces its offensive or proscribed consequences
-in the public place or near a private residence; and
-(2) a noise is presumed to be unreasonable if the noise
-exceeds a decibel level of 85 after the person making the noise receives
-notice from a magistrate or peace officer that the noise is a public
-Page - 1 -
+        content: `<h2>Chapter 42 - Chapter 42 - Disorderly Conduct (Selected Sections)</h2>
 
+<div style="background: rgba(79, 195, 247, 0.15); padding: 20px; margin: 20px 0; border-left: 4px solid #4fc3f7;">
+    <h3 style="margin-top: 0;">📋 Chapter Summary</h3>
+    <p style="font-size: 16px;"><strong>Disorderly conduct and related public order offenses - Selected sections.</strong></p>
+    
+    <h4>Key Points to Study:</h4>
+    <ul>
+        <li>Disorderly conduct: Fighting, noise, offensive language</li>
+        <li>Riot and unlawful assembly</li>
+        <li>Harassment</li>
+        <li>False alarm or report</li>
+        <li>Public intoxication</li>
+    </ul>
+</div>
 
-nuisance.
-(d) An offense under this section is a Class C misdemeanor unless
-committed under Subsection (a)(7) or (a)(8), in which event it is a Class
-B misdemeanor.
-(e) It is a defense to prosecution for an offense under Subsection
-(a)(7) or (9) that the person who discharged the firearm had a reasonable
-fear of bodily injury to the person or to another by a dangerous wild
-animal as defined by Section 822.101, Health and Safety Code.
-(e-1) Subsection (a)(9) does not apply to a person who, at the time
-the person engaged in conduct prohibited under that subdivision, was an
-employee of the Parks and Wildlife Department acting within the scope of
-the employee's authority under Section 12.013(c), Parks and Wildlife
-Code.
-(f) Subsections (a)(1), (2), (3), (5), and (6) do not apply to a
-person who, at the time the person engaged in conduct prohibited under
-the applicable subdivision, was a student younger than 12 years of age,
-and the prohibited conduct occurred at a public school campus during
-regular school hours.
-(g) Noise arising from space flight activities, as defined by
-Section 100A.001, Civil Practice and Remedies Code, if lawfully
-conducted, does not constitute "unreasonable noise" for purposes of this
-section.
+<hr style="border: 1px solid #4fc3f7; margin: 30px 0;">
 
-Sec. 42.02. RIOT. (a) For the purpose of this section, "riot"
-means the assemblage of seven or more persons resulting in conduct which:
-(1) creates an immediate danger of damage to property or
-injury to persons;
-(2) substantially
-obstructs
-law
-enforcement
-or
-other
-governmental functions or services; or
-(3) by force, threat of force, or physical action deprives any
-person of a legal right or disturbs any person in the enjoyment of a
-legal right.
-(b) A person commits an offense if he knowingly participates in a
-riot.
-(c) It is a defense to prosecution under this section that the
-assembly was at first lawful and when one of those assembled manifested
-an intent to engage in conduct enumerated in Subsection (a), the actor
-retired from the assembly.
-(d) It is no defense to prosecution under this section that another
-who was a party to the riot has been acquitted, has not been arrested,
-prosecuted, or convicted, has been convicted of a different offense or of
-a different type or class of offense, or is immune from prosecution.
-(e) Except as provided in Subsection (f), an offense under this
-section is a Class B misdemeanor.
-(f) An offense under this section is an offense of the same
-classification as any offense of a higher grade committed by anyone
-engaged in the riot if the offense was:
-(1) in the furtherance of the purpose of the assembly; or
-(2) an offense which should have been anticipated as a result
-of the assembly.
+<h3>Sections</h3>
 
-Sec. 42.03.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 42.01. DISORDERLY CONDUCT.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if he intentionally or knowingly: (1) uses abusive, indecent, profane, or vulgar language in a public place, and the language by its very utterance tends to incite an immediate breach of the peace; (2) makes an offensive gesture or display in a public place, and the gesture or display tends to incite an immediate breach of the peace; (3) creates, by chemical means, a noxious and unreasonable odor in a public place; (4) abuses or threatens a person in a public place in an obviously offensive manner; (5) makes unreasonable noise in a public place other than a sport shooting range, as defined by Section 250.001, Local Government Code, or in or near a private residence that he has no right to occupy; (6) fights with another in a public place; (7) discharges a firearm in a public place other than a public road or a sport shooting range, as defined by Section 250.001, Local Government Code; (8) displays a firearm or other deadly weapon in a public place in a manner calculated to alarm; (9) discharges a firearm on or across a public road; (10) exposes his anus or genitals in a public place and is reckless about whether another may be present who will be offended or alarmed by his act; or (11) for a lewd or unlawful purpose: (A) enters on the property of another and looks into a dwelling on the property through any window or other opening in the dwelling; (B) while on the premises of a hotel or comparable establishment, looks into a guest room not the person's own through a window or other opening in the room; or (C) while on the premises of a public place, looks into an area such as a restroom or shower stall or changing or dressing room that is designed to provide privacy to a person using the area. (a-1) For purposes of Subsection (a), the term "public place" includes a public school campus or the school grounds on which a public school is located. (b) It is a defense to prosecution under Subsection (a)(4) that the actor had significant provocation for his abusive or threatening conduct. (c) For purposes of this section: (1) an act is deemed to occur in a public place or near a private residence if it produces its offensive or proscribed consequences in the public place or near a private residence; and (2) a noise is presumed to be unreasonable if the noise exceeds a decibel level of 85 after the person making the noise receives notice from a magistrate or peace officer that the noise is a public Page - 1 -</p>
+        <p>nuisance. (d) An offense under this section is a Class C misdemeanor unless committed under Subsection (a)(7) or (a)(8), in which event it is a Class B misdemeanor. (e) It is a defense to prosecution for an offense under Subsection (a)(7) or (9) that the person who discharged the firearm had a reasonable fear of bodily injury to the person or to another by a dangerous wild animal as defined by Section 822.101, Health and Safety Code. (e-1) Subsection (a)(9) does not apply to a person who, at the time the person engaged in conduct prohibited under that subdivision, was an employee of the Parks and Wildlife Department acting within the scope of the employee's authority under Section 12.013(c), Parks and Wildlife Code. (f) Subsections (a)(1), (2), (3), (5), and (6) do not apply to a person who, at the time the person engaged in conduct prohibited under the applicable subdivision, was a student younger than 12 years of age, and the prohibited conduct occurred at a public school campus during regular school hours. (g) Noise arising from space flight activities, as defined by Section 100A.001, Civil Practice and Remedies Code, if lawfully conducted, does not constitute "unreasonable noise" for purposes of this section.</p>
+        
+    </div>
+</div>
 
-OBSTRUCTING HIGHWAY OR OTHER PASSAGEWAY.
-Page -2 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 42.02. RIOT.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) For the purpose of this section, "riot" means the assemblage of seven or more persons resulting in conduct which: (1) creates an immediate danger of damage to property or injury to persons; (2) substantially obstructs law enforcement or other governmental functions or services; or (3) by force, threat of force, or physical action deprives any person of a legal right or disturbs any person in the enjoyment of a legal right. (b) A person commits an offense if he knowingly participates in a riot. (c) It is a defense to prosecution under this section that the assembly was at first lawful and when one of those assembled manifested an intent to engage in conduct enumerated in Subsection (a), the actor retired from the assembly. (d) It is no defense to prosecution under this section that another who was a party to the riot has been acquitted, has not been arrested, prosecuted, or convicted, has been convicted of a different offense or of a different type or class of offense, or is immune from prosecution. (e) Except as provided in Subsection (f), an offense under this section is a Class B misdemeanor. (f) An offense under this section is an offense of the same classification as any offense of a higher grade committed by anyone engaged in the riot if the offense was: (1) in the furtherance of the purpose of the assembly; or (2) an offense which should have been anticipated as a result of the assembly.</p>
+        
+    </div>
+</div>
 
-(a)
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 42.03.
 
-A person
+OBSTRUCTING HIGHWAY OR OTHER PASSAGEWAY.</h4>
+    <div style="line-height: 1.8;">
+        <p>commits an offense if, without legal privilege or authority, he intentionally, knowingly, or recklessly: (1) obstructs a highway, street, sidewalk, railway, waterway, elevator, aisle, hallway, entrance, or exit to which the public or a substantial group of the public has access, or any other place used for the passage of persons, vehicles, or conveyances, regardless of the means of creating the obstruction and whether the obstruction arises from his acts alone or from his acts and the acts of others; or (2) disobeys a reasonable request or order to move issued by a person the actor knows to be or is informed is a peace officer, a fireman, or a person with authority to control the use of the premises: (A) to prevent obstruction of a highway or any of those areas mentioned in Subdivision (1); or (B) to maintain public safety by dispersing those gathered in dangerous proximity to a fire, riot, or other hazard. (b) For purposes of this section, "obstruct" means to render impassable or to render passage unreasonably inconvenient or hazardous. (c) Except as otherwise provided by Subsections (c-1), (d), and (e), an offense under this section is a Class B misdemeanor. (c-1) An offense under this section is a state jail felony if, in committing the offense, the actor knowingly: (1) prevents the passage of an authorized emergency vehicle, as defined by Section 541.201, Transportation Code, that is operating the vehicle's emergency audible or visual signals required by Section 546.003, Transportation Code; or (2) obstructs access to a hospital licensed under Chapter 241, Health and Safety Code, or other health care facility that provides emergency medical care, as defined by Section 773.003, Health and Safety Code. (d) Subject to Subsection (e), an offense under this section is a Class A misdemeanor if it is shown on the trial of the offense that, at the time of the offense, the person was operating a motor vehicle while engaging in a reckless driving exhibition. (e) An offense under this section is a state jail felony if it is shown on the trial of the offense that, at the time of the offense, the person was operating a motor vehicle while engaging in a reckless driving exhibition, and: (1) the person has previously been convicted of an offense punishable under Subsection (d); (2) at the time of the offense, the person was operating a motor vehicle while intoxicated, as defined by Section 49.01; or (3) a person suffered bodily injury as a result of the offense. (f) For purposes of this section, "reckless driving exhibition" means an operator of a motor vehicle, on a highway or street and in the presence of two or more persons assembled for the purpose of spectating the conduct, intentionally: (1) breaking the traction of the vehicle's rear tires; (2) spinning the vehicle's rear tires continuously by pressing the accelerator and increasing the engine speed; and (3) steering the vehicle in a manner designed to rotate the vehicle. Page -3 -</p>
+        <p>(g) If conduct that constitutes an offense under this section also constitutes an offense under any other law, the actor may be prosecuted under this section or the other law, but not both.</p>
+        
+    </div>
+</div>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 42.04. DEFENSE WHEN CONDUCT CONSISTS OF SPEECH OR OTHER
+EXPRESSION.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) If conduct that would otherwise violate Section 42.01(a)(5) (Unreasonable Noise), 42.03 (Obstructing Passageway), or 42.055 (Funeral Service Disruptions) consists of speech or other communication, of gathering with others to hear or observe such speech or communication, or of gathering with others to picket or otherwise express in a nonviolent manner a position on social, economic, political, or religious questions, the actor must be ordered to move, disperse, or otherwise remedy the violation prior to his arrest if he has not yet intentionally harmed the interests of others which those sections seek to protect. (b) The order required by this section may be given by a peace officer, a fireman, a person with authority to control the use of the premises, or any person directly affected by the violation. (c) It is a defense to prosecution under Section 42.01(a)(5), 42.03, or 42.055: (1) that in circumstances in which this section requires an order no order was given; (2) that an order, if given, was manifestly unreasonable in scope; or (3) that an order, if given, was promptly obeyed.</p>
+        
+    </div>
+</div>
 
-commits an offense if, without legal privilege or authority, he
-intentionally, knowingly, or recklessly:
-(1) obstructs a highway, street, sidewalk, railway, waterway,
-elevator, aisle, hallway, entrance, or exit to which the public or a
-substantial group of the public has access, or any other place used for
-the passage of persons, vehicles, or conveyances, regardless of the means
-of creating the obstruction and whether the obstruction arises from his
-acts alone or from his acts and the acts of others; or
-(2) disobeys a reasonable request or order to move issued by a
-person the actor knows to be or is informed is a peace officer, a
-fireman, or a person with authority to control the use of the premises:
-(A) to prevent obstruction of a highway or any of those
-areas mentioned in Subdivision (1); or
-(B) to maintain public safety by dispersing those
-gathered in dangerous proximity to a fire, riot, or other hazard.
-(b) For purposes of this section, "obstruct" means to render
-impassable or to render passage unreasonably inconvenient or hazardous.
-(c) Except as otherwise provided by Subsections (c-1), (d), and
-(e), an offense under this section is a Class B misdemeanor.
-(c-1) An offense under this section is a state jail felony if, in
-committing the offense, the actor knowingly:
-(1) prevents the passage of an authorized emergency vehicle,
-as defined by Section 541.201, Transportation Code, that is operating the
-vehicle's emergency audible or visual signals required by Section
-546.003, Transportation Code; or
-(2) obstructs access to a hospital licensed under Chapter 241,
-Health and Safety Code, or other health care facility that provides
-emergency medical care, as defined by Section 773.003, Health and Safety
-Code.
-(d) Subject to Subsection (e), an offense under this section is a
-Class A misdemeanor if it is shown on the trial of the offense that, at
-the time of the offense, the person was operating a motor vehicle while
-engaging in a reckless driving exhibition.
-(e) An offense under this section is a state jail felony if it is
-shown on the trial of the offense that, at the time of the offense, the
-person was operating a motor vehicle while engaging in a reckless driving
-exhibition, and:
-(1) the person has previously been convicted of an offense
-punishable under Subsection (d);
-(2) at the time of the offense, the person was operating a
-motor vehicle while intoxicated, as defined by Section 49.01; or
-(3) a person suffered bodily injury as a result of the
-offense.
-(f) For purposes of this section, "reckless driving exhibition"
-means an operator of a motor vehicle, on a highway or street and in the
-presence of two or more persons assembled for the purpose of spectating
-the conduct, intentionally:
-(1) breaking the traction of the vehicle's rear tires;
-(2) spinning the vehicle's rear tires continuously by pressing
-the accelerator and increasing the engine speed; and
-(3) steering the vehicle in a manner designed to rotate the
-vehicle.
-Page -3 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 42.05. DISRUPTING MEETING OR PROCESSION.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if, with intent to prevent or disrupt a lawful meeting, procession, or gathering, he obstructs or interferes with the meeting, procession, or gathering by physical action or verbal utterance. (b) An offense under this section is a Class B misdemeanor.</p>
+        
+    </div>
+</div>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 42.06. FALSE ALARM OR REPORT.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if he knowingly initiates, communicates or circulates a report of a present, past, or future bombing, fire, offense, or other emergency that he knows is false or baseless and that would ordinarily: (1) cause action by an official or volunteer agency organized to deal with emergencies; (2) place a person in fear of imminent serious bodily injury; or (3) prevent or interrupt the occupation of a building, room, place of assembly, place to which the public has access, or aircraft, automobile, or other mode of conveyance. (b) An offense under this section is a Class A misdemeanor unless the false report is of an emergency involving a public or private institution of higher education or involving a public primary or secondary school, public communications, public transportation, public water, gas, or power supply or other public service, in which event the offense is a state jail felony.</p>
+        
+    </div>
+</div>
 
-(g) If conduct that constitutes an offense under this section also
-constitutes an offense under any other law, the actor may be prosecuted
-under this section or the other law, but not both.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 42.062. INTERFERENCE WITH EMERGENCY REQUEST FOR ASSISTANCE.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) An individual commits an offense if the individual knowingly prevents or interferes with another individual's ability to place an emergency call or to request assistance, including a request for assistance using an electronic communications device, in an emergency from a law enforcement agency, medical facility, or other agency or entity the primary purpose of which is to provide for the safety of individuals. (b) An individual commits an offense if the individual recklessly renders unusable an electronic communications device, including a telephone, that would otherwise be used by another individual to place an emergency call or to request assistance in an emergency from a law enforcement agency, medical facility, or other agency or entity the primary purpose of which is to provide for the safety of individuals. (c) An offense under this section is a Class A misdemeanor, except that the offense is a state jail felony if the actor has previously been convicted under this section. (d) In this section, "emergency" means a condition or circumstance in which any individual is or is reasonably believed by the individual making a call or requesting assistance to be in fear of imminent assault or in which property is or is reasonably believed by the individual making the call or requesting assistance to be in imminent danger of damage or destruction.</p>
+        
+    </div>
+</div>
 
-Sec. 42.04. DEFENSE WHEN CONDUCT CONSISTS OF SPEECH OR OTHER
-EXPRESSION.
-(a)
-If conduct that would otherwise violate Section
-42.01(a)(5) (Unreasonable Noise), 42.03 (Obstructing Passageway), or
-42.055 (Funeral Service Disruptions) consists of speech or other
-communication, of gathering with others to hear or observe such speech or
-communication, or of gathering with others to picket or otherwise express
-in a nonviolent manner a position on social, economic, political, or
-religious questions, the actor must be ordered to move, disperse, or
-otherwise remedy the violation prior to his arrest if he has not yet
-intentionally harmed the interests of others which those sections seek to
-protect.
-(b) The order required by this section may be given by a peace
-officer, a fireman, a person with authority to control the use of the
-premises, or any person directly affected by the violation.
-(c) It is a defense to prosecution under Section 42.01(a)(5),
-42.03, or 42.055:
-(1) that in circumstances in which this section requires an
-order no order was given;
-(2) that an order, if given, was manifestly unreasonable in
-scope; or
-(3) that an order, if given, was promptly obeyed.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 42.07. HARASSMENT.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if, with intent to harass, annoy, alarm, abuse, torment, or embarrass another, the person: (1) initiates communication and in the course of the communication makes a comment, request, suggestion, or proposal that is obscene; (2) threatens, in a manner reasonably likely to alarm the person receiving the threat, to inflict bodily injury on the person or to commit a felony against the person, a member of the person's family or household, or the person's property; (3) conveys, in a manner reasonably likely to alarm the person receiving the report, a false report, which is known by the conveyor to be false, that another person has suffered death or serious bodily Page -6 -</p>
+        <p>(4) causes the telephone of another to ring repeatedly or makes repeated telephone communications anonymously or in a manner reasonably likely to harass, annoy, alarm, abuse, torment, embarrass, or offend another; (5) makes a telephone call and intentionally fails to hang up or disengage the connection; (6) knowingly permits a telephone under the person's control to be used by another to commit an offense under this section; (7) sends repeated electronic communications in a manner reasonably likely to harass, annoy, alarm, abuse, torment, embarrass, or offend another; (8) publishes on an Internet website, including a social media platform, repeated electronic communications in a manner reasonably likely to cause emotional distress, abuse, or torment to another person, unless the communications are made in connection with a matter of public concern; or Text of subdivision as added by Acts 2023, 88th Leg., R.S., Ch. 839 (H.B. 2715), Sec. 7 (9) tracks or monitors the personal property or motor vehicle of another person, without the other person's effective consent, including by: (A) using a tracking application on the person's personal electronic device or using a tracking device; or (B) physically following the other person or causing any person to physically follow the other person Text of subdivision as added by Acts 2023, 88th Leg., R.S., Ch. 1118 (H.B. 1427), Sec. 1 (9) makes obscene, intimidating, or threatening telephone calls or other electronic communications from a temporary or disposable telephone number provided by an Internet application or other technological means. (b) In this section: (1) "Electronic communication" means a transfer of signs, signals, writing, images, sounds, data, or intelligence of any nature transmitted in whole or in part by a wire, radio, electromagnetic, photoelectronic, or photo-optical system. The term includes: (A) a communication initiated through the use of electronic mail, instant message, network call, a cellular or other type of telephone, a computer, a camera, text message, a social media platform or application, an Internet website, any other Internet-based communication tool, or facsimile machine; and (B) a communication made to a pager. (2) "Family" and "household" have the meaning assigned by</p>
+        
+    </div>
+</div>
 
-Sec. 42.05. DISRUPTING MEETING OR PROCESSION.
-(a)
-A person
-commits an offense if, with intent to prevent or disrupt a lawful
-meeting, procession, or gathering, he obstructs or interferes with the
-meeting, procession, or gathering by physical action or verbal utterance.
-(b) An offense under this section is a Class B misdemeanor.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 42.072. STALKING.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if the person, on more than one occasion and pursuant to the same scheme or course of conduct that is directed at a specific other person, knowingly engages in conduct that: (1) constitutes an offense under Section 42.07, or that the actor knows or reasonably should know the other person will regard as threatening: (A) bodily injury or death for the other person; or (B) that an offense will be committed against: (i) a member of the other person's family or household; (ii) an individual with whom the other person has a dating relationship; or (iii) the other person's property; (2) causes the other person, a member of the other person's family or household, or an individual with whom the other person has a dating relationship: (A) to be placed in fear of bodily injury or death or in fear that an offense will be committed against the other person, a member of the other person's family or household, or an individual with whom the other person has a dating relationship, or the other person's property; or (B) to feel harassed, terrified, intimidated, annoyed, Page -8 -</p>
+        <p>alarmed, abused, tormented, embarrassed, or offended; and (3) would cause a reasonable person under circumstances similar to the circumstances of the other person to: (A) fear bodily injury or death for the person; (B) fear that an offense will be committed against a member of the person's family or household or an individual with whom the person has a dating relationship; (C) fear that an offense will be committed against the person's property; or (D) feel harassed, terrified, intimidated, annoyed, alarmed, abused, tormented, embarrassed, or offended. (b) An offense under this section is a felony of the third degree, except that the offense is a felony of the second degree if the actor has previously been convicted of an offense under this section or of an offense under any of the following laws that contains elements that are substantially similar to the elements of an offense under this section: (1) the laws of another state; (2) the laws of a federally recognized Indian tribe; (3) the laws of a territory of the United States; or (4) federal law. (c) For purposes of this section, a trier of fact may find that different types of conduct described by Subsection (a), if engaged in on more than one occasion, constitute conduct that is engaged in pursuant to the same scheme or course of conduct. (d) In this section: (1) "Dating relationship," "family," "household," and "member of a household" have the meanings assigned by Chapter 71, Family Code. (2) "Property" includes a pet, companion animal, or assistance animal, as defined by Section 121.002, Human Resources Code.</p>
+        
+    </div>
+</div>
 
-Sec. 42.06. FALSE ALARM OR REPORT.
-(a)
-A person commits an
-offense if he knowingly initiates, communicates or circulates a report of
-a present, past, or future bombing, fire, offense, or other emergency
-that he knows is false or baseless and that would ordinarily:
-(1) cause action by an official or volunteer agency organized
-to deal with emergencies;
-(2) place a person in fear of imminent serious bodily injury;
-or
-(3) prevent or interrupt the occupation of a building, room,
-place of assembly, place to which the public has access, or aircraft,
-automobile, or other mode of conveyance.
-(b) An offense under this section is a Class A misdemeanor unless
-the false report is of an emergency involving a public or private
-institution of higher education or involving a public primary or
-secondary school, public communications, public transportation, public
-water, gas, or power supply or other public service, in which event the
-offense is a state jail felony.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 42.12. DISCHARGE OF FIREARM IN CERTAIN MUNICIPALITIES.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if the person recklessly discharges a firearm inside the corporate limits of a municipality having a population of 100,000 or more. (b) An offense under this section is a Class A misdemeanor. (c) If conduct constituting an offense under this section also constitutes an offense under another section of this code, the person may be prosecuted under either section. Page -16 -</p>
+        <p>(d) Subsection (a) does not affect the authority of a municipality to enact an ordinance which prohibits the discharge of a firearm.</p>
+        
+    </div>
+</div>
 
-Sec. 42.062. INTERFERENCE WITH EMERGENCY REQUEST FOR ASSISTANCE.
-(a) An individual commits an offense if the individual knowingly
-prevents or interferes with another individual's ability to place an
-emergency call or to request assistance, including a request for
-assistance using an electronic communications device, in an emergency
-from a law enforcement agency, medical facility, or other agency or
-entity the primary purpose of which is to provide for the safety of
-individuals.
-(b) An individual commits an offense if the individual recklessly
-renders unusable an electronic communications device, including a
-telephone, that would otherwise be used by another individual to place an
-emergency call or to request assistance in an emergency from a law
-enforcement agency, medical facility, or other agency or entity the
-primary purpose of which is to provide for the safety of individuals.
-(c) An offense under this section is a Class A misdemeanor, except
-that the offense is a state jail felony if the actor has previously been
-convicted under this section.
-(d) In this section, "emergency" means a condition or circumstance
-in which any individual is or is reasonably believed by the individual
-making a call or requesting assistance to be in fear of imminent assault
-or in which property is or is reasonably believed by the individual
-making the call or requesting assistance to be in imminent danger of
-damage or destruction.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 42.13. USE OF LASER POINTERS.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if the person knowingly directs a light from a laser pointer at a uniformed safety officer, including a peace officer, security guard, firefighter, emergency medical service worker, or other uniformed municipal, state, or federal officer. (b) In this section, "laser pointer" means a device that emits a visible light amplified by the stimulated emission of radiation. (c) An offense under this section is a Class C misdemeanor, except that the offense is: (1) a felony of the third degree if the conduct causes bodily injury to the officer; or (2) a felony of the first degree if the conduct causes serious bodily injury to the officer. (d) If conduct that constitutes an offense under this section also constitutes an offense under any other law, the actor may be prosecuted under this section or the other law, but not both.</p>
+        
+    </div>
+</div>
 
-Sec. 42.07. HARASSMENT. (a) A person commits an offense if, with
-intent to harass, annoy, alarm, abuse, torment, or embarrass another, the
-person:
-(1) initiates communication and in the course of the
-communication makes a comment, request, suggestion, or proposal that is
-obscene;
-(2) threatens, in a manner reasonably likely to alarm the
-person receiving the threat, to inflict bodily injury on the person or to
-commit a felony against the person, a member of the person's family or
-household, or the person's property;
-(3) conveys, in a manner reasonably likely to alarm the person
-receiving the report, a false report, which is known by the conveyor to
-be false, that another person has suffered death or serious bodily
-Page -6 -
-
-
-injury;
-
-(4) causes the telephone of another to ring repeatedly or
-makes repeated telephone communications anonymously or in a manner
-reasonably likely to harass, annoy, alarm, abuse, torment, embarrass, or
-offend another;
-(5) makes a telephone call and intentionally fails to hang up
-or disengage the connection;
-(6) knowingly permits a telephone under the person's control
-to be used by another to commit an offense under this section;
-(7) sends repeated electronic communications in a manner
-reasonably likely to harass, annoy, alarm, abuse, torment, embarrass, or
-offend another;
-(8) publishes on an Internet website, including a social media
-platform, repeated electronic communications in a manner reasonably
-likely to cause emotional distress, abuse, or torment to another person,
-unless the communications are made in connection with a matter of public
-concern; or
-Text of subdivision as added by Acts 2023, 88th Leg., R.S., Ch. 839
-(H.B. 2715), Sec. 7
-(9) tracks or monitors the personal property or motor vehicle
-of another person, without the other person's effective consent,
-including by:
-(A) using a tracking application on the person's personal
-electronic device or using a tracking device; or
-(B) physically following the other person or causing any
-person to physically follow the other person
-Text of subdivision as added by Acts 2023, 88th Leg., R.S., Ch. 1118
-(H.B. 1427), Sec. 1
-(9) makes obscene, intimidating, or threatening telephone
-calls or other electronic communications from a temporary or disposable
-telephone number provided by an Internet application or other
-technological means.
-(b) In this section:
-(1) "Electronic communication" means a transfer of signs,
-signals, writing, images, sounds, data, or intelligence of any nature
-transmitted in whole or in part by a wire, radio, electromagnetic,
-photoelectronic, or photo-optical system. The term includes:
-(A) a communication initiated through the use of
-electronic mail, instant message, network call, a cellular or other type
-of telephone, a computer, a camera, text message, a social media platform
-or application, an Internet website, any other Internet-based
-communication tool, or facsimile machine; and
-(B) a communication made to a pager.
-(2) "Family" and "household" have the meaning assigned by
-
-Sec. 42.072. STALKING. (a) A person commits an offense if the
-person, on more than one occasion and pursuant to the same scheme or
-course of conduct that is directed at a specific other person, knowingly
-engages in conduct that:
-(1) constitutes an offense under Section 42.07, or that the
-actor knows or reasonably should know the other person will regard as
-threatening:
-(A) bodily injury or death for the other person; or
-(B) that an offense will be committed against:
-(i) a member of the other person's family or
-household;
-(ii) an individual with whom the other person has a
-dating relationship; or
-(iii) the other person's property;
-(2) causes the other person, a member of the other person's
-family or household, or an individual with whom the other person has a
-dating relationship:
-(A) to be placed in fear of bodily injury or death or in
-fear that an offense will be committed against the other person, a member
-of the other person's family or household, or an individual with whom the
-other person has a dating relationship, or the other person's property;
-or
-(B) to feel harassed, terrified, intimidated, annoyed,
-Page -8 -
-
-
-alarmed, abused, tormented, embarrassed, or offended; and
-(3) would cause a reasonable person under circumstances
-similar to the circumstances of the other person to:
-(A) fear bodily injury or death for the person;
-(B) fear that an offense will be committed against a
-member of the person's family or household or an individual with whom the
-person has a dating relationship;
-(C) fear that an offense will be committed against the
-person's property; or
-(D) feel harassed, terrified, intimidated, annoyed,
-alarmed, abused, tormented, embarrassed, or offended.
-(b) An offense under this section is a felony of the third degree,
-except that the offense is a felony of the second degree if the actor has
-previously been convicted of an offense under this section or of an
-offense under any of the following laws that contains elements that are
-substantially similar to the elements of an offense under this section:
-(1) the laws of another state;
-(2) the laws of a federally recognized Indian tribe;
-(3) the laws of a territory of the United States; or
-(4) federal law.
-(c) For purposes of this section, a trier of fact may find that
-different types of conduct described by Subsection (a), if engaged in on
-more than one occasion, constitute conduct that is engaged in pursuant to
-the same scheme or course of conduct.
-(d) In this section:
-(1) "Dating relationship," "family," "household," and "member
-of a household" have the meanings assigned by Chapter 71, Family Code.
-(2) "Property" includes a pet, companion animal, or assistance
-animal, as defined by Section 121.002, Human Resources Code.
-
-Sec. 42.12. DISCHARGE OF FIREARM IN CERTAIN MUNICIPALITIES. (a) A
-person commits an offense if the person recklessly discharges a firearm
-inside the corporate limits of a municipality having a population of
-100,000 or more.
-(b) An offense under this section is a Class A misdemeanor.
-(c) If conduct constituting an offense under this section also
-constitutes an offense under another section of this code, the person may
-be prosecuted under either section.
-Page -16 -
-
-
-(d) Subsection (a) does not affect the authority of a municipality
-to enact an ordinance which prohibits the discharge of a firearm.
-
-Sec. 42.13. USE OF LASER POINTERS.
-(a)
-A person commits an
-offense if the person knowingly directs a light from a laser pointer at a
-uniformed safety officer, including a peace officer, security guard,
-firefighter, emergency medical service worker, or other uniformed
-municipal, state, or federal officer.
-(b) In this section, "laser pointer" means a device that emits a
-visible light amplified by the stimulated emission of radiation.
-(c) An offense under this section is a Class C misdemeanor, except
-that the offense is:
-(1) a felony of the third degree if the conduct causes bodily
-injury to the officer; or
-(2) a felony of the first degree if the conduct causes serious
-bodily injury to the officer.
-(d) If conduct that constitutes an offense under this section also
-constitutes an offense under any other law, the actor may be prosecuted
-under this section or the other law, but not both.
-
-Sec. 42.14. ILLUMINATION OF AIRCRAFT BY INTENSE LIGHT.
-(a)
-A
-person commits an offense if:
-(1) the person intentionally directs a light from a laser
-pointer or other light source at an aircraft; and
-(2) the light has an intensity sufficient to impair the
-operator's ability to control the aircraft.
-(b) It is an affirmative defense to prosecution under this section
-that the actor was using the light to send an emergency distress signal.
-(c) An offense under this section is a Class C misdemeanor unless
-the intensity of the light impairs the operator's ability to control the
-aircraft, in which event the offense is a Class A misdemeanor.
-(d) If conduct that constitutes an offense under this section also
-constitutes an offense under any other law, the actor may be prosecuted
-under this section or the other law.
-(e) In this section, "laser pointer" has the meaning assigned by
-Section 42.13.
-
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 42.14. ILLUMINATION OF AIRCRAFT BY INTENSE LIGHT.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if: (1) the person intentionally directs a light from a laser pointer or other light source at an aircraft; and (2) the light has an intensity sufficient to impair the operator's ability to control the aircraft. (b) It is an affirmative defense to prosecution under this section that the actor was using the light to send an emergency distress signal. (c) An offense under this section is a Class C misdemeanor unless the intensity of the light impairs the operator's ability to control the aircraft, in which event the offense is a Class A misdemeanor. (d) If conduct that constitutes an offense under this section also constitutes an offense under any other law, the actor may be prosecuted under this section or the other law. (e) In this section, "laser pointer" has the meaning assigned by Section 42.13.</p>
+        
+    </div>
+</div>
 `
     },
 
     {
         category: 'Penal Code',
         title: "Chapter 49 - Intoxication Offenses (Selected Sections)",
-        content: `Sec. 49.01. DEFINITIONS. In this chapter:
-(1) "Alcohol concentration" means the number of grams of
-alcohol per:
-(A) 210 liters of breath;
-(B) 100 milliliters of blood; or
-(C) 67 milliliters of urine.
-(2) "Intoxicated" means:
-(A) not having the normal use of mental or physical
-faculties by reason of the introduction of alcohol, a controlled
-substance, a drug, a dangerous drug, a combination of two or more of
-those substances, or any other substance into the body; or
-(B) having an alcohol concentration of 0.08 or more.
-(3) "Motor vehicle" has the meaning assigned by Section
-32.34(a).
-(4) "Watercraft" means a vessel, one or more water skis, an
-aquaplane, or another device used for transporting or carrying a person
-on water, other than a device propelled only by the current of water.
-(5) "Amusement ride" has the meaning assigned by Section
-2151.002, Occupations Code.
-(6) "Mobile amusement ride" has the meaning assigned by
-Section 2151.002, Occupations Code.
+        content: `<h2>Chapter 49 - Chapter 49 - Intoxication Offenses (Selected Sections)</h2>
 
-Sec. 49.02. PUBLIC INTOXICATION. (a) A person commits an offense
-if the person appears in a public place while intoxicated to the degree
-that the person may endanger the person or another.
-(a-1) For the purposes of this section, a premises licensed or
-permitted under the Alcoholic Beverage Code is a public place.
-(b) It is a defense to prosecution under this section that the
-alcohol or other substance was administered for therapeutic purposes and
-as a part of the person's professional medical treatment by a licensed
-physician.
-(c) Except as provided by Subsection (e), an offense under this
-section is a Class C misdemeanor.
-(d) An offense under this section is not a lesser included offense
-under Section 49.04.
-(e) An offense under this section committed by a person younger
-than 21 years of age is punishable in the same manner as if the minor
-committed an offense to which Section 106.071, Alcoholic Beverage Code,
-applies.
+<div style="background: rgba(79, 195, 247, 0.15); padding: 20px; margin: 20px 0; border-left: 4px solid #4fc3f7;">
+    <h3 style="margin-top: 0;">📋 Chapter Summary</h3>
+    <p style="font-size: 16px;"><strong>Intoxication offenses - Selected sections covering DWI and related crimes.</strong></p>
+    
+    <h4>Key Points to Study:</h4>
+    <ul>
+        <li>DWI: Operating vehicle while intoxicated</li>
+        <li>Intoxication assault: DWI causing serious injury</li>
+        <li>Intoxication manslaughter: DWI causing death</li>
+        <li>Public intoxication</li>
+        <li>Enhanced penalties for prior convictions</li>
+    </ul>
+</div>
 
-Sec. 49.031. POSSESSION OF ALCOHOLIC BEVERAGE IN MOTOR VEHICLE.
-In this section:
-(1) "Open container" means a bottle, can, or other receptacle
-that contains any amount of alcoholic beverage and that is open, that has
-been opened, that has a broken seal, or the contents of which are
-partially removed.
-(2) "Passenger area of a motor vehicle" means the area of a
-motor vehicle designed for the seating of the operator and passengers of
-(a)
+<hr style="border: 1px solid #4fc3f7; margin: 30px 0;">
 
-Page - 1 -
+<h3>Sections</h3>
 
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 49.01. DEFINITIONS.</h4>
+    <div style="line-height: 1.8;">
+        <p>In this chapter: (1) "Alcohol concentration" means the number of grams of alcohol per: (A) 210 liters of breath; (B) 100 milliliters of blood; or (C) 67 milliliters of urine. (2) "Intoxicated" means: (A) not having the normal use of mental or physical faculties by reason of the introduction of alcohol, a controlled substance, a drug, a dangerous drug, a combination of two or more of those substances, or any other substance into the body; or (B) having an alcohol concentration of 0.08 or more. (3) "Motor vehicle" has the meaning assigned by Section 32.34(a). (4) "Watercraft" means a vessel, one or more water skis, an aquaplane, or another device used for transporting or carrying a person on water, other than a device propelled only by the current of water. (5) "Amusement ride" has the meaning assigned by Section 2151.002, Occupations Code. (6) "Mobile amusement ride" has the meaning assigned by Section 2151.002, Occupations Code.</p>
+        
+    </div>
+</div>
 
-the vehicle.
-is locked;
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 49.02. PUBLIC INTOXICATION.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if the person appears in a public place while intoxicated to the degree that the person may endanger the person or another. (a-1) For the purposes of this section, a premises licensed or permitted under the Alcoholic Beverage Code is a public place. (b) It is a defense to prosecution under this section that the alcohol or other substance was administered for therapeutic purposes and as a part of the person's professional medical treatment by a licensed physician. (c) Except as provided by Subsection (e), an offense under this section is a Class C misdemeanor. (d) An offense under this section is not a lesser included offense under Section 49.04. (e) An offense under this section committed by a person younger than 21 years of age is punishable in the same manner as if the minor committed an offense to which Section 106.071, Alcoholic Beverage Code, applies.</p>
+        
+    </div>
+</div>
 
-The term does not include:
-(A) a glove compartment or similar storage container that
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 49.031. POSSESSION OF ALCOHOLIC BEVERAGE IN MOTOR VEHICLE.</h4>
+    <div style="line-height: 1.8;">
+        <p>In this section: (1) "Open container" means a bottle, can, or other receptacle that contains any amount of alcoholic beverage and that is open, that has been opened, that has a broken seal, or the contents of which are partially removed. (2) "Passenger area of a motor vehicle" means the area of a motor vehicle designed for the seating of the operator and passengers of (a)</p>
+        <p>the vehicle. is locked;</p>
+        <p>The term does not include: (A) a glove compartment or similar storage container that</p>
+        <p>(B) the trunk of a vehicle; or (C) the area behind the last upright seat of the vehicle, if the vehicle does not have a trunk. (3) "Public highway" means the entire width between and immediately adjacent to the boundary lines of any public road, street, highway, interstate, or other publicly maintained way if any part is open for public use for the purpose of motor vehicle travel. The term includes the right-of-way of a public highway. (b) A person commits an offense if the person knowingly possesses an open container in a passenger area of a motor vehicle that is located on a public highway, regardless of whether the vehicle is being operated or is stopped or parked. Possession by a person of one or more open containers in a single criminal episode is a single offense. (c) It is an exception to the application of Subsection (b) that at the time of the offense the defendant was a passenger in: (1) the passenger area of a motor vehicle designed, maintained, or used primarily for the transportation of persons for compensation, including a bus, taxicab, or limousine; or (2) the living quarters of a motorized house coach or motorized house trailer, including a self-contained camper, a motor home, or a recreational vehicle. (d) An offense under this section is a Class C misdemeanor. (e) A peace officer charging a person with an offense under this section, instead of taking the person before a magistrate, shall issue to the person a written citation and notice to appear that contains the time and place the person must appear before a magistrate, the name and address of the person charged, and the offense charged. If the person makes a written promise to appear before the magistrate by signing in duplicate the citation and notice to appear issued by the officer, the officer shall release the person.</p>
+        
+    </div>
+</div>
 
-(B) the trunk of a vehicle; or
-(C) the area behind the last upright seat of the vehicle,
-if the vehicle does not have a trunk.
-(3) "Public highway" means the entire width between and
-immediately adjacent to the boundary lines of any public road, street,
-highway, interstate, or other publicly maintained way if any part is open
-for public use for the purpose of motor vehicle travel.
-The term
-includes the right-of-way of a public highway.
-(b) A person commits an offense if the person knowingly possesses
-an open container in a passenger area of a motor vehicle that is located
-on a public highway, regardless of whether the vehicle is being operated
-or is stopped or parked. Possession by a person of one or more open
-containers in a single criminal episode is a single offense.
-(c) It is an exception to the application of Subsection (b) that at
-the time of the offense the defendant was a passenger in:
-(1) the passenger area of a motor vehicle designed,
-maintained, or used primarily for the transportation of persons for
-compensation, including a bus, taxicab, or limousine; or
-(2) the living quarters of a motorized house coach or
-motorized house trailer, including a self-contained camper, a motor home,
-or a recreational vehicle.
-(d) An offense under this section is a Class C misdemeanor.
-(e) A peace officer charging a person with an offense under this
-section, instead of taking the person before a magistrate, shall issue to
-the person a written citation and notice to appear that contains the time
-and place the person must appear before a magistrate, the name and
-address of the person charged, and the offense charged. If the person
-makes a written promise to appear before the magistrate by signing in
-duplicate the citation and notice to appear issued by the officer, the
-officer shall release the person.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 49.04. DRIVING WHILE INTOXICATED.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if the person is intoxicated while operating a motor vehicle in a public place. (b) Except as provided by Subsections (c) and (d) and Section 49.09, an offense under this section is a Class B misdemeanor, with a minimum term of confinement of 72 hours. (c) If it is shown on the trial of an offense under this section that at the time of the offense the person operating the motor vehicle had an open container of alcohol in the person's immediate possession, the offense is a Class B misdemeanor, with a minimum term of confinement of six days. (d) If it is shown on the trial of an offense under this section that an analysis of a specimen of the person's blood, breath, or urine showed an alcohol concentration level of 0.15 or more at the time the analysis was performed, the offense is a Class A misdemeanor.</p>
+        
+    </div>
+</div>
 
-Sec. 49.04. DRIVING WHILE INTOXICATED. (a) A person commits an
-offense if the person is intoxicated while operating a motor vehicle in a
-public place.
-(b) Except as provided by Subsections (c) and (d) and Section
-49.09, an offense under this section is a Class B misdemeanor, with a
-minimum term of confinement of 72 hours.
-(c) If it is shown on the trial of an offense under this section
-that at the time of the offense the person operating the motor vehicle
-had an open container of alcohol in the person's immediate possession,
-the offense is a Class B misdemeanor, with a minimum term of confinement
-of six days.
-(d) If it is shown on the trial of an offense under this section
-that an analysis of a specimen of the person's blood, breath, or urine
-showed an alcohol concentration level of 0.15 or more at the time the
-analysis was performed, the offense is a Class A misdemeanor.
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 49.045.
 
-Sec. 49.045.
+DRIVING WHILE INTOXICATED WITH CHILD PASSENGER.</h4>
+    <div style="line-height: 1.8;">
+        <p>A person commits an offense if: (1) the person is intoxicated while operating a motor vehicle in a public place; and (2) the vehicle being operated by the person is occupied by a passenger who is younger than 15 years of age. (b) An offense under this section is a state jail felony.</p>
+        
+    </div>
+</div>
 
-DRIVING WHILE INTOXICATED WITH CHILD PASSENGER.
-Page -2 -
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 49.07. INTOXICATION ASSAULT.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if the person, by accident or mistake: (1) while operating an aircraft, watercraft, or amusement ride while intoxicated, or while operating a motor vehicle in a public place while intoxicated, by reason of that intoxication causes serious bodily injury to another; or (2) as a result of assembling a mobile amusement ride while intoxicated causes serious bodily injury to another. (b) In this section, "serious bodily injury" means injury that creates a substantial risk of death or that causes serious permanent disfigurement or protracted loss or impairment of the function of any Page -3 -</p>
+        <p>bodily member or organ. (c) Except as provided by Section 49.09, an offense under this section is a felony of the third degree.</p>
+        
+    </div>
+</div>
 
-(a)
-
-
-A person commits an offense if:
-(1) the person is intoxicated while operating a motor vehicle
-in a public place; and
-(2) the vehicle being operated by the person is occupied by a
-passenger who is younger than 15 years of age.
-(b) An offense under this section is a state jail felony.
-
-Sec. 49.07. INTOXICATION ASSAULT. (a) A person commits an offense
-if the person, by accident or mistake:
-(1) while operating an aircraft, watercraft, or amusement ride
-while intoxicated, or while operating a motor vehicle in a public place
-while intoxicated, by reason of that intoxication causes serious bodily
-injury to another; or
-(2) as a result of assembling a mobile amusement ride while
-intoxicated causes serious bodily injury to another.
-(b) In this section, "serious bodily injury" means injury that
-creates a substantial risk of death or that causes serious permanent
-disfigurement or protracted loss or impairment of the function of any
-Page -3 -
-
-
-bodily member or organ.
-(c) Except as provided by Section 49.09, an offense under this
-section is a felony of the third degree.
-
-Sec. 49.08. INTOXICATION MANSLAUGHTER. (a) A person commits an
-offense if the person:
-(1) operates a motor vehicle in a public place, operates an
-aircraft, a watercraft, or an amusement ride, or assembles a mobile
-amusement ride; and
-(2) is intoxicated and by reason of that intoxication causes
-the death of another by accident or mistake.
-(b) Except as provided by Section 49.09, an offense under this
-section is a felony of the second degree.
-
+<div style="background: rgba(45, 45, 48, 0.8); padding: 20px; margin: 15px 0; border-left: 3px solid #4ec9b0; border-radius: 5px;">
+    <h4 style="color: #4fc3f7; margin-top: 0;">Sec. 49.08. INTOXICATION MANSLAUGHTER.</h4>
+    <div style="line-height: 1.8;">
+        <p>(a) A person commits an offense if the person: (1) operates a motor vehicle in a public place, operates an aircraft, a watercraft, or an amusement ride, or assembles a mobile amusement ride; and (2) is intoxicated and by reason of that intoxication causes the death of another by accident or mistake. (b) Except as provided by Section 49.09, an offense under this section is a felony of the second degree.</p>
+        
+    </div>
+</div>
 `
     },
 
-    {
+{
     id: 'penal_code_19',
     title: `Penal Code 19: CRIMINAL HOMICIDE`,
     category: 'Penal Code',
@@ -6125,7 +4396,7 @@ PENAL CODE
 TITLE 5. OFFENSES AGAINST THE PERSON`
   },
 
-    {
+{
     id: 'penal_code_20',
     title: `Penal Code 20: KIDNAPPING, UNLAWFUL RESTRAINT, AND`,
     category: 'Penal Code',
@@ -6405,7 +4676,7 @@ PENAL CODE
 TITLE 5. OFFENSES AGAINST THE PERSON`
   },
 
-    {
+{
     id: 'penal_code_20A',
     title: `Penal Code 20A: TRAFFICKING OF PERSONS`,
     category: 'Penal Code',
@@ -6649,7 +4920,7 @@ PENAL CODE
 TITLE 5. OFFENSES AGAINST THE PERSON`
   },
 
-    {
+{
     id: 'penal_code_21',
     title: `Penal Code 21: SEXUAL OFFENSES`,
     category: 'Penal Code',
@@ -7317,7 +5588,7 @@ PENAL CODE
 TITLE 5. OFFENSES AGAINST THE PERSON`
   },
 
-    {
+{
     id: 'penal_code_22',
     title: `Penal Code 22: ASSAULTIVE OFFENSES`,
     category: 'Penal Code',
@@ -8244,7 +6515,7 @@ PENAL CODE
 TITLE 6. OFFENSES AGAINST THE FAMILY`
   },
 
-    {
+{
     id: 'penal_code_25',
     title: `Penal Code 25: OFFENSES AGAINST THE FAMILY`,
     category: 'Penal Code',
@@ -8750,7 +7021,7 @@ PENAL CODE
 TITLE 7. OFFENSES AGAINST PROPERTY`
   },
 
-    {
+{
     id: 'penal_code_28',
     title: `Penal Code 28: ARSON, CRIMINAL MISCHIEF, AND OTHER PROPERTY DAMAGE OR`,
     category: 'Penal Code',
@@ -9207,7 +7478,7 @@ PENAL CODE
 TITLE 7. OFFENSES AGAINST PROPERTY`
   },
 
-    {
+{
     id: 'penal_code_29',
     title: `Penal Code 29: ROBBERY`,
     category: 'Penal Code',
@@ -9269,7 +7540,7 @@ PENAL CODE
 TITLE 7. OFFENSES AGAINST PROPERTY`
   },
 
-    {
+{
     id: 'penal_code_30',
     title: `Penal Code 30: BURGLARY AND CRIMINAL TRESPASS`,
     category: 'Penal Code',
@@ -9965,7 +8236,7 @@ PENAL CODE
 TITLE 7. OFFENSES AGAINST PROPERTY`
   },
 
-    {
+{
     id: 'penal_code_31',
     title: `Penal Code 31: THEFT`,
     category: 'Penal Code',
@@ -11138,7 +9409,7 @@ PENAL CODE
 TITLE 8. OFFENSES AGAINST PUBLIC ADMINISTRATION`
   },
 
-    {
+{
     id: 'penal_code_38',
     title: `Penal Code 38: OBSTRUCTING GOVERNMENTAL OPERATION`,
     category: 'Penal Code',
@@ -12215,7 +10486,7 @@ PENAL CODE
 TITLE 8. OFFENSES AGAINST PUBLIC ADMINISTRATION`
   },
 
-    {
+{
     id: 'penal_code_39',
     title: `Penal Code 39: ABUSE OF OFFICE`,
     category: 'Penal Code',
@@ -12514,7 +10785,7 @@ PENAL CODE
 TITLE 9. OFFENSES AGAINST PUBLIC ORDER AND DECENCY`
   },
 
-    {
+{
     id: 'penal_code_42',
     title: `Penal Code 42: DISORDERLY CONDUCT AND RELATED OFFENSES`,
     category: 'Penal Code',
@@ -13510,7 +11781,7 @@ PENAL CODE
 TITLE 10. OFFENSES AGAINST PUBLIC HEALTH, SAFETY, AND MORALS`
   },
 
-    {
+{
     id: 'penal_code_49',
     title: `Penal Code 49: INTOXICATION AND ALCOHOLIC BEVERAGE OFFENSES`,
     category: 'Penal Code',
@@ -13881,7 +12152,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
 `
   },
 
-    {
+{
     id: 'pc_19_001',
     question: 'Under Section 19.01, a person commits criminal homicide if the person causes the death of an individual:',
     choices: [
@@ -13897,7 +12168,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 19 - Criminal Homicide'
   },
 
-    {
+{
     id: 'pc_19_002',
     question: 'According to Section 19.02, what is the definition of \'adequate cause\' in relation to murder?',
     choices: [
@@ -13913,7 +12184,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 19 - Criminal Homicide'
   },
 
-    {
+{
     id: 'pc_19_003',
     question: 'Under Section 19.03, capital murder applies when a person murders an individual under what age?',
     choices: [
@@ -13929,7 +12200,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 19 - Criminal Homicide'
   },
 
-    {
+{
     id: 'pc_31_001',
     question: 'Under the Penal Code definition of theft, a person commits an offense if the person unlawfully appropriates property with intent to deprive the owner of property. When is property considered \'appropriated\'?',
     choices: [
@@ -13945,7 +12216,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 31 - Theft'
   },
 
-    {
+{
     id: 'pc_38_001',
     question: 'According to Chapter 38, when a person intentionally flees from a person he knows is a peace officer attempting to lawfully arrest or detain him, what offense is committed?',
     choices: [
@@ -13961,7 +12232,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 38 - Obstructing Governmental Operation'
   },
 
-    {
+{
     id: 'pc_42_001',
     question: 'Under Chapter 42, what classification is a Disorderly Conduct offense?',
     choices: [
@@ -13977,7 +12248,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 42 - Disorderly Conduct'
   },
 
-    {
+{
     id: 'pc_49_001',
     question: 'According to Section 49.01, \'intoxicated\' means:',
     choices: [
@@ -13993,7 +12264,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 49 - Intoxication Offenses'
   },
 
-    {
+{
     id: 'pc_49_002',
     question: 'Under Section 49.04, what is the minimum term of confinement for a DWI offense (without aggravating factors)?',
     choices: [
@@ -14009,7 +12280,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 49 - Intoxication Offenses'
   },
 
-    {
+{
     id: 'pc_22_001',
     question: 'Under Chapter 22, what distinguishes assault from aggravated assault?',
     choices: [
@@ -14025,7 +12296,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 22 - Assaultive Offenses'
   },
 
-    {
+{
     id: 'pc_30_001',
     question: 'According to Chapter 30, burglary requires entry into a habitation or building with intent to commit what type of offense?',
     choices: [
@@ -14041,7 +12312,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 30 - Burglary and Criminal Trespass'
   },
 
-    {
+{
     id: 'pc_29_001',
     question: 'Under Chapter 29, robbery is elevated to aggravated robbery when:',
     choices: [
@@ -14057,7 +12328,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 29 - Robbery'
   },
 
-    {
+{
     id: 'pc_21_001',
     question: 'According to Chapter 21, what is the age of the child victim that defines \'Indecency with a Child\'?',
     choices: [
@@ -14073,7 +12344,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 21 - Sexual Offenses'
   },
 
-    {
+{
     id: 'pc_20_001',
     question: 'According to Chapter 20, kidnapping is what degree of felony?',
     choices: [
@@ -14089,7 +12360,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 20 - Kidnapping'
   },
 
-    {
+{
     id: 'pc_25_001',
     question: 'Under Chapter 25, abandoning or endangering a child is committed when a person:',
     choices: [
@@ -14105,7 +12376,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 25 - Offenses Against the Family'
   },
 
-    {
+{
     id: 'pc_28_001',
     question: 'According to Chapter 28, what is the minimum damage amount that elevates criminal mischief to a state jail felony?',
     choices: [
@@ -14121,7 +12392,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 28 - Criminal Mischief'
   },
 
-    {
+{
     id: 'pc_38_002',
     question: 'Under Chapter 38, Failure to Identify as a fugitive from justice is what classification of offense?',
     choices: [
@@ -14137,7 +12408,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 38 - Obstructing Governmental Operation'
   },
 
-    {
+{
     id: 'pc_39_001',
     question: 'According to Chapter 39, official oppression occurs when a public servant acting under color of office:',
     choices: [
@@ -14153,7 +12424,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 39 - Abuse of Office'
   },
 
-    {
+{
     id: 'pc_49_003',
     question: 'Per Chapter 49, if a DWI offender had an open container in immediate possession at the time of offense, what is the minimum confinement?',
     choices: [
@@ -14169,7 +12440,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 49 - DWI'
   },
 
-    {
+{
     id: 'pc_20a_001',
     question: 'According to Chapter 20A, trafficking of persons is what degree of felony?',
     choices: [
@@ -14185,7 +12456,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 20A - Trafficking of Persons'
   },
 
-    {
+{
     id: 'pc_31_002',
     question: 'Under Chapter 31, theft of property valued at $2,500 to $30,000 is classified as:',
     choices: [
@@ -14201,7 +12472,7 @@ THE SAN ANTONIO POLICE OFFICERS' ASSOCIATION
     source: 'Chapter 31 - Theft'
   },
 
-    {
+{
     id: 'pc_42_002',
     question: 'According to Chapter 42, disorderly conduct includes intentionally or knowingly:',
     choices: [

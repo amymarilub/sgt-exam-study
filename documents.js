@@ -1,12 +1,45 @@
-// ========================================
-// STUDY DOCUMENTS
-// ========================================
-// Organized by category for easy navigation
-
 const STUDY_DOCUMENTS = [
-    // ========================================
-    // COLLECTIVE BARGAINING AGREEMENT (CBA)
-    // ========================================
+    {
+        category: 'How to Use',
+        title: "App Guide - Getting Started",
+        content: `
+            <h2>📖 SGT Exam Study Pro</h2>
+            <p><em>Complete guide for April 23, 2026 Sergeant Promotional Exam</em></p>
+            
+            <h3>🎯 Exam Day Info</h3>
+            <p><strong>Date:</strong> Thursday, April 23, 2026</p>
+            <p><strong>Time:</strong> 0900 Hours</p>
+            <p><strong>Location:</strong> Henry B. Gonzalez Convention Center, 900 E. Market St.</p>
+            <p><strong>Room:</strong> Hemisfair Ballroom</p>
+            
+            <div style="background: rgba(244, 135, 113, 0.15); padding: 15px; margin: 10px 0;">
+                <p><strong>REQUIRED:</strong> Photo identification</p>
+                <p><strong>NOT PERMITTED:</strong> Cell phones, electronic devices, hats, backpacks, books, food, drinks</p>
+            </div>
+            
+            <h3>📚 How to Use This App</h3>
+            <ol>
+                <li><strong>Dashboard:</strong> Track your progress and study streak</li>
+                <li><strong>Read & Study:</strong> Select category → Select document → Study</li>
+                <li><strong>Quiz Mode:</strong> Multiple choice practice, practice tests, or flashcards</li>
+                <li><strong>Review:</strong> Access your highlights and notes</li>
+            </ol>
+            
+            <h3>Study Features</h3>
+            <ul>
+                <li>Text-to-speech: Click Play to hear content read aloud</li>
+                <li>Highlighting: Select text to automatically save highlights</li>
+                <li>Notes: Add your own notes to any document</li>
+                <li>Progress tracking: All data saved in your browser</li>
+            </ul>
+            
+            <h3>💡 Study Tips</h3>
+            <p>Recommended: 1 hour daily - 30 min reading, 15 min quizzes, 15 min review</p>
+            <p>Take weekly practice tests to identify weak areas</p>
+            <p>Review highlights during final week before exam</p>
+        `
+    },
+
     {
         category: 'CBA',
         title: "Article 2 - Definitions",
@@ -686,100 +719,13820 @@ const STUDY_DOCUMENTS = [
             <p><strong>"Commission":</strong> Fire Fighters and Police Officers Civil Service Commission</p>
         `
     },
-    
-    // ========================================
-    // GENERAL MANUAL (SAPD PROCEDURES)
-    // ========================================
+    {
+        category: 'Penal Code',
+        title: "Chapter 9 - Justification",
+        content: `Sec. 9.01. DEFINITIONS. In this chapter:
+(1) "Custody" has the meaning assigned by Section
+(2) "Escape" has the meaning assigned by Section
+(3) "Deadly force" means force that is intended or known by
+the actor to cause, or in the manner of its use or intended use is
+capable of causing, death or serious bodily injury.
+(4) "Habitation" has the meaning assigned by Section
+(5) "Vehicle" has the meaning assigned by Section
+
+Sec. 9.02. JUSTIFICATION AS A DEFENSE. It is a defense to
+prosecution that the conduct in question is justified under this
+chapter.
+
+Sec. 9.03. CONFINEMENT AS JUSTIFIABLE FORCE. Confinement is
+justified when force is justified by this chapter if the actor takes
+reasonable measures to terminate the confinement as soon as he knows
+he safely can unless the person confined has been arrested for an
+offense.
+
+Sec. 9.04. THREATS AS JUSTIFIABLE FORCE. The threat of force is
+justified when the use of force is justified by this chapter. For
+purposes of this section, a threat to cause death or serious bodily
+injury by the production of a weapon or otherwise, as long as the
+actor's purpose is limited to creating an apprehension that he will
+use deadly force if necessary, does not constitute the use of deadly
+force.
+
+Sec. 9.05. RECKLESS INJURY OF INNOCENT THIRD PERSON. Even
+though an actor is justified under this chapter in threatening or
+using force or deadly force against another, if in doing so he also
+recklessly injures or kills an innocent third person, the
+justification afforded by this chapter is unavailable in a prosecution
+for the reckless injury or killing of the innocent third person.
+Sec. 9.06. CIVIL REMEDIES UNAFFECTED. The fact that conduct is
+justified under this chapter does not abolish or impair any remedy for
+the conduct that is available in a civil suit.
+
+Sec. 9.21. PUBLIC DUTY. (a) Except as qualified by Subsections
+(b) and (c), conduct is justified if the actor reasonably believes the
+conduct is required or authorized by law, by the judgment or order of
+a competent court or other governmental tribunal, or in the execution
+of legal process.
+Page - 1 -
+
+
+(b) The other sections of this chapter control when force is
+used against a person to protect persons (Subchapter C), to protect
+property (Subchapter D), for law enforcement (Subchapter E), or by
+virtue of a special relationship (Subchapter F).
+(c) The use of deadly force is not justified under this section
+unless the actor reasonably believes the deadly force is specifically
+required by statute or unless it occurs in the lawful conduct of war.
+If deadly force is so justified, there is no duty to retreat before
+using it.
+(d) The justification afforded by this section is available if
+the actor reasonably believes:
+(1) the court or governmental tribunal has jurisdiction or
+the process is lawful, even though the court or governmental tribunal
+lacks jurisdiction or the process is unlawful; or
+(2) his conduct is required or authorized to assist a
+public servant in the performance of his official duty, even though
+the servant exceeds his lawful authority.
+
+Sec. 9.22. NECESSITY. Conduct is justified if:
+(1) the actor reasonably believes the conduct is
+immediately necessary to avoid imminent harm;
+(2) the desirability and urgency of avoiding the harm
+clearly outweigh, according to ordinary standards of reasonableness,
+the harm sought to be prevented by the law proscribing the conduct;
+and
+(3) a legislative purpose to exclude the justification
+claimed for the conduct does not otherwise plainly appear.
+
+Sec. 9.31. SELF-DEFENSE. (a) Except as provided in Subsection
+(b), a person is justified in using force against another when and to
+the degree the actor reasonably believes the force is immediately
+necessary to protect the actor against the other's use or attempted
+use of unlawful force. The actor's belief that the force was
+immediately necessary as described by this subsection is presumed to
+be reasonable if the actor:
+(1) knew or had reason to believe that the person against
+whom the force was used:
+(A) unlawfully and with force entered, or was
+attempting to enter unlawfully and with force, the actor's occupied
+habitation, vehicle, or place of business or employment;
+(B) unlawfully and with force removed, or was
+attempting to remove unlawfully and with force, the actor from the
+actor's habitation, vehicle, or place of business or employment; or
+(C) was committing or attempting to commit aggravated
+kidnapping, murder, sexual assault, aggravated sexual assault,
+robbery, or aggravated robbery;
+
+Page -2 -
+
+
+(2)
+
+did not provoke the person against whom the force was
+
+used; and
+(3) was not otherwise engaged in criminal activity, other
+than a Class C misdemeanor that is a violation of a law or ordinance
+regulating traffic at the time the force was used.
+(b) The use of force against another is not justified:
+(1) in response to verbal provocation alone;
+(2) to resist an arrest or search that the actor knows is
+being made by a peace officer, or by a person acting in a peace
+officer's presence and at his direction, even though the arrest or
+search is unlawful, unless the resistance is justified under
+Subsection (c);
+(3) if the actor consented to the exact force used or
+attempted by the other;
+(4) if the actor provoked the other's use or attempted use
+of unlawful force, unless:
+(A) the actor abandons the encounter, or clearly
+communicates to the other his intent to do so reasonably believing he
+cannot safely abandon the encounter; and
+(B) the other nevertheless continues or attempts to
+use unlawful force against the actor; or
+(5) if the actor sought an explanation from or discussion
+with the other person concerning the actor's differences with the
+other person while the actor was:
+(A) carrying a weapon in violation of Section 46.02;
+or
+(B) possessing or transporting a weapon in violation
+of Section 46.05.
+(c) The use of force to resist an arrest or search is justified:
+(1) if, before the actor offers any resistance, the peace
+officer (or person acting at his direction) uses or attempts to use
+greater force than necessary to make the arrest or search; and
+(2) when and to the degree the actor reasonably believes
+the force is immediately necessary to protect himself against the
+peace officer's (or other person's) use or attempted use of greater
+force than necessary.
+(d) The use of deadly force is not justified under this
+subchapter except as provided in Sections 9.32, 9.33, and 9.34.
+(e) A person who has a right to be present at the location where
+the force is used, who has not provoked the person against whom the
+force is used, and who is not engaged in criminal activity at the time
+the force is used is not required to retreat before using force as
+described by this section.
+(f) For purposes of Subsection (a), in determining whether an
+actor described by Subsection (e) reasonably believed that the use of
+force was necessary, a finder of fact may not consider whether the
+actor failed to retreat.
+Sec. 9.32. DEADLY FORCE IN DEFENSE OF PERSON.
+justified in using deadly force against another:
+
+Page -3 -
+
+(a)
+
+A person is
+
+
+(1) if the actor would be justified in using force against
+the other under Section 9.31; and
+(2)
+when and to the degree the actor reasonably believes
+the deadly force is immediately necessary:
+(A) to protect the actor against the other's use or
+attempted use of unlawful deadly force; or
+(B) to prevent the other's imminent commission of
+aggravated kidnapping, murder, sexual assault, aggravated sexual
+assault, robbery, or aggravated robbery.
+(b) The actor's belief under Subsection (a)(2) that the deadly
+force was immediately necessary as described by that subdivision is
+presumed to be reasonable if the actor:
+(1) knew or had reason to believe that the person against
+whom the deadly force was used:
+(A) unlawfully and with force entered, or was
+attempting to enter unlawfully and with force, the actor's occupied
+habitation, vehicle, or place of business or employment;
+(B) unlawfully and with force removed, or was
+attempting to remove unlawfully and with force, the actor from the
+actor's habitation, vehicle, or place of business or employment; or
+(C) was committing or attempting to commit an offense
+described by Subsection (a)(2)(B);
+(2) did not provoke the person against whom the force was
+used; and
+(3) was not otherwise engaged in criminal activity, other
+than a Class C misdemeanor that is a violation of a law or ordinance
+regulating traffic at the time the force was used.
+(c) A person who has a right to be present at the location where
+the deadly force is used, who has not provoked the person against whom
+the deadly force is used, and who is not engaged in criminal activity
+at the time the deadly force is used is not required to retreat before
+using deadly force as described by this section.
+(d) For purposes of Subsection (a)(2), in determining whether an
+actor described by Subsection (c) reasonably believed that the use of
+deadly force was necessary, a finder of fact may not consider whether
+the actor failed to retreat.
+
+Sec. 9.33. DEFENSE OF THIRD PERSON. A person is justified in
+using force or deadly force against another to protect a third person
+if:
+(1) under the circumstances as the actor reasonably
+believes them to be, the actor would be justified under Section 9.31 or
+9.32 in using force or deadly force to protect himself against the
+unlawful force or unlawful deadly force he reasonably believes to be
+threatening the third person he seeks to protect; and
+(2) the actor reasonably believes that his intervention is
+immediately necessary to protect the third person.
+Sec. 9.34. PROTECTION OF LIFE OR HEALTH. (a) A person is
+justified in using force, but not deadly force, against another when
+
+Page -4 -
+
+
+and to the degree he reasonably believes the force is immediately
+necessary to prevent the other from committing suicide or inflicting
+serious bodily injury to himself.
+(b) A person is justified in using both force and deadly force
+against another when and to the degree he reasonably believes the
+force or deadly force is immediately necessary to preserve the other's
+life in an emergency.
+
+Sec. 9.41. PROTECTION OF ONE'S OWN PROPERTY. (a) A person in
+lawful possession of land or tangible, movable property is justified
+in using force against another when and to the degree the actor
+reasonably believes the force is immediately necessary to prevent or
+terminate the other's trespass on the land or unlawful interference
+with the property.
+(b) A person unlawfully dispossessed of land or tangible,
+movable property by another is justified in using force against the
+other when and to the degree the actor reasonably believes the force
+is immediately necessary to reenter the land or recover the property
+if the actor uses the force immediately or in fresh pursuit after the
+dispossession and:
+(1) the actor reasonably believes the other had no claim of
+right when he dispossessed the actor; or
+(2) the other accomplished the dispossession by using
+force, threat, or fraud against the actor.
+
+Sec. 9.42. DEADLY FORCE TO PROTECT PROPERTY. A person is
+justified in using deadly force against another to protect land or
+tangible, movable property:
+(1) if he would be justified in using force against the
+other under Section 9.41; and
+(2) when and to the degree he reasonably believes the
+deadly force is immediately necessary:
+(A) to prevent the other's imminent commission of
+arson, burglary, robbery, aggravated robbery, theft during the
+nighttime, or criminal mischief during the nighttime; or
+(B) to prevent the other who is fleeing immediately
+after committing burglary, robbery, aggravated robbery, or theft
+during the nighttime from escaping with the property; and
+(3) he reasonably believes that:
+(A) the land or property cannot be protected or
+recovered by any other means; or
+(B) the use of force other than deadly force to
+protect or recover the land or property would expose the actor or
+another to a substantial risk of death or serious bodily injury.
+Sec. 9.43. PROTECTION OF THIRD PERSON'S PROPERTY. A person is
+justified in using force or deadly force against another to protect
+
+Page -5 -
+
+
+land or tangible, movable property of a third person if, under the
+circumstances as he reasonably believes them to be, the actor would be
+justified under Section 9.41 or 9.42 in using force or deadly force to
+protect his own land or property and:
+(1) the actor reasonably believes the unlawful interference
+constitutes attempted or consummated theft of or criminal mischief to
+the tangible, movable property; or
+(2) the actor reasonably believes that:
+(A) the third person has requested his protection of
+the land or property;
+(B) he has a legal duty to protect the third person's
+land or property; or
+(C) the third person whose land or property he uses
+force or deadly force to protect is the actor's spouse, parent, or
+child, resides with the actor, or is under the actor's care.
+
+Sec. 9.44. USE OF DEVICE TO PROTECT PROPERTY. The justification
+afforded by Sections 9.41 and 9.43 applies to the use of a device to
+protect land or tangible, movable property if:
+(1) the device is not designed to cause, or known by the
+actor to create a substantial risk of causing, death or serious bodily
+injury; and
+(2) use of the device is reasonable under all the
+circumstances as the actor reasonably believes them to be when he
+installs the device.
+
+Sec. 9.51. ARREST AND SEARCH. (a) A peace officer, or a person
+acting in a peace officer's presence and at his direction, is
+justified in using force against another when and to the degree the
+actor reasonably believes the force is immediately necessary to make
+or assist in making an arrest or search, or to prevent or assist in
+preventing escape after arrest, if:
+(1) the actor reasonably believes the arrest or search is
+lawful or, if the arrest or search is made under a warrant, he
+reasonably believes the warrant is valid; and
+(2) before using force, the actor manifests his purpose to
+arrest or search and identifies himself as a peace officer or as one
+acting at a peace officer's direction, unless he reasonably believes
+his purpose and identity are already known by or cannot reasonably be
+made known to the person to be arrested.
+(b) A person other than a peace officer (or one acting at his
+direction) is justified in using force against another when and to the
+degree the actor reasonably believes the force is immediately
+necessary to make or assist in making a lawful arrest, or to prevent
+or assist in preventing escape after lawful arrest if, before using
+force, the actor manifests his purpose to and the reason for the
+arrest or reasonably believes his purpose and the reason are already
+
+Page -6 -
+
+
+known by or cannot reasonably be made known to the person to be
+arrested.
+(c) A peace officer is justified in using deadly force against
+another when and to the degree the peace officer reasonably believes
+the deadly force is immediately necessary to make an arrest, or to
+prevent escape after arrest, if the use of force would have been
+justified under Subsection (a) and:
+(1) the actor reasonably believes the conduct for which
+arrest is authorized included the use or attempted use of deadly
+force; or
+(2) the actor reasonably believes there is a substantial
+risk that the person to be arrested will cause death or serious bodily
+injury to the actor or another if the arrest is delayed.
+(d) A person other than a peace officer acting in a peace
+officer's presence and at his direction is justified in using deadly
+force against another when and to the degree the person reasonably
+believes the deadly force is immediately necessary to make a lawful
+arrest, or to prevent escape after a lawful arrest, if the use of
+force would have been justified under Subsection (b) and:
+(1) the actor reasonably believes the felony or offense
+against the public peace for which arrest is authorized included the
+use or attempted use of deadly force; or
+(2) the actor reasonably believes there is a substantial
+risk that the person to be arrested will cause death or serious bodily
+injury to another if the arrest is delayed.
+(e) There is no duty to retreat before using deadly force
+justified by Subsection (c) or (d).
+(f) Nothing in this section relating to the actor's
+manifestation of purpose or identity shall be construed as conflicting
+with any other law relating to the issuance, service, and execution of
+an arrest or search warrant either under the laws of this state or the
+United States.
+(g) Deadly force may only be used under the circumstances
+enumerated in Subsections (c) and (d).
+
+Sec. 9.52. PREVENTION OF ESCAPE FROM CUSTODY. The use of force
+to prevent the escape of an arrested person from custody is
+justifiable when the force could have been employed to effect the
+arrest under which the person is in custody, except that a guard
+employed by a correctional facility or a peace officer is justified in
+using any force, including deadly force, that he reasonably believes
+to be immediately necessary to prevent the escape of a person from the
+correctional facility.
+
+Sec. 9.53. MAINTAINING SECURITY IN CORRECTIONAL FACILITY. An
+officer or employee of a correctional facility is justified in using
+force against a person in custody when and to the degree the officer
+or employee reasonably believes the force is necessary to maintain the
+
+Page -7 -
+
+
+security of the correctional facility, the safety or security of other
+persons in custody or employed by the correctional facility, or his
+own safety or security.
+
+Sec. 9.54. LIMITATION ON USE OF FORCE BY DRONE. (a) In this
+section:
+(1) "Autonomous drone" means a drone that operates
+autonomously through computer software or other programming.
+(2) "Drone" and "law enforcement agency" have the meanings
+assigned by Article 2B.0253, Code of Criminal Procedure.
+(b) Notwithstanding any other law, the use of force, including
+deadly force, involving a drone is justified under this subchapter
+only if:
+(1) at the time the use of force occurred, the actor was
+employed by a law enforcement agency;
+(2) the use of force:
+(A) would have been justified under another provision
+of this subchapter; and
+(B) did not involve the use of deadly force by means
+of an autonomous drone; and
+(3) before the use of force occurred, the law enforcement
+agency employing the actor adopted and submitted to the Texas
+Commission on Law Enforcement a policy on the agency's use of force by
+means of a drone, as required by Article 2B.0253, Code of Criminal
+Procedure, and the use of force conformed to the requirements of that
+policy.
+
+Sec. 9.55. USE OF LESS-LETHAL FORCE WEAPON. (a) In this
+section, "less-lethal force weapon" means:
+(1) any weapon, device, or munition that is designed, made,
+or adapted to expel a projectile or multiple projectiles against a
+target to temporarily incapacitate the target while minimizing the
+risk of serious bodily injury or death;
+(2) a chemical dispensing device;
+(3) a device used to strike a person; or
+(4) a stun gun, as defined by Section 38.14.
+(b) This section applies only to a guard employed by a
+correctional facility or a peace officer who is engaged in the
+discharge of the guard's or officer's official duties.
+(c) A person to whom this section applies is justified in using
+force with a less-lethal force weapon against another when and to the
+degree the person reasonably believes the force was necessary to
+accomplish the person's official duties as a guard or officer and if
+the person's use of the weapon is in substantial compliance with the
+person's training.
+
+Page -8 -
+
+
+Sec. 9.61. PARENT-CHILD. (a) The use of force, but not deadly
+force, against a child younger than 18 years is justified:
+(1) if the actor is the child's parent or stepparent or is
+acting in loco parentis to the child; and
+(2) when and to the degree the actor reasonably believes
+the force is necessary to discipline the child or to safeguard or
+promote his welfare.
+(b) For purposes of this section, "in loco parentis" includes
+grandparent and guardian, any person acting by, through, or under the
+direction of a court with jurisdiction over the child, and anyone who
+has express or implied consent of the parent or parents.
+
+Sec. 9.62. EDUCATOR-STUDENT. The use of force, but not deadly
+force, against a person is justified:
+(1) if the actor is entrusted with the care, supervision,
+or administration of the person for a special purpose; and
+(2) when and to the degree the actor reasonably believes
+the force is necessary to further the special purpose or to maintain
+discipline in a group.
+
+Sec. 9.63. GUARDIAN-INCOMPETENT. The use of force, but not
+deadly force, against a mental incompetent is justified:
+(1) if the actor is the incompetent's guardian or someone
+similarly responsible for the general care and supervision of the
+incompetent; and
+(2) when and to the degree the actor reasonably believes
+the force is necessary:
+(A) to safeguard and promote the incompetent's
+welfare; or
+(B) if the incompetent is in an institution for his
+care and custody, to maintain discipline in the institution.
+
+Page -9 -
+
+
+PENAL CODE
+TITLE 5. OFFENSES AGAINST THE PERSON`
+    },
+
+    {
+    id: 'penal_code_21',
+    title: `Penal Code 21: SEXUAL OFFENSES`,
+    category: 'Penal Code',
+    summary: `CHAPTER 21. SEXUAL OFFENSES Sec. 21.01.`,
+    content: `CHAPTER 21. SEXUAL OFFENSES
+Sec. 21.01. DEFINITIONS. In this chapter:
+(1) "Deviate sexual intercourse" means:
+(A) any contact between any part of the genitals of
+one person and the mouth or anus of another person; or
+(B) the penetration of the genitals or the anus of
+another person with an object.
+(2) "Sexual contact" means, except as provided by Section
+21.11 or 21.12, any touching of the anus, breast, or any part of the
+genitals of another person with intent to arouse or gratify the sexual
+desire of any person.
+(3) "Sexual intercourse" means any penetration of the
+female sex organ by the male sex organ.
+(4) "Spouse" means a person to whom a person is legally
+married under Subtitle A, Title 1, Family Code, or a comparable law of
+another jurisdiction.
+Sec. 21.02. CONTINUOUS SEXUAL ABUSE OF YOUNG CHILD OR DISABLED
+INDIVIDUAL. (a) In this section:
+(1) "Child" has the meaning assigned by Section 22.011(c).
+(2) "Disabled individual" has the meaning assigned by
+Section 22.021(b).
+(b) A person commits an offense if:
+(1) during a period that is 30 or more days in duration,
+the person commits two or more acts of sexual abuse, regardless of
+whether the acts of sexual abuse are committed against one or more
+victims; and
+(2) at the time of the commission of each of the acts of
+sexual abuse, the actor is 17 years of age or older and the victim is:
+(A) a child younger than 14 years of age, regardless
+of whether the actor knows the age of the victim at the time of the
+offense; or
+(B) a disabled individual.
+(c) For purposes of this section, "act of sexual abuse" means
+any act that is a violation of one or more of the following penal
+laws:
+(1) aggravated kidnapping under Section 20.04(a)(4), if the
+actor committed the offense with the intent to violate or abuse the
+victim sexually;
+(2) indecency with a child under Section 21.11(a)(1), if the
+actor committed the offense in a manner other than by touching,
+including touching through clothing, the breast of a child;
+(3) sexual assault under Section 22.011;
+(4) aggravated sexual assault under Section 22.021;
+Page - 1 -
+
+(5) burglary under Section 30.02, if the offense is
+punishable under Subsection (d) of that section and the actor
+committed the offense with the intent to commit an offense listed in
+Subdivisions (1)-(4);
+(6) sexual performance by a child under Section 43.25;
+(7) trafficking of persons under Section 20A.02(a)(3), (4),
+(7), or (8); and
+(8) compelling prostitution under Section 43.05.
+(d) If a jury is the trier of fact, members of the jury are not
+required to agree unanimously on which specific acts of sexual abuse
+were committed by the defendant or the exact date when those acts were
+committed. The jury must agree unanimously that the defendant, during
+a period that is 30 or more days in duration, committed two or more
+acts of sexual abuse.
+(e) A defendant may not be convicted in the same criminal action
+of an offense listed under Subsection (c) the victim of which is the
+same victim as a victim of the offense alleged under Subsection (b)
+unless the offense listed in Subsection (c):
+(1) is charged in the alternative;
+(2) occurred outside the period in which the offense
+alleged under Subsection (b) was committed; or
+(3) is considered by the trier of fact to be a lesser
+included offense of the offense alleged under Subsection (b).
+(f) A defendant may not be charged with more than one count
+under Subsection (b) if all of the specific acts of sexual abuse that
+are alleged to have been committed are alleged to have been committed
+against a single victim.
+(g) With respect to a prosecution under this section involving
+only one or more victims described by Subsection (b)(2)(A), it is an
+affirmative defense to prosecution under this section that the actor:
+(1) was not more than five years older than:
+(A) the victim of the offense, if the offense is
+alleged to have been committed against only one victim; or
+(B) the youngest victim of the offense, if the offense
+is alleged to have been committed against more than one victim;
+(2) did not use duress, force, or a threat against a victim
+at the time of the commission of any of the acts of sexual abuse
+alleged as an element of the offense; and
+(3) at the time of the commission of any of the acts of
+sexual abuse alleged as an element of the offense:
+(A) was not required under Chapter 62, Code of
+Criminal Procedure, to register for life as a sex offender; or
+(B) was not a person who under Chapter 62 had a
+reportable conviction or adjudication for an offense under this
+section or an act of sexual abuse as described by Subsection (c).
+(h) An offense under this section is a felony of the first
+degree, punishable by imprisonment in the Texas Department of Criminal
+Justice for life, or for any term of not more than 99 years or less
+than 25 years.
+
+Page -2 -
+
+Sec. 21.03. CONTINUOUS SEXUAL ABUSE. (a) A person commits an
+offense if:
+(1) during a period that is 30 or more days in duration,
+the person commits two or more acts of sexual abuse against two or
+more victims; and
+(2) at the time of the commission of each of the acts of
+sexual abuse, the actor is 17 years of age or older.
+(b) For purposes of this section, "act of sexual abuse" means
+any act that is a violation of one or more of the following penal
+laws:
+(1) aggravated kidnapping under Section 20.04(a)(4), if the
+actor committed the offense with the intent to violate or abuse the
+victim sexually;
+(2) indecency with a child under Section 21.11(a)(1), if the
+actor committed the offense in a manner other than by touching,
+including touching through clothing, the breast of a child;
+(3) sexual assault under Section 22.011;
+(4) aggravated sexual assault under Section 22.021;
+(5) burglary under Section 30.02, if the offense is
+punishable under Subsection (d) of that section and the actor
+committed the offense with the intent to commit an offense listed in
+Subdivisions (1)-(4);
+(6) sexual performance by a child under Section 43.25;
+(7) trafficking of persons under Section 20A.02(a)(3), (4),
+(7), or (8); and
+(8) compelling prostitution under Section 43.05.
+(c) If a jury is the trier of fact, members of the jury are not
+required to agree unanimously on which specific acts of sexual abuse
+were committed by the defendant or the exact date when those acts were
+committed. The jury must agree unanimously that the defendant, during
+a period that is 30 or more days in duration, committed two or more
+acts of sexual abuse against two or more victims.
+(d) A defendant may not be convicted in the same criminal action
+of an offense listed under Subsection (b) the victim of which is the
+same victim as a victim of the offense under Subsection (a) unless the
+offense listed in Subsection (b):
+(1) is charged in the alternative;
+(2) occurred outside the period in which the offense
+alleged under Subsection (a) was committed; or
+(3) is considered by the trier of fact to be a lesser
+included offense of the offense alleged under Subsection (a).
+(e) A defendant may not be charged with more than one count
+under Subsection (a) if all of the specific acts of sexual abuse that
+are alleged to have been committed are alleged to have been committed
+against only two victims.
+(f) With respect to a prosecution under this section involving
+only two or more victims younger than 17 years of age, it is an
+affirmative defense to prosecution under this section that the actor:
+Page -3 -
+
+(1) was not more than five years older than the youngest
+victim of the offense;
+(2) did not use duress, force, or a threat against a victim
+at the time of the commission of any of the acts of sexual abuse
+alleged as an element of the offense; and
+(3) at the time of the commission of any of the acts of
+sexual abuse alleged as an element of the offense:
+(A) was not required under Chapter 62, Code of
+Criminal Procedure, to register for life as a sex offender; or
+(B) was not a person who under Chapter 62, Code of
+Criminal Procedure, had a reportable conviction or adjudication for an
+offense under this section or an act of sexual abuse as described by
+Subsection (b).
+(g) An offense under this section is a felony of the first
+degree.
+Sec. 21.06. HOMOSEXUAL CONDUCT. (a) A person commits an
+offense if he engages in deviate sexual intercourse with another
+individual of the same sex.
+(b) An offense under this section is a Class C misdemeanor.
+Sec. 21.07. PUBLIC LEWDNESS.
+(a) A person commits an offense if the person knowingly engages
+in any of the following acts in a public place or, if not in a public
+place, the person is reckless about whether another is present who
+will be offended or alarmed by the person's:
+(1) act of sexual intercourse;
+(2) act of deviate sexual intercourse; or
+(3) act of sexual contact.
+(b) An offense under this section is a Class A misdemeanor,
+except that the offense is a felony of the third degree if the actor
+is civilly committed as a sexually violent predator under Chapter 841,
+Health and Safety Code.
+Sec. 21.08. INDECENT EXPOSURE. (a) A person commits an offense
+if he exposes his anus or any part of his genitals with intent to
+arouse or gratify the sexual desire of any person, and he is reckless
+about whether another is present who will be offended or alarmed by
+his act.
+(b) An offense under this section is a Class B misdemeanor,
+except that the offense is:
+(1) a Class A misdemeanor if it is shown on the trial of
+the offense that the defendant has been previously convicted one time
+of an offense under this section;
+(2) a state jail felony if it is shown on the trial of the
+offense that the defendant has been previously convicted two or more
+times of an offense under this section; or
+Page -4 -
+
+(3) a felony of the third degree if the actor is civilly
+committed as a sexually violent predator under Chapter 841, Health and
+Safety Code.
+Sec. 21.09. BESTIALITY. (a) A person commits an offense if the
+person knowingly:
+(1) engages in an act involving contact between:
+(A) the person's mouth, anus, or genitals and the anus
+or genitals of an animal; or
+(B) the person's anus or genitals and the mouth of the
+animal;
+(2) fondles or touches the anus or genitals of an animal in
+a manner that is not a generally accepted and otherwise lawful animal
+husbandry or veterinary practice, including touching through clothing;
+(3) causes an animal to contact the seminal fluid of the
+person;
+(4) inserts any part of a person's body or any object into
+the anus or genitals of an animal in a manner that is not a generally
+accepted and otherwise lawful animal husbandry or veterinary practice;
+(5) possesses, sells, transfers, purchases, or otherwise
+obtains an animal with the intent that the animal be used for conduct
+described by Subdivision (1), (2), (3), or (4);
+(6) organizes, promotes, conducts, or participates as an
+observer of conduct described by Subdivision (1), (2), (3), or (4);
+(7) causes a person to engage or aids a person in engaging
+in conduct described by Subdivision (1), (2), (3), or (4);
+(8) permits conduct described by Subdivision (1), (2), (3),
+or (4) to occur on any premises under the person's control;
+(9) engages in conduct described by Subdivision (1), (2),
+(3), or (4) in the presence of a child younger than 18 years of age;
+or
+(10) advertises, offers, or accepts the offer of an animal
+with the intent that the animal be used in this state for conduct
+described by Subdivision (1), (2), (3), or (4).
+(b) An offense under this section is a state jail felony, unless
+the offense is committed under Subsection (a)(9) or results in serious
+bodily injury or death of the animal, in which event the offense is a
+felony of the second degree.
+(c) It is an exception to the application of this section that
+the conduct engaged in by the actor is a generally accepted and
+otherwise lawful animal husbandry or veterinary practice.
+Sec. 21.11. INDECENCY WITH A CHILD. (a) A person commits an
+offense if, with a child younger than 17 years of age, whether the
+child is of the same or opposite sex and regardless of whether the
+person knows the age of the child at the time of the offense, the
+person:
+
+Page -5 -
+
+(1) engages in sexual contact with the child or causes the
+child to engage in sexual contact; or
+(2) with intent to arouse or gratify the sexual desire of
+any person:
+(A) exposes the person's anus or any part of the
+person's genitals, knowing the child is present; or
+(B) causes the child to expose the child's anus or any
+part of the child's genitals.
+(b) It is an affirmative defense to prosecution under this
+section that the actor:
+(1) was not more than three years older than the victim and
+of the opposite sex;
+(2) did not use duress, force, or a threat against the
+victim at the time of the offense; and
+(3) at the time of the offense:
+(A) was not required under Chapter 62, Code of
+Criminal Procedure, to register for life as a sex offender; or
+(B) was not a person who under Chapter 62 had a
+reportable conviction or adjudication for an offense under this
+section.
+(b-1) It is an affirmative defense to prosecution under this
+section that the actor was the spouse of the child at the time of the
+offense.
+(c) In this section, "sexual contact" means the following acts,
+if committed with the intent to arouse or gratify the sexual desire of
+any person:
+(1) any touching by a person, including touching through
+clothing, of the anus, breast, or any part of the genitals of a child;
+or
+(2) any touching of any part of the body of a child,
+including touching through clothing, with the anus, breast, or any
+part of the genitals of a person.
+(d) An offense under Subsection (a)(1) is a felony of the second
+degree and an offense under Subsection (a)(2) is a felony of the third
+degree.
+Sec. 21.12. IMPROPER RELATIONSHIP BETWEEN EDUCATOR AND STUDENT.
+(a) An employee of a public or private primary or secondary school
+commits an offense if the employee:
+(1) engages in sexual contact, sexual intercourse, or
+deviate sexual intercourse with a person who is enrolled in a public
+or private primary or secondary school at which the employee works;
+(2) holds a position described by Section 21.003(a) or (b),
+Education Code, regardless of whether the employee holds the
+appropriate certificate, permit, license, or credential for the
+position, and engages in sexual contact, sexual intercourse, or
+deviate sexual intercourse with a person the employee knows is:
+(A) enrolled in a public or private primary or
+secondary school, other than a school described by Subdivision (1); or
+Page -6 -
+
+(B) a student participant in an educational activity
+that is sponsored by a school district or a public or private primary
+or secondary school, if students enrolled in a public or private
+primary or secondary school are the primary participants in the
+activity; or
+(3) engages in conduct described by Section 33.021, with a
+person described by Subdivision (1), or a person the employee knows is
+a person described by Subdivision (2)(A) or (B), regardless of the age
+of that person.
+(b) An offense under this section is a felony of the second
+degree.
+(b-1) It is an affirmative defense to prosecution under this
+section that:
+(1) the actor was the spouse of the enrolled person at the
+time of the offense; or
+(2) the actor was not more than three years older than the
+enrolled person and, at the time of the offense, the actor and the
+enrolled person were in a relationship that began before the actor's
+employment at a public or private primary or secondary school.
+(c) If conduct constituting an offense under this section also
+constitutes an offense under another section of this code, the actor
+may be prosecuted under either section or both sections.
+(d) The name of a person who is enrolled in a public or private
+primary or secondary school and involved in an improper relationship
+with an educator as provided by Subsection (a) may not be released to
+the public and is not public information under Chapter 552, Government
+Code.
+(d-1) Except as otherwise provided by this subsection, a public
+or private primary or secondary school, or a person or entity that
+operates a public or private primary or secondary school, may not
+release externally to the general public the name of an employee of
+the school who is accused of committing an offense under this section
+until the employee is indicted for the offense. The school, or the
+person or entity that operates the school, may release the name of the
+accused employee regardless of whether the employee has been indicted
+for the offense as necessary for the school to:
+(1) report the accusation:
+(A) to the Texas Education Agency, another state
+agency, or local law enforcement or as otherwise required by law; or
+(B) to the school's members or community in accordance
+with the school's policies or procedures or with the religious law
+observed by the school; or
+(2) conduct an investigation of the accusation.
+(e) In this section, "sexual contact" means the following acts,
+if committed with the intent to arouse or gratify the sexual desire of
+any person:
+(1) any touching by an employee of a public or private
+primary or secondary school of the anus, breast, or any part of the
+genitals of:
+
+Page -7 -
+
+(A) an enrolled person described by Subsection (a)(1)
+or (a)(2)(A); or
+(B) a student participant described by Subsection
+(a)(2)(B); or
+(2) any touching of any part of the body of the enrolled
+person or student participant with the anus, breast, or any part of
+the genitals of the employee.
+Sec. 21.15. INVASIVE VISUAL RECORDING. (a) In this section:
+(1) "Female breast" means any portion of the female breast
+below the top of the areola.
+(2) "Intimate area" means the naked or clothed genitals,
+pubic area, anus, buttocks, or female breast of a person.
+(3) "Changing room" means a room or portioned area provided
+for or primarily used for the changing of clothing and includes
+dressing rooms, locker rooms, and swimwear changing areas.
+(3-a) "Place in which a person has a reasonable expectation
+of privacy" means a place in which a reasonable person would believe
+that the person could disrobe in privacy, without being concerned that
+the act of undressing would be photographed or visually recorded by
+another or that a visual image of the person undressing would be
+broadcasted or transmitted by another. The term includes a bathroom,
+bedroom, and changing room.
+(4) "Promote" has the meaning assigned by Section 43.21.
+(b) A person commits an offense if, without the other person's
+consent and with intent to invade the privacy of the other person, the
+person:
+(1) photographs or by videotape or other electronic means
+records, broadcasts, or transmits a visual image of an intimate area
+of another person if the other person has a reasonable expectation
+that the intimate area is not subject to public view;
+(2) photographs or by videotape or other electronic means
+records, broadcasts, or transmits a visual image of another person in
+a place in which a person has a reasonable expectation of privacy; or
+(3) knowing the character and content of the photograph,
+recording, broadcast, or transmission, promotes a photograph,
+recording, broadcast, or transmission described by Subdivision (1) or
+(2).
+(c) An offense under this section is a state jail felony.
+(d) If conduct that constitutes an offense under this section
+also constitutes an offense under any other law, the actor may be
+prosecuted under this section or the other law.
+(e) For purposes of Subsection (b)(2), a sign or signs posted
+indicating that the person is being photographed or that a visual
+image of the person is being recorded, broadcast, or transmitted is
+not sufficient to establish the person's consent under that
+subdivision.
+
+Page -8 -
+
+Sec. 21.16. UNLAWFUL DISCLOSURE OR PROMOTION OF INTIMATE VISUAL
+MATERIAL. (a) In this section:
+(1) "Intimate parts" means the naked genitals, pubic area,
+anus, buttocks, or female nipple of a person.
+(2) "Promote" means to procure, manufacture, issue, sell,
+give, provide, lend, mail, deliver, transfer, transmit, publish,
+distribute, circulate, disseminate, present, exhibit, or advertise or
+to offer or agree to do any of the above.
+(3) "Sexual conduct" means sexual contact, actual or
+simulated sexual intercourse, deviate sexual intercourse, sexual
+bestiality, masturbation, or sadomasochistic abuse.
+(4) "Simulated" means the explicit depiction of sexual
+conduct that creates the appearance of actual sexual conduct and
+during which a person engaging in the conduct exhibits any uncovered
+portion of the breasts, genitals, or buttocks.
+(5) "Visual material" means:
+(A) any film, photograph, videotape, negative, or
+slide or any photographic reproduction that contains or incorporates
+in any manner any film, photograph, videotape, negative, or slide; or
+(B) any disk, diskette, or other physical medium, or a
+file in any digital format, that allows an image to be displayed on a
+computer or other video screen and any image transmitted to a computer
+or other video screen by telephone line, cable, satellite
+transmission, or other method.
+(b) A person commits an offense if:
+(1) without the effective consent of the depicted person
+and with the intent to harm that person, the person discloses visual
+material depicting another person with the person's intimate parts
+exposed or engaged in sexual conduct;
+(2) at the time of the disclosure, the person knows or has
+reason to believe that the visual material was obtained by the person
+or created under circumstances in which the depicted person had a
+reasonable expectation that the visual material would remain private;
+(3) the disclosure of the visual material causes harm to
+the depicted person; and
+(4) the disclosure of the visual material reveals the
+identity of the depicted person in any manner, including through:
+(A) any accompanying or subsequent information or
+material related to the visual material; or
+(B) information or material provided by a third party
+in response to the disclosure of the visual material.
+(c) A person commits an offense if the person intentionally
+threatens to disclose, without the consent of the depicted person,
+visual material depicting another person with the person's intimate
+parts exposed or engaged in sexual conduct and the actor makes the
+threat to obtain a benefit:
+(1) in return for not making the disclosure; or
+(2) in connection with the threatened disclosure.
+(d) A person commits an offense if, knowing the character and
+content of the visual material, the person promotes visual material
+Page -9 -
+
+described by Subsection (b) on an Internet website or other forum for
+publication that is owned or operated by the person.
+(e) It is not a defense to prosecution under this section that
+the depicted person:
+(1) created or consented to the creation of the visual
+material; or
+(2) voluntarily transmitted the visual material to the
+actor.
+(f) It is an affirmative defense to prosecution under Subsection
+(b) or (d) that:
+(1) the disclosure or promotion is made in the course of:
+(A) lawful and common practices of law enforcement or
+medical treatment;
+(B) reporting unlawful activity; or
+(C) a legal proceeding, if the disclosure or promotion
+is permitted or required by law;
+(2) the disclosure or promotion consists of visual material
+depicting in a public or commercial setting only a person's voluntary
+exposure of:
+(A) the person's intimate parts; or
+(B) the person engaging in sexual conduct; or
+(3) the actor is an interactive computer service, as
+defined by 47 U.S.C. Section 230, and the disclosure or promotion
+consists of visual material provided by another person.
+(g) An offense under this section is a state jail felony.
+(h) If conduct that constitutes an offense under this section
+also constitutes an offense under another law, the actor may be
+prosecuted under this section, the other law, or both.
+Sec. 21.165. UNLAWFUL PRODUCTION OR DISTRIBUTION OF CERTAIN
+SEXUALLY EXPLICIT MEDIA. (a) In this section:
+(1) "Deep fake media" means a visual depiction created or
+altered through the use of software, machine learning, artificial
+intelligence, or any other computer-generated or technological means,
+including by adapting, modifying, manipulating, or altering an
+authentic visual depiction manually or through an automated process,
+that appears to a reasonable person to depict a real person,
+indistinguishable from an authentic visual depiction of the real
+person, performing an action that did not occur in reality.
+(2) "Intimate parts" and "sexual conduct" have the meanings
+assigned by Section 21.16.
+(3) "Visual depiction" means a photograph, motion picture
+film, videotape, digital image or video, or other visual recording.
+(b) A person commits an offense if, without the effective
+consent of the person appearing to be depicted, the person knowingly
+produces or distributes by electronic means deep fake media that
+appears to depict the person:
+
+Page -10 -
+
+(1) with visible computer-generated intimate parts or with
+the visible intimate parts of another human being as the intimate
+parts of the person; or
+(2) engaging in sexual conduct in which the person did not
+engage.
+(b-1) A person commits an offense if the person intentionally
+threatens to produce or distribute deep fake media with the intent to
+coerce, extort, harass, or intimidate another person.
+(b-2) Consent required by Subsection (b) is valid only if the
+person appearing to be depicted knowingly and voluntarily signed a
+written agreement that was drafted in plain language. The agreement
+must include:
+(1) a general description of the deep fake media; and
+(2) if applicable, the audiovisual work into which the deep
+fake media will be incorporated.
+(c) An offense under Subsection (b) is a Class A misdemeanor,
+except that the offense is a felony of the third degree if it is shown
+on the trial of the offense that:
+(1) the actor has been previously convicted of an offense
+under this section; or
+(2) the person appearing to be depicted is younger than 18
+years of age.
+(c-1) An offense under Subsection (b-1) is a Class B
+misdemeanor, except that the offense is a Class A misdemeanor if it is
+shown on the trial of the offense that:
+(1) the actor has been previously convicted of an offense
+under this section; or
+(2) the actor threatened to produce or distribute deep fake
+media appearing to depict a person younger than 18 years of age.
+(c-2) It is not a defense to prosecution under this section that
+the deep fake media:
+(1) contains a disclaimer stating that the media was
+unauthorized or that the person appearing to be depicted did not
+participate in the creation or development of the deep fake media; or
+(2) indicates, through a label or otherwise, that the
+depiction is not authentic.
+(c-3) It is an affirmative defense to prosecution under this
+section that the production or distribution of the deep fake media
+occurs in the course of:
+(1) lawful and common practices of law enforcement;
+(2) reporting unlawful activity; or
+(3) a legal proceeding, if the production or distribution
+is permitted or required by law.
+(c-4) It is an affirmative defense to prosecution under
+Subsection (b) that the actor:
+(1) is an Internet service provider, cloud service
+provider, cybersecurity service provider, communication service
+provider, or telecommunications network that transmits data; and
+(2) acted solely in a technical, automatic, or intermediate
+nature.
+
+Page -11 -
+
+(c-5) It is an affirmative defense to prosecution under
+Subsection (b) that the actor:
+(1) is a provider or developer of a publicly accessible
+artificial intelligence application or software that was used in the
+creation of the deep fake media;
+(2) included a prohibition against the creation of deep
+fake media prohibited by this section in the actor's terms and
+conditions or user policies that are required to be acknowledged by a
+user before the user is granted access to the artificial intelligence
+application or software; and
+(3) took affirmative steps to prevent the creation of deep
+fake media prohibited by this section through technological tools,
+such as:
+(A) training the artificial intelligence application
+or software to identify deep fake media prohibited by this section;
+(B) providing effective reporting tools for deep fake
+media prohibited by this section;
+(C) filtering deep fake media prohibited by this
+section created by the artificial intelligence application or software
+before the media is shown to a user; and
+(D) filtering deep fake media prohibited by this
+section from the artificial intelligence application or software data
+set before the data set is used to train the application or software.
+(d) If conduct that constitutes an offense under this section
+also constitutes an offense under another law, the actor may be
+prosecuted under this section or the other law.
+(e) The court shall order a defendant convicted of an offense
+under this section to make restitution to the victim of the offense
+for any psychological, financial, or reputational harm incurred by the
+victim as a result of the offense.
+Sec. 21.17. VOYEURISM. (a) A person commits an offense if the
+person, with the intent to arouse or gratify the sexual desire of the
+actor, observes, including remotely through the use of electronic
+means, another person without the other person's consent while the
+other person is in a dwelling or structure in which the other person
+has a reasonable expectation of privacy.
+(b) Except as provided by Subsection (c) or (d), an offense
+under this section is a Class A misdemeanor.
+(c) An offense under this section is a state jail felony if it
+is shown on the trial of the offense that:
+(1) the actor has previously been convicted of an offense
+under this section;
+(2) the victim was a child younger than 18 years of age at
+the time of the offense; or
+(3) the offense was committed in a location that was on the
+premises of a postsecondary educational institution.
+(d) An offense under this section is a felony of the third
+degree if it is shown on the trial of the offense that:
+Page -12 -
+
+(1) the victim was a child younger than 18 years of age at
+the time of the offense; and
+(2) the actor has previously been convicted of an offense
+punishable under Subsection (c)(2).
+(e) If conduct that constitutes an offense under this section
+also constitutes an offense under any other law, the actor may be
+prosecuted under this section, the other law, or both.
+(f) In this section, "postsecondary educational institution" and
+"premises" have the meanings assigned by Section 12.502.
+Sec. 21.18. SEXUAL COERCION. (a) In this section:
+(1) "Intimate visual material" means the visual material
+described by Section 21.16(b)(1) or (c).
+(2) "Sexual conduct" has the meaning assigned by Section
+43.25.
+(b) A person commits an offense if the person intentionally
+threatens, including by coercion or extortion, to commit an offense
+under Chapter 43 or Section 20A.02(a)(3), (4), (7), or (8), 21.02, 21.03,
+21.08, 21.11, 21.12, 21.15, 21.16, 21.17, 22.011, or 22.021 to obtain, in return
+for not committing the threatened offense or in connection with the
+threatened offense, any of the following benefits:
+(1) intimate visual material;
+(2) an act involving sexual conduct causing arousal or
+gratification; or
+(3) a monetary benefit or other benefit of value.
+(c) A person commits an offense if the person intentionally
+threatens, including by coercion or extortion, to commit an offense
+under Chapter 19 or 20 or Section 20A.02(a)(1), (2), (5), or (6) to
+obtain, in return for not committing the threatened offense or in
+connection with the threatened offense, either of the following
+benefits:
+(1) intimate visual material; or
+(2) an act involving sexual conduct causing arousal or
+gratification.
+(d) This section applies to a threat regardless of how that
+threat is communicated, including a threat transmitted through e-mail
+or an Internet website, social media account, or chat room and a
+threat made by other electronic or technological means.
+(e) An offense under this section is a state jail felony, except
+that the offense is a felony of the third degree if it is shown on the
+trial of the offense that the defendant has previously been convicted
+of an offense under this section.
+Sec. 21.19. UNLAWFUL ELECTRONIC TRANSMISSION OF SEXUALLY
+EXPLICIT VISUAL MATERIAL. (a) In this section, "intimate parts,"
+"sexual conduct," and "visual material" have the meanings assigned by
+Section 21.16.
+Page -13 -
+
+(b) A person commits an offense if the person knowingly
+transmits by electronic means visual material that:
+(1) depicts:
+(A) any person engaging in sexual conduct or with the
+person's intimate parts exposed; or
+(B) covered genitals of a male person that are in a
+discernibly turgid state; and
+(2) is not sent at the request of or with the express
+consent of the recipient.
+(c) An offense under this section is a Class C misdemeanor.
+(d) If conduct that constitutes an offense under this section
+also constitutes an offense under any other law, the actor may be
+prosecuted under this section or the other law.
+
+Page -14 -
+
+PENAL CODE
+TITLE 5. OFFENSES AGAINST THE PERSON`
+  },
+    {
+    id: 'penal_code_22',
+    title: `Penal Code 22: ASSAULTIVE OFFENSES`,
+    category: 'Penal Code',
+    summary: `CHAPTER 22. ASSAULTIVE OFFENSES Sec. 22.01.`,
+    content: `CHAPTER 22. ASSAULTIVE OFFENSES
+Sec. 22.01. ASSAULT.
+(a)
+A person commits an offense if the
+person:
+(1) intentionally, knowingly, or recklessly causes bodily
+injury to another, including the person's spouse;
+(2) intentionally or knowingly threatens another with imminent
+bodily injury, including the person's spouse; or
+(3) intentionally or knowingly causes physical contact with
+another when the person knows or should reasonably believe that the other
+will regard the contact as offensive or provocative.
+(b) An offense under Subsection (a)(1) is a Class A misdemeanor,
+except that the offense is a felony of the third degree if the offense is
+committed against:
+(1) a person the actor knows is a public servant while the
+public servant is lawfully discharging an official duty, or in
+retaliation or on account of an exercise of official power or performance
+of an official duty as a public servant;
+(2) a person whose relationship to or association with the
+defendant is described by Section 71.0021(b), 71.003, or 71.005, Family
+Code, if:
+(A) it is shown on the trial of the offense that the
+defendant has been previously convicted of an offense that was committed:
+(i) against a person whose relationship to or
+association with the defendant is described by Section 71.0021(b),
+71.003, or 71.005, Family Code; and
+(ii) under:
+(a) this chapter, Chapter 19, or Section 20.03,
+20.04, 21.11, or 25.11;
+(b) Section 25.07, if the applicable violation
+was based on the commission of family violence as described by Subsection
+(a)(1) of that section; or
+(c) Section 25.072, if any of the applicable
+violations were based on the commission of family violence as described
+by Section 25.07(a)(1); or
+(B) the offense is committed by intentionally, knowingly,
+or recklessly impeding the normal breathing or circulation of the blood
+of the person by applying pressure to the person's throat or neck or by
+blocking the person's nose or mouth;
+(3) a person who contracts with government to perform a
+service in a facility described by Section 1.07(a)(14), Penal Code, or
+Section 51.02(13) or (14), Family Code, or an employee of that person:
+(A) while the person or employee is engaged in performing
+a service within the scope of the contract, if the actor knows the person
+or employee is authorized by government to provide the service; or
+(B) in retaliation for or on account of the person's or
+employee's performance of a service within the scope of the contract;
+(4) a person the actor knows is a security officer while the
+officer is performing a duty as a security officer;
+(5) a person the actor knows is emergency services personnel
+while the person is providing emergency services;
+Page - 1 -
+
+(6) a person the actor knows is a process server while the
+person is performing a duty as a process server;
+(7) a pregnant individual to force the individual to have an
+abortion;
+(8) a person the actor knows is pregnant at the time of the
+offense; or
+(9) a person the actor knows is hospital personnel while the
+person is located on hospital property, including all land and buildings
+owned or leased by the hospital.
+(b-1) Notwithstanding Subsections (b) and (c), an offense under
+Subsection (a) is a felony of the third degree if the offense is
+committed:
+(1) by an actor who is committed to a civil commitment
+facility; and
+(2) against:
+(A) a person the actor knows is an officer or employee of
+the Texas Civil Commitment Office:
+(i) while the officer or employee is lawfully
+discharging an official duty; or
+(ii) in retaliation for or on account of an exercise
+of official power or performance of an official duty by the officer or
+employee; or
+(B) a person the actor knows is contracting with the
+state to perform a service in a civil commitment facility or an employee
+of that person:
+(i) while the person or employee is engaged in
+performing a service within the scope of the contract; or
+(ii) in retaliation for or on account of the
+person's or employee's performance of a service within the scope of the
+contract.
+(b-2) Notwithstanding
+Subsection
+(b)(1),
+an
+offense
+under
+Subsection (a)(1) is a felony of the second degree if the offense is
+committed against a person the actor knows is a peace officer or judge
+while the officer or judge is lawfully discharging an official duty or in
+retaliation or on account of an exercise of official power or performance
+of an official duty as a peace officer or judge.
+(b-3) Notwithstanding
+Subsection
+(b)(2),
+an
+offense
+under
+Subsection (a)(1) is a felony of the second degree if:
+(1) the offense is committed against a person whose
+relationship to or association with the defendant is described by Section
+71.0021(b), 71.003, or 71.005, Family Code;
+(2) it is shown on the trial of the offense that the defendant
+has been previously convicted of an offense that was committed:
+(A) against a person whose relationship to or association
+with the defendant is described by Section 71.0021(b), 71.003, or 71.005,
+Family Code; and
+(B) under:
+(i) this chapter, Chapter 19, or Section 20.03,
+20.04, 21.11, or 25.11;
+(ii) Section 25.07, if the applicable violation was
+based on the commission of family violence as described by Subsection
+Page -2 -
+
+(a)(1) of that section; or
+(iii) Section 25.072, if any of the applicable
+violations were based on the commission of family violence as described
+by Section 25.07(a)(1); and
+(3) the offense is committed by intentionally, knowingly, or
+recklessly impeding the normal breathing or circulation of the blood of
+the person by applying pressure to the person's throat or neck or by
+blocking the person's nose or mouth.
+(b-4) Notwithstanding Subsection (b), an offense under Subsection
+(a)(1) is a felony of the third degree if it is shown on the trial of the
+offense that the actor committed the offense in the course of committing
+an offense under Section 20.05(a)(2).
+(c) An offense under Subsection (a)(2) or (3) is a Class C
+misdemeanor, except that the offense is:
+(1) a Class A misdemeanor if the offense is committed under
+Subsection (a)(3) against an elderly individual or disabled individual,
+as those terms are defined by Section 22.04;
+(2) a Class B misdemeanor if the offense is committed by a
+person who is not a sports participant against a person the actor knows
+is a sports participant either:
+(A) while the participant is performing duties or
+responsibilities in the participant's capacity as a sports participant;
+or
+(B) in retaliation for or on account of the participant's
+performance of a duty or responsibility within the participant's capacity
+as a sports participant; or
+(3) a Class A misdemeanor if the offense is committed against
+a pregnant individual to force the individual to have an abortion.
+(d) For purposes of Subsection (b), the actor is presumed to have
+known the person assaulted was a public servant, a security officer, or
+emergency services personnel if the person was wearing a distinctive
+uniform or badge indicating the person's employment as a public servant
+or status as a security officer or emergency services personnel.
+(e) In this section:
+(1) "Emergency services personnel" includes firefighters,
+emergency medical services personnel as defined by Section 773.003,
+Health and Safety Code, emergency room personnel, and other individuals
+who, in the course and scope of employment or as a volunteer, provide
+services for the benefit of the general public during emergency
+situations.
+(1-a) "Hospital personnel" includes nurses, physicians,
+physician assistants, maintenance or janitorial staff, receptionists, and
+other individuals who are employed by or work in a facility that is
+licensed as a general hospital or special hospital, as those terms are
+defined by Section 241.003, Health and Safety Code, including a hospital
+maintained or operated by the state.
+(2) "Process server" has the meaning assigned by Section
+156.001, Government Code.
+(3) "Security officer" means a commissioned security officer
+as defined by Section 1702.002, Occupations Code, or a noncommissioned
+security officer registered under Section 1702.221, Occupations Code.
+Page -3 -
+
+(4) "Sports participant" means a person who participates in
+any
+official
+capacity
+with
+respect
+to
+an
+interscholastic,
+intercollegiate, or other organized amateur or professional athletic
+competition and includes an athlete, referee, umpire, linesman, coach,
+instructor, administrator, or staff member.
+(f) For the purposes of Subsections (b)(2)(A) and (b-3)(2):
+(1) a defendant has been previously convicted of an offense
+listed in those subsections committed against a person whose relationship
+to or association with the defendant is described by Section 71.0021(b),
+71.003, or 71.005, Family Code, if the defendant was adjudged guilty of
+the offense or entered a plea of guilty or nolo contendere in return for
+a grant of deferred adjudication, regardless of whether the sentence for
+the offense was ever imposed or whether the sentence was probated and the
+defendant was subsequently discharged from community supervision; and
+(2) a conviction under the laws of another state for an
+offense containing elements that are substantially similar to the
+elements of an offense listed in those subsections is a conviction of the
+offense listed.
+(g) If conduct constituting an offense under this section also
+constitutes an offense under another section of this code, the actor may
+be prosecuted under either section or both sections.
+Sec. 22.011. SEXUAL ASSAULT. (a) A person commits an offense if:
+(1) the person intentionally or knowingly:
+(A) causes the penetration of the anus or sexual organ of
+another person by any means, without that person's consent;
+(B) causes the penetration of the mouth of another person
+by the sexual organ of the actor, without that person's consent; or
+(C) causes the sexual organ of another person, without
+that person's consent, to contact or penetrate the mouth, anus, or sexual
+organ of another person, including the actor; or
+(2) regardless of whether the person knows the age of the
+child at the time of the offense, the person intentionally or knowingly:
+(A) causes the penetration of the anus or sexual organ of
+a child by any means;
+(B) causes the penetration of the mouth of a child by the
+sexual organ of the actor;
+(C) causes the sexual organ of a child to contact or
+penetrate the mouth, anus, or sexual organ of another person, including
+the actor;
+(D) causes the anus of a child to contact the mouth,
+anus, or sexual organ of another person, including the actor; or
+(E) causes the mouth of a child to contact the anus or
+sexual organ of another person, including the actor.
+(b) A sexual assault under Subsection (a)(1) is without the consent
+of the other person if:
+(1) the actor compels the other person to submit or
+participate by the use of physical force, violence, or coercion;
+(2) the actor compels the other person to submit or
+participate by threatening to use force or violence against the other
+person or to cause harm to the other person, and the other person
+Page -4 -
+
+believes that the actor has the present ability to execute the threat;
+(3) the other person has not consented and the actor knows the
+other person is unconscious or physically unable to resist;
+(4) the actor knows that as a result of mental disease or
+defect the other person is at the time of the sexual assault incapable
+either of appraising the nature of the act or of resisting it;
+(5) the other person has not consented and the actor knows the
+other person is unaware that the sexual assault is occurring;
+(6) the actor has intentionally impaired the other person's
+power to appraise or control the other person's conduct by administering
+any substance without the other person's knowledge;
+(7) the actor compels the other person to submit or
+participate by threatening to use force or violence against any person,
+and the other person believes that the actor has the ability to execute
+the threat;
+(8) the actor is a public servant who coerces the other person
+to submit or participate;
+(9) the actor is a mental health services provider or a health
+care services provider who causes the other person, who is a patient or
+former patient of the actor, to submit or participate by exploiting the
+other person's emotional dependency on the actor;
+(10) the actor is a clergyman who causes the other person to
+submit or participate by exploiting the other person's emotional
+dependency on the clergyman in the clergyman's professional character as
+spiritual adviser;
+(11) the actor is an employee of a facility where the other
+person is a resident, unless the employee and resident are formally or
+informally married to each other under Chapter 2, Family Code;
+(12) the actor is a health care services provider who, in the
+course of performing an assisted reproduction procedure on the other
+person, uses human reproductive material from a donor knowing that the
+other person has not expressly consented to the use of material from that
+donor;
+(13) the actor is a coach or tutor who causes the other person
+to submit or participate by using the actor's power or influence to
+exploit the other person's dependency on the actor; or
+(14) the actor is a caregiver hired to assist the other person
+with activities of daily life and causes the other person to submit or
+participate by exploiting the other person's dependency on the actor.
+(c) In this section:
+(1) "Child" means a person younger than 17 years of age.
+(2) "Spouse" means a person who is legally married to another.
+(3) "Health care services provider" means:
+(A) a physician licensed under Subtitle B, Title 3,
+Occupations Code;
+(B) a
+chiropractor
+licensed
+under
+Chapter
+201,
+Occupations Code;
+(C) a physical therapist licensed under Chapter 453,
+Occupations Code;
+(D) a physician assistant licensed under Chapter 204,
+Occupations Code; or
+Page -5 -
+
+(E) a registered nurse, a vocational nurse, or an
+advanced practice nurse licensed under Chapter 301, Occupations Code.
+(4) "Mental health services provider" means an individual,
+licensed or unlicensed, who performs or purports to perform mental health
+services, including a:
+(A) licensed social worker as defined by Section 505.002,
+Occupations Code;
+(B) chemical dependency counselor as defined by Section
+504.001, Occupations Code;
+(C) licensed professional counselor as defined by Section
+503.002, Occupations Code;
+(D) licensed marriage and family therapist as defined by
+Section 502.002, Occupations Code;
+(E) member of the clergy;
+(F) psychologist offering psychological services as
+defined by Section 501.003, Occupations Code; or
+(G) special officer for mental health assignment
+certified under Section 1701.404, Occupations Code.
+(5) "Employee of a facility" means a person who is an employee
+of a facility defined by Section 250.001, Health and Safety Code, or any
+other person who provides services for a facility for compensation,
+including a contract laborer.
+(6) "Assisted reproduction" and "donor" have the meanings
+assigned by Section 160.102, Family Code.
+(7) "Human reproductive material" means:
+(A) a human spermatozoon or ovum; or
+(B) a human organism at any stage of development from
+fertilized ovum to embryo.
+(d) It is a defense to prosecution under Subsection (a)(2) that the
+conduct consisted of medical care for the child and did not include any
+contact between the anus or sexual organ of the child and the mouth,
+anus, or sexual organ of the actor or a third party.
+(e) It is an affirmative defense to prosecution under Subsection
+(a)(2):
+(1) that the actor was the spouse of the child at the time of
+the offense; or
+(2) that:
+(A) the actor was not more than three years older than
+the victim and at the time of the offense:
+(i) was not required under Chapter 62, Code of
+Criminal Procedure, to register for life as a sex offender; or
+(ii) was not a person who under Chapter 62, Code of
+Criminal Procedure, had a reportable conviction or adjudication for an
+offense under this section; and
+(B) the victim:
+(i) was a child of 14 years of age or older; and
+(ii) was not:
+(a) a person whom the actor was prohibited from
+marrying or purporting to marry or with whom the actor was prohibited
+from living under the appearance of being married under Section 25.01; or
+(b) a person with whom the actor was prohibited
+Page -6 -
+
+from engaging in sexual intercourse or deviate sexual intercourse under
+Section 25.02.
+(f) An offense under this section is a felony of the second degree,
+except that an offense under this section is:
+(1) a felony of the first degree if the victim was:
+(A) a person whom the actor was prohibited from marrying
+or purporting to marry or with whom the actor was prohibited from living
+under the appearance of being married under Section 25.01; or
+(B) a person with whom the actor was prohibited from
+engaging in sexual intercourse or deviate sexual intercourse under
+Section 25.02; or
+(2) a state jail felony if the offense is committed under
+Subsection (a)(1) and the actor has not received express consent as
+described by Subsection (b)(12).
+Sec. 22.012. INDECENT ASSAULT. (a) A person commits an offense
+if, without the other person's consent and with the intent to arouse or
+gratify the sexual desire of any person, the person:
+(1) touches the anus, breast, or any part of the genitals of
+another person;
+(2) touches another person with the anus, breast, or any part
+of the genitals of any person;
+(3) exposes or attempts to expose another person's genitals,
+pubic area, anus, buttocks, or female areola; or
+(4) causes another person to contact the blood, seminal fluid,
+vaginal fluid, saliva, urine, or feces of any person.
+(b) An offense under this section is a Class A misdemeanor, except
+that the offense is:
+(1) a state jail felony if it is shown on the trial of the
+offense that:
+(A) the defendant has been previously convicted of an
+offense under this section, other than an offense punishable under
+Paragraph (B); or
+(B) the defendant is a health care services provider or a
+mental health services provider and the act is:
+(i) committed during the course of providing a
+treatment or service to the victim; and
+(ii) beyond the scope of generally accepted
+practices for the treatment or service; or
+(2) a felony of the third degree if it is shown on the trial
+of the offense that the defendant has been previously convicted of an
+offense under this section that is punishable under Subdivision (1)(B).
+(c) If conduct that constitutes an offense under this section also
+constitutes an offense under another law, the actor may be prosecuted
+under this section, the other law, or both.
+(d) In this section, "health care services provider" and "mental
+health services provider" have the meanings assigned by Section 22.011.
+Sec. 22.02. AGGRAVATED ASSAULT. (a) A person commits an offense
+if the person commits assault as defined in Sec. 22.01 and the person:
+(1) causes serious bodily injury to another, including the
+Page -7 -
+
+person's spouse; or
+(2) uses or exhibits a deadly weapon during the commission of
+the assault.
+(b) An offense under this section is a felony of the second degree,
+except that the offense is a felony of the first degree if:
+(1) the actor uses a deadly weapon during the commission of
+the assault and causes:
+(A) serious bodily injury to a person whose relationship
+to or association with the defendant is described by Section 71.0021(b),
+71.003, or 71.005, Family Code; or
+(B) a traumatic brain or spine injury to another that
+results in a persistent vegetative state or irreversible paralysis;
+(2) regardless of whether the offense is committed under
+Subsection (a)(1) or (a)(2), the offense is committed:
+(A) by a public servant acting under color of the
+servant's office or employment;
+(B) against a person the actor knows is a public servant
+while the public servant is lawfully discharging an official duty, or in
+retaliation or on account of an exercise of official power or performance
+of an official duty as a public servant;
+(C) in retaliation against or on account of the service
+of another as a witness, prospective witness, informant, or person who
+has reported the occurrence of a crime;
+(D) against a person the actor knows is a process server
+while the person is performing a duty as a process server; or
+(E) against a person the actor knows is a security
+officer while the officer is performing a duty as a security officer;
+(3) the actor is in a motor vehicle, as defined by Section
+501.002, Transportation Code, and:
+(A) knowingly discharges a firearm at or in the direction
+of a habitation, building, or vehicle;
+(B) is reckless as to whether the habitation, building,
+or vehicle is occupied; and
+(C) in discharging the firearm, causes serious bodily
+injury to any person; or
+(4) the actor commits the assault as part of a mass shooting.
+(c) The actor is presumed to have known the person assaulted was a
+public servant or a security officer if the person was wearing a
+distinctive uniform or badge indicating the person's employment as a
+public servant or status as a security officer.
+(d) In this section:
+(1) "Process server" has the meaning assigned by Section
+156.001, Government Code.
+(2) "Security officer" means a commissioned security officer
+as defined by Section 1702.002, Occupations Code, or a noncommissioned
+security officer registered under Section 1702.221, Occupations Code.
+Sec. 22.021. AGGRAVATED SEXUAL ASSAULT. (a)
+offense:
+(1) if the person:
+(A) intentionally or knowingly:
+Page -8 -
+
+A person commits an
+
+(i) causes the penetration of the anus or sexual
+organ of another person by any means, without that person's consent;
+(ii) causes the penetration of the mouth of another
+person by the sexual organ of the actor, without that person's consent;
+or
+(iii) causes the sexual organ of another person,
+without that person's consent, to contact or penetrate the mouth, anus,
+or sexual organ of another person, including the actor; or
+(B) regardless of whether the person knows the age of the
+child at the time of the offense, intentionally or knowingly:
+(i) causes the penetration of the anus or sexual
+organ of a child by any means;
+(ii) causes the penetration of the mouth of a child
+by the sexual organ of the actor;
+(iii) causes the sexual organ of a child to contact
+or penetrate the mouth, anus, or sexual organ of another person,
+including the actor;
+(iv) causes the anus of a child to contact the
+mouth, anus, or sexual organ of another person, including the actor; or
+(v) causes the mouth of a child to contact the anus
+or sexual organ of another person, including the actor; and
+(2) if:
+(A) the person:
+(i) causes serious bodily injury or attempts to
+cause the death of the victim or another person in the course of the same
+criminal episode;
+(ii) by acts or words places the victim in fear that
+any person will become the victim of an offense under Section
+20A.02(a)(3), (4), (7), or (8) or that death, serious bodily injury, or
+kidnapping will be imminently inflicted on any person;
+(iii) by acts or words occurring in the presence of
+the victim threatens to cause any person to become the victim of an
+offense under Section 20A.02(a)(3), (4), (7), or (8) or to cause the
+death, serious bodily injury, or kidnapping of any person;
+(iv) uses or exhibits a deadly weapon in the course
+of the same criminal episode;
+(v) acts in concert with another who engages in
+conduct described by Subdivision (1) directed toward the same victim and
+occurring during the course of the same criminal episode; or
+(vi) with the intent of facilitating the commission
+of the offense, administers or provides to the victim of the offense any
+substance capable of impairing the victim's ability to appraise the
+nature of the act or to resist the act;
+(B) the victim is younger than 14 years of age,
+regardless of whether the person knows the age of the victim at the time
+of the offense; or
+(C) the victim is an elderly individual or a disabled
+individual.
+(b) In this section:
+(1) "Child" has the meaning assigned by Section 22.011(c).
+(2) "Elderly individual" has the meaning assigned by Section
+Page -9 -
+
+22.04(c).
+
+(3) "Disabled individual" means a person older than 13 years
+of age who by reason of age or physical or mental disease, defect, or
+injury is substantially unable to protect the person's self from harm or
+to provide food, shelter, or medical care for the person's self.
+(c) An aggravated sexual assault under this section is without the
+consent of the other person if the aggravated sexual assault occurs under
+the same circumstances listed in Section 22.011(b).
+(d) The defense provided by Section 22.011(d) applies to this
+section.
+(e) An offense under this section is a felony of the first degree.
+(f) The minimum term of imprisonment for an offense under this
+section is increased to 25 years if:
+(1) the victim of the offense is younger than six years of age
+at the time the offense is committed; or
+(2) the victim of the offense is younger than 14 years of age
+at the time the offense is committed and the actor commits the offense in
+a manner described by Subsection (a)(2)(A).
+Sec. 22.04. INJURY TO A CHILD, ELDERLY INDIVIDUAL, OR DISABLED
+INDIVIDUAL.
+(a)
+A person commits an offense if he intentionally,
+knowingly, recklessly, or with criminal negligence, by act or
+intentionally, knowingly, or recklessly by omission, causes to a child,
+elderly individual, or disabled individual:
+(1) serious bodily injury;
+(2) serious mental deficiency, impairment, or injury; or
+(3) bodily injury.
+(a-1) A person commits an offense if the person is an owner,
+operator, or employee of a group home, nursing facility, assisted living
+facility, boarding home facility, intermediate care facility for persons
+with an intellectual or developmental disability, or other institutional
+care facility and the person intentionally, knowingly, recklessly, or
+with criminal negligence by omission causes to a child, elderly
+individual, or disabled individual who is a resident of that group home
+or facility:
+(1) serious bodily injury;
+(2) serious mental deficiency, impairment, or injury; or
+(3) bodily injury.
+(b) An omission that causes a condition described by Subsection
+(a)(1), (2), or (3) or (a-1)(1), (2), or (3) is conduct constituting an
+offense under this section if:
+(1) the actor has a legal or statutory duty to act; or
+(2) the actor has assumed care, custody, or control of a
+child, elderly individual, or disabled individual.
+(c) In this section:
+(1) "Child" means a person 14 years of age or younger.
+(2) "Elderly individual" means a person 65 years of age or
+older.
+(3) "Disabled individual" means a person:
+(A) with one or more of the following:
+(i) autism spectrum disorder, as defined by Section
+Page -10 -
+
+1355.001, Insurance Code;
+(ii) developmental disability, as defined by Section
+112.042, Human Resources Code;
+(iii) intellectual disability, as defined by Section
+591.003, Health and Safety Code;
+(iv) severe emotional disturbance, as defined by
+Section 261.001, Family Code;
+(v) traumatic brain injury, as defined by Section
+92.001, Health and Safety Code; or
+(vi) mental illness, as defined by Section 571.003,
+Health and Safety Code; or
+(B) who otherwise by reason of age or physical or mental
+disease, defect, or injury is substantially unable to protect the
+person's self from harm or to provide food, shelter, or medical care for
+the person's self.
+(4) Repealed by Acts 2011, 82nd Leg., R.S., Ch. 620, Sec. 11,
+eff. September 1, 2011.
+(d) For purposes of an omission that causes a condition described
+by Subsection (a)(1), (2), or (3), the actor has assumed care, custody,
+or control if the actor has by act, words, or course of conduct acted so
+as to cause a reasonable person to conclude that the actor has accepted
+responsibility for protection, food, shelter, or medical care for a
+child, elderly individual, or disabled individual. For purposes of an
+omission that causes a condition described by Subsection (a-1)(1), (2),
+or (3), the actor acting during the actor's capacity as owner, operator,
+or employee of a group home or facility described by Subsection (a-1) is
+considered to have accepted responsibility for protection, food, shelter,
+or medical care for the child, elderly individual, or disabled individual
+who is a resident of the group home or facility.
+(e) An offense under Subsection (a)(1) or (2) or (a-1)(1) or (2) is
+a felony of the first degree when the conduct is committed intentionally
+or knowingly. When the conduct is engaged in recklessly, the offense is
+a felony of the second degree.
+(f) An offense under Subsection (a)(3) or (a-1)(3) is a felony of
+the third degree when the conduct is committed intentionally or
+knowingly, except that an offense under Subsection (a)(3) is a felony of
+the second degree when the conduct is committed intentionally or
+knowingly and the victim is a disabled individual residing in a center,
+as defined by Section 555.001, Health and Safety Code, or in a facility
+licensed under Chapter 252, Health and Safety Code, and the actor is an
+employee of the center or facility whose employment involved providing
+direct care for the victim. When the conduct is engaged in recklessly,
+the offense is a state jail felony.
+(g) An offense under Subsection (a) is a state jail felony when the
+person acts with criminal negligence. An offense under Subsection (a-1)
+is a state jail felony when the person, with criminal negligence and by
+omission, causes a condition described by Subsection (a-1)(1), (2), or
+(3).
+(h) A person who is subject to prosecution under both this section
+and another section of this code may be prosecuted under either or both
+sections. Section 3.04 does not apply to criminal episodes prosecuted
+Page -11 -
+
+under both this section and another section of this code. If a criminal
+episode is prosecuted under both this section and another section of this
+code and sentences are assessed for convictions under both sections, the
+sentences shall run concurrently.
+(i) It is an affirmative defense to prosecution under Subsection
+(b)(2) that before the offense the actor:
+(1) notified in person the child, elderly individual, or
+disabled individual that the actor would no longer provide the applicable
+care described by Subsection (d), and notified in writing the parents or
+a person, other than the actor, acting in loco parentis to the child,
+elderly individual, or disabled individual that the actor would no longer
+provide the applicable care described by Subsection (d); or
+(2) notified in writing the Department of Family and
+Protective Services that the actor would no longer provide the applicable
+care described by Subsection (d).
+(j) Written notification under Subsection (i)(2) or (i)(3) is not
+effective unless it contains the name and address of the actor, the name
+and address of the child, elderly individual, or disabled individual, the
+type of care provided by the actor, and the date the care was
+discontinued.
+(k) It is a defense to prosecution under this section that the act
+or omission consisted of:
+(1) reasonable medical care occurring under the direction of
+or by a licensed physician; or
+(2) emergency medical care administered in good faith and with
+reasonable care by a person not licensed in the healing arts.
+(l) It is an affirmative defense to prosecution under this section:
+(1) that the act or omission was based on treatment in
+accordance with the tenets and practices of a recognized religious method
+of healing with a generally accepted record of efficacy;
+(2) for a person charged with an act of omission causing to a
+child, elderly individual, or disabled individual a condition described
+by Subsection (a)(1), (2), or (3) that:
+(A) there is no evidence that, on the date prior to the
+offense charged, the defendant was aware of an incident of injury to the
+child, elderly individual, or disabled individual and failed to report
+the incident; and
+(B) the person:
+(i) was a victim of family violence, as that term is
+defined by Section 71.004, Family Code, committed by a person who is also
+charged with an offense against the child, elderly individual, or
+disabled individual under this section or any other section of this
+title;
+(ii) did not cause a condition described by
+Subsection (a)(1), (2), or (3); and
+(iii) did not reasonably believe at the time of the
+omission that an effort to prevent the person also charged with an
+offense against the child, elderly individual, or disabled individual
+from committing the offense would have an effect; or
+(3) that:
+(A) the actor was not more than three years older than
+Page -12 -
+
+the victim at the time of the offense; and
+(B) the victim was a nondisabled or disabled child at the
+time of the offense.
+(m) It is an affirmative defense to prosecution under Subsections
+(a)(1), (2), and (3) for injury to a disabled individual that the person
+did not know and could not reasonably have known that the individual was
+a disabled individual, as defined by Subsection (c), at the time of the
+offense.
+Sec. 22.041. ABANDONING OR ENDANGERING A CHILD, ELDERLY INDIVIDUAL,
+OR DISABLED INDIVIDUAL. (a) In this section:
+(1) "Abandon" means to leave in any place without providing
+reasonable and necessary care a child, elderly individual, or disabled
+individual under circumstances under which no reasonable, similarly
+situated person would leave a child or individual of that age and
+ability.
+(2) "Child," "elderly individual," and "disabled individual"
+have the meanings assigned by Section 22.04.
+(b) A person commits an offense if the person, having custody,
+care, or control of a child, elderly individual, or disabled individual,
+intentionally abandons the child or individual in any place under
+circumstances that expose the child or individual to an unreasonable risk
+of harm.
+(c) A person commits an offense if the person intentionally,
+knowingly, recklessly, or with criminal negligence, by act or omission,
+engages in conduct that places a child, elderly individual, or disabled
+individual in imminent danger of death, bodily injury, or physical or
+mental impairment.
+(c-1) For purposes of Subsection (c), it is presumed that a person
+engaged in conduct that places a child, elderly individual, or disabled
+individual in imminent danger of death, bodily injury, or physical or
+mental impairment if:
+(1) the person manufactured, possessed, or in any way
+introduced into the body of any person the controlled substance
+methamphetamine in the presence of the child, elderly individual, or
+disabled individual;
+(2) the person's conduct related to the proximity or
+accessibility of the controlled substance methamphetamine to the child,
+elderly individual, or disabled individual and an analysis of a specimen
+of the child's or individual's blood, urine, or other bodily substance
+indicates the presence of methamphetamine in the body of the child or
+individual; or
+(3) the person injected, ingested, inhaled, or otherwise
+introduced a controlled substance listed in Penalty Group 1, Section
+481.102, Health and Safety Code, or Penalty Group 1-B, Section 481.1022,
+Health and Safety Code, into the human body when the person was not in
+lawful possession of the substance as defined by Section 481.002(24) of
+that code.
+(d) Except as provided by Subsection (e), an offense under
+Subsection (b) is:
+(1) a state jail felony if the actor abandoned the child,
+Page -13 -
+
+elderly individual, or disabled individual with intent to return for the
+child or individual; or
+(2) a felony of the third degree if the actor abandoned the
+child, elderly individual, or disabled individual without intent to
+return for the child or individual.
+(e) An offense under Subsection (b) is a felony of the second
+degree if the actor abandons the child, elderly individual, or disabled
+individual under circumstances that a reasonable person would believe
+would place the child or individual in imminent danger of death, bodily
+injury, or physical or mental impairment.
+(f) An offense under Subsection (c) is a state jail felony.
+(g) It is a defense to prosecution under Subsection (c) that the
+act or omission enables the child, elderly individual, or disabled
+individual to practice for or participate in an organized athletic event
+and that appropriate safety equipment and procedures are employed in the
+event.
+(h) It is an exception to the application of this section for
+abandoning or endangering a child that the actor voluntarily delivered
+the child to a designated emergency infant care provider under Section
+262.302, Family Code.
+Sec. 22.05. DEADLY CONDUCT. (a) A person commits an offense if he
+recklessly engages in conduct that places another in imminent danger of
+serious bodily injury.
+(b) A person commits an offense if he knowingly discharges a
+firearm at or in the direction of:
+(1) one or more individuals; or
+(2) a habitation, building, or vehicle and is reckless as to
+whether the habitation, building, or vehicle is occupied.
+(c) Recklessness and danger are presumed if the actor knowingly
+pointed a firearm at or in the direction of another whether or not the
+actor believed the firearm to be loaded.
+(d) For purposes of this section, "building," "habitation," and
+"vehicle" have the meanings assigned those terms by Section 30.01.
+(e) An offense under Subsection (a) is a Class A misdemeanor. An
+offense under Subsection (b) is a felony of the third degree.
+Sec. 22.06. CONSENT AS DEFENSE TO ASSAULTIVE CONDUCT. (a) The
+victim's effective consent or the actor's reasonable belief that the
+victim consented to the actor's conduct is a defense to prosecution under
+Section 22.01 (Assault), 22.02 (Aggravated Assault), or 22.05 (Deadly
+Conduct) if:
+(1) the conduct did not threaten or inflict serious bodily
+injury; or
+(2) the victim knew the conduct was a risk of:
+(A) his occupation;
+(B) recognized medical treatment; or
+(C) a scientific experiment conducted by recognized
+methods.
+(b) The defense to prosecution provided by Subsection (a) is not
+available to a defendant who commits an offense described by Subsection
+Page -14 -
+
+(a) as a condition of the defendant's or the victim's initiation or
+continued membership in a criminal street gang, as defined by Section
+71.01.
+Sec. 22.07. TERRORISTIC THREAT. (a) A person commits an offense
+if he threatens to commit any offense involving violence to any person or
+property with intent to:
+(1) cause a reaction of any type to his threat by an official
+or volunteer agency organized to deal with emergencies;
+(2) place any person in fear of imminent serious bodily
+injury;
+(3) prevent or interrupt the occupation or use of a building,
+room, place of assembly, place to which the public has access, place of
+employment or occupation, aircraft, automobile, or other form of
+conveyance, or other public place;
+(4) cause impairment or interruption of public communications,
+public transportation, public water, gas, or power supply or other public
+service;
+(5) place the public or a substantial group of the public in
+fear of serious bodily injury; or
+(6) influence the conduct or activities of a branch or agency
+of the federal government, the state, or a political subdivision of the
+state.
+(b) An offense under Subsection (a)(1) is a Class B misdemeanor.
+(c) An offense under Subsection (a)(2) is a Class B misdemeanor,
+except that the offense is a Class A misdemeanor if the offense:
+(1) is committed against a member of the person's family or
+household or otherwise constitutes family violence; or
+(2) is committed against a public servant.
+(c-1) Notwithstanding
+Subsection
+(c)(2),
+an
+offense
+under
+Subsection (a)(2) is a state jail felony if the offense is committed
+against a person the actor knows is a peace officer or judge.
+(d) An offense under Subsection (a)(3) is a Class A misdemeanor,
+unless the actor causes pecuniary loss of $1,500 or more to the owner of
+the building, room, place, or conveyance, in which event the offense is a
+state jail felony.
+(e) An offense under Subsection (a)(4), (a)(5), or (a)(6) is a
+felony of the third degree.
+(f) In this section:
+(1) "Family" has the meaning assigned by Section 71.003,
+Family Code.
+(2) "Family violence" has the meaning assigned by Section
+71.004, Family Code.
+(3) "Household" has the meaning assigned by Section 71.005,
+Family Code.
+(g) For purposes of Subsection (d), the amount of pecuniary loss is
+the amount of economic loss suffered by the owner of the building, room,
+place, or conveyance as a result of the prevention or interruption of the
+occupation or use of the building, room, place, or conveyance.
+Sec. 22.08.
+
+AIDING SUICIDE.
+
+(a)
+
+Page -15 -
+
+A person commits an offense if,
+
+with intent to promote or assist the commission of suicide by another, he
+aids or attempts to aid the other to commit or attempt to commit suicide.
+(b) An offense under this section is a Class C misdemeanor unless
+the actor's conduct causes suicide or attempted suicide that results in
+serious bodily injury, in which event the offense is a state jail felony.
+Sec. 22.09. TAMPERING WITH CONSUMER PRODUCT. (a) In this section:
+(1) "Consumer Product" means any product offered for sale to
+or for consumption by the public and includes "food" and "drugs" as those
+terms are defined in Section 431.002, Health and Safety Code.
+(2) "Tamper" means to alter or add a foreign substance to a
+consumer product to make it probable that the consumer product will cause
+serious bodily injury.
+(b) A person commits an offense if he knowingly or intentionally
+tampers with a consumer product knowing that the consumer product will be
+offered for sale to the public or as a gift to another.
+(c) A person commits an offense if he knowingly or intentionally
+threatens to tamper with a consumer product with the intent to cause
+fear, to affect the sale of the consumer product, or to cause bodily
+injury to any person.
+(d) An offense under Subsection (b) is a felony of the second
+degree unless a person suffers serious bodily injury, in which event it
+is a felony of the first degree. An offense under Subsection (c) is a
+felony of the third degree.
+Sec. 22.10. LEAVING A CHILD IN A VEHICLE. (a) A person commits an
+offense if he intentionally or knowingly leaves a child in a motor
+vehicle for longer than five minutes, knowing that the child is:
+(1) younger than seven years of age; and
+(2) not attended by an individual in the vehicle who is 14
+years of age or older.
+(b) An offense under this section is a Class C misdemeanor.
+Sec. 22.11. HARASSMENT BY PERSONS IN CERTAIN FACILITIES; HARASSMENT
+OF PUBLIC SERVANT. (a) A person commits an offense if, with the intent
+to assault, harass, or alarm, the person:
+(1) while imprisoned or confined in a correctional or
+detention facility, causes another person to contact the blood, seminal
+fluid, vaginal fluid, saliva, urine, or feces of the actor, any other
+person, or an animal;
+(2) while committed to a civil commitment facility, causes:
+(A) an officer or employee of the Texas Civil Commitment
+Office to contact the blood, seminal fluid, vaginal fluid, saliva, urine,
+or feces of the actor, any other person, or an animal:
+(i) while the officer or employee is lawfully
+discharging an official duty at a civil commitment facility; or
+(ii) in retaliation for or on account of an exercise
+of official power or performance of an official duty by the officer or
+employee; or
+(B) a person who contracts with the state to perform a
+service in the facility or an employee of that person to contact the
+Page -16 -
+
+blood, seminal fluid, vaginal fluid, saliva, urine, or feces of the
+actor, any other person, or an animal:
+(i) while the person or employee is engaged in
+performing a service within the scope of the contract, if the actor knows
+the person or employee is authorized by the state to provide the service;
+or
+(ii) in retaliation for or on account of the
+person's or employee's performance of a service within the scope of the
+contract; or
+(3) causes another person the actor knows to be a public
+servant to contact the blood, seminal fluid, vaginal fluid, saliva,
+urine, or feces of the actor, any other person, or an animal while the
+public servant is lawfully discharging an official duty or in retaliation
+or on account of an exercise of the public servant's official power or
+performance of an official duty.
+(b) An offense under this section is a felony of the third degree.
+(c) If conduct constituting an offense under this section also
+constitutes an offense under another section of this code, the actor may
+be prosecuted under either section.
+(d) In this section, "correctional or detention facility" means:
+(1) a secure correctional facility; or
+(2) a "secure correctional facility" or a "secure detention
+facility" as defined by Section 51.02, Family Code, operated by or under
+contract with a juvenile board or the Texas Juvenile Justice Department
+or any other facility operated by or under contract with that department.
+(e) For purposes of Subsection (a)(3), the actor is presumed to
+have known the person was a public servant if the person was wearing a
+distinctive uniform or badge indicating the person's employment as a
+public servant.
+Sec. 22.12. APPLICABILITY TO CERTAIN CONDUCT. This chapter does
+not apply to conduct charged as having been committed against an
+individual who is an unborn child if the conduct is:
+(1) committed by the mother of the unborn child;
+(2) a lawful medical procedure performed by a physician or
+other health care provider with the requisite consent;
+(3) a lawful medical procedure performed by a physician or
+other licensed health care provider with the requisite consent as part of
+an assisted reproduction as defined by Section 160.102, Family Code; or
+(4) the dispensation of a drug in accordance with law or
+administration of a drug prescribed in accordance with law.
+
+Page -17 -
+
+PENAL CODE
+TITLE 6. OFFENSES AGAINST THE FAMILY`
+  },
+    {
+    id: 'pc_20a_001',
+    question: 'According to Chapter 20A, trafficking of persons is what degree of felony?',
+    choices: [
+        'A. Capital felony',
+        'B. First degree felony',
+        'C. Second degree felony',
+        'D. Third degree felony',
+        'E. State jail felony'
+    ],
+    correct: 2,
+    explanation: 'Trafficking of persons is a second degree felony under Chapter 20A.',
+    category: 'Penal Code',
+    source: 'Chapter 20A - Trafficking of Persons'
+  },
+    {
+    id: 'general_manual_605',
+    title: `General Manual 605: Miscellaneous Offenses and Complaint Calls`,
+    category: 'General Manual',
+    summary: `Procedure 605 – Miscellaneous Offenses and Complaint Calls Office with Primary Responsibility: Office(s) with Secondary Responsibilities: Forms Referenced in Procedure: Effective Date: Prior Revision ...`,
+    content: `Procedure 605 – Miscellaneous Offenses and Complaint Calls
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+SSO
+PSC, PNC, TSC, FTC, IDC
+
+Number of Pages:
+
+SAPD Form #200-IA1
+SAPD Form #300
+SAPD Form #BD-1
+
+Related Procedures:
+
+July 31, 2010
+October 01, 2009
+9
+402, 601
+
+.01 INTRODUCTION
+This procedure establishes guidelines, while allowing officers maximum discretion, for the handling of a variety of
+miscellaneous offenses and complaint calls which make up a large percentage of the officers' workload. The procedure
+also establishes a process for the reporting of criminal offenses coming to the attention of Department members.
+.02 ANIMALS
+A. Complainants reporting noisy animals are handled under Section .08, Noise Disturbances, of this procedure.
+B. Deceased animals are removed from public property by the Public Works Department (complainants should call 311
+for assistance). Property owners retain the responsibility of removing dead animals from their property.
+C. The Animal Care Services Department has the authority to impound any animal which:
+1.
+
+Is roaming at large;
+
+2.
+
+Is exhibiting symptoms of rabies:
+
+3.
+
+a.
+
+Appearance of choking;
+
+b.
+
+Dropping of the lower jaw (in dogs);
+
+c.
+
+Inability to swallow, leading to drooling and foaming of saliva (i.e., "foaming at the mouth"); or
+
+d.
+
+Paralysis of jaw, throat, and chewing muscles.
+
+Has been abandoned by its owner:
+a.
+
+Animals with no identification;
+
+b.
+
+Animals which appear malnourished (exceptionally skinny, with extreme definition of the rib and hip area);
+
+4.
+
+Is described in a warrant for seizure;
+
+5.
+
+Has been declared dangerous by Animal Care Services;
+
+6.
+
+Is in danger by confinement in a parked vehicle; or
+
+7.
+
+Is being treated cruelly by its owner and confirmed by Animal Care Services Department.
+
+D. Reports of cruelty to animals require uniformed officers to initially investigate the alleged offenses.
+1.
+
+In substantiated cases, the officer requests an Animal Cruelty Specialist from Animal Care Services Department
+to respond to the scene and take over the investigation.
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 9
+
+Effective Date: July 31, 2010
+
+San Antonio Police Department
+GENERAL MANUAL
+Procedure 605 – Miscellaneous Offenses and Complaint Calls
+2.
+
+In cases of animals not requiring immediate medical attention and evidence of cruelty is questionable, the
+officer routes a copy of the incident report to Animal Care Services Department to be forwarded to an Animal
+Cruelty Specialist.
+
+E. Animal Cruelty Specialists who are employed by the City and assigned to Animal Care Services Department are not
+certified Texas peace officers, and as such, do not have arrest authority in cases involving animal cruelty. SAPD
+officers and Crime Scene Unit Investigators, upon request from an Animal Cruelty Specialist, shall assist the
+Specialist in any case involving animal cruelty.
+F.
+
+An officer may destroy an animal when he or another person is placed in immediate danger of bodily harm.
+1.
+
+An officer may, upon the request of an owner or Animal Care Officer, and with the approval of a supervisory
+officer, destroy any animal which is injured beyond medical treatment, sick, or known to be rabid.
+a.
+
+When a suspected rabid animal must be destroyed, the officer should avoid shooting the animal in the head.
+This is done to avoid destroying the area of the brain used to test for rabies.
+
+b.
+
+When a suspected rabid animal has been destroyed the Animal Care Services Department is immediately
+notified and asked to pick up the carcass. The Public Works Department will be contacted for all other
+destroyed animals.
+
+2.
+
+The Animal Care Services Department will be called when animals are not destroyed, only wounded. This
+includes animals that run away. However, an officer must make a reasonable attempt to notify the animal’s
+owner.
+
+3.
+
+An officer who discharges his weapon to destroy any animal immediately notifies the Communications Unit
+and his supervisor. Copies of the incident report are submitted to the officer’s Division Commander, through the
+officer's chain of command.
+
+4.
+
+The officer’s supervisor will attach to the officer’s report a SAPD Form 200-IA1, Preliminary Investigation
+Cover Sheet, and submit a report indicating whether the officer followed all Department Policies and
+Procedures and his or her recommendation.
+
+.03 BURGLARY/ROBBERY ALARMS - OPEN DOORS AND WINDOWS
+A. An officer responding to a burglary or robbery alarm where a point of entry has been located or a call for open doors
+or windows where it appears an entry has been made, should take the following actions:
+1.
+
+Immediately notify the dispatcher;
+
+2.
+
+Assume the most tactically advantageous position until a cover officer arrives;
+
+3.
+
+Request a K-9 Detail officer, who directs the movements of officers going into a building;
+
+4.
+
+If a K-9 Detail officer is not available, a building search is made, taking precautions not to destroy any
+evidence;
+
+5.
+
+Unless exigent circumstances exist, no officer enters any structure suspected of being burglarized without a
+cover officer. If entry must be made, the dispatcher is notified;
+
+6.
+
+Attempt to reach the owner by telephone. If the owner cannot be located, the officer secures the building to the
+best of his ability and leaves written notification for the owner; and
+
+7.
+
+Should an owner or alarm company representative arrive at the location, officers assist in a security check of the
+building.
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 2 of 9
+
+Effective Date: July 31, 2010
+
+San Antonio Police Department
+GENERAL MANUAL
+Procedure 605 – Miscellaneous Offenses and Complaint Calls
+B. If either the owner or alarm company representative notifies the dispatcher they have arrived at the location after
+officers have departed, the dispatcher, upon request, sends an officer to assist in a security check of the building.
+C. The appropriate written or N-Code report is made on each call. Copies of written reports are forwarded to the
+appropriate follow-up unit.
+.04 DISABLED OR ELDERLY PERSONS
+A. This section is designed to facilitate the handling and disposition of those situations involving disabled or elderly
+persons requiring social services.
+B. Police officers may become involved in situations concerning the safety and welfare of disabled persons and the
+elderly.
+C. One of the Department's major functions includes making proper referrals to social service agencies.
+D. The Texas Department of Family and Protective Services have the primary responsibility for providing necessary
+treatment for disabled or elderly persons suffering from neglect and/or abuse.
+E. The following situations are representative of appropriate circumstances for referral to the Texas Department of
+Family and Protective Services:
+
+F.
+
+1.
+
+Disabled or elderly persons involved in public disturbances who are referred to the Department, and the
+Department is unable to substantiate a crime has occurred;
+
+2.
+
+Victims of crime who are disabled or elderly and require social services as a result of a crime;
+
+3.
+
+Disabled or elderly persons who are particularly vulnerable to crime by substandard living conditions, such as
+unlocked or unsecured doors and windows;
+
+4.
+
+Repeated calls by disabled or elderly persons for nonexistent or trivial incidents in which the officer suspects
+the complainant may suffer from disorientation;
+
+5.
+
+Disabled or elderly persons who call the police because they have repeatedly fallen in their home;
+
+6.
+
+Family violence reports involving disabled, elderly, or mentally retarded persons;
+
+7.
+
+Neighbors concerned about a disabled or elderly person in the neighborhood who is not able to care for himself
+or who is subjected to family violence or exploitation;
+
+8.
+
+Calls from disabled or elderly persons needing assistance with food, utilities, or other basic needs; or
+
+9.
+
+Disabled or elderly victims of violent crime (rape, assault, robbery, etc.) requiring counseling.
+
+Officers assess each situation in order to relate the precise circumstances to the Texas Department of Family and
+Protective Services. Officers understand the importance of protecting the dignity and independence of each
+complainant.
+
+G. Officers needing to contact the Texas Department of Family and Protective Services may obtain the numbers from
+the Communications Unit.
+H. Copies of all field reports related to these issues are routed to the Texas Department of Family and Protective
+Services and marked “Investigations.”
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 3 of 9
+
+Effective Date: July 31, 2010
+
+San Antonio Police Department
+GENERAL MANUAL
+Procedure 605 – Miscellaneous Offenses and Complaint Calls
+.05 DISORDERLY CONDUCT
+A. When an officer is confronted by a situation within the scope of the disorderly conduct statute (Texas Penal Code,
+Section 42.01), he first attempts to calm the situation and preserve the peace by the use of various alternatives short
+of arrest, such as a warning or mediation.
+B. Misdemeanor citations or custodial arrests are used in cases where the offender persists in the use of abusive
+language or other conduct forbidden by paragraphs 1, 2, or 5 of Section 42.01 of the Texas Penal Code. All
+custodial arrests for disorderly conduct must be approved by a supervisory officer prior to booking the prisoner.
+C. Any person who is under the influence of alcohol or any other substance and who is also violent, threatens to be
+violent, or has been involved in a disturbance is arrested for disorderly conduct, provided the facts support the arrest
+and a supervisory officer approves the arrest prior to booking the prisoner.
+.06 FIRES AND RESCUES
+A. The primary duties of officers at the scene of fires and rescues are to help save lives as well as control crowds and
+traffic; however, officers also comply with Fire Department requests for assistance in other areas.
+B. The types of fire alarm calls covered by this procedure include the following:
+1.
+
+2.
+
+Still alarms: Fires where there are no immediate threats of bodily injury consists of, but are not limited to, the
+following:
+a.
+
+Automobile fires;
+
+b.
+
+Grass fires; or
+
+c.
+
+Trash container fires.
+
+Regular alarms: Fires which pose a threat of bodily injury or property loss consist of, but are not limited to, the
+following:
+a.
+
+Residential fires;
+
+b.
+
+Other structure fires; or
+
+c.
+
+Second and third alarm fires requiring additional fire units.
+
+C. When an officer initiates a fire alarm, he:
+1.
+
+Notifies the dispatcher of the location and type of fire, still or regular alarm;
+
+2.
+
+Makes a quick check for possible occupants and warns persons in the surrounding area; and
+
+3.
+
+Advises the Communications Unit to notify a supervisory officer, and if there is a need for additional officers,
+the locations where they are needed.
+
+D. If a regular alarm is initiated through the Communications Unit, an officer proceeds to the scene of the fire as a
+code-two emergency call.
+1.
+
+Marked police vehicles should not be used to barricade a street, as the vehicle may block the path of other
+emergency vehicles.
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 4 of 9
+
+Effective Date: July 31, 2010
+
+San Antonio Police Department
+GENERAL MANUAL
+Procedure 605 – Miscellaneous Offenses and Complaint Calls
+2.
+
+Officers perform their assigned duties until relieved by a supervisory officer or until the fire hoses have been
+cleared from the street.
+
+E. Officers encountering fires where arson is suspected request an Arson Unit investigator to respond to the location.
+1.
+
+If the Arson Unit investigator determines the fire is the result of suspected or known arson, the Arson Unit
+investigator may prepare an offense report.
+
+2.
+
+If the cause of the fire appears to be accidental, the SAPD officer prepares an incident report and routes a copy
+to the Arson Unit.
+
+.07 INFORMATION RECEIVED ON CRIMINAL OFFENSES - CONTINUING DUTY TO REPORT
+Members, whether on-duty or off-duty, receiving or possessing facts or information relative to a criminal offense (Class
+B misdemeanor or above) shall write a report with a SAPD case number and forward the original report to the Records
+Office with a copy sent to the follow-up unit.
+A. This report shall be completed before the end of the member’s tour of duty, if the member possessing the
+information is on-duty.
+B. If the member receiving or possessing the criminal offense information is off-duty, the member shall ensure the
+criminal offense is immediately reported upon returning to duty.
+C. Upon returning to duty, members who have received and possess facts or information on criminal offenses (Class B
+misdemeanor or above) will have a continuing duty to report the criminal offense as outlined in this procedure until
+the criminal offense has been reported.
+D. Police emergency situations and crimes in progress shall immediately be reported to the police dispatcher by the
+officer possessing the information.
+.08 NOISE DISTURBANCES
+A. Definitions:
+1.
+
+As defined by San Antonio Municipal Code, “Noise Nuisance” shall mean any loud, irritating, vexing or
+disturbing sound originating from a nearby property under separate ownership which causes injury, discomfort,
+or distress of a person of reasonable nervous sensibilities, or any sound exceeding the maximum permitted
+sound levels specified in Subsections 21-52(a) (6) (b), (9-12), and 21-60(b) of Chapter 21, Art. III Div. 1.
+
+2.
+
+“Party, Gathering, or Event” shall mean a group of five or more persons who have assembled or are assembling
+in a manner so as to create a substantial disturbance of the quiet enjoyment of private or public property. This
+includes, but is not limited to, excessive noise or traffic, fights, and/or disturbances of the peace.
+
+B. Person responsible for the party, gathering or event shall mean:
+1.
+
+Any adult person in actual or lawful control or possession of the premises; or
+
+2.
+
+Any adult person who organized the party, gathering or event; or
+
+3.
+
+The parent or guardian having custody or control of any minor responsible for the party, gathering or event
+regardless of whether the parent or guardian was present at the time of the party, gathering or event.
+
+C. Responsibilities of officers:
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 5 of 9
+
+Effective Date: July 31, 2010
+
+San Antonio Police Department
+GENERAL MANUAL
+Procedure 605 – Miscellaneous Offenses and Complaint Calls
+1.
+
+Officers responding to a noise complaint (non-animal) may rely on Municipal Code, Chapter 21, Art. III, Noise,
+or Texas Penal Code 42.01, Disorderly Conduct, (5), to address the complaint. Depending on the
+circumstances, the officer may address the complaint through a verbal warning or by issuing a misdemeanor
+citation. If the officer issues a misdemeanor citation, the officer shall attach the citation to a copy of the
+incident report and forward them to Municipal Court.
+a.
+
+Noise Meter: Each Substation will have operational noise meters available for use by trained personnel.
+
+b.
+
+Patrol Division Commanders will ensure various supervisors and officers at each substation are trained in
+the operation of the Noise Level Meters.
+Note: Training PowerPoint on noise meters: \\\\fscommon\\academy_training\\
+
+2.
+
+Officers responding to a location of an excessive noise complaint which falls under the definition of a “Party,
+Gathering, or Event” will be required to perform the following functions:
+a.
+
+Determine there are at least five or more persons who have assembled and try to determine the exact
+number if possible;
+
+b.
+
+Determine the person(s) responsible for the party, gathering or event, if possible;
+
+c.
+
+Provide the responsible person with a copy of the SAPD Form #300, (Noise Ordinnance) Notice of Liability;
+and
+
+d.
+
+Complete an incident report to include:
+(1) The responsible person(s), full name, Title, Race, Sex, DOB, Address and other pertinent identifiers, if
+necessary; in item (11) on the incident report form and uses code M – Manager/Owner;
+(2) Address of party, gathering, or event;
+(3) Estimated number of persons at the party, gathering or event;
+(4) Statement indicating the officer provided responsible individual(s) with SAPD Form #300; and
+(5) In the incident/event item (3) on the incident form enter: City Ordinance: 2007-04-05-0371 and route a
+copy of the report to the Alarm Unit.
+
+3.
+
+Officers responding to a loud animal noise complaint may rely on the City Code of San Antonio, Chapter 21,
+Article III, Noise, or Chapter 5, Article VII, Animal Nuisances, to address the complaint. If the officer can
+substantiate the noise complaint, a misdemeanor citation may be issued. Otherwise, officers responding to a
+loud animal noise complaint shall be required to do the following:
+a.
+
+Inform the complainants they may file a complaint with Municipal Court for violations of Chapter 5 Article
+VII of the San Antonio City Code dealing with animal noise nuisances. The officer shall write an incident
+report and include the complainant’s name, DOB and telephone number in the report. The officer shall also
+inform the complainant of the importance of evidence for court purposes (i.e., audio/video recordings of the
+alleged acts). The officer shall write the case number of the call on the bottom portion of SAPD Form
+#BD-1, tear off the bottom portion of the form and provide it to the complainant. The officer shall ask the
+complainant to follow the directions on the form.
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 6 of 9
+
+Effective Date: July 31, 2010
+
+San Antonio Police Department
+GENERAL MANUAL
+Procedure 605 – Miscellaneous Offenses and Complaint Calls
+b.
+
+The officer shall attempt to contact the person responsible for the animal creating the noise nuisance and
+authenticate the alleged complaint. The officer shall provide this person with the top portion of SAPD Form
+#BD-1. The officer shall write his/her name, badge #, date, time and case number on the form. The officer
+shall document his/her findings in the details of the report. This includes documenting the responsible
+person’s name, DOB, and telephone number under “01” in the appropriate section of the incident report.
+
+c.
+
+If no one answers the door to the residence of the noisy animal, the officer shall affix the top portion of
+SAPD Form #BD-1 to the door of the residence. The officer shall document his/her name, badge #, date,
+time, and case number in the top portion of SAPD Form #BD-1. The officers shall document all actions
+taken in relation to the call in the details of the incident report and shall route a copy of the report to
+Municipal Court. The officer may utilize all COSA database systems to determine the responsible party.
+
+d.
+
+If the complainant is a “refused” complainant with no information provided to the Communication Unit
+clerk, and if the officer cannot hear the alleged noisy animal and finds no evidence the offense has taken
+place, the officer may refer to GM Procedure 402, Differential Police Response, and N-Code 17 the call.
+
+. 09 PUBLIC INTOXICATION
+A. A person commits an offense if the person appears in a public place while intoxicated to the degree he may endanger
+himself or another. The word “intoxicated” has the same meaning assigned to it as in the Texas Penal Code.
+1.
+
+An individual arrested may be released from custody by a peace officer or magistrate if it is believed
+imprisonment is unnecessary for the protection of the individual or others.
+
+2.
+
+It is a defense to prosecution the alcohol or other substance was administered for therapeutic purposes by a
+licensed physician.
+
+3.
+
+Once a “serial inebriate” has been prosecuted and convicted on three occasions through Municipal Court, the
+fourth prosecution will be submitted as a Class B misdemeanor enhancement with prosecution to follow
+through County Court.
+
+B. Officers observing persons whom they believe are intoxicated should be certain the person is intoxicated and not
+suffering from an illness before a decision to arrest is made. In considering the degree of intoxication, officers
+satisfy themselves the subject should be placed in custody for his own safety or for the public's safety.
+1.
+
+2.
+
+When taking a person into custody for Public Intoxication, officers will:
+a.
+
+Handcuff, search, and transport the intoxicated person in the same manner as prisoners in accordance with
+GM Procedure 601, Prisoners;
+
+b.
+
+Retain custody of the intoxicated person until the accepting facility takes custody of the person.
+
+Officers will transport all non-violent adult persons (18 years of age or older) charged with Public Intoxication,
+including those who are also charged with an additional Class C misdemeanor offense or who have outstanding
+Class C misdemeanor warrants, to the Public Safety Unit unless they meet the criteria for enhancement. See
+Subsection C, Processing at the Public Safety Unit.
+a.
+
+The City Magistrate’s Office will perform all administrative functions regarding any additional Class C
+misdemeanor charges or warrants. Officers will fax a copy of their incident report to the City Detention
+Center at 207-4383 prior to leaving the PSU.
+
+b. Seventeen (17) year olds charged with Public Intoxication may be issued a misdemeanor citation and
+released to a parent or legal guardian or physically arrested. Officers will process all seventeen (17) year
+olds physically arrested for Public Intoxication at the City of San Antonio Detention Center at 401 S. Frio.
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 7 of 9
+
+Effective Date: July 31, 2010
+
+San Antonio Police Department
+GENERAL MANUAL
+Procedure 605 – Miscellaneous Offenses and Complaint Calls
+c.
+
+Juveniles (under 17 years of age) charged with the single offense of Public Intoxication may be issued a
+misdemeanor citation and released to a parent or legal guardian or physically arrested. If physical arrest is
+necessary, they shall be processed at the Youth Processing Office and then taken to the Bexar County
+Juvenile Detention Center.
+
+d.
+
+The Public Safety Unit will not accept anyone under the age of 18 years old, persons who are unconscious,
+persons who are pregnant, or persons who are overly combative.
+
+C. Processing at the Public Safety Unit at 601 N. Frio
+1.
+
+2.
+
+If the arresting officer suspects this arrestee has been processed previously for Public Intoxication (e.g. street
+person with obvious signs of frequent intoxication) he should phone the PSU at (210) 246-1391 or (210) 2461390 to check the individual’s status as a “serial inebriate.”
+a.
+
+Personnel at the PSU will either direct the officer to the PSU or the Detention Center based on their records
+of the arrestee.
+
+b.
+
+If the officer and arrestee are directed to the Detention Center, the arresting officer will process the arrestee
+in accordance with Subsection E, Prisoners being magistrated.
+
+Officers taking offenders into the Public Safety Unit will enter from the Morales Street side, which is marked
+“Police Entrance.”
+a.
+
+Officers will search the intoxicated person before they enter the Public Safety Unit (PSU) facility and
+assist PSU personnel in conducting an inventory of the intoxicated person’s possessions;
+
+b.
+
+Officers shall sign the inventory sheet prepared by the PSU personnel and retain a copy for their report.
+
+3.
+
+All offenders brought into the PSU must receive medical clearance. Medical clearance for offenders is
+available at this facility (M-F 2000 to 0800 hours, Sat. 1600 to 0800 hours, and all day Sunday). During all
+other times, offenders should be transported to the Triage Center located at the Crisis Care Center at 527 N.
+Leona Street, (210) 358-3611.
+
+4.
+
+Once intoxicated persons are cleared for entry into the PSU, the officers may leave and resume their normal
+duties.
+
+5.
+
+Officers will leave a copy of the Incident Report with the staff at the PSU, documenting all information
+regarding the arrest for public intoxication and any additional Class C misdemeanor charges or warrants.
+
+6.
+
+The intoxicated person’s personal property is released to personnel at the Public Safety Unit and not placed in
+the Property Room.
+
+7.
+
+If medical issues are present and they are beyond the scope of the services available to the PSU, then the
+intoxicated person may require transportation to University Hospital or the Acute Care Clinic/Crisis Care
+Center located at 527 North Leona.
+
+D. The Public Safety Unit will take custody of all persons arrested for public intoxication except the following:
+1.
+
+Intoxicated persons under the age of 18 years old (Go to City Detention Center).
+
+2.
+
+Intoxicated persons who are unconscious (Call EMS).
+
+3.
+
+Intoxicated persons who are pregnant (Go to City Detention Center).
+
+4.
+
+Intoxicated persons who are overly combative (Go to City Detention Center).
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 8 of 9
+
+Effective Date: July 31, 2010
+
+San Antonio Police Department
+GENERAL MANUAL
+Procedure 605 – Miscellaneous Offenses and Complaint Calls
+E. Prisoners being magistrated for Public Intoxication will be issued a misdemeanor citation with the word “Booked”
+written across the bottom. A copy of this citation, the incident report, the booking slip, and the Class C Complaint
+shall be given to Detention Center personnel.
+
+F.
+
+1.
+
+The incident report must contain all elements of the offense (intoxicated, in a public place, and a danger to
+himself and/or others). It is of utmost importance to the prosecution for the officer to articulate how the
+arrestee was a danger to himself and/or others, or how the potential for danger/harm existed or was
+created.
+
+2.
+
+The incident report should also indicate whether the individual was violent, causing a disturbance, abusive,
+passive, etc. This information assists the Detention Center personnel in processing the prisoner.
+
+If a person is intoxicated on a substance other than alcohol, such as marijuana, glue, paint, or any other drug, he is
+handled in the same manner as if he were under the influence of alcohol, unless probable cause warrants an arrest for
+another offense.
+
+G. Unconscious, sick, or injured prisoners are handled in accordance with GM Procedure 601, Prisoners.
+.10 REQUESTS FOR ASSISTANCE FROM PUBLIC
+A. Requests for an officer to stand by while the complainant retrieves property, rent, children, etc. (where there is no
+breach of the peace) are civil matters and therefore officers generally will not be dispatched to these calls. However,
+if dispatched, officers shall make the call and handle the incident in accordance with all applicable policies and
+procedures.
+B. Requests for transportation in police vehicles are not honored. However, stranded motorists may be transported by
+officers to the nearest safe location with the approval of a supervisor. The dispatcher is notified when motorists are
+transported and a time/odometer check is made in all cases.
+C. Officers in marked police vehicles offer assistance to all stranded motorists. The primary concerns of the officers
+are maintaining traffic flow and the safety of the motorist. Officers in unmarked police vehicles notify the dispatcher
+of the locations of stranded motorists.
+D. Requests to open a locked vehicle are not honored unless an emergency situation exists where a person or animal is
+locked in the vehicle and threatened by injury or death.
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 9 of 9
+
+Effective Date: July 31, 2010
+
+San Antonio Police Department
+GENERAL MANUAL`
+  },
+    {
+    id: 'pc_22_001',
+    question: 'Under Chapter 22, what distinguishes assault from aggravated assault?',
+    choices: [
+        'A. The amount of injury caused',
+        'B. Use of a deadly weapon, causing serious bodily injury, or assault against certain protected classes',
+        'C. The location where the assault occurred',
+        'D. The intent of the actor',
+        'E. Whether the victim required medical attention'
+    ],
+    correct: 1,
+    explanation: 'Aggravated assault involves use of a deadly weapon, causes serious bodily injury, or is committed against certain protected classes.',
+    category: 'Penal Code',
+    source: 'Chapter 22 - Assaultive Offenses'
+  },
+    {
+    id: 'penal_code_22',
+    title: `Penal Code 22: ASSAULTIVE OFFENSES`,
+    category: 'Penal Code',
+    summary: `CHAPTER 22. ASSAULTIVE OFFENSES Sec. 22.01.`,
+    content: `CHAPTER 22. ASSAULTIVE OFFENSES
+Sec. 22.01. ASSAULT.
+(a)
+A person commits an offense if the
+person:
+(1) intentionally, knowingly, or recklessly causes bodily
+injury to another, including the person's spouse;
+(2) intentionally or knowingly threatens another with imminent
+bodily injury, including the person's spouse; or
+(3) intentionally or knowingly causes physical contact with
+another when the person knows or should reasonably believe that the other
+will regard the contact as offensive or provocative.
+(b) An offense under Subsection (a)(1) is a Class A misdemeanor,
+except that the offense is a felony of the third degree if the offense is
+committed against:
+(1) a person the actor knows is a public servant while the
+public servant is lawfully discharging an official duty, or in
+retaliation or on account of an exercise of official power or performance
+of an official duty as a public servant;
+(2) a person whose relationship to or association with the
+defendant is described by Section 71.0021(b), 71.003, or 71.005, Family
+Code, if:
+(A) it is shown on the trial of the offense that the
+defendant has been previously convicted of an offense that was committed:
+(i) against a person whose relationship to or
+association with the defendant is described by Section 71.0021(b),
+71.003, or 71.005, Family Code; and
+(ii) under:
+(a) this chapter, Chapter 19, or Section 20.03,
+20.04, 21.11, or 25.11;
+(b) Section 25.07, if the applicable violation
+was based on the commission of family violence as described by Subsection
+(a)(1) of that section; or
+(c) Section 25.072, if any of the applicable
+violations were based on the commission of family violence as described
+by Section 25.07(a)(1); or
+(B) the offense is committed by intentionally, knowingly,
+or recklessly impeding the normal breathing or circulation of the blood
+of the person by applying pressure to the person's throat or neck or by
+blocking the person's nose or mouth;
+(3) a person who contracts with government to perform a
+service in a facility described by Section 1.07(a)(14), Penal Code, or
+Section 51.02(13) or (14), Family Code, or an employee of that person:
+(A) while the person or employee is engaged in performing
+a service within the scope of the contract, if the actor knows the person
+or employee is authorized by government to provide the service; or
+(B) in retaliation for or on account of the person's or
+employee's performance of a service within the scope of the contract;
+(4) a person the actor knows is a security officer while the
+officer is performing a duty as a security officer;
+(5) a person the actor knows is emergency services personnel
+while the person is providing emergency services;
+Page - 1 -
+
+(6) a person the actor knows is a process server while the
+person is performing a duty as a process server;
+(7) a pregnant individual to force the individual to have an
+abortion;
+(8) a person the actor knows is pregnant at the time of the
+offense; or
+(9) a person the actor knows is hospital personnel while the
+person is located on hospital property, including all land and buildings
+owned or leased by the hospital.
+(b-1) Notwithstanding Subsections (b) and (c), an offense under
+Subsection (a) is a felony of the third degree if the offense is
+committed:
+(1) by an actor who is committed to a civil commitment
+facility; and
+(2) against:
+(A) a person the actor knows is an officer or employee of
+the Texas Civil Commitment Office:
+(i) while the officer or employee is lawfully
+discharging an official duty; or
+(ii) in retaliation for or on account of an exercise
+of official power or performance of an official duty by the officer or
+employee; or
+(B) a person the actor knows is contracting with the
+state to perform a service in a civil commitment facility or an employee
+of that person:
+(i) while the person or employee is engaged in
+performing a service within the scope of the contract; or
+(ii) in retaliation for or on account of the
+person's or employee's performance of a service within the scope of the
+contract.
+(b-2) Notwithstanding
+Subsection
+(b)(1),
+an
+offense
+under
+Subsection (a)(1) is a felony of the second degree if the offense is
+committed against a person the actor knows is a peace officer or judge
+while the officer or judge is lawfully discharging an official duty or in
+retaliation or on account of an exercise of official power or performance
+of an official duty as a peace officer or judge.
+(b-3) Notwithstanding
+Subsection
+(b)(2),
+an
+offense
+under
+Subsection (a)(1) is a felony of the second degree if:
+(1) the offense is committed against a person whose
+relationship to or association with the defendant is described by Section
+71.0021(b), 71.003, or 71.005, Family Code;
+(2) it is shown on the trial of the offense that the defendant
+has been previously convicted of an offense that was committed:
+(A) against a person whose relationship to or association
+with the defendant is described by Section 71.0021(b), 71.003, or 71.005,
+Family Code; and
+(B) under:
+(i) this chapter, Chapter 19, or Section 20.03,
+20.04, 21.11, or 25.11;
+(ii) Section 25.07, if the applicable violation was
+based on the commission of family violence as described by Subsection
+Page -2 -
+
+(a)(1) of that section; or
+(iii) Section 25.072, if any of the applicable
+violations were based on the commission of family violence as described
+by Section 25.07(a)(1); and
+(3) the offense is committed by intentionally, knowingly, or
+recklessly impeding the normal breathing or circulation of the blood of
+the person by applying pressure to the person's throat or neck or by
+blocking the person's nose or mouth.
+(b-4) Notwithstanding Subsection (b), an offense under Subsection
+(a)(1) is a felony of the third degree if it is shown on the trial of the
+offense that the actor committed the offense in the course of committing
+an offense under Section 20.05(a)(2).
+(c) An offense under Subsection (a)(2) or (3) is a Class C
+misdemeanor, except that the offense is:
+(1) a Class A misdemeanor if the offense is committed under
+Subsection (a)(3) against an elderly individual or disabled individual,
+as those terms are defined by Section 22.04;
+(2) a Class B misdemeanor if the offense is committed by a
+person who is not a sports participant against a person the actor knows
+is a sports participant either:
+(A) while the participant is performing duties or
+responsibilities in the participant's capacity as a sports participant;
+or
+(B) in retaliation for or on account of the participant's
+performance of a duty or responsibility within the participant's capacity
+as a sports participant; or
+(3) a Class A misdemeanor if the offense is committed against
+a pregnant individual to force the individual to have an abortion.
+(d) For purposes of Subsection (b), the actor is presumed to have
+known the person assaulted was a public servant, a security officer, or
+emergency services personnel if the person was wearing a distinctive
+uniform or badge indicating the person's employment as a public servant
+or status as a security officer or emergency services personnel.
+(e) In this section:
+(1) "Emergency services personnel" includes firefighters,
+emergency medical services personnel as defined by Section 773.003,
+Health and Safety Code, emergency room personnel, and other individuals
+who, in the course and scope of employment or as a volunteer, provide
+services for the benefit of the general public during emergency
+situations.
+(1-a) "Hospital personnel" includes nurses, physicians,
+physician assistants, maintenance or janitorial staff, receptionists, and
+other individuals who are employed by or work in a facility that is
+licensed as a general hospital or special hospital, as those terms are
+defined by Section 241.003, Health and Safety Code, including a hospital
+maintained or operated by the state.
+(2) "Process server" has the meaning assigned by Section
+156.001, Government Code.
+(3) "Security officer" means a commissioned security officer
+as defined by Section 1702.002, Occupations Code, or a noncommissioned
+security officer registered under Section 1702.221, Occupations Code.
+Page -3 -
+
+(4) "Sports participant" means a person who participates in
+any
+official
+capacity
+with
+respect
+to
+an
+interscholastic,
+intercollegiate, or other organized amateur or professional athletic
+competition and includes an athlete, referee, umpire, linesman, coach,
+instructor, administrator, or staff member.
+(f) For the purposes of Subsections (b)(2)(A) and (b-3)(2):
+(1) a defendant has been previously convicted of an offense
+listed in those subsections committed against a person whose relationship
+to or association with the defendant is described by Section 71.0021(b),
+71.003, or 71.005, Family Code, if the defendant was adjudged guilty of
+the offense or entered a plea of guilty or nolo contendere in return for
+a grant of deferred adjudication, regardless of whether the sentence for
+the offense was ever imposed or whether the sentence was probated and the
+defendant was subsequently discharged from community supervision; and
+(2) a conviction under the laws of another state for an
+offense containing elements that are substantially similar to the
+elements of an offense listed in those subsections is a conviction of the
+offense listed.
+(g) If conduct constituting an offense under this section also
+constitutes an offense under another section of this code, the actor may
+be prosecuted under either section or both sections.
+Sec. 22.011. SEXUAL ASSAULT. (a) A person commits an offense if:
+(1) the person intentionally or knowingly:
+(A) causes the penetration of the anus or sexual organ of
+another person by any means, without that person's consent;
+(B) causes the penetration of the mouth of another person
+by the sexual organ of the actor, without that person's consent; or
+(C) causes the sexual organ of another person, without
+that person's consent, to contact or penetrate the mouth, anus, or sexual
+organ of another person, including the actor; or
+(2) regardless of whether the person knows the age of the
+child at the time of the offense, the person intentionally or knowingly:
+(A) causes the penetration of the anus or sexual organ of
+a child by any means;
+(B) causes the penetration of the mouth of a child by the
+sexual organ of the actor;
+(C) causes the sexual organ of a child to contact or
+penetrate the mouth, anus, or sexual organ of another person, including
+the actor;
+(D) causes the anus of a child to contact the mouth,
+anus, or sexual organ of another person, including the actor; or
+(E) causes the mouth of a child to contact the anus or
+sexual organ of another person, including the actor.
+(b) A sexual assault under Subsection (a)(1) is without the consent
+of the other person if:
+(1) the actor compels the other person to submit or
+participate by the use of physical force, violence, or coercion;
+(2) the actor compels the other person to submit or
+participate by threatening to use force or violence against the other
+person or to cause harm to the other person, and the other person
+Page -4 -
+
+believes that the actor has the present ability to execute the threat;
+(3) the other person has not consented and the actor knows the
+other person is unconscious or physically unable to resist;
+(4) the actor knows that as a result of mental disease or
+defect the other person is at the time of the sexual assault incapable
+either of appraising the nature of the act or of resisting it;
+(5) the other person has not consented and the actor knows the
+other person is unaware that the sexual assault is occurring;
+(6) the actor has intentionally impaired the other person's
+power to appraise or control the other person's conduct by administering
+any substance without the other person's knowledge;
+(7) the actor compels the other person to submit or
+participate by threatening to use force or violence against any person,
+and the other person believes that the actor has the ability to execute
+the threat;
+(8) the actor is a public servant who coerces the other person
+to submit or participate;
+(9) the actor is a mental health services provider or a health
+care services provider who causes the other person, who is a patient or
+former patient of the actor, to submit or participate by exploiting the
+other person's emotional dependency on the actor;
+(10) the actor is a clergyman who causes the other person to
+submit or participate by exploiting the other person's emotional
+dependency on the clergyman in the clergyman's professional character as
+spiritual adviser;
+(11) the actor is an employee of a facility where the other
+person is a resident, unless the employee and resident are formally or
+informally married to each other under Chapter 2, Family Code;
+(12) the actor is a health care services provider who, in the
+course of performing an assisted reproduction procedure on the other
+person, uses human reproductive material from a donor knowing that the
+other person has not expressly consented to the use of material from that
+donor;
+(13) the actor is a coach or tutor who causes the other person
+to submit or participate by using the actor's power or influence to
+exploit the other person's dependency on the actor; or
+(14) the actor is a caregiver hired to assist the other person
+with activities of daily life and causes the other person to submit or
+participate by exploiting the other person's dependency on the actor.
+(c) In this section:
+(1) "Child" means a person younger than 17 years of age.
+(2) "Spouse" means a person who is legally married to another.
+(3) "Health care services provider" means:
+(A) a physician licensed under Subtitle B, Title 3,
+Occupations Code;
+(B) a
+chiropractor
+licensed
+under
+Chapter
+201,
+Occupations Code;
+(C) a physical therapist licensed under Chapter 453,
+Occupations Code;
+(D) a physician assistant licensed under Chapter 204,
+Occupations Code; or
+Page -5 -
+
+(E) a registered nurse, a vocational nurse, or an
+advanced practice nurse licensed under Chapter 301, Occupations Code.
+(4) "Mental health services provider" means an individual,
+licensed or unlicensed, who performs or purports to perform mental health
+services, including a:
+(A) licensed social worker as defined by Section 505.002,
+Occupations Code;
+(B) chemical dependency counselor as defined by Section
+504.001, Occupations Code;
+(C) licensed professional counselor as defined by Section
+503.002, Occupations Code;
+(D) licensed marriage and family therapist as defined by
+Section 502.002, Occupations Code;
+(E) member of the clergy;
+(F) psychologist offering psychological services as
+defined by Section 501.003, Occupations Code; or
+(G) special officer for mental health assignment
+certified under Section 1701.404, Occupations Code.
+(5) "Employee of a facility" means a person who is an employee
+of a facility defined by Section 250.001, Health and Safety Code, or any
+other person who provides services for a facility for compensation,
+including a contract laborer.
+(6) "Assisted reproduction" and "donor" have the meanings
+assigned by Section 160.102, Family Code.
+(7) "Human reproductive material" means:
+(A) a human spermatozoon or ovum; or
+(B) a human organism at any stage of development from
+fertilized ovum to embryo.
+(d) It is a defense to prosecution under Subsection (a)(2) that the
+conduct consisted of medical care for the child and did not include any
+contact between the anus or sexual organ of the child and the mouth,
+anus, or sexual organ of the actor or a third party.
+(e) It is an affirmative defense to prosecution under Subsection
+(a)(2):
+(1) that the actor was the spouse of the child at the time of
+the offense; or
+(2) that:
+(A) the actor was not more than three years older than
+the victim and at the time of the offense:
+(i) was not required under Chapter 62, Code of
+Criminal Procedure, to register for life as a sex offender; or
+(ii) was not a person who under Chapter 62, Code of
+Criminal Procedure, had a reportable conviction or adjudication for an
+offense under this section; and
+(B) the victim:
+(i) was a child of 14 years of age or older; and
+(ii) was not:
+(a) a person whom the actor was prohibited from
+marrying or purporting to marry or with whom the actor was prohibited
+from living under the appearance of being married under Section 25.01; or
+(b) a person with whom the actor was prohibited
+Page -6 -
+
+from engaging in sexual intercourse or deviate sexual intercourse under
+Section 25.02.
+(f) An offense under this section is a felony of the second degree,
+except that an offense under this section is:
+(1) a felony of the first degree if the victim was:
+(A) a person whom the actor was prohibited from marrying
+or purporting to marry or with whom the actor was prohibited from living
+under the appearance of being married under Section 25.01; or
+(B) a person with whom the actor was prohibited from
+engaging in sexual intercourse or deviate sexual intercourse under
+Section 25.02; or
+(2) a state jail felony if the offense is committed under
+Subsection (a)(1) and the actor has not received express consent as
+described by Subsection (b)(12).
+Sec. 22.012. INDECENT ASSAULT. (a) A person commits an offense
+if, without the other person's consent and with the intent to arouse or
+gratify the sexual desire of any person, the person:
+(1) touches the anus, breast, or any part of the genitals of
+another person;
+(2) touches another person with the anus, breast, or any part
+of the genitals of any person;
+(3) exposes or attempts to expose another person's genitals,
+pubic area, anus, buttocks, or female areola; or
+(4) causes another person to contact the blood, seminal fluid,
+vaginal fluid, saliva, urine, or feces of any person.
+(b) An offense under this section is a Class A misdemeanor, except
+that the offense is:
+(1) a state jail felony if it is shown on the trial of the
+offense that:
+(A) the defendant has been previously convicted of an
+offense under this section, other than an offense punishable under
+Paragraph (B); or
+(B) the defendant is a health care services provider or a
+mental health services provider and the act is:
+(i) committed during the course of providing a
+treatment or service to the victim; and
+(ii) beyond the scope of generally accepted
+practices for the treatment or service; or
+(2) a felony of the third degree if it is shown on the trial
+of the offense that the defendant has been previously convicted of an
+offense under this section that is punishable under Subdivision (1)(B).
+(c) If conduct that constitutes an offense under this section also
+constitutes an offense under another law, the actor may be prosecuted
+under this section, the other law, or both.
+(d) In this section, "health care services provider" and "mental
+health services provider" have the meanings assigned by Section 22.011.
+Sec. 22.02. AGGRAVATED ASSAULT. (a) A person commits an offense
+if the person commits assault as defined in Sec. 22.01 and the person:
+(1) causes serious bodily injury to another, including the
+Page -7 -
+
+person's spouse; or
+(2) uses or exhibits a deadly weapon during the commission of
+the assault.
+(b) An offense under this section is a felony of the second degree,
+except that the offense is a felony of the first degree if:
+(1) the actor uses a deadly weapon during the commission of
+the assault and causes:
+(A) serious bodily injury to a person whose relationship
+to or association with the defendant is described by Section 71.0021(b),
+71.003, or 71.005, Family Code; or
+(B) a traumatic brain or spine injury to another that
+results in a persistent vegetative state or irreversible paralysis;
+(2) regardless of whether the offense is committed under
+Subsection (a)(1) or (a)(2), the offense is committed:
+(A) by a public servant acting under color of the
+servant's office or employment;
+(B) against a person the actor knows is a public servant
+while the public servant is lawfully discharging an official duty, or in
+retaliation or on account of an exercise of official power or performance
+of an official duty as a public servant;
+(C) in retaliation against or on account of the service
+of another as a witness, prospective witness, informant, or person who
+has reported the occurrence of a crime;
+(D) against a person the actor knows is a process server
+while the person is performing a duty as a process server; or
+(E) against a person the actor knows is a security
+officer while the officer is performing a duty as a security officer;
+(3) the actor is in a motor vehicle, as defined by Section
+501.002, Transportation Code, and:
+(A) knowingly discharges a firearm at or in the direction
+of a habitation, building, or vehicle;
+(B) is reckless as to whether the habitation, building,
+or vehicle is occupied; and
+(C) in discharging the firearm, causes serious bodily
+injury to any person; or
+(4) the actor commits the assault as part of a mass shooting.
+(c) The actor is presumed to have known the person assaulted was a
+public servant or a security officer if the person was wearing a
+distinctive uniform or badge indicating the person's employment as a
+public servant or status as a security officer.
+(d) In this section:
+(1) "Process server" has the meaning assigned by Section
+156.001, Government Code.
+(2) "Security officer" means a commissioned security officer
+as defined by Section 1702.002, Occupations Code, or a noncommissioned
+security officer registered under Section 1702.221, Occupations Code.
+Sec. 22.021. AGGRAVATED SEXUAL ASSAULT. (a)
+offense:
+(1) if the person:
+(A) intentionally or knowingly:
+Page -8 -
+
+A person commits an
+
+(i) causes the penetration of the anus or sexual
+organ of another person by any means, without that person's consent;
+(ii) causes the penetration of the mouth of another
+person by the sexual organ of the actor, without that person's consent;
+or
+(iii) causes the sexual organ of another person,
+without that person's consent, to contact or penetrate the mouth, anus,
+or sexual organ of another person, including the actor; or
+(B) regardless of whether the person knows the age of the
+child at the time of the offense, intentionally or knowingly:
+(i) causes the penetration of the anus or sexual
+organ of a child by any means;
+(ii) causes the penetration of the mouth of a child
+by the sexual organ of the actor;
+(iii) causes the sexual organ of a child to contact
+or penetrate the mouth, anus, or sexual organ of another person,
+including the actor;
+(iv) causes the anus of a child to contact the
+mouth, anus, or sexual organ of another person, including the actor; or
+(v) causes the mouth of a child to contact the anus
+or sexual organ of another person, including the actor; and
+(2) if:
+(A) the person:
+(i) causes serious bodily injury or attempts to
+cause the death of the victim or another person in the course of the same
+criminal episode;
+(ii) by acts or words places the victim in fear that
+any person will become the victim of an offense under Section
+20A.02(a)(3), (4), (7), or (8) or that death, serious bodily injury, or
+kidnapping will be imminently inflicted on any person;
+(iii) by acts or words occurring in the presence of
+the victim threatens to cause any person to become the victim of an
+offense under Section 20A.02(a)(3), (4), (7), or (8) or to cause the
+death, serious bodily injury, or kidnapping of any person;
+(iv) uses or exhibits a deadly weapon in the course
+of the same criminal episode;
+(v) acts in concert with another who engages in
+conduct described by Subdivision (1) directed toward the same victim and
+occurring during the course of the same criminal episode; or
+(vi) with the intent of facilitating the commission
+of the offense, administers or provides to the victim of the offense any
+substance capable of impairing the victim's ability to appraise the
+nature of the act or to resist the act;
+(B) the victim is younger than 14 years of age,
+regardless of whether the person knows the age of the victim at the time
+of the offense; or
+(C) the victim is an elderly individual or a disabled
+individual.
+(b) In this section:
+(1) "Child" has the meaning assigned by Section 22.011(c).
+(2) "Elderly individual" has the meaning assigned by Section
+Page -9 -
+
+22.04(c).
+
+(3) "Disabled individual" means a person older than 13 years
+of age who by reason of age or physical or mental disease, defect, or
+injury is substantially unable to protect the person's self from harm or
+to provide food, shelter, or medical care for the person's self.
+(c) An aggravated sexual assault under this section is without the
+consent of the other person if the aggravated sexual assault occurs under
+the same circumstances listed in Section 22.011(b).
+(d) The defense provided by Section 22.011(d) applies to this
+section.
+(e) An offense under this section is a felony of the first degree.
+(f) The minimum term of imprisonment for an offense under this
+section is increased to 25 years if:
+(1) the victim of the offense is younger than six years of age
+at the time the offense is committed; or
+(2) the victim of the offense is younger than 14 years of age
+at the time the offense is committed and the actor commits the offense in
+a manner described by Subsection (a)(2)(A).
+Sec. 22.04. INJURY TO A CHILD, ELDERLY INDIVIDUAL, OR DISABLED
+INDIVIDUAL.
+(a)
+A person commits an offense if he intentionally,
+knowingly, recklessly, or with criminal negligence, by act or
+intentionally, knowingly, or recklessly by omission, causes to a child,
+elderly individual, or disabled individual:
+(1) serious bodily injury;
+(2) serious mental deficiency, impairment, or injury; or
+(3) bodily injury.
+(a-1) A person commits an offense if the person is an owner,
+operator, or employee of a group home, nursing facility, assisted living
+facility, boarding home facility, intermediate care facility for persons
+with an intellectual or developmental disability, or other institutional
+care facility and the person intentionally, knowingly, recklessly, or
+with criminal negligence by omission causes to a child, elderly
+individual, or disabled individual who is a resident of that group home
+or facility:
+(1) serious bodily injury;
+(2) serious mental deficiency, impairment, or injury; or
+(3) bodily injury.
+(b) An omission that causes a condition described by Subsection
+(a)(1), (2), or (3) or (a-1)(1), (2), or (3) is conduct constituting an
+offense under this section if:
+(1) the actor has a legal or statutory duty to act; or
+(2) the actor has assumed care, custody, or control of a
+child, elderly individual, or disabled individual.
+(c) In this section:
+(1) "Child" means a person 14 years of age or younger.
+(2) "Elderly individual" means a person 65 years of age or
+older.
+(3) "Disabled individual" means a person:
+(A) with one or more of the following:
+(i) autism spectrum disorder, as defined by Section
+Page -10 -
+
+1355.001, Insurance Code;
+(ii) developmental disability, as defined by Section
+112.042, Human Resources Code;
+(iii) intellectual disability, as defined by Section
+591.003, Health and Safety Code;
+(iv) severe emotional disturbance, as defined by
+Section 261.001, Family Code;
+(v) traumatic brain injury, as defined by Section
+92.001, Health and Safety Code; or
+(vi) mental illness, as defined by Section 571.003,
+Health and Safety Code; or
+(B) who otherwise by reason of age or physical or mental
+disease, defect, or injury is substantially unable to protect the
+person's self from harm or to provide food, shelter, or medical care for
+the person's self.
+(4) Repealed by Acts 2011, 82nd Leg., R.S., Ch. 620, Sec. 11,
+eff. September 1, 2011.
+(d) For purposes of an omission that causes a condition described
+by Subsection (a)(1), (2), or (3), the actor has assumed care, custody,
+or control if the actor has by act, words, or course of conduct acted so
+as to cause a reasonable person to conclude that the actor has accepted
+responsibility for protection, food, shelter, or medical care for a
+child, elderly individual, or disabled individual. For purposes of an
+omission that causes a condition described by Subsection (a-1)(1), (2),
+or (3), the actor acting during the actor's capacity as owner, operator,
+or employee of a group home or facility described by Subsection (a-1) is
+considered to have accepted responsibility for protection, food, shelter,
+or medical care for the child, elderly individual, or disabled individual
+who is a resident of the group home or facility.
+(e) An offense under Subsection (a)(1) or (2) or (a-1)(1) or (2) is
+a felony of the first degree when the conduct is committed intentionally
+or knowingly. When the conduct is engaged in recklessly, the offense is
+a felony of the second degree.
+(f) An offense under Subsection (a)(3) or (a-1)(3) is a felony of
+the third degree when the conduct is committed intentionally or
+knowingly, except that an offense under Subsection (a)(3) is a felony of
+the second degree when the conduct is committed intentionally or
+knowingly and the victim is a disabled individual residing in a center,
+as defined by Section 555.001, Health and Safety Code, or in a facility
+licensed under Chapter 252, Health and Safety Code, and the actor is an
+employee of the center or facility whose employment involved providing
+direct care for the victim. When the conduct is engaged in recklessly,
+the offense is a state jail felony.
+(g) An offense under Subsection (a) is a state jail felony when the
+person acts with criminal negligence. An offense under Subsection (a-1)
+is a state jail felony when the person, with criminal negligence and by
+omission, causes a condition described by Subsection (a-1)(1), (2), or
+(3).
+(h) A person who is subject to prosecution under both this section
+and another section of this code may be prosecuted under either or both
+sections. Section 3.04 does not apply to criminal episodes prosecuted
+Page -11 -
+
+under both this section and another section of this code. If a criminal
+episode is prosecuted under both this section and another section of this
+code and sentences are assessed for convictions under both sections, the
+sentences shall run concurrently.
+(i) It is an affirmative defense to prosecution under Subsection
+(b)(2) that before the offense the actor:
+(1) notified in person the child, elderly individual, or
+disabled individual that the actor would no longer provide the applicable
+care described by Subsection (d), and notified in writing the parents or
+a person, other than the actor, acting in loco parentis to the child,
+elderly individual, or disabled individual that the actor would no longer
+provide the applicable care described by Subsection (d); or
+(2) notified in writing the Department of Family and
+Protective Services that the actor would no longer provide the applicable
+care described by Subsection (d).
+(j) Written notification under Subsection (i)(2) or (i)(3) is not
+effective unless it contains the name and address of the actor, the name
+and address of the child, elderly individual, or disabled individual, the
+type of care provided by the actor, and the date the care was
+discontinued.
+(k) It is a defense to prosecution under this section that the act
+or omission consisted of:
+(1) reasonable medical care occurring under the direction of
+or by a licensed physician; or
+(2) emergency medical care administered in good faith and with
+reasonable care by a person not licensed in the healing arts.
+(l) It is an affirmative defense to prosecution under this section:
+(1) that the act or omission was based on treatment in
+accordance with the tenets and practices of a recognized religious method
+of healing with a generally accepted record of efficacy;
+(2) for a person charged with an act of omission causing to a
+child, elderly individual, or disabled individual a condition described
+by Subsection (a)(1), (2), or (3) that:
+(A) there is no evidence that, on the date prior to the
+offense charged, the defendant was aware of an incident of injury to the
+child, elderly individual, or disabled individual and failed to report
+the incident; and
+(B) the person:
+(i) was a victim of family violence, as that term is
+defined by Section 71.004, Family Code, committed by a person who is also
+charged with an offense against the child, elderly individual, or
+disabled individual under this section or any other section of this
+title;
+(ii) did not cause a condition described by
+Subsection (a)(1), (2), or (3); and
+(iii) did not reasonably believe at the time of the
+omission that an effort to prevent the person also charged with an
+offense against the child, elderly individual, or disabled individual
+from committing the offense would have an effect; or
+(3) that:
+(A) the actor was not more than three years older than
+Page -12 -
+
+the victim at the time of the offense; and
+(B) the victim was a nondisabled or disabled child at the
+time of the offense.
+(m) It is an affirmative defense to prosecution under Subsections
+(a)(1), (2), and (3) for injury to a disabled individual that the person
+did not know and could not reasonably have known that the individual was
+a disabled individual, as defined by Subsection (c), at the time of the
+offense.
+Sec. 22.041. ABANDONING OR ENDANGERING A CHILD, ELDERLY INDIVIDUAL,
+OR DISABLED INDIVIDUAL. (a) In this section:
+(1) "Abandon" means to leave in any place without providing
+reasonable and necessary care a child, elderly individual, or disabled
+individual under circumstances under which no reasonable, similarly
+situated person would leave a child or individual of that age and
+ability.
+(2) "Child," "elderly individual," and "disabled individual"
+have the meanings assigned by Section 22.04.
+(b) A person commits an offense if the person, having custody,
+care, or control of a child, elderly individual, or disabled individual,
+intentionally abandons the child or individual in any place under
+circumstances that expose the child or individual to an unreasonable risk
+of harm.
+(c) A person commits an offense if the person intentionally,
+knowingly, recklessly, or with criminal negligence, by act or omission,
+engages in conduct that places a child, elderly individual, or disabled
+individual in imminent danger of death, bodily injury, or physical or
+mental impairment.
+(c-1) For purposes of Subsection (c), it is presumed that a person
+engaged in conduct that places a child, elderly individual, or disabled
+individual in imminent danger of death, bodily injury, or physical or
+mental impairment if:
+(1) the person manufactured, possessed, or in any way
+introduced into the body of any person the controlled substance
+methamphetamine in the presence of the child, elderly individual, or
+disabled individual;
+(2) the person's conduct related to the proximity or
+accessibility of the controlled substance methamphetamine to the child,
+elderly individual, or disabled individual and an analysis of a specimen
+of the child's or individual's blood, urine, or other bodily substance
+indicates the presence of methamphetamine in the body of the child or
+individual; or
+(3) the person injected, ingested, inhaled, or otherwise
+introduced a controlled substance listed in Penalty Group 1, Section
+481.102, Health and Safety Code, or Penalty Group 1-B, Section 481.1022,
+Health and Safety Code, into the human body when the person was not in
+lawful possession of the substance as defined by Section 481.002(24) of
+that code.
+(d) Except as provided by Subsection (e), an offense under
+Subsection (b) is:
+(1) a state jail felony if the actor abandoned the child,
+Page -13 -
+
+elderly individual, or disabled individual with intent to return for the
+child or individual; or
+(2) a felony of the third degree if the actor abandoned the
+child, elderly individual, or disabled individual without intent to
+return for the child or individual.
+(e) An offense under Subsection (b) is a felony of the second
+degree if the actor abandons the child, elderly individual, or disabled
+individual under circumstances that a reasonable person would believe
+would place the child or individual in imminent danger of death, bodily
+injury, or physical or mental impairment.
+(f) An offense under Subsection (c) is a state jail felony.
+(g) It is a defense to prosecution under Subsection (c) that the
+act or omission enables the child, elderly individual, or disabled
+individual to practice for or participate in an organized athletic event
+and that appropriate safety equipment and procedures are employed in the
+event.
+(h) It is an exception to the application of this section for
+abandoning or endangering a child that the actor voluntarily delivered
+the child to a designated emergency infant care provider under Section
+262.302, Family Code.
+Sec. 22.05. DEADLY CONDUCT. (a) A person commits an offense if he
+recklessly engages in conduct that places another in imminent danger of
+serious bodily injury.
+(b) A person commits an offense if he knowingly discharges a
+firearm at or in the direction of:
+(1) one or more individuals; or
+(2) a habitation, building, or vehicle and is reckless as to
+whether the habitation, building, or vehicle is occupied.
+(c) Recklessness and danger are presumed if the actor knowingly
+pointed a firearm at or in the direction of another whether or not the
+actor believed the firearm to be loaded.
+(d) For purposes of this section, "building," "habitation," and
+"vehicle" have the meanings assigned those terms by Section 30.01.
+(e) An offense under Subsection (a) is a Class A misdemeanor. An
+offense under Subsection (b) is a felony of the third degree.
+Sec. 22.06. CONSENT AS DEFENSE TO ASSAULTIVE CONDUCT. (a) The
+victim's effective consent or the actor's reasonable belief that the
+victim consented to the actor's conduct is a defense to prosecution under
+Section 22.01 (Assault), 22.02 (Aggravated Assault), or 22.05 (Deadly
+Conduct) if:
+(1) the conduct did not threaten or inflict serious bodily
+injury; or
+(2) the victim knew the conduct was a risk of:
+(A) his occupation;
+(B) recognized medical treatment; or
+(C) a scientific experiment conducted by recognized
+methods.
+(b) The defense to prosecution provided by Subsection (a) is not
+available to a defendant who commits an offense described by Subsection
+Page -14 -
+
+(a) as a condition of the defendant's or the victim's initiation or
+continued membership in a criminal street gang, as defined by Section
+71.01.
+Sec. 22.07. TERRORISTIC THREAT. (a) A person commits an offense
+if he threatens to commit any offense involving violence to any person or
+property with intent to:
+(1) cause a reaction of any type to his threat by an official
+or volunteer agency organized to deal with emergencies;
+(2) place any person in fear of imminent serious bodily
+injury;
+(3) prevent or interrupt the occupation or use of a building,
+room, place of assembly, place to which the public has access, place of
+employment or occupation, aircraft, automobile, or other form of
+conveyance, or other public place;
+(4) cause impairment or interruption of public communications,
+public transportation, public water, gas, or power supply or other public
+service;
+(5) place the public or a substantial group of the public in
+fear of serious bodily injury; or
+(6) influence the conduct or activities of a branch or agency
+of the federal government, the state, or a political subdivision of the
+state.
+(b) An offense under Subsection (a)(1) is a Class B misdemeanor.
+(c) An offense under Subsection (a)(2) is a Class B misdemeanor,
+except that the offense is a Class A misdemeanor if the offense:
+(1) is committed against a member of the person's family or
+household or otherwise constitutes family violence; or
+(2) is committed against a public servant.
+(c-1) Notwithstanding
+Subsection
+(c)(2),
+an
+offense
+under
+Subsection (a)(2) is a state jail felony if the offense is committed
+against a person the actor knows is a peace officer or judge.
+(d) An offense under Subsection (a)(3) is a Class A misdemeanor,
+unless the actor causes pecuniary loss of $1,500 or more to the owner of
+the building, room, place, or conveyance, in which event the offense is a
+state jail felony.
+(e) An offense under Subsection (a)(4), (a)(5), or (a)(6) is a
+felony of the third degree.
+(f) In this section:
+(1) "Family" has the meaning assigned by Section 71.003,
+Family Code.
+(2) "Family violence" has the meaning assigned by Section
+71.004, Family Code.
+(3) "Household" has the meaning assigned by Section 71.005,
+Family Code.
+(g) For purposes of Subsection (d), the amount of pecuniary loss is
+the amount of economic loss suffered by the owner of the building, room,
+place, or conveyance as a result of the prevention or interruption of the
+occupation or use of the building, room, place, or conveyance.
+Sec. 22.08.
+
+AIDING SUICIDE.
+
+(a)
+
+Page -15 -
+
+A person commits an offense if,
+
+with intent to promote or assist the commission of suicide by another, he
+aids or attempts to aid the other to commit or attempt to commit suicide.
+(b) An offense under this section is a Class C misdemeanor unless
+the actor's conduct causes suicide or attempted suicide that results in
+serious bodily injury, in which event the offense is a state jail felony.
+Sec. 22.09. TAMPERING WITH CONSUMER PRODUCT. (a) In this section:
+(1) "Consumer Product" means any product offered for sale to
+or for consumption by the public and includes "food" and "drugs" as those
+terms are defined in Section 431.002, Health and Safety Code.
+(2) "Tamper" means to alter or add a foreign substance to a
+consumer product to make it probable that the consumer product will cause
+serious bodily injury.
+(b) A person commits an offense if he knowingly or intentionally
+tampers with a consumer product knowing that the consumer product will be
+offered for sale to the public or as a gift to another.
+(c) A person commits an offense if he knowingly or intentionally
+threatens to tamper with a consumer product with the intent to cause
+fear, to affect the sale of the consumer product, or to cause bodily
+injury to any person.
+(d) An offense under Subsection (b) is a felony of the second
+degree unless a person suffers serious bodily injury, in which event it
+is a felony of the first degree. An offense under Subsection (c) is a
+felony of the third degree.
+Sec. 22.10. LEAVING A CHILD IN A VEHICLE. (a) A person commits an
+offense if he intentionally or knowingly leaves a child in a motor
+vehicle for longer than five minutes, knowing that the child is:
+(1) younger than seven years of age; and
+(2) not attended by an individual in the vehicle who is 14
+years of age or older.
+(b) An offense under this section is a Class C misdemeanor.
+Sec. 22.11. HARASSMENT BY PERSONS IN CERTAIN FACILITIES; HARASSMENT
+OF PUBLIC SERVANT. (a) A person commits an offense if, with the intent
+to assault, harass, or alarm, the person:
+(1) while imprisoned or confined in a correctional or
+detention facility, causes another person to contact the blood, seminal
+fluid, vaginal fluid, saliva, urine, or feces of the actor, any other
+person, or an animal;
+(2) while committed to a civil commitment facility, causes:
+(A) an officer or employee of the Texas Civil Commitment
+Office to contact the blood, seminal fluid, vaginal fluid, saliva, urine,
+or feces of the actor, any other person, or an animal:
+(i) while the officer or employee is lawfully
+discharging an official duty at a civil commitment facility; or
+(ii) in retaliation for or on account of an exercise
+of official power or performance of an official duty by the officer or
+employee; or
+(B) a person who contracts with the state to perform a
+service in the facility or an employee of that person to contact the
+Page -16 -
+
+blood, seminal fluid, vaginal fluid, saliva, urine, or feces of the
+actor, any other person, or an animal:
+(i) while the person or employee is engaged in
+performing a service within the scope of the contract, if the actor knows
+the person or employee is authorized by the state to provide the service;
+or
+(ii) in retaliation for or on account of the
+person's or employee's performance of a service within the scope of the
+contract; or
+(3) causes another person the actor knows to be a public
+servant to contact the blood, seminal fluid, vaginal fluid, saliva,
+urine, or feces of the actor, any other person, or an animal while the
+public servant is lawfully discharging an official duty or in retaliation
+or on account of an exercise of the public servant's official power or
+performance of an official duty.
+(b) An offense under this section is a felony of the third degree.
+(c) If conduct constituting an offense under this section also
+constitutes an offense under another section of this code, the actor may
+be prosecuted under either section.
+(d) In this section, "correctional or detention facility" means:
+(1) a secure correctional facility; or
+(2) a "secure correctional facility" or a "secure detention
+facility" as defined by Section 51.02, Family Code, operated by or under
+contract with a juvenile board or the Texas Juvenile Justice Department
+or any other facility operated by or under contract with that department.
+(e) For purposes of Subsection (a)(3), the actor is presumed to
+have known the person was a public servant if the person was wearing a
+distinctive uniform or badge indicating the person's employment as a
+public servant.
+Sec. 22.12. APPLICABILITY TO CERTAIN CONDUCT. This chapter does
+not apply to conduct charged as having been committed against an
+individual who is an unborn child if the conduct is:
+(1) committed by the mother of the unborn child;
+(2) a lawful medical procedure performed by a physician or
+other health care provider with the requisite consent;
+(3) a lawful medical procedure performed by a physician or
+other licensed health care provider with the requisite consent as part of
+an assisted reproduction as defined by Section 160.102, Family Code; or
+(4) the dispensation of a drug in accordance with law or
+administration of a drug prescribed in accordance with law.
+
+Page -17 -
+
+PENAL CODE
+TITLE 6. OFFENSES AGAINST THE FAMILY`
+  },
+    {
+    id: 'pc_28_001',
+    question: 'According to Chapter 28, what is the minimum damage amount that elevates criminal mischief to a state jail felony?',
+    choices: [
+        'A. $100 to $750',
+        'B. $750 to $2,500',
+        'C. $2,500 to $30,000',
+        'D. $1,500 to $20,000',
+        'E. $5,000 to $25,000'
+    ],
+    correct: 2,
+    explanation: 'Criminal mischief involving $2,500 to $30,000 in damage is a state jail felony.',
+    category: 'Penal Code',
+    source: 'Chapter 28 - Criminal Mischief'
+  },
+    {
+    id: 'general_manual_509',
+    title: `General Manual 509: Legal Asset Seizure`,
+    category: 'General Manual',
+    summary: `Procedure 509 – Legal Asset Seizure Office with Primary Responsibility: Effective Date: Prior Revision Date: CAS Office(s) with Secondary Responsibilities: PSC, PNC, TSC, TSD, FCD, IDC Number of Pages...`,
+    content: `Procedure 509 – Legal Asset Seizure
+Office with Primary
+Responsibility:
+
+Effective Date:
+Prior Revision Date:
+
+CAS
+
+Office(s) with Secondary
+Responsibilities:
+
+PSC, PNC, TSC, TSD, FCD, IDC
+
+Number of Pages:
+
+Forms Referenced in Procedure:
+
+SAPD Form #110-VH, #113-VRA
+
+Related Procedures:
+
+September 19, 2018
+July 31, 2010
+5
+606, 607
+
+.01 INTRODUCTION
+The purpose of this procedure is to establish guidelines for the seizure of property according to law. This procedure
+guides officers through the steps necessary for the legal seizure of property, from the criteria for seizures to the act of
+seizing property, custody of seized property, and the disposition of seized property.
+.02 LEGAL AUTHORITY
+A. The authority for the legal seizure of assets is contained in the following:
+1.
+
+Texas Code of Criminal Procedure:
+a.
+
+Chapter 18, Section 18;
+
+b.
+
+Chapter 18, Section 19;
+
+c.
+
+Chapter 47; and Chapter 49;
+
+d.
+
+Chapter 59;
+
+2.
+
+Texas Motor Vehicle Laws, Article 6687-1, Section 49; and
+
+3.
+
+Various titles of the United States Code.
+
+B. Any peace officer is authorized to enforce the provisions of the Legal Asset Seizure Laws.
+.03 SEIZURE AND CLASSIFICATION OF PROPERTY INVESTIGATED BY THE LEGAL ASSET SEIZURE
+DETAIL SEIZED UNDER THE AUTHORITY OF THE CODE OF CRIMINAL PROCEDURE CHAPTER 59
+A. For purposes of this procedure, property is classified as:
+1.
+
+Real property;
+
+2.
+
+Tangible or intangible personal property, including anything severed from land; or
+
+3.
+
+A document, including money that represents or embodies anything of value.
+
+B. Property is seized where:
+1.
+
+The property is real property, and any improvements, which is used or intended to be used to commit or
+facilitate the commission of an offense designated by Chapter 59 of the Texas Code of Criminal Procedure;
+
+2.
+
+The property is a vehicle, boat, or plane used to facilitate the commission of applicable offenses;
+
+3.
+
+The property consists of books, financial records, bank statements, payment records, instructions, and research
+materials used in violation of any of the applicable offenses; or
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 1 of 5
+
+Effective Date: September 19, 2018
+
+San Antonio Police Department
+GENERAL MANUAL
+
+Procedure 509 – Legal Asset Seizure
+4.
+
+The property is personal property, weapons, documents, or money which the officer has determined to be the
+proceeds of a sale, transaction or trade, property or criminal instrument which is used in any way to commit any
+of the following applicable offenses listed in Subsection .03 C of this procedure.
+
+C. Chapter 59 of the Texas Code of Criminal Procedure authorizes the state to seize, based on probable cause, property
+that is, among other things:
+1.
+
+2.
+
+Used in the commission of:
+a.
+
+Any first or second degree felony under the Texas Penal Code;
+
+b.
+
+Any felony under Texas Penal Code Section 15.031(b), 20.05, 20.06, 21.11, 38.04 (Evading Arrest), or
+Chapter 43.25 or 43.26, 20A Chapter 29 (Robbery), 30 (Burglary/Criminal Trespass), 31 (Theft), 32
+(Fraud), 33 (Computer Crimes), 33A (Telecommunications Crimes), or 35 (Insurance Fraud), 37, penal
+code, that involves the state Medicaid program of the Texas Penal Code; or
+
+c.
+
+Any felony under The Securities Act (Article 581-1 et seq., Vernon's Texas Civil Statutes).
+
+d.
+
+An offense under Chapter 49 (DWI), Penal Code, that is punishable as a felony of the third degree or state
+jail felony, if the defendant has been previously convicted three times of an offense under that chapter.
+
+Used or intended to be used in the commission of:
+a.
+
+Any felony under Chapter 481, Health and Safety Code (Texas Controlled Substances Act);
+
+b.
+
+Any felony under Chapter 483, Health and Safety Code;
+
+c.
+
+A felony under Chapter 151, Finance Code;
+
+d.
+
+Any felony under Chapter 34, Penal Code (Money Laundering);
+
+e.
+
+A Class A misdemeanor under Subchapter B, Chapter 365, Health and Safety Code (Littering), if the
+defendant has been previously convicted twice of an offense under that subchapter; or
+
+f.
+
+A Class B misdemeanor under Chapter 522 Business & Commerce Code; a Class A misdemeanor under
+Section 306.051 Business & Commerce Code; any offence under Section 326.002, Business & Commerce
+Code; any offense under Section 42.10, 46.06 (a) (1), 46.14, Chapter 71 Penal Code.
+
+3.
+
+The proceeds gained from the commission of a felony listed in Subsection .03 C 1 and 2 of this Procedure or a
+crime of violence; or
+
+4.
+
+Acquired with proceeds gained from the commission of a felony listed in Subsection .03 C 1 and 2 of this
+Procedure or a crime of violence.
+
+.04 CRITERIA FOR LEGAL ASSET SEIZURE
+A. Officers observing or detecting the presence of items specified in Section .03 of this procedure seize the property
+according to law. Seizures of personal property occur in any place that the officer has a right to be.
+B. Seizure of any property subject to forfeiture may occur under the authority of a search warrant issued pursuant to
+Chapter 18.02 (12) of the Texas Code of Criminal Procedure.
+C. Seizure of any property subject to forfeiture may be made without a warrant if:
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 2 of 5
+
+Effective Date: September 19, 2018
+
+San Antonio Police Department
+GENERAL MANUAL
+
+Procedure 509 – Legal Asset Seizure
+1.
+
+The owner, operator, or agent in charge of the property knowingly consents
+
+2.
+
+The seizure is incident to a search to which the owner, operator, or agent in charge of the property knowingly
+consents;
+
+3. The property subject to seizure has been subject of a prior judgment in favor of the state in a forfeiture
+proceeding under chapter 59 of the CCP
+4.
+
+The seizure is incident to a lawful arrest, lawful search, or lawful search incident to arrest.
+
+D. Officers request supervisory assistance in all cases of legal asset seizure.
+E. The Legal Asset Seizure Detail is notified through the Communication unit before officers leave the scene in all
+potential seizure cases with the exception of vehicles being impounded as criminal instruments, and cash money
+which is placed in the Property Room as designated by GM Procedure 606, Impounding Property.
+.05 ACT OF LEGAL ASSET SEIZURE
+A. Officers document probable cause for determining the status of property before the actual seizure of property.
+B. Officers issue receipts to the person(s) previously in control of the property for any property seized under this
+procedure.
+C. Seized property is protected and safeguarded by the seizing officer while under the officer's control.
+D. Seized property, to include vehicles, is impounded as evidence, and transported to a facility for storage as designated
+by GM Procedures 606, Impounding Property or 607, Impounding Vehicles.
+1.
+
+Officers place a hold on the towing service record (invoice) for Legal Asset Seizure Detail in the case of vehicle
+seizures.
+
+2.
+
+After evaluation of a case involving a vehicle, the Legal Asset Seizure Detail:
+
+3.
+
+a.
+
+Prepares SAPD Form #110 - VH, Vehicle Detainer For Physical Evidence, for long-term impoundment
+pending litigation and coordinates with Vehicle Storage Unit personnel for the transfer of the vehicle from
+their control area to a separate designated area for this purpose: or
+
+b.
+
+Releases the hold on the vehicle. SAPD Form #113 – VRA, Vehicle Release Authorization
+
+After evaluation of a case involving property other than vehicles, the Legal Asset Seizure Detail:
+a.
+
+Transfers the property seized to a designated storage facility assigned to the Detail;
+
+b.
+
+Weapons are stored in the Property Room with a hold placed for the proper follow up unit; or
+
+c.
+
+Removes the hold for seizure from the property.
+
+E. Officers direct copies of all reports pertaining to an asset seizure made under Chapter 59 of the Code of Criminal
+Procedure to the Legal Asset Seizure Detail in order that immediate steps may be taken to secure the property from
+being reclaimed by the owner.
+F.
+
+Officers attempt to determine ownership of property at the time of seizure and include this information in reports
+submitted.
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 3 of 5
+
+Effective Date: September 19, 2018
+
+San Antonio Police Department
+GENERAL MANUAL
+
+Procedure 509 – Legal Asset Seizure
+G. The ignition and trunk keys to seized vehicles are also seized and placed into the Property Room as evidence. All
+personal property must be removed from vehicles by the seizing officer as designated by GM Procedure 607,
+Impounding Vehicles.
+.06 CUSTODY OF SEIZED PROPERTY
+A. The Legal Asset Seizure Detail Supervisor maintains possession of all seized money and other personal property
+while subject to the courts' jurisdiction.
+1.
+
+Seized personal property, including money, is placed in the Property Room as evidence with a hold for the
+Legal Asset Seizure Detail; and
+
+2.
+
+Seized personal property, including money, remains in the San Antonio Police Department Property Room until it is
+released to the Legal Asset Seizure Detail pending litigation or is released by the Legal Asset Seizure Detail.
+
+3.
+
+Property seized and released to the Legal Asset Seizure Detail pending litigation is stored and maintained in a
+designated and secured storage area for that purpose (except money).
+
+4.
+
+Seized money, pending litigation and release to the Legal Asset Seizure Detail, is deposited into an interest-bearing
+account designated for that purpose by the Bexar County District Attorney's Office.
+
+B. A separate designated storage area for seized vehicles is utilized until disposition is determined by the court. Vehicles are
+maintained as evidence apart from other impounded vehicles, and not released without the authorization of the Legal Asset
+Seizure Detail; and
+1.
+
+Court orders commanding the release or other disposition of seized motor vehicles are first routed through the Legal
+Asset Seizure Detail.
+
+2.
+
+The Legal Asset Seizure Detail notifies Vehicle Storage Unit personnel of any legitimate court orders or case status
+change involving the release of vehicles in order that these particular vehicles are returned to the control of the
+Vehicle Storage Unit personnel for release purposes.
+
+C. Real property seized through the efforts of members of the Police Department remains in the custody of the Legal Asset
+Seizure Detail while subject to the courts' jurisdiction.
+D. Members of the Legal Asset Seizure Detail prepare the necessary seizure affidavits in order to secure judgment and
+forfeiture of seized property under Chapter 59 of the Texas Code of Criminal Procedure.
+E.
+
+Officers ensure that the completed and signed affidavit is notarized and returned to the Legal Asset Seizure Detail without
+delay.
+
+.07 DISPOSITION OF FORFEITED PROPERTY
+A. A judicial ruling on the disposition of seized assets determines whether or not an actual forfeiture of the property takes
+place.
+B. Should the title to personal or real property be granted to the Department as the result of adjudication, the Legal Asset
+Seizure Detail is given notification in order that the disposition of property is properly coordinated.
+C. The Legal Asset Seizure Detail prepares enabling documentation to allow the City of San Antonio to obtain titles to
+vehicles distributed under this procedure.
+D. The Chief of Police determines whether property awarded under this procedure is:
+1.
+
+Sold at public auction;
+
+2.
+
+Converted for use by the Department for a law enforcement purpose; or
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 4 of 5
+
+Effective Date: September 19, 2018
+
+San Antonio Police Department
+GENERAL MANUAL
+
+Procedure 509 – Legal Asset Seizure
+3.
+
+Destroyed.
+
+E.
+
+In the case of property disposed of at public auction, the property is sold in a manner consistent with existing
+administrative policies of the Finance Department and the Purchasing and General Services Department of the City of San
+Antonio.
+
+F.
+
+The law enforcement use of property awarded under this procedure is designated by the Chief of Police.
+
+G. Property previously seized and forfeited to the City of San Antonio, which is no longer serviceable and considered surplus
+by the Department, is disposed of according to administrative policy of the Finance Department and the Purchasing and
+General Services Department of the City of San Antonio and within the guidelines for disposition of forfeited property as
+outlined in Chapter 59 of the Texas Code of Criminal Procedure.
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 5 of 5
+
+Effective Date: September 19, 2018
+
+San Antonio Police Department
+GENERAL MANUAL`
+  },
+    {
+    id: 'penal_code_22',
+    title: `Penal Code 22: ASSAULTIVE OFFENSES`,
+    category: 'Penal Code',
+    summary: `CHAPTER 22. ASSAULTIVE OFFENSES Sec. 22.01.`,
+    content: `CHAPTER 22. ASSAULTIVE OFFENSES
+Sec. 22.01. ASSAULT.
+(a)
+A person commits an offense if the
+person:
+(1) intentionally, knowingly, or recklessly causes bodily
+injury to another, including the person's spouse;
+(2) intentionally or knowingly threatens another with imminent
+bodily injury, including the person's spouse; or
+(3) intentionally or knowingly causes physical contact with
+another when the person knows or should reasonably believe that the other
+will regard the contact as offensive or provocative.
+(b) An offense under Subsection (a)(1) is a Class A misdemeanor,
+except that the offense is a felony of the third degree if the offense is
+committed against:
+(1) a person the actor knows is a public servant while the
+public servant is lawfully discharging an official duty, or in
+retaliation or on account of an exercise of official power or performance
+of an official duty as a public servant;
+(2) a person whose relationship to or association with the
+defendant is described by Section 71.0021(b), 71.003, or 71.005, Family
+Code, if:
+(A) it is shown on the trial of the offense that the
+defendant has been previously convicted of an offense that was committed:
+(i) against a person whose relationship to or
+association with the defendant is described by Section 71.0021(b),
+71.003, or 71.005, Family Code; and
+(ii) under:
+(a) this chapter, Chapter 19, or Section 20.03,
+20.04, 21.11, or 25.11;
+(b) Section 25.07, if the applicable violation
+was based on the commission of family violence as described by Subsection
+(a)(1) of that section; or
+(c) Section 25.072, if any of the applicable
+violations were based on the commission of family violence as described
+by Section 25.07(a)(1); or
+(B) the offense is committed by intentionally, knowingly,
+or recklessly impeding the normal breathing or circulation of the blood
+of the person by applying pressure to the person's throat or neck or by
+blocking the person's nose or mouth;
+(3) a person who contracts with government to perform a
+service in a facility described by Section 1.07(a)(14), Penal Code, or
+Section 51.02(13) or (14), Family Code, or an employee of that person:
+(A) while the person or employee is engaged in performing
+a service within the scope of the contract, if the actor knows the person
+or employee is authorized by government to provide the service; or
+(B) in retaliation for or on account of the person's or
+employee's performance of a service within the scope of the contract;
+(4) a person the actor knows is a security officer while the
+officer is performing a duty as a security officer;
+(5) a person the actor knows is emergency services personnel
+while the person is providing emergency services;
+Page - 1 -
+
+(6) a person the actor knows is a process server while the
+person is performing a duty as a process server;
+(7) a pregnant individual to force the individual to have an
+abortion;
+(8) a person the actor knows is pregnant at the time of the
+offense; or
+(9) a person the actor knows is hospital personnel while the
+person is located on hospital property, including all land and buildings
+owned or leased by the hospital.
+(b-1) Notwithstanding Subsections (b) and (c), an offense under
+Subsection (a) is a felony of the third degree if the offense is
+committed:
+(1) by an actor who is committed to a civil commitment
+facility; and
+(2) against:
+(A) a person the actor knows is an officer or employee of
+the Texas Civil Commitment Office:
+(i) while the officer or employee is lawfully
+discharging an official duty; or
+(ii) in retaliation for or on account of an exercise
+of official power or performance of an official duty by the officer or
+employee; or
+(B) a person the actor knows is contracting with the
+state to perform a service in a civil commitment facility or an employee
+of that person:
+(i) while the person or employee is engaged in
+performing a service within the scope of the contract; or
+(ii) in retaliation for or on account of the
+person's or employee's performance of a service within the scope of the
+contract.
+(b-2) Notwithstanding
+Subsection
+(b)(1),
+an
+offense
+under
+Subsection (a)(1) is a felony of the second degree if the offense is
+committed against a person the actor knows is a peace officer or judge
+while the officer or judge is lawfully discharging an official duty or in
+retaliation or on account of an exercise of official power or performance
+of an official duty as a peace officer or judge.
+(b-3) Notwithstanding
+Subsection
+(b)(2),
+an
+offense
+under
+Subsection (a)(1) is a felony of the second degree if:
+(1) the offense is committed against a person whose
+relationship to or association with the defendant is described by Section
+71.0021(b), 71.003, or 71.005, Family Code;
+(2) it is shown on the trial of the offense that the defendant
+has been previously convicted of an offense that was committed:
+(A) against a person whose relationship to or association
+with the defendant is described by Section 71.0021(b), 71.003, or 71.005,
+Family Code; and
+(B) under:
+(i) this chapter, Chapter 19, or Section 20.03,
+20.04, 21.11, or 25.11;
+(ii) Section 25.07, if the applicable violation was
+based on the commission of family violence as described by Subsection
+Page -2 -
+
+(a)(1) of that section; or
+(iii) Section 25.072, if any of the applicable
+violations were based on the commission of family violence as described
+by Section 25.07(a)(1); and
+(3) the offense is committed by intentionally, knowingly, or
+recklessly impeding the normal breathing or circulation of the blood of
+the person by applying pressure to the person's throat or neck or by
+blocking the person's nose or mouth.
+(b-4) Notwithstanding Subsection (b), an offense under Subsection
+(a)(1) is a felony of the third degree if it is shown on the trial of the
+offense that the actor committed the offense in the course of committing
+an offense under Section 20.05(a)(2).
+(c) An offense under Subsection (a)(2) or (3) is a Class C
+misdemeanor, except that the offense is:
+(1) a Class A misdemeanor if the offense is committed under
+Subsection (a)(3) against an elderly individual or disabled individual,
+as those terms are defined by Section 22.04;
+(2) a Class B misdemeanor if the offense is committed by a
+person who is not a sports participant against a person the actor knows
+is a sports participant either:
+(A) while the participant is performing duties or
+responsibilities in the participant's capacity as a sports participant;
+or
+(B) in retaliation for or on account of the participant's
+performance of a duty or responsibility within the participant's capacity
+as a sports participant; or
+(3) a Class A misdemeanor if the offense is committed against
+a pregnant individual to force the individual to have an abortion.
+(d) For purposes of Subsection (b), the actor is presumed to have
+known the person assaulted was a public servant, a security officer, or
+emergency services personnel if the person was wearing a distinctive
+uniform or badge indicating the person's employment as a public servant
+or status as a security officer or emergency services personnel.
+(e) In this section:
+(1) "Emergency services personnel" includes firefighters,
+emergency medical services personnel as defined by Section 773.003,
+Health and Safety Code, emergency room personnel, and other individuals
+who, in the course and scope of employment or as a volunteer, provide
+services for the benefit of the general public during emergency
+situations.
+(1-a) "Hospital personnel" includes nurses, physicians,
+physician assistants, maintenance or janitorial staff, receptionists, and
+other individuals who are employed by or work in a facility that is
+licensed as a general hospital or special hospital, as those terms are
+defined by Section 241.003, Health and Safety Code, including a hospital
+maintained or operated by the state.
+(2) "Process server" has the meaning assigned by Section
+156.001, Government Code.
+(3) "Security officer" means a commissioned security officer
+as defined by Section 1702.002, Occupations Code, or a noncommissioned
+security officer registered under Section 1702.221, Occupations Code.
+Page -3 -
+
+(4) "Sports participant" means a person who participates in
+any
+official
+capacity
+with
+respect
+to
+an
+interscholastic,
+intercollegiate, or other organized amateur or professional athletic
+competition and includes an athlete, referee, umpire, linesman, coach,
+instructor, administrator, or staff member.
+(f) For the purposes of Subsections (b)(2)(A) and (b-3)(2):
+(1) a defendant has been previously convicted of an offense
+listed in those subsections committed against a person whose relationship
+to or association with the defendant is described by Section 71.0021(b),
+71.003, or 71.005, Family Code, if the defendant was adjudged guilty of
+the offense or entered a plea of guilty or nolo contendere in return for
+a grant of deferred adjudication, regardless of whether the sentence for
+the offense was ever imposed or whether the sentence was probated and the
+defendant was subsequently discharged from community supervision; and
+(2) a conviction under the laws of another state for an
+offense containing elements that are substantially similar to the
+elements of an offense listed in those subsections is a conviction of the
+offense listed.
+(g) If conduct constituting an offense under this section also
+constitutes an offense under another section of this code, the actor may
+be prosecuted under either section or both sections.
+Sec. 22.011. SEXUAL ASSAULT. (a) A person commits an offense if:
+(1) the person intentionally or knowingly:
+(A) causes the penetration of the anus or sexual organ of
+another person by any means, without that person's consent;
+(B) causes the penetration of the mouth of another person
+by the sexual organ of the actor, without that person's consent; or
+(C) causes the sexual organ of another person, without
+that person's consent, to contact or penetrate the mouth, anus, or sexual
+organ of another person, including the actor; or
+(2) regardless of whether the person knows the age of the
+child at the time of the offense, the person intentionally or knowingly:
+(A) causes the penetration of the anus or sexual organ of
+a child by any means;
+(B) causes the penetration of the mouth of a child by the
+sexual organ of the actor;
+(C) causes the sexual organ of a child to contact or
+penetrate the mouth, anus, or sexual organ of another person, including
+the actor;
+(D) causes the anus of a child to contact the mouth,
+anus, or sexual organ of another person, including the actor; or
+(E) causes the mouth of a child to contact the anus or
+sexual organ of another person, including the actor.
+(b) A sexual assault under Subsection (a)(1) is without the consent
+of the other person if:
+(1) the actor compels the other person to submit or
+participate by the use of physical force, violence, or coercion;
+(2) the actor compels the other person to submit or
+participate by threatening to use force or violence against the other
+person or to cause harm to the other person, and the other person
+Page -4 -
+
+believes that the actor has the present ability to execute the threat;
+(3) the other person has not consented and the actor knows the
+other person is unconscious or physically unable to resist;
+(4) the actor knows that as a result of mental disease or
+defect the other person is at the time of the sexual assault incapable
+either of appraising the nature of the act or of resisting it;
+(5) the other person has not consented and the actor knows the
+other person is unaware that the sexual assault is occurring;
+(6) the actor has intentionally impaired the other person's
+power to appraise or control the other person's conduct by administering
+any substance without the other person's knowledge;
+(7) the actor compels the other person to submit or
+participate by threatening to use force or violence against any person,
+and the other person believes that the actor has the ability to execute
+the threat;
+(8) the actor is a public servant who coerces the other person
+to submit or participate;
+(9) the actor is a mental health services provider or a health
+care services provider who causes the other person, who is a patient or
+former patient of the actor, to submit or participate by exploiting the
+other person's emotional dependency on the actor;
+(10) the actor is a clergyman who causes the other person to
+submit or participate by exploiting the other person's emotional
+dependency on the clergyman in the clergyman's professional character as
+spiritual adviser;
+(11) the actor is an employee of a facility where the other
+person is a resident, unless the employee and resident are formally or
+informally married to each other under Chapter 2, Family Code;
+(12) the actor is a health care services provider who, in the
+course of performing an assisted reproduction procedure on the other
+person, uses human reproductive material from a donor knowing that the
+other person has not expressly consented to the use of material from that
+donor;
+(13) the actor is a coach or tutor who causes the other person
+to submit or participate by using the actor's power or influence to
+exploit the other person's dependency on the actor; or
+(14) the actor is a caregiver hired to assist the other person
+with activities of daily life and causes the other person to submit or
+participate by exploiting the other person's dependency on the actor.
+(c) In this section:
+(1) "Child" means a person younger than 17 years of age.
+(2) "Spouse" means a person who is legally married to another.
+(3) "Health care services provider" means:
+(A) a physician licensed under Subtitle B, Title 3,
+Occupations Code;
+(B) a
+chiropractor
+licensed
+under
+Chapter
+201,
+Occupations Code;
+(C) a physical therapist licensed under Chapter 453,
+Occupations Code;
+(D) a physician assistant licensed under Chapter 204,
+Occupations Code; or
+Page -5 -
+
+(E) a registered nurse, a vocational nurse, or an
+advanced practice nurse licensed under Chapter 301, Occupations Code.
+(4) "Mental health services provider" means an individual,
+licensed or unlicensed, who performs or purports to perform mental health
+services, including a:
+(A) licensed social worker as defined by Section 505.002,
+Occupations Code;
+(B) chemical dependency counselor as defined by Section
+504.001, Occupations Code;
+(C) licensed professional counselor as defined by Section
+503.002, Occupations Code;
+(D) licensed marriage and family therapist as defined by
+Section 502.002, Occupations Code;
+(E) member of the clergy;
+(F) psychologist offering psychological services as
+defined by Section 501.003, Occupations Code; or
+(G) special officer for mental health assignment
+certified under Section 1701.404, Occupations Code.
+(5) "Employee of a facility" means a person who is an employee
+of a facility defined by Section 250.001, Health and Safety Code, or any
+other person who provides services for a facility for compensation,
+including a contract laborer.
+(6) "Assisted reproduction" and "donor" have the meanings
+assigned by Section 160.102, Family Code.
+(7) "Human reproductive material" means:
+(A) a human spermatozoon or ovum; or
+(B) a human organism at any stage of development from
+fertilized ovum to embryo.
+(d) It is a defense to prosecution under Subsection (a)(2) that the
+conduct consisted of medical care for the child and did not include any
+contact between the anus or sexual organ of the child and the mouth,
+anus, or sexual organ of the actor or a third party.
+(e) It is an affirmative defense to prosecution under Subsection
+(a)(2):
+(1) that the actor was the spouse of the child at the time of
+the offense; or
+(2) that:
+(A) the actor was not more than three years older than
+the victim and at the time of the offense:
+(i) was not required under Chapter 62, Code of
+Criminal Procedure, to register for life as a sex offender; or
+(ii) was not a person who under Chapter 62, Code of
+Criminal Procedure, had a reportable conviction or adjudication for an
+offense under this section; and
+(B) the victim:
+(i) was a child of 14 years of age or older; and
+(ii) was not:
+(a) a person whom the actor was prohibited from
+marrying or purporting to marry or with whom the actor was prohibited
+from living under the appearance of being married under Section 25.01; or
+(b) a person with whom the actor was prohibited
+Page -6 -
+
+from engaging in sexual intercourse or deviate sexual intercourse under
+Section 25.02.
+(f) An offense under this section is a felony of the second degree,
+except that an offense under this section is:
+(1) a felony of the first degree if the victim was:
+(A) a person whom the actor was prohibited from marrying
+or purporting to marry or with whom the actor was prohibited from living
+under the appearance of being married under Section 25.01; or
+(B) a person with whom the actor was prohibited from
+engaging in sexual intercourse or deviate sexual intercourse under
+Section 25.02; or
+(2) a state jail felony if the offense is committed under
+Subsection (a)(1) and the actor has not received express consent as
+described by Subsection (b)(12).
+Sec. 22.012. INDECENT ASSAULT. (a) A person commits an offense
+if, without the other person's consent and with the intent to arouse or
+gratify the sexual desire of any person, the person:
+(1) touches the anus, breast, or any part of the genitals of
+another person;
+(2) touches another person with the anus, breast, or any part
+of the genitals of any person;
+(3) exposes or attempts to expose another person's genitals,
+pubic area, anus, buttocks, or female areola; or
+(4) causes another person to contact the blood, seminal fluid,
+vaginal fluid, saliva, urine, or feces of any person.
+(b) An offense under this section is a Class A misdemeanor, except
+that the offense is:
+(1) a state jail felony if it is shown on the trial of the
+offense that:
+(A) the defendant has been previously convicted of an
+offense under this section, other than an offense punishable under
+Paragraph (B); or
+(B) the defendant is a health care services provider or a
+mental health services provider and the act is:
+(i) committed during the course of providing a
+treatment or service to the victim; and
+(ii) beyond the scope of generally accepted
+practices for the treatment or service; or
+(2) a felony of the third degree if it is shown on the trial
+of the offense that the defendant has been previously convicted of an
+offense under this section that is punishable under Subdivision (1)(B).
+(c) If conduct that constitutes an offense under this section also
+constitutes an offense under another law, the actor may be prosecuted
+under this section, the other law, or both.
+(d) In this section, "health care services provider" and "mental
+health services provider" have the meanings assigned by Section 22.011.
+Sec. 22.02. AGGRAVATED ASSAULT. (a) A person commits an offense
+if the person commits assault as defined in Sec. 22.01 and the person:
+(1) causes serious bodily injury to another, including the
+Page -7 -
+
+person's spouse; or
+(2) uses or exhibits a deadly weapon during the commission of
+the assault.
+(b) An offense under this section is a felony of the second degree,
+except that the offense is a felony of the first degree if:
+(1) the actor uses a deadly weapon during the commission of
+the assault and causes:
+(A) serious bodily injury to a person whose relationship
+to or association with the defendant is described by Section 71.0021(b),
+71.003, or 71.005, Family Code; or
+(B) a traumatic brain or spine injury to another that
+results in a persistent vegetative state or irreversible paralysis;
+(2) regardless of whether the offense is committed under
+Subsection (a)(1) or (a)(2), the offense is committed:
+(A) by a public servant acting under color of the
+servant's office or employment;
+(B) against a person the actor knows is a public servant
+while the public servant is lawfully discharging an official duty, or in
+retaliation or on account of an exercise of official power or performance
+of an official duty as a public servant;
+(C) in retaliation against or on account of the service
+of another as a witness, prospective witness, informant, or person who
+has reported the occurrence of a crime;
+(D) against a person the actor knows is a process server
+while the person is performing a duty as a process server; or
+(E) against a person the actor knows is a security
+officer while the officer is performing a duty as a security officer;
+(3) the actor is in a motor vehicle, as defined by Section
+501.002, Transportation Code, and:
+(A) knowingly discharges a firearm at or in the direction
+of a habitation, building, or vehicle;
+(B) is reckless as to whether the habitation, building,
+or vehicle is occupied; and
+(C) in discharging the firearm, causes serious bodily
+injury to any person; or
+(4) the actor commits the assault as part of a mass shooting.
+(c) The actor is presumed to have known the person assaulted was a
+public servant or a security officer if the person was wearing a
+distinctive uniform or badge indicating the person's employment as a
+public servant or status as a security officer.
+(d) In this section:
+(1) "Process server" has the meaning assigned by Section
+156.001, Government Code.
+(2) "Security officer" means a commissioned security officer
+as defined by Section 1702.002, Occupations Code, or a noncommissioned
+security officer registered under Section 1702.221, Occupations Code.
+Sec. 22.021. AGGRAVATED SEXUAL ASSAULT. (a)
+offense:
+(1) if the person:
+(A) intentionally or knowingly:
+Page -8 -
+
+A person commits an
+
+(i) causes the penetration of the anus or sexual
+organ of another person by any means, without that person's consent;
+(ii) causes the penetration of the mouth of another
+person by the sexual organ of the actor, without that person's consent;
+or
+(iii) causes the sexual organ of another person,
+without that person's consent, to contact or penetrate the mouth, anus,
+or sexual organ of another person, including the actor; or
+(B) regardless of whether the person knows the age of the
+child at the time of the offense, intentionally or knowingly:
+(i) causes the penetration of the anus or sexual
+organ of a child by any means;
+(ii) causes the penetration of the mouth of a child
+by the sexual organ of the actor;
+(iii) causes the sexual organ of a child to contact
+or penetrate the mouth, anus, or sexual organ of another person,
+including the actor;
+(iv) causes the anus of a child to contact the
+mouth, anus, or sexual organ of another person, including the actor; or
+(v) causes the mouth of a child to contact the anus
+or sexual organ of another person, including the actor; and
+(2) if:
+(A) the person:
+(i) causes serious bodily injury or attempts to
+cause the death of the victim or another person in the course of the same
+criminal episode;
+(ii) by acts or words places the victim in fear that
+any person will become the victim of an offense under Section
+20A.02(a)(3), (4), (7), or (8) or that death, serious bodily injury, or
+kidnapping will be imminently inflicted on any person;
+(iii) by acts or words occurring in the presence of
+the victim threatens to cause any person to become the victim of an
+offense under Section 20A.02(a)(3), (4), (7), or (8) or to cause the
+death, serious bodily injury, or kidnapping of any person;
+(iv) uses or exhibits a deadly weapon in the course
+of the same criminal episode;
+(v) acts in concert with another who engages in
+conduct described by Subdivision (1) directed toward the same victim and
+occurring during the course of the same criminal episode; or
+(vi) with the intent of facilitating the commission
+of the offense, administers or provides to the victim of the offense any
+substance capable of impairing the victim's ability to appraise the
+nature of the act or to resist the act;
+(B) the victim is younger than 14 years of age,
+regardless of whether the person knows the age of the victim at the time
+of the offense; or
+(C) the victim is an elderly individual or a disabled
+individual.
+(b) In this section:
+(1) "Child" has the meaning assigned by Section 22.011(c).
+(2) "Elderly individual" has the meaning assigned by Section
+Page -9 -
+
+22.04(c).
+
+(3) "Disabled individual" means a person older than 13 years
+of age who by reason of age or physical or mental disease, defect, or
+injury is substantially unable to protect the person's self from harm or
+to provide food, shelter, or medical care for the person's self.
+(c) An aggravated sexual assault under this section is without the
+consent of the other person if the aggravated sexual assault occurs under
+the same circumstances listed in Section 22.011(b).
+(d) The defense provided by Section 22.011(d) applies to this
+section.
+(e) An offense under this section is a felony of the first degree.
+(f) The minimum term of imprisonment for an offense under this
+section is increased to 25 years if:
+(1) the victim of the offense is younger than six years of age
+at the time the offense is committed; or
+(2) the victim of the offense is younger than 14 years of age
+at the time the offense is committed and the actor commits the offense in
+a manner described by Subsection (a)(2)(A).
+Sec. 22.04. INJURY TO A CHILD, ELDERLY INDIVIDUAL, OR DISABLED
+INDIVIDUAL.
+(a)
+A person commits an offense if he intentionally,
+knowingly, recklessly, or with criminal negligence, by act or
+intentionally, knowingly, or recklessly by omission, causes to a child,
+elderly individual, or disabled individual:
+(1) serious bodily injury;
+(2) serious mental deficiency, impairment, or injury; or
+(3) bodily injury.
+(a-1) A person commits an offense if the person is an owner,
+operator, or employee of a group home, nursing facility, assisted living
+facility, boarding home facility, intermediate care facility for persons
+with an intellectual or developmental disability, or other institutional
+care facility and the person intentionally, knowingly, recklessly, or
+with criminal negligence by omission causes to a child, elderly
+individual, or disabled individual who is a resident of that group home
+or facility:
+(1) serious bodily injury;
+(2) serious mental deficiency, impairment, or injury; or
+(3) bodily injury.
+(b) An omission that causes a condition described by Subsection
+(a)(1), (2), or (3) or (a-1)(1), (2), or (3) is conduct constituting an
+offense under this section if:
+(1) the actor has a legal or statutory duty to act; or
+(2) the actor has assumed care, custody, or control of a
+child, elderly individual, or disabled individual.
+(c) In this section:
+(1) "Child" means a person 14 years of age or younger.
+(2) "Elderly individual" means a person 65 years of age or
+older.
+(3) "Disabled individual" means a person:
+(A) with one or more of the following:
+(i) autism spectrum disorder, as defined by Section
+Page -10 -
+
+1355.001, Insurance Code;
+(ii) developmental disability, as defined by Section
+112.042, Human Resources Code;
+(iii) intellectual disability, as defined by Section
+591.003, Health and Safety Code;
+(iv) severe emotional disturbance, as defined by
+Section 261.001, Family Code;
+(v) traumatic brain injury, as defined by Section
+92.001, Health and Safety Code; or
+(vi) mental illness, as defined by Section 571.003,
+Health and Safety Code; or
+(B) who otherwise by reason of age or physical or mental
+disease, defect, or injury is substantially unable to protect the
+person's self from harm or to provide food, shelter, or medical care for
+the person's self.
+(4) Repealed by Acts 2011, 82nd Leg., R.S., Ch. 620, Sec. 11,
+eff. September 1, 2011.
+(d) For purposes of an omission that causes a condition described
+by Subsection (a)(1), (2), or (3), the actor has assumed care, custody,
+or control if the actor has by act, words, or course of conduct acted so
+as to cause a reasonable person to conclude that the actor has accepted
+responsibility for protection, food, shelter, or medical care for a
+child, elderly individual, or disabled individual. For purposes of an
+omission that causes a condition described by Subsection (a-1)(1), (2),
+or (3), the actor acting during the actor's capacity as owner, operator,
+or employee of a group home or facility described by Subsection (a-1) is
+considered to have accepted responsibility for protection, food, shelter,
+or medical care for the child, elderly individual, or disabled individual
+who is a resident of the group home or facility.
+(e) An offense under Subsection (a)(1) or (2) or (a-1)(1) or (2) is
+a felony of the first degree when the conduct is committed intentionally
+or knowingly. When the conduct is engaged in recklessly, the offense is
+a felony of the second degree.
+(f) An offense under Subsection (a)(3) or (a-1)(3) is a felony of
+the third degree when the conduct is committed intentionally or
+knowingly, except that an offense under Subsection (a)(3) is a felony of
+the second degree when the conduct is committed intentionally or
+knowingly and the victim is a disabled individual residing in a center,
+as defined by Section 555.001, Health and Safety Code, or in a facility
+licensed under Chapter 252, Health and Safety Code, and the actor is an
+employee of the center or facility whose employment involved providing
+direct care for the victim. When the conduct is engaged in recklessly,
+the offense is a state jail felony.
+(g) An offense under Subsection (a) is a state jail felony when the
+person acts with criminal negligence. An offense under Subsection (a-1)
+is a state jail felony when the person, with criminal negligence and by
+omission, causes a condition described by Subsection (a-1)(1), (2), or
+(3).
+(h) A person who is subject to prosecution under both this section
+and another section of this code may be prosecuted under either or both
+sections. Section 3.04 does not apply to criminal episodes prosecuted
+Page -11 -
+
+under both this section and another section of this code. If a criminal
+episode is prosecuted under both this section and another section of this
+code and sentences are assessed for convictions under both sections, the
+sentences shall run concurrently.
+(i) It is an affirmative defense to prosecution under Subsection
+(b)(2) that before the offense the actor:
+(1) notified in person the child, elderly individual, or
+disabled individual that the actor would no longer provide the applicable
+care described by Subsection (d), and notified in writing the parents or
+a person, other than the actor, acting in loco parentis to the child,
+elderly individual, or disabled individual that the actor would no longer
+provide the applicable care described by Subsection (d); or
+(2) notified in writing the Department of Family and
+Protective Services that the actor would no longer provide the applicable
+care described by Subsection (d).
+(j) Written notification under Subsection (i)(2) or (i)(3) is not
+effective unless it contains the name and address of the actor, the name
+and address of the child, elderly individual, or disabled individual, the
+type of care provided by the actor, and the date the care was
+discontinued.
+(k) It is a defense to prosecution under this section that the act
+or omission consisted of:
+(1) reasonable medical care occurring under the direction of
+or by a licensed physician; or
+(2) emergency medical care administered in good faith and with
+reasonable care by a person not licensed in the healing arts.
+(l) It is an affirmative defense to prosecution under this section:
+(1) that the act or omission was based on treatment in
+accordance with the tenets and practices of a recognized religious method
+of healing with a generally accepted record of efficacy;
+(2) for a person charged with an act of omission causing to a
+child, elderly individual, or disabled individual a condition described
+by Subsection (a)(1), (2), or (3) that:
+(A) there is no evidence that, on the date prior to the
+offense charged, the defendant was aware of an incident of injury to the
+child, elderly individual, or disabled individual and failed to report
+the incident; and
+(B) the person:
+(i) was a victim of family violence, as that term is
+defined by Section 71.004, Family Code, committed by a person who is also
+charged with an offense against the child, elderly individual, or
+disabled individual under this section or any other section of this
+title;
+(ii) did not cause a condition described by
+Subsection (a)(1), (2), or (3); and
+(iii) did not reasonably believe at the time of the
+omission that an effort to prevent the person also charged with an
+offense against the child, elderly individual, or disabled individual
+from committing the offense would have an effect; or
+(3) that:
+(A) the actor was not more than three years older than
+Page -12 -
+
+the victim at the time of the offense; and
+(B) the victim was a nondisabled or disabled child at the
+time of the offense.
+(m) It is an affirmative defense to prosecution under Subsections
+(a)(1), (2), and (3) for injury to a disabled individual that the person
+did not know and could not reasonably have known that the individual was
+a disabled individual, as defined by Subsection (c), at the time of the
+offense.
+Sec. 22.041. ABANDONING OR ENDANGERING A CHILD, ELDERLY INDIVIDUAL,
+OR DISABLED INDIVIDUAL. (a) In this section:
+(1) "Abandon" means to leave in any place without providing
+reasonable and necessary care a child, elderly individual, or disabled
+individual under circumstances under which no reasonable, similarly
+situated person would leave a child or individual of that age and
+ability.
+(2) "Child," "elderly individual," and "disabled individual"
+have the meanings assigned by Section 22.04.
+(b) A person commits an offense if the person, having custody,
+care, or control of a child, elderly individual, or disabled individual,
+intentionally abandons the child or individual in any place under
+circumstances that expose the child or individual to an unreasonable risk
+of harm.
+(c) A person commits an offense if the person intentionally,
+knowingly, recklessly, or with criminal negligence, by act or omission,
+engages in conduct that places a child, elderly individual, or disabled
+individual in imminent danger of death, bodily injury, or physical or
+mental impairment.
+(c-1) For purposes of Subsection (c), it is presumed that a person
+engaged in conduct that places a child, elderly individual, or disabled
+individual in imminent danger of death, bodily injury, or physical or
+mental impairment if:
+(1) the person manufactured, possessed, or in any way
+introduced into the body of any person the controlled substance
+methamphetamine in the presence of the child, elderly individual, or
+disabled individual;
+(2) the person's conduct related to the proximity or
+accessibility of the controlled substance methamphetamine to the child,
+elderly individual, or disabled individual and an analysis of a specimen
+of the child's or individual's blood, urine, or other bodily substance
+indicates the presence of methamphetamine in the body of the child or
+individual; or
+(3) the person injected, ingested, inhaled, or otherwise
+introduced a controlled substance listed in Penalty Group 1, Section
+481.102, Health and Safety Code, or Penalty Group 1-B, Section 481.1022,
+Health and Safety Code, into the human body when the person was not in
+lawful possession of the substance as defined by Section 481.002(24) of
+that code.
+(d) Except as provided by Subsection (e), an offense under
+Subsection (b) is:
+(1) a state jail felony if the actor abandoned the child,
+Page -13 -
+
+elderly individual, or disabled individual with intent to return for the
+child or individual; or
+(2) a felony of the third degree if the actor abandoned the
+child, elderly individual, or disabled individual without intent to
+return for the child or individual.
+(e) An offense under Subsection (b) is a felony of the second
+degree if the actor abandons the child, elderly individual, or disabled
+individual under circumstances that a reasonable person would believe
+would place the child or individual in imminent danger of death, bodily
+injury, or physical or mental impairment.
+(f) An offense under Subsection (c) is a state jail felony.
+(g) It is a defense to prosecution under Subsection (c) that the
+act or omission enables the child, elderly individual, or disabled
+individual to practice for or participate in an organized athletic event
+and that appropriate safety equipment and procedures are employed in the
+event.
+(h) It is an exception to the application of this section for
+abandoning or endangering a child that the actor voluntarily delivered
+the child to a designated emergency infant care provider under Section
+262.302, Family Code.
+Sec. 22.05. DEADLY CONDUCT. (a) A person commits an offense if he
+recklessly engages in conduct that places another in imminent danger of
+serious bodily injury.
+(b) A person commits an offense if he knowingly discharges a
+firearm at or in the direction of:
+(1) one or more individuals; or
+(2) a habitation, building, or vehicle and is reckless as to
+whether the habitation, building, or vehicle is occupied.
+(c) Recklessness and danger are presumed if the actor knowingly
+pointed a firearm at or in the direction of another whether or not the
+actor believed the firearm to be loaded.
+(d) For purposes of this section, "building," "habitation," and
+"vehicle" have the meanings assigned those terms by Section 30.01.
+(e) An offense under Subsection (a) is a Class A misdemeanor. An
+offense under Subsection (b) is a felony of the third degree.
+Sec. 22.06. CONSENT AS DEFENSE TO ASSAULTIVE CONDUCT. (a) The
+victim's effective consent or the actor's reasonable belief that the
+victim consented to the actor's conduct is a defense to prosecution under
+Section 22.01 (Assault), 22.02 (Aggravated Assault), or 22.05 (Deadly
+Conduct) if:
+(1) the conduct did not threaten or inflict serious bodily
+injury; or
+(2) the victim knew the conduct was a risk of:
+(A) his occupation;
+(B) recognized medical treatment; or
+(C) a scientific experiment conducted by recognized
+methods.
+(b) The defense to prosecution provided by Subsection (a) is not
+available to a defendant who commits an offense described by Subsection
+Page -14 -
+
+(a) as a condition of the defendant's or the victim's initiation or
+continued membership in a criminal street gang, as defined by Section
+71.01.
+Sec. 22.07. TERRORISTIC THREAT. (a) A person commits an offense
+if he threatens to commit any offense involving violence to any person or
+property with intent to:
+(1) cause a reaction of any type to his threat by an official
+or volunteer agency organized to deal with emergencies;
+(2) place any person in fear of imminent serious bodily
+injury;
+(3) prevent or interrupt the occupation or use of a building,
+room, place of assembly, place to which the public has access, place of
+employment or occupation, aircraft, automobile, or other form of
+conveyance, or other public place;
+(4) cause impairment or interruption of public communications,
+public transportation, public water, gas, or power supply or other public
+service;
+(5) place the public or a substantial group of the public in
+fear of serious bodily injury; or
+(6) influence the conduct or activities of a branch or agency
+of the federal government, the state, or a political subdivision of the
+state.
+(b) An offense under Subsection (a)(1) is a Class B misdemeanor.
+(c) An offense under Subsection (a)(2) is a Class B misdemeanor,
+except that the offense is a Class A misdemeanor if the offense:
+(1) is committed against a member of the person's family or
+household or otherwise constitutes family violence; or
+(2) is committed against a public servant.
+(c-1) Notwithstanding
+Subsection
+(c)(2),
+an
+offense
+under
+Subsection (a)(2) is a state jail felony if the offense is committed
+against a person the actor knows is a peace officer or judge.
+(d) An offense under Subsection (a)(3) is a Class A misdemeanor,
+unless the actor causes pecuniary loss of $1,500 or more to the owner of
+the building, room, place, or conveyance, in which event the offense is a
+state jail felony.
+(e) An offense under Subsection (a)(4), (a)(5), or (a)(6) is a
+felony of the third degree.
+(f) In this section:
+(1) "Family" has the meaning assigned by Section 71.003,
+Family Code.
+(2) "Family violence" has the meaning assigned by Section
+71.004, Family Code.
+(3) "Household" has the meaning assigned by Section 71.005,
+Family Code.
+(g) For purposes of Subsection (d), the amount of pecuniary loss is
+the amount of economic loss suffered by the owner of the building, room,
+place, or conveyance as a result of the prevention or interruption of the
+occupation or use of the building, room, place, or conveyance.
+Sec. 22.08.
+
+AIDING SUICIDE.
+
+(a)
+
+Page -15 -
+
+A person commits an offense if,
+
+with intent to promote or assist the commission of suicide by another, he
+aids or attempts to aid the other to commit or attempt to commit suicide.
+(b) An offense under this section is a Class C misdemeanor unless
+the actor's conduct causes suicide or attempted suicide that results in
+serious bodily injury, in which event the offense is a state jail felony.
+Sec. 22.09. TAMPERING WITH CONSUMER PRODUCT. (a) In this section:
+(1) "Consumer Product" means any product offered for sale to
+or for consumption by the public and includes "food" and "drugs" as those
+terms are defined in Section 431.002, Health and Safety Code.
+(2) "Tamper" means to alter or add a foreign substance to a
+consumer product to make it probable that the consumer product will cause
+serious bodily injury.
+(b) A person commits an offense if he knowingly or intentionally
+tampers with a consumer product knowing that the consumer product will be
+offered for sale to the public or as a gift to another.
+(c) A person commits an offense if he knowingly or intentionally
+threatens to tamper with a consumer product with the intent to cause
+fear, to affect the sale of the consumer product, or to cause bodily
+injury to any person.
+(d) An offense under Subsection (b) is a felony of the second
+degree unless a person suffers serious bodily injury, in which event it
+is a felony of the first degree. An offense under Subsection (c) is a
+felony of the third degree.
+Sec. 22.10. LEAVING A CHILD IN A VEHICLE. (a) A person commits an
+offense if he intentionally or knowingly leaves a child in a motor
+vehicle for longer than five minutes, knowing that the child is:
+(1) younger than seven years of age; and
+(2) not attended by an individual in the vehicle who is 14
+years of age or older.
+(b) An offense under this section is a Class C misdemeanor.
+Sec. 22.11. HARASSMENT BY PERSONS IN CERTAIN FACILITIES; HARASSMENT
+OF PUBLIC SERVANT. (a) A person commits an offense if, with the intent
+to assault, harass, or alarm, the person:
+(1) while imprisoned or confined in a correctional or
+detention facility, causes another person to contact the blood, seminal
+fluid, vaginal fluid, saliva, urine, or feces of the actor, any other
+person, or an animal;
+(2) while committed to a civil commitment facility, causes:
+(A) an officer or employee of the Texas Civil Commitment
+Office to contact the blood, seminal fluid, vaginal fluid, saliva, urine,
+or feces of the actor, any other person, or an animal:
+(i) while the officer or employee is lawfully
+discharging an official duty at a civil commitment facility; or
+(ii) in retaliation for or on account of an exercise
+of official power or performance of an official duty by the officer or
+employee; or
+(B) a person who contracts with the state to perform a
+service in the facility or an employee of that person to contact the
+Page -16 -
+
+blood, seminal fluid, vaginal fluid, saliva, urine, or feces of the
+actor, any other person, or an animal:
+(i) while the person or employee is engaged in
+performing a service within the scope of the contract, if the actor knows
+the person or employee is authorized by the state to provide the service;
+or
+(ii) in retaliation for or on account of the
+person's or employee's performance of a service within the scope of the
+contract; or
+(3) causes another person the actor knows to be a public
+servant to contact the blood, seminal fluid, vaginal fluid, saliva,
+urine, or feces of the actor, any other person, or an animal while the
+public servant is lawfully discharging an official duty or in retaliation
+or on account of an exercise of the public servant's official power or
+performance of an official duty.
+(b) An offense under this section is a felony of the third degree.
+(c) If conduct constituting an offense under this section also
+constitutes an offense under another section of this code, the actor may
+be prosecuted under either section.
+(d) In this section, "correctional or detention facility" means:
+(1) a secure correctional facility; or
+(2) a "secure correctional facility" or a "secure detention
+facility" as defined by Section 51.02, Family Code, operated by or under
+contract with a juvenile board or the Texas Juvenile Justice Department
+or any other facility operated by or under contract with that department.
+(e) For purposes of Subsection (a)(3), the actor is presumed to
+have known the person was a public servant if the person was wearing a
+distinctive uniform or badge indicating the person's employment as a
+public servant.
+Sec. 22.12. APPLICABILITY TO CERTAIN CONDUCT. This chapter does
+not apply to conduct charged as having been committed against an
+individual who is an unborn child if the conduct is:
+(1) committed by the mother of the unborn child;
+(2) a lawful medical procedure performed by a physician or
+other health care provider with the requisite consent;
+(3) a lawful medical procedure performed by a physician or
+other licensed health care provider with the requisite consent as part of
+an assisted reproduction as defined by Section 160.102, Family Code; or
+(4) the dispensation of a drug in accordance with law or
+administration of a drug prescribed in accordance with law.
+
+Page -17 -
+
+PENAL CODE
+TITLE 6. OFFENSES AGAINST THE FAMILY`
+  },
+    {
+        category: 'Penal Code',
+        title: "Chapter 31 - Theft (Selected Sections)",
+        content: `Sec. 31.01. DEFINITIONS. In this chapter:
+(1) "Deception" means:
+(A) creating or confirming by words or conduct a false
+impression of law or fact that is likely to affect the judgment of
+another in the transaction, and that the actor does not believe to be
+true;
+(B) failing to correct a false impression of law or fact
+that is likely to affect the judgment of another in the transaction, that
+the actor previously created or confirmed by words or conduct, and that
+the actor does not now believe to be true;
+(C) preventing another from acquiring information likely
+to affect his judgment in the transaction;
+(D) selling or otherwise transferring or encumbering
+property without disclosing a lien, security interest, adverse claim, or
+other legal impediment to the enjoyment of the property, whether the
+lien, security interest, claim, or impediment is or is not valid, or is
+or is not a matter of official record; or
+(E) promising performance that is likely to affect the
+judgment of another in the transaction and that the actor does not intend
+to perform or knows will not be performed, except that failure to perform
+the promise in issue without other evidence of intent or knowledge is not
+sufficient proof that the actor did not intend to perform or knew the
+promise would not be performed.
+(2) "Deprive" means:
+(A) to withhold property from the owner permanently or
+for so extended a period of time that a major portion of the value or
+enjoyment of the property is lost to the owner;
+(B) to restore property only upon payment of reward or
+other compensation; or
+(C) to dispose of property in a manner that makes
+recovery of the property by the owner unlikely.
+(3) "Effective consent" includes consent by a person legally
+authorized to act for the owner. Consent is not effective if:
+(A) induced by deception or coercion;
+(B) given by a person the actor knows is not legally
+authorized to act for the owner;
+(C) given by a person who by reason of youth, mental
+disease or defect, or intoxication is known by the actor to be unable to
+make reasonable property dispositions;
+(D) given solely to detect the commission of an offense;
+or
+(E) given by a person who by reason of advanced age is
+known by the actor to have a diminished capacity to make informed and
+rational decisions about the reasonable disposition of property.
+(4) "Appropriate" means:
+(A) to bring about a transfer or purported transfer of
+title to or other nonpossessory interest in property, whether to the
+actor or another; or
+Page - 1 -
+
+
+(B) to acquire or otherwise exercise control over
+property other than real property.
+(5) "Property" means:
+(A) real property;
+(B) tangible or intangible personal property including
+anything severed from land; or
+(C) a document, including money, that represents or
+embodies anything of value.
+(6) "Service" includes:
+(A) labor and professional service;
+(B) telecommunication, public utility, or transportation
+service;
+(C) lodging, restaurant service, and entertainment; and
+(D) the supply of a motor vehicle or other property for
+use.
+(7) "Steal" means to acquire property or service by theft.
+(8) "Certificate of title" has the meaning assigned by Section
+501.002, Transportation Code.
+(9) "Used or secondhand motor vehicle" means a used motor
+vehicle, as that term is defined by Section 501.002, Transportation Code.
+(10) "Elderly individual" has the meaning assigned by Section
+22.04(c).
+(11) "Retail merchandise" means one or more items of tangible
+personal property displayed, held, stored, or offered for sale in a
+retail establishment.
+(12) "Retail theft detector" means an electrical, mechanical,
+electronic, or magnetic device used to prevent or detect shoplifting and
+includes any article or component part essential to the proper operation
+of the device.
+(13) "Shielding or deactivation instrument" means any item or
+tool designed, made, or adapted for the purpose of preventing the
+detection of stolen merchandise by a retail theft detector. The term
+includes a metal-lined or foil-lined shopping bag and any item used to
+remove a security tag affixed to retail merchandise.
+(14) "Fire exit alarm" has the meaning assigned by Section
+793.001, Health and Safety Code.
+
+Sec. 31.02. CONSOLIDATION OF THEFT OFFENSES. Theft as defined in
+Section 31.03 constitutes a single offense superseding the separate
+offenses previously known as theft, theft by false pretext, conversion by
+a bailee, theft from the person, shoplifting, acquisition of property by
+threat, swindling, swindling by worthless check, embezzlement, extortion,
+receiving or concealing embezzled property, and receiving or concealing
+stolen property.
+
+Sec. 31.03. THEFT.
+(a)
+A person commits an offense if he
+unlawfully appropriates property with intent to deprive the owner of
+property.
+(b) Appropriation of property is unlawful if:
+(1) it is without the owner's effective consent;
+(2) the property is stolen and the actor appropriates the
+Page -2 -
+
+
+property knowing it was stolen by another; or
+(3) property in the custody of any law enforcement agency was
+explicitly represented by any law enforcement agent to the actor as being
+stolen and the actor appropriates the property believing it was stolen by
+another.
+(c) For purposes of Subsection (b):
+(1) evidence that the actor has previously participated in
+recent transactions other than, but similar to, the transaction for which
+the prosecution is based is admissible for the purpose of showing
+knowledge or intent and the issues of knowledge or intent are raised by
+the actor's plea of not guilty;
+(2) the testimony of an accomplice shall be corroborated by
+proof that tends to connect the actor to the crime, but the actor's
+knowledge or intent may be established by the uncorroborated testimony of
+the accomplice;
+(3) an actor engaged in the business of buying and selling
+used or secondhand personal property, or lending money on the security of
+personal property deposited with the actor, is presumed to know upon
+receipt by the actor of stolen property (other than a motor vehicle
+subject to Chapter 501, Transportation Code) that the property has been
+previously stolen from another if the actor pays for or loans against the
+property $25 or more (or consideration of equivalent value) and the actor
+knowingly or recklessly:
+(A) fails to record the name, address, and physical
+description or identification number of the seller or pledgor;
+(B) fails to record a complete description of the
+property, including the serial number, if reasonably available, or other
+identifying characteristics; or
+(C) fails to obtain a signed warranty from the seller or
+pledgor that the seller or pledgor has the right to possess the
+property. It is the express intent of this provision that the
+presumption arises unless the actor complies with each of the numbered
+requirements;
+(4) for the purposes of Subdivision (3)(A), "identification
+number" means driver's license number, military identification number,
+identification certificate, or other official number capable of
+identifying an individual;
+(5) stolen property does not lose its character as stolen when
+recovered by any law enforcement agency;
+(6) an actor engaged in the business of obtaining abandoned or
+wrecked motor vehicles or parts of an abandoned or wrecked motor vehicle
+for resale, disposal, scrap, repair, rebuilding, demolition, or other
+form of salvage is presumed to know on receipt by the actor of stolen
+property that the property has been previously stolen from another if the
+actor knowingly or recklessly:
+(A) fails to maintain an accurate and legible inventory
+of each motor vehicle component part purchased by or delivered to the
+actor, including the date of purchase or delivery, the name, age,
+address, sex, and driver's license number of the seller or person making
+the delivery, the license plate number of the motor vehicle in which the
+part was delivered, a complete description of the part, and the vehicle
+Page -3 -
+
+
+identification number of the motor vehicle from which the part was
+removed, or in lieu of maintaining an inventory, fails to record the name
+and certificate of inventory number of the person who dismantled the
+motor vehicle from which the part was obtained;
+(B) fails on receipt of a motor vehicle to obtain a
+certificate of authority, sales receipt, or transfer document as required
+by Chapter 683, Transportation Code, or a certificate of title showing
+that the motor vehicle is not subject to a lien or that all recorded
+liens on the motor vehicle have been released; or
+(C) fails on receipt of a motor vehicle to immediately
+remove an unexpired license plate from the motor vehicle, to keep the
+plate in a secure and locked place, or to maintain an inventory, on forms
+provided by the Texas Department of Motor Vehicles, of license plates
+kept under this paragraph, including for each plate or set of plates the
+license plate number and the make, motor number, and vehicle
+identification number of the motor vehicle from which the plate was
+removed;
+(7) an actor who purchases or receives a used or secondhand
+motor vehicle is presumed to know on receipt by the actor of the motor
+vehicle that the motor vehicle has been previously stolen from another if
+the actor knowingly or recklessly:
+(A) fails to report to the Texas Department of Motor
+Vehicles the failure of the person who sold or delivered the motor
+vehicle to the actor to deliver to the actor a properly executed
+certificate of title to the motor vehicle at the time the motor vehicle
+was delivered; or
+(B) fails to file with the county tax assessor-collector
+of the county in which the actor received the motor vehicle, not later
+than the 20th day after the date the actor received the motor vehicle,
+the registration license receipt and certificate of title or evidence of
+title delivered to the actor in accordance with Subchapter D, Chapter
+520, Transportation Code, at the time the motor vehicle was delivered;
+(8) an actor who purchases or receives from any source other
+than a licensed retailer or distributor of pesticides a restricted-use
+pesticide or a state-limited-use pesticide or a compound, mixture, or
+preparation containing a restricted-use or state-limited-use pesticide is
+presumed to know on receipt by the actor of the pesticide or compound,
+mixture, or preparation that the pesticide or compound, mixture, or
+preparation has been previously stolen from another if the actor:
+(A) fails to record the name, address, and physical
+description of the seller or pledgor;
+(B) fails to record a complete description of the amount
+and type of pesticide or compound, mixture, or preparation purchased or
+received; and
+(C) fails to obtain a signed warranty from the seller or
+pledgor that the seller or pledgor has the right to possess the property;
+(9) an actor who is subject to Section 409, Packers and
+Stockyards Act (7 U.S.C. Section 228b), that obtains livestock from a
+commission merchant by representing that the actor will make prompt
+payment is presumed to have induced the commission merchant's consent by
+deception if the actor fails to make full payment in accordance with
+Page -4 -
+
+
+Section 409, Packers and Stockyards Act (7 U.S.C. Section 228b); and
+(10) an actor in possession of property consisting of one or
+more catalytic converters that have been removed from a motor vehicle is
+presumed to have unlawfully appropriated the property unless the actor:
+(A) is the owner, as defined by Section 601.002,
+Transportation Code, of each vehicle from which the catalytic converters
+were removed; or
+(B) possesses the catalytic converters in the ordinary
+course of the actor's business, including in the ordinary course of
+business of an entity described by Section 1956.123(1), Occupations Code.
+(d) It is not a defense to prosecution under this section that:
+(1) the offense occurred as a result of a deception or
+strategy on the part of a law enforcement agency, including the use of an
+undercover operative or peace officer;
+(2) the actor was provided by a law enforcement agency with a
+facility in which to commit the offense or an opportunity to engage in
+conduct constituting the offense; or
+(3) the actor was solicited to commit the offense by a peace
+officer, and the solicitation was of a type that would encourage a person
+predisposed to commit the offense to actually commit the offense, but
+would not encourage a person not predisposed to commit the offense to
+actually commit the offense.
+(e) Except as provided by Subsections (f) and (f-1), an offense
+under this section is:
+(1) a Class C misdemeanor if the value of the property stolen
+is less than $100;
+(2) a Class B misdemeanor if:
+(A) the value of the property stolen is $100 or more but
+less than $750;
+(B) the value of the property stolen is less than $100
+and the defendant has previously been convicted of any grade of theft; or
+(C) the property stolen is a driver's license, commercial
+driver's license, or personal identification certificate issued by this
+state or another state;
+(3) a Class A misdemeanor if the value of the property stolen
+is $750 or more but less than $2,500;
+(4) a state jail felony if:
+(A) the value of the property stolen is $2,500 or more
+but less than $30,000, or the property is less than 10 head of sheep,
+swine, or goats or any part thereof under the value of $30,000;
+(B) regardless of value, the property is stolen from the
+person of another or from a human corpse or grave, including property
+that is a military grave marker;
+(C) the property stolen is a firearm;
+(D) the value of the property stolen is less than $2,500
+and the defendant has been previously convicted two or more times of any
+grade of theft;
+(E) the property stolen is an official ballot or official
+carrier envelope for an election;
+(F) the value of the property stolen is less than $20,000
+and the property stolen is:
+Page -5 -
+
+
+(i) aluminum;
+(ii) bronze;
+(iii) copper; or
+(iv) brass; or
+(G) the cost of replacing the property stolen is less
+than $30,000 and the property stolen is a catalytic converter;
+(5) a felony of the third degree if the value of the property
+stolen is $30,000 or more but less than $150,000, or the property is:
+(A) cattle, horses, or exotic livestock or exotic fowl as
+defined by Section 142.001, Agriculture Code, stolen during a single
+transaction and having an aggregate value of less than $150,000;
+(B) 10 or more head of sheep, swine, or goats stolen
+during a single transaction and having an aggregate value of less than
+$150,000; or
+(C) a controlled substance, having a value of less than
+$150,000, if stolen from:
+(i) a commercial building in which a controlled
+substance is generally stored, including a pharmacy, clinic, hospital,
+nursing facility, or warehouse; or
+(ii) a vehicle owned or operated by a wholesale
+distributor of prescription drugs;
+(6) a felony of the second degree if:
+(A) the value of the property stolen is $150,000 or more
+but less than $300,000; or
+(B) the value of the property stolen is less than
+$300,000 and the property stolen is an automated teller machine or the
+contents or components of an automated teller machine; or
+(7) a felony of the first degree if the value of the property
+stolen is $300,000 or more.
+(f) An offense described for purposes of punishment by Subsections
+(e)(1)-(6) is increased to the next higher category of offense if it is
+shown on the trial of the offense that:
+(1) the actor was a public servant at the time of the offense
+and the property appropriated came into the actor's custody, possession,
+or control by virtue of his status as a public servant;
+(2) the actor was in a contractual relationship with
+government at the time of the offense and the property appropriated came
+into the actor's custody, possession, or control by virtue of the
+contractual relationship;
+(3) the owner of the property appropriated was at the time of
+the offense:
+(A) an elderly individual; or
+(B) a nonprofit organization;
+(4) the actor was a Medicare provider in a contractual
+relationship with the federal government at the time of the offense and
+the property appropriated came into the actor's custody, possession, or
+control by virtue of the contractual relationship; or
+(5) during the commission of the offense, the actor
+intentionally, knowingly, or recklessly:
+(A) caused a fire exit alarm to sound or otherwise become
+activated;
+Page -6 -
+
+
+(B) deactivated or otherwise prevented a fire exit alarm
+or retail theft detector from sounding; or
+(C) used a shielding or deactivation instrument to
+prevent or attempt to prevent detection of the offense by a retail theft
+detector.
+(f-1) An offense described for purposes of punishment by
+Subsections (e)(4)-(6) is increased to the next higher category of
+offense if it is shown on the trial of the offense that:
+(1) the property stolen is a catalytic converter; and
+(2) the actor possessed a firearm during the commission of the
+offense.
+(g) For the purposes of Subsection (a), a person is the owner of
+exotic livestock or exotic fowl as defined by Section 142.001,
+Agriculture Code, only if the person qualifies to claim the animal under
+Section 142.0021, Agriculture Code, if the animal is an estray.
+(h) In this section:
+(1) "Restricted-use pesticide" means a pesticide classified as
+a restricted-use pesticide by the administrator of the Environmental
+Protection Agency under 7 U.S.C. Section 136a, as that law existed on
+January 1, 1995, and containing an active ingredient listed in the
+federal regulations adopted under that law (40 C.F.R. Section 152.175)
+and in effect on that date.
+(2) "State-limited-use pesticide" means a pesticide classified
+as a state-limited-use pesticide by the Department of Agriculture under
+Section 76.003, Agriculture Code, as that section existed on January 1,
+1995, and containing an active ingredient listed in the rules adopted
+under that section (4 TAC Section 7.24) as that section existed on that
+date.
+(3) "Nonprofit organization" means an organization that is
+exempt from federal income taxation under Section 501(a), Internal
+Revenue Code of 1986, by being described as an exempt organization by
+Section 501(c)(3) of that code.
+(4) "Automated teller machine" means an unstaffed electronic
+information processing device that, at the request of a user, performs a
+financial transaction through the direct transmission of electronic
+impulses to a financial institution or through the recording of
+electronic impulses or other indicia of a transaction for delayed
+transmission to a financial institution. The term includes an automated
+banking machine.
+(5) "Controlled substance" has the meaning assigned by Section
+481.002, Health and Safety Code.
+(6) "Wholesale distributor of prescription drugs" means a
+wholesale distributor, as defined by Section 431.401, Health and Safety
+Code.
+(7) "Catalytic converter" means a catalytic converter and any
+material removed from the catalytic converter.
+(8) "Firearm" has the meaning assigned by Section 46.01.
+(i) For purposes of Subsection (c)(9), "livestock" and "commission
+merchant" have the meanings assigned by Section 147.001, Agriculture
+Code.
+(j) With the consent of the appropriate local county or district
+Page -7 -
+
+
+attorney, the attorney general has concurrent jurisdiction with that
+consenting local prosecutor to prosecute an offense under this section
+that involves the state Medicaid program.
+
+Sec. 31.04. THEFT OF SERVICE.
+(a) A person commits theft of
+service if, with intent to avoid payment for service that the actor knows
+is provided only for compensation:
+(1) the actor intentionally or knowingly secures performance
+of the service by deception, threat, or false token;
+(2) having control over the disposition of services of another
+to which the actor is not entitled, the actor intentionally or knowingly
+diverts the other's services to the actor's own benefit or to the benefit
+of another not entitled to the services;
+(3) having control of personal property under a written rental
+agreement, the actor holds the property beyond the expiration of the
+rental period without the effective consent of the owner of the property,
+thereby depriving the owner of the property of its use in further
+rentals; or
+(4) the actor intentionally or knowingly secures the
+performance of the service by agreeing to provide compensation and, after
+the service is rendered, fails to make full payment after receiving
+notice demanding payment.
+(b) For purposes of this section, intent to avoid payment is
+presumed if any of the following occurs:
+(1) the actor absconded without paying for the service or
+expressly refused to pay for the service in circumstances where payment
+is ordinarily made immediately upon rendering of the service, as in
+hotels, campgrounds, recreational vehicle parks, restaurants, and
+comparable establishments;
+(2) the actor failed to make payment under a service agreement
+within 10 days after receiving notice demanding payment;
+(3) the actor returns property held under a rental agreement
+after the expiration of the rental agreement and fails to pay the
+applicable rental charge for the property within 10 days after the date
+on which the actor received notice demanding payment;
+(4) the actor failed to return the property held under a
+rental agreement:
+(A) within five days after receiving notice demanding
+return, if the property is valued at less than $2,500;
+(B) within three days after receiving notice demanding
+return, if the property is valued at $2,500 or more but less than
+$10,000; or
+(C) within two days after receiving notice demanding
+return, if the property is valued at $10,000 or more; or
+(5) the actor:
+(A) failed to return the property held under an agreement
+described by Subsections (d-2)(1)-(3) within five business days after
+receiving notice demanding return; and
+(B) has made fewer than three complete payments under the
+agreement.
+(c) For purposes of Subsections (a)(4), (b)(2), (b)(4), and (b)(5),
+Page -8 -
+
+
+notice must be:
+(1) in writing;
+(2) sent by:
+(A) registered or certified mail with return receipt
+requested; or
+(B) commercial delivery service; and
+(3) sent to the actor using the actor's mailing address shown
+on:
+(A) the rental agreement or service agreement;
+(B) records of the person whose service was secured; or
+(C) if the actor secured performance of service by
+issuing or passing a check or similar sight order for the payment of
+money, using the actor's address shown on:
+(i) the check or order; or
+(ii) the records of the bank or other drawee on
+which the check or order is drawn.
+(d) Except as otherwise provided by this subsection, if written
+notice is given in accordance with Subsection (c), it is presumed that
+the notice was received not later than two days after the notice was
+sent. For purposes of Subsections (b)(4)(A) and (B) and (b)(5), if
+written notice is given in accordance with Subsection (c), it is presumed
+that the notice was received not later than five days after the notice
+was sent.
+(d-1) For purposes of Subsection (a)(2), the diversion of services
+to the benefit of a person who is not entitled to those services includes
+the disposition of personal property by an actor having control of the
+property under an agreement described by Subsections (d-2)(1)-(3), if the
+actor disposes of the property in violation of the terms of the agreement
+and to the benefit of any person who is not entitled to the property.
+(d-2) For purposes of Subsection (a)(3), the term "written rental
+agreement" does not include an agreement that:
+(1) permits an individual to use personal property for
+personal, family, or household purposes for an initial rental period;
+(2) is automatically renewable with each payment after the
+initial rental period; and
+(3) permits the individual to become the owner of the
+property.
+(d-3) For purposes of Subsection (a)(4):
+(1) if the compensation is or was to be paid on a periodic
+basis, the intent to avoid payment for a service may be formed at any
+time during or before a pay period;
+(2) the partial payment of wages alone is not sufficient
+evidence to negate the actor's intent to avoid payment for a service; and
+(3) the term "service" does not include leasing personal
+property under an agreement described by Subsections (d-2)(1)-(3).
+(d-4) A presumption established under Subsection (b) involving a
+defendant's failure to return property held under an agreement described
+by Subsections (d-2)(1)-(3) may be refuted if the defendant shows that
+the defendant:
+(1) intended to return the property; and
+(2) was unable to return the property.
+Page -9 -
+
+
+(d-5) For purposes of Subsection (b)(5), "business day" means a day
+other than Sunday or a state or federal holiday.
+(e) An offense under this section is:
+(1) a Class C misdemeanor if the value of the service stolen
+is less than $100;
+(2) a Class B misdemeanor if the value of the service stolen
+is $100 or more but less than $750;
+(3) a Class A misdemeanor if the value of the service stolen
+is $750 or more but less than $2,500;
+(4) a state jail felony if the value of the service stolen is
+$2,500 or more but less than $30,000;
+(5) a felony of the third degree if the value of the service
+stolen is $30,000 or more but less than $150,000;
+(6) a felony of the second degree if the value of the service
+stolen is $150,000 or more but less than $300,000; or
+(7) a felony of the first degree if the value of the service
+stolen is $300,000 or more.
+(f) Notwithstanding any other provision of this code, any police or
+other report of stolen vehicles by a political subdivision of this state
+shall include on the report any rental vehicles whose renters have been
+shown to such reporting agency to be in violation of Subsection (b)(2)
+and shall indicate that the renting agency has complied with the notice
+requirements demanding return as provided in this section.
+(g) It is a defense to prosecution under this section that:
+(1) the defendant secured the performance of the service by
+giving a post-dated check or similar sight order to the person performing
+the service; and
+(2) the person performing the service or any other person
+presented the check or sight order for payment before the date on the
+check or sight order.
+
+Sec. 31.06. PRESUMPTION FOR THEFT BY CHECK OR SIMILAR SIGHT ORDER.
+(a) If the actor obtained property or secured performance of service by
+issuing or passing a check or similar sight order for the payment of
+money, when the issuer did not have sufficient funds in or on deposit
+with the bank or other drawee for the payment in full of the check or
+order as well as all other checks or orders then outstanding, it is prima
+facie evidence of the issuer's intent to deprive the owner of property
+under Section 31.03 (Theft) including a drawee or third-party holder in
+due course who negotiated the check or order or to avoid payment for
+service under Section 31.04 (Theft of Service) (except in the case of a
+postdated check or order) if:
+(1) the issuer had no account with the bank or other drawee at
+the time the issuer issued the check or sight order; or
+(2) payment was refused by the bank or other drawee for lack
+of funds or insufficient funds, on presentation within 30 days after
+issue, and the issuer failed to pay the holder in full within 10 days
+after receiving notice of that refusal.
+(b) For purposes of Subsection (a)(2) or (f)(3), notice may be
+actual notice or notice in writing that:
+(1) is sent by:
+(A) first class mail, evidenced by an affidavit of
+service; or
+(B) registered or certified mail with return receipt
+requested;
+(2) is addressed to the issuer at the issuer's address shown
+on:
+(A) the check or order;
+(B) the records of the bank or other drawee; or
+(C) the records of the person to whom the check or order
+has been issued or passed; and
+(3) contains the following statement:
+"This is a demand for payment in full for a check or order not paid
+because of a lack of funds or insufficient funds. If you fail to make
+payment in full within 10 days after the date of receipt of this notice,
+the failure to pay creates a presumption for committing an offense, and
+this matter may be referred for criminal prosecution."
+(c) If written notice is given in accordance with Subsection (b),
+it is presumed that the notice was received no later than five days after
+it was sent.
+(d) Nothing in this section prevents the prosecution from
+establishing the requisite intent by direct evidence.
+(e) Partial restitution does not preclude the presumption of the
+requisite intent under this section.
+(f) If the actor obtained property by issuing or passing a check or
+similar sight order for the payment of money, the actor's intent to
+deprive the owner of the property under Section 31.03 (Theft) is
+presumed, except in the case of a postdated check or order, if:
+(1) the actor ordered the bank or other drawee to stop payment
+Page -11 -
+
+
+on the check or order;
+(2) the bank or drawee refused payment to the holder on
+presentation of the check or order within 30 days after issue;
+(3) the owner gave the actor notice of the refusal of payment
+and made a demand to the actor for payment or return of the property;
+and
+(4) the actor failed to:
+(A) pay the holder within 10 days after receiving the
+demand for payment; or
+(B) return the property to the owner within 10 days after
+receiving the demand for return of the property.
+
+Sec. 31.07. UNAUTHORIZED USE OF A VEHICLE. (a) A person commits
+an offense if he intentionally or knowingly operates another's boat,
+airplane, or motor-propelled vehicle without the effective consent of the
+owner.
+(b) An offense under this section is a state jail felony.
+
+Sec. 31.08. VALUE.
+(a)
+Subject to the additional criteria of
+Subsections (b) and (c), value under this chapter is:
+(1) the fair market value of the property or service at the
+time and place of the offense; or
+(2) if the fair market value of the property cannot be
+ascertained, the cost of replacing the property within a reasonable time
+after the theft.
+(b) The value of documents, other than those having a readily
+ascertainable market value, is:
+(1) the amount due and collectible at maturity less that part
+which has been satisfied, if the document constitutes evidence of a debt;
+or
+(2) the greatest amount of economic loss that the owner might
+reasonably suffer by virtue of loss of the document, if the document is
+other than evidence of a debt.
+(c) If property or service has value that cannot be reasonably
+ascertained by the criteria set forth in Subsections (a) and (b), the
+property or service is deemed to have a value of $750 or more but less
+than $2,500.
+(d) If the actor proves by a preponderance of the evidence that he
+gave consideration for or had a legal interest in the property or service
+stolen, the amount of the consideration or the value of the interest so
+proven shall be deducted from the value of the property or service
+ascertained under Subsection (a), (b), or (c) to determine value for
+purposes of this chapter.
+
+Sec. 31.09. AGGREGATION OF AMOUNTS INVOLVED IN THEFT. When amounts
+are obtained in violation of this chapter pursuant to one scheme or
+continuing course of conduct, whether from the same or several sources,
+the conduct may be considered as one offense and the amounts aggregated
+in determining the grade of the offense.
+
+Sec. 31.10.
+
+ACTOR'S INTEREST IN PROPERTY.
+Page -12 -
+
+It is no defense to
+
+
+prosecution under this chapter that the actor has an interest in the
+property or service stolen if another person has the right of exclusive
+possession of the property.
+
+Sec. 31.11. TAMPERING WITH IDENTIFICATION NUMBERS. (a) A person
+commits an offense if the person:
+(1) knowingly or intentionally removes, alters, or obliterates
+the serial number or other permanent identification marking on tangible
+personal property; or
+(2) possesses, sells, or offers for sale tangible personal
+property and:
+(A) the actor knows that the serial number or other
+permanent identification marking has been removed, altered, or
+obliterated; or
+(B) a reasonable person in the position of the actor
+would have known that the serial number or other permanent identification
+marking has been removed, altered, or obliterated.
+(b) It is an affirmative defense to prosecution under this section
+that the person was:
+(1) the owner or acting with the effective consent of the
+owner of the property involved;
+(2) a peace officer acting in the actual discharge of official
+duties; or
+(3) acting with respect to a number assigned to a vehicle by
+the Texas Department of Transportation or the Texas Department of Motor
+Vehicles, as applicable, and the person was:
+(A) in the actual discharge of official duties as an
+employee or agent of the department; or
+(B) in full compliance with the rules of the department
+as an applicant for an assigned number approved by the department.
+(c) Property involved in a violation of this section may be treated
+as stolen for purposes of custody and disposition of the property.
+(d) An offense under this section is a Class A misdemeanor.
+(e) In this section, "vehicle" has the meaning given by Section
+541.201, Transportation Code.
+
+Sec. 31.16. ORGANIZED RETAIL THEFT. (a) Repealed by Acts 2011,
+82nd Leg., R.S., Ch. 323, Sec. 4, eff. September 1, 2011.
+(b) A person commits an offense if the person intentionally
+conducts, promotes, or facilitates an activity in which the person
+receives, possesses, conceals, stores, barters, sells, or disposes of:
+(1) stolen retail merchandise; or
+(2) merchandise explicitly represented to the person as being
+stolen retail merchandise.
+(c) An offense under this section is:
+(1) a Class C misdemeanor if the total value of the
+merchandise involved in the activity is less than $100;
+(2) a Class B misdemeanor if the total value of the
+merchandise involved in the activity is $100 or more but less than $750;
+(3) a Class A misdemeanor if the total value of the
+merchandise involved in the activity is $750 or more but less than
+$2,500;
+Page -15 -
+
+
+(4) a state jail felony if the total value of the merchandise
+involved in the activity is $2,500 or more but less than $30,000;
+(5) a felony of the third degree if the total value of the
+merchandise involved in the activity is $30,000 or more but less than
+$150,000;
+(6) a felony of the second degree if the total value of the
+merchandise involved in the activity is $150,000 or more but less than
+$300,000; or
+(7) a felony of the first degree if the total value of the
+merchandise involved in the activity is $300,000 or more.
+(d) An offense described for purposes of punishment by Subsections
+(c)(1)-(6) is increased to the next higher category of offense if it is
+shown on the trial of the offense that:
+(1) the person organized, supervised, financed, or managed one
+or more other persons engaged in an activity described by Subsection (b);
+or
+(2) during the commission of the offense, a person engaged in
+an activity described by Subsection (b) intentionally, knowingly, or
+recklessly:
+(A) caused a fire exit alarm to sound or otherwise become
+activated;
+(B) deactivated or otherwise prevented a fire exit alarm
+or retail theft detector from sounding; or
+(C) used a shielding or deactivation instrument to
+prevent or attempt to prevent detection of the offense by a retail theft
+detector.
+
+`
+    },
+
+    {
+        category: 'Penal Code',
+        title: "Chapter 38 - Obstructing Government Operation (Selected Sections)",
+        content: `Sec. 38.01. DEFINITIONS. In this chapter:
+(1) "Custody" means:
+(A) under arrest by a peace officer or under restraint by
+a public servant pursuant to an order of a court of this state or another
+state of the United States; or
+(B) under restraint by an agent or employee of a facility
+that is operated by or under contract with the United States and that
+confines persons arrested for, charged with, or convicted of criminal
+offenses.
+(2) "Escape" means unauthorized departure from custody or
+failure to return to custody following temporary leave for a specific
+purpose or limited period or leave that is part of an intermittent
+sentence, but does not include a violation of conditions of community
+supervision or parole other than conditions that impose a period of
+confinement in a secure correctional facility.
+(3) "Economic benefit" means anything reasonably regarded as
+an economic gain or advantage, including accepting or offering to accept
+employment for a fee, accepting or offering to accept a fee, entering
+into a fee contract, or accepting or agreeing to accept money or anything
+of value.
+(4) "Finance" means to provide funds or capital or to furnish
+with necessary funds.
+(5) "Fugitive from justice" means a person for whom a valid
+arrest warrant has been issued.
+(6) "Governmental function" includes any activity that a
+public servant is lawfully authorized to undertake on behalf of
+government.
+(7) "Invest funds" means to commit money to earn a financial
+return.
+(8) "Member of the family" means anyone related within the
+third degree of consanguinity or affinity, as determined under Chapter
+573, Government Code.
+(9) "Qualified nonprofit organization" means a nonprofit
+organization that meets the following conditions:
+(A) the primary purposes of the organization do not
+include the rendition of legal services or education regarding legal
+services;
+(B) the recommending, furnishing, paying for, or
+educating persons regarding legal services is incidental and reasonably
+related to the primary purposes of the organization;
+(C) the organization does not derive a financial benefit
+from the rendition of legal services by a lawyer; and
+(D) the person for whom the legal services are rendered,
+and not the organization, is recognized as the client of a lawyer.
+(10) "Public media" means a telephone directory or legal
+directory, newspaper or other periodical, billboard or other sign, radio
+or television broadcast, recorded message the public may access by
+dialing a telephone number, or a written communication not prohibited by
+Page - 1 -
+
+
+Section 38.12(d).
+(11) "Solicit employment" means to communicate in person or by
+telephone with a prospective client or a member of the prospective
+client's family concerning professional employment within the scope of a
+professional's license, registration, or certification arising out of a
+particular occurrence or event, or series of occurrences or events, or
+concerning an existing problem of the prospective client within the scope
+of the professional's license, registration, or certification, for the
+purpose of providing professional services to the prospective client,
+when neither the person receiving the communication nor anyone acting on
+that person's behalf has requested the communication. The term does not
+include a communication initiated by a family member of the person
+receiving a communication, a communication by a professional who has a
+prior or existing professional-client relationship with the person
+receiving the communication, or communication by an attorney for a
+qualified nonprofit organization with the organization's members for the
+purpose of educating the organization's members to understand the law, to
+recognize legal problems, to make intelligent selection of legal counsel,
+or to use available legal services.
+The term does not include an
+advertisement by a professional through public media.
+(12) "Professional"
+means
+an
+attorney,
+chiropractor,
+physician, surgeon, private investigator, or any other person licensed,
+certified, or registered by a state agency that regulates a health care
+profession.
+
+Sec. 38.02. FAILURE TO IDENTIFY. (a) A person commits an offense
+if he intentionally refuses to give his name, residence address, or date
+of birth to a peace officer who has lawfully arrested the person and
+requested the information.
+(b) A person commits an offense if he intentionally gives a false
+or fictitious name, residence address, or date of birth to a peace
+officer who has:
+(1) lawfully arrested the person;
+(2) lawfully detained the person; or
+(3) requested the information from a person that the peace
+officer has good cause to believe is a witness to a criminal offense.
+(b-1) A person commits an offense if the person:
+(1) is an operator of a motor vehicle, as defined by Section
+32.34, who is lawfully detained by a peace officer for an alleged
+violation of a law;
+(2) fails to provide or display the person's driver's license
+on the officer's request for the license; and
+(3) intentionally refuses to give the person's name, driver's
+license number, residence address, or date of birth to the peace officer
+on the officer's request for that information.
+(b-2) For purposes of Subsection (b-1)(3), giving a peace officer a
+residence address that is different from the address associated with the
+person's driver's license does not constitute a refusal to give the
+person's residence address in violation of that provision if the address
+given to the officer is the person's actual residence address.
+(c) Except as provided by Subsections (d) and (d-1), an offense
+Page -2 -
+
+
+under this section is:
+(1) a Class C misdemeanor if the offense is committed under
+Subsection (a) or (b-1); or
+(2) a Class B misdemeanor if the offense is committed under
+Subsection (b).
+(d) If it is shown on the trial of an offense under this section
+that the defendant was a fugitive from justice at the time of the
+offense, the offense is:
+(1) a Class B misdemeanor if the offense is committed under
+Subsection (a); or
+(2) a Class A misdemeanor if the offense is committed under
+Subsection (b).
+(d-1) An offense under Subsection (b-1) is a Class B misdemeanor if
+it is shown on the trial of the offense that the actor gave a false or
+fictitious name to the peace officer during the commission of the
+offense.
+(e) If conduct that constitutes an offense under this section also
+constitutes an offense under Section 106.07, Alcoholic Beverage Code, the
+actor may be prosecuted only under Section 106.07.
+(f) Subject to Subsection (e), if conduct that constitutes an
+offense under Subsection (b-1) also constitutes an offense under any
+other law, the actor may be prosecuted under that subsection, the other
+law, or both.
+
+Sec. 38.03. RESISTING ARREST, SEARCH, OR TRANSPORTATION. (a) A
+person commits an offense if he intentionally prevents or obstructs a
+person he knows is a peace officer or a person acting in a peace
+officer's presence and at his direction from effecting an arrest, search,
+or transportation of the actor or another by using force against the
+peace officer or another.
+(b) It is no defense to prosecution under this section that the
+arrest or search was unlawful.
+(c) Except as provided in Subsection (d), an offense under this
+section is a Class A misdemeanor.
+(d) An offense under this section is a felony of the third degree
+if the actor uses a deadly weapon to resist the arrest or search.
+
+Sec. 38.04. EVADING ARREST OR DETENTION. (a) A person commits an
+offense if he intentionally flees from a person he knows is a peace
+officer or federal special investigator attempting lawfully to arrest or
+detain him.
+Text of subsection as amended by Acts 2011, 82nd Leg., R.S., Ch. 839
+(H.B. 3423), Sec. 4, and Ch. 391, Sec. 1
+(b) An offense under this section is a Class A misdemeanor, except
+that the offense is:
+(1) a state jail felony if:
+(A) the actor has been previously convicted under this
+section; or
+(B) the actor uses a vehicle or watercraft while the
+Page -3 -
+
+
+actor is in flight and the actor has not been previously convicted under
+this section;
+(2) a felony of the third degree if:
+(A) the actor uses a vehicle or watercraft while the
+actor is in flight and the actor has been previously convicted under this
+section; or
+(B) another suffers serious bodily injury as a direct
+result of an attempt by the officer or investigator from whom the actor
+is fleeing to apprehend the actor while the actor is in flight; or
+(3) a felony of the second degree if another suffers death as
+a direct result of an attempt by the officer or investigator from whom
+the actor is fleeing to apprehend the actor while the actor is in flight.
+Text of subsection as amended by Acts 2011, 82nd Leg., R.S., Ch. 920
+(S.B. 1416), Sec. 3
+(b) An offense under this section is a Class A misdemeanor, except
+that the offense is:
+(1) a state jail felony if the actor has been previously
+convicted under this section;
+(2) a felony of the third degree if:
+(A) the actor uses a vehicle while the actor is in
+flight;
+(B) another suffers serious bodily injury as a direct
+result of an attempt by the officer from whom the actor is fleeing to
+apprehend the actor while the actor is in flight; or
+(C) the actor uses a tire deflation device against the
+officer while the actor is in flight; or
+(3) a felony of the second degree if:
+(A) another suffers death as a direct result of an
+attempt by the officer from whom the actor is fleeing to apprehend the
+actor while the actor is in flight; or
+(B) another suffers serious bodily injury as a direct
+result of the actor's use of a tire deflation device while the actor is
+in flight.
+(b-1) Notwithstanding Subsection (b), an offense under this section
+is a felony of the third degree if it is shown on the trial of the
+offense that the actor committed the offense in the course of committing
+an offense under Section 20.05(a)(2).
+(c) In this section:
+(1) "Vehicle" has the meaning assigned by Section 541.201,
+Transportation Code.
+(2) "Tire deflation device" has the meaning assigned by
+Section 46.01.
+(3) "Watercraft" has the meaning assigned by Section 49.01.
+(d) A person who is subject to prosecution under both this section
+and another law may be prosecuted under either or both this section and
+the other law.
+
+Sec. 38.05. HINDERING APPREHENSION OR PROSECUTION. (a) A person
+commits an offense if, with intent to hinder the arrest, prosecution,
+Page -4 -
+
+
+conviction, or punishment of another for an offense or, with intent to
+hinder the arrest, detention, adjudication, or disposition of a child for
+engaging in delinquent conduct that violates a penal law of the state, or
+with intent to hinder the arrest of another under the authority of a
+warrant or capias, he:
+(1) harbors or conceals the other;
+(2) provides or aids in providing the other with any means of
+avoiding arrest or effecting escape; or
+(3) warns the other of impending discovery or apprehension.
+(b) It is a defense to prosecution under Subsection (a)(3) that the
+warning was given in connection with an effort to bring another into
+compliance with the law.
+(c) Except as provided by Subsection (d), an offense under this
+section is a Class A misdemeanor.
+(d) An offense under this section is a felony of the third degree
+if the person who is harbored, concealed, provided with a means of
+avoiding arrest or effecting escape, or warned of discovery or
+apprehension is under arrest for, charged with, or convicted of a felony,
+including an offense under Section 62.102, Code of Criminal Procedure, or
+is in custody or detention for, is alleged in a petition to have engaged
+in, or has been adjudicated as having engaged in delinquent conduct that
+violates a penal law of the grade of felony, including an offense under
+Section 62.102, Code of Criminal Procedure, and the person charged under
+this section knew that the person they harbored, concealed, provided with
+a means of avoiding arrest or effecting escape, or warned of discovery or
+apprehension is under arrest for, charged with, or convicted of a felony,
+or is in custody or detention for, is alleged in a petition to have
+engaged in, or has been adjudicated as having engaged in delinquent
+conduct that violates a penal law of the grade of felony.
+
+Sec. 38.06. ESCAPE. (a) A person commits an offense if the person
+escapes from custody when the person is:
+(1) under arrest for, lawfully detained for, charged with, or
+convicted of an offense;
+(2) in custody pursuant to a lawful order of a court;
+(3) detained in a secure detention facility, as that term is
+defined by Section 51.02, Family Code; or
+(4) in the custody of a juvenile probation officer for
+violating an order imposed by the juvenile court under Section 52.01,
+Family Code.
+(b) Except as provided in Subsections (c), (d), and (e), an offense
+under this section is a Class A misdemeanor.
+(c) An offense under this section is a felony of the third degree
+if the actor:
+(1) is under arrest for, charged with, or convicted of a
+felony;
+(2) is confined or lawfully detained in a secure correctional
+facility or law enforcement facility; or
+(3) is committed to or lawfully detained in a secure
+correctional facility, as defined by Section 51.02, Family Code, other
+than a halfway house, operated by or under contract with the Texas
+Page -5 -
+
+
+Juvenile Justice Department.
+(d) An offense under this section is a felony of the second degree
+if the actor to effect his escape causes bodily injury.
+(e) An offense under this section is a felony of the first degree
+if to effect his escape the actor:
+(1) causes serious bodily injury; or
+(2) uses or threatens to use a deadly weapon.
+
+Sec. 38.13. HINDERING PROCEEDINGS BY DISORDERLY CONDUCT. (a) A
+person commits an offense if he intentionally hinders an official
+proceeding by noise or violent or tumultuous behavior or disturbance.
+(b) A person commits an offense if he recklessly hinders an
+official proceeding by noise or violent or tumultuous behavior or
+disturbance and continues after explicit official request to desist.
+(c) An offense under this section is a Class A misdemeanor.
+Page -14 -
+
+
+Sec. 38.14. TAKING OR ATTEMPTING TO TAKE WEAPON FROM PEACE OFFICER,
+FEDERAL SPECIAL INVESTIGATOR, EMPLOYEE OR OFFICIAL OF CORRECTIONAL
+FACILITY, PAROLE OFFICER, COMMUNITY SUPERVISION AND CORRECTIONS
+DEPARTMENT OFFICER, OR COMMISSIONED SECURITY OFFICER.
+(a)
+In this
+section:
+(1) "Firearm" has the meanings assigned by Section 46.01.
+(2) "Stun gun" means a device designed to propel darts or
+other projectiles attached to wires that, on contact, will deliver an
+electrical pulse capable of incapacitating a person.
+(3) "Commissioned security officer" has the meaning assigned
+by Section 1702.002(5), Occupations Code.
+(b) A person commits an offense if the person intentionally or
+knowingly and with force takes or attempts to take from a peace officer,
+federal special investigator, employee or official of a correctional
+facility, parole officer, community supervision and corrections
+department officer, or commissioned security officer the officer's,
+investigator's, employee's, or official's firearm, nightstick, stun gun,
+or personal protection chemical dispensing device.
+(c) The actor is presumed to have known that the peace officer,
+federal special investigator, employee or official of a correctional
+facility, parole officer, community supervision and corrections
+department officer, or commissioned security officer was a peace officer,
+federal special investigator, employee or official of a correctional
+facility, parole officer, community supervision and corrections
+department officer, or commissioned security officer if:
+(1) the officer, investigator, employee, or official was
+wearing a distinctive uniform or badge indicating his employment; or
+(2) the
+officer,
+investigator,
+employee,
+or
+official
+identified himself as a peace officer, federal special investigator,
+employee or official of a correctional facility, parole officer,
+community supervision and corrections department officer, or commissioned
+security officer.
+(d) It is a defense to prosecution under this section that the
+defendant took or attempted to take the weapon from a peace officer,
+federal special investigator, employee or official of a correctional
+facility, parole officer, community supervision and corrections
+department officer, or commissioned security officer who was using force
+against the defendant or another in excess of the amount of force
+permitted by law.
+(e) An offense under this section is:
+(1) a felony of the third degree, if the defendant took a
+weapon described by Subsection (b) from an officer, investigator,
+employee, or official described by that subsection; and
+(2) a state jail felony, if the defendant attempted to take a
+weapon described by Subsection (b) from an officer, investigator,
+employee, or official described by that subsection.
+
+Sec. 38.15. INTERFERENCE WITH PUBLIC DUTIES. (a) A person commits
+an offense if the person with criminal negligence interrupts, disrupts,
+impedes, or otherwise interferes with:
+Page -15 -
+
+
+(1) a peace officer while the peace officer is performing a
+duty or exercising authority imposed or granted by law;
+(2) a person who is employed to provide emergency medical
+services including the transportation of ill or injured persons while the
+person is performing that duty;
+(3) a fire fighter, while the fire fighter is fighting a fire
+or investigating the cause of a fire;
+(4) an animal under the supervision of a peace officer,
+corrections officer, or jailer, if the person knows the animal is being
+used for law enforcement, corrections, prison or jail security, or
+investigative purposes;
+(5) the transmission of a communication over a citizen's band
+radio channel, the purpose of which communication is to inform or inquire
+about an emergency;
+(6) an officer with responsibility for animal control in a
+county or municipality, while the officer is performing a duty or
+exercising authority imposed or granted under Chapter 821 or 822, Health
+and Safety Code; or
+(7) a person who:
+(A) has responsibility for assessing, enacting, or
+enforcing public health, environmental, radiation, or safety measures for
+the state or a county or municipality;
+(B) is investigating a particular site as part of the
+person's responsibilities under Paragraph (A);
+(C) is acting in accordance with policies and procedures
+related to the safety and security of the site described by Paragraph
+(B); and
+(D) is performing a duty or exercising authority imposed
+or granted under the Agriculture Code, Health and Safety Code,
+Occupations Code, or Water Code.
+(b) An offense under this section is a Class B misdemeanor.
+(c) It is a defense to prosecution under Subsection (a)(1) that the
+conduct engaged in by the defendant was intended to warn a person
+operating a motor vehicle of the presence of a peace officer who was
+enforcing Subtitle C, Title 7, Transportation Code.
+(d) It is a defense to prosecution under this section that the
+interruption, disruption, impediment, or interference alleged consisted
+of speech only.
+(d-1) Except as provided by Subsection (d-2), in a prosecution for
+an offense under Subsection (a)(1), there is a rebuttable presumption
+that the actor interferes with a peace officer if it is shown on the
+trial of the offense that the actor intentionally disseminated the home
+address, home telephone number, emergency contact information, or social
+security number of the officer or a family member of the officer or any
+other information that is specifically described by Section 552.117(a),
+Government Code.
+(d-2) The presumption in Subsection (d-1) does not apply to
+information disseminated by:
+(1) a radio or television station that holds a license issued
+by the Federal Communications Commission; or
+(2) a newspaper that is:
+Page -16 -
+
+
+(A) a free newspaper of general circulation or qualified
+to publish legal notices;
+(B) published at least once a week; and
+(C) available and of interest to the general public.
+(e) In this section, "emergency" means a condition or circumstance
+in which an individual is or is reasonably believed by the person
+transmitting the communication to be in imminent danger of serious bodily
+injury or in which property is or is reasonably believed by the person
+transmitting the communication to be in imminent danger of damage or
+destruction.
+
+Sec. 38.151. INTERFERENCE WITH POLICE SERVICE ANIMALS.
+(a)
+In
+this section:
+(1) "Area of control" includes a vehicle, trailer, kennel,
+pen, or yard.
+(2) "Handler or rider" means a peace officer, corrections
+officer, or jailer who is specially trained to use a police service
+animal for law enforcement, corrections, prison or jail security, or
+investigative purposes.
+(3) "Police service animal" means a dog, horse, or other
+domesticated animal that is specially trained for use by a handler or
+rider.
+(b) A person commits an offense if the person recklessly:
+(1) taunts, torments, or strikes a police service animal;
+(2) throws an object or substance at a police service animal;
+(3) interferes with or obstructs a police service animal or
+interferes with or obstructs the handler or rider of a police service
+animal in a manner that:
+(A) inhibits or restricts the handler's or rider's
+control of the animal; or
+(B) deprives the handler or rider of control of the
+animal;
+(4) releases a police service animal from its area of control;
+(5) enters the area of control of a police service animal
+without the effective consent of the handler or rider, including placing
+food or any other object or substance into that area;
+(6) injures or kills a police service animal; or
+(7) engages in conduct likely to injure or kill a police
+service animal, including administering or setting a poison, trap, or any
+other object or substance.
+(c) An offense under this section is:
+(1) a Class C misdemeanor if the person commits an offense
+under Subsection (b)(1);
+(2) a Class B misdemeanor if the person commits an offense
+under Subsection (b)(2);
+(3) a Class A misdemeanor if the person commits an offense
+under Subsection (b)(3), (4), or (5);
+(4) except as provided by Subdivision (5), a state jail felony
+if the person commits an offense under Subsection (b)(6) or (7) by
+injuring a police service animal or by engaging in conduct likely to
+injure the animal; or
+Page -17 -
+
+
+(5) a felony of the second degree if the person commits an
+offense under Subsection (b)(6) or (7) by:
+(A) killing a police service animal or engaging in
+conduct likely to kill the animal;
+(B) injuring a police service animal in a manner that
+materially and permanently affects the ability of the animal to perform
+as a police service animal; or
+(C) engaging in conduct likely to injure a police service
+animal in a manner that would materially and permanently affect the
+ability of the animal to perform as a police service animal.
+
+`
+    },
+
+    {
+        category: 'Penal Code',
+        title: "Chapter 39 - Abuse of Office (Selected Sections)",
+        content: `Sec. 39.01. DEFINITIONS. In this chapter:
+(1) "Law relating to a public servant's office or employment"
+means a law that specifically applies to a person acting in the capacity
+of a public servant and that directly or indirectly:
+(A) imposes a duty on the public servant; or
+(B) governs the conduct of the public servant.
+(2) "Misuse" means to deal with property contrary to:
+(A) an agreement under which the public servant holds the
+property;
+(B) a contract of employment or oath of office of a
+public servant;
+(C) a
+law,
+including
+provisions
+of
+the
+General
+Appropriations Act specifically relating to government property, that
+prescribes the manner of custody or disposition of the property; or
+(D) a limited purpose for which the property is delivered
+or received.
+
+Sec. 39.02. ABUSE OF OFFICIAL CAPACITY.
+(a)
+A public servant
+commits an offense if, with intent to obtain a benefit or with intent to
+harm or defraud another, he intentionally or knowingly:
+(1) violates a law relating to the public servant's office or
+employment; or
+(2) misuses government property, services, personnel, or any
+other thing of value belonging to the government that has come into the
+public servant's custody or possession by virtue of the public servant's
+office or employment.
+(b) An offense under Subsection (a)(1) is a Class A misdemeanor.
+(c) An offense under Subsection (a)(2) is:
+(1) a Class C misdemeanor if the value of the use of the thing
+misused is less than $100;
+(2) a Class B misdemeanor if the value of the use of the thing
+misused is $100 or more but less than $750;
+(3) a Class A misdemeanor if the value of the use of the thing
+misused is $750 or more but less than $2,500;
+(4) a state jail felony if the value of the use of the thing
+misused is $2,500 or more but less than $30,000;
+(5) a felony of the third degree if the value of the use of
+the thing misused is $30,000 or more but less than $150,000;
+(6) a felony of the second degree if the value of the use of
+the thing misused is $150,000 or more but less than $300,000; or
+(7) a felony of the first degree if the value of the use of
+Page - 1 -
+
+
+the thing misused is $300,000 or more.
+(d) A discount or award given for travel, such as frequent flyer
+miles, rental car or hotel discounts, or food coupons, are not things of
+value belonging to the government for purposes of this section due to the
+administrative difficulty and cost involved in recapturing the discount
+or award for a governmental entity.
+(e) If separate transactions that violate Subsection (a)(2) are
+conducted pursuant to one scheme or continuing course of conduct, the
+conduct may be considered as one offense and the value of the use of the
+things misused in the transactions may be aggregated in determining the
+classification of the offense.
+(f) The value of the use of a thing of value misused under
+Subsection (a)(2) may not exceed:
+(1) the fair market value of the thing at the time of the
+offense; or
+(2) if the fair market value of the thing cannot be
+ascertained, the cost of replacing the thing within a reasonable time
+after the offense.
+
+Sec. 39.03. OFFICIAL OPPRESSION.
+(a)
+A public servant acting
+under color of his office or employment commits an offense if he:
+(1) intentionally subjects another to mistreatment or to
+arrest, detention, search, seizure, dispossession, assessment, or lien
+that he knows is unlawful;
+(2) intentionally denies or impedes another in the exercise or
+enjoyment of any right, privilege, power, or immunity, knowing his
+conduct is unlawful; or
+(3) intentionally subjects another to sexual harassment.
+(b) For purposes of this section, a public servant acts under color
+of his office or employment if he acts or purports to act in an official
+capacity or takes advantage of such actual or purported capacity.
+(c) In this section, "sexual harassment" means unwelcome sexual
+advances, requests for sexual favors, or other verbal or physical conduct
+of a sexual nature, submission to which is made a term or condition of a
+person's exercise or enjoyment of any right, privilege, power, or
+immunity, either explicitly or implicitly.
+(d) An offense under this section is a Class A misdemeanor, except
+that an offense is a felony of the third degree if the public servant
+acted with the intent to impair the accuracy of data reported to the
+Texas Education Agency through the Public Education Information
+Management System (PEIMS) described by Sections 48.008 and 48.009,
+Education Code, under a law requiring that reporting.
+
+Sec. 39.04. VIOLATIONS OF THE CIVIL RIGHTS OF PERSON IN CUSTODY;
+IMPROPER SEXUAL ACTIVITY WITH PERSON IN CUSTODY OR UNDER SUPERVISION.
+(a) An official of a correctional facility or juvenile facility, an
+employee of a correctional facility or juvenile facility, a person other
+than an employee who works for compensation at a correctional facility or
+juvenile facility, a volunteer at a correctional facility or juvenile
+facility, or a peace officer commits an offense if the person
+intentionally:
+Page -2 -
+
+
+(1) denies or impedes a person in custody in the exercise or
+enjoyment of any right, privilege, or immunity knowing his conduct is
+unlawful; or
+(2) engages in sexual contact, sexual intercourse, or deviate
+sexual intercourse with an individual in custody or, in the case of an
+individual in the custody of the Texas Juvenile Justice Department or
+placed in a juvenile facility, employs, authorizes, or induces the
+individual to engage in sexual conduct or a sexual performance.
+Text of subsection as amended by Acts 2021, 87th Leg., R.S., Ch. 895
+(H.B. 3157), Sec. 1
+(b) An offense under Subsection (a)(1) is a felony of the third
+degree. An offense under Subsection (a)(2) is a felony of the second
+degree, except that an offense under Subsection (a)(2) is a felony of the
+first degree if the offense is committed against:
+(1) an individual in the custody of the Texas Juvenile Justice
+Department or placed in a juvenile facility; or
+(2) a juvenile offender detained in or committed to a
+correctional facility.
+Text of subsection as amended by Acts 2021, 87th Leg., R.S., Ch. 939
+(S.B. 312), Sec. 1
+(b) An
+offense
+under
+Subsection
+(a)(1)
+is
+a
+Class
+A
+misdemeanor. An offense under Subsection (a)(2) is a felony of the
+second degree.
+(c) This section shall not preclude prosecution for any other
+offense set out in this code.
+(d) The Attorney General of Texas shall have concurrent
+jurisdiction with law enforcement agencies to investigate violations of
+this statute involving serious bodily injury or death.
+(e) In this section:
+Text of subdivision as amended by Acts 2015, 84th Leg., R.S., Ch. 216
+(H.B. 511), Sec. 1
+(1)
+
+"Correctional facility" means:
+(A) any place described by Section 1.07(a)(14);
+(B) any place or facility designated for the detention of
+a person suspected of violating a provision of the Immigration and
+Nationality Act (8 U.S.C. Section 1101 et seq.); or
+(C) a "secure correctional facility" or "secure detention
+facility" as defined by Section 51.02, Family Code.
+Text of subdivision as amended by Acts 2015, 84th Leg., R.S., Ch. 1136
+(S.B. 183), Sec. 2
+(1) "Correctional facility" means any place described by
+Section 1.07(a)(14).
+(2) "Custody" means the detention, arrest, or confinement of
+Page -3 -
+
+
+an adult offender, the detention of a juvenile offender, or the
+commitment of a juvenile offender to a correctional facility or juvenile
+facility.
+(2-a) "Juvenile facility" means:
+(A) a facility operated by the Texas Juvenile Justice
+Department or a private vendor under a contract with the Texas Juvenile
+Justice Department; or
+(B) a facility for the detention or placement of
+juveniles under juvenile court jurisdiction and that is operated wholly
+or partly by a juvenile board or another governmental unit or by a
+private vendor under a contract with the juvenile board or governmental
+unit.
+(3) "Sexual contact," "sexual intercourse," and "deviate
+sexual intercourse" have the meanings assigned by Section 21.01.
+(4) "Sexual conduct" and "performance" have the meanings
+assigned by Section 43.25.
+(5) "Sexual performance" means any performance or part thereof
+that includes sexual conduct by an individual.
+(f) An employee of the Texas Department of Criminal Justice, the
+Texas Juvenile Justice Department, a juvenile facility, a local juvenile
+probation department, or a community supervision and corrections
+department established under Chapter 76, Government Code, a person other
+than an employee who works for compensation at a juvenile facility or
+local juvenile probation department, or a volunteer at a juvenile
+facility or local juvenile probation department commits an offense if the
+actor engages in sexual contact, sexual intercourse, or deviate sexual
+intercourse with an individual who the actor knows is under the
+supervision of the Texas Department of Criminal Justice, Texas Juvenile
+Justice Department, probation department, or community supervision and
+corrections department but not in the custody of the Texas Department of
+Criminal
+Justice,
+Texas
+Juvenile
+Justice
+Department,
+probation
+department, or community supervision and corrections department.
+(g) An offense under Subsection (f) is a state jail felony.
+(h) It is an affirmative defense to prosecution under Subsection
+(f) that the actor was the spouse of the individual at the time of the
+offense.
+
+Sec. 39.06. MISUSE OF OFFICIAL INFORMATION. (a) A public servant
+commits an offense if, in reliance on information to which the public
+servant has access by virtue of the person's office or employment and
+that has not been made public, the person:
+(1) acquires or aids another to acquire a pecuniary interest
+in any property, transaction, or enterprise that may be affected by the
+information;
+(2) speculates or aids another to speculate on the basis of
+the information; or
+(3) as a public servant, including as a school administrator,
+coerces another into suppressing or failing to report that information to
+a law enforcement agency.
+(b) A public servant commits an offense if with intent to obtain a
+benefit or with intent to harm or defraud another, he discloses or uses
+information for a nongovernmental purpose that:
+(1) he has access to by means of his office or employment;
+and
+(2) has not been made public.
+(c) A person commits an offense if, with intent to obtain a benefit
+or with intent to harm or defraud another, he solicits or receives from a
+public servant information that:
+(1) the public servant has access to by means of his office or
+employment; and
+(2) has not been made public.
+(d) In this section, "information that has not been made public"
+means any information to which the public does not generally have access,
+and that is prohibited from disclosure under Chapter 552, Government
+Code.
+(e) Except as provided by Subsection (f), an offense under this
+section is a felony of the third degree.
+(f) An offense under Subsection (a)(3) is a Class C misdemeanor.
+Page -5 -
+
+
+Sec. 39.07. FAILURE TO COMPLY WITH IMMIGRATION DETAINER REQUEST.
+(a) A person who is a sheriff, chief of police, or constable or a person
+who otherwise has primary authority for administering a jail commits an
+offense if the person:
+(1) has custody of a person subject to an immigration detainer
+request issued by United States Immigration and Customs Enforcement; and
+(2) knowingly fails to comply with the detainer request.
+(b) An offense under this section is a Class A misdemeanor.
+(c) It is an exception to the application of this section that the
+person who was subject to an immigration detainer request described by
+Subsection (a)(1) had provided proof that the person is a citizen of the
+United States or that the person has lawful immigration status in the
+United States, such as a Texas driver's license or similar governmentissued identification.
+
+Page -6 -
+
+
+PENAL CODE
+TITLE 9. OFFENSES AGAINST PUBLIC ORDER AND DECENCY
+
+`
+    },
+
+    {
+        category: 'Penal Code',
+        title: "Chapter 42 - Disorderly Conduct (Selected Sections)",
+        content: `Sec. 42.01. DISORDERLY CONDUCT. (a) A person commits an offense
+if he intentionally or knowingly:
+(1) uses abusive, indecent, profane, or vulgar language in a
+public place, and the language by its very utterance tends to incite an
+immediate breach of the peace;
+(2) makes an offensive gesture or display in a public place,
+and the gesture or display tends to incite an immediate breach of the
+peace;
+(3) creates, by chemical means, a noxious and unreasonable
+odor in a public place;
+(4) abuses or threatens a person in a public place in an
+obviously offensive manner;
+(5) makes unreasonable noise in a public place other than a
+sport shooting range, as defined by Section 250.001, Local Government
+Code, or in or near a private residence that he has no right to occupy;
+(6) fights with another in a public place;
+(7) discharges a firearm in a public place other than a public
+road or a sport shooting range, as defined by Section 250.001, Local
+Government Code;
+(8) displays a firearm or other deadly weapon in a public
+place in a manner calculated to alarm;
+(9) discharges a firearm on or across a public road;
+(10) exposes his anus or genitals in a public place and is
+reckless about whether another may be present who will be offended or
+alarmed by his act; or
+(11) for a lewd or unlawful purpose:
+(A) enters on the property of another and looks into a
+dwelling on the property through any window or other opening in the
+dwelling;
+(B) while on the premises of a hotel or comparable
+establishment, looks into a guest room not the person's own through a
+window or other opening in the room; or
+(C) while on the premises of a public place, looks into
+an area such as a restroom or shower stall or changing or dressing room
+that is designed to provide privacy to a person using the area.
+(a-1) For purposes of Subsection (a), the term "public place"
+includes a public school campus or the school grounds on which a public
+school is located.
+(b) It is a defense to prosecution under Subsection (a)(4) that the
+actor had significant provocation for his abusive or threatening conduct.
+(c) For purposes of this section:
+(1) an act is deemed to occur in a public place or near a
+private residence if it produces its offensive or proscribed consequences
+in the public place or near a private residence; and
+(2) a noise is presumed to be unreasonable if the noise
+exceeds a decibel level of 85 after the person making the noise receives
+notice from a magistrate or peace officer that the noise is a public
+Page - 1 -
+
+
+nuisance.
+(d) An offense under this section is a Class C misdemeanor unless
+committed under Subsection (a)(7) or (a)(8), in which event it is a Class
+B misdemeanor.
+(e) It is a defense to prosecution for an offense under Subsection
+(a)(7) or (9) that the person who discharged the firearm had a reasonable
+fear of bodily injury to the person or to another by a dangerous wild
+animal as defined by Section 822.101, Health and Safety Code.
+(e-1) Subsection (a)(9) does not apply to a person who, at the time
+the person engaged in conduct prohibited under that subdivision, was an
+employee of the Parks and Wildlife Department acting within the scope of
+the employee's authority under Section 12.013(c), Parks and Wildlife
+Code.
+(f) Subsections (a)(1), (2), (3), (5), and (6) do not apply to a
+person who, at the time the person engaged in conduct prohibited under
+the applicable subdivision, was a student younger than 12 years of age,
+and the prohibited conduct occurred at a public school campus during
+regular school hours.
+(g) Noise arising from space flight activities, as defined by
+Section 100A.001, Civil Practice and Remedies Code, if lawfully
+conducted, does not constitute "unreasonable noise" for purposes of this
+section.
+
+Sec. 42.02. RIOT. (a) For the purpose of this section, "riot"
+means the assemblage of seven or more persons resulting in conduct which:
+(1) creates an immediate danger of damage to property or
+injury to persons;
+(2) substantially
+obstructs
+law
+enforcement
+or
+other
+governmental functions or services; or
+(3) by force, threat of force, or physical action deprives any
+person of a legal right or disturbs any person in the enjoyment of a
+legal right.
+(b) A person commits an offense if he knowingly participates in a
+riot.
+(c) It is a defense to prosecution under this section that the
+assembly was at first lawful and when one of those assembled manifested
+an intent to engage in conduct enumerated in Subsection (a), the actor
+retired from the assembly.
+(d) It is no defense to prosecution under this section that another
+who was a party to the riot has been acquitted, has not been arrested,
+prosecuted, or convicted, has been convicted of a different offense or of
+a different type or class of offense, or is immune from prosecution.
+(e) Except as provided in Subsection (f), an offense under this
+section is a Class B misdemeanor.
+(f) An offense under this section is an offense of the same
+classification as any offense of a higher grade committed by anyone
+engaged in the riot if the offense was:
+(1) in the furtherance of the purpose of the assembly; or
+(2) an offense which should have been anticipated as a result
+of the assembly.
+
+Sec. 42.03.
+
+OBSTRUCTING HIGHWAY OR OTHER PASSAGEWAY.
+Page -2 -
+
+(a)
+
+A person
+
+
+commits an offense if, without legal privilege or authority, he
+intentionally, knowingly, or recklessly:
+(1) obstructs a highway, street, sidewalk, railway, waterway,
+elevator, aisle, hallway, entrance, or exit to which the public or a
+substantial group of the public has access, or any other place used for
+the passage of persons, vehicles, or conveyances, regardless of the means
+of creating the obstruction and whether the obstruction arises from his
+acts alone or from his acts and the acts of others; or
+(2) disobeys a reasonable request or order to move issued by a
+person the actor knows to be or is informed is a peace officer, a
+fireman, or a person with authority to control the use of the premises:
+(A) to prevent obstruction of a highway or any of those
+areas mentioned in Subdivision (1); or
+(B) to maintain public safety by dispersing those
+gathered in dangerous proximity to a fire, riot, or other hazard.
+(b) For purposes of this section, "obstruct" means to render
+impassable or to render passage unreasonably inconvenient or hazardous.
+(c) Except as otherwise provided by Subsections (c-1), (d), and
+(e), an offense under this section is a Class B misdemeanor.
+(c-1) An offense under this section is a state jail felony if, in
+committing the offense, the actor knowingly:
+(1) prevents the passage of an authorized emergency vehicle,
+as defined by Section 541.201, Transportation Code, that is operating the
+vehicle's emergency audible or visual signals required by Section
+546.003, Transportation Code; or
+(2) obstructs access to a hospital licensed under Chapter 241,
+Health and Safety Code, or other health care facility that provides
+emergency medical care, as defined by Section 773.003, Health and Safety
+Code.
+(d) Subject to Subsection (e), an offense under this section is a
+Class A misdemeanor if it is shown on the trial of the offense that, at
+the time of the offense, the person was operating a motor vehicle while
+engaging in a reckless driving exhibition.
+(e) An offense under this section is a state jail felony if it is
+shown on the trial of the offense that, at the time of the offense, the
+person was operating a motor vehicle while engaging in a reckless driving
+exhibition, and:
+(1) the person has previously been convicted of an offense
+punishable under Subsection (d);
+(2) at the time of the offense, the person was operating a
+motor vehicle while intoxicated, as defined by Section 49.01; or
+(3) a person suffered bodily injury as a result of the
+offense.
+(f) For purposes of this section, "reckless driving exhibition"
+means an operator of a motor vehicle, on a highway or street and in the
+presence of two or more persons assembled for the purpose of spectating
+the conduct, intentionally:
+(1) breaking the traction of the vehicle's rear tires;
+(2) spinning the vehicle's rear tires continuously by pressing
+the accelerator and increasing the engine speed; and
+(3) steering the vehicle in a manner designed to rotate the
+vehicle.
+Page -3 -
+
+
+(g) If conduct that constitutes an offense under this section also
+constitutes an offense under any other law, the actor may be prosecuted
+under this section or the other law, but not both.
+
+Sec. 42.04. DEFENSE WHEN CONDUCT CONSISTS OF SPEECH OR OTHER
+EXPRESSION.
+(a)
+If conduct that would otherwise violate Section
+42.01(a)(5) (Unreasonable Noise), 42.03 (Obstructing Passageway), or
+42.055 (Funeral Service Disruptions) consists of speech or other
+communication, of gathering with others to hear or observe such speech or
+communication, or of gathering with others to picket or otherwise express
+in a nonviolent manner a position on social, economic, political, or
+religious questions, the actor must be ordered to move, disperse, or
+otherwise remedy the violation prior to his arrest if he has not yet
+intentionally harmed the interests of others which those sections seek to
+protect.
+(b) The order required by this section may be given by a peace
+officer, a fireman, a person with authority to control the use of the
+premises, or any person directly affected by the violation.
+(c) It is a defense to prosecution under Section 42.01(a)(5),
+42.03, or 42.055:
+(1) that in circumstances in which this section requires an
+order no order was given;
+(2) that an order, if given, was manifestly unreasonable in
+scope; or
+(3) that an order, if given, was promptly obeyed.
+
+Sec. 42.05. DISRUPTING MEETING OR PROCESSION.
+(a)
+A person
+commits an offense if, with intent to prevent or disrupt a lawful
+meeting, procession, or gathering, he obstructs or interferes with the
+meeting, procession, or gathering by physical action or verbal utterance.
+(b) An offense under this section is a Class B misdemeanor.
+
+Sec. 42.06. FALSE ALARM OR REPORT.
+(a)
+A person commits an
+offense if he knowingly initiates, communicates or circulates a report of
+a present, past, or future bombing, fire, offense, or other emergency
+that he knows is false or baseless and that would ordinarily:
+(1) cause action by an official or volunteer agency organized
+to deal with emergencies;
+(2) place a person in fear of imminent serious bodily injury;
+or
+(3) prevent or interrupt the occupation of a building, room,
+place of assembly, place to which the public has access, or aircraft,
+automobile, or other mode of conveyance.
+(b) An offense under this section is a Class A misdemeanor unless
+the false report is of an emergency involving a public or private
+institution of higher education or involving a public primary or
+secondary school, public communications, public transportation, public
+water, gas, or power supply or other public service, in which event the
+offense is a state jail felony.
+
+Sec. 42.062. INTERFERENCE WITH EMERGENCY REQUEST FOR ASSISTANCE.
+(a) An individual commits an offense if the individual knowingly
+prevents or interferes with another individual's ability to place an
+emergency call or to request assistance, including a request for
+assistance using an electronic communications device, in an emergency
+from a law enforcement agency, medical facility, or other agency or
+entity the primary purpose of which is to provide for the safety of
+individuals.
+(b) An individual commits an offense if the individual recklessly
+renders unusable an electronic communications device, including a
+telephone, that would otherwise be used by another individual to place an
+emergency call or to request assistance in an emergency from a law
+enforcement agency, medical facility, or other agency or entity the
+primary purpose of which is to provide for the safety of individuals.
+(c) An offense under this section is a Class A misdemeanor, except
+that the offense is a state jail felony if the actor has previously been
+convicted under this section.
+(d) In this section, "emergency" means a condition or circumstance
+in which any individual is or is reasonably believed by the individual
+making a call or requesting assistance to be in fear of imminent assault
+or in which property is or is reasonably believed by the individual
+making the call or requesting assistance to be in imminent danger of
+damage or destruction.
+
+Sec. 42.07. HARASSMENT. (a) A person commits an offense if, with
+intent to harass, annoy, alarm, abuse, torment, or embarrass another, the
+person:
+(1) initiates communication and in the course of the
+communication makes a comment, request, suggestion, or proposal that is
+obscene;
+(2) threatens, in a manner reasonably likely to alarm the
+person receiving the threat, to inflict bodily injury on the person or to
+commit a felony against the person, a member of the person's family or
+household, or the person's property;
+(3) conveys, in a manner reasonably likely to alarm the person
+receiving the report, a false report, which is known by the conveyor to
+be false, that another person has suffered death or serious bodily
+Page -6 -
+
+
+injury;
+
+(4) causes the telephone of another to ring repeatedly or
+makes repeated telephone communications anonymously or in a manner
+reasonably likely to harass, annoy, alarm, abuse, torment, embarrass, or
+offend another;
+(5) makes a telephone call and intentionally fails to hang up
+or disengage the connection;
+(6) knowingly permits a telephone under the person's control
+to be used by another to commit an offense under this section;
+(7) sends repeated electronic communications in a manner
+reasonably likely to harass, annoy, alarm, abuse, torment, embarrass, or
+offend another;
+(8) publishes on an Internet website, including a social media
+platform, repeated electronic communications in a manner reasonably
+likely to cause emotional distress, abuse, or torment to another person,
+unless the communications are made in connection with a matter of public
+concern; or
+Text of subdivision as added by Acts 2023, 88th Leg., R.S., Ch. 839
+(H.B. 2715), Sec. 7
+(9) tracks or monitors the personal property or motor vehicle
+of another person, without the other person's effective consent,
+including by:
+(A) using a tracking application on the person's personal
+electronic device or using a tracking device; or
+(B) physically following the other person or causing any
+person to physically follow the other person
+Text of subdivision as added by Acts 2023, 88th Leg., R.S., Ch. 1118
+(H.B. 1427), Sec. 1
+(9) makes obscene, intimidating, or threatening telephone
+calls or other electronic communications from a temporary or disposable
+telephone number provided by an Internet application or other
+technological means.
+(b) In this section:
+(1) "Electronic communication" means a transfer of signs,
+signals, writing, images, sounds, data, or intelligence of any nature
+transmitted in whole or in part by a wire, radio, electromagnetic,
+photoelectronic, or photo-optical system. The term includes:
+(A) a communication initiated through the use of
+electronic mail, instant message, network call, a cellular or other type
+of telephone, a computer, a camera, text message, a social media platform
+or application, an Internet website, any other Internet-based
+communication tool, or facsimile machine; and
+(B) a communication made to a pager.
+(2) "Family" and "household" have the meaning assigned by
+
+Sec. 42.072. STALKING. (a) A person commits an offense if the
+person, on more than one occasion and pursuant to the same scheme or
+course of conduct that is directed at a specific other person, knowingly
+engages in conduct that:
+(1) constitutes an offense under Section 42.07, or that the
+actor knows or reasonably should know the other person will regard as
+threatening:
+(A) bodily injury or death for the other person; or
+(B) that an offense will be committed against:
+(i) a member of the other person's family or
+household;
+(ii) an individual with whom the other person has a
+dating relationship; or
+(iii) the other person's property;
+(2) causes the other person, a member of the other person's
+family or household, or an individual with whom the other person has a
+dating relationship:
+(A) to be placed in fear of bodily injury or death or in
+fear that an offense will be committed against the other person, a member
+of the other person's family or household, or an individual with whom the
+other person has a dating relationship, or the other person's property;
+or
+(B) to feel harassed, terrified, intimidated, annoyed,
+Page -8 -
+
+
+alarmed, abused, tormented, embarrassed, or offended; and
+(3) would cause a reasonable person under circumstances
+similar to the circumstances of the other person to:
+(A) fear bodily injury or death for the person;
+(B) fear that an offense will be committed against a
+member of the person's family or household or an individual with whom the
+person has a dating relationship;
+(C) fear that an offense will be committed against the
+person's property; or
+(D) feel harassed, terrified, intimidated, annoyed,
+alarmed, abused, tormented, embarrassed, or offended.
+(b) An offense under this section is a felony of the third degree,
+except that the offense is a felony of the second degree if the actor has
+previously been convicted of an offense under this section or of an
+offense under any of the following laws that contains elements that are
+substantially similar to the elements of an offense under this section:
+(1) the laws of another state;
+(2) the laws of a federally recognized Indian tribe;
+(3) the laws of a territory of the United States; or
+(4) federal law.
+(c) For purposes of this section, a trier of fact may find that
+different types of conduct described by Subsection (a), if engaged in on
+more than one occasion, constitute conduct that is engaged in pursuant to
+the same scheme or course of conduct.
+(d) In this section:
+(1) "Dating relationship," "family," "household," and "member
+of a household" have the meanings assigned by Chapter 71, Family Code.
+(2) "Property" includes a pet, companion animal, or assistance
+animal, as defined by Section 121.002, Human Resources Code.
+
+Sec. 42.12. DISCHARGE OF FIREARM IN CERTAIN MUNICIPALITIES. (a) A
+person commits an offense if the person recklessly discharges a firearm
+inside the corporate limits of a municipality having a population of
+100,000 or more.
+(b) An offense under this section is a Class A misdemeanor.
+(c) If conduct constituting an offense under this section also
+constitutes an offense under another section of this code, the person may
+be prosecuted under either section.
+Page -16 -
+
+
+(d) Subsection (a) does not affect the authority of a municipality
+to enact an ordinance which prohibits the discharge of a firearm.
+
+Sec. 42.13. USE OF LASER POINTERS.
+(a)
+A person commits an
+offense if the person knowingly directs a light from a laser pointer at a
+uniformed safety officer, including a peace officer, security guard,
+firefighter, emergency medical service worker, or other uniformed
+municipal, state, or federal officer.
+(b) In this section, "laser pointer" means a device that emits a
+visible light amplified by the stimulated emission of radiation.
+(c) An offense under this section is a Class C misdemeanor, except
+that the offense is:
+(1) a felony of the third degree if the conduct causes bodily
+injury to the officer; or
+(2) a felony of the first degree if the conduct causes serious
+bodily injury to the officer.
+(d) If conduct that constitutes an offense under this section also
+constitutes an offense under any other law, the actor may be prosecuted
+under this section or the other law, but not both.
+
+Sec. 42.14. ILLUMINATION OF AIRCRAFT BY INTENSE LIGHT.
+(a)
+A
+person commits an offense if:
+(1) the person intentionally directs a light from a laser
+pointer or other light source at an aircraft; and
+(2) the light has an intensity sufficient to impair the
+operator's ability to control the aircraft.
+(b) It is an affirmative defense to prosecution under this section
+that the actor was using the light to send an emergency distress signal.
+(c) An offense under this section is a Class C misdemeanor unless
+the intensity of the light impairs the operator's ability to control the
+aircraft, in which event the offense is a Class A misdemeanor.
+(d) If conduct that constitutes an offense under this section also
+constitutes an offense under any other law, the actor may be prosecuted
+under this section or the other law.
+(e) In this section, "laser pointer" has the meaning assigned by
+Section 42.13.
+
+`
+    },
+
+    {
+        category: 'Penal Code',
+        title: "Chapter 49 - Intoxication Offenses (Selected Sections)",
+        content: `Sec. 49.01. DEFINITIONS. In this chapter:
+(1) "Alcohol concentration" means the number of grams of
+alcohol per:
+(A) 210 liters of breath;
+(B) 100 milliliters of blood; or
+(C) 67 milliliters of urine.
+(2) "Intoxicated" means:
+(A) not having the normal use of mental or physical
+faculties by reason of the introduction of alcohol, a controlled
+substance, a drug, a dangerous drug, a combination of two or more of
+those substances, or any other substance into the body; or
+(B) having an alcohol concentration of 0.08 or more.
+(3) "Motor vehicle" has the meaning assigned by Section
+32.34(a).
+(4) "Watercraft" means a vessel, one or more water skis, an
+aquaplane, or another device used for transporting or carrying a person
+on water, other than a device propelled only by the current of water.
+(5) "Amusement ride" has the meaning assigned by Section
+2151.002, Occupations Code.
+(6) "Mobile amusement ride" has the meaning assigned by
+Section 2151.002, Occupations Code.
+
+Sec. 49.02. PUBLIC INTOXICATION. (a) A person commits an offense
+if the person appears in a public place while intoxicated to the degree
+that the person may endanger the person or another.
+(a-1) For the purposes of this section, a premises licensed or
+permitted under the Alcoholic Beverage Code is a public place.
+(b) It is a defense to prosecution under this section that the
+alcohol or other substance was administered for therapeutic purposes and
+as a part of the person's professional medical treatment by a licensed
+physician.
+(c) Except as provided by Subsection (e), an offense under this
+section is a Class C misdemeanor.
+(d) An offense under this section is not a lesser included offense
+under Section 49.04.
+(e) An offense under this section committed by a person younger
+than 21 years of age is punishable in the same manner as if the minor
+committed an offense to which Section 106.071, Alcoholic Beverage Code,
+applies.
+
+Sec. 49.031. POSSESSION OF ALCOHOLIC BEVERAGE IN MOTOR VEHICLE.
+In this section:
+(1) "Open container" means a bottle, can, or other receptacle
+that contains any amount of alcoholic beverage and that is open, that has
+been opened, that has a broken seal, or the contents of which are
+partially removed.
+(2) "Passenger area of a motor vehicle" means the area of a
+motor vehicle designed for the seating of the operator and passengers of
+(a)
+
+Page - 1 -
+
+
+the vehicle.
+is locked;
+
+The term does not include:
+(A) a glove compartment or similar storage container that
+
+(B) the trunk of a vehicle; or
+(C) the area behind the last upright seat of the vehicle,
+if the vehicle does not have a trunk.
+(3) "Public highway" means the entire width between and
+immediately adjacent to the boundary lines of any public road, street,
+highway, interstate, or other publicly maintained way if any part is open
+for public use for the purpose of motor vehicle travel.
+The term
+includes the right-of-way of a public highway.
+(b) A person commits an offense if the person knowingly possesses
+an open container in a passenger area of a motor vehicle that is located
+on a public highway, regardless of whether the vehicle is being operated
+or is stopped or parked. Possession by a person of one or more open
+containers in a single criminal episode is a single offense.
+(c) It is an exception to the application of Subsection (b) that at
+the time of the offense the defendant was a passenger in:
+(1) the passenger area of a motor vehicle designed,
+maintained, or used primarily for the transportation of persons for
+compensation, including a bus, taxicab, or limousine; or
+(2) the living quarters of a motorized house coach or
+motorized house trailer, including a self-contained camper, a motor home,
+or a recreational vehicle.
+(d) An offense under this section is a Class C misdemeanor.
+(e) A peace officer charging a person with an offense under this
+section, instead of taking the person before a magistrate, shall issue to
+the person a written citation and notice to appear that contains the time
+and place the person must appear before a magistrate, the name and
+address of the person charged, and the offense charged. If the person
+makes a written promise to appear before the magistrate by signing in
+duplicate the citation and notice to appear issued by the officer, the
+officer shall release the person.
+
+Sec. 49.04. DRIVING WHILE INTOXICATED. (a) A person commits an
+offense if the person is intoxicated while operating a motor vehicle in a
+public place.
+(b) Except as provided by Subsections (c) and (d) and Section
+49.09, an offense under this section is a Class B misdemeanor, with a
+minimum term of confinement of 72 hours.
+(c) If it is shown on the trial of an offense under this section
+that at the time of the offense the person operating the motor vehicle
+had an open container of alcohol in the person's immediate possession,
+the offense is a Class B misdemeanor, with a minimum term of confinement
+of six days.
+(d) If it is shown on the trial of an offense under this section
+that an analysis of a specimen of the person's blood, breath, or urine
+showed an alcohol concentration level of 0.15 or more at the time the
+analysis was performed, the offense is a Class A misdemeanor.
+
+Sec. 49.045.
+
+DRIVING WHILE INTOXICATED WITH CHILD PASSENGER.
+Page -2 -
+
+(a)
+
+
+A person commits an offense if:
+(1) the person is intoxicated while operating a motor vehicle
+in a public place; and
+(2) the vehicle being operated by the person is occupied by a
+passenger who is younger than 15 years of age.
+(b) An offense under this section is a state jail felony.
+
+Sec. 49.07. INTOXICATION ASSAULT. (a) A person commits an offense
+if the person, by accident or mistake:
+(1) while operating an aircraft, watercraft, or amusement ride
+while intoxicated, or while operating a motor vehicle in a public place
+while intoxicated, by reason of that intoxication causes serious bodily
+injury to another; or
+(2) as a result of assembling a mobile amusement ride while
+intoxicated causes serious bodily injury to another.
+(b) In this section, "serious bodily injury" means injury that
+creates a substantial risk of death or that causes serious permanent
+disfigurement or protracted loss or impairment of the function of any
+Page -3 -
+
+
+bodily member or organ.
+(c) Except as provided by Section 49.09, an offense under this
+section is a felony of the third degree.
+
+Sec. 49.08. INTOXICATION MANSLAUGHTER. (a) A person commits an
+offense if the person:
+(1) operates a motor vehicle in a public place, operates an
+aircraft, a watercraft, or an amusement ride, or assembles a mobile
+amusement ride; and
+(2) is intoxicated and by reason of that intoxication causes
+the death of another by accident or mistake.
+(b) Except as provided by Section 49.09, an offense under this
+section is a felony of the second degree.
+
+`
+    },
+
     {
         category: 'General Manual',
-        title: "Procedure 303 - Complaints Against Department Members",
-        content: `
-            <h2>COMPLAINTS AGAINST DEPARTMENT MEMBERS</h2>
-            
-            <h3>Policy</h3>
-            <p>The San Antonio Police Department accepts and investigates all complaints against Department members. The Department encourages the reporting of officer misconduct as well as commendable behavior. All complaints will be courteously received and properly investigated in a fair and impartial manner with due regard for the individual rights of all involved. The Department will continually strive to improve services to the community and employees through its accountability systems.</p>
+        title: "Procedure 103 - Law Enforcement Code of Ethics",
+        content: `Law Enforcement Code of Ethics
+As a Law Enforcement Officer, my fundamental duty is to serve mankind; to
+safeguard lives and property; to protect the innocent against deception, the weak against
+oppression or intimidation, and the peaceful against violence or disorder; and to respect
+the Constitutional rights of all persons to liberty, equality, and justice.
+I will keep my private life unsullied as an example to all; maintain courageous calm
+in the face of danger, scorn, or ridicule; develop self-restraint; and be constantly mindful
+of the welfare of others. Honest in thought and deed in both my personal and official life,
+I will be exemplary in obeying the laws of the land and the regulations of my Department.
+Whatever I see or hear of a confidential nature or that is confided to me in my official
+capacity will be kept ever secret unless revelation is necessary in the performance of my
+duty.
+I will never act officiously or permit personal feelings, prejudices, animosities, or
+friendships to influence my decisions. With no compromise for crime and with relentless
+prosecution of criminals, I will enforce the law courteously and appropriately without
+fear or favor, malice or ill will, never employing unnecessary force or violence and never
+accepting gratuities.
+I recognize the badge of my office as a symbol of public faith, and I accept it as a
+public trust to be held so long as I am true to the ethics of the police service. I will
+constantly strive to achieve these objectives and ideals, dedicating myself before God to
+my chosen profession . . . law enforcement.
 
-            <h3>Purpose</h3>
-            <p>The purpose of this procedure is to establish guidelines for the reporting, investigation, and disposition of complaints against Department members. This procedure also outlines the responsibilities of the Office of the Chief of Police, the Office of Management Services (OMS), Internal Affairs, and supervisory personnel in the complaint process.</p>
+WILLIAM P. MCMANUS
+CHIEF OF POLICE
 
-            <h3>Definitions</h3>
-            
-            <p><strong>Line Complaint:</strong> A complaint is a Line Complaint when it involves minor policy violations of the General Manual or other related directives. Line Complaints also include complaints concerning performance, usually related to discourteous or unprofessional behavior. Line Complaints do not involve violations that could result in suspension or dismissal.</p>
+General Manual Procedures – Section 100 Preface
 
-            <p><strong>Formal Complaint:</strong> A Formal Complaint involves allegations of misconduct that could result in suspension or dismissal. Examples include use of excessive force, criminal conduct, on-duty intoxication, domestic violence, or misuse of authority.</p>
-
-            <p><strong>Anonymous Complaint:</strong> A complaint where the source refuses to identify themselves or provide contact information for follow-up.</p>
-
-            <p><strong>Chain of Command:</strong> The supervisory hierarchy through which complaints are processed and investigated.</p>
-
-            <h3>Procedures</h3>
-
-            <h4>Accepting Complaints</h4>
-            <p>All Department members shall accept complaints courteously and professionally, regardless of the time, place, or manner in which the complaint is received. Complaints may be received in person, by telephone, by mail, or electronically through the Department's website.</p>
-
-            <p>Department members shall not discourage any person from filing a complaint. Members shall not require complainants to provide identification or be present at a particular location as a prerequisite to accepting a complaint.</p>
-
-            <h4>Line Complaint Investigation Process</h4>
-            <p>Line Complaints shall be investigated by the member's immediate supervisor or chain of command. The investigation must be completed within 21 calendar days from the date the complaint was received, unless an extension is granted by the Deputy Chief.</p>
-
-            <p>The supervisor conducting the investigation shall interview the complainant, the accused member(s), and any witnesses. All interviews shall be documented in writing. The supervisor shall gather all relevant evidence including video footage, photographs, and documents.</p>
-
-            <p>Upon completion of the investigation, the supervisor shall prepare a written report containing findings and recommendations. The report shall be forwarded through the chain of command to the Division Commander for review and approval.</p>
-
-            <h4>Formal Complaint Investigation Process</h4>
-            <p>Formal Complaints shall be investigated by Internal Affairs. The Deputy Chief of Management Services shall be notified immediately upon receipt of any Formal Complaint.</p>
-
-            <p>Internal Affairs shall conduct a thorough and complete investigation. The investigation shall include interviews of the complainant, accused member(s), and all relevant witnesses. Internal Affairs shall gather all available evidence including video recordings, audio recordings, photographs, documents, and physical evidence.</p>
-
-            <p>Accused members shall be afforded their rights under Chapter 143 of the Texas Local Government Code (Civil Service) and applicable labor agreements. Members have the right to representation during investigative interviews.</p>
-
-            <h4>Investigation Time Frames</h4>
-            <p>Line Complaints must be completed within 21 calendar days. Formal Complaints investigated by Internal Affairs must be completed within 180 calendar days from the date the complaint was filed, as required by Chapter 143 of the Texas Local Government Code.</p>
-
-            <p>Extensions may be granted by the Chief of Police or designee for good cause. Any extension must be documented in writing with justification for the delay.</p>
-
-            <h4>Findings and Dispositions</h4>
-            <p>All complaints shall receive one of the following dispositions:</p>
-            
-            <p><strong>Sustained:</strong> The investigation disclosed sufficient evidence to prove the allegation.</p>
-            
-            <p><strong>Not Sustained:</strong> The investigation failed to disclose sufficient evidence to prove or disprove the allegation.</p>
-            
-            <p><strong>Exonerated:</strong> The alleged act occurred, but the investigation revealed it was justified, lawful, and proper.</p>
-            
-            <p><strong>Unfounded:</strong> The investigation conclusively proved the allegation was false or the incident did not occur.</p>
-            
-            <p><strong>Policy Failure:</strong> The member's actions were consistent with Department policy, but the policy itself may be inadequate or inappropriate.</p>
-
-            <h4>Notification of Complainant</h4>
-            <p>Upon conclusion of the investigation, the complainant shall be notified in writing of the disposition. The notification shall include the finding (sustained, not sustained, exonerated, or unfounded) but shall not include specific disciplinary action taken against any member.</p>
-
-            <p>Complainants have the right to appeal the disposition to the Chief of Police within 30 days of receiving written notification of the findings.</p>
-
-            <h4>Anonymous Complaints</h4>
-            <p>Anonymous complaints shall be accepted and investigated to the extent possible. However, without a complainant available for interview and follow-up, it may be difficult to fully investigate the allegations. Anonymous complaints shall be documented and investigated at the discretion of the chain of command or Internal Affairs, depending on the severity of the allegations.</p>
-
-            <h4>Supervisor Responsibilities</h4>
-            <p>Supervisors are responsible for ensuring complaints are properly received, documented, and investigated in accordance with this procedure. Supervisors shall monitor the conduct and performance of subordinates to identify potential issues before they result in formal complaints.</p>
-
-            <p>Supervisors shall ensure that Line Complaint investigations are completed within the required time frame and that all investigative reports are thorough, complete, and accurate.</p>
-
-            <h3>References</h3>
-            <p>Texas Local Government Code, Chapter 143 (Civil Service for Municipalities)<br>
-            Police Officers' Bill of Rights<br>
-            City of San Antonio Personnel Policies<br>
-            SAPD General Manual, Various Procedures</p>
-        `
+Effective Date: October 05, 2015`
     },
-];
+
+    {
+        category: 'General Manual',
+        title: "Procedure 104 - Vision",
+        content: `Vision
+
+To be the premier law enforcement agency by building trust, creating partnerships, and sharing
+leadership within SAPD and the community for a safer San Antonio.
+
+WILLIAM P. MCMANUS
+CHIEF OF POLICE
+
+General Manual Procedures – Section 100 Preface
+
+Effective Date: October 05, 2015`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 105 - Mission",
+        content: `Mission
+
+The San Antonio Police Department is dedicated to improving the quality of life by creating a safe
+environment in partnership with the people we serve. We act with integrity to reduce fear and crime
+while treating all with respect, compassion, and fairness.
+
+WILLIAM P. MCMANUS
+CHIEF OF POLICE
+
+General Manual Procedures – Section 100 Preface
+
+Effective Date: October 05, 2015`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 106 - Guiding Principles",
+        content: `Guiding Principles
+
+INTEGRITY
+WE HAVE INTEGRITY. We hold ourselves accountable and demand the highest level of ethical
+and moral standards from all. We are role models, acting with courage and building
+trust within the organization and the community.
+RESPECT
+WE ARE RESPECTFUL. Mutual respect is the foundation for every interaction. We value diversity
+and encourage open communication by treating everyone with dignity and fairness.
+COMPASSION
+WE ARE COMPASSIONATE. Compassion guides our actions as we care for one another. We treat
+people with kindness and respect while working for the benefit of all.
+FAIRNESS
+WE ARE FAIR. We are committed to consistently treating people in a courteous and impartial
+manner.
+
+WILLIAM P. MCMANUS
+CHIEF OF POLICE
+
+General Manual Procedures – Section 100 Preface
+
+Effective Date: October 05, 2015
 
 
-// ========================================
-// QUIZ QUESTIONS
-// ========================================
-// Add your practice questions here
+San Antonio Police Department
+GENERAL MANUAL`
+    },
 
-const QUIZ_QUESTIONS = [
+    {
+        category: 'General Manual',
+        title: "Procedure 200 - Rules and Regulations",
+        content: `Section 200 – Rules and Regulations
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+COB, CSB
+None
+
+July 24, 2015
+February 15, 2012
+
+Number of Pages:
+
+16
+
+Related Procedures:
+
+ALL
+
+SECTION 1.00 INTRODUCTION
+1.01 PURPOSE:
+The Rules and Regulations officially adopted and set forth in this manual are for the guidance, regulation, and
+control of the conduct of all members of the Police Department of the City of San Antonio, Texas. These rules
+are designed to promote efficiency, discipline, and good public relations by setting forth policies governing the
+conduct and demeanor of every member of the police department, both on- and off-duty.
+1.02 AUTHORITY:
+A. CITY CHARTER: Pursuant to Article V of the Charter of the City of San Antonio Chief of the Police
+Department, the director, shall have supervision and control over the Police Department, subject to
+approval by the City Manager.
+B. COLLECTIVE BARGAINING AGREEMENT: Pursuant to Article VII of the Collective Bargaining
+Agreement between the City of San Antonio and the San Antonio Police Officers' Association, the Chief of
+Police shall have the exclusive right to establish, rescind, or modify departmental rules and regulations
+while such contract is in effect, subject to review by the City Manager. Changes will be made through
+departmental orders issued by the Chief of Police and reviewed by the Fire and Police Civil Service
+Commission and the City Manager.
+C. LOCAL GOVERNMENT CODE: Pursuant to Chapter 143 of the Local Government Code, as amended,
+the Chief of the San Antonio Police Department shall have the power to take disciplinary action or suspend
+indefinitely an officer under his supervision for violation of either Chapter 143 of the Local Government
+Code, the Civil Service Rules of the City of San Antonio, or of these rules and regulations. In addition, the
+Chief of Police shall be empowered to take disciplinary action or suspend indefinitely any other police
+employee for violation of these rules and regulations.
+1.03 SCOPE:
+These rules and regulations govern the conduct, responsibilities, duties, assignments of, and the use of
+equipment by all members of the department. These rules and regulations may further cover such other matters
+as the Chief of Police may deem necessary or expedient for the proper conduct of the work of the department,
+and additionally incorporate departmental orders, directives, and procedures. These rules and regulations
+become effective on the date of issuance and rescind the Rules and Regulations of the San Antonio Police
+Department issued on September 25, 1984 and became effective on November 1, 1984.
+1.04 ACKNOWLEDGMENT:
+A. EFFECTIVE DATE: The Rules and Regulations of the San Antonio Police Department, which are
+incorporated in the General Manual, apply to all employees, both sworn and non-sworn, and have the effect
+of an order. These rules and regulations, as revised and adopted on July 20, 2015, became effective on
+August 20, 2015.
+
+General Manual Procedures – Section 200 Rules and Regulations
+
+Page 1 of 16
+
+Effective Date: July 24, 2015
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 303 - Disciplinary Procedures",
+        content: `Procedure 303 – Disciplinary Procedures
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+PSC, PNC, TSC, STC, MCC, SSB
+SAPD Form #61-LF,
+SAPD Form #200 OR
+SAPD Form #6-CR
+
+May 8, 2023
+January 31, 2017
+
+Number of Pages:
+
+24
+
+Related Procedures:
+
+402
+
+.01 INTRODUCTION
+A. This procedure establishes a process to provide for the non-criminal investigation and discipline, when necessary, of
+sworn members for alleged or suspected violations of department rules, regulations, policies, or procedures, which
+may regulate the conduct of sworn members.
+B. When a complaint focuses on a civilian member, the non-criminal investigation and discipline, when necessary, is
+determined by the civilian member’s Division Commander or in accordance with any applicable administrative
+directives of the City.
+C. This procedure does not supersede any criminal investigation for alleged violations of criminal laws or statutes by
+members of this Department.
+.02 POLICY
+A. The Department is accountable for all official acts of its employees. Therefore, the Department holds its members to
+a high standard of conduct and discipline in order to preserve an essential relationship of trust and confidence with the
+community they serve.
+B. Furthermore, the Department adheres to and practices progressive discipline. This allows for a range of sanctions that
+take into account the circumstances of individual matters while ensuring that discipline and other behavior
+modification schemes are commensurate with continued misconduct.
+C. To achieve the desired degree of effectiveness, disciplinary procedures address considerations and expectations from
+the following three perspectives:
+1. Community or external concerns: An open and positive relationship with the citizens of this community must be
+preserved. Consequently, the Department accepts all complaints, regardless of form, source, or substance, and
+initiates investigative action appropriate to the seriousness of the complaint.
+2. Departmental or internal concerns: A consistent and fair disciplinary system supports an effective operational
+environment. The Department provides corrective action for a member who demonstrates a need for behavioral
+correction and commends proper conduct and judgment.
+3. Employee concerns: Members should have a reasonable expectation they may exercise prudent judgment in a
+fair, lawful, and impartial manner while in the proper discharge of their duties and an expeditious and equitable
+process of disciplinary review will evaluate their actions.
+D. The Internal Affairs Unit shall coordinate all investigations of alleged non-criminal misconduct by sworn members of
+the Department in accordance with this procedure.
+E. The Chief of Police shall determine which unit or Department member shall investigate allegations of criminal
+misconduct made against a member of the Department.
+.03 INCIDENTS INVOLVING OFFICERS
+A. Officers will immediately self-report to their immediate supervisor, verbally and in writing on SAPD Form 200-OR, any
+disturbances that they are involved in that require a law enforcement response or have knowledge or become aware that
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 25
+
+Effective Date: May 8, 2023
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 306 - Officer Concern Program",
+        content: `Procedure 306 – Officer Concern Program
+
+Office with Primary Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+CIA
+PSC, PNC, TSC, STC, MCC, SSB
+
+Number of Pages:
+
+None
+
+Related Procedures:
+
+March 19, 2018
+July 24, 2015
+6
+None
+
+.01 INTRODUCTION
+This procedure creates a program for identifying officers with a pattern of behavior which could signal potential
+problems which may prove detrimental to the officer and that may require non-punitive departmental intervention
+efforts.
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Administrative Review
+Officer Case Study
+Referral
+
+Deactivated Cases
+Plan of Action
+Significant Behavioral Infraction
+
+.03 OFFICER CONCERN PROGRAM
+A. The Officer Concern Program identifies unacceptable behavioral traits in officers before those behavioral traits
+develop into disciplinary problems for the officer and the Department.
+B. Once an officer with unacceptable behavior traits is identified, the officer may be referred to the Officer Concern
+Program for a review.
+C. The Officer Concern Program Board will conduct a review of the referred officer and, when appropriate, formulates
+a Plan of Action in an attempt to address the officer’s undesirable behavior.
+.04 REFERRALS TO OFFICER CONCERN PROGRAM
+A. There are three (3) methods for referring officers who are identified as having unacceptable behavioral traits to the
+Officer Concern Program. The three (3) methods for referrals are:
+1.
+
+Referrals by the Chief of Police: The Chief of Police has the prerogative to place an officer directly into the
+Officer Concern Program.
+
+2.
+
+Referrals by Supervisors: Immediate and intermediate supervisors may initiate a referral by submitting a written
+report through the chain of command to the respective Division Commander.
+a.
+
+The report must detail the reasons why the supervisor has determined that the officer should be placed in
+the Officer Concern Program and must be supported by documentation, statements, etc. These referrals are
+especially important, since immediate and intermediate supervisors work closely with their subordinates
+and are more familiar with their work habits.
+
+b.
+
+Referrals of officers to the Program may be for any unacceptable or undesirable behavioral traits. Some
+common reasons for referrals of officers to the Officer Concern Program include, but are not limited to, the
+following:
+(1) Complaints of rudeness (internal and external complaints);
+(2) Deterioration of work quality or quantity;
+
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 6
+
+Effective Date: March 19, 2018
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 307 - Public and Media Information",
+        content: `Procedure 307 – Public and Media Information
+
+Office with Primary Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+CMS
+PSC, PNC, TSC, FTC, IDC, SSO
+
+Number of Pages:
+
+None
+
+Related Procedures:
+
+September 19, 2018
+July 31, 2010
+3
+None
+
+.01 INTRODUCTION
+This procedure provides members of the Department with direction regarding the official dissemination of information to
+the public and media.
+.02 DISCUSSION
+A. Police activities, by their very nature, generate a great deal of public and media interest. Major police incidents,
+such as officer-involved shootings, hostage incidents, major crimes, and large-scale operations significantly heighten
+levels of public exposure and scrutiny.
+B. Police information has an extremely sensitive aspect which must balance two major concerns. These concerns are
+the constitutional guarantees involving the rights to access by the public and the right of privacy belonging to each
+individual.
+C. Mandates from The Texas Open Records Act and the Family Code bear upon the dissemination of information in
+that they stipulate certain information agencies must divulge or protect.
+.03 POLICY
+It is the policy of the San Antonio Police Department to establish and maintain an open and cooperative environment in
+which members of the media and public may obtain timely and accurate information on all matters of community interest
+in a manner which does not jeopardize police operations or the rights of citizens, complainants, witnesses, and persons in
+custody.
+.04 RESPONSIBILITIES
+A. The ranking officer at the scene of an incident has the following responsibilities:
+1.
+
+Releasing to the media, as soon as practical, any factual information listed under Subsection .05A;
+
+2.
+
+Designating a press area;
+
+3.
+
+Allowing access to crime scenes as soon as practical;
+
+4.
+
+Protecting the interests of owners or agents on whose private property a crime scene exists; and
+
+5.
+
+Delegating the responsibility for the release of information under Subsection .05A.
+
+B. Any officer may release information listed under Subsection .05A on a police incident which does not require the
+presence of a Supervisory Officer (i.e., major accidents, fires, etc.).
+C.
+
+The Police Media Services Detail has the responsibility to coordinate media activities involving the various official
+functions of the Department at scenes of major police incidents. These responsibilities include the following:
+
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 3
+
+Effective Date: September 19, 2018
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 309 - Weapons",
+        content: `Procedure 309 – Weapons
+Office with Primary Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+CTA
+
+Number of Pages:
+
+PSC, PNC, TEC, FCD, IDC
+SAPD Form #60-RCF
+SAPD Form #62-RFI
+
+Related Procedures:
+
+June 3, 2024
+May 8, 2023
+19
+303, 314, 605
+
+.01 INTRODUCTION
+This procedure provides officers with the guidelines necessary for the safe carrying and handling of approved firearms and
+intermediate weapons. The procedure also sets guidelines for the types of authorized weapons, ammunition, and holsters
+officers may carry, and provides for the approval or non-approval of all authorized weapons.
+.02 POLICY
+A. Officers shall carry only approved weapons while on-duty or off-duty. The only time firearms not approved by the
+Department may be carried is for the purpose of participating in sporting/leisure activities (i.e., hunting, shooting
+competitions, etc.).
+B. While on-duty, officers shall carry one primary handgun and if approved on SAPD Form #60-RCF, Request to Carry
+Firearm, may carry one concealed/secondary handgun. No more than two handguns may be carried by on-duty
+officers.
+C. Off-duty officers choosing to carry a handgun approved on SAPD Form #60-RCF, Request to Carry Firearm, shall
+do so in accordance with this procedure.
+D. Officers shall strictly abide by SAPD Rules and Regulations 3.31, DISPLAYING OR DISCHARGING FIREARMS.
+E. Officers working inside a police facility may store their firearms in a secure area instead of carrying the firearms on
+their person, in accordance with Section .05.
+F.
+
+Officers are responsible for the safekeeping and appropriate use of their firearms and intermediate weapons.
+
+G. All officers, when in uniform, shall carry at least one (1) approved intermediate weapon.
+H. All officers having been issued an Electronic Control Devices (ECD) shall carry it when in uniform.
+I.
+
+All officers having been issued a shoulder weapon shall carry it when on duty.
+
+J.
+
+Officers must have their handguns, shoulder weapons and intermediate weapons registered with the Firearms
+Proficiency Control Officer (FPCO).
+
+K. Officers seeking authorization to carry an intermediate weapon which they have not completed training with at the
+SAPD Training Academy must present a certificate of training from a department-approved organization which
+provided the training and demonstrate proficiency in the use of the intermediate weapon to the Training Academy
+Commander or his designee.
+L. Department-issued rifles and shotguns are assigned to the duty station the officer works. Whenever an officer is
+promoted or transfers from their duty station, the City rifle or shotgun shall be returned to the Department armorer for
+an inventory check and inspection. This does not include transfers when an officer stays at the same shift/assignment
+but gets different relief days. After the weapon is inventoried and inspected, the appropriate duty station will be
+contacted and advised the firearm is ready for re-issuance.
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 19
+
+Effective Date May 27, 2024
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 310 - Uniforms and Dress Codes",
+        content: `Procedure 310 – Uniforms and Dress Codes
+Office with Primary Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+PSC, PNC, TEC, FCD, IDC, SSB
+
+Number of Pages:
+
+310-RFA
+
+Related Procedures:
+
+December 23, 2022
+August 24, 2020
+14
+309, 311, 315
+
+.01 INTRODUCTION
+A. This procedure provides officers with the specifications necessary to purchase uniforms and the various accessories
+that each officer is required to possess and maintain.
+B. This procedure also establishes Departmental regulations for officers regarding the wearing of police uniforms and
+accessories, the proper clothing for officers in non-uniform assignments and civilian members, and the personal
+grooming of all officers.
+C. Command and Honor Guard uniform specifications are determined by the Chief of Police.
+D. Tactical Support Division uniform specifications are recommended by the Section Commander, through the Division
+Commander, and submitted to the Labor Relations Committee and the Chief of Police for approval.
+E. Deviation from any regulation in this procedure is allowed only by permission of a member's Division Commander
+when necessitated by a specialized or undercover duty assignment.
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Body Modification
+Regulation Uniform
+Religious Grooming Customs
+
+Command Uniform
+Unit-Specific Uniform
+
+Formal Uniform
+Articles of Faith
+
+.03 GENERAL UNIFORM REGULATIONS
+A. All uniform and accessory items must conform to the uniform specifications listed in the Appendix A of this procedure.
+B. Officers shall not wear a uniform or any part of a uniform while off-duty for any activity not authorized by the Chief
+of Police.
+C. An incomplete uniform is not worn at any time, nor will any item of a uniform be worn at any time except as a part of
+a complete uniform.
+D. All officers will possess and maintain in good order at least one (1) complete regulation uniform.
+E. Uniformed officers shall wear the appropriate insignia of rank as prescribed in this procedure affixed to all uniform
+shirts and jackets.
+F.
+
+Officers receiving Departmental awards may wear the commendation bar portions of the awards on the regulation
+uniform shirt. The awards are worn above the nameplate on the right side of the regulation uniform shirt. The number
+of awards worn is limited to six (6) awards.
+
+G. Officers wearing unit pins shall wear the unit pins only on the uniform shirt. The unit pins are worn above the nametag
+and any commendation bars on the right side of the uniform shirt.
+
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 14
+
+Effective Date: December 23, 2022
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 311 - Court Appearances",
+        content: `Procedure 311 – Court Appearances
+
+Office with Primary Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+
+November 01, 2021
+December 21, 2016
+
+PSC, PNC, TSC, IDC, SSD
+
+Number of Pages:
+
+7
+
+COSA Notice of Leave Form
+
+Related Procedures:
+
+908
+
+.01 INTRODUCTION
+A. This procedure establishes departmental policy regarding court and pre-trial conference attendance by members.
+B. This procedure also provides guidelines for the stand-by process, compensation for attending court, dress code
+requirements, and for court absences.
+.02 ATTENDANCE REQUIREMENTS
+A. Courts in this agency’s jurisdiction utilize officers’ written reports, sworn affidavits, or complaints at preliminary
+court proceedings and arraignments in lieu of an officer’s presence.
+B. If members are needed to attend court (including a teleconference or video conference when applicable), preliminary
+court proceedings, or pre-trial conferences, they are subpoenaed or notified by the Court Liaison Detail by
+computer-generated notice, or telephone.
+C. Members subpoenaed or notified by the Court Liaison Detail to attend court or a pre-trial conference held in the
+Bexar County Courthouse or Justice Center shall check-in with the Court Liaison Detail prior to reporting to court or
+a pre-trial conference.
+1.
+
+Members attending all other courts sign in with the Court Clerk.
+
+2.
+
+Officers provide verification of attendance in a court or pre-trial conference by submitting a completed court
+attendance card signed by Court Liaison Detail personnel. The Court Liaison Detail personnel shall write on
+the court attendance card, the date and time the officer attended the court or pre-trial conference, and the date
+and time the officer was dismissed. If the officer received a subpoena or other notice to appear, the subpoena or
+notice shall be attached to the court attendance card or overtime card.
+
+3.
+
+If an officer attends a court (including a teleconference or video conference when applicable), a hearing, or a
+pre-trial conference at a location other than the Bexar County Courthouse, the Bexar County Justice Center, the
+City’s Municipal Court, the officer shall attach the notice to appear to the overtime card. The notice to appear
+will contain:
+a.
+
+The name of the court or hearing attended;
+
+b.
+
+The dates and times the officer appeared;
+
+c.
+
+The reason for the officers attendance in the court or hearing; and
+
+d.
+
+The name and phone number of a contact person from the court or hearing who can verify the officer’s
+attendance.
+
+D. Off-duty members dismissed by a county or district court or after completing a pre-trial conference shall also checkout with the Court Liaison Detail. This is not necessary for a teleconference or video conference.
+
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 7
+
+Effective Date: November 01, 2021
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 313 - Use of City Vehicles",
+        content: `Procedure 313 – Use of City Vehicles
+
+Office with Primary Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+SSB
+PSC, PNC, STC, TSC, MCC
+
+Number of Pages:
+
+SAPD Form #106
+SAPD Form #162
+SAPD Form #167 TVA
+SAPD Form #602-6
+
+Related Procedures:
+
+October 03, 2014
+July 10, 2013
+5
+
+319, 609, 620, 909
+
+.01 INTRODUCTION
+A. This procedure establishes guidelines for the routine use of City vehicles. The tactical and pursuit operation of
+emergency vehicles is covered in GM Procedure 609, Emergency Vehicle Operations.
+B. The use of City vehicles by sworn and non-sworn members will be in accordance with City Administrative
+Directives: 1.8 Vehicle Use, 4.1 Accidents and Injuries (Reporting), 4.65 Smoking in the Workplace, 4.79A PostAccident Alcohol and Drug Testing, 4.8 City Driver Evaluation, and in accordance with the current Collective
+Bargaining Agreement (CBA).
+.02 POLICY
+A. The safety of our members and others is of paramount concern when operating or riding a city vehicle.
+B. All members of the Department, sworn and non-sworn, when operating or riding in a city vehicle shall wear the
+safety restraint devices provided in the city vehicle.
+C.
+
+All authorized passengers in city vehicles will be required to wear safety restraint devices.
+
+D. Members operating a city vehicle will keep mobile communication device usage to a minimum and as brief as
+possible. Furthermore, the use of a mobile communication device is only allowed during routine use of city
+vehicles.
+1. If acceptance or placement of a call is unavoidable, members operating a city vehicle should safely pull off
+the road and resume their travel after their brief call.
+2. If pulling over is not feasible, members are encouraged to use a hands-free option to accept or place a call.
+The use of a mobile communication device with a hands-free device is the preferred method while operating
+a city vehicle.
+3. Texting while operating a city vehicle is prohibited.
+C. All members of the Department, when operating or riding in a city vehicle shall conduct themselves in accordance
+with City Administrative Directive 1.8
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Call-Out City Vehicle
+Police Facility
+
+Immediate Family Members
+Take-Home Vehicle
+
+.04 AUTHORIZED USE
+A. Members operate only those city vehicles assigned to them and only for the accomplishment of assigned duties.
+B. Members transport only authorized persons in a city vehicle.
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 5
+
+Effective Date: October 03, 2014
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 314 - Command Notification",
+        content: `Procedure 314 – Command Notification
+
+Office with Primary Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+COB, CSB
+
+Number of Pages:
+
+None
+
+Related Procedures:
+
+September 12, 2022
+September 19, 2018
+5
+None
+
+.01 INTRODUCTION
+This procedure provides for the notification of command level officers in the event of an unusual occurrence, a police
+incident, or the detention/arrest of a San Antonio police officer.
+.02 TERMINOLOGY ( For specific use within this procedure, see Glossary)
+Civil Disturbance
+Command Personnel
+Manmade Disaster
+Natural Disaster
+Officer Involved Shooting
+Police Incident
+Detention or Custodial Arrest of a San Antonio Police Officer
+
+Critical Incident
+Normal Business Hours
+Serious Bodily Injury
+Unusual Occurrence
+
+.03 COMMAND NOTIFICATION OF HUMAN SMUGGLING – HUMAN TRAFFICKING
+
+A. Any Officer dispatched to, or arriving at a scene, involving an investigation of human smuggling or trafficking,
+whether state or federal, will implement the Command Notification process as follows:
+1. Notifications within SAPD chain of command:
+a. Any officer dispatched to or finding a scene involving human smuggling or trafficking will immediately
+request a Supervisory officer to respond to the scene.
+b. The Supervisor-In-Charge is responsible for notification of the appropriate command personnel,
+ultimately resulting in notification to a Deputy Chief, or if unavailable, an Assistant Chief.
+c. Notification to the Chief of Police as appropriate.
+2. Notifications to SAPD Investigative personnel:
+a. The reporting officer is responsible for notifying the assigned follow up unit (Special Victims or Night CID),
+either by direct call or through the dispatcher.
+b. In the notification the reporting officer will provide the following information if available:
+(1) Type of the vehicle or vehicles involved
+(2) Approximate number of individuals involved
+(3) Approximate number of children/minors
+(4) General description of the scope and nature of medical attention required for the individuals involved.
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 5
+
+Effective Date: September 12, 2022
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 315 - Line Inspections",
+        content: `Procedure 315 – Line Inspections
+Office with Primary Responsibility:
+Office(s) with Secondary
+Responsibilities:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+PSC, PNC, TSC, FTC, IDC, SSO, CIA
+
+Number of Pages:
+
+Forms Referenced in Procedure:
+
+Related Procedures:
+
+May 1, 2017
+July 31, 2010
+2
+None
+
+.01 INTRODUCTION
+This procedure establishes guidelines for conducting line inspections of officers' personal appearance,
+uniform/personal attire, and equipment.
+.02 DISCUSSION
+A. Line Inspections is an on-going process to ensure officers are in compliance with Department rules, regulations,
+procedures, and orders in the areas of personal appearance, the proper wearing of the police uniform, and the use
+and maintenance of assigned equipment. Line inspections can be formal or informal inspections.
+B. Formal Line Inspections establish a process for documenting individual officer deficiencies. The process assigns
+specific timetables and responsibilities for conducting the inspection.
+C. Informal Line Inspections is an ongoing process conducted daily by Supervisors. Minor deficiencies in individual
+officer personal appearance and the maintenance of assigned equipment are brought to the officer’s attention when
+they are identified by a supervisor.
+.03 LINE INSPECTIONS PROCEDURE
+A. Unit/Shift Directors
+1.
+
+Conduct formal line inspections of all subordinates at least once each month. A supervisory officer may be
+assigned to conduct the formal line inspection in the absence of a shift/unit director.
+
+2.
+
+Document all inspections and deficiencies, if any, utilizing SAPD ACTIVITY and
+
+3.
+
+Notify the Section Commander that formal line inspections and individual officer deficiencies have been
+entered into SAPD ACTIVITY for the current period.
+
+B. Supervisory Officers
+1.
+
+Assist the Shift/Unit Director with conducting the formal line inspection; and
+
+2.
+
+Record all inspections and deficiencies, if any, and the Shift/Unit Director’s comments in SAPD ACTIVITY.
+
+C. Section Commanders
+1.
+
+Monitor the formal line inspection process by occasional participating in a formal line inspection; and
+
+2.
+
+Review all inspection reports and roll call inspection report forms submitted by unit/shift directors.
+
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 2
+
+Effective Date: May 1, 2017
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 318 - Labor Relations Committee",
+        content: `Procedure 318 – Labor Relations Committee
+
+Office with Primary Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+PSC, PNC, TSC, STC, MCC, SSB
+
+Number of Pages:
+
+1-LRC T&E
+
+Related Procedures:
+
+July 24, 2015
+July 31, 2010
+2
+None
+
+.01 INTRODUCTION
+This procedure establishes the responsibilities of the Labor Relations Committee and guides members in the proper
+method for submitting reports on issues they request to be reviewed by the Labor Relations Committee.
+.02 LABOR RELATIONS COMMITTEE
+A. The Collective Bargaining Agreement (CBA) establishes a Labor Relations Committee, hereafter, referred to as the
+Committee.
+B. The Committee meets as necessary and makes recommendations to the Chief of Police.
+C. The Committee consists of four (4) members appointed for one (1) year terms;
+1.
+
+Two (2) members are appointed by the Chief of Police;
+
+2.
+
+Two (2) members are appointed by the San Antonio Police Officer's Association;
+
+3.
+
+Vacancies are filled by the appointing party for the balance of the vacant term; and
+
+4.
+
+The Chairmanship of the Committee shall rotate once every 3 months.
+
+D. The Committee hears issues including, but not limited to the following working conditions:
+1.
+
+Safety and specifications for equipment;
+
+2.
+
+Discipline;
+
+3.
+
+Departmental policies and procedures; and
+
+4.
+
+Other areas of common officer interest.
+
+E. The Committee also serves as the Equipment Advisory Committee for the purpose of reviewing specifications, all
+testing & evaluations (T&E), and making recommendations to the Chief as to the purchase of all police-related
+equipment.
+
+F.
+
+1.
+
+Officers wishing to request testing & evaluation (T&E) be completed on any police-related equipment shall
+route a completed LRC T&E Form #1-LRC T&E through their chain of command, to the Office of the Chief;
+
+2.
+
+LRC are the only department members authorized to represent the department to potential vendors.
+
+In its role as the Equipment Advisory Committee, the Committee investigates incidents where members report city
+equipment as lost, stolen, or damaged.
+1.
+
+Upon completion of an investigation, the Committee makes a determination as to the cause of the loss and/or
+damage and to what extent the member is financially responsible.
+
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 2
+
+Effective Date: July 24, 2015
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 324 - Performance Evaluations",
+        content: `Procedure 324 – Performance Evaluations
+Office with Primary Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedures:
+
+Effective Date:
+Prior Revision Date:
+
+SSO
+PSC, PNC, TSC, FTC, IDC
+
+Number of Pages:
+
+SAPD Form #6-PE
+SAPD Form #6-CDC
+SAPD Form #6-NAR
+
+December 20, 2010
+July 31, 2010
+5
+
+Related Procedures:
+
+.01 INTRODUCTION
+A. This procedure establishes a performance evaluation system for all sworn members of the San Antonio Police
+Department.
+B. Non-sworn members are evaluated in accordance with the City of San Antonio Employee Performance Management
+and Development System (EPDP).
+.02 POLICY
+A. It is the policy of the San Antonio Police Department to use performance evaluations to identify training needs in
+order to enhance the service expectations, policing styles, and responsibilities of the Department’s sworn members
+to reflect the goals and objectives of the Department and its community policing philosophy.
+B. Performance evaluations are also used as a catalyst for enhancing the career development of sworn members.
+C. Performance evaluations will not be used to determine any type of discipline or to affect promotions or transfers
+within the Department.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Coaching
+Performance Evaluation
+Rater
+
+Counseling
+Performance Evaluation Period
+Rating Period
+
+Immediate Notification
+Planning Session
+Reviewing Officer
+
+.04 ANNUAL PLANNING SESSIONS AND PERFORMANCE EVALUATIONS
+A. Planning Sessions and Performance Evaluations are conducted annually on all sworn members to provide structure
+and guidance in developing their performance capabilities and career opportunities.
+B. Planning Sessions and Performance Evaluation are specific to the assignment or rank of the sworn member being
+evaluated. Both the Planning Session and the Performance Evaluation are documented on SAPD Form #6-PE,
+Police (Sworn) Employee Annual Performance Appraisal. Check the applicable box at the top of the form titled,
+Planning Session or Annual Evaluation.
+C. The SAPD Form #6-PE used for the annual Planning Session from the prior January will be the form used for the
+annual performance evaluation conducted in January of the following year. Planning Session forms shall remain in
+the sworn member’s departmental field file. Should the officer transfer to another assignment, the Planning Session
+form will accompany the officer to the new assignment.
+D. During the rating period, rating officers shall conduct Performance Evaluations on subordinates utilizing the same
+SAPD Form #6-PE which was completed during the Planning Session from the previous January and can be
+retrieved from the officer’s departmental field file.
+
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 5
+
+Effective Date: December 20, 2010
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 325 - Training and Career Development",
+        content: `Procedure 325 – Training and Career Development
+Office with Primary Responsibility:
+
+CTA
+
+Effective Date:
+Prior Revision Date:
+
+Office(s) with Secondary
+Responsibilities:
+
+CPY
+
+Number of Pages:
+
+Forms Referenced in Procedure:
+
+None
+
+Related Procedures:
+
+September 1, 2017
+July 31, 2010
+4
+None
+
+.01 INTRODUCTION
+A. This procedure establishes a Training Advisory Board, which operates within the San Antonio Police Department to
+ensure compliance with TCOLE standards of training and education. Additionally, the procedure outlines training
+provided to members of the Department.
+B. The Training Advisory Board serves to enhance the career development of members at all levels in the Department
+through continuing training, as well as providing all members with the opportunity for individual growth within the
+Department.
+.02 POLICY
+A. It is the policy of the San Antonio Police Department to provide all members with the most diverse and
+comprehensive training and educational opportunities available that are beneficial for the Department and also for
+the career development of the members.
+.03 GOALS AND OBJECTIVES
+A. To provide proper training and development of sworn and non-sworn members of the Department;
+B. To promote productive, efficient, and effective job performance;
+C. To improve the level of individual job satisfaction; and
+D. To enhance the upward mobility of all members.
+.04 TRAINING ADVISORY BOARD
+A. The Training Advisory Board was created for the purpose of evaluating the specific training needs of the
+Department, to include initial licensing training, continuing education for current license holders, and training which
+meets the goal of career development and promotional education.
+B. Specific duties of the Board include:
+1.
+
+Evaluating the current training for initial licensing (cadet curriculum) and making recommendations for
+revisions;
+
+2.
+
+Evaluating the continuing education training for current license holders (in-service training) and making
+recommendations for revisions;
+
+3.
+
+Evaluating the Field Training Officer Program (FTOP) and making recommendations for revisions;
+
+4.
+
+Evaluating the current promotional training and making recommendations for revisions;
+
+5.
+
+Evaluating the career development training for members and making recommendations for future enhancement,
+and
+
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 5
+
+Effective Date: September 1, 2017
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 330 - Social Media",
+        content: `Procedure 330 – Social Media
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+COB, CSB, SSB
+
+Number of Pages:
+
+None
+
+Related Procedures:
+
+November 10, 2015
+July 18, 2014
+3
+200, 303, 307, 918
+
+.01 INTRODUCTION
+This procedure establishes guidelines regarding appropriate content for personal, social networking websites, web pages and
+other electronically transmitted or hard copied material with respect to the use of the San Antonio Police Department’s
+images, material, logos, video, data, information, or references to those entities. The purpose is to ensure that members use
+appropriate discretion in the use of information and references to the San Antonio Police Department so as not to discredit the
+department; to safeguard the release of information to unauthorized persons regarding crimes, accidents, police incidents or
+police training; and to confirm that all members treat the official business of the Department as confidential as applicable by
+law or departmental policy. This policy is not intended to obstruct the professional development of any member or to
+infringe upon any member’s protected rights to include communication, speech, or expression. Lastly, this policy serves to
+remind all members that any unsolicited information brought to the Department’s attention may be used by the Department
+for administrative purposes as applicable to standing rules, regulations, policies, practices, and procedures.
+
+.02 DISCUSSION
+All members of the San Antonio Police Department are reminded that integrity, ethics, and professionalism are paramount
+staples in the law enforcement community. Members are held to the department’s elevated standards of conduct whether on
+or off duty. All members must avoid any conduct which would compromise the integrity of the Department; undermine the
+public’s confidence in this agency; compromise operational and officer security; and/or adversely affect ongoing criminal,
+civil, or disciplinary cases; or bring reproach or liability upon the Department as a whole.
+
+.03 TERMINOLOGY:
+A. BLOG: A commentary or self-published journal allowing visitors to post comments, feedback, or reactions.
+B. COMMENT: Expressing a reaction or opinion on a webpage through remarks, in text, or video.
+C. CONCERTED ACTIVITY: Activity that is protected under federal labor law.
+D. DATA EXTRACTION: The process of extracting and/or finding pertinent data from an array of social media and
+internet related sources. This process can be used as an investigative tool due to the frequency of persons often
+posting information about crimes they have committed on social media websites.
+E. FOLLOW: Term closely associated with social media websites, referring to one being able to see others updates in
+their personal timeline. Followers are people who receive updates (e.g. Twitter, Facebook, etc.)
+F.
+
+OFF-DUTY: Time frame outside of a regular tour of duty and/or assigned duties.
+
+G. ON-DUTY: A regular tour of duty and/or assigned duties, participant in a special assignment for the department, or
+when an incident occurs requiring members to act in the capacity of a police officer.
+H. PAGE: A particular section of a social media website where the material included is managed and displayed by an
+individual(s) with administrator rights.
+I.
+
+PODCAST: A program (audio or video) made available in digital format for automatic download over the Internet
+General Manual Procedures – Section 300 Administrative Procedures
+
+Page 1 of 3
+
+Effective Date: November 10, 2015
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 401 - Offense/Incidents/Supplemental Reports",
+        content: `Procedure 401 – Offense/Incident/Supplement Reports
+
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+
+Effective Date:
+Prior Revision Date:
+
+COS
+
+PSC, PNC, TEC, FCD, IDC
+
+Number of Pages:
+
+Forms Referenced in Procedure:
+
+Related Procedures:
+
+December 11, 2023
+December 5, 2019
+3
+507, 610, 707, 708
+
+.01 INTRODUCTION
+A. This procedure outlines rules and provides definitions for the Department's Mark43 for Offense/Incident and
+Supplement Reports.
+B. The current Online Reporting System of Record is Mark 43.
+1.
+
+Guides for Mark43 reports are on the SAPD Mark43 Support SharePoint
+https://cosatx.sharepoint.com/sites/Mark43Support. Additionally, a link is on SAPD Web.
+
+site
+
+at:
+
+.02 DISCUSSION
+A. All incidents assigned an SAPD case number (ex -SAPD23000001) require one or more of the following reports:
+1.
+2.
+3.
+
+Mark43 Offense/Incident Report or Mark43 Missing Person Report
+Crash report (CR-3)
+DWI report
+
+B. This procedure addresses Mark43 reports. Reference GM procedure 707 for Crash reports and GM procedure 507 for
+DWI reports.
+C. Offense/Incident Reports and Supplement Reports completed in Mark43 document criminal offenses and/or civil
+incidents.
+D. Members will ensure all offense and arrest reports include the necessary context and elements of the offense in the
+body of the report to support criminal prosecution.
+E. On all calls for service, members shall write notes in the comments field of the CAD. These notes support the report(s)
+in the Mark43.
+.03 REPORT TYPES
+A. Mark43 Reports:
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+
+Offense/Incident report – Documents criminal offenses and civil incidents that require an SAPD case number.
+Arrest Report –This is a supplement report that supports an Offense/Incident report and documents an arrest and
+disposition of a suspect.
+Supplement Report – Documents information that supports an Offense/Incident report.
+Missing Person Report – An optional report that documents a Missing Person. Offense/Incident reports also
+allow members the ability to report Missing Persons.
+Offense Modifying Supplement Report – Modifies the original Offense/Incident report.
+Documents Upload Report – Allows users to upload attachment(s) files to an SAPD case number.
+Field Contact Reports – Documents field contacts.
+Advocacy Report (Primarily used by CRT) – Documents services provided to victims of crimes.
+Night CID Report (For Night CID only) - Documents Night CID actions related to an SAPD case number.
+
+General Manual Procedures – Section 400 Technical Procedures
+
+Page 1 of 3
+
+Effective: December 11, 2023
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 403 - Communications",
+        content: `Procedure 403 – Communications
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+SSB
+PSC, PNC, TSC, TSD, FCD, IDC
+
+Number of Pages:
+
+SAPD Form #116
+
+Related Procedures:
+
+December 21, 2016
+June 01, 2012
+12
+303, 307
+
+.01 INTRODUCTION
+This procedure identifies the necessary components and responsibilities of the communications process which are
+essential for maintaining the high quality of service provided by the Department.
+.02 DISCUSSION
+A. The various elements of communications constitute essential links in the coordination and delivery of police
+services. Citizens' expectations of the Department include prompt response to the wide variety of calls received. A
+clear and effective communications process must be followed to ensure efficient field operations and continued
+confidence of the community.
+B. The Communications Unit's role is the focal point of this process. Consequently, the Communications Unit, as
+authorized by the Chief of Police, has the authority to direct field units.
+.03 CLASSIFICATION OF CALLS
+A. A Code-One Call is a request for police services which does not present an actual and immediate potential for
+serious injury, damage or loss of property. A code-one call generally requires only a routine police response.
+B. A Code-Two Emergency Call means a request for police service where the immediate rapid response or arrival of
+police units will reduce the probability of serious injury, damage or loss of property. Common Code-Two responses
+include bomb threats and animal bite in progress.
+1.
+
+The following will be dispatched Code-Two.
+Overdose in Progress
+Threats Bomb with Device
+Threats Bomb in Progress
+Shotspotter Alert
+
+C. A Code-Three Emergency Call means a request for police service that presents a threat or immediate danger of
+death or serious bodily injury to any individual. Both, the threat and the need for assistance must be immediate. An
+example of a Code-Three emergency call would be a shooting in progress or a disturbance with a knife/gun
+involved.
+1.
+
+The following calls will be dispatched Code-Three.
+
+Accident Major
+Accident Major Officer
+Assault in Progress
+Burglary in Progress
+Burglary Vehicle in Progress
+Cutting in Progress
+General Manual Procedures – Section 400 Technical Procedures
+
+Disturbance Neighbor Gun Involved
+Disturbance Neighbor Knife Involved
+Family Violence Gun Involved
+Family Violence Knife Involved
+Fight Gun Involved
+Fight Knife Involved
+Page 1 of 12
+
+Rape in Progress
+Robbery in Progress
+Robbery Individual in Progress
+Shooting in Progress
+Suicide in Progress
+Theft of Vehicle in Progress
+Effective Date: December 21, 2016
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 409 - Mobile Video Recording",
+        content: `Procedure 409 – Mobile Video Recording
+
+Office with Primary
+Responsibility:
+
+Effective Date:
+Prior Revision Date:
+
+COB
+
+Office(s) with Secondary
+Responsibilities:
+
+PSC, PNC, TSC
+
+Number of Pages:
+
+Forms Referenced in Procedure:
+
+SAPD Form #161
+SAPD Form #162
+
+Related Procedures:
+
+January 31, 2017
+February 12, 2016
+10
+NONE
+
+.01 INTRODUCTION
+The purpose of this procedure is to establish guidelines in the operation of mobile video recording (MVR) equipment
+assigned to the San Antonio Police Department for capturing audio/video evidence of police interactions including but
+not limited to traffic violations, field interviews, field sobriety testing, other official police activity and the subsequent
+resolution of such contacts.
+.02 POLICY
+A.
+
+It is the policy of the San Antonio Police Department to present for prosecution audio/video evidence of traffic and
+other law violations. To this end, officers with properly functioning mobile video recording equipment shall make a
+recording of all events surrounding the contact, stop, detention, interview and arrest of suspected violators and
+maintain this recorded evidence for consideration in criminal prosecution.
+1.
+
+In order to ensure maximum deployment of the in-car video system, Officers vehicle selection will be:
+a.
+
+Vehicle equipped with functioning Coban Unit
+
+b.
+
+Vehicle with a non-functioning, or no Coban Unit, upon supervisor approval
+
+2.
+
+Vehicles with Non-Functioning Coban Unit will be immediately reported to ITSD for repair and when possible
+should be returned to IT Mobility during operating hours.
+
+3.
+
+Supervisors may direct that the vehicles with non-functioning Coban Unit be redlined until repairs are
+completed.
+
+B. All audio/video recordings generated on Department-owned equipment are the property of the San Antonio Police
+Department. The copying or reproducing of any audio/video recording files generated by members of the
+Department for use outside of Department business is prohibited. Requests for copies will be processed by the
+Video Evidence Custodian.
+C. Distribution of any audio/video recordings generated by Department members in any format or for any purpose must
+be in compliance with this procedure and applicable unit SOPs.
+.03 ADMINISTRATIVE
+A. All generated audio/video files will be retained according to Section .13 of this procedure.
+B. Standardized viewing privileges of audio/video files for administrative and investigatory purposes shall be as
+follows:
+1.
+
+All officers will be able to view their own recordings;
+
+2.
+
+Detective Investigators and above will have viewing privileges for all recordings.
+
+C. No member assigned to a vehicle equipped with mobile video recording equipment shall alter, modify, reuse, tamper
+with or disable the system in any manner.
+General Manual Procedures – Section 400 Technical Procedures
+
+Page 1 of 10
+
+Effective Date: January 31, 2017
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 410 - Body Worn Cameras",
+        content: `Procedure 410 – Body Worn Cameras
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+COP, COB, CSB, CMS
+
+Effective Date:
+Prior Revision Date:
+
+PSC, PNC, TEC, FCD, IDC, SSB,
+COR
+SAPD FM #162
+
+Number of Pages:
+Related Procedures:
+
+September 12, 2022
+December 21, 2020
+12
+303, 307, 310, 408, 409, 507, 705, 905
+
+Subsection A. Operations
+.01 INTRODUCTION
+The purpose of this procedure is to establish guidelines for the operation of Body Worn Cameras (BWC) assigned to San
+Antonio Police Officers for capturing audio/video evidence of police interactions including, but not limited to, traffic
+violations, field interviews, field sobriety testing, and/or other official police activity.
+.02 TERMINOLOGY
+Body Worn Camera (BWC) means a bodily worn digital recording system and its components used to record
+audio/video during police interactions.
+Digital Media Evidence (DME) means analog or digital media, including, but not limited to, electronic recordings of
+video, photograph, audio, film, magnetic and optical media, and/or the information contained therein digitally committed
+to file and of probative value that is stored or transmitted in binary form.
+Body Worn Camera Status
+1) Off – the camera is not on. In this mode, the camera does not have power and will not record video or buffering
+video but does record button presses.
+2) Buffering Mode (ON) – the camera is powered on but not recording. In this mode, the camera stores a 30 second
+history in flash memory prior to the start of the BWC DME recording. When the recording is started the buffering,
+recording becomes part of the BWC DME. Officers are required to leave their BWC powered ON for their entire
+shift, except when on a Personal Relief Break.
+3) Recording – the camera is powered on and recording a video. An officer starts a recording by pushing the event
+button twice. A recording is stopped by a “long” press of the event button.
+Buffering Video means the video stored in the flash memory of a Body Worn Camera that captures events prior to a
+recording being started.
+.03 POLICY
+A. It is the policy of the San Antonio Police Department to present for prosecution audio/video evidence of traffic and
+other law violations as outlined in Section .06 of this procedure. To this end, Officers with properly functioning BWC
+equipment shall record all events surrounding the contact, stop, detention, interview, and arrest of suspected violators
+and maintain this recorded evidence for consideration in criminal prosecution.
+B. All DME generated on Department-owned BWC equipment is the property of the San Antonio Police Department.
+The copying or reproducing of any DME generated by members of the Department for use outside of Department
+business is prohibited. Requests for copies will be processed by the Department’s Video Evidence Custodian.
+C. Distribution of any DME generated by Department members in any format or for any purpose must be in compliance
+with this procedure and applicable unit SOPs.
+
+General Manual Procedures – Section 400 Technical Procedures
+
+page 1 of 12
+
+Effective Date: September 12, 2022
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 501 - Response to Resistance",
+        content: `Procedure 501 –Response to Resistance
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+CTA
+PSC, PNC, TSC, SSD, MCC
+
+Number of Pages:
+
+SAPD Form #62-UOF
+SAPD Form #62
+
+Related Procedures:
+
+November 01, 2021
+September 15, 2020
+12
+303, 309, 408, 512, 601, 605, 908
+
+.01 INTRODUCTION
+This procedure provides officers with guidelines on the use of non-deadly and deadly force. This procedure also explains
+the process officers shall follow for reporting use of force and show of force incidents.
+.02 POLICY
+A. The San Antonio Police Department requires its officers to exhibit a sense of prudent judgment and restraint derived
+from departmental training, acquired knowledge, skills, and ability in the exercise or application of any level of force
+allowable under this policy.
+B. Officers shall use only the level of force necessary to accomplish a lawful police objective. At any time force is
+necessary, the officer shall apply the level of force reasonable for the situation.
+C. The San Antonio Police Department requires all officers to document use of force and show of force incidents
+electronically in the Blue Team computerized reporting system utilizing the appropriate force incident type, in
+accordance with this procedure. The Department also requires supervisors to respond to the scene of a Use of Force
+incident, review all Blue Team Use of Force/Show of Force entries and ensure the application of force conforms to
+departmental policy and procedures. Supervisors are not required to respond to incidents only involving a Show of
+Force.
+D. All sworn personnel are required to log in to their Blue Team during their tour of duty and complete any entries
+requiring corrections, review or approval.
+.03 DISCUSSION
+A. The sanctity of human life and individual liberties are fundamental elements of modern society which vests police
+officers with the responsibility for the preservation and protection of these paramount values. In the pursuit of this
+responsibility, officers maintain the understanding that protection of property and apprehension of criminal offenders
+is subservient to the protection of life, including their own.
+B. In the course of discharging their duty, police officers are often confronted with situations requiring force to be
+exercised in order to effectively maintain public order and safety. This may be achieved on an ascending scale of the
+officer’s presence, verbal communications, open/empty hands control, physical force, intermediate weapon and deadly
+force, according to and proportional with the circumstances of the situation. The application of force must be
+reasonable and commensurate to achieving a level of control that given the context cannot be obtained through the
+use of other alternatives.
+C. Although the use of a reasonable amount of force is authorized in appropriate circumstances, such as those involving
+the protection of the officer or others from bodily harm, officers must be aware unnecessary or excessive force violates
+Federal Statues, the Texas Penal Code and departmental policy.
+D. Deadly force will be used with great restraint and as a last resort only when the level of resistance or threats warrants
+the use of deadly force. The San Antonio Police Department places greater value on human life than on the protection
+of property; therefore, the use of deadly force strictly to protect property interests is not allowed.
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 1 of 12
+
+Effective Date: November 01, 2021
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 502 - Warrantless Arrests, Searches, and Seizures",
+        content: `Procedure 502 – Warrantless Arrests, Searches, and Seizures
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+CTA
+PSC, PNC, TSC, FTC, IDC, SSO
+SAPD Form #29
+SAPD Form #66E
+SAPD Form #2091-A
+
+July 31, 2010
+October 01, 2009
+
+Number of Pages:
+
+6
+
+Related Procedures:
+
+607
+
+.01 INTRODUCTION
+These guidelines are designed to assist officers of the San Antonio Police Department in determining how and when it is
+appropriate to enforce the law through warrantless arrests, searches, and seizures.
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Arrest
+
+Exigent Circumstances
+
+Probable Cause
+
+Reasonable Suspicion
+
+Search
+
+.03 POLICY
+A. The authority to arrest without a warrant is entirely statutory. An officer's good faith does not justify an invalid
+arrest. Any officer who acts outside his authority in making a warrantless arrest may be subject to both civil and
+criminal liability.
+B. An officer makes a warrantless arrest only if he has enough personal knowledge or reliable information to constitute
+probable cause upon which an arrest warrant could be issued, if time permitted.
+C. Officers exercise discretion in the use of their authority to arrest without a warrant.
+D. Officers make warrantless arrests only by the authorities listed in Section .04 of this procedure.
+E. Officers make warrantless searches and seizures only by the authorities listed in Section .09 of this procedure.
+.04 WARRANTLESS ARREST AUTHORITIES
+A. State Statutes
+1.
+
+Alcohol Beverage Code
+a.
+
+2.
+
+Chapter 101, Article 101.02
+
+Any Violation of Alcohol Beverage Code
+
+Code of Criminal Procedure
+a.
+
+Chapter 8, Article 8.04
+
+b.
+
+Chapter 14
+
+Dispersing Riot
+
+(1) Article 14.01
+
+Offense within View
+
+(2) Article 14.02
+
+Within View of Magistrate
+
+(3) Article 14.03(a)(1)
+
+Suspicious Places and Circumstances;
+
+(4) Article 14.03(a)(2)
+
+Assault - Bodily Injury;
+
+(5) Article 14.03(a)(3)
+
+Violation of Protective Order - May Arrest;
+
+(6) Article 14.03(a)(4)
+
+Family Violence - Bodily Injury;
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 1 of 6
+
+Effective Date: July 31, 2010
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 503 - Obtaining and Executing Arrest Warrants",
+        content: `Procedure 503 – Obtaining and Executing Arrest Warrants
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+
+Forms Referenced in Procedure:
+
+December 11, 2023
+September 4, 2020
+
+Effective Date:
+Prior Revision Date:
+
+IDC
+PSC, PNC, TEC, FCD, SSB
+
+Number of Pages:
+
+SAPD Form #66-E
+SAPD Form #2091-C
+Form GR.1000-04 TOP
+
+8
+
+Related Procedures:
+
+601, 609, 616
+
+.01 INTRODUCTION
+A. This procedure is established to provide officers with guidelines for obtaining and executing arrest warrants.
+B. The duties to arrest, definitions, requisites, issuance, scope, authority, and execution of arrest warrants are outlined in
+Chapter 15 of the Texas Code of Criminal Procedure.
+C. It is the duty of every officer to execute an arrest warrant in the manner provided by law, by the guidelines established
+in this procedure, and by adhering to each respective unit’s standard operating procedures. An officer does not refuse
+to execute a valid warrant on other than legal grounds.
+D. It is the duty of every officer to seek an arrest warrant in the manner provided by law, by the guidelines established in
+this procedure, and by adhering to each respective unit’s standard operating procedures. An arrest warrant shall be
+sought as soon as practical for violent crimes when the danger or threat to the public requires immediate action, rather
+than filing the case at-large.
+E. For clarification purposes, the Warrant Execution Supervisor, the Officer-in-Charge, and the Verification Officer refer
+to the member completing the outlined tasks in this procedure, regardless of rank.
+.02 GENERAL PROCEDURES
+A. When planning to execute a high risk arrest warrant, or where there is a probability forced entry will be needed to gain
+entry, each member involved in the execution of an arrest warrant will wear body armor.
+B. Officers who are legally inside private property and unaware of the existence of a felony or Misdemeanor arrest
+warrant prior to making entry, may make an arrest if a warrant is discovered on an individual in there presence, and
+there is no risk to the officer or the public.
+C. Officers receiving information that a felony violator is on private property, the officer:
+1.
+
+Will not make or force entry into the residence, unless they have exigent circumstances.
+
+2.
+
+Will contact a supervisor for direction and approval
+
+3.
+
+Will utilize Form GR.1000-04 Tactical Operations Plan (TOP), for Class B Misdemeanor through Felony Arrest
+Warrants or any crimes of violence.
+
+4.
+
+If the individual with the felony warrant has barricaded himself prior to the officer having any contact, officers
+will refer to GM 802 and handle as a critical incident.
+
+D. When executing an arrest warrant, the officer need not have actual possession of the warrant. However, the officer
+announces to the person being arrested the arrest is made pursuant to a warrant; and
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 1 of 8
+
+Effective Date: December 11, 2023
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 504 - Execution of Search Warrants",
+        content: `Procedure 504 – Execution of Search Warrants
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+CTA
+PSC, PNC, TSC, FTC, IDC, SSO
+
+Number of Pages:
+
+Form GR1000-04 TOP
+
+Related Procedures:
+
+September 4, 2020
+December 5, 2019
+8
+
+601, 606
+
+.01 INTRODUCTION
+A. The purpose of this procedure is to establish departmental guidelines under which officers of the San Antonio Police
+Department follow in the delivery and execution of search warrants.
+B. The duties to search, definitions, requisites, issuance, scope, authority, and execution of search warrants are outlined
+in Chapter 18 of the Texas Code of Criminal Procedure.
+C. An officer to whom a valid search warrant has been issued executes that warrant in the manner provided by law, by
+guidelines established in this procedure, and by adhering to each respective unit’s standard operating procedures
+(SOP).
+D. For clarification purposes, the Warrant Execution Supervisor, the Officer-in-Charge, and the Verification Officer
+refer to the member completing the outlined tasks in this procedure, regardless of rank.
+.02 GENERAL PROCEDURES
+A. Any search warrant that appears to be in proper form is presumed to be valid. Any warrant which does not appear to
+be in proper form is not executed and is returned to the magistrate who issued it. This includes any warrant
+containing significant errors in identifying the place to be searched or the property to be seized.
+B. A warrant is never altered in any manner.
+C. An officer never represents to any person that a search warrant has been issued in a particular case, knowing such is
+not true, in order to obtain consent to search.
+D. During normal duty hours, the Officer-in-Charge or Warrant Execution Supervisor assigned to units that do not
+routinely execute search warrants (i.e., Patrol and Traffic) must notify the Investigations Division Unit which has
+investigative responsibility for the offense listed in the search warrant, so any active investigations are not
+compromised.
+E. When executing search warrants after normal business hours, the Officer-in-Charge or Warrant Execution
+Supervisor assigned to units that do not routinely execute search warrants (i.e., Patrol and Traffic) must contact a
+Supervisor from the Street Crimes Unit, Repeat Offenders Program, Narcotics Unit, or Night Detectives for
+guidance and assistance.
+F. The Officer-in-Charge or Warrant Execution Supervisor must notify the Deconfliction Unit (207-2495) prior to
+execution of the search warrant. If a location of interest is listed with the Deconfliction Unit, the Officer-in-Charge
+or Warrant Execution Supervisor shall contact the officer who placed the location into deconfliction for resolution.
+Any conflicts not resolved shall be elevated to the Supervisor in charge of the unit who placed the location into
+deconfliction and the Warrant Execution Supervisor for resolution.
+G. When planning to execute a high-risk search warrant, or where there is a probability forced entry will be needed to
+gain entry, each member involved in the execution of a search warrant wears body armor.
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 1 of 8
+
+Effective Date: September 4, 2020
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 505 - Misdemeanor Citation Release",
+        content: `Procedure 505 – Misdemeanor Citation Release
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+CTA
+PSC, PNC, TEC, FCD, IDC, SSB
+MC Form #03-003
+
+July 1, 2019
+May 04, 2012
+
+Number of Pages:
+
+3
+
+Related Procedures:
+
+602
+
+.01 INTRODUCTION
+A. This procedure establishes guidelines for officers in the use of Misdemeanor Notice to Appear citations.
+B. The purpose of the Misdemeanor Notice to Appear is to release nonviolent offenders from custodial arrest in an
+efficient manner.
+.02 POLICY
+A. Tex. Code of Crim. Pro. Art. 14.06 permits law enforcement agencies to use citation release procedures in lieu of
+arrest for eligible Class A or B misdemeanor offenses, all Class C misdemeanor offenses and non-traffic city ordinance
+violations with certain exceptions.
+B. Officers shall select the least intrusive/severe method of enforcement when considering issuing a citation in lieu of
+arrest, which will:
+1.
+
+Stop existing criminal conduct;
+
+2.
+
+Remove the imminent threat of violence or criminal conduct.
+
+3.
+
+Prevent persons from endangering themselves or others.
+
+C. Should the arresting officer choose custodial arrest rather than a Misdemeanor/Cite and Release Citation release, the
+officer:
+1.
+
+States in the offense report the reasons why physical arrest was appropriate
+
+.03 MISDEMEANOR/CITE AND RELEASE CITATION ISSUANCE AND SUBMISSION
+A. When issuing a Misdemeanor/Cite and Release Citation, the arresting officer:
+1.
+
+Completes all sections of the Misdemeanor/Cite and Release Citation pertaining to the violation;
+
+2.
+
+Shall sufficiently identify the violator;
+a.
+
+A form of government photo identification is preferable (State issued ID card/Driver’s license, Passports,
+Consular ID, San Antonio Public Library card or school/university ID);
+
+b.
+
+If government photo identification is not available, officers shall use all reasonably available means to
+confirm the validity of the personal information provided by the person in custody and shall document what
+identification was used to establish the identity of the person in custody.
+
+3.
+
+Shall indicate only one (1) charge per Misdemeanor Citation;
+
+4.
+
+Sets an arraignment date accordingly:
+a.
+
+For San Antonio Municipal Court Misdemeanor Citations:
+1) 17 and older – count 50 calendar days and then assign on a Monday through Friday
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 1 of 3
+
+Effective Date: July 1, 2019
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 506 - Traffic Law Enforcement",
+        content: `Procedure 506 – Traffic Law Enforcement
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+TSC
+PSC, PNC, MCC, CLD
+
+Number of Pages:
+
+SAPD Form #13
+
+Related Procedures:
+
+March 11, 2015
+July 10, 2013
+8
+505, 602, 607, 609, 619, 802
+
+.01 INTRODUCTION
+This procedure provides guidelines for the uniform traffic law enforcement of all traffic law violations with the primary
+goal and objective of promoting traffic safety.
+.02 POLICY
+A. It is the policy of the San Antonio Police Department that on-duty uniformed officers in marked police vehicles
+enforce all traffic laws when traffic law violations occurs in the officers’ presence.
+B. Off-duty officers in uniform or not and on-duty officers not in uniform shall only enforce traffic law violations in
+accordance with Rule and Regulation 3.25, Traffic Stops While Not In Uniform.
+.03 UNIFORMED ENFORCEMENT ACTIONS BY OFFICERS
+A. All officers are to use discretion and good judgment in the enforcement of traffic law violations.
+B. Enforcement actions officers may use when enforcing traffic law violations include the following:
+1.
+
+Warnings (verbal or written);
+
+2.
+
+Citations;
+
+3.
+
+Custodial arrests; and
+
+4.
+
+Towing.
+
+C. The enforcement actions officers take should be commensurate with applicable traffic laws and the degree and
+severity of the violations should be considered when taking enforcement actions.
+D. Officers conduct warrant, insurance, and driver’s license status checks on all persons stopped for traffic law
+violations.
+E. Officers issuing citations to traffic law violators shall afford the violators the opportunity to sign the citations. No
+traffic citations will be mailed to traffic law violators.
+F.
+
+Officers needing to personally file Class C misdemeanor charges with Municipal Court for traffic law violations
+must submit a written report to their immediate Supervisor prior to filing the charges. The written report must have
+an assignment number and state the reason for filing the charges and the date and time of the alleged offense.
+
+G. Although officers use discretion and good judgment in enforcing traffic law violations, they should enforce all
+traffic law violations in the below listed categories using uniform traffic law enforcement measures according to
+Training Academy guidelines to achieve voluntary compliance with traffic laws and regulations:
+1.
+
+Speed violations;
+
+2.
+
+All other hazardous violations, in addition to speeding;
+
+3.
+
+All non-hazardous violations;
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 1 of 8
+
+Effective Date: March 11, 2015
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 507 - D.W.I. Arrests",
+        content: `Procedure 507 – DWI Arrests
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+TSC
+PSC, PNC, SSD, MCC
+MS-DC For m #17
+SAPD For m #24-1A
+SAPD For m #24-DI
+SAPD For m #DIC-23
+SAPD For m #DIC-23A
+SAPD For m #DIC-24
+SAPD For m #DIC-25
+
+Number of Pages:
+SAPD For m #DIC-54
+SAPD For m #DIC-57
+SAPD For m #52X
+SAPD For m #TLE-51
+SAPD For m #TLE-51A
+SAPD For m DIC-55
+SAPD For m #24-54
+SAPD For m #24-FSC
+
+Related Procedures:
+
+September 12, 2022
+July 06, 2016
+14
+601, 602, 606, 607
+
+.01 INTRODUCTION
+A. This procedure provides guidelines for the detection, arrest, and processing of drivers who are suspected of operating
+a motor vehicle while intoxicated.
+B. This procedure also provides guidelines for handling minors who are suspected of operating a motor vehicle while
+under the influence of alcohol.
+C. In addition, this procedure gives guidance for the implementation of the Texas Administrative License Revocation
+(ALR) Statute for intoxicated drivers who either refuse or fail a blood or breath test.
+D. This procedure also assigns responsibilities for the assignment of members as qualified intoxilyzer/video operators
+and the maintenance of supplies and equipment used in intoxicated driver testing.
+.02 POLICY
+The responsibility to remove intoxicated drivers from the roadway extends to all sworn members of the Department
+regardless of their actual duty status or primary unit of assignment.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Administrative License Revocation
+Drug Recognition Expert (DRE)
+Portable Breath Test
+
+Breath Test
+Chemical Test
+Intoxicated
+Juvenile
+Under the Influence
+
+Drug Recognition Evaluation
+Minor
+
+.04 PROBABLE CAUSE FOR DWI OR DUI
+A. Officers establish probable cause for arresting drivers for Driving While Intoxicated (DWI) or for Driving Under the
+Influence of Alcohol by Minor (DUI) by relying on personal knowledge and training, including:
+1. Personal observation of drivers involved in traffic accidents and or traffic violations;
+2. Reasonable suspicion based on information provided by individuals who are witnesses to traffic violations and/or
+traffic accidents involving the person suspected of being intoxicated or under the influence; or
+3. Personal observation of drivers stopped after the officer develops reasonable suspicion based on articulated facts
+of actions which do not meet the criteria of traffic violations (i.e. drifting within lane of travel, failure to maintain
+speed, etc.)
+B. After a traffic stop or arrival at a traffic accident scene, the officer shall:
+1. Remove the driver to a place of safety if he is suspected of being intoxicated.
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 1 of 14
+
+Effective Date: September 12, 2022
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 508 - Field Contacts",
+        content: `Procedure 508 – Field Contacts
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+CTA
+PSC, PNC, TSC, FTC, IDC, SSO
+
+Number of Pages:
+
+SAPD Form #2-3
+
+Related Procedures:
+
+December 5, 2019
+July 31, 2010
+4
+None
+
+.01 INTRODUCTION
+A. This procedure is designed to assist officers in determining how and when it is appropriate to stop persons for
+interviews and interrogations, and when it is appropriate to conduct a frisk.
+B. Officers are reminded they must exercise discretion in the use of their authority to field contact, stop, interview,
+interrogate, and frisk a person.
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Access Area
+Gender Identity
+Outer Clothing
+Suspect
+
+Armed
+Gender Non-Conforming
+Reasonable Suspicion
+Transgender
+
+Contraband
+Interrogation
+Search
+
+Field Contact
+Intersex
+Stop
+
+Frisk
+Interview
+Stop and Frisk
+
+.03 FIELD CONTACTS
+A. An officer, in a place he has a lawful right to be, may field contact any person and interview him under
+circumstances where the officer feels the interview is necessary. However, the officer may not arbitrarily stop any
+person he sees on the streets.
+B. An officer identifies himself as an officer when initiating a field contact, unless his identity is obvious.
+C. Persons who are field contacted and who are not suspects may not be detained against their will for the purpose of
+an interrogation. They may be requested to identify themselves, however they are not compelled to do so.
+D. Persons field contacted are permitted to go on their way if they choose to do so.
+E. If, during a field contact, an officer develops reasonable suspicion to believe the person is involved in criminal
+activity, the person may be considered a suspect and detained.
+.04 STOPS FOR INTERROGATION
+A. An officer may stop a suspect for the purpose of conducting an interrogation.
+B. A suspect may be temporarily detained for the purpose of conducting an investigation and is not free to leave. The
+person may be restrained from leaving, if necessary. An officer may use the amount of force necessary, except
+deadly force, unless deadly force is offered, to detain and overcome resistance of a suspect who is detained against
+his will.
+C. In identifying a person as a suspect, the officer must be able to point to specific suspicious conduct or circumstances
+to justify the detention. Examples of these elements which would assist an officer in justifying a stop and detention
+are:
+1.
+
+The person is making evasive or furtive movements;
+
+2.
+
+The person fits a wanted notice;
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 1 of 4
+
+Effective Date: December 5, 2019
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 509 - Legal Asset Seizure",
+        content: `Procedure 509 – Legal Asset Seizure
+Office with Primary
+Responsibility:
+
+Effective Date:
+Prior Revision Date:
+
+CAS
+
+Office(s) with Secondary
+Responsibilities:
+
+PSC, PNC, TSC, TSD, FCD, IDC
+
+Number of Pages:
+
+Forms Referenced in Procedure:
+
+SAPD Form #110-VH, #113-VRA
+
+Related Procedures:
+
+September 19, 2018
+July 31, 2010
+5
+606, 607
+
+.01 INTRODUCTION
+The purpose of this procedure is to establish guidelines for the seizure of property according to law. This procedure
+guides officers through the steps necessary for the legal seizure of property, from the criteria for seizures to the act of
+seizing property, custody of seized property, and the disposition of seized property.
+.02 LEGAL AUTHORITY
+A. The authority for the legal seizure of assets is contained in the following:
+1.
+
+Texas Code of Criminal Procedure:
+a.
+
+Chapter 18, Section 18;
+
+b.
+
+Chapter 18, Section 19;
+
+c.
+
+Chapter 47; and Chapter 49;
+
+d.
+
+Chapter 59;
+
+2.
+
+Texas Motor Vehicle Laws, Article 6687-1, Section 49; and
+
+3.
+
+Various titles of the United States Code.
+
+B. Any peace officer is authorized to enforce the provisions of the Legal Asset Seizure Laws.
+.03 SEIZURE AND CLASSIFICATION OF PROPERTY INVESTIGATED BY THE LEGAL ASSET SEIZURE
+DETAIL SEIZED UNDER THE AUTHORITY OF THE CODE OF CRIMINAL PROCEDURE CHAPTER 59
+A. For purposes of this procedure, property is classified as:
+1.
+
+Real property;
+
+2.
+
+Tangible or intangible personal property, including anything severed from land; or
+
+3.
+
+A document, including money that represents or embodies anything of value.
+
+B. Property is seized where:
+1.
+
+The property is real property, and any improvements, which is used or intended to be used to commit or
+facilitate the commission of an offense designated by Chapter 59 of the Texas Code of Criminal Procedure;
+
+2.
+
+The property is a vehicle, boat, or plane used to facilitate the commission of applicable offenses;
+
+3.
+
+The property consists of books, financial records, bank statements, payment records, instructions, and research
+materials used in violation of any of the applicable offenses; or
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 1 of 5
+
+Effective Date: September 19, 2018
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 510 - Carrying Concealed Handguns",
+        content: `Procedure 510 – Carrying Of Handguns
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+CTA
+PSC, PNC, TSC, SSD, MCC
+
+Number of Pages:
+
+DPS Affidavit For Revocation of
+Handgun License
+
+Related Procedures:
+
+July 06, 2016
+December 30, 2015
+5
+None
+
+.01 INTRODUCTION
+This procedure establishes guidelines for actions officers should take when coming into contact with citizens who are
+licensed by the State of Texas to carry handguns under Government Code, Chapter 411, Subchapter H, License to Carry
+a Handgun.
+.02 POLICY
+The State of Texas, through passage of Senate Bill 60 by the 74th Texas Legislature and as amended via Senate Bill 321
+by the 82nd Legislature, and House Bill 3142 and Senate Bill 299 by the 83rd Texas Legislature, has granted qualified
+citizens the eligibility to carry concealed handguns. Further legislation passed by the 84th Texas Legislature, under House
+Bill 910, granted qualified citizens the eligibility to carry non-concealed handguns.
+Therefore, it is the policy of this Department to acknowledge qualified citizens' eligibility to carry handguns through
+training and education of officers on the applicable laws and also to safeguard all citizens through enforcement for
+violations of those laws.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Concealed Handgun License (CHL)
+
+Handgun
+
+License Holder
+
+Premises
+
+Handgun License (HL)
+
+.04 LICENSE REQUIRED TO CARRY HANDGUN
+A. Before a citizen of this state may legally carry a handgun, a handgun license (HL) must be obtained through the
+Texas Department of Public Safety, except as provide below:
+1.
+
+The individual is on his/her own premises or premises under their control; or
+a.
+
+Note: For purposes of this section, "premises" includes real property and a recreational vehicle that is being
+used as living quarters, regardless of whether that use is temporary or permanent.
+
+b.
+
+Note: For the purposes of this section, "recreational vehicle" means a motor vehicle primarily designed as
+temporary living quarters or a vehicle that contains temporary living quarters and is designed to be towed
+by a motor vehicle. The term includes a travel trailer, camping trailer, truck camper, motor home, and horse
+trailer with living quarters.
+
+2.
+
+The individual is inside of or directly en route to a motor vehicle that is owned by the individual or under the
+individual’s control.
+
+3.
+
+An individual commits an offense if the individual intentionally, knowingly, or recklessly carries on or about
+his or her person a handgun in a motor vehicle that is owned by the individual or under the individual’s control
+at any time in which:
+a.
+
+The handgun is in plain view, unless carried in a belt holster or shoulder holster; or
+
+b.
+
+The individual is:
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 1 of 5
+
+Effective Date: July 06, 2016
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 512 - Electronic Control Devices",
+        content: `Procedure 512 – Electronic Control Devices
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+
+Forms Referenced in Procedure:
+
+CTA
+
+PSC, PNC, TEC, FCD, IDC
+
+Effective Date:
+Prior Revision Date:
+
+December 21, 2020
+March 19, 2018
+
+Reviewed Date:
+
+December 31, 2020
+
+Number of Pages:
+
+SAPD Form #62
+SAPD Form #62-RFI
+BCHD #60-1
+MS-DC #17
+
+Related Procedures:
+
+9
+
+309, 501, 601
+
+.01 INTRODUCTION
+This procedure provides officers with guidelines necessary for the safe carrying, handling, deployment, and use of
+Electronic Control Devices (ECD).
+.02 POLICY
+A. Officers are authorized to use an ECD to affect an arrest if physical force has proven ineffective or are not a reasonable
+option based upon the circumstances.
+B. Officers are responsible for the safekeeping and appropriate use of their ECD.
+C. All officers issued an ECD shall carry it in accordance with Procedure 309, “Weapons.”
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Air Cartridge
+Electronic Control Devices (ECD)
+Ready RoomSpark Display
+
+Anti-Felon Identification (AFID)
+Neuro-Muscular Incapacitation (NMI)
+
+Drive Stun Mode
+Probe Mode
+
+.04 APPROVAL TO CARRY ECD
+A. An officer desiring to carry an ECD while on or off-duty must:
+1. Successfully complete a training course at the Training Academy in the use of the ECD; or
+2. Present a certificate of training from a TCOLE approved ECD training course and demonstrate proficiency in the
+use of the ECD to the Training Academy Commander or his designee.
+B. Upon satisfactorily demonstrating proficiency in the use of the ECD, the Training Academy Commander or designee:
+1. Recommends approval or disapproval for the officer to carry the ECD while on or off-duty; and
+2. Routes a written report of the approval or disapproval to the officer’s division commander.
+C. The officer's division commander makes a written recommendation approving or disapproving the carrying of the
+ECD to the Training Academy Section and the Office of the Chief.
+D. The Chief of Police makes the final decision to approve or disapprove the carrying of the ECD.
+
+General Manual Procedures – Section 500 Arrest Procedures
+
+Page 1 of 9
+
+Effective Date: December 21, 2020
+Reviewed Date: December 21, 2020
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 601 - Prisoners",
+        content: `Procedure 601 – Prisoners
+
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+PSC, PNC
+TSC, STC, MCC, SSB, CTA
+
+Number of Pages:
+
+SAPD Form #52-X
+SAPD Form #62
+SAPD Form #91
+BCHD Form #60-1
+BCJPD Form #100
+MS-DC Form #17
+
+Related Procedures:
+
+December 5, 2019
+December 18, 2017
+17
+
+602, 606, 611, 804
+
+.01 INTRODUCTION
+This procedure establishes guidelines for the proper handling of prisoners by officers from the initial point of arrest to
+booking at the proper detention facility.
+.02 POLICY
+When handling prisoners, officers do so with the highest regard for the legal process, the individual’s rights, the
+prisoner’s safety, and the safeguarding of personal property.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Body Cavity Search
+Field Custody Prisoner
+Hog-Tying
+Processing Room
+Transgender
+
+Contraband
+Frisk
+Intersex
+Proxy
+Weapon
+
+Dangerous Object
+Gender Identity
+Positional Asphyxia
+Search
+
+Detention Facility
+Gender Non-Conforming
+Processing
+Strip Search
+
+.04 CLASSIFICATION OF PRISONERS
+A. Bexar County Jail prisoners;
+B. City of San Antonio Detention Center prisoners;
+C. Bexar County Juvenile Detention Center prisoners; and
+D. Field custody prisoners.
+.05 HANDCUFFING OF PRISONERS
+A. Officers use discretion in deciding whether to handcuff certain prisoners prior to transport to a detention facility,
+medical facility, or a law-enforcement facility.
+1.
+
+Discretion is guided by prudent judgment, incorporating sex, age, temperament, disability, and the type of
+offense committed.
+
+2.
+
+Although discretion is allowed by this procedure, officers are not relieved of their duty to prevent prisoners
+from escaping, accessing weapons, or attacking others.
+
+B. The following prisoners are handcuffed without exceptions:
+1.
+
+Prisoners to be charged with felony offenses;
+
+2.
+
+Prisoners who were involved in violent incidents;
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 17
+
+Effective Date: December 5, 2019
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 602 - Juveniles",
+        content: `Procedure 602 – Juveniles
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+MCC
+PSC, PNC, TSC, STC, SSB
+
+Number of Pages:
+
+SAPD Form #66-E
+
+Related Procedures:
+
+September 19, 2018
+February 17, 2015
+4
+505, 507, 601,610, 702
+
+.01 INTRODUCTION
+This procedure establishes departmental guidelines for handling juveniles in accordance with Title 3 of the Texas Family
+Code, effective January 1, 1996.
+.02 POLICY
+A. The San Antonio Police Department investigates all criminal activities alleged to have been committed by juveniles
+and, when applicable, presents completed investigations to the District Attorney’s Office for prosecution.
+B. The San Antonio Police Department is also committed to the development and perpetuation of programs designed to
+prevent and control juvenile delinquency. To accomplish this goal, all components and personnel of the Department
+shall share the responsibility for participating in or supporting the Department’s juvenile operations function.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Child
+Intoxicated
+Under the Influence
+
+Custodian
+Juvenile
+
+Custody
+Parent
+
+Guardian
+Status Offender
+
+.04 ARREST AND/OR CUSTODY OF JUVENILES
+A. All officers, when dealing with juvenile offenders, shall use the least coercive remedies among reasonable
+alternatives. Remedies which should be considered are:
+1.
+
+Outright release;
+
+2.
+
+Issuance of citations or summonses; and
+
+3.
+
+Referral to juvenile court.
+
+B. Juveniles may be arrested under any of the following circumstances:
+1.
+
+Pursuant to an order of the Juvenile Court under the provisions of the Family Code;
+
+2.
+
+Pursuant to the laws of arrest in state or federal statute;
+
+3.
+
+Conduct that violates either the penal laws of the State of Texas or the penal ordinances of any political
+subdivision of this state.
+
+C. Juveniles may be taken into custody under the following circumstances:
+1.
+
+To determine whether the juvenile is alleged to have been harmed or is in danger of being harmed; or
+
+2.
+
+As status offenders as defined in the Family Code, Section 51.02(15).
+
+D. Juveniles are arrested and/or taken into custody in accordance with GM Procedure 601, Prisoners.
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 4
+
+Effective Date: September 19, 2018
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 603 - Protective Orders / Conditions of Bond",
+        content: `Procedure 603 – Protective Orders/Conditions of Bond
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+IDC
+PSC, PNC, TSC,TSD, FCD, SSB
+
+Number of Pages:
+
+SAPD Form #2089-DV
+SAPD Form #2089-TA
+
+Related Procedures:
+
+March 19, 2018
+December 21, 2016
+8
+601, 604
+
+.01 INTRODUCTION
+A. This procedure establishes guidelines for the proper handling of protective orders and conditions of bond, from their
+entry into the computer system to the disposition of violations through reports and arrests.
+B. The Texas Penal Code, Section 25.07, Violation of Certain Court Orders or Conditions of Bond in a Family
+Violence, Child Abuse or Neglect, Sexual Assault or Abuse, Stalking or Trafficking Case, authorizes the warrantless
+arrest of an individual in violation of a Protective Order, Magistrate’s Order for Emergency Protection, a Temporary
+Protective Order, Condition of Bond in a Family Violence Case or Violation of a Protection Order issued out of
+another jurisdiction when an officer has probable cause to believe the offense has occurred. Refer to Texas CCP
+Chapter 14 for additional guidance.
+C. This procedure is a cooperative effort between the Patrol Division, Special Victims Unit, the Victims Advocacy
+Office, the Crime Scene Unit, the Service and Security Agents Office, and The Bexar County District Attorney’s
+Office in order to:
+1.
+
+Enable service providers the ability to serve a greater number of victims of family violence;
+
+2.
+
+Provide better customer services to victims of family violence by enabling the victims to come to the substation
+nearest their home to report violations;
+
+3.
+
+Reduce the number of family violence cases by early law enforcement intervention as well as provide services
+to victims of family violence in a more timely manner; and
+
+4.
+
+Protect victims from the likelihood of future victimization through proper enforcement of protective orders and
+conditions of bond.
+
+5.
+
+Ultimately, enable the San Antonio Police Department to file more cases for family violence and violation of
+protective orders with the Bexar County District Attorney’s Office.
+
+D. If, during the investigation of a family disturbance situation, it is determined a violation of a protective order or a
+condition of bond has occurred, Subsection .06 of this procedure will be followed.
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Family Violence
+
+Household
+
+.03 TYPES OF COURT ORDERS PROHIBITING FAMILY VIOLENCE, SEXUAL ASSAULT OR ABUSE, STALKING
+OR TRAFFICKING
+A. Temporary Protective Order A temporary order entered by a court when the court finds from the information
+contained in an application for protective order there is a clear and present danger of family violence Sexual assault
+or abuse, stalking, trafficking, or other harm to the applicant sexual assault or abuse may enter a temporary order,
+also known as “Temporary Ex-Parte Order”, for the protection of the applicant or any other member of the family or
+household of the applicant. This temporary protective order will only be enforceable when it has been served on the
+respondent. Verification of service is confirmed through the Communications Unit, information channel.
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 9
+
+Effective Date: March 19, 2018
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 604 - Family Disturbances/ Violence",
+        content: `Procedure 604 – Family Disturbances/Violence
+
+Office with Primary Responsibility:
+Office(s) with Secondary
+Responsibilities:
+
+Forms Referenced in Procedure:
+
+Effective Date: December 11, 2023
+Prior Revision Date: April 18, 2022
+
+IDC
+
+PSC, PNC, CRT, SSB, CIA
+
+Number of Pages: 14
+
+SAPD Form #2089-DV
+SAPD Form #2089-TA
+Danger Assessment for Law Enforcement (DA-LE)
+SAPD Form #2089-PSA
+SAPD Form #2089-SS
+
+Related Procedures:
+
+314, 401, 402, 408, 601, 603,
+606, 611, 701, 703, 708, 908
+
+.01 INTRODUCTION
+Preservation of the peace in family disturbances is perhaps the most sensitive area of law enforcement and presents the
+greatest challenge and risk to officers. To be effective, officers must not only be cautious, but also be firm in their actions
+and courteous as well as tactful in their manner. Therefore, this procedure will give officers guidelines in the proper
+handling of family disturbances and family violence incidents.
+.02 POLICY
+It is the policy of the San Antonio Police Department to respond to requests for assistance in family disturbance or
+family/dating violence situations in order to quell potential violence by protecting potential victims from harm, advising
+them of their rights, offering follow-up and social service information and services, and, when necessary, apprehending
+criminal offenders.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Administrative Review
+Dating Violence
+Probable Cause
+
+Child
+Family Disturbance
+
+Danger Assessment for Law Enforcement (DA-LE) -New
+scoring/reporting system which replaces the SAPD Form
+#2089-TA and will be used at the East, South, and West
+Substations.
+
+Child Abuse
+Family Violence
+
+Dating Relationship
+Privet Premises
+
+SAPD Form #2089-TA - Current scoring/reporting system
+to be used at the North, Central and Prue Substations until
+further notice.
+
+.04 DISCUSSION
+A. The San Antonio Police Department continues to improve our response to family violence using a victim centered,
+trauma informed care approach. SAPD is committed to the safety of the victim(s) and family members who are
+exposed to family violence situations. Victim safety begins with the arrest of the offender when possible, allowing a
+window of opportunity for the victim to arrange for their safety. Through collaboration with Metropolitan Health
+District (Metro Health) and other partner agencies, additional services are available for the long-term safety and wellbeing of the victim.
+B. The Texas Code of Criminal Procedure, Article 14.03 (a) (4) authorizes peace officers to arrest without warrant, those
+persons who the peace officer has probable cause to believe have committed an offense involving family violence. It
+is not necessary the family violence offense occur within the presence of the officer. Additionally, the warrantless
+arrest can occur at a place and time other than the location of the offense if the arrest can be made in a reasonable
+timeframe after the assault occurred, generally within a timeframe between 2-4 hours absent extenuating
+circumstances. Beyond this timeframe, officers should consider obtaining an arrest warrant as later described in this
+procedure.
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 14
+
+Effective Date: December 11, 2023
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 605 - Miscellaneous Offenses and Complaint Calls",
+        content: `Procedure 605 – Miscellaneous Offenses and Complaint Calls
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+SSO
+PSC, PNC, TSC, FTC, IDC
+
+Number of Pages:
+
+SAPD Form #200-IA1
+SAPD Form #300
+SAPD Form #BD-1
+
+Related Procedures:
+
+July 31, 2010
+October 01, 2009
+9
+402, 601
+
+.01 INTRODUCTION
+This procedure establishes guidelines, while allowing officers maximum discretion, for the handling of a variety of
+miscellaneous offenses and complaint calls which make up a large percentage of the officers' workload. The procedure
+also establishes a process for the reporting of criminal offenses coming to the attention of Department members.
+.02 ANIMALS
+A. Complainants reporting noisy animals are handled under Section .08, Noise Disturbances, of this procedure.
+B. Deceased animals are removed from public property by the Public Works Department (complainants should call 311
+for assistance). Property owners retain the responsibility of removing dead animals from their property.
+C. The Animal Care Services Department has the authority to impound any animal which:
+1.
+
+Is roaming at large;
+
+2.
+
+Is exhibiting symptoms of rabies:
+
+3.
+
+a.
+
+Appearance of choking;
+
+b.
+
+Dropping of the lower jaw (in dogs);
+
+c.
+
+Inability to swallow, leading to drooling and foaming of saliva (i.e., "foaming at the mouth"); or
+
+d.
+
+Paralysis of jaw, throat, and chewing muscles.
+
+Has been abandoned by its owner:
+a.
+
+Animals with no identification;
+
+b.
+
+Animals which appear malnourished (exceptionally skinny, with extreme definition of the rib and hip area);
+
+4.
+
+Is described in a warrant for seizure;
+
+5.
+
+Has been declared dangerous by Animal Care Services;
+
+6.
+
+Is in danger by confinement in a parked vehicle; or
+
+7.
+
+Is being treated cruelly by its owner and confirmed by Animal Care Services Department.
+
+D. Reports of cruelty to animals require uniformed officers to initially investigate the alleged offenses.
+1.
+
+In substantiated cases, the officer requests an Animal Cruelty Specialist from Animal Care Services Department
+to respond to the scene and take over the investigation.
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 9
+
+Effective Date: July 31, 2010
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 606 - Impounding Property",
+        content: `Procedure 606 – Impounding Property
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+SSB
+PSC, PNC, TSC, TSD, FCD, IDC
+
+Number of Pages:
+
+Property Disposition
+Authorization Form
+SAPD Form #113
+SAPD Form #113-2R
+SAPD Form #113-3
+
+Related Procedures:
+
+January 4, 2023
+November 01, 2021
+9
+
+505, 607, 807
+
+.01 INTRODUCTION
+A. This procedure governs the custody and disposition of any property, except motor vehicles, that enters into the
+possession of the San Antonio Police Department.
+B. The confiscatory and custodial responsibilities of the San Antonio Police Department are used as a basis for any
+impoundment of property by officers of the Park, Airport and Police Department.
+.02 POLICY
+All property coming into the custody or control of any officer, regardless of the classification, is placed in the Property
+Room no later than the end of the officer's tour-of-duty, unless disposed of in accordance with Section .14 of this
+procedure or GM Procedure 607, Impounding Vehicles.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Evidence
+Property
+
+Extensions
+Personal Property
+
+Found Property
+Property Tag
+
+Holding Area
+Recovered Property
+
+Impounding
+
+.04 PROPERTY ROOM
+A. The Property Room is located at 555 Academic Court.
+B. The Property Room Customer Service Window will be open to the public Monday through Friday from 0745 hrs. to
+1530 hrs. and closed on Saturday and Sunday including City holidays.
+C. Officers have access to secure property and evidence during hours the Property Room is open to the public. During
+hours when the Property Room is closed, officers can secure property and evidence in the holding area located in the
+Municipal Court Building at 401 S. Frio Street.
+D. Officers may utilize the Found Property Storage Units at the Patrol Substations in accordance with Section .19 of this
+procedure. Each Storage Unit has similar supplies to the property room and officers will follow the same procedures
+as leaving property at the Property Room.
+.05 CLASSIFICATIONS OF IMPOUNDED PROPERTY
+Although currency and firearms merit special treatment, impounded property is classified into one of the following
+categories:
+A. Evidence;
+B. Found property;
+C. Personal property; or
+D. All reclassifications of impounded property must have prior approval by a supervisor.
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 10
+
+Effective Date: January 4, 2023
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 607 - Impounding Vehicles",
+        content: `Procedure 607 – Impounding Vehicles
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+SSB
+PSC, PNC, TSC, SSD, MCC
+
+Number of Pages:
+
+SAPD Form #13
+SAPD Form #113
+SAPD Form #113-2R
+SAPD Form #114
+SAPD Form #2091-A
+
+Related Procedures:
+
+November 10, 2015
+December 20, 2010
+8
+
+504, 509, 602, 606, 701
+
+.01 INTRODUCTION
+This procedure establishes guidelines for the impoundment of motor vehicles.
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Certificate
+Evidence of Financial Responsibility
+Impounded
+
+Insurance
+Motor Vehicle
+Uninsured Driver
+
+Downtown Area
+Financial Responsibility
+
+Minimum Coverage
+Proof of Insurance
+
+.03 CLASSIFICATION OF IMPOUNDED VEHICLES
+A. Impounded for forfeiture;
+B. Impounded for evidence;
+C. Impounded as prisoner's personal property;
+D. Impounded for traffic violations;
+E. Impounded as an abandoned vehicle;
+F.
+
+Impounded as a recovered stolen vehicle; and
+
+G. Impounded from crash scene.
+.04 STORAGE FACILITIES
+A. Growdon Storage Facility – Located at 3625 Growdon Road. This facility receives all impounded vehicles, except
+vehicles impounded for downtown area parking violations.
+B. Storage facility belonging to the holder of the current wrecker contract. This facility receives vehicles impounded
+for downtown area parking violations.
+.05 EXCLUSIVE AUTHORITY TO TOW VEHICLES
+A. Officers have authority to impound any vehicle found parked in violation of any city ordinance related to traffic or
+parking, abandoned in a public place, or constitutes a traffic hazard.
+B. Exclusive authority to tow non-drivable vehicles involved in crashes is given by city ordinance to the company
+holding the current wrecker contract.
+C. Officers have the authority to impound the vehicle of any person driving without state mandated minimum auto
+liability insurance coverage. This policy allows officers the option of impounding the vehicle if a motorist, insured
+or not, cannot produce the required insurance documentation before being towed.
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 8
+
+Effective Date: November 10, 2015
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 608 - Stolen Vehicle Recovery NCIC/TCIC Cancellation",
+        content: `Procedure 608 – Stolen Vehicle Recovery NCIC/TCIC Cancellation
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+IDC
+PSC, PNC, TEC, SSB
+
+Number of Pages:
+
+SAPD Form SVA-180, SAPD Form
+#113-2R
+
+Related Procedures:
+
+December 11, 2023
+July 06, 2016
+3
+607, 701
+
+.01 INTRODUCTION
+This procedure establishes a systematic process for the documentation of recovered stolen vehicles, the expedient return
+of the vehicle to the rightful owner, evidence collection, and to ensure the cancellation of stolen vehicles in the local, state,
+and national computer system.
+.02 POLICY
+Confirmation of stolen vehicle recoveries is vital to ensure the vehicle is properly returned to the rightful owner.
+Therefore, it is the policy of the San Antonio Police Department to dispatch an officer to the location of the complainant
+and/or recovery to provide for this confirmation, when necessary.
+.03 VEHICLE THEFT REPORT
+A.
+
+Officers responding to a theft of vehicle report will:
+1.
+
+Not take the report over the phone.
+
+2.
+
+Confirm the ownership of the vehicle with a registration check; or
+
+3.
+
+Take a report from any person who had legal control and custody of the vehicle if they have a valid identification.
+
+4.
+
+Call the area service agent to have the vehicle entered as stolen in the NCIC/TCIC system.
+a. The service agent will check repo files before activating a stolen in the NCIC/TCIC system.
+
+5.
+
+Request a case number in the CAD system and submit an offense report in Mark43.
+
+6.
+
+Have the reporting person fill out SAPD Form SVA-180, Stolen Vehicle Affidavit, and route the form to the follow
+up unit.
+
+.04 RECOVERIES AND DISPOSITION OF VEHICLE
+A.
+
+Officers recovering stolen vehicles reported stolen under an SAPD case number will use the original case number and
+the original “CFS” number for the Offense Modifying Supplement (OMS) and reference the current CFS number in
+the narrative of the report.
+1.
+
+Officers recovering a stolen vehicle will attempt to contact the vehicle owner/reporting person. If the
+owner/reporting person cannot be contacted, Officers shall attempt to leave a voicemail notification of the
+recovery. All actions related to this notification will be documented in the narrative of the report. If not released
+at the scene, the vehicle will be impounded in compliance with GM Proc. 607, Impounding Vehicles. In all cases
+where the vehicle is released to the owner, SAPD Form #113-2R, Release of Property (which is green in color)
+is completed in duplicate. The original is placed in the report receptacle at the substation; the other is given to
+the complainant.
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 3
+
+Effective Date: December 11, 2023
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 609 - Emergency Vehicle Response and Foot Pursuits",
+        content: `Procedure 609 – Emergency Vehicle Response And Foot Pursuits
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+PSC, PNC, TSC, TSD, FCD, IDC
+CTA
+
+Number of Pages:
+
+SAPD Form #166 AR
+
+Related Procedures:
+
+December 21, 2016
+June 18, 2014
+3
+403, 620
+
+.01 INTRODUCTION
+This procedure establishes guidelines for officers in situations necessitating the use of emergency vehicles for emergency
+response.
+.02 POLICY
+A. The Department recognizes its responsibility to apprehend criminals and to respond in an expedient manner to
+requests for immediate assistance to save a life or to prevent a victim from sustaining serious injury.
+B. Officers, in the emergency operation of emergency vehicles, exercise due regard for the safety of all persons,
+constantly aware no assignment is too important and no tasks are to be expedited with such emphasis that the basic
+principles of safety are jeopardized.
+.03 DISCUSSION:
+A. The San Antonio Police Department requires its officers to exhibit a sense of prudent judgment derived from
+departmental training, acquired knowledge, skills, and ability in the operation of all emergency vehicles.
+B. The sanctity of human life and individual liberties are immeasurable elements of modern society which vests police
+officers with the responsibility for the preservation and protection of its paramount values. In the pursuit of this
+responsibility, officers maintain the understanding that protection of property and apprehension of criminal
+offenders is subservient to the protection of life, including their own.
+.04 TERMINOLOGY (For specific use within this procedure, see Glossary)
+City Vehicle
+Code-Three Emergency Call
+Marked Police Vehicle
+
+Code-One Call
+Emergency Vehicle
+Police Vehicle
+
+Code-Two Emergency Call
+Emergency Operation
+
+.05 ENVIRONMENTAL FACTORS
+Officers operating emergency vehicles must exercise sound judgment, carefully consider the facts, and weigh the
+seriousness of the offense against the consequences of jeopardizing the safety of others by continually evaluating the
+following existing environmental factors:
+1.
+
+Time of day and day of week;
+
+2.
+
+Lighting conditions;
+
+3.
+
+Volume of traffic, both pedestrian and vehicular;
+
+4.
+
+Type of roadway;
+
+5.
+
+Condition of the roadway (i.e., dry, wet, paved, or gravel);
+
+6.
+
+Weather conditions (i.e., clear, overcast, rain, or fog);
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 3
+
+Effective Date: December 21, 2016
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 610 - Missing Persons",
+        content: `Procedure 610 – Missing Persons
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+MCC
+PSC, PNC, TSC, STC
+
+Number of Pages:
+
+SAPD Form #2-1
+SAPD Form #2-3
+
+Related Procedures:
+
+August 24, 2020
+July 06, 2016
+5
+None
+
+.01 INTRODUCTION
+This procedure establishes guidelines for reporting missing persons, entering information into the computer system, and
+the canceling of missing person reports.
+.02 POLICY
+A. The San Antonio Police Department investigates all reports of persons who are missing from or who were last seen in
+the City of San Antonio. The Department's responsibilities include investigations into possible violations of the Texas
+Penal Code and the Texas Family Code.
+B. The Department also assists citizens in attempting to locate persons who are not missing, but who may be temporarily
+lost (i.e., motorists from out of town who are following each other and who become lost due to heavy traffic conditions
+or overdue motorists).
+.03 DEFINITIONS
+A. "Lost Persons" means those persons temporarily separated from their party or relatives.
+B. "Missing Person" means:
+1.
+
+A person seventeen (17) years old or younger who has disappeared;
+
+2.
+
+A person eighteen (18) years or older whose disappearance appears to be non-voluntary; or
+
+3.
+
+An elderly or confused person who has disappeared.
+
+C. "Mental Health Facility Missing Persons" means a person who is receiving inpatient intellectual developmental
+disorder services or court ordered inpatient mental health services in a mental health facility and that person leaves
+the facility without notifying the facility, or without the facility's consent.
+.04 LOST PERSONS
+A. When attempting to locate lost persons, the officer(s) assigned to the call assists the reporting party in locating the
+person who is lost.
+B. Should it become apparent the person cannot be located without further assistance, the officer notifies a supervisory
+officer concerning the situation, as a more detailed search of the area may be necessary.
+C. A supervisory officer makes a decision regarding any further disposition of the case.
+.05 REPORTING MISSING PERSONS
+A. All reports of missing persons are recorded on SAPD Forms No. 2-1, Offense Report, and No. 2-3, Offense
+Continuation.
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 5
+
+Effective Date: August 24, 2020
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 611 - Mentally Ill Persons",
+        content: `Procedure 611 – Mentally Ill Persons
+Office with Primary
+Responsibility:
+
+FAS
+
+Effective Date:
+Prior Revision Date:
+
+Office(s) with Secondary
+Responsibilities:
+
+CTA
+
+Number of Pages:
+
+Forms Referenced in Procedure:
+
+SAPD Form #127-ED
+
+Related Procedures:
+
+December 21, 2020
+August 24, 2020
+10
+502, 802
+
+.01 INTRODUCTION
+Officers may encounter persons who exhibit symptoms of mental illness in a variety of community settings. This procedure
+is intended to assist officers in the evaluation, assessment, and disposition of persons (both adults & juveniles) with mental
+illness who are involved in a mental health crisis.
+.02 DISCUSSION
+A. Police officers must understand persons with mental illness may require professional assistance and the officers’
+actions may affect the immediate behavior of a person with mental illness.
+B. Officers should attempt to carefully evaluate individuals involved in a mental health crisis and determine the best
+course of action to take in order to resolve the situation according to the guidelines established in this procedure and
+GM Procedure 802, Unusual Occurrences and Critical Incidents.
+C. The Department has implemented a program which provides officers the opportunity to receive specialized training
+in handling mental health crises. Officers who complete this training become certified as Crisis Intervention Team
+(CIT Officers). CIT Officers are trained in using crisis intervention techniques and skills to handle incidents involving
+persons with mental illness.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Credible Person
+
+Order of Protective
+Custody
+
+Critical Incident
+
+Center for Health Care
+Services
+
+Mental Health Crisis Call
+
+Mental Health Facility
+
+Mentally Ill Person
+
+Person with Mental Illness
+
+Local Mental Health
+Authority
+
+Notification of Emergency
+Detention
+
+Warrantless Emergency
+Detention
+
+Mental Illness Weapons
+Seizure
+
+Escalated Mental Health
+Crisis Call
+.04 RECOGNITION OF MENTAL ILLNESS
+A. Police officers routinely encounter situations involving persons exhibiting unusual behavioral characteristics, ranging
+from passive to violent. Police officers must recognize symptoms which may indicate the existence of mental illness.
+B. The following are some of the symptoms commonly associated with persons with mental illness:
+1. Drastic mood swings or behavioral changes;
+2. Loss of memory;
+3. Thoughts of being plotted against or delusions of grandeur;
+4. Speaks to himself, hears voices, sees visions, or smells strange odors;
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 11
+
+Effective Date: December 21, 2020
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 612 - Deaf or Hearing-Impaired Persons",
+        content: `Procedure 612 – Deaf or Hearing Impaired Persons
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+SSO, IVA
+PSC, PNC, TSC, FTC, IDC
+
+Number of Pages:
+
+SAPD Form #12 HI-A
+SAPD Form #12 HI-T
+
+Related Procedures:
+
+December 5, 2019
+July 31, 2010
+4
+None
+
+.01 INTRODUCTION
+This procedure establishes guidelines which assist officers in recognizing and providing for the special needs of deaf and
+hard of hearing persons.
+.02 POLICY
+It is the policy of the San Antonio Police Department to require its officers to be able to communicate with the deaf and
+hard of hearing community through the use of DeafLink, written English, printed cards, signers, interpreters, or
+intermediaries in order to protect the constitutional rights and rights guaranteed under federal law for the deaf and hard
+of hearing community. Under the Americans with Disabilities Act (ADA), people who are deaf or hard of hearing are
+entitled to the same services law enforcement provides to anyone else. An officer must attempt to relay the same depth of
+information, and give the same opportunity for exchange with the deaf person that would be given a hearing person in
+the same situation, no matter what service is being provided.
+.03 DISCUSSION
+A. In determining what type of auxiliary aid and service is necessary, a public entity shall give primary consideration to
+the requests of the individual with disabilities.
+B. Deaf Link is a Video Remote Interpreting (VRI) service available at all six substations and at Headquarters. An
+officer, a certified ASL interpreter, and the victim/suspect/witness that is deaf or hard of hearing can communicate
+through this service. Qualified interpreters can be provided through DeafLink 24 hours a day, 7 days a week.
+C. Officers, in their normal course of duties, may encounter persons who are deaf or hard of hearing. These persons
+may sound unusual due to speech which is slurred or unintelligible. In addition, they may have equilibrium problems
+which could affect their balance and ability to walk. These physical characteristics can vary and also describe
+persons who are impaired by alcohol, drugs, or other physical handicaps. Therefore, it is extremely important for
+officers to distinguish deaf and hard of hearing persons from persons with other impairments.
+D. When officers first realize they are in contact with a deaf or hard of hearing person, they should attempt to
+communicate with them by any means available: talking, writing, sign language, or any combination of the three (3).
+Often, one or more of these forms of communication will be adequate when communicating with a deaf or hard of
+hearing person. However, in some circumstances, talking and writing will be insufficient. When communication is
+complex and/or lengthy, the individual who is deaf or hard of hearing should be escorted to the nearest DeafLink
+location, or provided with a qualified on-site interpreter.
+E. When deaf or hard of hearing persons come in contact with officers, the first action they often take may be to obtain
+a pencil and paper to write out what they wish to communicate or to write answers to any questions they may be
+asked. The action of reaching for a pencil and paper should not be taken as an offensive or dangerous move, but
+simply an instinctive move in order for the deaf or hearing impaired person to communicate.
+F.
+
+The written communication used by many deaf or hard of hearing persons is very different from what officers are
+familiar with or use in their daily work. A hearing impaired person should not be misjudged because his grammar
+might seem to be incorrect or incomplete. Their written or signed language is the way they were taught to
+communicate and is normal for a deaf or hearing impaired person.
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 4
+
+Effective Date: December 5, 2019
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 615 - Exposure to Communicable Diseases and Other Public Health Risks",
+        content: `Procedure 615 – Exposure To Communicable Diseases and Other
+Public Health Risks
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+TSC
+PSC, PNC, FTC, IDC, SSO
+
+Number of Pages:
+
+SAPD Form #CD 1
+SAPD Form #CD 2
+SAPD Form #CD 3
+
+Related Procedures:
+
+July 31, 2010
+October 01, 2009
+9
+601, 916
+
+.01 INTRODUCTION
+A. This procedure establishes guidelines for members to follow in the event they are exposed to blood-borne pathogens,
+infectious materials, communicable diseases, or WMD/Hazardous Materials.
+B. This procedure also establishes guidelines for officers on how to limit unnecessary contact with persons suspected of
+having contagious diseases or parasites, the proper methods for disposal of contaminated items, the decontamination
+of clothing and vehicles, and the handling of suspected contaminated crime scenes. In the event of deployment of
+the Personal Protective Equipment (PPE) Kit, this procedure will supplement the applicable procedures established
+in Section 800 (Emergency Operations Guidelines) of the General Manual.
+.02 POLICY
+A. All officers, while exercising extreme caution when handling individuals having or suspected of having contagious
+diseases or parasites, will not intentionally ignore or avoid contact with those individuals when such contact is
+necessary in the performance of a lawful objective.
+B. Where reasonable care and precautions have been taken, officers shall not refuse to transport or communicate with
+individuals having or suspected of having contagious diseases or parasites, or investigate situations or scenes where
+contaminated body fluids or evidence is present.
+C. Supervisory officers shall strive to ensure the safety of all officers in situations involving the possible presence of
+contagious diseases, parasites, or infectious materials and evidence through the utilization of all available
+precautions and barriers prior to ordering officers into such situations.
+.03 DISCUSSION
+Contagious diseases such as acquired immune deficiency syndrome (AIDS), viral hepatitis, tuberculosis, and others are
+spreading through our society at an alarming rate. With the increase and spread of these diseases and the continued
+presence of various parasites comes the increased possibility officers will contact individuals suspected of or infected
+with a contagious disease or parasite while in the performance of their duties. Therefore, officers should remain aware
+any citizen can be infected with a contagious disease or parasite and should follow the provisions of this procedure to
+minimize the possibility of being infected with a contagious disease or parasite.
+.04 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Blood-borne Pathogens
+Infectious Materials
+
+Communicable Disease
+Occupational Exposure
+
+Exposure Incident
+Viral Hepatitis
+
+HIV
+
+.05 RESPONDING TO INITIAL REQUESTS FOR SERVICE
+A. Officers responding to requests for police services who come into contact with individuals showing outward signs or
+manifestations of disease or parasites, or individuals suspected of having a contagious disease or parasite, should
+avoid unnecessary physical contact with the persons, other than for the following reasons:
+1.
+
+The rendering of emergency first aid;
+
+2.
+
+To stabilize a life-threatening situation; or
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 9
+
+Effective Date: July 31, 2010
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 618 - Racial Bias Profiling Immigration Policy",
+        content: `Procedure 618 – Racial/Bias Profiling/Immigration Policy
+Office with Primary
+Responsibility:
+
+Effective Date:
+Prior Revision Date:
+
+PSC, PNC
+
+Office(s) with Secondary
+Responsibilities:
+
+TEC, FCD, IDC, COS, CIA
+
+Number of Pages:
+
+Forms Referenced in Procedure:
+
+SAPD Form #2-2
+SAPD Form 2-3
+SAPD Form #200-OR
+SAPD Form #87-J15
+SAPD Form #24-1A
+SAPD Form #2055 GCD
+
+Related Procedures:
+
+September 12, 2022
+September 19, 2018
+10
+
+314 508
+
+.01 INTRODUCTION
+This procedure reaffirms the San Antonio Police Department’s commitment to unbiased policing in all its encounters
+between officers and any persons; and to establish procedures to ensure public confidence and mutual trust through the
+provision of services in a fair and equitable fashion; and to protect our officers from unwarranted accusations of misconduct
+when they act within the dictates of Department policy and the law.
+.02 POLICY
+A. It is the policy of the San Antonio Police Department to provide equal protection to all citizens. Toward this end,
+police officers employed by the San Antonio Police Department are strictly prohibited from engaging in racial/bias
+profiling in any aspect of law enforcement-initiated actions.
+B. Police Officers shall not use race, national origin, citizenship, religion, ethnicity, age, gender, gender expression,
+gender identity, sexual orientation, or physical or mental disability for a law enforcement-initiated action, except to
+determine whether a person matches a specific description of a particular suspect.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Field Contact
+Law Enforcement-Initiated Action
+Racial/Bias Profiling
+
+Gender Expression
+Motor Vehicle Stop
+Reasonable Suspicion
+
+Gender Identity
+Pedestrian Stop
+Search
+
+Interview
+Probable Cause
+Stop and Frisk
+
+.04 RESPONSIBILITIES
+A. Each officer has a responsibility for preventing racial/bias profiling. Officers must remain customer-oriented, while
+also considering their safety and the safety of others. Officers should:
+1.
+
+Extend a customary greeting to each person they stop or detain;
+
+2.
+
+Identify themselves by name;
+
+3.
+
+Explain the reason for the stop or detention;
+
+4.
+
+Afford the person the opportunity to provide their explanation of their behavior;
+
+5.
+
+Politely ask for the person’s identification; and
+
+6.
+
+Remain courteous and project a professional demeanor during the interview or questioning.
+
+B. Officers shall refrain from participating in or encouraging any actions or statements which could be perceived as
+racial/bias profiling. They must document the law enforcement-initiated action and report any acts or perceived acts
+of racial/bias profiling in accordance with Subsection .05B of this procedure.
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 10
+
+Effective Date: September 12, 2022
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 619 - Consulate Notification and Diplomatic Immunity",
+        content: `Procedure 619 – Consulate Notification and Diplomatic Immunity
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+PSC, PNC, TSC, FTC, IDC, SSO
+SAPD Form #CN-01
+SAPD Form #CN-02
+SAPD Form #103-NEN
+
+November 23, 2011
+July 31, 2010
+
+Number of Pages:
+
+4
+
+Related Procedures:
+
+708
+
+.01 INTRODUCTION
+A. This procedure is designed as a guideline to help ensure that foreign governments can extend appropriate consular
+services to their citizens in the United States and to ensure the San Antonio Police Department complies with its
+legal obligations under the Vienna Convention on Consular Relations.
+B. International law requires that law enforcement authorities of the United States extend certain privileges and
+immunities to members of foreign diplomatic missions and consular posts. Most of these privileges and immunities
+are not absolute and law enforcement officers retain their fundamental responsibility to protect and police the
+orderly conduct of persons in the United States.
+.02 CONSULATE NOTIFICATION OF ARRESTED OR DETAINED FOREIGN NATIONALS
+A. The United States is obligated under the Vienna Convention on Consular Relations, international treaties, and
+customary international law, to notify consular officials when foreign nationals are arrested or otherwise detained in
+the United States. The U.S. Department of State does not consider it necessary to follow consular notification
+procedures when a foreign national is detained only momentarily, e.g., during a traffic stop.
+B. After an officer arrests/detains a foreign national, the officer will determine the foreign national’s country of origin.
+Normally, this information is found on the passport or other travel documentation that the foreign national is
+carrying.
+C. Officers will inform the foreign national of his/her right to request that their consulate be notified under the
+following circumstances.
+1.
+
+After the foreign national is arrested; and
+
+2.
+
+Before a detention that may last more than four hours.
+
+D. If the foreign national does not understand English, the officers will provide the foreign national with SAPD Form
+#CN-02, Notice to Foreign National, in his native language and have him circle whether he wants his consular
+official notified. The foreign national should also sign and date SAPD Form #CN-02. SAPD Form #CN-02 can be
+found in the SAPD forms library in several different languages.
+1.
+
+If a foreign national who is under arrest or who may be detained more than four hours asks that such
+notification be made to his consulate, the arresting officer will do so without delay by ensuring notification to
+the nearest consulate or embassy. Consular notification is accomplished by immediately faxing the notification
+notice, SAPD Form #CN-01, Consular Notification, to the nearest consulate or embassy of the foreign
+national’s country. SAPD Form #CN-01 can be found in the SAPD forms library. The fax numbers to the
+nearest consulates and foreign embassies are listed in Part Six: “Foreign Embassies and Consulates in the
+United States” of the Consular Notification and Access Handbook. This handbook can be found in the report
+writing room of the magistrates’ office or at the U.S. Department of State’s website
+http://travel.state.gov/law/consular/consular_753.html.
+
+General Manual Procedures – Section 600 Operations Procedures
+
+Page 1 of 4
+
+Effective Date: November 23, 2011
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 620 - Pursuits and Stop Techniques",
+        content: `Procedure 620 – Vehicle Pursuits and Stop Techniques
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+PSC, PNC, TSC, FCD
+CTA
+
+Number of Pages:
+
+SAPD Form #103
+SAPD Form #103-NEN
+SAPD Form #166 AR
+
+Related Procedures:
+
+February 16, 2023
+July 11, 2018
+13
+501, 504, 607, 609, 708
+
+.01 INTRODUCTION
+This procedure establishes guidelines for officers in situations necessitating the use of emergency vehicles for vehicle
+pursuits and/or utilizing stop techniques.
+.02 POLICY
+A. The Department recognizes its responsibility to apprehend criminals. This is balanced by acknowledging that in the
+course of discharging their duties, officers must do so in a manner reasonable and commensurate to the circumstances
+of each situation.
+B. Officers shall attempt a traffic stop on all suspect vehicles fleeing the scene of or having involvement in a crime,
+absent exigent circumstances that require the officer’s immediate attention.
+C. Officers engage in authorized vehicular pursuits and/or utilize stop techniques only when the benefit of apprehension
+outweighs the risk to the officer and/or the public.
+D. Officers involved in vehicle pursuits and/or utilizing stop techniques while operating emergency vehicles, exercise
+due regard for the safety of all persons, constantly aware no assignment is too important and no tasks are to be
+expedited with such emphasis that the basic principles of safety are jeopardized.
+E. Officers are held accountable for the consequences of reckless disregard for the safety of others and violations of this
+procedure.
+.03 DISCUSSION
+A. The San Antonio Police Department requires its officers to exhibit a sense of prudent judgment derived from
+departmental training, acquired knowledge, skills, and ability in the operation of all emergency vehicles.
+B. The sanctity of human life and individual liberties are immeasurable elements of modern society which vests police
+officers with the responsibility for the preservation and protection of its paramount values. In the vehicle pursuit of
+this responsibility, officers maintain the understanding that protection of property and apprehension of criminal
+offenders is subservient to the protection of life, including their own.
+.04 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Abandon Pursuit
+Boxing-In
+City Vehicle
+Code-Three Emergency Call
+Command Response Vehicle
+Emergency Vehicle
+Managing Supervisor
+Paralleling
+Precision Immobilization Technique (PIT)
+Pursuit
+Roadblock
+General Manual Procedures – Section 600 Operations Procedures
+
+Authorization to Continue Pursuit
+Caravan
+Code-One Call
+Code-Two Emergency Call
+Emergency Operation
+Follow(ing)
+Marked Police Vehicle
+Police Vehicle
+Primary Vehicle
+Ramming
+Secondary Vehicle
+Page 1 of 13
+
+Effective Date: February 16, 2023
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 701 - Crime Scene Duties",
+        content: `Procedure 701 – Crime Scene Duties
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+IDC
+PSC, PNC, TSC, FTC, FTI
+
+Number of Pages:
+
+SAPD Form #45-F9
+SAPD Form #2010
+SAPD Form #4130
+
+Related Procedures:
+
+November 01, 2021
+July 18, 2014
+12
+307, 606, 708
+
+.01 INTRODUCTION
+A. This procedure outlines the duties of members who respond to the scene of a crime or assist in the initial
+investigation of a crime.
+B. This procedure is intended to provide guidelines to help preserve the integrity of the crime scene itself and all
+physical evidence at or near the scene.
+C. This procedure does not prescribe the procedures or methods to be used in the highly specialized area of collection
+of physical evidence by UEDIs/Crime Scene Unit Investigators, nor does it prescribe follow-up investigation
+procedures.
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Digital Evidence
+Major Crime
+
+Digital Storage Device
+Master Video Recording
+
+Handheld Digital Device
+Physical Evidence
+
+Life Threatening Incident
+Video Recording Origin
+
+.03 PHYSICAL EVIDENCE
+A. The scene of any crime is physical evidence in itself. However, the best physical evidence is normally found at or
+near the site of the most critical action taken by the criminal against the property or victim.
+B. In order for physical evidence to be effectively used by the Investigator and the prosecutor, its presence must be
+recognized by the officers at or near the crime scene.
+C. Physical evidence must be properly preserved, recorded, and collected for it to be of use in discovering the facts of a
+crime.
+D. The first officer to arrive at the scene of a crime automatically assumes the responsibility of securing the crime scene
+area from unauthorized intrusions to protect any physical evidence.
+.04 DIMENSIONS OF A CRIME SCENE
+A. No set of definite rules can be applied to defining the dimensions of the scene of a crime.
+B. While it is entirely possible the dimensions of a crime scene will be large, there are usually priority areas readily
+apparent to the trained officer/UEDI or Crime Scene Unit Investigator which should be given immediate protection.
+.05 COMMAND / SUPERVISORY OFFICERS' CRIME SCENE RESPONSIBILITIES
+A. Command Officers
+1.
+
+While the ranking command officer at the scene of any call is in overall charge, he may delegate supervision to
+the assigned sergeant and acts as an overseer. He intervenes only when he observes serious breaches of
+established procedure.
+
+2.
+
+Make periodic checks of major crime scenes to ensure proper procedures are being followed.
+
+General Manual Procedures – Section 700 Investigative Procedures
+
+Page 1 of 12
+
+Effective Date: November 01, 2021
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 702 - Eyewitness Identification",
+        content: `Procedure 702 – Eyewitness Identification
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+IDC
+PSC, PNC, TSC, FTC
+SAPD Form #141
+SAPD Form #141 WLU-F
+SAPD Form #141 WLU-L
+SAPD Form #141 WLU-P
+
+August 31, 2012
+March 01, 2011
+
+Number of Pages:
+
+10
+
+Related Procedures:
+
+None
+
+01. POLICY
+Eyewitness identification is a frequently used investigative tool. This Policy is designed to maximize the reliability
+of identifications, protect innocent persons, and to establish evidence that is reliable and which conforms to
+established legal requirements. This procedure does not apply to situations where the suspect is known to a witness
+due to a previous encounter or encounters, and a single photo is used to link a known suspect to an offense.
+02. PURPOSE
+It is the purpose of this policy to establish department guidelines for identification procedures. The procedures in
+this policy are applicable when a person is developed as a suspect in the incident under investigation.
+03. TERMINOLOGY
+A. Administrator. The person charged with presenting a line-up to a witness.
+B. Assigned Investigator. The officer primarily responsible for investigating an incident.
+C. Blind Administrator. An administrator who does not know the identity of the suspect or the suspect’s
+position in the line-up.
+D. Blind Manner. The presentation of a photographic line-up by either a blind administrator or a blinded
+administrator.
+E. Blinded Administrator. An administrator who may know the identity of the suspect, but does not know the
+suspect’s position in the photographic line-up.
+F.
+
+Field Identification. The presentation of a suspect to a witness following the commission of a crime for
+the purpose of identifying and/or eliminating a possible suspect.
+
+G. Fillers. The photographs used in a photographic line-up whose race, sex, age, height, weight, hair style, and
+general appearance resemble the suspect.
+H. Folder Method. A photographic line-up where the photographs are placed in separate folders or envelopes
+and randomly shuffled prior to presentation so that the Assigned Investigator does not know which
+photograph the witness is viewing.
+I.
+
+Illiterate Person. An individual who speaks and understands English but cannot read and write English.
+
+J.
+
+Interpreter. An individual with the necessary skills that enable them to communicate with an illiterate
+person or a person with limited English proficiency to the degree they can ensure the person clearly
+understands all instructions given then prior to viewing a suspect in any identification procedure.
+
+K. Live Lineup. The presentation of individuals, including a suspect, in person to a witness, usually in a
+manner preventing the individuals from seeing or identifying the witness, for the purpose of identifying
+and/or eliminating suspects.
+General Manual Procedures – Section 700 Investigative Procedures
+
+Page 1 of 10
+
+Effective Date: August 31, 2012
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 703 - Handling of Sexual Assault Complaints",
+        content: `Procedure 703 – Handling of Sexual Assault Complaints
+ffice with Primary Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+IDC
+PSC, PNC, TSC, FTC, SSO
+
+Number of Pages:
+
+SAPD Form #2089-PSA
+
+Related Procedures:
+
+September 28, 2020
+June 1, 2010
+8
+601, 701
+
+.01 INTRODUCTION
+This procedure focuses primarily on the police officer's role in responding to complaints of sexual assault and does not
+outline the technical aspects of a sexual assault investigation, which are contained in the Special Victims Unit standard
+operating procedures and GM Procedure 701, Crime Scene Duties. Sexual Assault is a traditionally underreported crime,
+with estimates that only one in five victims report to the police. The San Antonio Police Department’s goal is to bond with
+the community through a victim-centered, trauma-informed approach, geared toward increasing the likelihood victims will
+report offenses to us. Once an officer understands the effect a traumatic event will have on the victim and their ability to
+recall traumatic events, a true trauma informed approach can begin. Our commitment is evidenced through adopting the
+“Start by Believing” Campaign on behalf of the Department. The goal of this campaign is to improve outcomes for victims
+– one response at a time. When officers display empathy with understanding it will have a positive effect on the victim’s
+recovery process and their cooperation with the investigation.
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Biological Fluid Evidence
+Pseudonym
+Trace Evidence
+
+Intrusionary Removal
+SANE
+Victim Centered Approach
+
+Outcry Witness
+Trauma Informed Investigation
+SAFE
+
+.03 POLICY
+A. The officer treats all victims with compassion, consideration, understanding, and patience while collecting necessary
+evidence and asking required questions.
+B. When talking to the victim, the officer uses language appropriate to the victim's age, intelligence, and emotional
+condition.
+C. The officer uses medical terms when referring to various parts of the body.
+D. The officer does not ask any embarrassing or personal questions which are irrelevant to the investigation. Once the
+elements of the offense have been established and the evidentiary questions are covered, the preliminary interview
+should stop. Victim centered investigations will reduce the number of times a victim must relive the incident through
+multiple interviews.
+E. An officer does not write personal opinion in the offense report. If the victim is reporting a sexual assault, the officer
+should confirm the elements of the offense and document them in the report.
+F. The officer makes no comment pertaining to the victim's behavior in providing the opportunity to be assaulted.
+G. An officer, under no circumstances, undertakes a physical examination of a sexual assault victim.
+H. Officers, dispatched to a hospital or doctor's office to take the report, interview, or investigate the offense, shall leave
+the room when the history is being discussed and during the physical examination of the sexual assault victim. The
+officer will remain with any suspect throughout the SAFE process.
+
+General Manual Procedures – Section 700 Investigative Procedures
+
+Page 1 of 8
+
+Effective Date: September 28, 2020
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 704 - Apparent Sudden Deaths",
+        content: `Procedure 704 – Apparent Sudden Deaths
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+MCC
+PSC, PNC, TSC, STC, SSB
+None
+
+October 03, 2014
+March 01, 2011
+
+Number of Pages:
+
+4
+
+Related Procedures:
+
+701
+
+.01 INTRODUCTION
+A. This procedure establishes processes for officers to report apparent sudden deaths to the Bexar County Medical
+Examiner’s Office and for notifying a victim’s legal next of kin of the apparent sudden death.
+B. Procedures for the investigation of homicides are covered in GM Procedure 701, Crime Scene Duties.
+.02 CLASSIFICATIONS OF APPARENT SUDDEN DEATHS
+A. Deaths Due to Natural Causes (i.e., long term illness, heart attack, stroke, etc.); or
+B. Violent Deaths - deaths caused by intentional acts (i.e., homicide and suicide) or deaths caused by unintentional acts
+(i.e., traffic fatality, drowning, electrocution, falling, etc.).
+.03 PRIMARY RESPONSIBILITIES
+A. The San Antonio Police Department has three (3) primary responsibilities involving the handling of apparent sudden
+deaths:
+1.
+
+Reporting all apparent sudden deaths to the Bexar County Medical Examiner's Office;
+
+2.
+
+Notification of the legal next of kin of the victim; and
+
+3.
+
+Safeguarding the victim's personal property.
+
+B. Officers must realize the sensitivity of the situation and express sympathy and compassion when delivering the
+notification to the victim's family.
+.04 PROCEDURE - DEATHS DUE TO NATURAL CAUSES
+A. Officers dispatched to a location other than a hospital for an apparent sudden death, determine if first aid is needed
+and provide assistance, if necessary, until emergency medical personnel arrive.
+B. An EMS unit is dispatched to assist the officer in determining the condition of the complainant. If it is apparent,
+after viewing the body, the complainant has expired due to natural causes, the investigating officer follows these
+guidelines:
+1.
+
+Contact Homicide Unit investigators and provides pertinent information.
+
+2.
+
+Contact the Medical Examiner's Office and provides the following information on the deceased (if known):
+a.
+
+Full legal name;
+
+b.
+
+Home address;
+
+c.
+
+Location where deceased was found;
+
+General Manual Procedures – Section 700 Investigative Procedures
+
+Page 1 of 4
+
+Effective Date: October 03, 2014
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 705 - Officer Involved Shootings & Custodial Deaths",
+        content: `Procedure 705 – Officer Involved Shooting and Custodial Deaths
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+IDC
+PSC, PNC, TSC, FTC, SSO, CIA
+
+Number of Pages:
+
+SAPD Form #172
+
+Related Procedures:
+
+August 24, 2020
+December 20, 2010
+5
+314, 701, 908
+
+.01 INTRODUCTION
+This procedure establishes guidelines to ensure the highest degree of continuity and standardization in the handling of
+officer involved shootings and custodial deaths. This process not only instills a sense of confidence in the officers
+themselves, but also satisfies the community's expectations regarding the thoroughness, objectivity, and integrity of such
+investigations.
+.02 POLICY
+A. Officer involved shootings (including apparent accidental shootings) and custodial death incidents involving SAPD
+Officers or other City of San Antonio Law Enforcement Officers (Airport/Park Police) are investigated by the
+Shooting Team, regardless of the officer's duty status.
+B. Shootings and custodial deaths involving officers from outside law enforcement agencies occurring within the
+corporate limits of the City of San Antonio, with the exception of the Bexar County Sheriff’s Department, are
+investigated by on-duty members of the Shooting Team, with additional help from on-duty Homicide Unit and/or
+Night CID Unit personnel.
+C. The Shooting Team Commander will be notified of all officer involved shootings and custodial deaths and will
+determine who will conduct the investigation. Whether or not a death is considered “custodial” will be determined
+by the Shooting Team Commander. Notification to the on-call Shooting Team Commander will be made by the
+Communications Unit and/or NCID during non-duty hours (1745 – 0745).
+D. A Shooting Team Supervisor, a Command Level Officer (Captain or above), and a member of the Internal Affairs
+Unit will be sent to the scene of all officer involved shootings and custodial deaths occurring in the City of San
+Antonio.
+E. An officer is considered to be a witness if he is present at the scene of an officer involved shooting but does not use
+deadly force himself.
+F. Any officer discharging a weapon, accidentally or intentionally (except on the target range or while lawfully
+hunting), whether on or off duty, shall immediately verbally notify a supervisor. This is in addition to the written
+reporting requirement under Subsection 3.31 (D.) of the Rules and Regulations.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Administrative Review
+Officer Involved Shooting Review Committee
+
+Custodial Death
+Serious Bodily Injury
+
+Officer Involved Shooting
+Shooting Team
+
+.04 RESPONSIBILITIES
+A. First Officers/UEDIs at Scene:
+1.
+
+Care for the injured;
+
+2.
+
+Apprehend suspects;
+
+General Manual Procedures – Section 700 Investigative Procedures
+
+Page 1 of 5
+
+Effective Date: August 24, 2020
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 706 - Assaults on Peace Officers",
+        content: `Procedure 706 – Assaults on Peace Officers
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+IDC
+PSC, PNC, TSC, FTC, SSO
+SAPD Form #69
+
+July 31, 2010
+October 01, 2009
+
+Number of Pages:
+
+1
+
+Related Procedures:
+
+916
+
+.01 INTRODUCTION
+The purpose of this procedure is to establish a process for officers to follow when handling Assaults/Aggravated
+Assaults on peace officers. This procedure assists the officer in gathering evidence necessary for the successful
+prosecution of the suspect(s).
+.02 PROCEDURE
+A. When an officer has established an assault on a peace officer has occurred and the actor(s) are going to be arrested
+or filed on for Aggravated Assault on a Peace Officer, the following guidelines are followed.
+B. An attempt should be made to contact a follow-up Homicide or Night CID Unit Investigator when available. If
+available, the investigator may request all witnesses, suspects, and complainant(s) be transported to Headquarters for
+statements and photos. Should follow-up investigators not be available, copies of all reports are routed to the
+Homicide Unit.
+C. Officers' injuries are photographed as soon as possible. Should an officer be transported to a hospital for medical
+treatment and a photograph cannot be taken, the officer is advised to contact the Homicide Unit to make
+arrangements for photographs.
+D. Officers, who are complainants, do not write their own offense report. Another officer is assigned the reporting
+responsibilities. Officers who are complainants write supplementary reports on an incident report form.
+E. Other officers who are witnesses, or who were involved in any part of the incident, write a supplementary report.
+F.
+
+The offense report documents the following information:
+1.
+
+Names of complainants, witnesses, and suspects;
+
+2.
+
+Details of the incident;
+
+3.
+
+Injuries sustained to the complainant or suspect;
+
+4.
+
+Medical treatment received by complainant or suspect; and
+
+5.
+
+Photographs of the complainant’s or suspect’s injuries.
+
+G. In the event the officer receives medical treatment, the officer signs SAPD Form #69, Medical Release, for the
+District Attorney's Office. The medical release can be signed at the Night CID Unit or the Homicide Unit office.
+H. A uniformed supervisory officer is dispatched on all assaults on a peace officer where an arrest is made.
+1.
+
+The supervisor writes the proper injured officer reports and initiates the Workers' Compensation documentation
+in accordance with GM Procedure 916, Worker’s Compensation.
+
+2.
+
+A copy of the Workers' Compensation documentation is forwarded to Homicide Unit to be included with the
+case for filing in the District Attorney's Office.
+
+General Manual Procedures – Section 700 Investigative Procedures
+
+Page 1 of 1
+
+Effective Date: July 31, 2010
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 707 - Crash Investigation",
+        content: `Procedure 707 – Crash Investigation
+Office with Primary
+Responsibility:
+
+Effective Date:
+Prior Revision Date:
+
+TEC
+
+Office(s) with Secondary
+Responsibilities:
+
+PSC, PNC, IDC, SSB
+
+Number of Pages:
+
+Forms Referenced in Procedure:
+
+TxDOT Form #CR-3
+SAPD Form #CR-E1
+SAPD Form #3-CSS
+SAPD Form #12-D
+SAPD Form #12-DAR
+SAPD Form #602-6
+
+Related Procedures:
+
+February 16, 2023
+June 5, 2019
+8
+
+402, 507, 606, 607, 704, 802, 916
+
+.01 INTRODUCTION
+This procedure establishes guidelines for handling, investigating and reporting motor vehicle crashes.
+.02 POLICY
+Officers respond to, provide for the documentation of, and report motor vehicle crashes occurring on property within the
+corporate limits of the City of San Antonio. When addressing crashes, officers will adhere to the guidelines established in
+this procedure.
+.03 DISCUSSION
+A. Officers address most motor vehicle crashes by completing the Web Based TxDOT Form #CR-3, Texas Peace
+Officer’s Crash Report. This procedure also establishes a process for documenting crashes where there are no injuries,
+no complaint of injuries and no exigent circumstances necessitating a police investigation. Drivers involved in these
+types of crashes will be asked to complete SAPD Form #12-DAR, Crash Information Sheet, to exchange required
+information.
+B. Crash Documentation/Investigation serves three (3) main purposes:
+1.
+
+To gather evidence to support prosecution of criminal violations;
+
+2.
+
+To properly obtain and document facts so those individuals involved can properly exercise their rights under civil
+law; and
+
+3.
+
+To provide statistical information necessary for the development of crash prevention programs.
+
+.04 RESPONDING TO CRASHES
+A. Responsibilities of first officer arriving at a crash scene:
+1.
+
+Park the police vehicle, utilizing emergency lights and flashers, in a manner that best provides warning of the
+crash to approaching vehicles, to protect persons from injury, and to provide other emergency vehicles access to
+the scene.
+
+2.
+
+Request EMS for persons requiring medical treatment. Request fire department units if persons need to be
+extracted from vehicles or if fuel is leaking from vehicles.
+
+3.
+
+Take steps necessary to protect the scene to ensure proper collection of evidence and to gather information or
+facts needed to accurately investigate if necessary and report the crash.
+
+General Manual Procedures – Section 700 Investigative Procedures
+
+Page 1 of 8
+
+Date: February 16, 2023
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 711 - Hate Crimes",
+        content: `Procedure 711 – Hate Crimes
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+IDC
+PSC, PNC, TEC, FCD, SSB
+
+Number of Pages:
+
+SAPD Form #2-2
+
+Related Procedures:
+
+June 5, 2019
+July 31, 2010
+3
+None
+
+.01 INTRODUCTION
+This procedure establishes a process that guides officers in identifying and investigating hate crimes and ensuring the
+accurate reporting of hate crimes to the UCR program.
+.02 POLICY
+A. It is the policy of the San Antonio Police Department to ensure the rights guaranteed by state law and the U. S.
+Constitution is protected for all persons, regardless of race, religion, ethnicity/national origin, gender expression,
+gender identity, or sexual orientation.
+B. Officer’s authority for identifying and reporting hate crimes can be found in the Penal Code, Article 12.47 and the
+Code of Criminal Procedure, Article 42.014.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+BiasHate Crime
+.04 IDENTIFYING HATE CRIMES
+A. Officers assigned to calls involving criminal offenses shall determine if bias motivated the crime.
+B. Some of the major criminal offenses which may be motivated by bias or hate include, but are not limited to the
+following offenses:
+1.
+
+Murder;
+
+2.
+
+Kidnapping;
+
+3.
+
+Sexual Assault;
+
+4.
+
+Robbery;
+
+5.
+
+Graffiti;
+
+6.
+
+Arson;
+
+7.
+
+Assault; and
+
+8.
+
+Criminal Mischief
+
+C. In determining if bias was a motivating factor in a criminal offense, officers shall use the following criteria to
+identify hate crimes.
+1.
+
+Motive; or lack of an apparent motive;
+
+2.
+
+Display of any offensive symbols, words, or acts;
+
+General Manual Procedures – Section 700 Investigative Procedures
+
+Page 1 of 3
+
+Effective Date: June 5, 2019
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 713 - Human Trafficking",
+        content: `Procedure 713 – Human Trafficking
+Office with Primary Responsibility:
+
+ICX
+
+Effective Date:
+Prior Revision Date:
+
+Office(s) with Secondary
+Responsibilities:
+
+IND
+
+Number of Pages:
+
+Forms Referenced in Procedure:
+
+.01
+
+602, 610, 701, 703
+Training Bulletin # 12-01
+
+Related Procedures:
+
+May 04, 2012
+New
+5
+None
+
+INTRODUCTION
+This procedure establishes guidelines for identifying possible victims of Human Trafficking, for managing a
+potential crime scene, and reporting the situation to the appropriate follow up unit.
+
+.02
+
+TERMINOLOGY (For specific use within this procedure, see Glossary)
+Domestic Minor Sex Trafficking (DMST)
+Human Trafficking
+
+.03
+
+Human Smuggling
+
+HUMAN TRAFFICKING AWARENESS
+A.
+
+Most human trafficking cases do not start off as an investigation into Texas Penal Code Sec. 20A.02.,
+Trafficking of Persons. They start off as an investigation into some other reported offense; such as a
+suspicious person call or some type of disturbance. Some investigations start off when the victim is
+apprehended for a separate offense, such as prostitution or shoplifting. This may also be the case when the
+victim is identified as a witness to a crime and the victim makes a statement or outcry that leads the officer to
+believe the person may be a victim of human trafficking.
+
+B. The victim in a Human Trafficking case may not identify him or herself as a victim. Some reasons for this
+include:
+
+C.
+
+.04
+
+1.
+
+The victim’s belief that the government, especially the police, will arrest and/or deport them if they
+come forward;
+
+2.
+
+Some victims, even those beaten and sexually abused, believe their current situation is better than the
+one they left behind in their previous homes or countries of origin;
+
+3.
+
+Victims may believe that it is their fault they are in their present situation because they initially agreed
+to come to this country illegally;
+
+4.
+
+Cultural differences and differences in the law of their countries of origin may also lead to them not
+making an outcry; and
+
+5.
+
+The victim fears that the trafficker will punish him/her or their families. Many victims have children
+who are in the control of the trafficker and other family in their countries of origin who remain within
+reach of the trafficker or the trafficker’s organization.
+
+Other reasons and more information regarding the dynamics of human trafficking can be found in Training
+Bulletin #12-01.
+
+INIDCATORS OF DOMESTIC MINOR SEX TRAFFICKING (DMST) AND HUMAN TRAFFICKING
+A.
+
+While speaking to persons, members should remain alert to notice when something is not right or out of the
+ordinary. Suspicions might be aroused by the following:
+
+General Manual Procedures – Section 713 Human Trafficking
+
+Page 1 of 5
+
+Effective Date: May 04, 2012
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 801 - Incident Command System",
+        content: `Procedure 801 – Incident Command System
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+TEC
+PSC, PNC, FCD, IDC, SSB
+None
+
+June 5, 2019
+December 12, 2018
+
+Number of Pages:
+
+16
+
+Related Procedures:
+
+None
+
+.01 THE INCIDENT COMMAND SYSTEM (ICS)
+A. ICS is a standardized, on-scene, all-hazard incident management concept. ICS allows its users to adopt an integrated
+organizational structure to match the complexities and demands of single or multiple incidents without being
+hindered by jurisdictional boundaries.
+B. ICS has considerable internal flexibility. It can grow or shrink to meet different needs. This flexibility makes it a
+very cost effective and efficient management approach for both small and large situations.
+C. As a team effort, the ICS element of Unified Command allows all agencies with jurisdictional authority or
+functional responsibility for the incident to jointly provide management direction through a common set of incident
+objectives and strategies and a single incident Action Plan (IAP), where each participating agency maintains
+individual authority, responsibility, and accountability for their resources.
+D. Area Command is an ICS element used when there is a number of incidents generally in the same area and often of
+the same kind. Examples of incidents that may be handled under Area Command protocol include two or more
+hazardous material spills, multiple fires, Fiesta events, and Final Four basketball festivities and games. The use of
+Area Command is determined by complexity and availability of resources.
+.02 THE INCIDENT COMMANDER
+A. Incident Commander's Overall Role:
+1.
+
+The Incident Commander has overall responsibility for managing the incident by objectives, planning strategies,
+and implementing tactics. The Incident Commander must be fully briefed and should have a written delegation
+of authority. Initially, assigning tactical resources and overseeing operations will be under the direct supervision
+of the Incident Commander.
+
+2.
+
+Personnel assigned by the Incident Commander have the authority of their assigned positions, regardless of the
+rank they hold within their respective agencies.
+
+B. Incident Commander Responsibilities:
+1.
+
+2.
+
+In addition to having overall responsibility for managing the entire incident, the Incident Commander is
+specifically responsible for:
+a.
+
+Ensuring incident safety;
+
+b.
+
+Providing information services to internal and external stakeholders;
+
+c.
+
+Establishing and maintaining liaison with other agencies participating in the incident.
+
+The Incident Commander may appoint one or more Deputies, if applicable, from the same agency or from other
+agencies or jurisdictions. Deputy Incident Commanders must be as qualified as the Incident Commander.
+
+General Manual Procedures – Section 800 Emergency Operations
+
+Page 1 of 16
+
+Effective Date: June 5, 2019
+
+AS PER THE STATE OF TEXAS ATTORNEY GENERAL’S OFFICE, OPINION 17-111, THIS PROCEDURE
+IS CONSIDERED SENSITIVE AND NOT SUBJECT TO PUBLICATION OR OPEN RECORD REQUEST
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 802 - Unusual Occurrences and Critical Incidents",
+        content: `Procedure 802 – Unusual Occurrences and Critical Incidents
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+TEC
+PSC, PNC, FCD, IDC, SSB
+None
+
+December 11, 2023
+June 26, 2015
+
+Effective Date:
+Prior Revision Date:
+Number of Pages:
+
+9
+
+Related Procedures:
+
+801, 803, 804, 805, 806, 807, 809
+
+.01 INTRODUCTION
+A. This procedure establishes guidelines for controlling and resolving Criminal/Non-Criminal Barricaded Individuals by
+assigning responsibilities to initial responders, to critical incident response teams, and to support functions.
+B. This procedure also provides guidance for police response during an unusual occurrence. It can be applied to a variety
+of unusual occurrences and command personnel may find the need to deviate from it to address obstacles arising
+during unusual occurrences.
+C. If an incident originally classified as a critical incident escalates to such a magnitude it can not be resolved by critical
+incident response teams or in accordance with this procedure, the incident should be reclassified as an Unusual
+Occurrence by the Incident Commander and handled in accordance with Section .05 B., of this procedure.
+D. This procedure is designed to be augmented by the GM Procedures 801, Incident Command System; 803, Bomb
+Incident; 804, Crowd Control and Event Management; 805, Fallen Aircraft; 806, Mobilization; 807, Terrorism
+Preparedness; and 809 Active Shooter Situations.
+.02 POLICY
+A. The primary goal of the Department in dealing with critical incidents and unusual occurrences involves the protection
+of human lives.
+B. Therefore, it is the policy of the Department to resolve all critical incidents and unusual occurrences in a manner that
+minimizes the risk to life by and through a process that employs the expertise of specially trained personnel using
+techniques designed to contain, isolate, stabilize, and negotiate the critical incident to a nonvolatile resolution and
+without loss of life.
+C. Any officer involved in a critical incident or other pre-planned high-risk situation shall wear the body armor that is
+available to each officer.
+.03 INCIDENT DISCUSSION
+A. Response to incidents generally falls into one of the following three categories:
+1.
+
+Routine incidents are those situations that can be handled with on duty resources.
+
+2.
+
+Critical incidents are those high-risk incidents whose resolution exceeds the regular resources of a Patrol Section
+and/or poses a requirement for a specially trained response team.
+
+3.
+
+Unusual occurrences are emergency situations of such significant magnitude so as to compel the recall of
+personnel or support from other agencies to protect life and property, prevent escalation, and restore order.
+
+.04 TERMINOLOGY (For specific use within this procedure, see Glossary)
+General Manual Procedures – Section 800 Emergency Operations
+
+Page 1 of 9
+
+Effective Date: December 11, 2023
+
+AS PER THE STATE OF TEXAS ATTORNEY GENERAL’S OFFICE, OPINION 17-111, THIS PROCEDURE
+IS CONSIDERED SENSITIVE AND NOT SUBJECT TO PUBLICATION OR OPEN RECORD REQUEST
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 803 - Bomb Incidents",
+        content: `Procedure 803 – Bomb Incidents
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+TSC
+PSC, PNC, SSD, MCC
+None
+
+July 06, 2016
+July 31, 2010
+
+Number of Pages:
+
+9
+
+Related Procedures:
+
+802
+
+.01 INTRODUCTION
+A. This procedure establishes guidelines for police responses to bomb threats, suspicious packages and possible
+explosive devices by assigning responsibilities to units who receive threat calls and to patrol officers who are initial
+responders to the scenes of bomb related calls.
+B. When an actual or suspected explosive device is located, the call is reclassified as a critical incident and handled in
+accordance with GM Proc. 802, Unusual Occurrences and Critical Incidents.
+C. Personnel who are not trained to Bomb Squad standards and specifically authorized to handle explosives shall not
+remove, attempt to move, disarm, or attempt to disarm any explosive device (actual or suspected). Officers are
+encouraged to request the Bomb Squad respond to the scene when any doubt exists as to the need.
+D. Bomb Squad personnel can be contacted by calling directly to the office or more efficiently and timely through the
+Communications Unit.
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Bomb Threat
+
+Extortion
+
+Detonation Homicide Bomber
+
+Explosive Device
+
+Suicide Bomber
+
+.03 BOMB THREAT CALLS
+A. Any member of any unit receiving a bomb threat call will attempt to have someone nearby contact the
+Communications Unit by land line only to initiate appropriate actions. If there is no one to assist, he shall
+immediately notify the Communications Unit.
+B. Any member of any unit receiving a call or being notified in any other manner of a bomb threat shall attempt to
+ascertain as many details as possible from the caller. Details should include, if possible, at a minimum:
+1.
+
+Location of bomb;
+
+2.
+
+Precise time bomb is set to detonate;
+
+3.
+
+Reason bomb was planted; and
+
+4.
+
+Any other information or details that could help locate the bomb or persons responsible for planting the bomb.
+
+.04 UNIT and OFFICER RESPONSIBILITIES
+A. Communications Unit Responsibilities:
+1.
+
+Communications Unit personnel, upon receipt of a bomb threat, dispatch uniformed officers, including a
+supervisory officer, to the scene of the bomb threat.
+
+2.
+
+Find out from the person who received the call the exact words used in the threat so the threat can be evaluated.
+
+General Manual Procedures – Section 800 Emergency Operations
+
+Page 1 of 9
+
+Effective Date: July 06, 2016
+
+AS PER THE STATE OF TEXAS ATTORNEY GENERAL’S OFFICE, OPINION 17-111, THIS PROCEDURE
+IS CONSIDERED SENSITIVE AND NOT SUBJECT TO PUBLICATION OR OPEN RECORD REQUEST
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 804 - Crowd Control and Event Management",
+        content: `Procedure 804 – Crowd Control and Events Management
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+TSC
+PSC, PNC, TSD, FCD, IDC, MFF
+None
+
+Number of Pages:
+Related Procedures:
+
+November 01, 2021
+December 21, 2016
+11
+309, 802, 806
+
+.01 INTRODUCTION
+A. This procedure is designed to provide direction in planning and implementing the appropriate police response to
+effectively manage and control crowds. Additionally, this procedure provides instruction for managing crowds during
+events which occur without sufficient notice to allow for comprehensive planning.
+B. The crowd monitoring management and control strategies employed in response to spontaneous events are similar to
+those used for planned ones, the only difference being the procedures are implemented quicker and in a different order.
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Civil Demonstration
+Spontaneous Events
+
+Civil Disturbance
+Unusual Occurrence
+
+Civil Disorder
+
+Planned Events
+
+.03 POLICY
+A. The San Antonio Police Department provides the necessary direction, control, and security for persons assembled to
+take part in civic and community functions; provided, such direction, control, and security is in the best interest of the
+health, safety, and order of the City.
+B. The Department is committed to the protection of the constitutional rights of persons and groups to conduct peaceful
+and lawful demonstrations. However, in those situations which threaten the lives, property, rights, health, or safety
+of the citizens, or the general order of the City, the Department responds immediately to establish control and restore
+order.
+C. The sanctity of human life and individual liberties are immeasurable elements of modern society which vests Police
+Officers with the responsibility for the preservation and protection of its paramount values. In the pursuit of this
+responsibility, officers maintain the understanding that protection of property and apprehension of criminal offenders
+is subservient to the protection of life, including their own.
+.04 GENERAL PROCEDURES
+A. The Deputy Chief assigned to the Tactical Support Division maintains the responsibility for identifying resource needs
+and planning the appropriate police response for scheduled events. This Deputy Chief is hereafter referred to as the
+Incident Commander for all planned events.
+B. The supervisory officer-in-charge of the appropriate Patrol Division service area is responsible for initiating the
+appropriate police action in response to spontaneous events. This supervisory officer, until relieved by a higherranking officer, is hereafter referred to as the Incident Commander.
+C. In response to planned or spontaneous events, the Incident Commander is responsible for:
+1.
+
+Meeting with the sponsors to discuss the required permits and applicable laws;
+
+General Manual Procedures – Section 800 Emergency Operations
+
+Page 1 of 11
+
+Effective Date: November 01, 2021
+
+AS PER THE STATE OF TEXAS ATTORNEY GENERAL’S OFFICE, OPINION 17-111, THIS PROCEDURE
+IS CONSIDERED SENSITIVE AND NOT SUBJECT TO PUBLICATION OR OPEN RECORD REQUEST
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 806 - Mobilization",
+        content: `Procedure 806 – Mobilization
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+TSC
+PSC, PNC, FTC, IDC, SSO
+
+Number of Pages:
+
+None
+
+Related Procedures:
+
+July 31, 2010
+October 01, 2009
+4
+314, 802
+
+.01 INTRODUCTION
+A. In unusual occurrences, effective control depends upon the immediate activation and deployment of police
+manpower and resources to allow the Department to quickly re-establish order, in conjunction with other agencies.
+B. Supervisors at the scene of an unusual occurrence must continually assess the situation to determine the proper
+allocation and utilization of manpower and resources. This evaluation should not focus primarily on the present
+requirements, but on future needs as well.
+C. The periodic redistribution of manpower to maintain order, establish control, and accomplish law enforcement
+objectives is essential in a decentralized police environment. With this understanding, this procedure is designed to
+provide an immediate and organized recall of personnel necessary to deal with those situations which are of such
+magnitude the on-duty manpower is insufficient to manage the incident. Additionally, this procedure provides for
+requests for support from other agencies through mutual aid agreements.
+D. Although this procedure is designed for all types of unusual occurrences, it is designed to supplement, not replace,
+those procedures applicable to the recall of special response teams (i.e., Hostage Negotiators, SWAT, Bomb Squad
+and the Tactical Response Unit).
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Civil Disturbance
+
+Critical Incident
+
+Manmade Disaster
+
+Natural Disaster Unusual Occurrence
+
+.03 MOBILIZATION PHASES
+A. Phase I
+1.
+
+Phase I is implemented for an unusual occurrence when the total manpower and resources assigned to the onduty Patrol Division:
+a.
+
+Cannot control the occurrence;
+
+b.
+
+Cannot provide adequate coverage to other sections of the City; or
+
+c.
+
+Cannot conclude the occurrence within a reasonable length of time.
+
+2.
+
+A field command post is established and the necessary radio frequencies are assigned and dedicated specifically
+for the unusual occurrence operations in accordance with GM Procedure 802, Unusual Occurrences and
+Critical Incidents.
+
+3.
+
+Phase I recalls the necessary off-duty personnel, including their respective supervisory and command officers,
+assigned to the oncoming shifts, in the following order:
+a.
+
+Off-duty Traffic Section personnel assigned to report to the oncoming shift;
+
+b.
+
+Off-duty Patrol Section personnel assigned to report to the oncoming shift for the service area responsible
+for the occurrence;
+
+General Manual Procedures – Section 800 Emergency Operations
+
+Page 1 of 4
+
+Effective Date: July 31, 2010
+
+AS PER THE STATE OF TEXAS ATTORNEY GENERAL’S OFFICE, OPINION 17-111, THIS PROCEDURE
+IS CONSIDERED SENSITIVE AND NOT SUBJECT TO PUBLICATION OR OPEN RECORD REQUEST
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 807 - Terrorism Preparedness",
+        content: `Procedure 807 – Terrorism Preparedness
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+TSC
+PSC, PNC, FTC, IDC, SSO
+
+Number of Pages:
+
+None
+
+Related Procedures:
+
+July 31, 2010
+October 01, 2009
+6
+314, 802, 806
+
+.01 INTRODUCTION
+A. This procedure establishes the San Antonio Police Department’s levels of preparedness for possible terrorist
+activities within the City of San Antonio and to Department personnel or facilities. Possible terrorist activities range
+from rumors of terrorism to actual acts of terrorism being carried out.
+B. The Emergency Operations Center of the City of San Antonio is the primary conduit for all Homeland Security
+alerts. The Emergency Operations Coordinator is responsible for providing notification to the Mayor, Council
+Members, City Manager, and department heads regarding any changes in the alert level.
+C. The Commander of the Homeland Security Section serves as the Law Enforcement Liaison to the Emergency
+Operations Center of the City of San Antonio.
+D. Once the City of San Antonio has implemented the Emergency Management–Basic Plan or the Department has
+implemented GM Procedure 806, Mobilization, this procedure will supplement that plan and procedure.
+.02 PURPOSE
+This procedure is designed to ensure all Department personnel, from Headquarters Building, Substations, and all other
+police facilities are aware of possible terrorist activities and are on an appropriate level of alert.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+High Readiness
+
+Increased Readiness-Watch Conditions
+
+Maximum Readiness
+
+Normal Conditions
+
+.04 READINESS LEVELS AND MEASURES OF PREPAREDNESS
+A. Normal Conditions
+1.
+
+The member assigned to security at Headquarters Building will implement appropriate security measures in
+accordance with the Service and Support Division standard operating procedures.
+
+2.
+
+Patrol Division Station Commanders will implement appropriate security measures at substations and instruct
+patrol officers to do the following:
+a.
+
+Patrol their assigned districts and be available for calls or special assignments.
+
+b.
+
+Monitor areas close to large buildings, giving special attention to abandoned vehicles or suspicious
+packages left unattended.
+
+3.
+
+The officers assigned to security at all other police facilities will implement appropriate security measures in
+accordance with the standard operating procedures at their respective police facilities.
+
+4.
+
+The Tactical Support Division Commander will implement security measures to include the following:
+
+General Manual Procedures – Section 800 Emergency Operations
+
+Page 1 of 6
+
+Effective Date: July 31, 2010
+
+AS PER THE STATE OF TEXAS ATTORNEY GENERAL’S OFFICE, OPINION 17-111, THIS PROCEDURE
+IS CONSIDERED SENSITIVE AND NOT SUBJECT TO PUBLICATION OR OPEN RECORD REQUEST
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 809 - Active Shooter Incidents",
+        content: `Procedure 809 – Active Shooter Incidents
+
+Office with Primary
+Responsibility:
+
+TSC
+
+Office(s) with
+Secondary
+Forms Referenced in
+Procedure:
+
+PSC, PNC, STC, MCC,
+SSB
+None
+
+Effective Date:
+Prior Revision Date:
+Number of Pages:
+Related Procedures:
+
+March 19, 2018
+September 1, 2017
+6
+314, 801, 802, 803, 804
+
+01. INTRODUCTION
+A. This procedure establishes guidelines for responding to Active Shooter Incidents by assigning responsibilities to
+initial responders and identifying other critical functions.
+B. This procedure provides guidance for police response during ongoing violent events which may be very chaotic,
+rapidly evolving, and unpredictable.
+02. DISCUSSION
+A. Suspected Active Shooter Incidents require coordinated efforts among first response agencies to ensure the
+preservation of life and security of their missions. Use of Unified Command protocol enhances proper command,
+control, communication, cooperation, and organizational functions, allowing field supervisors to concentrate on the
+tactics required to stabilize the incident. Use of Rescue Task Force (RTF) teams increases a victim’s probability of
+surviving an incident.
+B. Initial responding officers play a critical role in the intervention and ultimate resolution of these events, and they
+may be forced to deviate from procedures due to the totality of the circumstances encountered.
+C. If an incident originally classified as an Active Shooter Incident changes into a Hostage Barricade Crisis, the
+incident should be reclassified as a Critical Incident and handled in accordance with GM Procedure 802, Unusual
+Occurrences and Critical Incidents.
+D. This procedure is designed to be augmented by GM Procedure 314, Command Notification, and Section 800,
+Emergency Operations, as needed.
+03. POLICY
+A. Every officer of the San Antonio Police Department is committed to maintaining a safe environment and to taking
+necessary immediate action when the safety of innocent lives is at stake. The Department’s ultimate goal in dealing
+with Active Shooter Incidents is to protect human lives.
+B. It is the Department’s policy to resolve Active Shooter Incidents in a manner which employs training and experience
+of personnel utilizing techniques designed to stop the loss of life by isolating, distracting or neutralizing actions of
+an Active Shooter and expedite medical treatment of injured victims.
+C. All officers involved in an Active Shooter Incident should wear body armor available to them and attempt to make
+use of specialized equipment (ballistic shields, shoulder weapons, etc.), if possible.
+04. DEFINITIONS
+A. Active Shooter – An individual actively engaged in killing or attempting to kill people. In most cases, active
+shooters use firearms and have no pattern or method to their selection of victims. An “Active Shooter” includes
+General Manual Procedures – Section 800 Emergency Operations
+
+Page 1 of 6
+
+Effective Date: March 19, 2018
+
+AS PER THE STATE OF TEXAS ATTORNEY GENERAL’S OFFICE, OPINION 17-111, THIS PROCEDURE
+IS CONSIDERED SENSITIVE AND NOT SUBJECT TO PUBLICATION OR OPEN RECORD REQUEST
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 901 - Payroll Timesheets & Overtime Accounting",
+        content: `Procedure 901 – Payroll Timesheets & Overtime Accounting
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+
+Forms Referenced in Procedure:
+
+SSO
+
+PSC, PNC, TSC, FTC, IDC
+
+Effective Date:
+Prior Revision Date:
+
+November 01, 2021
+October 05, 2021
+
+Reviewed Date:
+
+November 01, 2021
+
+Number of Pages:
+
+COSA Notice of Leave Form
+COSA Uniformed Police Notice of
+Leave Form
+SAPD Form #15 C
+SAPD Form #15 O
+SAPD Form #17-303
+
+Related Procedures:
+
+7
+
+None
+
+.01 INTRODUCTION
+This procedure establishes guidelines for the proper completion of payroll time sheets and also establishes a system to allow
+for the accurate control, tracking, and accountability of overtime pay and compensatory time accrual.
+.02 PAYROLL TIME SHEETS
+A. All members assigned to a unit are listed alphabetically on SAPD Form #17-303, Payroll Time Sheet. Sworn members
+are listed first, in order of rank, followed by non-sworn members. The members’ SAP number is also listed.
+B. Unit/Shift Directors are responsible for the completion and accuracy of the payroll time sheet. The data entry function
+may be delegated to another unit/shift member.
+C. A member’s actual status must be identical to that listed on the payroll time sheet, indicated by letters or a symbol,
+for each day of the accounting period.
+D. When an exception occurs to an employee’s scheduled workweek, a City of San Antonio Uniformed Police Notice of
+Leave Form is submitted. The approving supervisor will immediately forward the SAPD Notice of Leave form
+(GR.1050-54(b).PER.REQ.SAPD/Leave Notice) electronically to “SAPD Sworn Payroll Inquiries”
+(Outlook).
+1.
+
+In the event a member does not take the leave as documented on the Notice of Leave form, the member’s
+supervisor will e-mail a supervisor in Payroll Services.
+
+2.
+
+The supervisor in the Payroll Services will then ensure the Notice of Leave form is removed from the file, and the
+member’s time is not taken.
+
+E. In the table below, the following codes are to be used to denote an employee’s duty status for each day of the
+accounting period for the payroll time sheet and the Notice of Leave form:
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+
+Payroll
+Code
+/
+AD
+BD
+CT
+DF
+DL
+FH
+
+Notice Of Leave
+Codes
+N/A
+AD01
+BD01
+CO01
+BE01
+N/A
+N/A
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Duty Status
+Present for duty
+Administrative leave
+Bonus day
+Compensatory time
+Death in family (Bereavement)
+Disability leave (non-sworn members)
+Floating holiday
+
+Page 1 of 6
+
+Effective Date: November 01, 2021
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 902 - Leave and Absence Policies",
+        content: `Procedure 902 – Leave and Absence Policies
+
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+SSB
+PSC, PNC, TEC, FCD, IDC
+
+Number of Pages:
+
+COSA Notice of Leave Form
+SAPD Form #25
+SAPD Form #172
+State Form #DWC073
+
+Related Procedures:
+
+January 4, 2023
+December 21, 2020
+9
+908, 909
+
+.01 INTRODUCTION
+A. This procedure establishes guidelines for the accrual, use and donation of leave available to sworn members and
+defines Department policies regarding absences and tardiness.
+B. Non-sworn members accrue leave in accordance with City Administrative Directive 4.4, Leave Administration.
+.02 POLICY
+Officers on any type of leave status are not authorized to work overtime for the City unless ordered to return to duty
+by a Division Commander.
+.03 LEAVE ACCRUAL
+A. Annual (Vacation) Leave
+1.
+
+Officers accrue annual leave on the basis of the following schedule:
+a.
+b.
+c.
+
+2.
+
+3.
+
+Completed Years of Service
+1 to 10
+10 to 15
+More than 15
+
+Annual Leave Accrued
+126 Hours
+166 Hours
+206 Hours
+
+Annual leave shall be accrued and credited as follows:
+a.
+
+Officers shall accrue annual leave at a rate of ten (10) hours per month, plus an additional six (6) hours on
+each anniversary date.
+
+b.
+
+On the date an officer completed ten (10) years of service and on each anniversary date thereafter, he is
+credited on a lump sum basis with forty (40) additional hours of annual leave; and
+
+c.
+
+On the date an officer completes fifteen (15) years of service and on each anniversary date thereafter, he will
+be credited on a lump sum basis with eighty (80) additional hours of annual leave.
+
+Upon separation from the department, an officer may be paid for his accrued annual leave up to seven hundred
+twenty (720) hours.
+
+B. Holidays
+1.
+
+Officers accrue holidays according to their current work assignments.
+
+2.
+
+Holidays have an accrual limit of three hundred twenty (320) hours.
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 9
+
+Effective Date: January 4, 2023
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 903 - Sworn Personnel Transfer",
+        content: `Procedure 903 – Sworn Personnel Transfers
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+CSD
+PSC, PNC, IDC, TEC, COS, FCD
+
+Number of Pages:
+
+None
+
+Related Procedures:
+
+April 18, 2022
+April 5, 2021
+5
+None
+
+.01 INTRODUCTION
+A. This procedure establishes a transfer system for officers holding the ranks of Patrol Officer, Detective Investigator,
+and Sergeant that provides for the proper staffing of the Department, as well as allowing for professional growth and
+increased job knowledge among sworn members.
+B. Officers holding the ranks of Assistant Chief, Deputy Chief, Captain, and Lieutenant are transferred at the discretion
+of the Chief of Police and are not governed by this procedure.
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Involuntary Transfer
+Section
+
+Qualified Candidate
+Shift Change
+
+Relative
+Voluntary Transfer
+
+SAPD Request System
+
+.03 GENERAL PROVISIONS
+A. The Chief of Police has the exclusive right to transfer employees within the department to accomplish the mission and
+goals of the department in the most effective and efficient manner.
+B. Newly hired officers are required to serve in the patrol shifts of the Patrol Divisions until the end of their one (1) year
+probationary period, unless an overriding departmental need exists, and a transfer is authorized by the Chief of Police.
+C. An officer limited by physical disabilities or restrictions, who cannot be placed on regular duty assignment, may be
+transferred at the discretion of the Chief of Police.
+D. All other transfers, including intra-divisional transfers, are governed by this procedure.
+E. The guarantees afforded under this procedure do not apply to special assignments. Special assignments are approved
+by Division Commanders. Officers placed on special assignment on an involuntary basis shall work the assignment
+for a maximum of sixty (60) calendar days. Officers placed on special assignment on a voluntary basis may work the
+assignment for a maximum of one hundred and eighty (180) calendar days.
+F. This procedure does not affect the special drafting or assignment procedures for those divisions with no transfer
+requests on file.
+G. Administrative and limited duty assignments are made through the Office of the Chief.
+H. When an officer is involuntarily transferred all pending transfer requests remain valid. The officer is eligible to submit
+transfer requests immediately with no time constraints.
+I.
+
+An officer is not allowed to work under the direct supervision of a relative. Relatives may be co-workers in the same
+division in non-supervisory positions.
+
+J.
+
+There is no stigma attached, nor is there any retaliation, toward an officer who chooses to use this procedure.
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 5
+
+Effective Date: March 18, 2022
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 904 - Light Duty Assignments",
+        content: `Procedure 904 – Light Duty Assignments
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+PSC, PNC, TEC, FCD, IDC, SSB
+
+Number of Pages:
+
+DWC Form-73
+SAPD Form #172
+
+Related Procedures:
+
+June 5, 2019
+February 19, 2014
+4
+309, 615, 909, 916
+
+.01 INTRODUCTION
+A. This procedure establishes a process for the assignment to limited duty positions of officers who are unable to
+perform regular duty functions due to a temporary disability caused by an occupational injury, an occupational
+disease, or a non-occupational condition.
+B. The process for assigning non-sworn members to light duty assignments will be in accordance with City
+Administrative Directive 4.37, Light Duty Program.
+C. Officer injuries must be documented on SAPD Form #172, Physician’s Evaluation of Injury/Non-occupational
+Condition, or DWC Form-73, Texas Worker’s Compensation Work Status Report. Occupational injuries and
+diseases can be reported on SAPD Form #172 or DWC Form-73. Non-occupational injuries can only be reported on
+SAPD Form #172.
+D. Officers choosing to deliver documentation via other than hand delivery are responsible to ensure successful
+delivery of the documents.
+02. POLICY
+A. The San Antonio Police Department is committed to promoting and creating a safe workplace for members.
+Preventing workplace injuries and assisting officers with recovery from illness or injury are primary goals.
+B. The department will make every reasonable effort to provide suitable return-to-work opportunities for members who
+are unable to perform their regular job tasks and duties due to an occupational injury, an occupational disease, or a
+non-occupational condition.
+C. Light duty assignments may include modifying a member’s regular job duties, hours, relief days; and may restrict a
+member from engaging in certain physical activity. An appropriate light duty assignment combined with reasonable
+conditions contributes to an officer’s recovery by keeping an officer productive, socially involved, and in some
+instances offer an opportunity to learn a new skill.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Designated Doctor
+Non-occupational Condition
+Dress-out
+
+Disease
+Occupational Disease
+
+Injury
+Occupational Injury
+
+Limited Duty Assignment
+Treating Physician
+
+.04 LIMITED DUTY ASSIGNMENTS
+A. Officers who are temporarily unable to perform their regularly assigned duties due to an occupational injury, an
+occupational disease or a non-occupational condition are eligible for limited duty assignments as assigned by the
+Office of the Chief.
+B. All officers temporarily unable to perform their regularly assigned duties due to an occupational injury, an
+occupational disease or a non-occupational condition must advise their treating physician that there are limited duty
+positions available within the San Antonio Police Department.
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 4
+
+Effective Date: June 5, 2019
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 905 - Off-Duty and Outside Employment",
+        content: `Procedure 905 – Off-Duty and Outside Employment
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+
+Effective Date:
+Prior Revision Date:
+
+COS
+PSC, PNC, TEC, FCD, IDC, SSB
+
+Number of Pages:
+
+Forms Referenced in Procedure:
+
+Related Procedures:
+
+June 3, 2024
+March 29, 2017
+13
+200, 303, 505, 601, 606, 708
+
+.01 INTRODUCTION
+A. This procedure outlines the Off-Duty Employment in City Facilities Program for officers who choose to work offduty in city facilities.
+B. This procedure also governs outside employment by officers and ensures the employment complies with departmental
+procedures, policies, rules and regulations.
+C. Outside employment for non-sworn members is governed by Municipal Civil Service Rules of the City of San
+Antonio, Rule XXIV, Section 2, Outside Compensation and Outside Employment, and City Administrative Directive
+4.47, Outside Employment.
+.02 POLICY
+A. Officers must remain aware that engaging in off-duty employment in city facilities or outside employment are
+privileges granted by the Chief of Police. The Department maintains a vested interest in the personal business activities
+of each officer since an officer’s actions, judgment, performance and attitude, regardless of the officer’s duty status; ,
+reflect not only on the officer, but also on the Department and the City.
+B. Officers are considered career employees and are prohibited from accepting or engaging in outside employment which
+may conflict or interfere with their responsibilities to the Department or which may be considered detrimental to the
+professional law enforcement goal of the Department.
+C. Officers are subject to be mobilized or recalled to duty at any time for emergencies or unusual occurrences; therefore,
+off-duty employment in city facilities or outside employment may not infringe on this obligation to be available to
+report to duty.
+D. While engaging in off-duty employment in city facilities or outside employment, officers are subject to all applicable
+procedures, policies, rules, and regulations of the Department and the City.
+E. The Chief of Police is the final approving authority and, with just cause, may deny, suspend, revoke, or restrict an
+officer’s off-duty employment in city facilities or outside employment privileges.
+F.
+
+Officers shall have available to them all the necessary supplies and equipment to handle any situation that may arise
+while performing their off-duty or outside employment. This equipment should include, but is not limited to:
+1.
+
+A regulation or authorized uniform in accordance with Section .04.J.2., authorized weapon(s), radio, and
+handcuffs.
+
+2.
+
+A means of communicating with the dispatcher, such as a department-issued radio or cell phone.
+a.
+
+Officers are highly encouraged to check-in/out via radio with the dispatcher appropriate to their physical
+location.
+
+b.
+
+This will ensure proper identification by dispatchers should there be a need for additional police response.
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 13
+
+Effective Date: June 3, 2024
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 907 - Substitute Employment",
+        content: `Procedure 907 – Substitute Employment
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+SSO
+PSC, PNC, TSC, FTC, IDC
+
+Number of Pages:
+
+None
+
+Related Procedures:
+
+December 20, 2010
+July 31, 2010
+1
+None
+
+.01 INTRODUCTION
+This procedure establishes guidelines which officers follow when working for one another on a substitute basis.
+.02 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Substitute Employment
+.03 PROCEDURE
+A. Substitute employment is permissible; provided,
+1.
+
+Both officers involved are of the same rank;
+
+2.
+
+Both officers involved are engaged in the same type of activity or unit and on the same shift (i.e., Patrol, UEDI,
+Traffic, Narcotics, etc.); and
+
+3.
+
+Notification is given to the Unit/Shift Director of the unit involved at least twenty-four (24) hours in advance.
+
+B. Substitute employment is performed only when approved by the Unit/Shift Director of the unit involved.
+C. The responsibility of reporting for duty remains with the officer regularly scheduled, until such time as the substitute
+officer reports for duty.
+D. The officer regularly scheduled to work is given credit for a full shift on the pay sheet. The substitute officer is
+credited for any overtime he accrues and is held responsible for the cases handled and the reports assigned to him.
+E. A footnote on the pay sheet identifies the substitute officer.
+F.
+
+Substitute employment is a mutual agreement between two (2) officers.
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 1
+
+Effective Date: December 20, 2010
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 908 - Mandatory Reassignment",
+        content: `Procedure 908 – Mandatory Reassignment
+
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+PSC, PNC, TSC, STC, MCC, SSB
+
+Number of Pages:
+
+None
+
+Related Procedures:
+
+July 24, 2015
+January 06, 2012
+2
+311, 905
+
+.01 INTRODUCTION
+This procedure establishes a process for the temporary leave or reassignment of an officer involved in an incident, onduty or off-duty, in which a person is seriously injured or dies as a result of the officer's action. An officer may also be
+placed on administrative duty or administrative leave if he is arrested, charged with a criminal offense or is under
+criminal investigation based on an allegation.
+.02 DISCUSSION
+The change in duty status of an officer arrested, charged with a criminal offense, or being investigated for a criminal
+offense does not reflect on the guilt or innocence.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Administrative Duty
+
+Administrative Leave
+
+.04 REASSIGNMENT PROCESS
+A. When an officer is involved in an incident, on-duty or off-duty, in which a person is seriously injured or dies, to
+include any incident in which an officer suffers a gunshot wound, regardless of severity and/or is alleged to have
+engaged in conduct that demonstrates a significant behavioral infraction, the Chief of Police has the ultimate
+authority – and may delegate such authority to the Department Psychologist to make a determination as to whether
+the officer is placed on administrative leave or administrative duty. This determination is made immediately after
+the completion of the initial investigation of the incident.
+1.
+
+2.
+
+Should the determination be that the officer is placed on administrative leave; the officer's unit/shift prepares the
+appropriate leave forms and submits the forms to the Office of the Chief for the Chief's signature. The officer
+remains on administrative leave from the time of the incident until:
+a.
+
+The officer is released from administrative duty by the Department Psychologist; or
+
+b.
+
+The officer is returned to regular duty by the Chief of Police.
+
+Should the determination be that the officer is placed on administrative duty; the officer's Division Commander
+assigns the officer to administrative duties. In the absence of the officer's Division Commander, the officer's
+Unit/Shift Director or Section Commander assigns the officer to administrative duties and submits a report to
+the Division Commander and the Office of the Chief.
+a.
+
+Administrative duty assignments are those positions commonly known as desk, yeoman, or service area
+assignments and will be determined by Division Commander.
+
+b.
+
+Officers assigned to administrative duty, in accordance with this procedure, report for duty in civilian attire
+and are prohibited from wearing the San Antonio Police Department Uniform, and from operating or riding
+as a passenger in a marked police vehicle.
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 2
+
+Effective Date: July 24, 2015
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 912 - Awards and Ceremonies Program",
+        content: `Procedure 912 – Awards and Ceremonies Program
+
+Office with Primary
+Responsibility:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+
+June 3, 2024
+December 11, 2023
+
+Office(s) with Secondary
+Responsibilities:
+
+PSC, PNC, TEC, FCD, IDC, SSB
+
+Number of Pages:
+
+5
+
+Forms Referenced in Procedure:
+
+SAPD Form 5-RA; SAPD Form 65
+
+Related Procedures:
+
+310
+
+.01 INTRODUCTION
+A. This procedure establishes a process whereby members of the Department are recognized for exceptionally heroic and
+valorous acts, and for exemplary, meritorious, and exceptional service contributions that bring credit to the officer and
+the Department.
+B. This procedure also establishes a process whereby private citizens, community groups, and businesses are recognized
+for their unselfish contributions to the Department.
+.02 POLICY
+A. It is the policy of the Department to recognize and honor both sworn and non-sworn members who perform
+extraordinary acts of courage and heroism, or who distinguish themselves by providing outstanding service to the
+Department or the community.
+B. Private Citizens, community groups, and businesses can also be recognized under this procedure for their unselfish
+actions that help save the life of another person, for their exemplary actions at a particular incident in response to law
+enforcement activity, or for their unselfish contributions to the Department.
+.03 AWARDS OF HONOR
+A. Medal of Valor Award - This is the highest award presented by the San Antonio Police Department. This award is
+bestowed upon San Antonio police officers who distinguish themselves by displaying great courage, above and beyond
+the call of duty, in the face of immediate life-threatening peril and with full knowledge of the risks involved.
+B. Meritorious Conduct Award – This award is bestowed upon San Antonio police officers for heroic deeds and
+exceptional conduct involving great risk to their safety while performing their duties.
+C. Lifesaving Award - This award is bestowed upon San Antonio police officers who are directly responsible for saving
+a human life and, in doing so, exhibit extraordinary courage, skill, determination and/or other factors that cause the
+officers’ actions to go above and beyond the normal call of duty.
+(The application of a tourniquet alone should not be reason enough for a lifesaving award, however the correct
+application of a tourniquet coupled with some other factor, that results in the saving of a human life, should always
+be considered).
+D. Purple Heart Award - This award is bestowed upon San Antonio police officers who are killed or suffer serious bodily
+injury while encountering a hostile situation in the line of duty.
+.04 AWARDS FOR SERVICE
+A. Distinguished Service Award - This award is presented to members who distinguish themselves for exemplary service
+to the Department.
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 5
+
+Effective Date: May 27, 2024
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 915 - Family Assistance Program",
+        content: `Procedure 915 – Family Assistance Program
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+SSO
+PSC, PNC, TSC, FTC, IDC
+
+Number of Pages:
+
+None
+
+Related Procedures:
+
+November 23, 2011
+July 31, 2010
+2
+None
+
+.01 INTRODUCTION
+This procedure informs officers of the existence of the Family Assistance Program and identifies the services that the
+Program provides to officers and their families.
+.02 PURPOSE
+A. The Family Assistance Program is designed to provide support and assistance to the families of active duty officers
+who die, receive serious bodily injuries, or suffer catastrophic illnesses.
+B. The Program also provides support and advice to family members upon the death of a retiree.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Catastrophic Illness
+
+Serious Bodily Injury
+
+.04 FAMILY ASSISTANCE OFFICERS
+A. Family Assistance Officers are a group of officers appointed by the Chief of Police to administer the Family
+Assistance Program.
+B. Family Assistance Officers are volunteers and their duties with the program are in addition to their regular duties.
+C. Upon notification of an officer's death, serious bodily injury, or catastrophic illness a Family Assistance Officer
+shall initiate the Family Assistance Program and provide the level of assistance that is prescribed in this procedure.
+D. All aspects of San Antonio Police Department funerals are coordinated by the lead Family Assistance Officer
+assigned to the family by the Office of the Chief.
+.05 SERVICES PROVIDED
+A. Death of Active Duty Officer
+1.
+
+Notification of next of kin, if death occurs on-duty;
+
+2.
+
+Transportation to hospital for family members;
+
+3.
+
+Notification of the SAPD chaplain;
+
+4.
+
+Assistance in making funeral arrangements;
+
+5.
+
+Assistance in arranging immediate financial aid;
+
+6.
+
+Assistance in preparing necessary paperwork to apply for all eligible benefits; and
+
+7.
+
+Counseling for family members of officers killed in the line of duty.
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 2
+
+Effective Date: November 23, 2011
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 916 - Workers' Compensation",
+        content: `Procedure 916 – Workers’ Compensation
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+SSO
+PSC, PNC, TSC, FTC, IDC
+SAPD Form #172
+Supervisor Report of Injury or
+Illness
+State Form #DWC-6
+State Form #DWC073
+
+March 29, 2017
+July 31, 2010
+
+Number of Pages:
+
+2
+
+Related Procedures:
+
+904
+
+.01 INTRODUCTION
+A. The purpose of this procedure is to establish guidelines for documenting all Workers' Compensation claims and the
+manner in which they are prepared. Supervisors are responsible for an accurate completion of all documentation
+required for compliance with this procedure. Additionally, all members have a duty to report claims as early as
+practical.
+B. Sworn members affected under this procedure and requiring change of assignment status refer to GM Procedure
+904, Limited Duty Assignment, for instructions.
+.02 DOCUMENTATION OF OCCUPATIONAL INJURY/DISEASE
+A. Members who are disabled in any way due to an occupational injury/disease and, due to the impairment, are unable
+to perform any assigned duty will notify a supervisor of such occurrence as early as practical.
+1.
+
+Notification shall be made by the affected member, in writing, by incident report with assignment number and
+shall contain time and date of occurrence, location, type of injury/disease, and witness (es).
+
+2.
+
+In the event the affected member is incapable of the required notification, the supervisor in charge at the time of
+the injury shall be responsible for submitting documentation of the incident.
+
+B. A supervisor, upon receiving notification of a member's complaint of occupational injury/disease, regardless of the
+severity of the complaint, shall complete the required form(s) in compliance with Workers' Compensation mandates.
+1.
+
+The affected member's immediate supervisor, if on-duty, shall complete the necessary documentation.
+
+2.
+
+In the event the affected member's immediate supervisor is off-duty (i.e., relief day, vacation, sick, etc.), any
+supervisor assigned to the same unit completes the necessary documentation.
+
+C. Complete documentation is required for each incident or occurrence of occupational injury/disease sustained by any
+member.
+.03 PROCEDURAL GUIDELINES
+A. Members requesting to be carried injured on-duty due to an occupational injury/disease are required to seek
+immediate treatment by a physician, if they have not done so already. Before a member is carried injured on-duty,
+he is required to have a physician complete SAPD Form #172, Physician Authorization for On-Duty Injury Status,
+or the State Form #DWC073, Texas Workers’ Compensation Work Status Report. The completed form is submitted
+to the supervisor.
+B. SAPD Form #172 or State Form #DWC073 is required for determining the status of personnel injured on-duty. Each
+visit to a physician must be documented by an SAPD Form #172 or State Form #DWC073, in order to continue to
+verify an injured member's status.
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 2
+
+Effective Date: March 29, 2017
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 918 - Discrimination, Harassment, Retaliation, Inappropriate Behavior, and Sexual Harassment in the Workplace",
+        content: `Procedure 918 – Discrimination, Harassment, Retaliation, and Sexual
+Harassment in the Workplace
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+PSC, PNC, TEC, FCD, IDC, SSB
+
+Number of Pages:
+
+None
+
+Related Procedures:
+
+December 11, 2023
+January 31, 2017
+4
+904, 925
+
+.01 INTRODUCTION
+A. This procedure is intended to promote and maintain a healthy working environment which affords members (both
+sworn and civilian) the opportunity to perform their duties to the fullest potential, and to provide a process for
+reporting, investigating, and resolving complaints of discrimination, harassment, retaliation, and/or sexual harassment.
+B. The reporting, investigating, and resolving complaints of discrimination, harassment, retaliation, and/or sexual
+harassment, made against civilian employees are handled in accordance with City Administrative Directive 4.67,
+Equal Employment Opportunity/Anti-Harassment.
+.02 POLICY AGAINST HARASSMENT, DISCRIMINATION, AND RETALIATION
+The San Antonio Police Department strictly prohibits and will not tolerate any discrimination, harassment, retaliation,
+and/or sexual harassment of any person. The Department will take direct and immediate action to prevent and correct any
+such behavior involving instances of discrimination, harassment, retaliation, or sexual harassment.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Discrimination
+Retaliation
+
+Harassment
+Gender identity/expression
+
+Sexual Harassment
+
+.04 PROHIBITED ACTIVITIES
+A. Members (both sworn and civilian) of the Department shall not explicitly or implicitly ridicule, mock, deride, or
+belittle any person on the basis of sex, age, race, national origin, ancestry, citizenship, religion, disability, or sexual
+orientation, or gender identity/expression.
+B. Members (both sworn and civilian) shall not make offensive or derogatory comments to any person, either directly or
+indirectly, based on sex, age, race, national origin, ancestry, citizenship, religion, disability, sexual orientation, or
+gender identity/expression.
+C. Members (both sworn and civilian) shall not circulate written or graphic materials which ridicule, belittle, or embarrass
+any person on the basis of sex, age, race, national origin, ancestry, citizenship, religion, disability, sexual orientation,
+or gender identity/expression.
+D. Members (both sworn and civilian) shall not engage in conduct that could be construed as sexual harassment or any
+other significant behavioral infraction.
+.05 MEMBERS’ RESPONSIBILITIES
+A. Members (both sworn and civilian) are responsible for assisting in the prevention of discrimination, harassment,
+retaliation, and/or sexual harassment of any person by:
+1.
+
+Refraining from participating in or encouraging any actions or statements that could be perceived as
+discrimination, harassment, retaliation, and/or sexual harassment.
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 4
+
+Effective Date: December 11, 2023
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 921 - Psychological Services",
+        content: `Procedure 921 – Psychological Services
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+CTA
+PSC, PNC, TSC, STC, MCC
+
+Number of Pages:
+
+None
+
+Related Procedures:
+
+January 4, 2023
+July 24, 2015
+5
+None
+
+.01 INTRODUCTION
+This procedure provides officers with an understanding of the psychological services available to individual officers and
+their families.
+.02 DISCUSSION
+The San Antonio Police Department recognizes the importance of the mental and emotional health of its employees. It
+also recognizes the many stresses placed on officers by the job they perform and the toll those stresses take on the emotional
+and behavioral well-being of officers. To help decrease the impact of excessive stress, the Department has a Psychological
+Services Office prepared to support the psychological needs of its officers and their families through evaluation,
+counseling, and consultation.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Consultation
+Mental Health Professional
+
+Counseling
+Stress
+
+Critical Stress Incident
+Traumatic Leave
+
+Evaluation
+
+Mental Health Leave
+
+.04 AVAILABLE PSYCHOLOGICAL SERVICES
+A. Evaluations
+1.
+
+The Psychological Services Office provides psychological evaluations to officers of the Department and their
+immediate families.
+
+2.
+
+Voluntary evaluations may be conducted at the request of an officer or an officer’s immediate family. Voluntary
+evaluations include, but are not limited to, assessments of the following:
+a.
+
+An officer’s stress level;
+
+b.
+
+An officer’s or family member's non-job related emotional, cognitive, or behavioral functioning issue; and
+
+c.
+
+An officer’s neuropsychological integrity following a head injury.
+
+3.
+
+Appointments for voluntary evaluations may be made by calling the Psychological Services Office at 207-2180.
+
+4.
+
+Non-mandatory evaluations may be requested by an officer’s supervisor when there is a noticeable change in an
+officer's on-the-job performance. Some of the factors that may be taken into consideration are as follows:
+a.
+
+An increase in the use of sick leave;
+
+b.
+
+An increase in the number of citizen complaints;
+
+c.
+
+Frequently reporting late for work;
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 5
+
+Effective Date: January 4, 2023
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 922 - Reporting of Criminal Offenses by Department Members",
+        content: `Procedure 922 – Reporting of Criminal Offenses by Department Members
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+PSC, PNC, TSC, IDC, SSB
+
+Number of Pages:
+
+SAPD Form #62-PIR
+SAPD Form #62-RCO
+
+Related Procedures:
+
+September 1, 2017
+December 21, 2016
+2
+None
+
+.01 INTRODUCTION
+This procedure establishes a process for members to follow for reporting any criminal offense committed by members of
+the Department and ensures an appropriate investigation of the allegations.
+.02 POLICY
+A. It is the policy of the San Antonio Police Department that members shall report criminal offenses and significant
+behavioral infractions committed by Department members through internal channels in order to ensure the Chief of
+Police is properly notified of the allegations.
+B. This policy is not intended to prevent members from going outside of the Department to report criminal offenses,
+but is the first step in the reporting process.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Criminal Offense
+.04 DISCUSSION
+A. All sworn and civilian members shall report criminal offenses committed by Department members. Through this
+procedure, members have a means for reporting criminal offenses to two (2) different units within the Department
+for investigation.
+B. This procedure does not prevent members from reporting criminal offenses committed by Department members to
+outside agencies, but members should be advised outside agencies may inquire if the Department has a procedure
+for reporting criminal offenses and if the member followed the Department procedure before filing the complaint
+with an outside agency.
+.05 REPORTING OF CRIMINAL OFFENSES
+A. Any member of the Department who suspects or has knowledge of any criminal offense committed by any
+Department member shall report the criminal offense in writing using SAPD Form #62-RCO, Reporting of Criminal
+Offenses By Department Members, and hand carry the form to one of the following units.
+1.
+
+The Office of the Chief; or
+
+2.
+
+The Integrity Detail.
+
+B. In addition to SAPD Form #62-RCO, the reporting member may also fill out the appropriate incident or offense
+report and submit the report in accordance with General Manual reporting procedures; or
+C. If the member receiving the information about suspected criminal activity is uncertain as to the credibility of the
+person and/or the information provided, the member may write the information on an interoffice correspondence
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 2
+
+Effective Date: September 1, 2017
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 923 - Return to Duty Program (RTD)",
+        content: `Procedure 923 – Return to Duty (RTD) Program
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+CTA
+COP, PSC, PNC, TSC, FTC, IDC, SSO
+SAPD Form #37-DER
+SAPD Form #37-WER
+
+Number of Pages:
+Related Procedures:
+
+October 05, 2020
+July 31, 2010
+5
+325, 904, 908, 921
+
+.01 INTRODUCTION
+The Return to Duty (RTD) Program establishes the processes necessary to ensure officers receive prompt, effective, and
+adequate services and support as needed to return to duty. This support is available whenever officers are involved in a
+serious incident or are absent from the Department for an extended period of time.
+.02 POLICY
+A. Officers who sustain a serious traumatic injury, or who witness a violent, traumatic incident involving death or
+serious bodily injury, whether on or off duty, or who have been away from the Department more than one hundred
+and eighty (180) consecutive calendar days, may be placed into the RTD Program. Additionally, any officer may be
+placed into this program at the direction of the Chief of Police.
+B. Officers who have sustained a serious traumatic injury, whether on or off duty, will receive both medical and
+psychological services throughout the stages of their recovery.
+.03 DISCUSSION
+A. The San Antonio Police Department recognizes the importance of the physical, mental, and emotional health of its
+officers. It also recognizes the many stresses placed on officers and their families when officers are seriously
+injured or have been away from the Department and not performing police functions for long periods of time. To
+help decrease the impact of excessive stress, the Department has a Psychological Services Office prepared to support
+the psychological needs of its officers and their families through evaluation, counseling, and consultation in
+accordance with GM Procedure 921, Psychological Services.
+B. With numerous changes in laws, Department policies and procedures, changes in technology, tactics, and possible
+loss of driving and firearms skills, the RTD Program is designed to assist the officer’s re-introduction into being a
+fully functional member of the Department.
+C. The RTD Program provides the officer and his family supportive counseling services, if necessary, to help the
+officer and his family cope and recover from any serious injuries or trauma.
+D. The RTD Program provides training assessment and field work through the Field Training Officer (FTO) Program,
+designed to assist officers with returning to their assigned duties.
+E. The RTD Program is designed to satisfy the community’s expectation that the officers have been properly cared for
+and are capable of returning to their duties as police officers.
+F.
+
+The RTD Program process will ensure the highest degree of continuity and standardization in the reorientation of
+officers who have missed time from work due to:
+1.
+
+A serious traumatic injury (whether on or off duty);
+
+2.
+
+A serious bodily injury (whether on or off duty);
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 5
+
+Effective Date: October 05, 2020
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+    {
+        category: 'General Manual',
+        title: "Procedure 924 - Mandatory Drug Testing Program",
+        content: `Procedure 924 – Mandatory Drug Testing Program
+Office with Primary
+Responsibility:
+Office(s) with Secondary
+Responsibilities:
+Forms Referenced in Procedure:
+
+Effective Date:
+Prior Revision Date:
+
+COP
+PSC, PNC, TSC, FTC, IDC, SSO
+None
+
+December 5, 2019
+July 10, 2013
+
+Number of Pages:
+
+5
+
+Related Procedures:
+
+303
+
+.01 INTRODUCTION
+A. This procedure establishes a Mandatory Drug-Testing program for sworn members, agreed upon by the City of San
+Antonio and the San Antonio Police Officers’ Association.
+B. The intent of the Department is to adhere to the United States Department of Transportation (U.S. D.O.T.). Standards
+for
+drug
+and
+alcohol
+testing.
+(For
+current
+list
+of
+test
+cutoff
+levels,
+refer
+to:
+https://www.transportation.gov/odapc/part40/40-87).
+C. This procedure does not supersede any criminal investigation related to substance abuse by a member of the
+Department.
+D. The drug testing of non-sworn members is handled in accordance with City Administrative Directive 4.3, Alcohol
+and Controlled Substances Testing.
+E. During times when the Department’s Mandatory Drug Testing Program Coordinator will be unavailable, the Deputy
+Chief of Staff – External will be designated to temporarily fill that position.
+.02 POLICY
+It is the policy of the San Antonio Police Department to maintain a safe work environment for its employees and for the
+citizens of San Antonio. To ensure the integrity of the Department and to preserve the public trust and confidence, this
+Department has implemented the following drug-testing policy to ensure a drug-free workplace.
+.03 TERMINOLOGY (For specific use within this procedure, see Glossary)
+Company
+
+Drug Testing
+
+Reasonable Suspicion
+
+.04 REASONABLE SUSPICION DRUG TESTS
+A. During normal business hours (0745-1630, Mon-Fri) any command or supervisory officer who has reasonable
+suspicion to believe an officer is under the influence of drugs or controlled substances shall, with the concurrence
+from the ranking on duty commander, place the officer on administrative duty, write a detailed report requesting a
+Mandatory Drug Test be conducted on said officer, and contact the Department’s Mandatory Drug Testing Program
+Coordinator in the Office of the Chief. The detailed report must include a summary of the specific, observable facts
+that the officer may be under the influence of drugs or a controlled substance. The report shall be submitted to the
+Mandatory Drug Testing Program Coordinator, at the first available opportunity.
+B. Notification during weekends, holidays, and between the hours of 1630 and 0745:
+a.
+
+When the supervisor requesting the Reasonable Suspicion Drug Test is a Sergeant, he notifies his on-duty
+Lieutenant, writes a detailed report requesting a Mandatory Drug Test be conducted on said officer, and
+requests that the Communications Unit notify the Mandatory Drug Testing Program Coordinator.
+Note: In the absence of the Lieutenant assigned to the affected office, the requesting supervisor
+notifies another on-duty Lieutenant.
+
+General Manual Procedures – Section 900 Personnel Procedures
+
+Page 1 of 5
+
+Effective Date: December 5, 2019
+
+
+San Antonio Police Department
+GENERAL MANUAL`
+    },
+
+
+    // Quiz Questions
     {
         type: 'multiple-choice',
         category: 'complaints',
@@ -50268,5 +64021,4 @@ Effective Date: December 5, 2019
     // Categories: 'cba-definitions', 'cba-association', 'cba-promotions', 'cba-seniority', 
     //             'cba-grievance', 'cba-discipline', 'complaints', 'use-of-force', 
     //             'patrol', 'investigations', etc.
-    
 ];

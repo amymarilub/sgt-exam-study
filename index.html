@@ -633,7 +633,21 @@
         </div>
     </div>
 
-    <script src="documents.js"></script>
+    <script src="documents_cba.js"></script>
+    <script src="documents_penal.js"></script>
+    <script src="documents_gm.js"></script>
+    <script src="documents_quiz.js"></script>
+    <script>
+        // Combine all documents into STUDY_DOCUMENTS array
+        const STUDY_DOCUMENTS = [
+            ...DOCUMENTS_CBA,
+            ...DOCUMENTS_PENAL,
+            ...DOCUMENTS_GM
+        ];
+        
+        // Make quiz questions available globally
+        const QUIZ_QUESTIONS = DOCUMENTS_QUIZ;
+    </script>
     <script>
         // Initialize the app
         let currentMode = 'dashboard';

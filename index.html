@@ -489,6 +489,22 @@
                 <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-number" id="totalStudied">0</div>
+                        <div class="stat-label">Questions Studied</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="accuracy">0%</div>
+                        <div class="stat-label">Quiz Accuracy</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalHighlights">0</div>
+                        <div class="stat-label">Total Highlights</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="studyStreak">0</div>
+                        <div class="stat-label">Day Streak</div>
+                    </div>
+                </div>
+            </div>
 
             <!-- How to Use -->
             <div class="mode-content" id="howto">
@@ -544,29 +560,12 @@
                 </div>
             </div>
 
-                        <div class="stat-label">Questions Studied</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" id="accuracy">0%</div>
-                        <div class="stat-label">Quiz Accuracy</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" id="totalHighlights">0</div>
-                        <div class="stat-label">Total Highlights</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" id="studyStreak">0</div>
-                        <div class="stat-label">Day Streak</div>
-                    </div>
-                </div>
-            </div>
 
             <!-- Read & Study -->
             <div class="mode-content" id="study">
                 <div class="document-selector">
                     <select id="categorySelect">
                         <option value="">📚 Select Document Category...</option>
-                        
                         <option value="CBA">Collective Bargaining Agreement (CBA)</option>
                         <option value="General Manual">General Manual (SAPD Procedures)</option>
                         <option value="Penal Code">Texas Penal Code</option>
@@ -578,6 +577,7 @@
                     </select>
                 </div>
 
+                
 
                 <div class="highlight-controls" id="highlightControls">
                     <p style="margin-bottom: 10px; color: #999; font-size: 14px;">
@@ -633,21 +633,7 @@
         </div>
     </div>
 
-    <!-- Load all document files -->
-    <script src="documents_cba.js"></script>
-    <script src="documents_penal.js"></script>
-    <script src="documents_gm.js"></script>
-    <script src="documents_quiz.js"></script>
-    
-    <!-- Combine into single array for app to use -->
-    <script>
-        const STUDY_DOCUMENTS = [
-            ...DOCUMENTS_CBA,
-            ...DOCUMENTS_PENAL,
-            ...DOCUMENTS_GM,
-            ...QUIZ_QUESTIONS
-        ];
-    </script>
+    <script src="documents.js"></script>
     <script>
         // Initialize the app
         let currentMode = 'dashboard';
@@ -722,8 +708,8 @@
                 return;
             }
             
-            // Filter documents by category (exclude quiz questions which don't have title field)
-            filteredDocuments = STUDY_DOCUMENTS.filter(doc => doc.category === currentCategory && doc.title);
+            // Filter documents by category
+            filteredDocuments = STUDY_DOCUMENTS.filter(doc => doc.category === currentCategory);
             
             // Populate document dropdown
             documentSelect.innerHTML = '<option value="">📄 Select Document...</option>';
@@ -756,6 +742,7 @@
         let utterance = null;
         let isPaused = false;
 
+        
 
         document.getElementById('speedSelect').addEventListener('change', (e) => {
             if (utterance) {

@@ -511,6 +511,7 @@
                 <div class="document-selector">
                     <select id="categorySelect">
                         <option value="">📚 Select Document Category...</option>
+                        <option value="How to Use">📖 How to Use This App</option>
                         <option value="CBA">Collective Bargaining Agreement (CBA)</option>
                         <option value="General Manual">General Manual (SAPD Procedures)</option>
                         <option value="Penal Code">Texas Penal Code</option>
@@ -594,7 +595,21 @@
         </div>
     </div>
 
-    <script src="documents.js"></script>
+    <!-- Load all document files -->
+    <script src="documents_cba.js"></script>
+    <script src="documents_penal.js"></script>
+    <script src="documents_gm.js"></script>
+    <script src="documents_quiz.js"></script>
+    
+    <!-- Combine into single array for app to use -->
+    <script>
+        const STUDY_DOCUMENTS = [
+            ...DOCUMENTS_CBA,
+            ...DOCUMENTS_PENAL,
+            ...DOCUMENTS_GM,
+            ...QUIZ_QUESTIONS
+        ];
+    </script>
     <script>
         // Initialize the app
         let currentMode = 'dashboard';
@@ -669,8 +684,8 @@
                 return;
             }
             
-            // Filter documents by category
-            filteredDocuments = STUDY_DOCUMENTS.filter(doc => doc.category === currentCategory);
+            // Filter documents by category (exclude quiz questions which don't have title field)
+            filteredDocuments = STUDY_DOCUMENTS.filter(doc => doc.category === currentCategory && doc.title);
             
             // Populate document dropdown
             documentSelect.innerHTML = '<option value="">📄 Select Document...</option>';

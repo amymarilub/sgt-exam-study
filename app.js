@@ -631,66 +631,12 @@ function clearHighlight() {
 // ========================================
 // TEXT-TO-SPEECH
 // ========================================
-function populateVoices() {
-    const voices = speechSynthesis.getVoices();
-    const select = document.getElementById('voiceSelect');
-    
-    select.innerHTML = '<option value="">Default Voice</option>';
-    
-    // Filter for quality English voices only
-    const goodVoices = voices.filter(voice => 
-        voice.lang.startsWith('en-') && 
-        !voice.name.includes('Google') // Often robotic
-    ).slice(0, 5); // Limit to 5 best
-    
-    goodVoices.forEach((voice, index) => {
-        const option = document.createElement('option');
-        option.value = voices.indexOf(voice); // Store original index
-        option.textContent = `${voice.name}`;
-        select.appendChild(option);
-    });
-}
 
 // Load voices when available
-if (speechSynthesis.onvoiceschanged !== undefined) {
-    speechSynthesis.onvoiceschanged = populateVoices;
-}
 
 let utterance = null;
 let isPaused = false;
 
-document.getElementById('playBtn').addEventListener('click', () => {
-    const content = document.getElementById('documentContent').textContent;
-    if (!content) return;
-
-    if (isPaused && utterance) {
-        speechSynthesis.resume();
-        isPaused = false;
-    } else {
-        utterance = new SpeechSynthesisUtterance(content);
-        utterance.rate = parseFloat(document.getElementById('speedSelect').value);
-        
-        const voiceIndex = document.getElementById('voiceSelect').value;
-        if (voiceIndex) {
-            const voices = speechSynthesis.getVoices();
-            utterance.voice = voices[voiceIndex];
-        }
-        
-        speechSynthesis.speak(utterance);
-    }
-});
-
-document.getElementById('pauseBtn').addEventListener('click', () => {
-    if (speechSynthesis.speaking && !isPaused) {
-        speechSynthesis.pause();
-        isPaused = true;
-    }
-});
-
-document.getElementById('stopBtn').addEventListener('click', () => {
-    speechSynthesis.cancel();
-    isPaused = false;
-});
 
 document.getElementById('speedSelect').addEventListener('change', (e) => {
     if (utterance) {

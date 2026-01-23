@@ -3,7 +3,7 @@
 // ========================================
 // Organized by category for easy navigation
 
-const documents = [
+const STUDY_DOCUMENTS = [
     // ========================================
     // COLLECTIVE BARGAINING AGREEMENT (CBA)
     // ========================================

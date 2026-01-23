@@ -523,23 +523,6 @@
                     </select>
                 </div>
 
-                <div class="audio-controls">
-                    <button id="playBtn">▶️ Play</button>
-                    <button id="pauseBtn">⏸️ Pause</button>
-                    <button id="stopBtn">⏹️ Stop</button>
-                    <label>Speed:</label>
-                    <select id="speedSelect">
-                        <option value="0.75">0.75x</option>
-                        <option value="1" selected>1x</option>
-                        <option value="1.25">1.25x</option>
-                        <option value="1.5">1.5x</option>
-                        <option value="2">2x</option>
-                    </select>
-                    <label>Voice:</label>
-                    <select id="voiceSelect">
-                        <option value="">Default</option>
-                    </select>
-                </div>
 
                 <div class="highlight-controls" id="highlightControls">
                     <p style="margin-bottom: 10px; color: #999; font-size: 14px;">
@@ -718,31 +701,6 @@
         let utterance = null;
         let isPaused = false;
 
-        document.getElementById('playBtn').addEventListener('click', () => {
-            const content = document.getElementById('documentContent').textContent;
-            if (!content) return;
-
-            if (isPaused && utterance) {
-                speechSynthesis.resume();
-                isPaused = false;
-            } else {
-                utterance = new SpeechSynthesisUtterance(content);
-                utterance.rate = parseFloat(document.getElementById('speedSelect').value);
-                speechSynthesis.speak(utterance);
-            }
-        });
-
-        document.getElementById('pauseBtn').addEventListener('click', () => {
-            if (speechSynthesis.speaking && !isPaused) {
-                speechSynthesis.pause();
-                isPaused = true;
-            }
-        });
-
-        document.getElementById('stopBtn').addEventListener('click', () => {
-            speechSynthesis.cancel();
-            isPaused = false;
-        });
 
         document.getElementById('speedSelect').addEventListener('change', (e) => {
             if (utterance) {

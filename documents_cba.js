@@ -152,7 +152,35 @@ const DOCUMENTS_CBA = [
                     <p><strong>Chief of Police</strong> has authority over all disciplinary actions<br>
                     Chief may delegate to Division Commanders, Bureau Commanders, or designees</p>
 
-                    <h4>LINE COMPLAINTS (Chain of Command)</h4>
+                    <h4>⚠️ KEY DIFFERENCES:</h4>
+                    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+                        <thead>
+                            <tr style="background: #37474f;">
+                                <th style="padding: 12px; text-align: left; color: #fff; border: 1px solid #ddd; font-weight: bold;">Line Complaint</th>
+                                <th style="padding: 12px; text-align: left; color: #fff; border: 1px solid #ddd; font-weight: bold;">Internal Affairs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd; background: #f9f9f9;">NO attorney during interviews</td>
+                                <td style="padding: 10px; border: 1px solid #ddd; background: #f9f9f9;">Attorney present allowed</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd; background: #fff;">Max 5 working days suspension</td>
+                                <td style="padding: 10px; border: 1px solid #ddd; background: #fff;">Any suspension/termination</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd; background: #f9f9f9;">Captain investigates</td>
+                                <td style="padding: 10px; border: 1px solid #ddd; background: #f9f9f9;">IA Unit investigates</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd; background: #fff;">21 calendar days</td>
+                                <td style="padding: 10px; border: 1px solid #ddd; background: #fff;">180 calendar days</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h4>Line Complaint Process Details:</h4>
                     <ul>
                         <li><strong>Timeline:</strong> 21 calendar days from receipt of written complaint</li>
                         <li><strong>Who Investigates:</strong> Captain of station/section (or Division Commander for Captains+)</li>

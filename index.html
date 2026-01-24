@@ -713,9 +713,10 @@
         console.log('GM loaded:', typeof DOCUMENTS_GM !== 'undefined', DOCUMENTS_GM ? DOCUMENTS_GM.length + ' docs' : 'FAILED');
         console.log('Quiz loaded:', typeof DOCUMENTS_QUIZ !== 'undefined', DOCUMENTS_QUIZ ? DOCUMENTS_QUIZ.length + ' questions' : 'FAILED');
 
-        // Combine documents with error handling
-        let STUDY_DOCUMENTS = [];
-        let QUIZ_QUESTIONS = [];
+        // Combine documents with error handling - MAKE GLOBAL
+        var STUDY_DOCUMENTS = [];  // Changed from let to var for global scope
+        var QUIZ_QUESTIONS = [];   // Changed from let to var for global scope
+        var filteredDocuments = []; // Add this global variable
         
         try {
             if (typeof DOCUMENTS_CBA === 'undefined') throw new Error('DOCUMENTS_CBA not loaded');
@@ -727,6 +728,7 @@
             
             console.log('✓ Total documents:', STUDY_DOCUMENTS.length);
             console.log('✓ Total quiz questions:', QUIZ_QUESTIONS.length);
+            console.log('✓ STUDY_DOCUMENTS is now globally available');
         } catch (error) {
             console.error('✗ LOADING ERROR:', error.message);
             alert('Error loading study materials. Please refresh the page.\n\n' + error.message);
@@ -734,9 +736,9 @@
     </script>
     <script>
         // Initialize the app
-        let currentMode = 'dashboard';
-        let currentQuestionIndex = 0;
-        let quizAnswers = [];
+        var currentMode = 'dashboard';  // Use var for global scope
+        var currentQuestionIndex = 0;
+        var quizAnswers = [];
         let studyData = {
             questionsStudied: 0,
             correctAnswers: 0,
@@ -791,13 +793,14 @@
         });
 
         // Two-level document navigation
-        let currentCategory = '';
-        let filteredDocuments = [];
+        var currentCategory = '';  // Use var for global scope
+        // filteredDocuments already declared globally above
 
         // Category selector - Level 1
         document.getElementById('categorySelect').addEventListener('change', (e) => {
             currentCategory = e.target.value;
             console.log('📂 Category selected:', currentCategory);
+            console.log('📚 STUDY_DOCUMENTS available:', typeof STUDY_DOCUMENTS !== 'undefined', STUDY_DOCUMENTS ? STUDY_DOCUMENTS.length + ' docs' : 'NOT AVAILABLE');
             
             const documentSelect = document.getElementById('documentSelect');
             
@@ -809,6 +812,11 @@
             }
             
             try {
+                // Verify STUDY_DOCUMENTS exists
+                if (typeof STUDY_DOCUMENTS === 'undefined' || !STUDY_DOCUMENTS || STUDY_DOCUMENTS.length === 0) {
+                    throw new Error('STUDY_DOCUMENTS not available. Total docs: ' + (STUDY_DOCUMENTS ? STUDY_DOCUMENTS.length : 0));
+                }
+                
                 // Filter documents by category
                 filteredDocuments = STUDY_DOCUMENTS.filter(doc => doc.category === currentCategory);
                 console.log('📄 Filtered documents:', filteredDocuments.length);

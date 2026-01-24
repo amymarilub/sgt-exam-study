@@ -744,6 +744,1379 @@
             correctAnswers: 0,
             totalAttempts: 0,
             highlights: [],
+            studyStreak: 0,
+            notes: {}  // Add notes object to store document notes
+        };
+
+        // Load saved data
+        function loadData() {
+            const saved = localStorage.getItem('sgtStudyData');
+            if (saved) {
+                window.studyData = JSON.parse(saved);
+                // Ensure notes property exists for backward compatibility
+                if (!window.studyData.notes) {
+                    window.studyData.notes = {};
+                }
+                updateDashboard();
+            }
+        }
+
+        // Save data
+        function saveData() {
+            localStorage.setItem('sgtStudyData', JSON.stringify(window.studyData));
+            updateDashboard();
+        }
+
+        // Update dashboard stats
+        function updateDashboard() {
+            document.getElementById('totalStudied').textContent = studyData.questionsStudied;
+            const accuracy = studyData.totalAttempts > 0 
+                ? Math.round((studyData.correctAnswers / studyData.totalAttempts) * 100) 
+                : 0;
+            document.getElementById('accuracy').textContent = accuracy + '%';
+            document.getElementById('totalHighlights').textContent = studyData.highlights.length;
+            document.getElementById('studyStreak').textContent = studyData.studyStreak;
+        }
+
+        // Mode switching
+        document.querySelectorAll('.mode-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.mode-content').forEach(c => c.classList.remove('active'));
+                
+                tab.classList.add('active');
+                const mode = tab.dataset.mode;
+                document.getElementById(mode).classList.add('active');
+                currentMode = mode;
+
+                if (mode === 'quiz') {
+                    loadQuiz();
+                } else if (mode === 'review') {
+                    loadReview();
+                }
+            });
+        });
+
+        // Two-level document navigation - Make variables truly global
+        window.currentCategory = '';
+        // filteredDocuments already declared globally above
+
+        // Category selector - Level 1
+        document.getElementById('categorySelect').addEventListener('change', (e) => {
+            window.currentCategory = e.target.value;
+            console.log('📂 Category selected:', window.currentCategory);
+            console.log('📚 STUDY_DOCUMENTS available:', typeof window.STUDY_DOCUMENTS !== 'undefined', window.STUDY_DOCUMENTS ? window.STUDY_DOCUMENTS.length + ' docs' : 'NOT AVAILABLE');
+            
+            const documentSelect = document.getElementById('documentSelect');
+            
+            if (!window.currentCategory) {
+                documentSelect.style.display = 'none';
+                documentSelect.innerHTML = '<option value="">📄 Select Document...</option>';
+                document.getElementById('documentContent').innerHTML = '<p style="text-align: center; color: #888; margin-top: 50px;">Select a category to begin studying</p>';
+                return;
+            }
+            
+            try {
+                // Verify STUDY_DOCUMENTS exists
+                if (typeof window.STUDY_DOCUMENTS === 'undefined' || !window.STUDY_DOCUMENTS || window.STUDY_DOCUMENTS.length === 0) {
+                    throw new Error('STUDY_DOCUMENTS not available. Total docs: ' + (window.STUDY_DOCUMENTS ? window.STUDY_DOCUMENTS.length : 0));
+                }
+                
+                // Filter documents by category
+                window.filteredDocuments = window.STUDY_DOCUMENTS.filter(doc => doc.category === window.currentCategory);
+                console.log('📄 Filtered documents:', window.filteredDocuments.length);
+                
+                // Populate document dropdown
+                documentSelect.innerHTML = '<option value="">📄 Select Document...</option>';
+                window.filteredDocuments.forEach((doc, index) => {
+                    const option = document.createElement('option');
+                    option.value = index;
+                    option.textContent = doc.title;
+                    documentSelect.appendChild(option);
+                });
+                
+                console.log('✓ Document dropdown populated with', window.filteredDocuments.length, 'options');
+                documentSelect.style.display = 'block';
+                document.getElementById('documentContent').innerHTML = '<p style="text-align: center; color: #888; margin-top: 50px;">Select a document from the dropdown above</p>';
+            } catch (error) {
+                console.error('✗ Error in category change:', error);
+                alert('Error loading documents: ' + error.message);
+            }
+        });
+
+        // Document selector - Level 2
+        document.getElementById('documentSelect').addEventListener('change', (e) => {
+            const docIndex = parseInt(e.target.value);  // Convert string to number
+            console.log('📄 Document selected, index:', docIndex);
+            
+            if (isNaN(docIndex)) return;  // Check if valid number
+
+            try {
+                const doc = window.filteredDocuments[docIndex];
+                if (!doc) {
+                    throw new Error('Document not found at index ' + docIndex);
+                }
+                console.log('📖 Loading document:', doc.title);
+                
+                const content = document.getElementById('documentContent');
+                content.innerHTML = `<h2>${doc.title}</h2>${doc.content}`;
+                
+                console.log('✓ Document content loaded successfully');
+                
+                // Update current document for notes functionality
+                const actualIndex = window.STUDY_DOCUMENTS.findIndex(d => d.title === doc.title);
+                updateCurrentDocument(actualIndex);
+            } catch (error) {
+                console.error('✗ Error loading document:', error);
+                alert('Error displaying document: ' + error.message);
+            }
+        });
+
+
+
+        // Quiz functionality
+        function loadQuiz() {
+            console.log('🎯 Loading quiz...');
+            console.log('Quiz questions available:', window.QUIZ_QUESTIONS ? window.QUIZ_QUESTIONS.length : 0);
+            
+            if (!window.QUIZ_QUESTIONS || window.QUIZ_QUESTIONS.length === 0) {
+                console.log('⚠️ No quiz questions available');
+                document.getElementById('quizContainer').innerHTML = `
+                    <div class="quiz-card">
+                        <p style="text-align: center; color: #999;">
+                            Quiz questions will be added when study materials are available.
+                        </p>
+                    </div>
+                `;
+                return;
+            }
+
+            console.log('✓ Starting quiz with', window.QUIZ_QUESTIONS.length, 'questions');
+            window.currentQuestionIndex = 0;
+            window.quizAnswers = [];
+            displayQuestion();
+        }
+
+        function displayQuestion() {
+            if (window.currentQuestionIndex >= window.QUIZ_QUESTIONS.length) {
+                showQuizResults();
+                return;
+            }
+
+            const question = window.QUIZ_QUESTIONS[window.currentQuestionIndex];
+            const container = document.getElementById('quizContainer');
+
+            container.innerHTML = `
+                <div class="quiz-card">
+                    <div class="question-number">Question ${window.currentQuestionIndex + 1} of ${window.QUIZ_QUESTIONS.length}</div>
+                    <div class="question-text">${question.question}</div>
+                    <div class="options-container" id="optionsContainer">
+                        ${question.options.map((opt, i) => `
+                            <div class="option" data-index="${i}">${opt}</div>
+                        `).join('')}
+                    </div>
+                    <button class="submit-btn" id="submitAnswer" disabled>Submit Answer</button>
+                    <div id="explanationContainer"></div>
+                </div>
+            `;
+
+            // Handle option selection
+            let selectedIndex = null;
+            document.querySelectorAll('.option').forEach(opt => {
+                opt.addEventListener('click', () => {
+                    document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+                    opt.classList.add('selected');
+                    selectedIndex = parseInt(opt.dataset.index);
+                    document.getElementById('submitAnswer').disabled = false;
+                });
+            });
+
+            // Handle answer submission
+            document.getElementById('submitAnswer').addEventListener('click', () => {
+                if (selectedIndex === null) return;
+
+                const correct = selectedIndex === question.correct;
+                quizAnswers.push({ questionIndex: currentQuestionIndex, correct });
+
+                // Update study data
+                studyData.totalAttempts++;
+                if (correct) studyData.correctAnswers++;
+                studyData.questionsStudied = Math.max(studyData.questionsStudied, currentQuestionIndex + 1);
+                saveData();
+
+                // Show feedback
+                document.querySelectorAll('.option').forEach((opt, i) => {
+                    opt.style.pointerEvents = 'none';
+                    if (i === question.correct) {
+                        opt.classList.add('correct');
+                    } else if (i === selectedIndex) {
+                        opt.classList.add('incorrect');
+                    }
+                });
+
+                // Show explanation
+                document.getElementById('explanationContainer').innerHTML = `
+                    <div class="explanation-box">
+                        <h4>${correct ? '✅ Correct!' : '❌ Incorrect'}</h4>
+                        <p>${question.explanation}</p>
+                        <p class="reference">Reference: ${question.reference}</p>
+                    </div>
+                `;
+
+                // Change button to next question
+                const btn = document.getElementById('submitAnswer');
+                btn.textContent = currentQuestionIndex < QUIZ_QUESTIONS.length - 1 ? 'Next Question' : 'See Results';
+                btn.disabled = false;
+                btn.onclick = () => {
+                    currentQuestionIndex++;
+                    displayQuestion();
+                };
+            });
+        }
+
+        function showQuizResults() {
+            const correct = quizAnswers.filter(a => a.correct).length;
+            const total = quizAnswers.length;
+            const percentage = Math.round((correct / total) * 100);
+
+            document.getElementById('quizContainer').innerHTML = `
+                <div class="quiz-card" style="text-align: center;">
+                    <h2 style="color: #667eea; margin-bottom: 20px;">Quiz Complete!</h2>
+                    <div class="stat-number" style="font-size: 72px; margin: 30px 0;">${percentage}%</div>
+                    <p style="font-size: 24px; margin-bottom: 30px;">
+                        You got ${correct} out of ${total} questions correct
+                    </p>
+                    <button class="submit-btn" onclick="loadQuiz()">Take Quiz Again</button>
+                </div>
+            `;
+        }
+
+        // Review functionality
+        function loadReview() {
+            const container = document.getElementById('highlightsList');
+            if (studyData.highlights.length === 0) {
+                container.innerHTML = '<p style="color: #999;">No highlights yet. Start reading and highlighting in Study mode!</p>';
+                return;
+            }
+
+            container.innerHTML = studyData.highlights.map((h, i) => `
+                <div class="highlight-item">
+                    <div class="highlight-text">${h.text}</div>
+                    ${h.note ? `<div class="highlight-note">Note: ${h.note}</div>` : ''}
+                </div>
+            `).join('');
+        }
+
+        // Reset data
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            if (confirm('Are you sure? This will delete ALL your progress and cannot be undone.')) {
+                localStorage.clear();
+                studyData = {
+                    questionsStudied: 0,
+                    correctAnswers: 0,
+                    totalAttempts: 0,
+                    highlights: [],
+                    studyStreak: 0,
+                    notes: {},
+                    flashcardProgress: {}
+                };
+                updateDashboard();
+                alert('All data has been reset.');
+            }
+        });
+
+        // ========================================
+        // NOTES FUNCTIONALITY
+        // ========================================
+        window.currentDocumentIndex = null;
+
+        function updateCurrentDocument(index) {
+            window.currentDocumentIndex = index;
+            displayNotes();
+        }
+
+        function toggleAddNote() {
+            const box = document.getElementById('addNoteBox');
+            const input = document.getElementById('noteInput');
+            
+            if (box.style.display === 'none') {
+                box.style.display = 'block';
+                input.focus();
+            } else {
+                box.style.display = 'none';
+                input.value = '';
+            }
+        }
+
+        function saveNote() {
+            const input = document.getElementById('noteInput');
+            const text = input.value.trim();
+            
+            if (!text) {
+                alert('Please enter a note');
+                return;
+            }
+            
+            if (window.currentDocumentIndex === null) {
+                alert('Please select a document first');
+                return;
+            }
+            
+            // Initialize notes array for this document if needed
+            if (!window.studyData.notes[window.currentDocumentIndex]) {
+                window.studyData.notes[window.currentDocumentIndex] = [];
+            }
+            
+            // Add note
+            window.studyData.notes[window.currentDocumentIndex].push({
+                text: text,
+                timestamp: new Date().toISOString()
+            });
+            
+            saveData();
+            input.value = '';
+            toggleAddNote();
+            displayNotes();
+        }
+
+        function displayNotes() {
+            const container = document.getElementById('notesList');
+            
+            if (window.currentDocumentIndex === null || !window.studyData.notes[window.currentDocumentIndex] || window.studyData.notes[window.currentDocumentIndex].length === 0) {
+                container.innerHTML = '<p style="color: #999; text-align: center;">No notes yet. Add your first note above!</p>';
+                return;
+            }
+            
+            const notes = window.studyData.notes[window.currentDocumentIndex];
+            
+            container.innerHTML = notes.map((note, index) => `
+                <div class="note-item">
+                    <div class="note-text">${note.text}</div>
+                    <div class="note-meta">
+                        <span>${new Date(note.timestamp).toLocaleDateString()} ${new Date(note.timestamp).toLocaleTimeString()}</span>
+                        <button class="delete-note-btn" onclick="deleteNote(${index})">Delete</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function deleteNote(index) {
+            if (confirm('Delete this note?')) {
+                window.studyData.notes[window.currentDocumentIndex].splice(index, 1);
+                saveData();
+                displayNotes();
+            }
+        }
+
+        // ========================================
+        // FLASHCARD FUNCTIONALITY
+        // ========================================
+        let flashcards = [];
+        let currentFlashcardIndex = 0;
+        let isFlipped = false;
+
+        function generateFlashcards() {
+            flashcards = [];
+            
+            // Generate flashcards from quiz questions
+            if (typeof QUIZ_QUESTIONS !== 'undefined') {
+                QUIZ_QUESTIONS.forEach((q, i) => {
+                    flashcards.push({
+                        id: `quiz-${i}`,
+                        question: q.question,
+                        answer: q.options[q.correct],
+                        category: q.category,
+                        explanation: q.explanation
+                    });
+                });
+            }
+            
+            // Shuffle flashcards
+            flashcards.sort(() => Math.random() - 0.5);
+        }
+
+        function startFlashcards() {
+            generateFlashcards();
+            
+            if (flashcards.length === 0) {
+                alert('No flashcards available yet. Quiz questions will generate flashcards!');
+                return;
+            }
+            
+            currentFlashcardIndex = 0;
+            isFlipped = false;
+            
+            const controls = document.querySelector('.flashcard-controls');
+            if (controls) controls.style.display = 'none';
+            
+            const container = document.getElementById('flashcardContainer');
+            if (container) {
+                container.innerHTML = '';
+                container.style.display = 'block';
+                displayFlashcard();
+            }
+        }
+
+        function displayFlashcard() {
+            if (currentFlashcardIndex >= flashcards.length) {
+                showFlashcardComplete();
+                return;
+            }
+            
+            const card = flashcards[currentFlashcardIndex];
+            const container = document.getElementById('flashcardContainer');
+            
+            container.innerHTML = `
+                <div class="flashcard-progress">
+                    Card ${currentFlashcardIndex + 1} of ${flashcards.length}
+                </div>
+                <div class="flashcard" onclick="flipFlashcard()" id="currentFlashcard">
+                    <div class="flashcard-front">
+                        <div class="flashcard-question">${card.question}</div>
+                    </div>
+                    <div class="flip-indicator">Click to flip</div>
+                </div>
+                <div class="flashcard-actions" id="flashcardActions" style="display: none;">
+                    <button class="flashcard-btn know-it-btn" onclick="markFlashcard(true)">✅ Know It</button>
+                    <button class="flashcard-btn review-btn" onclick="markFlashcard(false)">🔴 Need Review</button>
+                </div>
+            `;
+            
+            isFlipped = false;
+        }
+
+        function flipFlashcard() {
+            const card = flashcards[currentFlashcardIndex];
+            const cardElement = document.getElementById('currentFlashcard');
+            const actions = document.getElementById('flashcardActions');
+            
+            if (!isFlipped) {
+                cardElement.classList.add('flipped');
+                cardElement.innerHTML = `
+                    <div class="flashcard-back">
+                        <div class="flashcard-answer">${card.answer}</div>
+                        ${card.explanation ? `<p style="font-size: 14px; margin-top: 15px; color: #999;">${card.explanation}</p>` : ''}
+                    </div>
+                    <div class="flip-indicator">Click for next card</div>
+                `;
+                actions.style.display = 'flex';
+                isFlipped = true;
+            } else {
+                currentFlashcardIndex++;
+                displayFlashcard();
+            }
+        }
+
+        function markFlashcard(knowIt) {
+            const card = flashcards[currentFlashcardIndex];
+            
+            // Track progress
+            if (!studyData.flashcardProgress) studyData.flashcardProgress = {};
+            if (!studyData.flashcardProgress[card.id]) {
+                studyData.flashcardProgress[card.id] = {correct: 0, incorrect: 0};
+            }
+            
+            if (knowIt) {
+                studyData.flashcardProgress[card.id].correct++;
+            } else {
+                studyData.flashcardProgress[card.id].incorrect++;
+            }
+            
+            studyData.flashcardProgress[card.id].lastSeen = new Date().toISOString();
+            saveData();
+            
+            currentFlashcardIndex++;
+            displayFlashcard();
+        }
+
+        function showFlashcardComplete() {
+            const container = document.getElementById('flashcardContainer');
+            const knownCount = flashcards.filter(c => 
+                studyData.flashcardProgress && studyData.flashcardProgress[c.id] && 
+                studyData.flashcardProgress[c.id].correct > studyData.flashcardProgress[c.id].incorrect
+            ).length;
+            
+            container.innerHTML = `
+                <div class="quiz-card" style="text-align: center;">
+                    <h2 style="color: #4ec9b0; margin-bottom: 20px;">Flashcards Complete!</h2>
+                    <div class="stat-number" style="font-size: 72px; margin: 30px 0;">${Math.round((knownCount / flashcards.length) * 100)}%</div>
+                    <p style="font-size: 24px; margin-bottom: 30px;">
+                        You marked ${knownCount} out of ${flashcards.length} as "Know It"
+                    </p>
+                    <button class="submit-btn" onclick="startFlashcards()">Study Again</button>
+                </div>
+            `;
+        }
+
+        // ========================================
+        // PRACTICE TEST (Timed)
+        // ========================================
+        let practiceTestTimer = null;
+        let practiceTestTimeRemaining = 0;
+        let practiceTestQuestions = [];
+        let practiceTestAnswers = [];
+        let practiceTestStartTime = null;
+
+        function startPracticeTest() {
+            const questionCount = parseInt(document.getElementById('testQuestionCount').value);
+            
+            if (typeof QUIZ_QUESTIONS === 'undefined' || QUIZ_QUESTIONS.length === 0) {
+                alert('Quiz questions not available yet. Add study materials first!');
+                return;
+            }
+            
+            if (QUIZ_QUESTIONS.length < questionCount) {
+                alert(`Only ${QUIZ_QUESTIONS.length} questions available. Adjust question count.`);
+                return;
+            }
+            
+            // Prepare random questions
+            practiceTestQuestions = [...QUIZ_QUESTIONS]
+                .sort(() => Math.random() - 0.5)
+                .slice(0, questionCount);
+            
+            practiceTestAnswers = [];
+            practiceTestTimeRemaining = questionCount * 60; // 1 minute per question
+            practiceTestStartTime = Date.now();
+            currentQuestionIndex = 0;
+            
+            // Hide setup
+            const setup = document.querySelector('.practice-test-setup');
+            if (setup) setup.style.display = 'none';
+            
+            // Show test
+            const container = document.getElementById('practiceTestContainer');
+            if (container) {
+                container.style.display = 'block';
+                startPracticeTestTimer();
+                displayPracticeTestQuestion();
+            }
+        }
+
+        function startPracticeTestTimer() {
+            practiceTestTimer = setInterval(() => {
+                practiceTestTimeRemaining--;
+                
+                if (practiceTestTimeRemaining <= 0) {
+                    clearInterval(practiceTestTimer);
+                    finishPracticeTest();
+                    return;
+                }
+                
+                updateTimerDisplay();
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(practiceTestTimeRemaining / 60);
+            const seconds = practiceTestTimeRemaining % 60;
+            const display = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+            
+            const timerElement = document.querySelector('.timer-display');
+            if (timerElement) {
+                timerElement.textContent = display;
+                
+                // Add urgency styling if < 5 minutes
+                if (practiceTestTimeRemaining < 300) {
+                    timerElement.style.color = '#d16969';
+                }
+            }
+        }
+
+        function displayPracticeTestQuestion() {
+            if (currentQuestionIndex >= practiceTestQuestions.length) {
+                finishPracticeTest();
+                return;
+            }
+
+            const question = practiceTestQuestions[currentQuestionIndex];
+            const container = document.getElementById('practiceTestContainer');
+
+            container.innerHTML = `
+                <div class="test-timer">
+                    <div class="timer-display">${Math.floor(practiceTestTimeRemaining / 60)}:${(practiceTestTimeRemaining % 60).toString().padStart(2, '0')}</div>
+                    <div class="timer-label">Time Remaining</div>
+                </div>
+                <div class="test-progress">
+                    Question ${currentQuestionIndex + 1} of ${practiceTestQuestions.length}
+                </div>
+                <div class="quiz-card">
+                    <div class="question-text">${question.question}</div>
+                    <div class="options-container" id="optionsContainer">
+                        ${question.options.map((opt, i) => `
+                            <div class="option" data-index="${i}">${opt}</div>
+                        `).join('')}
+                    </div>
+                    <button class="submit-btn" id="submitTestAnswer" disabled>Next Question</button>
+                </div>
+            `;
+
+            // Handle option selection
+            let selectedIndex = null;
+            document.querySelectorAll('.option').forEach(opt => {
+                opt.addEventListener('click', () => {
+                    document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+                    opt.classList.add('selected');
+                    selectedIndex = parseInt(opt.dataset.index);
+                    document.getElementById('submitTestAnswer').disabled = false;
+                });
+            });
+
+            // Handle answer submission
+            document.getElementById('submitTestAnswer').addEventListener('click', () => {
+                if (selectedIndex === null) return;
+
+                const correct = selectedIndex === question.correct;
+                practiceTestAnswers.push({
+                    questionIndex: currentQuestionIndex,
+                    selectedIndex: selectedIndex,
+                    correct: correct,
+                    timeSpent: Date.now() - practiceTestStartTime
+                });
+
+                currentQuestionIndex++;
+                displayPracticeTestQuestion();
+            });
+        }
+
+        function finishPracticeTest() {
+            clearInterval(practiceTestTimer);
+            
+            const correct = practiceTestAnswers.filter(a => a.correct).length;
+            const total = practiceTestQuestions.length;
+            const percentage = Math.round((correct / total) * 100);
+            const timeSpent = Math.floor((Date.now() - practiceTestStartTime) / 1000);
+            const minutes = Math.floor(timeSpent / 60);
+            const seconds = timeSpent % 60;
+            
+            // Update study data
+            studyData.totalAttempts += total;
+            studyData.correctAnswers += correct;
+            studyData.questionsStudied = Math.max(studyData.questionsStudied, total);
+            saveData();
+            
+            const container = document.getElementById('practiceTestContainer');
+            container.innerHTML = `
+                <div class="quiz-card" style="text-align: center;">
+                    <h2 style="color: #4ec9b0; margin-bottom: 20px;">Practice Test Complete!</h2>
+                    <div class="stat-number" style="font-size: 72px; margin: 30px 0;">${percentage}%</div>
+                    <p style="font-size: 24px; margin-bottom: 15px;">
+                        ${correct} out of ${total} correct
+                    </p>
+                    <p style="font-size: 18px; color: #999; margin-bottom: 30px;">
+                        Time: ${minutes}:${seconds.toString().padStart(2, '0')}
+                    </p>
+                    ${percentage >= 80 
+                        ? '<p style="color: #4ec9b0; font-size: 20px; margin-bottom: 30px;">✅ Great job! You\'re ready!</p>'
+                        : '<p style="color: #d16969; font-size: 20px; margin-bottom: 30px;">⚠️ Keep studying - aim for 80%+</p>'
+                    }
+                    <button class="submit-btn" onclick="resetPracticeTest()">Take Another Test</button>
+                </div>
+            `;
+        }
+
+        function resetPracticeTest() {
+            const setup = document.querySelector('.practice-test-setup');
+            const container = document.getElementById('practiceTestContainer');
+            if (setup) setup.style.display = 'block';
+            if (container) {
+                container.style.display = 'none';
+                container.innerHTML = '';
+            }
+        }
+
+        // Initialize on load
+        loadData();
+        
+        // Log successful initialization
+        console.log('=== APP INITIALIZED ===');
+        console.log('✓ Study documents:', window.STUDY_DOCUMENTS ? window.STUDY_DOCUMENTS.length : 0);
+        console.log('✓ Quiz questions:', window.QUIZ_QUESTIONS ? window.QUIZ_QUESTIONS.length : 0);
+        console.log('✓ Ready for use!');
+    </script>
+</body>
+</html>            background: #4e4e52;
+        }
+
+        .mode-tab.active {
+            background: #007acc;
+            color: white;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .mode-content {
+            display: none;
+        }
+
+        .mode-content.active {
+            display: block;
+        }
+
+        /* Dashboard Styles */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: #2d2d30;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #4ec9b0;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #9d9d9d;
+        }
+
+        /* Read & Study Styles */
+        .document-selector {
+            margin-bottom: 20px;
+        }
+
+        .document-selector select {
+            width: 100%;
+            padding: 15px;
+            background: #3c3c3c;
+            color: #d4d4d4;
+            border: 2px solid #4e4e4e;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .document-selector select:focus {
+            outline: none;
+            border-color: #007acc;
+        }
+
+        .document-content {
+            background: #2d2d30;
+            padding: 30px;
+            border-radius: 12px;
+            line-height: 1.8;
+            font-size: 16px;
+            min-height: 400px;
+            user-select: text;
+        }
+
+        .document-content h2 {
+            color: #4fc3f7;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .document-content h3 {
+            color: #b0b0b0;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Highlighting Styles */
+        .highlight-yellow {
+            background-color: rgba(251, 191, 36, 0.3);
+            padding: 2px 0;
+            cursor: pointer;
+            border-bottom: 2px solid #fbbf24;
+        }
+
+        .highlight-red {
+            background-color: rgba(239, 68, 68, 0.3);
+            padding: 2px 0;
+            cursor: pointer;
+            border-bottom: 2px solid #ef4444;
+        }
+
+        .highlight-green {
+            background-color: rgba(34, 197, 94, 0.3);
+            padding: 2px 0;
+            cursor: pointer;
+            border-bottom: 2px solid #22c55e;
+        }
+
+        .highlight-blue {
+            background-color: rgba(59, 130, 246, 0.3);
+            padding: 2px 0;
+            cursor: pointer;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        .highlight-controls {
+            background: #2d2d30;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .highlight-controls.active {
+            display: block;
+        }
+
+        .highlight-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .highlight-btn.yellow {
+            background: #d4a82f;
+            color: #1e1e1e;
+        }
+
+        .highlight-btn.red {
+            background: #d16969;
+            color: #f0f0f0;
+        }
+
+        .highlight-btn.green {
+            background: #4ec9b0;
+            color: #1e1e1e;
+        }
+
+        .highlight-btn.blue {
+            background: #569cd6;
+            color: #f0f0f0;
+        }
+
+        .highlight-btn.clear {
+            background: #858585;
+            color: #f0f0f0;
+        }
+
+        /* Quiz Mode Styles */
+        .quiz-card {
+            background: #2d2d30;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .question-number {
+            color: #4fc3f7;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .question-text {
+            font-size: 18px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .option {
+            padding: 15px;
+            background: #3c3c3c;
+            border: 2px solid #4e4e4e;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .option:hover {
+            background: #4a4a4a;
+            border-color: #007acc;
+        }
+
+        .option.selected {
+            background: #1e3a5f;
+            border-color: #007acc;
+            color: #e8e8e8;
+        }
+
+        .option.correct {
+            background: #1e4d3b;
+            border-color: #4ec9b0;
+            color: #e8e8e8;
+        }
+
+        .option.incorrect {
+            background: #5a1f1f;
+            border-color: #f48771;
+            color: #e8e8e8;
+        }
+
+        .submit-btn {
+            padding: 15px 30px;
+            background: #0e639c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background: #1177bb;
+        }
+
+        .submit-btn:disabled {
+            background: #4a4a4a;
+            cursor: not-allowed;
+        }
+
+        .explanation-box {
+            background: #3c3c3c;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #4fc3f7;
+        }
+
+        .explanation-box h4 {
+            color: #4fc3f7;
+            margin-bottom: 10px;
+        }
+
+        .reference {
+            color: #9d9d9d;
+            font-size: 14px;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        /* Review Highlights Styles */
+        .highlights-section {
+            margin-bottom: 30px;
+        }
+
+        .highlights-section h3 {
+            color: #4fc3f7;
+            margin-bottom: 15px;
+        }
+
+        .highlight-item {
+            background: #2d2d30;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 4px solid #4fc3f7;
+        }
+
+        .highlight-text {
+            margin-bottom: 10px;
+        }
+
+        .highlight-note {
+            color: #9d9d9d;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        /* Settings Styles */
+        .setting-item {
+            background: #2d2d30;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .setting-item h3 {
+            color: #4fc3f7;
+            margin-bottom: 10px;
+        }
+
+        .setting-item input,
+        .setting-item select {
+            width: 100%;
+            padding: 12px;
+            background: #3c3c3c;
+            color: #d4d4d4;
+            border: 2px solid #4e4e4e;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .danger-zone {
+            background: #2d2d30;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #d16969;
+        }
+
+        .danger-zone h3 {
+            color: #f48771;
+            margin-bottom: 15px;
+        }
+
+        .danger-btn {
+            padding: 12px 24px;
+            background: #a93226;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .danger-btn:hover {
+            background: #922b21;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 18px;
+                padding: 15px 10px;
+            }
+
+            .mode-tabs {
+                gap: 5px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .mode-tab {
+                padding: 10px 15px;
+                font-size: 13px;
+                min-height: 44px; /* Touch-friendly */
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .stat-card {
+                padding: 15px;
+            }
+
+            .document-content {
+                padding: 15px;
+                font-size: 15px;
+                line-height: 1.6;
+            }
+
+            /* Make dropdowns bigger on mobile */
+            select {
+                min-height: 44px;
+                font-size: 16px; /* Prevents iOS zoom */
+                padding: 12px;
+            }
+
+            /* Make tables responsive */
+            table {
+                display: block;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                font-size: 14px;
+            }
+
+            table th, table td {
+                padding: 8px !important;
+                font-size: 13px;
+            }
+
+            /* Make collapsible sections easier to tap */
+            details summary {
+                padding: 15px;
+                font-size: 15px;
+                min-height: 44px;
+                cursor: pointer;
+            }
+
+            /* Make exam highlights readable */
+            .exam-highlights {
+                padding: 12px !important;
+                font-size: 14px;
+            }
+
+            .exam-highlights h3 {
+                font-size: 16px;
+            }
+
+            .exam-highlights h4 {
+                font-size: 15px;
+            }
+
+            /* Better spacing for lists on mobile */
+            .exam-highlights ul, .exam-highlights ol {
+                padding-left: 20px;
+            }
+
+            .exam-highlights li {
+                margin-bottom: 8px;
+            }
+
+            /* Quiz options on mobile */
+            .quiz-option {
+                padding: 15px;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+
+            /* Make buttons touch-friendly */
+            button {
+                min-height: 44px;
+                font-size: 15px;
+            }
+
+            /* Countdown timer on mobile */
+            .countdown {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+
+        /* Extra small phones */
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 16px;
+            }
+
+            .mode-tab {
+                padding: 8px 10px;
+                font-size: 12px;
+            }
+
+            .document-content {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            table th, table td {
+                padding: 6px !important;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1>🎯 SGT Exam Study Pro</h1>
+            <div class="mode-tabs">
+                <button class="mode-tab active" data-mode="dashboard">Dashboard</button>
+                <button class="mode-tab" data-mode="howto">How to Use</button>
+                <button class="mode-tab" data-mode="study">Read & Study</button>
+                <button class="mode-tab" data-mode="quiz">Quiz Mode</button>
+                <button class="mode-tab" data-mode="review">Review</button>
+                <button class="mode-tab" data-mode="settings">Settings</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Dashboard -->
+            <div class="mode-content active" id="dashboard">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalStudied">0</div>
+                        <div class="stat-label">Questions Studied</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="accuracy">0%</div>
+                        <div class="stat-label">Quiz Accuracy</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalHighlights">0</div>
+                        <div class="stat-label">Total Highlights</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="studyStreak">0</div>
+                        <div class="stat-label">Day Streak</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Use -->
+            <div class="mode-content" id="howto">
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <h2>📖 SGT Exam Study Pro</h2>
+                    <p><em>Complete guide for April 23, 2026 Sergeant Promotional Exam</em></p>
+                    
+                    <h3>🎯 Exam Day Info</h3>
+                    <p><strong>Date:</strong> Thursday, April 23, 2026</p>
+                    <p><strong>Time:</strong> 0900 Hours</p>
+                    <p><strong>Location:</strong> Henry B. Gonzalez Convention Center, 900 E. Market St.</p>
+                    <p><strong>Room:</strong> Hemisfair Ballroom</p>
+                    
+                    <div style="background: rgba(244, 135, 113, 0.15); padding: 15px; margin: 10px 0;">
+                        <p><strong>REQUIRED:</strong> Photo identification</p>
+                        <p><strong>NOT PERMITTED:</strong> Cell phones, electronic devices, hats, backpacks, books, food, drinks</p>
+                    </div>
+                    
+                    <h3>📚 How to Use This App</h3>
+                    <ol>
+                        <li><strong>Dashboard:</strong> Track your progress and study streak</li>
+                        <li><strong>Read & Study:</strong> Select category → Select document → Study</li>
+                        <li><strong>Quiz Mode:</strong> Multiple choice practice, practice tests, or flashcards</li>
+                        <li><strong>Review:</strong> Access your highlights and notes</li>
+                    </ol>
+                    
+                    <h3>✨ Study Features</h3>
+                    <ul>
+                        <li><strong>Highlighting:</strong> Select text to automatically save highlights in different colors</li>
+                        <li><strong>Notes:</strong> Add your own notes to any document</li>
+                        <li><strong>Search:</strong> Find specific topics or keywords across all documents</li>
+                        <li><strong>Progress tracking:</strong> All data saved locally in your browser</li>
+                    </ul>
+                    
+                    <h3>💡 Study Tips</h3>
+                    <p><strong>Recommended schedule:</strong> 1 hour daily</p>
+                    <ul>
+                        <li>30 min reading and highlighting key sections</li>
+                        <li>15 min quiz practice</li>
+                        <li>15 min reviewing highlights and notes</li>
+                    </ul>
+                    <p>Take weekly practice tests to identify weak areas</p>
+                    <p>Review all highlights during final week before exam</p>
+                    
+                    <h3>📊 Test Breakdown</h3>
+                    <p><strong>Total: 100 questions</strong></p>
+                    <ul>
+                        <li>Penal Code: 10 questions</li>
+                        <li>CBA: 20 questions</li>
+                        <li>General Manual: 50 questions</li>
+                        <li>Textbook: 20 questions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Read & Study -->
+            <div class="mode-content" id="study">
+                <div class="document-selector">
+                    <select id="categorySelect">
+                        <option value="">📚 Select Document Category...</option>
+                        <option value="CBA">Collective Bargaining Agreement (CBA)</option>
+                        <option value="General Manual">General Manual (SAPD Procedures)</option>
+                        <option value="Penal Code">Texas Penal Code</option>
+                        <option value="Textbook">Study Textbook</option>
+                    </select>
+                    
+                    <select id="documentSelect" style="display: none;">
+                        <option value="">📄 Select Document...</option>
+                    </select>
+                </div>
+
+                <div class="highlight-controls" id="highlightControls">
+                    <p style="margin-bottom: 10px; color: #999; font-size: 14px;">
+                        Select text, then choose a highlight color:
+                    </p>
+                    <button class="highlight-btn yellow" data-color="yellow">📒 Important</button>
+                    <button class="highlight-btn red" data-color="red">🔴 Struggling</button>
+                    <button class="highlight-btn green" data-color="green">✅ Mastered</button>
+                    <button class="highlight-btn blue" data-color="blue">💡 Question</button>
+                    <button class="highlight-btn clear" id="clearHighlight">❌ Clear</button>
+                </div>
+
+                <div class="document-content" id="documentContent">
+                    <p style="text-align: center; color: #999;">Select a document to begin studying...</p>
+                </div>
+            </div>
+
+            <!-- Quiz Mode -->
+            <div class="mode-content" id="quiz">
+                <div id="quizContainer"></div>
+            </div>
+
+            <!-- Review Highlights -->
+            <div class="mode-content" id="review">
+                <div class="highlights-section">
+                    <h3>📌 Your Highlights</h3>
+                    <div id="highlightsList">
+                        <p style="color: #999;">No highlights yet. Start reading and highlighting in Study mode!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Settings -->
+            <div class="mode-content" id="settings">
+                <div class="setting-item">
+                    <h3>Study Preferences</h3>
+                    <label>Default Reading Speed</label>
+                    <select id="defaultSpeed">
+                        <option value="0.75">0.75x</option>
+                        <option value="1" selected>1x</option>
+                        <option value="1.25">1.25x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2">2x</option>
+                    </select>
+                </div>
+
+                <div class="danger-zone">
+                    <h3>⚠️ Danger Zone</h3>
+                    <p style="margin-bottom: 15px; color: #999;">This will delete all your progress, highlights, and quiz history.</p>
+                    <button class="danger-btn" id="resetBtn">Reset All Data</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="documents_cba.js"></script>
+    <script src="documents_penal.js"></script>
+    <script src="documents_gm.js"></script>
+    <script src="documents_quiz.js"></script>
+    <script>
+        // Debug: Verify all scripts loaded
+        console.log('=== LOADING CHECK ===');
+        console.log('CBA loaded:', typeof DOCUMENTS_CBA !== 'undefined', DOCUMENTS_CBA ? DOCUMENTS_CBA.length + ' docs' : 'FAILED');
+        console.log('Penal loaded:', typeof DOCUMENTS_PENAL !== 'undefined', DOCUMENTS_PENAL ? DOCUMENTS_PENAL.length + ' docs' : 'FAILED');
+        console.log('GM loaded:', typeof DOCUMENTS_GM !== 'undefined', DOCUMENTS_GM ? DOCUMENTS_GM.length + ' docs' : 'FAILED');
+        console.log('Quiz loaded:', typeof DOCUMENTS_QUIZ !== 'undefined', DOCUMENTS_QUIZ ? DOCUMENTS_QUIZ.length + ' questions' : 'FAILED');
+
+        // Combine documents with error handling - MAKE TRULY GLOBAL using window object
+        window.STUDY_DOCUMENTS = [];
+        window.QUIZ_QUESTIONS = [];
+        window.filteredDocuments = [];
+        
+        try {
+            if (typeof DOCUMENTS_CBA === 'undefined') throw new Error('DOCUMENTS_CBA not loaded');
+            if (typeof DOCUMENTS_PENAL === 'undefined') throw new Error('DOCUMENTS_PENAL not loaded');
+            if (typeof DOCUMENTS_GM === 'undefined') throw new Error('DOCUMENTS_GM not loaded');
+            
+            window.STUDY_DOCUMENTS = [...DOCUMENTS_CBA, ...DOCUMENTS_PENAL, ...DOCUMENTS_GM];
+            window.QUIZ_QUESTIONS = DOCUMENTS_QUIZ || [];
+            
+            console.log('✓ Total documents:', window.STUDY_DOCUMENTS.length);
+            console.log('✓ Total quiz questions:', window.QUIZ_QUESTIONS.length);
+            console.log('✓ STUDY_DOCUMENTS is now globally available on window object');
+        } catch (error) {
+            console.error('✗ LOADING ERROR:', error.message);
+            alert('Error loading study materials. Please refresh the page.\n\n' + error.message);
+        }
+    </script>
+    <script>
+        // Initialize the app - Make variables truly global
+        window.currentMode = 'dashboard';
+        window.currentQuestionIndex = 0;
+        window.quizAnswers = [];
+        window.studyData = {
+            questionsStudied: 0,
+            correctAnswers: 0,
+            totalAttempts: 0,
+            highlights: [],
             studyStreak: 0
         };
 

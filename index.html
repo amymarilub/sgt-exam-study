@@ -411,28 +411,131 @@
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 20px;
+                font-size: 18px;
+                padding: 15px 10px;
             }
 
             .mode-tabs {
                 gap: 5px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             .mode-tab {
-                padding: 8px 12px;
-                font-size: 12px;
+                padding: 10px 15px;
+                font-size: 13px;
+                min-height: 44px; /* Touch-friendly */
             }
 
             .content {
-                padding: 15px;
+                padding: 10px;
             }
 
             .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .stat-card {
+                padding: 15px;
             }
 
             .document-content {
-                padding: 20px;
+                padding: 15px;
+                font-size: 15px;
+                line-height: 1.6;
+            }
+
+            /* Make dropdowns bigger on mobile */
+            select {
+                min-height: 44px;
+                font-size: 16px; /* Prevents iOS zoom */
+                padding: 12px;
+            }
+
+            /* Make tables responsive */
+            table {
+                display: block;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                font-size: 14px;
+            }
+
+            table th, table td {
+                padding: 8px !important;
+                font-size: 13px;
+            }
+
+            /* Make collapsible sections easier to tap */
+            details summary {
+                padding: 15px;
+                font-size: 15px;
+                min-height: 44px;
+                cursor: pointer;
+            }
+
+            /* Make exam highlights readable */
+            .exam-highlights {
+                padding: 12px !important;
+                font-size: 14px;
+            }
+
+            .exam-highlights h3 {
+                font-size: 16px;
+            }
+
+            .exam-highlights h4 {
+                font-size: 15px;
+            }
+
+            /* Better spacing for lists on mobile */
+            .exam-highlights ul, .exam-highlights ol {
+                padding-left: 20px;
+            }
+
+            .exam-highlights li {
+                margin-bottom: 8px;
+            }
+
+            /* Quiz options on mobile */
+            .quiz-option {
+                padding: 15px;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+
+            /* Make buttons touch-friendly */
+            button {
+                min-height: 44px;
+                font-size: 15px;
+            }
+
+            /* Countdown timer on mobile */
+            .countdown {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+
+        /* Extra small phones */
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 16px;
+            }
+
+            .mode-tab {
+                padding: 8px 10px;
+                font-size: 12px;
+            }
+
+            .document-content {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            table th, table td {
+                padding: 6px !important;
+                font-size: 12px;
             }
         }
     </style>

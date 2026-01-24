@@ -841,13 +841,16 @@
 
         // Document selector - Level 2
         document.getElementById('documentSelect').addEventListener('change', (e) => {
-            const docIndex = e.target.value;
+            const docIndex = parseInt(e.target.value);  // Convert string to number
             console.log('📄 Document selected, index:', docIndex);
             
-            if (docIndex === '') return;
+            if (isNaN(docIndex)) return;  // Check if valid number
 
             try {
                 const doc = window.filteredDocuments[docIndex];
+                if (!doc) {
+                    throw new Error('Document not found at index ' + docIndex);
+                }
                 console.log('📖 Loading document:', doc.title);
                 
                 const content = document.getElementById('documentContent');

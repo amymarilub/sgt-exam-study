@@ -1,4 +1,4 @@
-const QUIZ_QUESTIONS = [
+const DOCUMENTS_QUIZ = [
     {
         type: 'multiple-choice',
         category: 'complaints',

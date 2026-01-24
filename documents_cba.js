@@ -287,10 +287,6 @@ const DOCUMENTS_CBA = [
     }
 ];
 
-    // Add Articles 3, 12, 15, 16 with full text...
-    
-];
-
 // Note: This file now contains BOTH:
 // 1. Exam-focused highlights (yellow boxes) - Quick study reference
 // 2. Complete legal text (collapsible sections) - Full reference for Phil

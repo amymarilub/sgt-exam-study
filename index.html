@@ -706,8 +706,31 @@
     <script src="documents_gm.js"></script>
     <script src="documents_quiz.js"></script>
     <script>
-        const STUDY_DOCUMENTS = [...DOCUMENTS_CBA, ...DOCUMENTS_PENAL, ...DOCUMENTS_GM];
-        const QUIZ_QUESTIONS = DOCUMENTS_QUIZ;
+        // Debug: Verify all scripts loaded
+        console.log('=== LOADING CHECK ===');
+        console.log('CBA loaded:', typeof DOCUMENTS_CBA !== 'undefined', DOCUMENTS_CBA ? DOCUMENTS_CBA.length + ' docs' : 'FAILED');
+        console.log('Penal loaded:', typeof DOCUMENTS_PENAL !== 'undefined', DOCUMENTS_PENAL ? DOCUMENTS_PENAL.length + ' docs' : 'FAILED');
+        console.log('GM loaded:', typeof DOCUMENTS_GM !== 'undefined', DOCUMENTS_GM ? DOCUMENTS_GM.length + ' docs' : 'FAILED');
+        console.log('Quiz loaded:', typeof DOCUMENTS_QUIZ !== 'undefined', DOCUMENTS_QUIZ ? DOCUMENTS_QUIZ.length + ' questions' : 'FAILED');
+
+        // Combine documents with error handling
+        let STUDY_DOCUMENTS = [];
+        let QUIZ_QUESTIONS = [];
+        
+        try {
+            if (typeof DOCUMENTS_CBA === 'undefined') throw new Error('DOCUMENTS_CBA not loaded');
+            if (typeof DOCUMENTS_PENAL === 'undefined') throw new Error('DOCUMENTS_PENAL not loaded');
+            if (typeof DOCUMENTS_GM === 'undefined') throw new Error('DOCUMENTS_GM not loaded');
+            
+            STUDY_DOCUMENTS = [...DOCUMENTS_CBA, ...DOCUMENTS_PENAL, ...DOCUMENTS_GM];
+            QUIZ_QUESTIONS = DOCUMENTS_QUIZ || [];
+            
+            console.log('✓ Total documents:', STUDY_DOCUMENTS.length);
+            console.log('✓ Total quiz questions:', QUIZ_QUESTIONS.length);
+        } catch (error) {
+            console.error('✗ LOADING ERROR:', error.message);
+            alert('Error loading study materials. Please refresh the page.\n\n' + error.message);
+        }
     </script>
     <script>
         // Initialize the app
@@ -774,6 +797,8 @@
         // Category selector - Level 1
         document.getElementById('categorySelect').addEventListener('change', (e) => {
             currentCategory = e.target.value;
+            console.log('📂 Category selected:', currentCategory);
+            
             const documentSelect = document.getElementById('documentSelect');
             
             if (!currentCategory) {
@@ -783,41 +808,63 @@
                 return;
             }
             
-            // Filter documents by category
-            filteredDocuments = STUDY_DOCUMENTS.filter(doc => doc.category === currentCategory);
-            
-            // Populate document dropdown
-            documentSelect.innerHTML = '<option value="">📄 Select Document...</option>';
-            filteredDocuments.forEach((doc, index) => {
-                const option = document.createElement('option');
-                option.value = index;
-                option.textContent = doc.title;
-                documentSelect.appendChild(option);
-            });
-            
-            documentSelect.style.display = 'block';
-            document.getElementById('documentContent').innerHTML = '<p style="text-align: center; color: #888; margin-top: 50px;">Select a document from the dropdown above</p>';
+            try {
+                // Filter documents by category
+                filteredDocuments = STUDY_DOCUMENTS.filter(doc => doc.category === currentCategory);
+                console.log('📄 Filtered documents:', filteredDocuments.length);
+                
+                // Populate document dropdown
+                documentSelect.innerHTML = '<option value="">📄 Select Document...</option>';
+                filteredDocuments.forEach((doc, index) => {
+                    const option = document.createElement('option');
+                    option.value = index;
+                    option.textContent = doc.title;
+                    documentSelect.appendChild(option);
+                });
+                
+                console.log('✓ Document dropdown populated with', filteredDocuments.length, 'options');
+                documentSelect.style.display = 'block';
+                document.getElementById('documentContent').innerHTML = '<p style="text-align: center; color: #888; margin-top: 50px;">Select a document from the dropdown above</p>';
+            } catch (error) {
+                console.error('✗ Error in category change:', error);
+                alert('Error loading documents: ' + error.message);
+            }
         });
 
         // Document selector - Level 2
         document.getElementById('documentSelect').addEventListener('change', (e) => {
             const docIndex = e.target.value;
+            console.log('📄 Document selected, index:', docIndex);
+            
             if (docIndex === '') return;
 
-            const doc = filteredDocuments[docIndex];
-            const content = document.getElementById('documentContent');
-            content.innerHTML = `<h2>${doc.title}</h2>${doc.content}`;
-            
-            // Update current document for notes functionality
-            const actualIndex = STUDY_DOCUMENTS.findIndex(d => d.title === doc.title);
-            updateCurrentDocument(actualIndex);
+            try {
+                const doc = filteredDocuments[docIndex];
+                console.log('📖 Loading document:', doc.title);
+                
+                const content = document.getElementById('documentContent');
+                content.innerHTML = `<h2>${doc.title}</h2>${doc.content}`;
+                
+                console.log('✓ Document content loaded successfully');
+                
+                // Update current document for notes functionality
+                const actualIndex = STUDY_DOCUMENTS.findIndex(d => d.title === doc.title);
+                updateCurrentDocument(actualIndex);
+            } catch (error) {
+                console.error('✗ Error loading document:', error);
+                alert('Error displaying document: ' + error.message);
+            }
         });
 
 
 
         // Quiz functionality
         function loadQuiz() {
+            console.log('🎯 Loading quiz...');
+            console.log('Quiz questions available:', QUIZ_QUESTIONS ? QUIZ_QUESTIONS.length : 0);
+            
             if (!QUIZ_QUESTIONS || QUIZ_QUESTIONS.length === 0) {
+                console.log('⚠️ No quiz questions available');
                 document.getElementById('quizContainer').innerHTML = `
                     <div class="quiz-card">
                         <p style="text-align: center; color: #999;">
@@ -828,6 +875,7 @@
                 return;
             }
 
+            console.log('✓ Starting quiz with', QUIZ_QUESTIONS.length, 'questions');
             currentQuestionIndex = 0;
             quizAnswers = [];
             displayQuestion();
@@ -1363,6 +1411,12 @@
 
         // Initialize on load
         loadData();
+        
+        // Log successful initialization
+        console.log('=== APP INITIALIZED ===');
+        console.log('✓ Study documents:', STUDY_DOCUMENTS.length);
+        console.log('✓ Quiz questions:', QUIZ_QUESTIONS.length);
+        console.log('✓ Ready for use!');
     </script>
 </body>
 </html>
